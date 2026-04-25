@@ -71,6 +71,31 @@ jobs:
             git push
           fi
 
+      - name: Sync articles.json to gh-pages (live site)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Capture updated file from master before switching branches
+          cp portal/js/articles.json /tmp/articles.json
+
+          git fetch origin gh-pages
+          git checkout gh-pages
+
+          # Only update if content actually changed
+          if ! diff -q /tmp/articles.json js/articles.json > /dev/null 2>&1; then
+            cp /tmp/articles.json js/articles.json
+            TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
+            git add js/articles.json
+            git commit -m "chore: sync articles to gh-pages — $TIMESTAMP"
+            git push origin gh-pages
+            echo "gh-pages updated."
+          else
+            echo "No changes to sync to gh-pages."
+          fi
+
+          git checkout master
+
       - name: Upload draft files as artefact
         uses: actions/upload-artifact@v4
         if: always()
