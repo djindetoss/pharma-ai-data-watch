@@ -8,7 +8,7 @@ on:
     # Also allows manual trigger from GitHub Actions tab
     inputs:
       source:
-        description: "Source to fetch (pubmed / biorxiv / regulatory / ainews / all)"
+        description: "Source to fetch (pubmed / biorxiv / regulatory / ainews / events / all)"
         required: false
         default: "all"
       auto_approve_all:

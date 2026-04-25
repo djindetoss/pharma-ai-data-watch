@@ -79,6 +79,43 @@
     ]
   },
 
+  "event_sources": {
+    "enabled": true,
+    "_comment": "RSS feeds for pharma/regulatory events — auto-classified as webinar or seminar",
+    "feeds": [
+      {
+        "url": "https://www.diaglobal.org/rss/events",
+        "name": "DIA",
+        "badge": "Event",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.ema.europa.eu/en/feeds/events",
+        "name": "EMA Events",
+        "badge": "Regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.topra.org/rss/events",
+        "name": "TOPRA",
+        "badge": "Regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.raps.org/rss?type=events",
+        "name": "RAPS Events",
+        "badge": "Regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/workshops-conferences-and-meetings/rss.xml",
+        "name": "FDA Events",
+        "badge": "Regulatory",
+        "auto_approve": true
+      }
+    ]
+  },
+
   "ai_news_sources": {
     "enabled": true,
     "feeds": [

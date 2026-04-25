@@ -336,6 +336,26 @@ def fetch_biorxiv(dry_run=False) -> list:
 
 # ── RSS generic fetcher ───────────────────────────────────────────────────────
 
+_EVENT_SIGNALS = [
+    "webinar", "web seminar", "online seminar", "virtual seminar",
+    "conference", "congress", "symposium", "summit", "workshop",
+    "seminar", "training", "short course", "masterclass",
+    "register now", "registration open", "join us", "attend",
+    "save the date", "call for abstracts", "abstract submission",
+]
+_WEBINAR_SIGNALS = ["webinar", "web seminar", "online seminar", "virtual seminar", "virtual event"]
+
+
+def _detect_event_type(title: str, summary: str) -> str | None:
+    """Return 'webinar' or 'seminar' if the text is clearly an event announcement, else None."""
+    text = (title + " " + summary).lower()
+    if any(s in text for s in _WEBINAR_SIGNALS):
+        return "webinar"
+    if any(s in text for s in _EVENT_SIGNALS):
+        return "seminar"
+    return None
+
+
 def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> list:
     url    = feed_cfg["url"]
     name   = feed_cfg["name"]
@@ -360,14 +380,18 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> l
             if not title:
                 continue
 
-            score = relevance_score(title + " " + summary, article_type)
+            # Promote to webinar/seminar if the content signals an event
+            detected_event = _detect_event_type(title, summary)
+            effective_type = detected_event if detected_event else article_type
+
+            score = relevance_score(title + " " + summary, effective_type)
 
             # For pharma news: must have some pharma or AI relevance
             if require_pharma and score < MIN_SCORE:
                 continue
 
             # For AI news: must have at least one AI keyword
-            if article_type == "ainews" and score < 2:
+            if effective_type == "ainews" and score < 2:
                 continue
 
             # Extract tags from entry categories
@@ -379,7 +403,7 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> l
 
             results.append({
                 "id": article_id(link, title),
-                "type": article_type,
+                "type": effective_type,
                 "title": title,
                 "excerpt": summary or "Read the full article at the source.",
                 "source": name,
@@ -415,6 +439,17 @@ def fetch_ai_news_rss(dry_run=False) -> list:
     results = []
     for feed in CONFIG["ai_news_sources"]["feeds"]:
         results += fetch_rss_feed(feed, "ainews", require_pharma=False)
+    return results
+
+
+def fetch_events_rss(dry_run=False) -> list:
+    """Fetch pharma/regulatory event feeds and classify as webinar or seminar."""
+    if not CONFIG.get("event_sources", {}).get("enabled"):
+        return []
+    results = []
+    for feed in CONFIG["event_sources"]["feeds"]:
+        # Pass "seminar" as default; _detect_event_type() will refine to webinar if needed
+        results += fetch_rss_feed(feed, "seminar", require_pharma=False)
     return results
 
 
@@ -481,7 +516,7 @@ def main():
     parser.add_argument("--dry-run",          action="store_true",  help="Fetch but do not write anything")
     parser.add_argument("--auto-approve-all", action="store_true",  help="Auto-approve all items above min score")
     parser.add_argument("--source", default="all",
-        choices=["newsapi", "pubmed", "biorxiv", "regulatory", "ainews", "all"])
+        choices=["newsapi", "pubmed", "biorxiv", "regulatory", "ainews", "events", "all"])
     args = parser.parse_args()
 
     log.info("═" * 60)
@@ -518,6 +553,10 @@ def main():
     # 5. AI news RSS
     if args.source in ("ainews", "all"):
         new_items += fetch_ai_news_rss(dry_run=args.dry_run)
+
+    # 6. Events (webinars, seminars, conferences)
+    if args.source in ("events", "all"):
+        new_items += fetch_events_rss(dry_run=args.dry_run)
 
     log.info(f"Total fetched: {len(new_items)} items across all sources")
 

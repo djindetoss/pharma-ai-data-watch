@@ -58,6 +58,13 @@ SEARCH_QUERIES = [
         "sources": None,
     },
     {
+        "topic":  "Pharma AI conferences, webinars and seminars",
+        "q":      "(webinar OR conference OR seminar OR congress OR symposium OR workshop) AND (\"artificial intelligence\" OR \"machine learning\") AND (pharmaceutical OR regulatory OR \"drug development\" OR \"clinical trial\" OR healthcare)",
+        "type":   "seminar",   # will be further refined to webinar/seminar by event detection
+        "badge":  "Event",
+        "sources": None,
+    },
+    {
         "topic":  "General AI breakthroughs for ainews tab",
         "q":      "(\"large language model\" OR \"foundation model\" OR \"generative AI\" OR GPT OR Claude OR Gemini OR \"EU AI Act\") AND (health OR science OR regulation OR biomedical)",
         "type":   "ainews",
@@ -65,6 +72,22 @@ SEARCH_QUERIES = [
         "sources": "techcrunch.com,thenextweb.com,wired.com,theverge.com,nature.com",
     },
 ]
+
+# Words that signal a webinar (online event) vs in-person seminar
+_WEBINAR_SIGNALS = {"webinar", "web seminar", "online seminar", "virtual seminar", "virtual event", "online event"}
+_EVENT_SIGNALS   = {"conference", "congress", "symposium", "summit", "workshop", "seminar",
+                    "short course", "masterclass", "save the date", "call for abstracts",
+                    "abstract submission", "register now", "registration open"}
+
+
+def _classify_event_type(title: str, excerpt: str) -> str:
+    """Refine 'seminar' into 'webinar' or 'seminar' based on content signals."""
+    text = (title + " " + excerpt).lower()
+    if any(s in text for s in _WEBINAR_SIGNALS):
+        return "webinar"
+    if any(s in text for s in _EVENT_SIGNALS):
+        return "seminar"
+    return "seminar"  # default for event queries
 
 
 def _article_id(url: str, title: str) -> str:
@@ -165,12 +188,19 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 if not excerpt:
                     continue
 
+                # Refine event type (webinar vs seminar) from content
+                effective_type = (
+                    _classify_event_type(title, excerpt)
+                    if article_type == "seminar"
+                    else article_type
+                )
+
                 # Auto-extract simple tags from title
-                tags = _extract_tags(title + " " + excerpt, article_type)
+                tags = _extract_tags(title + " " + excerpt, effective_type)
 
                 all_articles.append({
                     "id":           _article_id(url, title),
-                    "type":         article_type,
+                    "type":         effective_type,
                     "title":        _sentence_case(title),
                     "excerpt":      excerpt,
                     "source":       source_name,
