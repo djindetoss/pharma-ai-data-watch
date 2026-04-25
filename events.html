@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Pharma AI & Data Watch</title>
+  <meta name="description" content="Curated list of webinars, seminars, workshops and conferences on AI and data in healthcare, drug development and regulatory science." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ── Events page layout ── */
+    .events-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 60%, var(--accent) 100%);
+      color: var(--white);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .events-hero h1 { font-size: clamp(28px,5vw,42px); font-weight: 800; margin-bottom: 12px; }
+    .events-hero p  { font-size: 16px; color: rgba(255,255,255,0.8); max-width: 640px; margin: 0 auto; }
+
+    .events-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ── Category filter pills ── */
+    .cat-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+    .cat-pill {
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .cat-pill:hover  { border-color: var(--primary); color: var(--primary); }
+    .cat-pill.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
+
+    /* ── Section headings ── */
+    .events-section { margin-bottom: 48px; }
+    .events-section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
+    .events-section-icon { font-size: 22px; }
+    .events-section-title { font-size: 18px; font-weight: 700; color: var(--dark); }
+    .events-section-source {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--mid);
+      font-weight: 500;
+    }
+
+    /* ── Event cards ── */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .event-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: box-shadow 0.15s, border-color 0.15s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .event-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .event-card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .event-card-date {
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 6px 10px;
+      text-align: center;
+      flex-shrink: 0;
+      min-width: 52px;
+    }
+    .event-card-date .month { font-size: 9px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; opacity: 0.75; }
+    .event-card-date .day   { font-size: 20px; font-weight: 800; line-height: 1.1; }
+    .event-card-date .year  { font-size: 9px; opacity: 0.7; }
+    .event-card-date.ongoing { background: var(--accent-green); }
+    .event-card-date.tbc     { background: var(--mid); }
+
+    .event-card-meta { flex: 1; min-width: 0; }
+    .event-card-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .event-card:hover .event-card-title { color: var(--primary-light); }
+
+    .event-card-org {
+      font-size: 12px;
+      color: var(--mid);
+      font-weight: 500;
+    }
+
+    .event-card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .event-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 9px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .eb-type-webinar  { background: #dbeafe; color: #1e40af; }
+    .eb-type-seminar  { background: #fce7f3; color: #9d174d; }
+    .eb-type-training { background: #d1fae5; color: #065f46; }
+    .eb-type-conf     { background: #ede9fe; color: #5b21b6; }
+    .eb-type-workshop { background: #fff7ed; color: #c2410c; }
+
+    .eb-cat-regulatory   { background: #fef9c3; color: #713f12; }
+    .eb-cat-data         { background: #e0f2fe; color: #0c4a6e; }
+    .eb-cat-ai-discovery { background: #f0fdf4; color: #14532d; }
+    .eb-cat-clinical     { background: #fdf4ff; color: #6b21a8; }
+    .eb-cat-general      { background: #f1f5f9; color: #334155; }
+
+    .eb-loc-online   { background: #ecfdf5; color: #064e3b; }
+    .eb-loc-inperson { background: #fef3c7; color: #78350f; }
+    .eb-loc-hybrid   { background: #f0f9ff; color: #0369a1; }
+
+    .event-card-desc {
+      font-size: 12.5px;
+      color: var(--mid);
+      line-height: 1.5;
+    }
+
+    .event-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary-light);
+      margin-top: auto;
+    }
+    .event-card:hover .event-card-link { text-decoration: underline; }
+
+    /* ── Note box ── */
+    .events-note {
+      background: #eff6ff;
+      border: 1.5px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #1e40af;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .events-note strong { display: block; margin-bottom: 2px; }
+
+    /* ── Hidden sections ── */
+    .events-section[data-cat].hidden { display: none; }
+
+    @media (max-width: 640px) {
+      .events-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AI</div>
+        <div class="logo-text">
+          <span class="logo-title">Pharma AI &amp; Data Watch</span>
+          <span class="logo-sub">Intelligence portal · Drug development</span>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">All content</a>
+        <a href="index.html#main-content">News</a>
+        <a href="index.html#main-content">Papers</a>
+        <a href="events.html" class="active">📅 Events</a>
+        <span class="nav-divider">|</span>
+        <a href="index.html" data-topic-link="regulatory">Regulatory science</a>
+        <a href="index.html" data-topic-link="data-governance">Data governance</a>
+        <a href="index.html" data-topic-link="drug-discovery">AI in drug discovery</a>
+        <a href="index.html" data-topic-link="clinical-ai">Clinical AI</a>
+        <span class="nav-divider">|</span>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html" class="btn-subscribe" style="text-decoration:none;">← Back to portal</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <div class="events-hero">
+    <h1>📅 Events — AI &amp; Data in Healthcare</h1>
+    <p>Curated webinars, workshops, training sessions and conferences from EMA, FDA, EHDS, TOPRA, DIA and leading scientific organisations. All links go directly to the official registration or event page.</p>
+  </div>
+
+  <!-- ── BODY ── -->
+  <div class="events-body">
+
+    <div class="events-note">
+      <span style="font-size:18px;">ℹ️</span>
+      <div>
+        <strong>Verified sources only</strong>
+        All events below are sourced directly from official portals (EMA, FDA, EHDS, TOPRA, DIA, OECD, WHO). Links go to the original registration or event page. Last updated: April 2026.
+      </div>
+    </div>
+
+    <!-- Category filter pills -->
+    <div class="cat-filter">
+      <button class="cat-pill active" data-cat="all">🗂 All events</button>
+      <button class="cat-pill" data-cat="regulatory">🏛️ Regulatory science</button>
+      <button class="cat-pill" data-cat="data">📊 Data governance &amp; EHDS</button>
+      <button class="cat-pill" data-cat="ai-discovery">🧬 AI in drug discovery</button>
+      <button class="cat-pill" data-cat="clinical">🔬 Clinical AI &amp; RWE</button>
+      <button class="cat-pill" data-cat="general">🤖 General AI &amp; governance</button>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         EMA — EUROPEAN MEDICINES AGENCY
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="regulatory">
+      <div class="events-section-header">
+        <span class="events-section-icon">🇪🇺</span>
+        <span class="events-section-title">European Medicines Agency (EMA)</span>
+        <a href="https://www.ema.europa.eu/en/events/upcoming-events" target="_blank" class="events-section-source">View all EMA events →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.ema.europa.eu/en/events/meeting-hma-ema-group-focused-ai-industry-stakeholders-february-2026" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Feb</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">HMA/EMA group focused on AI — meeting with industry stakeholders</div>
+              <div class="event-card-org">EMA · Amsterdam (hybrid)</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-workshop">Workshop</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">Meeting of the HMA-EMA AI group with pharmaceutical industry representatives to discuss the application of AI in medicines regulation and development.</div>
+          <span class="event-card-link">Register / more info →</span>
+        </a>
+
+        <a class="event-card" href="https://www.ema.europa.eu/en/events/webinar-use-platform-technologies-non-clinical-clinical-domains" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Mar</div><div class="day">2</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">Webinar on the use of platform technologies in the non-clinical and clinical domains</div>
+              <div class="event-card-org">EMA · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">EMA stakeholder webinar on platform technology approaches in clinical and non-clinical development, including AI-assisted platform frameworks.</div>
+          <span class="event-card-link">Register / more info →</span>
+        </a>
+
+        <a class="event-card" href="https://www.ema.europa.eu/en/events/enprema-act-eu-workshop-paediatric-clinical-trials" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">May</div><div class="day">12</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">EnprEMA &amp; ACT EU workshop on paediatric clinical trials</div>
+              <div class="event-card-org">EMA · Amsterdam (hybrid)</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-workshop">Workshop</span>
+            <span class="event-badge eb-cat-clinical">Clinical AI</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">Workshop on advances in paediatric clinical trial design, including adaptive designs and digital technologies for trial conduct.</div>
+          <span class="event-card-link">Register / more info →</span>
+        </a>
+
+        <a class="event-card" href="https://www.ema.europa.eu/en/events/upcoming-events" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">EMA full events calendar — all upcoming workshops &amp; webinars</div>
+              <div class="event-card-org">EMA · Various formats</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Directory</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+          </div>
+          <div class="event-card-desc">Official EMA events calendar. Includes all upcoming stakeholder meetings, scientific workshops, webinars and public hearings on medicines regulation.</div>
+          <span class="event-card-link">Browse EMA events →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         FDA — US FOOD AND DRUG ADMINISTRATION
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="regulatory">
+      <div class="events-section-header">
+        <span class="events-section-icon">🇺🇸</span>
+        <span class="events-section-title">US Food and Drug Administration (FDA)</span>
+        <a href="https://www.fda.gov/news-events/fda-meetings-conferences-and-workshops" target="_blank" class="events-section-source">View all FDA events →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.fda.gov/news-events/regulatory-education-industry-redi-annual-conference-2026-innovative-regulatory-strategies-advance" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">May</div><div class="day">19</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">FDA REdI Annual Conference 2026 — innovative regulatory strategies for medical products</div>
+              <div class="event-card-org">FDA · Washington DC (hybrid)</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">FDA's annual Regulatory Education for Industry conference. Covers AI/ML tools, digital health technologies and regulatory pathways for drugs, devices and biologics. Free to attend.</div>
+          <span class="event-card-link">Register (free) →</span>
+        </a>
+
+        <a class="event-card" href="https://www.fda.gov/drugs/news-events-human-drugs/fiscal-year-2026-generic-drug-science-and-research-initiatives-public-workshop-06082026" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Jun</div><div class="day">8</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">FDA public workshop — using AI to address practical challenges for generic drug development and regulatory assessment</div>
+              <div class="event-card-org">FDA · White Oak Campus (hybrid)</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-workshop">Workshop</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">Dedicated FDA workshop session on AI for generic drug development and lifecycle management. Includes regulatory insights and presentation of ongoing FDA AI research initiatives. Free to attend.</div>
+          <span class="event-card-link">Register (free) →</span>
+        </a>
+
+        <a class="event-card" href="https://www.fda.gov/medical-devices/medical-devices-news-and-events/cdrh-events" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">FDA CDRH events — AI/ML in medical devices and software as medical device (SaMD)</div>
+              <div class="event-card-org">FDA CDRH · Online &amp; in-person</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Directory</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+          </div>
+          <div class="event-card-desc">Full CDRH events calendar covering AI/ML in medical devices, SaMD regulatory pathways, digital health and de novo classification workshops.</div>
+          <span class="event-card-link">Browse CDRH events →</span>
+        </a>
+
+        <a class="event-card" href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/artificial-intelligence-drug-development" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">FDA CDER AI hub — events, guidance and resources for AI in drug development</div>
+              <div class="event-card-org">FDA CDER · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Hub</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+          </div>
+          <div class="event-card-desc">CDER's central AI hub with links to all upcoming workshops, draft guidances, data standards and CDER AI research initiatives.</div>
+          <span class="event-card-link">Visit CDER AI hub →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         EHDS — EUROPEAN HEALTH DATA SPACE
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="data">
+      <div class="events-section-header">
+        <span class="events-section-icon">📊</span>
+        <span class="events-section-title">European Health Data Space (EHDS)</span>
+        <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en" target="_blank" class="events-section-source">EHDS official page →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds/european-health-data-space-ehds-webinar-series_en" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2025</div><div class="day">–26</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">Official EHDS webinar series — primary use, secondary use, governance &amp; implementation</div>
+              <div class="event-card-org">European Commission · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar series</span>
+            <span class="event-badge eb-cat-data">Data Gov</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Three-part webinar series by the European Commission covering: (1) primary use of health data &amp; EHR systems, (2) secondary use of health data for research, (3) implementation, governance and responsibilities under the EHDS regulation.</div>
+          <span class="event-card-link">Access webinar series →</span>
+        </a>
+
+        <a class="event-card" href="https://www.european-health-data-space.com/EHDS_Training.html" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">EHDS professional training programmes — pharmaceutical companies, healthcare organisations &amp; digital health providers</div>
+              <div class="event-card-org">EHDS.com · Online &amp; in-person</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-training">Training</span>
+            <span class="event-badge eb-cat-data">Data Gov</span>
+          </div>
+          <div class="event-card-desc">Tailored EHDS training covering the regulation's practical &amp; strategic implications for pharma, medical device manufacturers, research institutions and digital health providers. Includes GDPR/EHDS alignment, secondary use frameworks and data access rules.</div>
+          <span class="event-card-link">View training →</span>
+        </a>
+
+        <a class="event-card" href="https://www.eurordis.org/european-health-data-space-ehds-training-sessions/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">EURORDIS EHDS training — patient advocacy and rare disease perspective</div>
+              <div class="event-card-org">EURORDIS · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-training">Training</span>
+            <span class="event-badge eb-cat-data">Data Gov</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">EURORDIS training sessions equipping patient advocates and rare disease organisations with practical knowledge of EHDS rights, obligations and opportunities for health data access.</div>
+          <span class="event-card-link">View training →</span>
+        </a>
+
+        <a class="event-card" href="https://www.european-health-data-space.com/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">EHDS updates hub — latest news, events and implementation resources</div>
+              <div class="event-card-org">european-health-data-space.com</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Hub</span>
+            <span class="event-badge eb-cat-data">Data Gov</span>
+          </div>
+          <div class="event-card-desc">Central resource tracking EHDS legislative progress, upcoming events, country implementation status, FHIR standards alignment and stakeholder consultations.</div>
+          <span class="event-card-link">Visit EHDS hub →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         TOPRA — REGULATORY AFFAIRS
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="regulatory">
+      <div class="events-section-header">
+        <span class="events-section-icon">🎓</span>
+        <span class="events-section-title">TOPRA — Organisation for Professionals in Regulatory Affairs</span>
+        <a href="https://www.topra.org/TOPRA/TOPRA_Member/Events/training_courses.aspx" target="_blank" class="events-section-source">All TOPRA courses →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.topra.org/TOPRA/TOPRA_Member/Symposiums/2026_Symposium.aspx" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Oct</div><div class="day">19</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">TOPRA annual symposium 2026 — human medicines, medical devices &amp; IVDs</div>
+              <div class="event-card-org">TOPRA · Utrecht, Netherlands</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+            <span class="event-badge eb-loc-inperson">In person</span>
+          </div>
+          <div class="event-card-desc">Europe's premier regulatory affairs conference. Oct 19–21, Utrecht. Dedicated streams for human medicines, medical devices/IVDs and a one-day SME/academia update. AI in regulatory affairs is a key theme. Early-bird discount available until June 30.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.topra.org/TOPRA/TOPRA_Member/Events/Event_Display.aspx?EventKey=SPWBVIV25&Category=SPON" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">TOPRA sponsored webinar — augmenting regulatory intelligence with AI</div>
+              <div class="event-card-org">TOPRA · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Webinar on leveraging AI and large language models to augment regulatory intelligence workflows — covering submission review, label analysis and signal detection.</div>
+          <span class="event-card-link">More info →</span>
+        </a>
+
+        <a class="event-card" href="https://www.topra.org/TOPRA/TOPRA_Member/Events/Event_Display.aspx?EventKey=WEBPHV" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">TOPRA webinar — introduction to pharmacovigilance for regulatory professionals</div>
+              <div class="event-card-org">TOPRA · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar</span>
+            <span class="event-badge eb-cat-clinical">Clinical AI</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Introductory webinar on pharmacovigilance for regulatory professionals, including signal management, PSUR preparation, and the integration of AI tools in safety monitoring.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.topra.org/TOPRA/TOPRA_Member/Events/training_courses.aspx" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">TOPRA full training catalogue — regulatory science courses &amp; webinars</div>
+              <div class="event-card-org">TOPRA · Online &amp; in-person</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-training">Training</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+          </div>
+          <div class="event-card-desc">Full TOPRA training catalogue covering regulatory affairs, clinical evaluation, benefit-risk, data standards, AI in submissions, and EU regulatory updates for 2026.</div>
+          <span class="event-card-link">Browse catalogue →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         DIA GLOBAL
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="regulatory">
+      <div class="events-section-header">
+        <span class="events-section-icon">🌐</span>
+        <span class="events-section-title">DIA Global — Drug Information Association</span>
+        <a href="https://www.diaglobal.org/en/events" target="_blank" class="events-section-source">All DIA events →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://globalforum.diaglobal.org/issue/april-2026/the-european-health-data-space-ehds-breakthrough-moment-in-sharing-health-data/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">DIA Global Forum — EHDS: breakthrough moment in sharing health data</div>
+              <div class="event-card-org">DIA Global · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-seminar">Forum</span>
+            <span class="event-badge eb-cat-data">Data Gov</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">DIA Global Forum session on the EHDS regulation — covering secondary use of health data for research and regulatory purposes, implementation challenges and opportunities for the pharmaceutical industry.</div>
+          <span class="event-card-link">Read &amp; register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.diaglobal.org/en/events" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">DIA events calendar — global conferences, webinars &amp; workshops in regulatory, clinical &amp; data science</div>
+              <div class="event-card-org">DIA Global · Various</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Directory</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+          </div>
+          <div class="event-card-desc">Full DIA events directory covering regulatory science, clinical operations, data science and AI. Includes annual meetings, regional workshops and focused training webinars.</div>
+          <span class="event-card-link">Browse DIA events →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         OECD / WHO
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="general">
+      <div class="events-section-header">
+        <span class="events-section-icon">🌍</span>
+        <span class="events-section-title">OECD &amp; WHO — AI in Health &amp; Policy</span>
+        <a href="https://oecd.ai/en/site/health" target="_blank" class="events-section-source">OECD AI health →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://oecd.ai/en/site/health" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">OECD AI Policy Observatory — health AI events, publications &amp; policy frameworks</div>
+              <div class="event-card-org">OECD · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Hub</span>
+            <span class="event-badge eb-cat-general">AI Governance</span>
+          </div>
+          <div class="event-card-desc">OECD's central hub for AI in health — covering scaling AI in health systems, responsible AI governance, health data governance, workforce capacity building and policy checklists for member countries.</div>
+          <span class="event-card-link">Visit OECD AI health →</span>
+        </a>
+
+        <a class="event-card" href="https://www.who.int/teams/digital-health-and-innovation/ai-for-health" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">WHO AI for health — responsible AI governance, ethics &amp; global health</div>
+              <div class="event-card-org">WHO · Geneva &amp; online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Hub</span>
+            <span class="event-badge eb-cat-general">AI Governance</span>
+          </div>
+          <div class="event-card-desc">WHO's AI for health programme — events, guidance, expert consultations and the WHO Consortium of Collaborating Centres on AI for Health governance and ethics.</div>
+          <span class="event-card-link">Visit WHO AI health →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         PHARMA AI CONFERENCES
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="ai-discovery">
+      <div class="events-section-header">
+        <span class="events-section-icon">🧬</span>
+        <span class="events-section-title">Pharma AI &amp; Drug Discovery Conferences</span>
+        <a href="https://intuitionlabs.ai/conferences" target="_blank" class="events-section-source">189 life sciences events →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.scopesummit.com/AI-Clinical-Trials" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Feb</div><div class="day">2</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">SCOPE summit — AI in clinical research (February 2–5, 2026)</div>
+              <div class="event-card-org">SCOPE · Tampa, FL &amp; Virtual</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-clinical">Clinical AI</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">Dedicated AI track at SCOPE 2026 — covering AI/ML in adaptive trial design, predictive modelling, real-world evidence integration and clinical decision support.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.bio-itworldexpo.com/ai-pharma-biotech" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">May</div><div class="day">18</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">Bio-IT World Expo — AI for drug discovery &amp; development (May 18–20)</div>
+              <div class="event-card-org">Bio-IT World · Boston, MA &amp; Virtual</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+            <span class="event-badge eb-loc-hybrid">Hybrid</span>
+          </div>
+          <div class="event-card-desc">Premier life sciences AI conference. Tracks on foundation models in drug R&D, federated learning, computational governance, generative chemistry and AI-enabled biomarker discovery.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://berryprofessionals.com/ai-and-data-in-pharma-and-healthcare-summit-june-2026/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">Jun</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">AI and data in pharma &amp; healthcare summit — June 2026</div>
+              <div class="event-card-org">Berry Professionals · Virtual</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Summit</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Summit focused on practical AI and data applications across the pharmaceutical value chain — from R&D and clinical operations to regulatory submissions and pharmacovigilance.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://virtueinsight.com/events/pharmacovigilance-usa-2026/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">41st Pharmacovigilance USA 2026 — AI-driven safety operations &amp; real-world data</div>
+              <div class="event-card-org">Virtue Insight · USA</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-clinical">Clinical AI</span>
+          </div>
+          <div class="event-card-desc">Conference dedicated to drug safety — AI agents in pharmacovigilance, predictive signal detection, real-world data integration and regulatory compliance under EU and US frameworks.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://aidrivendrugdevelopment.com/events/ai-drug-discovery-development-summit" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">Oct</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">AI drug discovery &amp; development summit 2026</div>
+              <div class="event-card-org">AI-Driven Drug Development · TBC</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Summit</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+          </div>
+          <div class="event-card-desc">Summit dedicated to the full AI drug development lifecycle — from target identification and generative chemistry through AI-assisted clinical development and regulatory strategy.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.aiche.org/conferences/pd2m-ai-pharma/2026" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">AIChE PD2M — AI for pharma conference 2026</div>
+              <div class="event-card-org">AIChE · Virtual / TBC</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+          </div>
+          <div class="event-card-desc">American Institute of Chemical Engineers conference on process development and drug manufacturing (PD2M) with an AI track covering machine learning for process control, formulation and quality.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         WEBINARS — REAL-WORLD EVIDENCE & CLINICAL AI
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="clinical">
+      <div class="events-section-header">
+        <span class="events-section-icon">🔬</span>
+        <span class="events-section-title">Webinars — Real-world Evidence, Clinical AI &amp; Pharmacovigilance</span>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.pharmexec.com/view/using-ai-to-advance-validated-real-world-evidence" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date"><div class="month">May</div><div class="day">5</div><div class="year">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">Webinar — using AI to advance validated real-world evidence (HealthVerity)</div>
+              <div class="event-card-org">PharmExec · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar</span>
+            <span class="event-badge eb-cat-clinical">Clinical AI</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Webinar on AI-driven methodologies for generating validated real-world evidence for clinical and commercial decision-making — covering data linkage, confounding control and regulatory acceptance.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://www.nationalacademies.org/projects/PGA-BISO-22-P-495" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">Series</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">National Academies — advancing drug discovery webinar series</div>
+              <div class="event-card-org">National Academies of Sciences · Online</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-webinar">Webinar series</span>
+            <span class="event-badge eb-cat-ai-discovery">AI Drug Dev</span>
+            <span class="event-badge eb-loc-online">Online</span>
+          </div>
+          <div class="event-card-desc">Ongoing National Academies webinar series on advancing drug discovery — covering AI-enabled target identification, translational research, clinical translation and regulatory science.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+         AI GOVERNANCE & FRONTIER MODELS
+    ══════════════════════════════════════════════════════ -->
+    <div class="events-section" data-cat="general">
+      <div class="events-section-header">
+        <span class="events-section-icon">🤖</span>
+        <span class="events-section-title">General AI — Governance, LLMs &amp; Frontier Models</span>
+        <a href="https://oecd.ai/en/" target="_blank" class="events-section-source">OECD AI Observatory →</a>
+      </div>
+      <div class="events-grid">
+
+        <a class="event-card" href="https://www.health-ai-summit.com/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">Health AI summit 2026 — frontier models, governance &amp; responsible deployment in healthcare</div>
+              <div class="event-card-org">Health AI Summit · TBC</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Summit</span>
+            <span class="event-badge eb-cat-general">AI Governance</span>
+          </div>
+          <div class="event-card-desc">Summit on responsible AI deployment in healthcare — covering LLMs in clinical workflows, AI Act compliance, bias in medical AI, frontier model evaluation and health system AI governance frameworks.</div>
+          <span class="event-card-link">Register →</span>
+        </a>
+
+        <a class="event-card" href="https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-ai-and-health/" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">2026</div><div class="day">TBC</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">IJCAI-ECAI 2026 — AI and health track (call for papers &amp; participation)</div>
+              <div class="event-card-org">IJCAI · TBC</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Conference</span>
+            <span class="event-badge eb-cat-general">AI Governance</span>
+          </div>
+          <div class="event-card-desc">International Joint Conference on AI — dedicated health AI track covering machine learning for clinical decision support, biomedical NLP, explainability and AI safety in healthcare settings.</div>
+          <span class="event-card-link">Submit / register →</span>
+        </a>
+
+        <a class="event-card" href="https://intuitionlabs.ai/conferences" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">IntuitionLabs — 189 pharma &amp; biotech AI conferences directory 2026</div>
+              <div class="event-card-org">IntuitionLabs · Global</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Directory</span>
+            <span class="event-badge eb-cat-general">All topics</span>
+          </div>
+          <div class="event-card-desc">Comprehensive directory of 189 life sciences AI events in 2026 — searchable by topic (generative AI, ML, LLMs, data governance, regulatory) and format (virtual, in-person, hybrid).</div>
+          <span class="event-card-link">Browse 189 events →</span>
+        </a>
+
+        <a class="event-card" href="https://www.raps.org/learn-develop/events.html" target="_blank">
+          <div class="event-card-top">
+            <div class="event-card-date ongoing"><div class="month">All</div><div class="day">2026</div></div>
+            <div class="event-card-meta">
+              <div class="event-card-title">RAPS events calendar — regulatory affairs webinars, courses &amp; annual convergence</div>
+              <div class="event-card-org">RAPS · Online &amp; in-person</div>
+            </div>
+          </div>
+          <div class="event-card-badges">
+            <span class="event-badge eb-type-conf">Directory</span>
+            <span class="event-badge eb-cat-regulatory">Regulatory</span>
+          </div>
+          <div class="event-card-desc">RAPS full events calendar — regulatory webinars, online courses, regional workshops and the annual RAPS Regulatory Convergence conference. Includes AI in regulatory science sessions.</div>
+          <span class="event-card-link">Browse RAPS events →</span>
+        </a>
+
+      </div>
+    </div>
+
+  </div><!-- /events-body -->
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:14px;">
+            <div class="logo-icon">AI</div>
+            <div class="logo-text">
+              <span class="logo-title">Pharma AI &amp; Data Watch</span>
+              <span class="logo-sub">Intelligence portal · Drug development</span>
+            </div>
+          </div>
+          <p>An independent portal tracking AI, data, and regulatory science across the drug development ecosystem.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="index.html">News &amp; papers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="index.html">Regulatory science</a></li>
+            <li><a href="index.html">Drug discovery AI</a></li>
+            <li><a href="index.html">Clinical trials</a></li>
+            <li><a href="index.html">Data governance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Key portals</h4>
+          <ul>
+            <li><a href="https://www.ema.europa.eu/en/events/upcoming-events" target="_blank">EMA events</a></li>
+            <li><a href="https://www.fda.gov/news-events/fda-meetings-conferences-and-workshops" target="_blank">FDA workshops</a></li>
+            <li><a href="https://www.topra.org/TOPRA/TOPRA_Member/Events/training_courses.aspx" target="_blank">TOPRA courses</a></li>
+            <li><a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds/european-health-data-space-ehds-webinar-series_en" target="_blank">EHDS webinars</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pharma AI &amp; Data Watch — Maintained by <strong>Félicien Tosso</strong>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Category filter pills
+    const pills = document.querySelectorAll('.cat-pill');
+    const sections = document.querySelectorAll('.events-section[data-cat]');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const cat = pill.dataset.cat;
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+
+        sections.forEach(sec => {
+          if (cat === 'all' || sec.dataset.cat === cat) {
+            sec.classList.remove('hidden');
+          } else {
+            sec.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
