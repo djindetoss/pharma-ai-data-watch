@@ -3,17 +3,17 @@
 Pharma AI & Data Watch — Automated ingestion pipeline
 ------------------------------------------------------
 Fetches new articles from:
-  - Perplexity Sonar (live web search — primary AI-powered source)
-  - PubMed (NCBI E-utilities API)
-  - bioRxiv (preprint API)
-  - EMA & FDA RSS feeds (regulatory news)
-  - General AI RSS feeds (TechCrunch, MIT Tech Review, The Verge, Nature MI, VentureBeat)
+  - NewsAPI (free — 80,000+ sources, no credit card needed)
+  - PubMed (NCBI E-utilities API — free)
+  - bioRxiv (preprint API — free)
+  - EMA & FDA RSS feeds (regulatory news — free)
+  - General AI RSS feeds (TechCrunch, MIT Tech Review, The Verge, Nature MI — free)
   - Claude Haiku (optional — cleans up raw PubMed/bioRxiv abstracts)
 
 Usage:
-  python pipeline.py                    # fetch all sources
-  python pipeline.py --dry-run          # fetch and print without writing
-  python pipeline.py --source perplexity  # run one source only
+  python pipeline.py                   # fetch all sources
+  python pipeline.py --dry-run         # fetch and print without writing
+  python pipeline.py --source newsapi  # run one source only
   python pipeline.py --source pubmed
   python pipeline.py --source biorxiv
   python pipeline.py --source regulatory
@@ -43,12 +43,12 @@ import requests
 import feedparser
 from dateutil import parser as dateparser
 
-# ── Optional LLM sources (loaded lazily so missing keys don't crash) ──────────
+# ── Optional sources (loaded lazily so missing keys don't crash) ──────────────
 try:
-    from sources.perplexity_fetcher import fetch_perplexity
-    _HAS_PERPLEXITY = True
+    from sources.newsapi_fetcher import fetch_newsapi
+    _HAS_NEWSAPI = True
 except ImportError:
-    _HAS_PERPLEXITY = False
+    _HAS_NEWSAPI = False
 
 try:
     from sources.claude_enhancer import enhance_articles
@@ -481,7 +481,7 @@ def main():
     parser.add_argument("--dry-run",          action="store_true",  help="Fetch but do not write anything")
     parser.add_argument("--auto-approve-all", action="store_true",  help="Auto-approve all items above min score")
     parser.add_argument("--source", default="all",
-        choices=["perplexity", "pubmed", "biorxiv", "regulatory", "ainews", "all"])
+        choices=["newsapi", "pubmed", "biorxiv", "regulatory", "ainews", "all"])
     args = parser.parse_args()
 
     log.info("═" * 60)
@@ -499,9 +499,9 @@ def main():
     # ── Fetch from all sources ────────────────────────────────────────────────
     new_items = []
 
-    # 1. Perplexity — live web search (primary AI-powered source)
-    if args.source in ("perplexity", "all") and _HAS_PERPLEXITY and CONFIG.get("perplexity", {}).get("enabled"):
-        new_items += fetch_perplexity(CONFIG, dry_run=args.dry_run)
+    # 1. NewsAPI — broad news from 80,000+ sources (free, no credit card)
+    if args.source in ("newsapi", "all") and _HAS_NEWSAPI and CONFIG.get("newsapi", {}).get("enabled"):
+        new_items += fetch_newsapi(CONFIG, dry_run=args.dry_run)
 
     # 2. PubMed — peer-reviewed papers
     if args.source in ("pubmed", "all"):

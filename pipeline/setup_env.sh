@@ -23,15 +23,15 @@ fi
 echo ""
 echo "  You need to add your API keys to: $ENV_FILE"
 echo ""
-echo "  1. PERPLEXITY_API_KEY  → https://www.perplexity.ai/settings/api"
-echo "  2. ANTHROPIC_API_KEY   → https://console.anthropic.com/ (optional)"
-echo "  3. NCBI_API_KEY        → https://www.ncbi.nlm.nih.gov/account/ (optional)"
+echo "  1. NEWSAPI_KEY         -> https://newsapi.org/register (free, no credit card)"
+echo "  2. ANTHROPIC_API_KEY   -> https://console.anthropic.com/ (optional)"
+echo "  3. NCBI_API_KEY        -> https://www.ncbi.nlm.nih.gov/account/ (optional)"
 echo ""
 
 # Install Python dependencies
-echo "  Installing Python dependencies…"
+echo "  Installing Python dependencies..."
 pip install -r "$SCRIPT_DIR/requirements.txt" --quiet
-echo "  ✓ Dependencies installed."
+echo "  Done. Dependencies installed."
 echo ""
 echo "  Setup complete. Add your API keys to .env then run:"
 echo "    python pipeline/pipeline.py --dry-run"

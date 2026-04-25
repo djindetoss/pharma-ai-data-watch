@@ -7,10 +7,10 @@
     "processed_ids_file": "processed/seen_ids.json"
   },
 
-  "perplexity": {
+  "newsapi": {
     "enabled": true,
-    "model": "sonar-pro",
-    "_comment": "sonar-pro has real-time web search. Use sonar for cheaper/faster option."
+    "max_results_per_query": 10,
+    "_comment": "Free tier at newsapi.org — 1,000 requests/day, no credit card needed"
   },
 
   "claude_enhancer": {

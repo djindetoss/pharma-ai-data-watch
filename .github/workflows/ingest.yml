@@ -40,9 +40,9 @@ jobs:
 
       - name: Run ingestion pipeline
         env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
-          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
-          NCBI_API_KEY:       ${{ secrets.NCBI_API_KEY }}
+          NEWSAPI_KEY:       ${{ secrets.NEWSAPI_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NCBI_API_KEY:      ${{ secrets.NCBI_API_KEY }}
         run: |
           SOURCE="${{ github.event.inputs.source || 'all' }}"
           AUTO="${{ github.event.inputs.auto_approve_all || 'false' }}"
