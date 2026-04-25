@@ -51,10 +51,17 @@ SEARCH_QUERIES = [
         "sources": None,
     },
     {
-        "topic":  "EHDS, health data governance and IDMP",
-        "q":      "(\"European Health Data Space\" OR EHDS OR IDMP OR FHIR) AND (health OR medicine OR pharmaceutical)",
+        "topic":  "EHDS, health data and IDMP",
+        "q":      "(\"European Health Data Space\" OR EHDS OR IDMP OR FHIR OR \"health data\" OR \"real-world data\" OR \"secondary use\" OR \"DARWIN EU\" OR \"health data agency\") AND (health OR medicine OR pharmaceutical OR clinical OR regulatory)",
         "type":   "news",
-        "badge":  "Policy",
+        "badge":  "Data",
+        "sources": None,
+    },
+    {
+        "topic":  "NDSG, health data networks and RWD/RWE",
+        "q":      "(\"network data steering group\" OR NDSG OR \"real-world evidence\" OR RWE OR \"data stewardship\" OR \"federated learning\" OR \"federated data\" OR \"data governance\" OR \"data standard\") AND (pharmaceutical OR healthcare OR \"drug development\" OR clinical OR EMA OR FDA OR regulatory)",
+        "type":   "news",
+        "badge":  "Data",
         "sources": None,
     },
     {
@@ -287,11 +294,19 @@ _KNOWN_TAGS = [
     ("Generative AI",    ["generative ai", "diffusion model"]),
     ("EU AI Act",        ["eu ai act", "ai act"]),
     ("EHDS",             ["ehds", "health data space"]),
+    ("HDA",              ["health data agency", "health data authority"]),
+    ("NDSG",             ["network data steering group", "ndsg"]),
+    ("DARWIN EU",        ["darwin eu", "darwin-eu", "data analysis and real-world"]),
     ("AlphaFold",        ["alphafold"]),
     ("Regulatory",       ["regulatory", "regulation", "compliance"]),
     ("Biotech",          ["biotech", "biopharma", "biopharmaceutical"]),
     ("RWE",              ["real-world evidence", "real world evidence", "rwe"]),
-    ("Data governance",  ["data governance", "idmp", "fhir"]),
+    ("RWD",              ["real-world data", "real world data", "rwd"]),
+    ("IDMP",             ["idmp"]),
+    ("FHIR",             ["fhir", "hl7"]),
+    ("Federated data",   ["federated learning", "federated data", "federated analysis"]),
+    ("Data governance",  ["data governance", "data steward", "secondary use of health"]),
+    ("Health data",      ["health data", "patient data", "clinical data"]),
 ]
 
 
