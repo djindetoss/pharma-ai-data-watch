@@ -1,0 +1,123 @@
+{
+  "_comment": "Pharma AI & Data Watch — ingestion pipeline configuration",
+
+  "output": {
+    "articles_json": "../portal/js/articles.json",
+    "drafts_dir": "drafts",
+    "processed_ids_file": "processed/seen_ids.json"
+  },
+
+  "settings": {
+    "max_articles_per_source": 10,
+    "auto_approve_threshold": 3,
+    "min_relevance_score": 1,
+    "max_total_articles": 100,
+    "days_lookback": 7
+  },
+
+  "pubmed": {
+    "enabled": true,
+    "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+    "search_queries": [
+      "artificial intelligence drug discovery",
+      "machine learning pharmaceutical regulatory",
+      "deep learning clinical trial",
+      "natural language processing pharmacovigilance",
+      "AI drug development EMA FDA"
+    ],
+    "max_results_per_query": 5,
+    "db": "pubmed"
+  },
+
+  "biorxiv": {
+    "enabled": true,
+    "base_url": "https://api.biorxiv.org/details",
+    "search_terms": [
+      "artificial intelligence drug",
+      "machine learning pharmaceutical",
+      "deep learning clinical"
+    ],
+    "server": "biorxiv"
+  },
+
+  "rss_sources": {
+    "enabled": true,
+    "feeds": [
+      {
+        "url": "https://www.ema.europa.eu/en/feeds/latest-news",
+        "name": "EMA",
+        "type": "news",
+        "badge": "Regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml",
+        "name": "FDA",
+        "type": "news",
+        "badge": "Regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://www.who.int/feeds/entity/mediacentre/news/en/rss.xml",
+        "name": "WHO",
+        "type": "news",
+        "badge": "Policy",
+        "auto_approve": false
+      }
+    ]
+  },
+
+  "ai_news_sources": {
+    "enabled": true,
+    "feeds": [
+      {
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "name": "TechCrunch AI",
+        "type": "ainews",
+        "badge": "Tech"
+      },
+      {
+        "url": "https://www.technologyreview.com/feed/",
+        "name": "MIT Technology Review",
+        "type": "ainews",
+        "badge": "Research"
+      },
+      {
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/rss.xml",
+        "name": "The Verge",
+        "type": "ainews",
+        "badge": "Tech"
+      },
+      {
+        "url": "https://feeds.nature.com/natmachintell/rss/current",
+        "name": "Nature Machine Intelligence",
+        "type": "ainews",
+        "badge": "Research"
+      },
+      {
+        "url": "https://venturebeat.com/category/ai/feed/",
+        "name": "VentureBeat AI",
+        "type": "ainews",
+        "badge": "Tech"
+      }
+    ]
+  },
+
+  "pharma_keywords": [
+    "drug discovery", "drug development", "pharmaceutical", "medicinal",
+    "clinical trial", "regulatory", "EMA", "FDA", "CHMP", "pharmacovigilance",
+    "biomarker", "therapeutics", "molecule", "compound", "protein",
+    "target identification", "lead optimization", "ADMET", "toxicity",
+    "clinical", "patient", "disease", "treatment", "therapy", "medicine",
+    "health", "biotech", "biopharma", "precision medicine", "genomics",
+    "proteomics", "EHDS", "real-world evidence", "RWE", "adverse event"
+  ],
+
+  "ai_keywords": [
+    "artificial intelligence", "machine learning", "deep learning", "neural network",
+    "large language model", "LLM", "transformer", "generative AI", "foundation model",
+    "reinforcement learning", "natural language processing", "NLP",
+    "computer vision", "graph neural network", "GNN", "diffusion model",
+    "AlphaFold", "ChatGPT", "GPT", "Claude", "Gemini", "Llama"
+  ]
+}
