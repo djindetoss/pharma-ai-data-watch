@@ -7,6 +7,18 @@
     "processed_ids_file": "processed/seen_ids.json"
   },
 
+  "perplexity": {
+    "enabled": true,
+    "model": "sonar-pro",
+    "_comment": "sonar-pro has real-time web search. Use sonar for cheaper/faster option."
+  },
+
+  "claude_enhancer": {
+    "enabled": true,
+    "max_articles_to_enhance": 20,
+    "_comment": "Uses claude-haiku to clean up PubMed/bioRxiv raw abstracts"
+  },
+
   "settings": {
     "max_articles_per_source": 10,
     "auto_approve_threshold": 3,

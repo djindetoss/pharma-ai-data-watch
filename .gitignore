@@ -9,9 +9,10 @@ dist/
 build/
 *.egg
 
-# Pipeline — do NOT commit seen IDs or draft articles
+# Pipeline — do NOT commit seen IDs, drafts, or secrets
 pipeline/processed/seen_ids.json
 pipeline/drafts/
+pipeline/.env       # contains API keys — never commit this
 
 # macOS
 .DS_Store

@@ -3,16 +3,22 @@
 Pharma AI & Data Watch — Automated ingestion pipeline
 ------------------------------------------------------
 Fetches new articles from:
+  - Perplexity Sonar (live web search — primary AI-powered source)
   - PubMed (NCBI E-utilities API)
   - bioRxiv (preprint API)
   - EMA & FDA RSS feeds (regulatory news)
   - General AI RSS feeds (TechCrunch, MIT Tech Review, The Verge, Nature MI, VentureBeat)
+  - Claude Haiku (optional — cleans up raw PubMed/bioRxiv abstracts)
 
 Usage:
-  python pipeline.py             # fetch all sources, save drafts + auto-approve high-confidence items
-  python pipeline.py --dry-run   # fetch and print results without writing anything
-  python pipeline.py --source pubmed        # run a single source only
-  python pipeline.py --auto-approve-all     # skip manual review, approve everything above min score
+  python pipeline.py                    # fetch all sources
+  python pipeline.py --dry-run          # fetch and print without writing
+  python pipeline.py --source perplexity  # run one source only
+  python pipeline.py --source pubmed
+  python pipeline.py --source biorxiv
+  python pipeline.py --source regulatory
+  python pipeline.py --source ainews
+  python pipeline.py --auto-approve-all # approve everything above min score
 """
 
 import sys
@@ -22,13 +28,33 @@ import argparse
 import logging
 import time
 import re
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote_plus
+from datetime import datetime, timedelta, timezone
 
+# Load .env file if present (API keys)
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).parent / ".env")
+except ImportError:
+    pass  # python-dotenv not installed yet — keys must be set in environment
+
+from urllib.parse import quote_plus
 import requests
 import feedparser
 from dateutil import parser as dateparser
+
+# ── Optional LLM sources (loaded lazily so missing keys don't crash) ──────────
+try:
+    from sources.perplexity_fetcher import fetch_perplexity
+    _HAS_PERPLEXITY = True
+except ImportError:
+    _HAS_PERPLEXITY = False
+
+try:
+    from sources.claude_enhancer import enhance_articles
+    _HAS_CLAUDE = True
+except ImportError:
+    _HAS_CLAUDE = False
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -454,7 +480,8 @@ def main():
     parser = argparse.ArgumentParser(description="Pharma AI & Data Watch — ingestion pipeline")
     parser.add_argument("--dry-run",          action="store_true",  help="Fetch but do not write anything")
     parser.add_argument("--auto-approve-all", action="store_true",  help="Auto-approve all items above min score")
-    parser.add_argument("--source",           choices=["pubmed", "biorxiv", "regulatory", "ainews", "all"], default="all")
+    parser.add_argument("--source", default="all",
+        choices=["perplexity", "pubmed", "biorxiv", "regulatory", "ainews", "all"])
     args = parser.parse_args()
 
     log.info("═" * 60)
@@ -469,22 +496,35 @@ def main():
     seen_ids  = load_seen_ids()
     log.info(f"Existing articles: {len(existing)} | Already seen IDs: {len(seen_ids)}")
 
-    # Fetch from requested sources
+    # ── Fetch from all sources ────────────────────────────────────────────────
     new_items = []
 
+    # 1. Perplexity — live web search (primary AI-powered source)
+    if args.source in ("perplexity", "all") and _HAS_PERPLEXITY and CONFIG.get("perplexity", {}).get("enabled"):
+        new_items += fetch_perplexity(CONFIG, dry_run=args.dry_run)
+
+    # 2. PubMed — peer-reviewed papers
     if args.source in ("pubmed", "all"):
         new_items += fetch_pubmed(dry_run=args.dry_run)
 
+    # 3. bioRxiv — preprints
     if args.source in ("biorxiv", "all"):
         new_items += fetch_biorxiv(dry_run=args.dry_run)
 
+    # 4. EMA / FDA RSS — regulatory news
     if args.source in ("regulatory", "all"):
         new_items += fetch_regulatory_rss(dry_run=args.dry_run)
 
+    # 5. AI news RSS
     if args.source in ("ainews", "all"):
         new_items += fetch_ai_news_rss(dry_run=args.dry_run)
 
     log.info(f"Total fetched: {len(new_items)} items across all sources")
+
+    # ── Optional: Claude excerpt enhancement ─────────────────────────────────
+    if _HAS_CLAUDE and CONFIG.get("claude_enhancer", {}).get("enabled") and not args.dry_run:
+        max_e = CONFIG["claude_enhancer"].get("max_articles_to_enhance", 20)
+        new_items = enhance_articles(new_items, max_enhance=max_e)
 
     if args.dry_run:
         log.info("Dry run — no files written.")
@@ -493,20 +533,18 @@ def main():
             log.info(f"  [{status}] score={item.get('_score',0)} [{item['type']}] {item['title'][:80]}")
         return
 
-    # Merge & deduplicate
+    # ── Merge, deduplicate, persist ───────────────────────────────────────────
     approved, drafts, seen_ids = merge_and_deduplicate(
         existing, new_items, seen_ids, auto_approve_all=args.auto_approve_all
     )
 
-    # Persist
     save_articles(approved)
     save_drafts(drafts)
     save_seen_ids(seen_ids)
 
-    # Summary
-    n_new_approved = len(approved) - len(existing)
+    n_new = len(approved) - len(existing)
     log.info("═" * 60)
-    log.info(f"  New auto-approved : {n_new_approved}")
+    log.info(f"  New auto-approved : {n_new}")
     log.info(f"  Sent to drafts    : {len(drafts)}")
     log.info(f"  Total in portal   : {len(approved)}")
     if drafts:
