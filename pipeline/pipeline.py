@@ -474,6 +474,16 @@ def fetch_regulatory_rss(dry_run=False) -> list:
     return results
 
 
+def fetch_data_rss(dry_run=False) -> list:
+    """Fetch curated data governance / interoperability RSS feeds."""
+    if not CONFIG.get("data_sources", {}).get("enabled"):
+        return []
+    results = []
+    for feed in CONFIG["data_sources"]["feeds"]:
+        results += fetch_rss_feed(feed, feed["type"], require_pharma=True)
+    return results
+
+
 def fetch_ai_news_rss(dry_run=False) -> list:
     if not CONFIG["ai_news_sources"]["enabled"]:
         return []
@@ -563,7 +573,7 @@ def main():
     parser.add_argument("--dry-run",          action="store_true",  help="Fetch but do not write anything")
     parser.add_argument("--auto-approve-all", action="store_true",  help="Auto-approve all items above min score")
     parser.add_argument("--source", default="all",
-        choices=["newsapi", "pubmed", "biorxiv", "regulatory", "ainews", "events", "all"])
+        choices=["newsapi", "pubmed", "biorxiv", "regulatory", "data", "ainews", "events", "all"])
     args = parser.parse_args()
 
     log.info("═" * 60)
@@ -597,7 +607,11 @@ def main():
     if args.source in ("regulatory", "all"):
         new_items += fetch_regulatory_rss(dry_run=args.dry_run)
 
-    # 5. AI news RSS
+    # 5. Data governance / interoperability RSS (Healthcare IT News, STAT News)
+    if args.source in ("data", "all"):
+        new_items += fetch_data_rss(dry_run=args.dry_run)
+
+    # 6. AI news RSS
     if args.source in ("ainews", "all"):
         new_items += fetch_ai_news_rss(dry_run=args.dry_run)
 

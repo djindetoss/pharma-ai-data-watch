@@ -38,8 +38,12 @@
       { "q": "AI regulatory science ICH reflection paper guideline",                           "topic": "regulatory"     },
       { "q": "artificial intelligence clinical trial adaptive decentralised pharmacovigilance", "topic": "clinical-ai"    },
       { "q": "natural language processing pharmacovigilance adverse event signal detection",    "topic": "clinical-ai"    },
-      { "q": "real-world evidence real-world data electronic health records AI",               "topic": "data-governance" },
-      { "q": "federated learning health data EHDS FHIR interoperability",                      "topic": "data-governance" }
+      { "q": "EHDS European Health Data Space secondary use health data governance regulation",  "topic": "data-governance" },
+      { "q": "IDMP SPOR FHIR OMOP data standard interoperability pharmaceutical regulatory",   "topic": "data-governance" },
+      { "q": "DARWIN EU real-world data network federated analysis pharmacoepidemiology EMA",   "topic": "data-governance" },
+      { "q": "real-world evidence data quality fit-for-purpose regulatory EMA FDA",            "topic": "data-governance" },
+      { "q": "federated learning privacy-preserving health data pseudonymisation pharmaceutical", "topic": "data-governance" },
+      { "q": "patient registry disease registry data governance rare disease EMA",              "topic": "data-governance" }
     ],
     "max_results_per_query": 5,
     "db": "pubmed"
@@ -90,6 +94,29 @@
     "enabled": false,
     "_comment": "All tested RSS event feeds return 404. Events are sourced via 4 dedicated NewsAPI queries instead (webinars, conferences, AI governance events, health data events). Re-enable with valid RSS URLs if available.",
     "feeds": []
+  },
+
+  "data_sources": {
+    "enabled": true,
+    "_comment": "Curated feeds specifically for the Data tab: interoperability, FHIR, EHR, data standards, health data policy.",
+    "feeds": [
+      {
+        "url": "https://www.healthcareitnews.com/rss.xml",
+        "name": "Healthcare IT News",
+        "type": "news",
+        "badge": "Data",
+        "topic": "data-governance",
+        "auto_approve": false
+      },
+      {
+        "url": "https://www.statnews.com/feed/",
+        "name": "STAT News",
+        "type": "news",
+        "badge": "Data",
+        "topic": "data-governance",
+        "auto_approve": false
+      }
+    ]
   },
 
   "ai_news_sources": {

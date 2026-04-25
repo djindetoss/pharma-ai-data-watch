@@ -10,6 +10,7 @@ let ALL_ARTICLES      = [];      // populated from articles.json
 const TOPIC_FILTERS = {
   regulatory: {
     label: '🏛️ Regulatory science',
+    desc:  'EMA · FDA · MHRA · ICH guidance · approval pathways · AI Act',
     keywords: ['ema', 'fda', 'chmp', 'regulatory', 'guidance', 'prime', 'conditional marketing',
                 'marketing authorisation', 'mhra', 'who', 'ich', 'reflection paper', 'epar',
                 'orphan', 'advanced therapy', 'atmp', 'qualification', 'benefit-risk', 'label',
@@ -18,46 +19,63 @@ const TOPIC_FILTERS = {
   },
   'data-governance': {
     label: '📊 Data',
+    desc:  'EHDS · IDMP · FHIR · OMOP · DARWIN EU · NDSG · RWD/RWE frameworks · interoperability · data quality',
     keywords: [
-      // Key EU bodies & programmes
-      'ehds', 'european health data space', 'hda', 'health data agency', 'health data authority',
-      'ndsg', 'network data steering group', 'darwin eu', 'darwin-eu', 'tehdas',
-      'encePP', 'enPP', 'data analysis and real-world interrogation',
-      'imi', 'ihi', 'innovative health initiative',
-      // Standards & interoperability
-      'idmp', 'fhir', 'hl7', 'omop', 'cdm', 'snomed', 'icd-10', 'loinc',
-      'data standard', 'interoperability', 'linked data', 'open data',
-      // Governance & policy
-      'data governance', 'data steward', 'data stewardship', 'data access',
-      'secondary use', 'health data space', 'data space', 'data sharing',
-      'data infrastructure', 'data ecosystem', 'data strategy', 'data policy',
-      'data act', 'data management', 'data protection',
-      // Privacy & compliance
-      'gdpr', 'privacy', 'pseudonymisation', 'anonymisation', 'pseudonymization',
-      'anonymization', 'consent', 'data minimisation', 'privacy-preserving',
-      'differential privacy', 'secure multi-party', 'trusted research environment',
-      // Real-world data & evidence
-      'real-world data', 'rwd', 'real-world evidence', 'rwe', 'claims data',
-      'administrative data', 'registry', 'patient registry', 'disease registry',
-      'primary care data', 'electronic health record', 'ehr', 'emr',
-      'medical record', 'hospital data', 'wearable data', 'sensor data',
-      // Data science methods
-      'federated learning', 'federated data', 'federated analysis',
-      'data lake', 'data platform', 'data warehouse', 'data quality',
-      'synthetic data', 'fair data', 'findable accessible', 'data linkage',
-      'data integration', 'data harmonisation', 'data harmonization',
-      'natural language processing', 'text mining', 'information extraction',
-      // Biobanks & cohorts
-      'biobank', 'biobanking', 'cohort', 'patient cohort', 'population cohort',
-      'rare disease registry', 'orphan data', 'genomic data', 'omics data',
-      // Health information systems
-      'health information system', 'his', 'national health data',
-      'hospital information', 'claims database', 'insurance data',
-      'population health data', 'epidemiological data',
+      // ── EU health data frameworks & regulations ─────────────────────────
+      'ehds', 'european health data space', 'health data space',
+      'tehdas', 'health data regulation', 'health data act',
+      'secondary use of health data', 'primary use of health data',
+      'health data permit', 'health data access body',
+
+      // ── EMA / HMA data bodies & programmes ──────────────────────────────
+      'darwin eu', 'darwin-eu', 'data analysis and real-world interrogation',
+      'ndsg', 'network data steering group',
+      'ema data analytics', 'data analytics centre',
+      'spor', 'substance product organisation referential',
+      'hma', 'heads of medicines agencies', 'emrn',
+
+      // ── Regulatory data standards & coding ──────────────────────────────
+      'idmp', 'iso 11615', 'iso 11616', 'iso 11238', 'iso 11239',
+      'fhir', 'hl7 fhir', 'hl7',
+      'omop', 'omop cdm', 'observational medical outcomes',
+      'cdisc', 'sdtm', 'cdash', 'cdisc standard',
+      'snomed', 'snomed ct', 'meddra', 'who-dd', 'icd-10', 'icd-11', 'loinc',
+      'data standard', 'common data model',
+
+      // ── Interoperability & data quality ─────────────────────────────────
+      'interoperability', 'data interoperability', 'cross-border',
+      'data quality', 'data integrity', 'alcoa', 'fit-for-purpose',
+      'data harmonisation', 'data harmonization',
+      'fair data', 'fair principles', 'findable accessible interoperable',
+
+      // ── Data governance & stewardship ────────────────────────────────────
+      'data governance', 'data steward', 'data stewardship',
+      'data access committee', 'data access request', 'data sharing agreement',
+      'secondary use', 'data custodian', 'data controller',
+      'pseudonymisation', 'pseudonymization', 'anonymisation', 'anonymization',
+      'trusted research environment', 'secure data environment',
+      'differential privacy', 'privacy-preserving',
+      'data exchange', 'health information exchange',
+
+      // ── RWD/RWE in regulatory context ────────────────────────────────────
+      'real-world data', 'real-world evidence',
+      'fit-for-purpose data', 'distributed data analysis',
+      'federated analysis', 'federated data', 'federated learning',
+      'data linkage', 'data linking', 'record linkage',
+
+      // ── Patient registries, biobanks & research infrastructure ───────────
+      'patient registry', 'disease registry', 'rare disease registry',
+      'ema registry', 'registry initiative',
+      'biobank', 'biobanking', 'research infrastructure',
+
+      // ── Electronic submissions & master data ─────────────────────────────
+      'ectd', 'electronic common technical document',
+      'master data', 'referential data', 'product data',
     ],
   },
   'drug-discovery': {
     label: '🧬 AI in drug discovery',
+    desc:  'AlphaFold · generative chemistry · ADMET · target identification · molecular AI',
     keywords: ['drug discovery', 'drug design', 'drug development', 'target identification',
                 'lead optimisation', 'lead optimization', 'admet', 'alphafold',
                 'molecular', 'molecule', 'compound', 'scaffold', 'generative chemistry',
@@ -70,6 +88,7 @@ const TOPIC_FILTERS = {
   },
   'clinical-ai': {
     label: '🔬 Clinical AI',
+    desc:  'Clinical trials · pharmacovigilance · RWE · adaptive design · precision medicine',
     keywords: ['clinical trial', 'adaptive trial', 'decentralised trial', 'pharmacovigilance',
                 'adverse event', 'signal', 'rwe', 'real-world evidence', 'patient stratification',
                 'patient selection', 'endpoint', 'surrogate endpoint', 'biomarker',
@@ -313,6 +332,7 @@ function renderTopicBanner() {
   banner.style.display = '';
   banner.innerHTML = `
     <span class="topic-banner-label">${topic.label}</span>
+    ${topic.desc ? `<span class="topic-banner-desc">${topic.desc}</span>` : ''}
     <button class="topic-banner-clear" onclick="clearTopicFilter()">✕ Clear filter</button>
   `;
 }
