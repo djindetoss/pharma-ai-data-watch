@@ -115,6 +115,22 @@ def _classify_event_type(title: str, excerpt: str) -> str:
     return "seminar"  # default for event queries
 
 
+# Title-level event words — the article title must contain one of these
+# to be accepted as an event (prevents false positives from body-text matches)
+_TITLE_EVENT_WORDS = [
+    "webinar", "conference", "summit", "symposium", "congress",
+    "workshop", "seminar", "masterclass", "short course",
+    "annual meeting", "register", "registration", "call for abstracts",
+    "save the date", "join us", "expo ", " expo", "forum",
+]
+
+
+def _title_is_event(title: str) -> bool:
+    """Return True if the article title clearly announces an event."""
+    t = title.lower()
+    return any(w in t for w in _TITLE_EVENT_WORDS)
+
+
 def _article_id(url: str, title: str) -> str:
     key = url.strip() if url else title.strip().lower()
     return "nws-" + hashlib.sha1(key.encode()).hexdigest()[:12]
@@ -213,10 +229,17 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 if not excerpt:
                     continue
 
-                # Refine event type (webinar vs seminar) from content
+                # For event-type queries, require the TITLE to clearly signal an event.
+                # This prevents "I went to a conference" or "earnings call" articles
+                # from being classified as events just because they match the query.
+                is_event_query = article_type in ("webinar", "seminar")
+                if is_event_query and not _title_is_event(title):
+                    continue
+
+                # Refine event type (webinar vs seminar) from title + content
                 effective_type = (
                     _classify_event_type(title, excerpt)
-                    if article_type == "seminar"
+                    if is_event_query
                     else article_type
                 )
 
