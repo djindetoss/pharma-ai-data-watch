@@ -360,6 +360,10 @@ nav a.active { color: var(--white); background: rgba(255,255,255,0.1); }
 
 .filter-divider { width: 1px; height: 28px; background: var(--border); flex-shrink: 0; margin: 0 4px; }
 
+/* Events link styled identically to filter buttons */
+a.filter-btn-link { text-decoration: none; }
+a.filter-btn-link:hover { background: var(--light); color: var(--dark); }
+
 /* ── TOPIC FILTER BAR ── */
 .topic-bar {
   background: var(--lighter);
@@ -760,6 +764,19 @@ nav a.active { color: var(--white); background: rgba(255,255,255,0.1); }
 }
 .event-item-link:hover { background: var(--light); }
 .event-item-link:hover .event-info .event-title { color: var(--primary-light); }
+
+.sidebar-see-all {
+  display: block;
+  text-align: center;
+  padding: 10px 20px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-light);
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.sidebar-see-all:hover { color: var(--primary); text-decoration: underline; }
 
 .event-date-badge {
   background: var(--primary);
