@@ -58,9 +58,30 @@ SEARCH_QUERIES = [
         "sources": None,
     },
     {
-        "topic":  "Pharma AI conferences, webinars and seminars",
-        "q":      "(webinar OR conference OR seminar OR congress OR symposium OR workshop) AND (\"artificial intelligence\" OR \"machine learning\") AND (pharmaceutical OR regulatory OR \"drug development\" OR \"clinical trial\" OR healthcare)",
-        "type":   "seminar",   # will be further refined to webinar/seminar by event detection
+        "topic":  "Pharma AI webinars (online events)",
+        "q":      "(webinar OR \"online seminar\" OR \"virtual event\" OR \"online event\") AND (\"artificial intelligence\" OR \"machine learning\" OR \"generative AI\") AND (pharmaceutical OR healthcare OR \"drug development\" OR regulatory OR biotech)",
+        "type":   "webinar",
+        "badge":  "Event",
+        "sources": None,
+    },
+    {
+        "topic":  "Pharma AI conferences and summits",
+        "q":      "(conference OR summit OR symposium OR \"annual meeting\" OR \"annual congress\") AND (\"artificial intelligence\" OR AI OR \"machine learning\") AND (pharmaceutical OR \"drug discovery\" OR \"clinical trial\" OR regulatory OR \"health data\" OR biotech)",
+        "type":   "seminar",
+        "badge":  "Event",
+        "sources": None,
+    },
+    {
+        "topic":  "AI governance and LLM frontier model events",
+        "q":      "(webinar OR conference OR summit OR workshop) AND (\"AI governance\" OR \"AI Act\" OR \"responsible AI\" OR \"large language model\" OR \"frontier model\") AND (health OR medicine OR pharmaceutical OR regulation OR science)",
+        "type":   "seminar",
+        "badge":  "Event",
+        "sources": None,
+    },
+    {
+        "topic":  "Health data EHDS and data governance events",
+        "q":      "(webinar OR conference OR workshop OR summit) AND (\"health data\" OR EHDS OR \"real-world evidence\" OR \"data governance\" OR interoperability OR FHIR) AND (pharmaceutical OR clinical OR regulatory OR medicine OR healthcare)",
+        "type":   "seminar",
         "badge":  "Event",
         "sources": None,
     },
@@ -73,19 +94,23 @@ SEARCH_QUERIES = [
     },
 ]
 
-# Words that signal a webinar (online event) vs in-person seminar
-_WEBINAR_SIGNALS = {"webinar", "web seminar", "online seminar", "virtual seminar", "virtual event", "online event"}
-_EVENT_SIGNALS   = {"conference", "congress", "symposium", "summit", "workshop", "seminar",
-                    "short course", "masterclass", "save the date", "call for abstracts",
-                    "abstract submission", "register now", "registration open"}
+# Unambiguous online event signals → webinar
+_WEBINAR_SIGNALS = {"webinar", "web seminar", "online seminar", "virtual seminar",
+                    "virtual event", "online event", "live online", "livestream", "live stream"}
+# Unambiguous in-person / formal event signals → seminar
+_SEMINAR_SIGNALS = {"annual conference", "annual congress", "annual symposium",
+                    "annual summit", "annual meeting", "conference registration",
+                    "register now", "registration open", "call for abstracts",
+                    "abstract submission", "save the date", "early bird",
+                    "register today", "tickets available", "join us for"}
 
 
 def _classify_event_type(title: str, excerpt: str) -> str:
-    """Refine 'seminar' into 'webinar' or 'seminar' based on content signals."""
+    """Classify as 'webinar' (online) or 'seminar' (in-person/formal) based on content."""
     text = (title + " " + excerpt).lower()
     if any(s in text for s in _WEBINAR_SIGNALS):
         return "webinar"
-    if any(s in text for s in _EVENT_SIGNALS):
+    if any(s in text for s in _SEMINAR_SIGNALS):
         return "seminar"
     return "seminar"  # default for event queries
 

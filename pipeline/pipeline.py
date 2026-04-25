@@ -336,42 +336,41 @@ def fetch_biorxiv(dry_run=False) -> list:
 
 # ── RSS generic fetcher ───────────────────────────────────────────────────────
 
-_EVENT_SIGNALS   = [
+# Only unambiguous multi-word or very specific event signals — avoids false positives
+# like "training data" (ML), "US Congress" (politics), "quarterly results" (finance)
+_WEBINAR_SIGNALS = [
     "webinar", "web seminar", "online seminar", "virtual seminar",
-    "conference", "congress", "symposium", "summit", "workshop",
-    "seminar", "training", "short course", "masterclass",
-    "register now", "registration open", "join us", "attend",
-    "save the date", "call for abstracts", "abstract submission",
+    "virtual event", "live online", "online workshop",
 ]
-_WEBINAR_SIGNALS = ["webinar", "web seminar", "online seminar", "virtual seminar", "virtual event"]
+_SEMINAR_SIGNALS = [
+    "conference registration", "register now", "registration open",
+    "call for abstracts", "abstract submission", "save the date",
+    "annual conference", "annual congress", "annual symposium",
+    "annual summit", "annual meeting", "join us for", "attend this",
+    "early bird", "register today", "tickets available",
+]
 
 # An event must mention at least one of these to be relevant to this portal
 _EVENT_RELEVANCE_KEYWORDS = [
-    # Pharma / drug development
     "drug", "pharmaceutical", "medicine", "medicinal", "biopharma", "biotech",
-    "clinical", "trial", "regulatory", "ema", "fda", "who", "ich",
-    "pharmacovigilance", "safety", "efficacy", "approval", "submission",
-    "medical device", "in vitro diagnostic", "ivd",
-    # Data / digital health
-    "data", "digital health", "health data", "ehds", "fhir", "interoperab",
-    "real-world", "rwe", "rwd", "ehr", "electronic health",
-    # AI / ML
+    "clinical trial", "regulatory", "ema", "fda", "pharmacovigilance",
+    "medical device", "health data", "digital health", "ehds", "real-world",
     "artificial intelligence", "machine learning", "deep learning",
-    "large language model", "llm", "generative ai", "neural network",
-    "natural language processing", "nlp", "foundation model",
-    "ai governance", "ai regulation", "responsible ai",
-    # Research / science
-    "bioinformatics", "genomics", "proteomics", "omics", "biomarker",
-    "precision medicine", "translational", "drug discovery",
+    "large language model", "llm", "generative ai", "foundation model",
+    "ai governance", "responsible ai", "drug discovery", "bioinformatics",
+    "precision medicine", "genomics", "biomarker",
 ]
 
 
 def _detect_event_type(title: str, summary: str) -> str | None:
-    """Return 'webinar' or 'seminar' if text signals an event, else None."""
+    """
+    Return 'webinar' or 'seminar' only if unambiguous event signals are present.
+    Avoids false positives from 'training data', 'US Congress', 'quarterly results'.
+    """
     text = (title + " " + summary).lower()
     if any(s in text for s in _WEBINAR_SIGNALS):
         return "webinar"
-    if any(s in text for s in _EVENT_SIGNALS):
+    if any(s in text for s in _SEMINAR_SIGNALS):
         return "seminar"
     return None
 
@@ -382,7 +381,8 @@ def _event_is_relevant(title: str, summary: str) -> bool:
     return any(kw in text for kw in _EVENT_RELEVANCE_KEYWORDS)
 
 
-def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> list:
+def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
+                   detect_events: bool = False) -> list:
     url    = feed_cfg["url"]
     name   = feed_cfg["name"]
     badge  = feed_cfg.get("badge", "")
@@ -406,8 +406,8 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> l
             if not title:
                 continue
 
-            # Promote to webinar/seminar if the content signals an event
-            detected_event = _detect_event_type(title, summary)
+            # Only reclassify to webinar/seminar for dedicated event sources
+            detected_event = _detect_event_type(title, summary) if detect_events else None
             effective_type = detected_event if detected_event else article_type
 
             score = relevance_score(title + " " + summary, effective_type)
@@ -474,8 +474,7 @@ def fetch_events_rss(dry_run=False) -> list:
         return []
     raw = []
     for feed in CONFIG["event_sources"]["feeds"]:
-        # Pass "seminar" as default; _detect_event_type() will refine to webinar if needed
-        raw += fetch_rss_feed(feed, "seminar", require_pharma=False)
+        raw += fetch_rss_feed(feed, "seminar", require_pharma=False, detect_events=True)
 
     # Keep only events relevant to pharma, health data, or AI
     relevant = [
