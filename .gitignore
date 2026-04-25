@@ -9,8 +9,8 @@ dist/
 build/
 *.egg
 
-# Pipeline — do NOT commit seen IDs, drafts, or secrets
-pipeline/processed/seen_ids.json
+# Pipeline — do NOT commit drafts or secrets
+# NOTE: seen_ids.json IS committed so the pipeline remembers processed articles across runs
 pipeline/drafts/
 pipeline/.env       # contains API keys — never commit this
 
