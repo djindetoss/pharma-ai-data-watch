@@ -33,24 +33,24 @@ SEARCH_QUERIES = [
     {
         "topic":       "AI in drug discovery and pharmaceutical R&D",
         "portal_topic": "drug-discovery",
-        "q":           "(\"artificial intelligence\" OR \"machine learning\" OR \"deep learning\") AND (\"drug discovery\" OR \"drug design\" OR \"drug development\" OR \"lead optimisation\" OR \"virtual screening\" OR ADMET OR AlphaFold OR \"molecular generation\")",
+        "q":           "(\"artificial intelligence\" OR \"machine learning\" OR \"deep learning\") AND (\"drug discovery\" OR \"drug design\" OR \"lead optimisation\" OR \"virtual screening\" OR ADMET OR AlphaFold OR \"molecular generation\" OR \"generative chemistry\" OR \"protein structure prediction\")",
         "type":        "news",
         "badge":       "Pharma AI",
         "sources":     None,
     },
     # ── Topic: regulatory ─────────────────────────────────────────────────────
     {
-        "topic":       "EMA, FDA and regulatory AI guidance",
+        "topic":       "EMA and FDA regulatory AI guidance",
         "portal_topic": "regulatory",
-        "q":           "(EMA OR FDA OR MHRA OR \"regulatory agency\" OR \"regulatory authority\" OR \"reflection paper\" OR CHMP OR ICH) AND (\"artificial intelligence\" OR \"machine learning\" OR \"AI\" OR \"algorithm\") AND (pharmaceutical OR medicine OR drug OR approval OR guidance)",
+        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"regulatory guidance\" OR \"reflection paper\" OR \"regulatory framework\" OR \"approval pathway\" OR CHMP OR ICH OR \"regulatory science\") AND (pharmaceutical OR \"drug development\" OR medicine OR EMA OR FDA OR MHRA)",
         "type":        "news",
         "badge":       "Regulatory",
         "sources":     None,
     },
     {
-        "topic":       "EU AI Act and pharma regulation",
+        "topic":       "EU AI Act and pharma/health AI regulation",
         "portal_topic": "regulatory",
-        "q":           "(\"EU AI Act\" OR \"AI regulation\" OR \"responsible AI\" OR \"AI governance\") AND (pharmaceutical OR healthcare OR \"medical device\" OR drug OR clinical OR regulatory OR EMA OR FDA)",
+        "q":           "(\"EU AI Act\" OR \"AI Act\" OR \"AI regulation\" OR \"responsible AI\" OR \"algorithmic accountability\") AND (pharmaceutical OR \"medical device\" OR clinical OR \"drug development\" OR \"health\" OR EMA OR FDA OR \"regulatory\")",
         "type":        "news",
         "badge":       "Regulatory",
         "sources":     None,
@@ -59,7 +59,7 @@ SEARCH_QUERIES = [
     {
         "topic":       "Clinical trials AI and pharmacovigilance",
         "portal_topic": "clinical-ai",
-        "q":           "(\"clinical trial\" OR \"adaptive trial\" OR \"decentralised trial\" OR pharmacovigilance OR \"adverse event\" OR \"signal detection\") AND (\"artificial intelligence\" OR \"machine learning\" OR AI OR algorithm)",
+        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"clinical trial\" OR \"adaptive trial\" OR \"decentralised trial\" OR pharmacovigilance OR \"adverse event detection\" OR \"signal detection\") AND (pharmaceutical OR \"drug development\" OR regulatory)",
         "type":        "news",
         "badge":       "Clinical AI",
         "sources":     None,
@@ -67,7 +67,7 @@ SEARCH_QUERIES = [
     {
         "topic":       "Precision medicine, digital biomarkers and medical imaging AI",
         "portal_topic": "clinical-ai",
-        "q":           "(\"precision medicine\" OR \"digital biomarker\" OR \"medical imaging\" OR \"real-world evidence\" OR \"patient stratification\" OR \"treatment response\") AND (\"artificial intelligence\" OR \"machine learning\" OR AI)",
+        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"precision medicine\" OR \"digital biomarker\" OR \"medical imaging\" OR \"patient stratification\" OR \"treatment response prediction\") AND (pharmaceutical OR clinical OR healthcare OR \"drug development\")",
         "type":        "news",
         "badge":       "Clinical AI",
         "sources":     None,
@@ -137,30 +137,62 @@ SEARCH_QUERIES = [
         "q":           "(\"large language model\" OR \"foundation model\" OR \"generative AI\" OR GPT OR Claude OR Gemini OR \"EU AI Act\") AND (health OR science OR regulation OR biomedical OR pharmaceutical)",
         "type":        "ainews",
         "badge":       "Tech",
-        "sources":     "techcrunch.com,thenextweb.com,wired.com,theverge.com,nature.com,statnews.com",
+        "sources":     "techcrunch.com,wired.com,nature.com,statnews.com,technologyreview.com,venturebeat.com",
     },
 ]
 
 # ── Quality blocklist ──────────────────────────────────────────────────────────
-# Sources and title patterns that reliably produce low-quality content.
+# Sources and title patterns that reliably produce low-quality / off-topic content.
 
 # Domains whose content is never acceptable regardless of topic
 _BLOCKED_DOMAINS = {
-    "nlppeople.com",         # job board
-    "aijobs.net",            # job board
-    "globenewswire.com",     # press releases / market research spam
-    "prnewswire.com",        # press releases
-    "businesswire.com",      # press releases
-    "einpresswire.com",      # press releases
-    "accesswire.com",        # press releases
-    "openpr.com",            # press releases
+    # Job boards
+    "nlppeople.com", "aijobs.net",
+    # Press release wires
+    "globenewswire.com", "prnewswire.com", "prnewswire.co.uk",
+    "businesswire.com", "einpresswire.com", "accesswire.com", "openpr.com",
+    # Financial / stock sites
+    "stocktitan.net", "finance.yahoo.com", "seekingalpha.com",
+    "marketwatch.com", "investing.com", "benzinga.com", "fool.com",
+    # Entertainment / tabloid aggregators
+    "yahoo.com", "msn.com", "huffpost.com",
+    # Consumer health / natural medicine
+    "naturalnews.com", "mercola.com", "healthline.com", "webmd.com",
+    "everydayhealth.com", "medicalnewstoday.com",
+    # Cybersecurity (unrelated to pharma data governance)
+    "malwarebytes.com", "helpnetsecurity.com", "tenable.com",
+    "darkreading.com", "securityweek.com", "threatpost.com",
+    # Political / opinion / general news
+    "foxnews.com", "breitbart.com", "dailymail.co.uk", "theguardian.com",
+    "fairobserver.com", "opiniojuris.org",
+    # Python/software package registries
+    "pypi.org",
+    # Personal / lifestyle blogs
+    "tim.blog", "kevinmd.com", "substack.com", "medium.com",
+    # eLearning / UX / design
+    "elearningindustry.com", "ixdf.org", "coursera.org",
+    # Fact-checking / consumer sites
+    "snopes.com", "factcheck.org",
+    # SEO / marketing
+    "searchenginejournal.com", "searchengineland.com",
+    # General tech (not pharma focused) — keep for ainews only
+    "redhat.com", "histalk2.com",
+    # Misc low-quality
+    "betalist.com", "peoplesreview.com.np",
 }
 
 # Source names (as returned by NewsAPI) that are blocked
 _BLOCKED_SOURCE_NAMES = {
-    "GlobeNewswire", "PR Newswire", "Business Wire",
-    "EIN Presswire", "PRWeb", "OpenPR",
+    "GlobeNewswire", "PR Newswire", "PR Newswire UK", "Business Wire",
+    "EIN Presswire", "PRWeb", "OpenPR", "AccessWire",
     "Nlppeople.com", "AIjobs", "Betalist.com",
+    "Yahoo Entertainment", "Yahoo Finance", "MSN",
+    "Natural News", "Mercola", "WebMD", "Healthline",
+    "Malwarebytes", "Help Net Security", "Tenable",
+    "Fox News", "Daily Mail", "The Guardian",
+    "Search Engine Journal", "Search Engine Land",
+    "Snopes", "eLearning Industry",
+    "Stocktitan", "Seeking Alpha", "Benzinga",
 }
 
 # Title patterns that indicate low-quality / off-topic content
@@ -170,11 +202,21 @@ _BLOCKED_TITLE_PATTERNS = [
     "market forecast", "cagr", " bn market", "billion market",
     "research report 20", "global market", "market analysis report",
     # Job postings
-    " engineer", " scientist", " analyst", " director", " officer",
-    " manager", "job opening", "we are hiring", "now hiring", "career opportunit",
-    # Press release noise
+    "job opening", "we are hiring", "now hiring", "career opportunit",
+    "is hiring", "open position",
+    # Financial / stock noise
     "stock alert", "price target", "earnings call", "quarterly result",
     "fiscal year", "revenue grew", "investor relation",
+    "pt increased", "raises $", " ipo ", "valuation",
+    # Software package releases
+    "added to pypi", "released on pypi", "version 0.", "version 1.",
+    "version 2.", "version 3.", "changelog",
+    # Corporate / political noise
+    "stepping down as ceo", "appointed as ceo", "names new ceo",
+    "hosts blast", "weight loss trick", "on sale for $",
+    # General off-topic patterns
+    "monday morning update", "weekly roundup", "week in review",
+    "top stories", "news digest",
 ]
 
 # Unambiguous online event signals → webinar
