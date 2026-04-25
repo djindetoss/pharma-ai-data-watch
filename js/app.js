@@ -17,14 +17,44 @@ const TOPIC_FILTERS = {
                 'rmp', 'risk management', 'post-market', 'pharmacopoeia', 'gmp', 'gdp'],
   },
   'data-governance': {
-    label: '📊 Data governance',
-    keywords: ['ehds', 'european health data space', 'idmp', 'fhir', 'data governance',
-                'federated learning', 'privacy', 'gdpr', 'real-world data', 'rwd',
-                'rwe', 'real-world evidence', 'interoperability', 'data standard',
-                'omop', 'cdm', 'health data', 'data sharing', 'data quality',
-                'data lake', 'data platform', 'synthetic data', 'fair data',
-                'linked data', 'data space', 'consent', 'pseudonymisation',
-                'anonymisation', 'secondary use', 'ehr', 'electronic health record'],
+    label: '📊 Data',
+    keywords: [
+      // Key EU bodies & programmes
+      'ehds', 'european health data space', 'hda', 'health data agency', 'health data authority',
+      'ndsg', 'network data steering group', 'darwin eu', 'darwin-eu', 'tehdas',
+      'encePP', 'enPP', 'data analysis and real-world interrogation',
+      'imi', 'ihi', 'innovative health initiative',
+      // Standards & interoperability
+      'idmp', 'fhir', 'hl7', 'omop', 'cdm', 'snomed', 'icd-10', 'loinc',
+      'data standard', 'interoperability', 'linked data', 'open data',
+      // Governance & policy
+      'data governance', 'data steward', 'data stewardship', 'data access',
+      'secondary use', 'health data space', 'data space', 'data sharing',
+      'data infrastructure', 'data ecosystem', 'data strategy', 'data policy',
+      'data act', 'data management', 'data protection',
+      // Privacy & compliance
+      'gdpr', 'privacy', 'pseudonymisation', 'anonymisation', 'pseudonymization',
+      'anonymization', 'consent', 'data minimisation', 'privacy-preserving',
+      'differential privacy', 'secure multi-party', 'trusted research environment',
+      // Real-world data & evidence
+      'real-world data', 'rwd', 'real-world evidence', 'rwe', 'claims data',
+      'administrative data', 'registry', 'patient registry', 'disease registry',
+      'primary care data', 'electronic health record', 'ehr', 'emr',
+      'medical record', 'hospital data', 'wearable data', 'sensor data',
+      // Data science methods
+      'federated learning', 'federated data', 'federated analysis',
+      'data lake', 'data platform', 'data warehouse', 'data quality',
+      'synthetic data', 'fair data', 'findable accessible', 'data linkage',
+      'data integration', 'data harmonisation', 'data harmonization',
+      'natural language processing', 'text mining', 'information extraction',
+      // Biobanks & cohorts
+      'biobank', 'biobanking', 'cohort', 'patient cohort', 'population cohort',
+      'rare disease registry', 'orphan data', 'genomic data', 'omics data',
+      // Health information systems
+      'health information system', 'his', 'national health data',
+      'hospital information', 'claims database', 'insurance data',
+      'population health data', 'epidemiological data',
+    ],
   },
   'drug-discovery': {
     label: '🧬 AI in drug discovery',
