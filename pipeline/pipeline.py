@@ -188,7 +188,14 @@ def fetch_pubmed(dry_run=False) -> list:
     # Date range
     cutoff = (datetime.now() - timedelta(days=DAYS_LOOKBACK)).strftime("%Y/%m/%d")
 
-    for query in queries:
+    for query_cfg in queries:
+        # Support both plain string queries (legacy) and {q, topic} dicts
+        if isinstance(query_cfg, dict):
+            query        = query_cfg["q"]
+            query_topic  = query_cfg.get("topic")
+        else:
+            query        = query_cfg
+            query_topic  = None
         try:
             log.info(f"PubMed search: {query!r}")
             search_url = (
@@ -242,7 +249,7 @@ def fetch_pubmed(dry_run=False) -> list:
                 if score < MIN_SCORE:
                     continue
 
-                results.append({
+                art = {
                     "id": article_id(url, title),
                     "type": "paper",
                     "title": title,
@@ -260,7 +267,10 @@ def fetch_pubmed(dry_run=False) -> list:
                     "_score": score,
                     "_auto_approve": score >= AUTO_THRESHOLD,
                     "_source": "pubmed"
-                })
+                }
+                if query_topic:
+                    art["topic"] = query_topic
+                results.append(art)
 
             time.sleep(1)
 
@@ -427,7 +437,7 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
                 if t.get("term", "").strip()
             ][:4] or [name]
 
-            results.append({
+            rss_art = {
                 "id": article_id(link, title),
                 "type": effective_type,
                 "title": title,
@@ -442,7 +452,12 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
                 "_score": score,
                 "_auto_approve": auto or score >= AUTO_THRESHOLD,
                 "_source": f"rss:{name}"
-            })
+            }
+            # Propagate topic from feed config if present
+            feed_topic = feed_cfg.get("topic")
+            if feed_topic:
+                rss_art["topic"] = feed_topic
+            results.append(rss_art)
 
     except Exception as e:
         log.warning(f"RSS [{name}]: failed — {e}")

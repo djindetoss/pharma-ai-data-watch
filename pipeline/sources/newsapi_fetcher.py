@@ -29,76 +29,136 @@ NEWSAPI_BASE = "https://newsapi.org/v2/everything"
 # Results are mapped to a portal article type.
 
 SEARCH_QUERIES = [
+    # ── Topic: drug-discovery ──────────────────────────────────────────────────
     {
-        "topic":  "AI in drug discovery and pharmaceutical R&D",
-        "q":      "(\"artificial intelligence\" OR \"machine learning\") AND (\"drug discovery\" OR \"drug development\" OR \"pharmaceutical\" OR \"biopharma\")",
-        "type":   "news",
-        "badge":  "Pharma AI",
-        "sources": None,   # search all sources
+        "topic":       "AI in drug discovery and pharmaceutical R&D",
+        "portal_topic": "drug-discovery",
+        "q":           "(\"artificial intelligence\" OR \"machine learning\" OR \"deep learning\") AND (\"drug discovery\" OR \"drug design\" OR \"drug development\" OR \"lead optimisation\" OR \"virtual screening\" OR ADMET OR AlphaFold OR \"molecular generation\")",
+        "type":        "news",
+        "badge":       "Pharma AI",
+        "sources":     None,
+    },
+    # ── Topic: regulatory ─────────────────────────────────────────────────────
+    {
+        "topic":       "EMA, FDA and regulatory AI guidance",
+        "portal_topic": "regulatory",
+        "q":           "(EMA OR FDA OR MHRA OR \"regulatory agency\" OR \"regulatory authority\" OR \"reflection paper\" OR CHMP OR ICH) AND (\"artificial intelligence\" OR \"machine learning\" OR \"AI\" OR \"algorithm\") AND (pharmaceutical OR medicine OR drug OR approval OR guidance)",
+        "type":        "news",
+        "badge":       "Regulatory",
+        "sources":     None,
     },
     {
-        "topic":  "EMA, FDA and regulatory AI guidance",
-        "q":      "(EMA OR FDA OR \"regulatory agency\") AND (\"artificial intelligence\" OR \"machine learning\") AND (drug OR medicine OR pharmaceutical)",
-        "type":   "news",
-        "badge":  "Regulatory",
-        "sources": None,
+        "topic":       "EU AI Act and pharma regulation",
+        "portal_topic": "regulatory",
+        "q":           "(\"EU AI Act\" OR \"AI regulation\" OR \"responsible AI\" OR \"AI governance\") AND (pharmaceutical OR healthcare OR \"medical device\" OR drug OR clinical OR regulatory OR EMA OR FDA)",
+        "type":        "news",
+        "badge":       "Regulatory",
+        "sources":     None,
+    },
+    # ── Topic: clinical-ai ────────────────────────────────────────────────────
+    {
+        "topic":       "Clinical trials AI and pharmacovigilance",
+        "portal_topic": "clinical-ai",
+        "q":           "(\"clinical trial\" OR \"adaptive trial\" OR \"decentralised trial\" OR pharmacovigilance OR \"adverse event\" OR \"signal detection\") AND (\"artificial intelligence\" OR \"machine learning\" OR AI OR algorithm)",
+        "type":        "news",
+        "badge":       "Clinical AI",
+        "sources":     None,
     },
     {
-        "topic":  "Clinical trials AI and real-world evidence",
-        "q":      "(\"clinical trial\" OR \"real-world evidence\" OR pharmacovigilance) AND (\"artificial intelligence\" OR \"machine learning\" OR AI)",
-        "type":   "news",
-        "badge":  "Clinical AI",
-        "sources": None,
+        "topic":       "Precision medicine, digital biomarkers and medical imaging AI",
+        "portal_topic": "clinical-ai",
+        "q":           "(\"precision medicine\" OR \"digital biomarker\" OR \"medical imaging\" OR \"real-world evidence\" OR \"patient stratification\" OR \"treatment response\") AND (\"artificial intelligence\" OR \"machine learning\" OR AI)",
+        "type":        "news",
+        "badge":       "Clinical AI",
+        "sources":     None,
+    },
+    # ── Topic: data-governance ────────────────────────────────────────────────
+    {
+        "topic":       "EHDS, health data and IDMP",
+        "portal_topic": "data-governance",
+        "q":           "(\"European Health Data Space\" OR EHDS OR IDMP OR \"health data agency\" OR HDA OR \"secondary use\" OR \"DARWIN EU\" OR \"data stewardship\" OR \"health data governance\") AND (pharmaceutical OR health OR medicine OR clinical OR regulatory OR EMA)",
+        "type":        "news",
+        "badge":       "Data",
+        "sources":     None,
     },
     {
-        "topic":  "EHDS, health data and IDMP",
-        "q":      "(\"European Health Data Space\" OR EHDS OR IDMP OR FHIR OR \"health data\" OR \"real-world data\" OR \"secondary use\" OR \"DARWIN EU\" OR \"health data agency\") AND (health OR medicine OR pharmaceutical OR clinical OR regulatory)",
-        "type":   "news",
-        "badge":  "Data",
-        "sources": None,
+        "topic":       "RWD, RWE, federated data and health data standards",
+        "portal_topic": "data-governance",
+        "q":           "(\"real-world evidence\" OR \"real-world data\" OR RWE OR RWD OR \"federated learning\" OR FHIR OR \"OMOP CDM\" OR \"data standard\" OR \"data interoperability\" OR NDSG OR \"network data steering\") AND (pharmaceutical OR healthcare OR \"drug development\" OR clinical OR EMA OR FDA OR regulatory)",
+        "type":        "news",
+        "badge":       "Data",
+        "sources":     None,
+    },
+    # ── Events ────────────────────────────────────────────────────────────────
+    {
+        "topic":       "Pharma AI webinars (online events)",
+        "portal_topic": None,
+        "q":           "(webinar OR \"online seminar\" OR \"virtual event\") AND (\"artificial intelligence\" OR \"machine learning\" OR \"generative AI\") AND (pharmaceutical OR healthcare OR \"drug development\" OR regulatory OR biotech)",
+        "type":        "webinar",
+        "badge":       "Event",
+        "sources":     None,
     },
     {
-        "topic":  "NDSG, health data networks and RWD/RWE",
-        "q":      "(\"network data steering group\" OR NDSG OR \"real-world evidence\" OR RWE OR \"data stewardship\" OR \"federated learning\" OR \"federated data\" OR \"data governance\" OR \"data standard\") AND (pharmaceutical OR healthcare OR \"drug development\" OR clinical OR EMA OR FDA OR regulatory)",
-        "type":   "news",
-        "badge":  "Data",
-        "sources": None,
+        "topic":       "Pharma AI conferences and summits",
+        "portal_topic": None,
+        "q":           "(conference OR summit OR symposium OR \"annual meeting\") AND (\"artificial intelligence\" OR \"machine learning\") AND (pharmaceutical OR \"drug discovery\" OR \"clinical trial\" OR regulatory OR \"health data\" OR biotech)",
+        "type":        "seminar",
+        "badge":       "Event",
+        "sources":     None,
     },
     {
-        "topic":  "Pharma AI webinars (online events)",
-        "q":      "(webinar OR \"online seminar\" OR \"virtual event\" OR \"online event\") AND (\"artificial intelligence\" OR \"machine learning\" OR \"generative AI\") AND (pharmaceutical OR healthcare OR \"drug development\" OR regulatory OR biotech)",
-        "type":   "webinar",
-        "badge":  "Event",
-        "sources": None,
+        "topic":       "Health data and EHDS events",
+        "portal_topic": None,
+        "q":           "(webinar OR conference OR workshop OR summit) AND (\"health data\" OR EHDS OR \"real-world evidence\" OR \"data governance\" OR FHIR OR interoperability) AND (pharmaceutical OR clinical OR regulatory OR medicine OR healthcare)",
+        "type":        "seminar",
+        "badge":       "Event",
+        "sources":     None,
     },
+    # ── AI news ───────────────────────────────────────────────────────────────
     {
-        "topic":  "Pharma AI conferences and summits",
-        "q":      "(conference OR summit OR symposium OR \"annual meeting\" OR \"annual congress\") AND (\"artificial intelligence\" OR AI OR \"machine learning\") AND (pharmaceutical OR \"drug discovery\" OR \"clinical trial\" OR regulatory OR \"health data\" OR biotech)",
-        "type":   "seminar",
-        "badge":  "Event",
-        "sources": None,
+        "topic":       "General AI breakthroughs for ainews tab",
+        "portal_topic": None,
+        "q":           "(\"large language model\" OR \"foundation model\" OR \"generative AI\" OR GPT OR Claude OR Gemini OR \"EU AI Act\") AND (health OR science OR regulation OR biomedical OR pharmaceutical)",
+        "type":        "ainews",
+        "badge":       "Tech",
+        "sources":     "techcrunch.com,thenextweb.com,wired.com,theverge.com,nature.com,statnews.com",
     },
-    {
-        "topic":  "AI governance and LLM frontier model events",
-        "q":      "(webinar OR conference OR summit OR workshop) AND (\"AI governance\" OR \"AI Act\" OR \"responsible AI\" OR \"large language model\" OR \"frontier model\") AND (health OR medicine OR pharmaceutical OR regulation OR science)",
-        "type":   "seminar",
-        "badge":  "Event",
-        "sources": None,
-    },
-    {
-        "topic":  "Health data EHDS and data governance events",
-        "q":      "(webinar OR conference OR workshop OR summit) AND (\"health data\" OR EHDS OR \"real-world evidence\" OR \"data governance\" OR interoperability OR FHIR) AND (pharmaceutical OR clinical OR regulatory OR medicine OR healthcare)",
-        "type":   "seminar",
-        "badge":  "Event",
-        "sources": None,
-    },
-    {
-        "topic":  "General AI breakthroughs for ainews tab",
-        "q":      "(\"large language model\" OR \"foundation model\" OR \"generative AI\" OR GPT OR Claude OR Gemini OR \"EU AI Act\") AND (health OR science OR regulation OR biomedical)",
-        "type":   "ainews",
-        "badge":  "Tech",
-        "sources": "techcrunch.com,thenextweb.com,wired.com,theverge.com,nature.com",
-    },
+]
+
+# ── Quality blocklist ──────────────────────────────────────────────────────────
+# Sources and title patterns that reliably produce low-quality content.
+
+# Domains whose content is never acceptable regardless of topic
+_BLOCKED_DOMAINS = {
+    "nlppeople.com",         # job board
+    "aijobs.net",            # job board
+    "globenewswire.com",     # press releases / market research spam
+    "prnewswire.com",        # press releases
+    "businesswire.com",      # press releases
+    "einpresswire.com",      # press releases
+    "accesswire.com",        # press releases
+    "openpr.com",            # press releases
+}
+
+# Source names (as returned by NewsAPI) that are blocked
+_BLOCKED_SOURCE_NAMES = {
+    "GlobeNewswire", "PR Newswire", "Business Wire",
+    "EIN Presswire", "PRWeb", "OpenPR",
+    "Nlppeople.com", "AIjobs", "Betalist.com",
+}
+
+# Title patterns that indicate low-quality / off-topic content
+_BLOCKED_TITLE_PATTERNS = [
+    # Market research reports
+    "market report", "market research", "market size", "market opportunit",
+    "market forecast", "cagr", " bn market", "billion market",
+    "research report 20", "global market", "market analysis report",
+    # Job postings
+    " engineer", " scientist", " analyst", " director", " officer",
+    " manager", "job opening", "we are hiring", "now hiring", "career opportunit",
+    # Press release noise
+    "stock alert", "price target", "earnings call", "quarterly result",
+    "fiscal year", "revenue grew", "investor relation",
 ]
 
 # Unambiguous online event signals → webinar
@@ -110,6 +170,26 @@ _SEMINAR_SIGNALS = {"annual conference", "annual congress", "annual symposium",
                     "register now", "registration open", "call for abstracts",
                     "abstract submission", "save the date", "early bird",
                     "register today", "tickets available", "join us for"}
+
+
+def _is_blocked(title: str, source_name: str, url: str) -> bool:
+    """Return True if this article should be rejected on quality grounds."""
+    # Check source name
+    if source_name in _BLOCKED_SOURCE_NAMES:
+        return True
+    # Check domain
+    try:
+        from urllib.parse import urlparse
+        domain = urlparse(url).netloc.lstrip("www.")
+        if any(blocked in domain for blocked in _BLOCKED_DOMAINS):
+            return True
+    except Exception:
+        pass
+    # Check title patterns
+    t = title.lower()
+    if any(pat in t for pat in _BLOCKED_TITLE_PATTERNS):
+        return True
+    return False
 
 
 def _classify_event_type(title: str, excerpt: str) -> str:
@@ -182,6 +262,7 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
 
     for search in SEARCH_QUERIES:
         topic        = search["topic"]
+        portal_topic = search.get("portal_topic")   # explicit topic for JS filter
         article_type = search["type"]
         badge        = search["badge"]
 
@@ -236,6 +317,11 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 if not excerpt:
                     continue
 
+                # ── Quality gate: block low-value sources and titles ──────────
+                if _is_blocked(title, source_name, url):
+                    log.debug(f"  [blocked] {title[:60]}")
+                    continue
+
                 # For event-type queries, require the TITLE to clearly signal an event.
                 # This prevents "I went to a conference" or "earnings call" articles
                 # from being classified as events just because they match the query.
@@ -253,7 +339,7 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 # Auto-extract simple tags from title
                 tags = _extract_tags(title + " " + excerpt, effective_type)
 
-                all_articles.append({
+                article = {
                     "id":           _article_id(url, title),
                     "type":         effective_type,
                     "title":        _sentence_case(title),
@@ -268,7 +354,11 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                     "_score":       3,
                     "_auto_approve": True,
                     "_source":      f"newsapi:{topic}",
-                })
+                }
+                # Attach explicit topic so the JS filter can match exactly
+                if portal_topic:
+                    article["topic"] = portal_topic
+                all_articles.append(article)
                 found += 1
 
             log.info(f"  → {found} articles from NewsAPI for {topic!r}")

@@ -31,11 +31,15 @@
     "enabled": true,
     "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
     "search_queries": [
-      "artificial intelligence drug discovery",
-      "machine learning pharmaceutical regulatory",
-      "deep learning clinical trial",
-      "natural language processing pharmacovigilance",
-      "AI drug development EMA FDA"
+      { "q": "artificial intelligence drug discovery OR drug design OR lead optimization",    "topic": "drug-discovery" },
+      { "q": "machine learning AlphaFold protein structure prediction pharmaceutical",         "topic": "drug-discovery" },
+      { "q": "deep learning ADMET toxicity prediction drug development",                       "topic": "drug-discovery" },
+      { "q": "machine learning regulatory EMA FDA approval pharmaceutical",                    "topic": "regulatory"     },
+      { "q": "AI regulatory science ICH reflection paper guideline",                           "topic": "regulatory"     },
+      { "q": "artificial intelligence clinical trial adaptive decentralised pharmacovigilance", "topic": "clinical-ai"    },
+      { "q": "natural language processing pharmacovigilance adverse event signal detection",    "topic": "clinical-ai"    },
+      { "q": "real-world evidence real-world data electronic health records AI",               "topic": "data-governance" },
+      { "q": "federated learning health data EHDS FHIR interoperability",                      "topic": "data-governance" }
     ],
     "max_results_per_query": 5,
     "db": "pubmed"
@@ -60,6 +64,7 @@
         "name": "EMA",
         "type": "news",
         "badge": "Regulatory",
+        "topic": "regulatory",
         "auto_approve": true
       },
       {
@@ -67,6 +72,7 @@
         "name": "FDA",
         "type": "news",
         "badge": "Regulatory",
+        "topic": "regulatory",
         "auto_approve": true
       },
       {
@@ -74,6 +80,7 @@
         "name": "WHO",
         "type": "news",
         "badge": "Policy",
+        "topic": "regulatory",
         "auto_approve": false
       }
     ]
