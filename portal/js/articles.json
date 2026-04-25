@@ -32,25 +32,6 @@
     "badge": "PubMed"
   },
   {
-    "id": "manual-010",
-    "type": "seminar",
-    "title": "EUDRACON AI working group: data standards for AI-enabled regulatory submissions",
-    "excerpt": "Annual gathering of EU drug regulatory agency representatives to align on IDMP, FHIR, and SEND data standards in the context of AI-generated evidence packages.",
-    "source": "EUDRACON",
-    "date": "2026-06-03",
-    "tags": [
-      "EUDRACON",
-      "Data standards",
-      "IDMP",
-      "FHIR"
-    ],
-    "featured": false,
-    "readTime": "2 days",
-    "url": "#",
-    "badge": "Regulatory",
-    "eventDate": "3–4 June 2026 — Amsterdam"
-  },
-  {
     "id": "auto-71f713d75d0c",
     "type": "paper",
     "title": "Artificial Intelligence in Drug Discovery and Development: Transforming Pharmaceutical Innovation",
@@ -65,62 +46,6 @@
     "readTime": "1 min",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42003205/",
     "badge": "PubMed"
-  },
-  {
-    "id": "manual-004",
-    "type": "seminar",
-    "title": "Regulatory pathways for AI-assisted drug products: PRIME, conditional MA and CHMP expectations",
-    "excerpt": "Full-day seminar exploring the PRIME scheme, conditional marketing authorisation, and how AI-generated evidence should be structured and presented in CHMP dossier submissions.",
-    "source": "EMA / Medicines for Europe",
-    "date": "2026-05-15",
-    "tags": [
-      "CHMP",
-      "PRIME",
-      "Regulatory",
-      "EU"
-    ],
-    "featured": true,
-    "readTime": "Full day",
-    "url": "#",
-    "badge": "Regulatory",
-    "eventDate": "15 May 2026 — Brussels"
-  },
-  {
-    "id": "manual-008",
-    "type": "webinar",
-    "title": "Large language models in medical writing: opportunities and regulatory red lines",
-    "excerpt": "Practical session on integrating LLMs into CTD module preparation, with input from EMA assessors on acceptable use cases and submission standards for AI-assisted regulatory documents.",
-    "source": "DIA Europe",
-    "date": "2026-05-06",
-    "tags": [
-      "LLM",
-      "Medical writing",
-      "CTD",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "60 min",
-    "url": "#",
-    "badge": "Upcoming",
-    "eventDate": "6 May 2026 — 15:00 CET"
-  },
-  {
-    "id": "manual-003",
-    "type": "webinar",
-    "title": "AI in clinical trials: adaptive designs and real-world evidence",
-    "excerpt": "Experts from Roche, Novartis, and the FDA discuss how AI-driven adaptive trial designs are reshaping clinical development timelines and changing regulatory expectations for evidence packages.",
-    "source": "DIA Europe",
-    "date": "2026-04-28",
-    "tags": [
-      "Clinical trials",
-      "RWE",
-      "Adaptive design"
-    ],
-    "featured": false,
-    "readTime": "90 min",
-    "url": "#",
-    "badge": "Live",
-    "eventDate": "28 April 2026 — 14:00 CET"
   },
   {
     "id": "auto-c20beb865fba",
@@ -671,24 +596,6 @@
     "badge": "Research"
   },
   {
-    "id": "manual-001",
-    "type": "news",
-    "title": "EMA launches updated reflection paper on AI and machine learning in drug development",
-    "excerpt": "The European Medicines Agency releases revised guidance on the use of machine learning algorithms in regulatory submissions, emphasising model explainability, validation requirements, and lifecycle management.",
-    "source": "EMA",
-    "date": "2026-04-22",
-    "tags": [
-      "EMA",
-      "Regulatory",
-      "Machine learning",
-      "Guidance"
-    ],
-    "featured": true,
-    "readTime": "5 min",
-    "url": "https://www.ema.europa.eu",
-    "badge": "Breaking"
-  },
-  {
     "id": "nws-78f9480a3d75",
     "type": "news",
     "title": "Monotherapy cancer drug-blind response prediction is limited to intraclass generalization",
@@ -992,24 +899,6 @@
     "badge": "PubMed"
   },
   {
-    "id": "manual-002",
-    "type": "paper",
-    "title": "Graph neural networks for drug–target interaction prediction: a systematic review",
-    "excerpt": "Comprehensive review of 142 studies evaluating GNN architectures for predicting drug-target binding affinity, with benchmarks across ChEMBL and BindingDB datasets.",
-    "source": "Nature Drug Discovery",
-    "date": "2026-04-20",
-    "tags": [
-      "GNN",
-      "Drug discovery",
-      "Deep learning",
-      "DTI"
-    ],
-    "featured": true,
-    "readTime": "25 min",
-    "url": "#",
-    "badge": "Open Access"
-  },
-  {
     "id": "auto-81ab74a3bfce",
     "type": "news",
     "title": "FDA Achieves Year 1 Goals in Reducing Animal Testing in Drug Development",
@@ -1025,24 +914,6 @@
     "badge": "Regulatory"
   },
   {
-    "id": "manual-013",
-    "type": "ainews",
-    "title": "Google DeepMind releases Gemini 2.0 with enhanced scientific reasoning capabilities",
-    "excerpt": "Gemini 2.0 demonstrates significant improvements in scientific reasoning benchmarks, with particular gains in chemistry, biology, and clinical decision support tasks compared to its predecessor.",
-    "source": "Google DeepMind",
-    "date": "2026-04-19",
-    "tags": [
-      "Gemini",
-      "Foundation models",
-      "Scientific AI",
-      "DeepMind"
-    ],
-    "featured": false,
-    "readTime": "5 min",
-    "url": "#",
-    "badge": "Tech"
-  },
-  {
     "id": "nws-7dabc11e6047",
     "type": "news",
     "title": "Monday morning update 4/20/26",
@@ -1056,24 +927,6 @@
     "readTime": "1 min",
     "url": "https://histalk2.com/2026/04/19/monday-morning-update-4-20-26/",
     "badge": "Policy"
-  },
-  {
-    "id": "manual-005",
-    "type": "news",
-    "title": "First AI-designed small molecule reaches Phase II: a regulatory milestone for the field",
-    "excerpt": "An AI-designed small molecule candidate advances to Phase II clinical trials, marking a significant step in demonstrating that fully AI-driven drug design pipelines can meet regulatory standards for human studies.",
-    "source": "Nature Biotechnology",
-    "date": "2026-04-18",
-    "tags": [
-      "AI drug design",
-      "Phase II",
-      "Clinical development",
-      "Milestone"
-    ],
-    "featured": false,
-    "readTime": "4 min",
-    "url": "#",
-    "badge": "Milestone"
   },
   {
     "id": "auto-523a39934f7b",
@@ -1236,24 +1089,6 @@
     "badge": "Preprint"
   },
   {
-    "id": "manual-014",
-    "type": "ainews",
-    "title": "EU AI Act enforcement begins: what it means for AI systems in healthcare",
-    "excerpt": "With the EU AI Act now entering its enforcement phase, healthcare AI developers must navigate new conformity assessment requirements, transparency obligations, and prohibited use cases for high-risk AI systems.",
-    "source": "MIT Technology Review",
-    "date": "2026-04-16",
-    "tags": [
-      "EU AI Act",
-      "Regulation",
-      "Healthcare AI",
-      "Compliance"
-    ],
-    "featured": true,
-    "readTime": "8 min",
-    "url": "#",
-    "badge": "Policy"
-  },
-  {
     "id": "auto-feeea75b827f",
     "type": "news",
     "title": "FDA Takes Step Forward on Testosterone Therapy for Men",
@@ -1267,24 +1102,6 @@
     "readTime": "1 min",
     "url": "http://www.fda.gov/news-events/press-announcements/fda-takes-step-forward-testosterone-therapy-men",
     "badge": "Regulatory"
-  },
-  {
-    "id": "manual-006",
-    "type": "paper",
-    "title": "Federated learning for multi-site pharmacovigilance signal detection",
-    "excerpt": "Novel federated architecture enabling cross-institutional safety signal analysis without sharing patient-level data, validated across six EU national pharmacovigilance databases.",
-    "source": "The Lancet Digital Health",
-    "date": "2026-04-15",
-    "tags": [
-      "Federated learning",
-      "Pharmacovigilance",
-      "Privacy",
-      "EU"
-    ],
-    "featured": false,
-    "readTime": "18 min",
-    "url": "#",
-    "badge": "Open Access"
   },
   {
     "id": "auto-79b4d2086c22",
@@ -1302,24 +1119,6 @@
     "badge": "Regulatory"
   },
   {
-    "id": "manual-015",
-    "type": "ainews",
-    "title": "Anthropic publishes interpretability research on how large language models represent medical knowledge",
-    "excerpt": "New interpretability work from Anthropic shows that LLMs encode structured biomedical knowledge in identifiable internal representations, with implications for understanding model reliability in clinical contexts.",
-    "source": "Anthropic Research",
-    "date": "2026-04-13",
-    "tags": [
-      "Interpretability",
-      "LLM",
-      "Medical knowledge",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "12 min",
-    "url": "#",
-    "badge": "Research"
-  },
-  {
     "id": "auto-2b0a95d04c99",
     "type": "news",
     "title": "FDA Reminds More Than 2,200 Sponsors and Researchers to Disclose Trial Results",
@@ -1333,78 +1132,6 @@
     "readTime": "1 min",
     "url": "http://www.fda.gov/news-events/press-announcements/fda-reminds-more-2200-sponsors-and-researchers-disclose-trial-results",
     "badge": "Regulatory"
-  },
-  {
-    "id": "manual-007",
-    "type": "news",
-    "title": "EU research network publishes open framework for validating AI models in regulatory dossiers",
-    "excerpt": "A publicly available validation framework for AI/ML models intended for inclusion in regulatory dossiers across EMA member states, covering explainability requirements, drift detection, and audit trail standards.",
-    "source": "IMI / IHI network",
-    "date": "2026-04-12",
-    "tags": [
-      "Validation",
-      "Framework",
-      "IMI",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "6 min",
-    "url": "#",
-    "badge": "Policy"
-  },
-  {
-    "id": "manual-009",
-    "type": "paper",
-    "title": "AlphaFold3 in structure-based drug design: one year of industrial application",
-    "excerpt": "Industry-wide retrospective assessing the impact of AlphaFold3 on hit-to-lead optimisation campaigns across 24 pharmaceutical companies, including success rates, practical limitations, and failure modes.",
-    "source": "Journal of Medicinal Chemistry",
-    "date": "2026-04-10",
-    "tags": [
-      "AlphaFold3",
-      "SBDD",
-      "Protein structure",
-      "Lead optimisation"
-    ],
-    "featured": false,
-    "readTime": "30 min",
-    "url": "#",
-    "badge": "High Impact"
-  },
-  {
-    "id": "manual-016",
-    "type": "ainews",
-    "title": "OpenAI GPT-5 technical report: multimodal capabilities and performance on scientific benchmarks",
-    "excerpt": "OpenAI releases the GPT-5 technical report, detailing performance on MMLU-Pro, MedQA, and protein structure prediction tasks, alongside expanded context window and real-time data retrieval capabilities.",
-    "source": "OpenAI",
-    "date": "2026-04-09",
-    "tags": [
-      "GPT-5",
-      "OpenAI",
-      "Multimodal",
-      "Benchmarks"
-    ],
-    "featured": false,
-    "readTime": "20 min",
-    "url": "#",
-    "badge": "Research"
-  },
-  {
-    "id": "manual-011",
-    "type": "news",
-    "title": "European Health Data Space (EHDS) enters into force: implications for AI research",
-    "excerpt": "EHDS provisions now apply across EU member states, enabling secondary use of electronic health record data for AI model training under national health data access body oversight and governance frameworks.",
-    "source": "European Commission",
-    "date": "2026-04-08",
-    "tags": [
-      "EHDS",
-      "EU policy",
-      "Data governance",
-      "EHR"
-    ],
-    "featured": false,
-    "readTime": "7 min",
-    "url": "#",
-    "badge": "Policy"
   },
   {
     "id": "auto-d93dc29a82a4",
@@ -1421,24 +1148,6 @@
     "readTime": "1 min",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42029488/",
     "badge": "PubMed"
-  },
-  {
-    "id": "manual-012",
-    "type": "paper",
-    "title": "Generative chemistry with diffusion models: beyond novelty metrics",
-    "excerpt": "Critical analysis of 89 generative molecular design papers, arguing that synthesisability, ADMET profile, and target selectivity should replace novelty as the primary evaluation criteria for AI-generated molecules.",
-    "source": "ACS Medicinal Chemistry Letters",
-    "date": "2026-04-05",
-    "tags": [
-      "Generative AI",
-      "Molecular design",
-      "ADMET",
-      "Diffusion models"
-    ],
-    "featured": false,
-    "readTime": "15 min",
-    "url": "#",
-    "badge": "Perspective"
   },
   {
     "id": "auto-ba01850d1cab",
