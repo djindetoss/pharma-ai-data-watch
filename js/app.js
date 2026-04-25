@@ -205,21 +205,25 @@ function renderEvents() {
     .slice(0, 6);
 
   if (events.length === 0) {
-    // Fallback to static list if pipeline hasn't fetched events yet
+    // Fallback to curated static list — all have live URLs
     container.innerHTML = UPCOMING_EVENTS.map(e => {
       const parts = e.date.split(' ');
       const cfg = TYPE_CONFIG[e.type] || { icon: '📅' };
-      return `
-        <div class="event-item">
-          <div class="event-date-badge">
-            <div class="month">${parts[0]}</div>
-            <div class="day">${parts[1] || ''}</div>
-          </div>
-          <div class="event-info">
-            <div class="event-title">${e.title}</div>
-            <div class="event-location">${cfg.icon} ${e.location}</div>
-          </div>
+      const month = parts[0] || '—';
+      const day   = parts[1] || '';
+      const hasUrl = e.url && e.url !== '#';
+      const inner = `
+        <div class="event-date-badge">
+          <div class="month">${month}</div>
+          <div class="day">${day}</div>
+        </div>
+        <div class="event-info">
+          <div class="event-title">${e.title}</div>
+          <div class="event-location">${cfg.icon} ${e.location}</div>
         </div>`;
+      return hasUrl
+        ? `<a class="event-item event-item-link" href="${e.url}" target="_blank">${inner}</a>`
+        : `<div class="event-item">${inner}</div>`;
     }).join('');
     return;
   }

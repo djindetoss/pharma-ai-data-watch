@@ -2,13 +2,51 @@
 // This fallback is intentionally empty — do not add manual entries here.
 const ARTICLES = [];
 
+// Curated upcoming events — shown as sidebar fallback when pipeline has not yet
+// fetched webinar/seminar articles. URLs link to the real registration pages.
 const UPCOMING_EVENTS = [
-  { title: "EMA Innovation Task Force briefing", date: "Apr 29", type: "webinar", location: "Online" },
-  { title: "Pharma AI regulatory forum", date: "May 5", type: "seminar", location: "Brussels" },
-  { title: "DIA webinar: LLMs in medical writing", date: "May 6", type: "webinar", location: "Online" },
-  { title: "AI-assisted drug products seminar", date: "May 15", type: "seminar", location: "Brussels" },
-  { title: "FDA CDER AI/ML workshop", date: "May 20", type: "seminar", location: "Hybrid" },
-  { title: "EUDRACON AI working group", date: "Jun 3", type: "seminar", location: "Amsterdam" }
+  {
+    title: "Bio-IT World Expo — AI for drug discovery & development",
+    date: "May 18",
+    type: "seminar",
+    location: "Boston, MA & Virtual",
+    url: "https://www.bio-itworldexpo.com/ai-pharma-biotech"
+  },
+  {
+    title: "PD2M AI for pharma conference — AIChE",
+    date: "Jun 1",
+    type: "seminar",
+    location: "Virtual / TBC",
+    url: "https://www.aiche.org/conferences/pd2m-ai-pharma/2026"
+  },
+  {
+    title: "AI and data in pharma & healthcare summit",
+    date: "Jun 15",
+    type: "seminar",
+    location: "Virtual",
+    url: "https://berryprofessionals.com/ai-and-data-in-pharma-and-healthcare-summit-june-2026/"
+  },
+  {
+    title: "Digi-Tech Pharma & AI 2026 — premier pharma tech conference",
+    date: "Sep 1",
+    type: "seminar",
+    location: "TBC",
+    url: "https://corvusglobalevents.com/digi-tech-pharma-ai/overview"
+  },
+  {
+    title: "AI drug discovery & development summit 2026",
+    date: "Oct 1",
+    type: "seminar",
+    location: "TBC",
+    url: "https://aidrivendrugdevelopment.com/events/ai-drug-discovery-development-summit"
+  },
+  {
+    title: "Pharma & biotech conference directory 2026 — 189 life sciences events",
+    date: "Ongoing",
+    type: "seminar",
+    location: "Global",
+    url: "https://intuitionlabs.ai/conferences"
+  },
 ];
 
 const STATS = [
