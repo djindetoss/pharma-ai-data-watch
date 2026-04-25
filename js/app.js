@@ -95,16 +95,29 @@ function formatDate(iso) {
   return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
+/* Badge → topic mapping used as secondary signal */
+const BADGE_TOPIC_MAP = {
+  'Regulatory': 'regulatory',
+  'Data':       'data-governance',
+  'Clinical AI':'clinical-ai',
+  'Pharma AI':  'drug-discovery',
+};
+
 function matchesTopic(article, topicKey) {
   if (topicKey === 'all') return true;
   const topic = TOPIC_FILTERS[topicKey];
   if (!topic) return true;
+
+  // 1. Exact match on pipeline-assigned topic field (most reliable)
+  if (article.topic && article.topic === topicKey) return true;
+
+  // 2. Badge shortcut — badge reliably reflects which query fetched the article
+  if (article.badge && BADGE_TOPIC_MAP[article.badge] === topicKey) return true;
+
+  // 3. Keyword fallback on title + tags only (not excerpt — too many false positives)
   const haystack = [
     article.title,
-    article.excerpt,
     ...(article.tags || []),
-    article.source,
-    article.badge || '',
   ].join(' ').toLowerCase();
   return topic.keywords.some(kw => haystack.includes(kw));
 }
