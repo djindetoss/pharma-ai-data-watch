@@ -25,12 +25,16 @@
       </a>
 
       <nav>
-        <a href="#" class="active" data-filter-link="all">All content</a>
+        <a href="#" class="active" data-filter-link="all">All</a>
         <a href="#" data-filter-link="news">News</a>
         <a href="#" data-filter-link="paper">Papers</a>
-        <a href="#" data-filter-link="webinar">Webinars</a>
-        <a href="#" data-filter-link="seminar">Seminars</a>
-        <a href="#" data-filter-link="ainews">AI news</a>
+        <a href="#" data-filter-link="ainews">🤖 AI news</a>
+        <span class="nav-divider">|</span>
+        <a href="#" data-topic-link="regulatory">Regulatory science</a>
+        <a href="#" data-topic-link="data-governance">Data governance</a>
+        <a href="#" data-topic-link="drug-discovery">AI in drug discovery</a>
+        <a href="#" data-topic-link="clinical-ai">Clinical AI</a>
+        <span class="nav-divider">|</span>
         <a href="#about">About</a>
       </nav>
 
@@ -78,31 +82,46 @@
     </div>
   </section>
 
-  <!-- ── FILTER BAR ── -->
+  <!-- ── TYPE FILTER BAR ── -->
   <div class="filter-bar" id="main-content">
     <div class="filter-inner">
       <button class="filter-btn active" data-filter="all">
-        🗂 All <span class="count">12</span>
+        🗂 All <span class="count">–</span>
       </button>
       <div class="filter-divider"></div>
       <button class="filter-btn" data-filter="news">
-        📰 News <span class="count">4</span>
+        📰 News <span class="count">–</span>
       </button>
       <button class="filter-btn" data-filter="paper">
-        📄 Papers <span class="count">4</span>
+        📄 Papers <span class="count">–</span>
       </button>
       <button class="filter-btn" data-filter="webinar">
-        🎥 Webinars <span class="count">2</span>
+        🎥 Webinars <span class="count">–</span>
       </button>
       <button class="filter-btn" data-filter="seminar">
-        🎓 Seminars <span class="count">2</span>
+        🎓 Events <span class="count">–</span>
       </button>
       <div class="filter-divider"></div>
       <button class="filter-btn" data-filter="ainews">
-        🤖 AI news <span class="count">4</span>
+        🤖 AI news <span class="count">–</span>
       </button>
     </div>
   </div>
+
+  <!-- ── TOPIC FILTER BAR ── -->
+  <div class="topic-bar">
+    <div class="filter-inner">
+      <span class="topic-bar-label">Topic:</span>
+      <button class="topic-btn active" data-topic="all">All topics</button>
+      <button class="topic-btn" data-topic="regulatory">🏛️ Regulatory science</button>
+      <button class="topic-btn" data-topic="data-governance">📊 Data governance</button>
+      <button class="topic-btn" data-topic="drug-discovery">🧬 AI in drug discovery</button>
+      <button class="topic-btn" data-topic="clinical-ai">🔬 Clinical AI</button>
+    </div>
+  </div>
+
+  <!-- ── ACTIVE TOPIC BANNER ── -->
+  <div class="topic-banner" id="topic-banner" style="display:none"></div>
 
   <!-- ── MAIN LAYOUT ── -->
   <div class="main-layout">

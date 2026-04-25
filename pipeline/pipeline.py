@@ -336,7 +336,7 @@ def fetch_biorxiv(dry_run=False) -> list:
 
 # ── RSS generic fetcher ───────────────────────────────────────────────────────
 
-_EVENT_SIGNALS = [
+_EVENT_SIGNALS   = [
     "webinar", "web seminar", "online seminar", "virtual seminar",
     "conference", "congress", "symposium", "summit", "workshop",
     "seminar", "training", "short course", "masterclass",
@@ -345,15 +345,41 @@ _EVENT_SIGNALS = [
 ]
 _WEBINAR_SIGNALS = ["webinar", "web seminar", "online seminar", "virtual seminar", "virtual event"]
 
+# An event must mention at least one of these to be relevant to this portal
+_EVENT_RELEVANCE_KEYWORDS = [
+    # Pharma / drug development
+    "drug", "pharmaceutical", "medicine", "medicinal", "biopharma", "biotech",
+    "clinical", "trial", "regulatory", "ema", "fda", "who", "ich",
+    "pharmacovigilance", "safety", "efficacy", "approval", "submission",
+    "medical device", "in vitro diagnostic", "ivd",
+    # Data / digital health
+    "data", "digital health", "health data", "ehds", "fhir", "interoperab",
+    "real-world", "rwe", "rwd", "ehr", "electronic health",
+    # AI / ML
+    "artificial intelligence", "machine learning", "deep learning",
+    "large language model", "llm", "generative ai", "neural network",
+    "natural language processing", "nlp", "foundation model",
+    "ai governance", "ai regulation", "responsible ai",
+    # Research / science
+    "bioinformatics", "genomics", "proteomics", "omics", "biomarker",
+    "precision medicine", "translational", "drug discovery",
+]
+
 
 def _detect_event_type(title: str, summary: str) -> str | None:
-    """Return 'webinar' or 'seminar' if the text is clearly an event announcement, else None."""
+    """Return 'webinar' or 'seminar' if text signals an event, else None."""
     text = (title + " " + summary).lower()
     if any(s in text for s in _WEBINAR_SIGNALS):
         return "webinar"
     if any(s in text for s in _EVENT_SIGNALS):
         return "seminar"
     return None
+
+
+def _event_is_relevant(title: str, summary: str) -> bool:
+    """Return True only if the event content relates to pharma, health data, or AI."""
+    text = (title + " " + summary).lower()
+    return any(kw in text for kw in _EVENT_RELEVANCE_KEYWORDS)
 
 
 def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool) -> list:
@@ -443,14 +469,21 @@ def fetch_ai_news_rss(dry_run=False) -> list:
 
 
 def fetch_events_rss(dry_run=False) -> list:
-    """Fetch pharma/regulatory event feeds and classify as webinar or seminar."""
+    """Fetch pharma/regulatory event feeds, classify as webinar/seminar, filter for relevance."""
     if not CONFIG.get("event_sources", {}).get("enabled"):
         return []
-    results = []
+    raw = []
     for feed in CONFIG["event_sources"]["feeds"]:
         # Pass "seminar" as default; _detect_event_type() will refine to webinar if needed
-        results += fetch_rss_feed(feed, "seminar", require_pharma=False)
-    return results
+        raw += fetch_rss_feed(feed, "seminar", require_pharma=False)
+
+    # Keep only events relevant to pharma, health data, or AI
+    relevant = [
+        a for a in raw
+        if _event_is_relevant(a.get("title", ""), a.get("excerpt", ""))
+    ]
+    log.info(f"Events: {len(raw)} fetched → {len(relevant)} relevant after topic filter")
+    return relevant
 
 
 # ── Deduplication & merge ─────────────────────────────────────────────────────
