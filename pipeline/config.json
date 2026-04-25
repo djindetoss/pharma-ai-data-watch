@@ -9,7 +9,7 @@
 
   "newsapi": {
     "enabled": true,
-    "max_results_per_query": 10,
+    "max_results_per_query": 20,
     "_comment": "Free tier at newsapi.org — 1,000 requests/day, no credit card needed"
   },
 
@@ -20,11 +20,11 @@
   },
 
   "settings": {
-    "max_articles_per_source": 10,
+    "max_articles_per_source": 25,
     "auto_approve_threshold": 3,
     "min_relevance_score": 1,
-    "max_total_articles": 100,
-    "days_lookback": 7
+    "max_total_articles": 300,
+    "days_lookback": 30
   },
 
   "pubmed": {
@@ -45,7 +45,7 @@
       { "q": "federated learning privacy-preserving health data pseudonymisation pharmaceutical", "topic": "data-governance" },
       { "q": "patient registry disease registry data governance rare disease EMA",              "topic": "data-governance" }
     ],
-    "max_results_per_query": 5,
+    "max_results_per_query": 10,
     "db": "pubmed"
   },
 
