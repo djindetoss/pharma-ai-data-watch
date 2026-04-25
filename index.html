@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharma AI & Data Watch — AI and data intelligence in drug development</title>
+  <meta name="description" content="A curated intelligence portal tracking the most relevant news, scientific papers, webinars, and events at the intersection of AI, data science, and pharmaceutical regulation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AI</div>
+        <div class="logo-text">
+          <span class="logo-title">Pharma AI &amp; Data Watch</span>
+          <span class="logo-sub">Intelligence portal · Drug development</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#" class="active" data-filter-link="all">All content</a>
+        <a href="#" data-filter-link="news">News</a>
+        <a href="#" data-filter-link="paper">Papers</a>
+        <a href="#" data-filter-link="webinar">Webinars</a>
+        <a href="#" data-filter-link="seminar">Seminars</a>
+        <a href="#" data-filter-link="ainews">AI news</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="search" class="search-input" placeholder="Search articles, tags…" autocomplete="off" />
+        </div>
+        <button class="btn-subscribe" data-open-subscribe>Subscribe</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          🧬 AI &amp; data in medicinal products
+        </div>
+        <h1>
+          The central resource for<br/>
+          <em>AI, data &amp; regulatory science</em><br/>
+          in drug development
+        </h1>
+        <p class="hero-desc">
+          A curated, continuously updated portal aggregating the most relevant news,
+          peer-reviewed papers, webinars, and events at the intersection of
+          artificial intelligence, data science, and EU pharmaceutical regulation.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" data-open-subscribe>
+            📬 Get weekly updates
+          </button>
+          <button class="btn-outline" onclick="document.getElementById('main-content').scrollIntoView({behavior:'smooth'})">
+            Explore content ↓
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-stats" id="hero-stats">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FILTER BAR ── -->
+  <div class="filter-bar" id="main-content">
+    <div class="filter-inner">
+      <button class="filter-btn active" data-filter="all">
+        🗂 All <span class="count">12</span>
+      </button>
+      <div class="filter-divider"></div>
+      <button class="filter-btn" data-filter="news">
+        📰 News <span class="count">4</span>
+      </button>
+      <button class="filter-btn" data-filter="paper">
+        📄 Papers <span class="count">4</span>
+      </button>
+      <button class="filter-btn" data-filter="webinar">
+        🎥 Webinars <span class="count">2</span>
+      </button>
+      <button class="filter-btn" data-filter="seminar">
+        🎓 Seminars <span class="count">2</span>
+      </button>
+      <div class="filter-divider"></div>
+      <button class="filter-btn" data-filter="ainews">
+        🤖 AI news <span class="count">4</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ── MAIN LAYOUT ── -->
+  <div class="main-layout">
+
+    <!-- LEFT: Content -->
+    <main>
+      <div id="featured-section">
+        <div class="section-heading">
+          <h2>Featured</h2>
+          <a href="#" class="see-all" data-open-subscribe>Subscribe to digest →</a>
+        </div>
+        <div class="featured-grid" id="featured-grid"></div>
+      </div>
+
+      <div class="section-heading">
+        <h2>Latest</h2>
+        <a href="#" class="see-all">View all →</a>
+      </div>
+      <div class="articles-list" id="articles-list"></div>
+    </main>
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="sidebar">
+
+      <!-- Upcoming Events -->
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#dbeafe">📅</div>
+          <h3>Upcoming events</h3>
+        </div>
+        <div class="event-list" id="event-list"></div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter-widget">
+        <h3>📬 Weekly digest</h3>
+        <p>Key papers, news, and events in AI &amp; pharma — delivered every Monday at 8:00 CET.</p>
+        <div class="newsletter-input-wrap">
+          <input type="email" placeholder="your@email.com" />
+          <button data-open-subscribe>Subscribe — free</button>
+        </div>
+      </div>
+
+      <!-- Key Resources -->
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#d1fae5">🔗</div>
+          <h3>Key resources</h3>
+        </div>
+        <div class="quick-links">
+          <a href="https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-advice-protocol-assistance/innovation-medicines" target="_blank" class="quick-link">
+            <span class="quick-link-icon">🇪🇺</span>
+            <span class="quick-link-text">EMA AI guidance documents</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+          <a href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices" target="_blank" class="quick-link">
+            <span class="quick-link-icon">🇺🇸</span>
+            <span class="quick-link-text">FDA AI/ML action plan</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+          <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en" target="_blank" class="quick-link">
+            <span class="quick-link-icon">📊</span>
+            <span class="quick-link-text">European Health Data Space (EHDS)</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+          <a href="https://www.ihi.europa.eu" target="_blank" class="quick-link">
+            <span class="quick-link-icon">🧬</span>
+            <span class="quick-link-text">IHI — Innovative Health Initiative</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=artificial+intelligence+drug+discovery" target="_blank" class="quick-link">
+            <span class="quick-link-icon">📚</span>
+            <span class="quick-link-text">PubMed: AI in drug discovery</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+          <a href="https://www.who.int/teams/digital-health-and-innovation/ai-for-health" target="_blank" class="quick-link">
+            <span class="quick-link-icon">🌐</span>
+            <span class="quick-link-text">WHO AI for health</span>
+            <span class="quick-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Topic tags -->
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#ede9fe">🏷</div>
+          <h3>Browse by topic</h3>
+        </div>
+        <div class="tags-cloud">
+          <span class="tag-cloud-item">Machine learning</span>
+          <span class="tag-cloud-item">EMA</span>
+          <span class="tag-cloud-item">Drug discovery</span>
+          <span class="tag-cloud-item">AlphaFold3</span>
+          <span class="tag-cloud-item">Clinical trials</span>
+          <span class="tag-cloud-item">Federated learning</span>
+          <span class="tag-cloud-item">Pharmacovigilance</span>
+          <span class="tag-cloud-item">EHDS</span>
+          <span class="tag-cloud-item">Generative AI</span>
+          <span class="tag-cloud-item">LLM</span>
+          <span class="tag-cloud-item">ADMET</span>
+          <span class="tag-cloud-item">Regulatory science</span>
+          <span class="tag-cloud-item">IDMP</span>
+          <span class="tag-cloud-item">RWE</span>
+          <span class="tag-cloud-item">CTD</span>
+          <span class="tag-cloud-item">Data governance</span>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ── ABOUT SECTION ── -->
+  <section id="about" class="about-section">
+    <div class="about-section-inner">
+      <div class="about-section-text">
+        <div class="about-eyebrow">ℹ️ About this portal</div>
+        <h2>A focused resource at the<br/>frontier of pharma and AI</h2>
+        <p>
+          <strong>Pharma AI &amp; Data Watch</strong> is an independent intelligence portal dedicated to
+          tracking developments at the intersection of artificial intelligence, data science,
+          and pharmaceutical regulation. It brings together high-quality, vetted content
+          from leading scientific journals, regulatory agencies, and industry events.
+        </p>
+        <p>
+          Coverage spans the full drug development lifecycle — from AI-assisted target
+          identification and generative chemistry, through clinical trial innovation and
+          real-world evidence, to EU and global regulatory science, data standards,
+          and health data governance.
+        </p>
+        <p>
+          Content is selected for scientific and regulatory relevance, with a focus on
+          accuracy and depth over volume. If you have a relevant publication, event,
+          or resource to suggest, use the contact link below.
+        </p>
+        <a href="mailto:contact@pharmaaIdatawatch.eu" class="btn-primary" style="display:inline-flex;margin-top:8px;">
+          ✉️ Suggest content
+        </a>
+      </div>
+      <div class="about-section-pillars">
+        <div class="pillar-card">
+          <div class="pillar-icon">🏛️</div>
+          <div class="pillar-title">Regulatory science</div>
+          <div class="pillar-desc">EMA, CHMP, PRIME, conditional MA and AI regulatory pathways</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🧬</div>
+          <div class="pillar-title">AI in drug discovery</div>
+          <div class="pillar-desc">Target identification, generative chemistry, ADMET prediction</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">📊</div>
+          <div class="pillar-title">Data governance</div>
+          <div class="pillar-desc">EHDS, IDMP, FHIR, federated data and privacy-preserving methods</div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🔬</div>
+          <div class="pillar-title">Clinical AI</div>
+          <div class="pillar-desc">Adaptive trials, real-world evidence, pharmacovigilance AI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:14px;">
+            <div class="logo-icon">AI</div>
+            <div class="logo-text">
+              <span class="logo-title">Pharma AI &amp; Data Watch</span>
+              <span class="logo-sub">Intelligence portal · Drug development</span>
+            </div>
+          </div>
+          <p>An independent portal tracking AI, data, and regulatory science developments across the drug development ecosystem.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Scientific papers</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Seminars &amp; events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="#">Regulatory science</a></li>
+            <li><a href="#">Drug discovery AI</a></li>
+            <li><a href="#">Clinical trials</a></li>
+            <li><a href="#">Data governance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Portal</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Suggest content</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Pharma AI &amp; Data Watch — Maintained by <strong>Félicien Tosso</strong>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── SUBSCRIBE MODAL ── -->
+  <div class="subscribe-modal" id="subscribe-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div style="font-size:36px;margin-bottom:12px;">📬</div>
+      <h2>Weekly digest</h2>
+      <p>
+        Receive the most relevant AI &amp; data pharma content — curated weekly and delivered every Monday morning.
+      </p>
+      <form class="modal-form" id="subscribe-form">
+        <input type="text" placeholder="First name" required />
+        <input type="email" placeholder="Professional email address" required />
+        <input type="text" placeholder="Organisation (optional)" />
+        <select>
+          <option value="" disabled selected>Area of interest</option>
+          <option>Regulatory affairs</option>
+          <option>Drug discovery / R&amp;D</option>
+          <option>Clinical development</option>
+          <option>Data science / AI</option>
+          <option>Pharmacovigilance</option>
+          <option>Academic research</option>
+          <option>Other</option>
+        </select>
+        <button type="submit">Subscribe →</button>
+        <p class="modal-privacy">🔒 No spam. Unsubscribe anytime. GDPR-compliant.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
