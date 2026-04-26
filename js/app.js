@@ -458,8 +458,14 @@ function initPillarCards() {
         b.classList.toggle('active', b.dataset.filter === 'all')
       );
       render();
-      /* Scroll directly to first article, skipping the filter bars */
-      document.getElementById('featured-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      /* Wait one frame for DOM to repaint, then scroll below the sticky header */
+      requestAnimationFrame(() => {
+        const el     = document.getElementById('featured-section');
+        const header = document.querySelector('header');
+        if (!el) return;
+        const offset = (header ? header.offsetHeight : 64) + 12;
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+      });
     });
   });
 }
