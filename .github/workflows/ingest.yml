@@ -84,17 +84,29 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
 
-          # Inject Brevo API key into app.js (key never stored in git history)
+          # Always sync latest app.js from master and inject Brevo key
+          git show origin/master:portal/js/app.js > js/app.js
           if [ -n "$BREVO_API_KEY" ]; then
             sed -i "s|__BREVO_API_KEY__|${BREVO_API_KEY}|g" js/app.js
           fi
 
-          # Only update if content actually changed
+          CHANGED=false
+
+          # Check articles.json
           if ! diff -q /tmp/articles.json js/articles.json > /dev/null 2>&1; then
             cp /tmp/articles.json js/articles.json
+            CHANGED=true
+          fi
+
+          # Check app.js (will differ due to key injection)
+          if ! git diff --quiet js/app.js; then
+            CHANGED=true
+          fi
+
+          if [ "$CHANGED" = "true" ]; then
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
-            git add js/articles.json
-            git commit -m "chore: sync articles to gh-pages — $TIMESTAMP"
+            git add js/articles.json js/app.js
+            git commit -m "chore: sync to gh-pages — $TIMESTAMP"
             git push origin gh-pages
             echo "gh-pages updated."
           else
