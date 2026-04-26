@@ -440,6 +440,29 @@ function initNav() {
   });
 }
 
+/* ── About pillar cards → topic filter ── */
+function initPillarCards() {
+  document.querySelectorAll('.pillar-card[data-topic-link]').forEach(card => {
+    card.addEventListener('click', e => {
+      e.preventDefault();
+      const topic = card.dataset.topicLink;
+      activeTopicFilter = topic;
+      activeFilter      = 'all';
+      searchQuery       = '';
+      /* Sync topic buttons */
+      document.querySelectorAll('.topic-btn[data-topic]').forEach(b =>
+        b.classList.toggle('active', b.dataset.topic === topic)
+      );
+      /* Sync type filter buttons */
+      document.querySelectorAll('.filter-btn[data-filter]').forEach(b =>
+        b.classList.toggle('active', b.dataset.filter === 'all')
+      );
+      render();
+      document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+}
+
 /* ── Search ── */
 function initSearch() {
   document.querySelectorAll('.search-input').forEach(input => {
@@ -599,5 +622,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTagClicks();
   initSubscribeModal();
   initNav();
+  initPillarCards();
   loadArticles();
 });
