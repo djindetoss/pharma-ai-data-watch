@@ -458,7 +458,8 @@ function initPillarCards() {
         b.classList.toggle('active', b.dataset.filter === 'all')
       );
       render();
-      document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
+      /* Scroll directly to first article, skipping the filter bars */
+      document.getElementById('featured-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 }
