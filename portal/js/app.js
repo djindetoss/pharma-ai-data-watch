@@ -548,6 +548,14 @@ function initSubscribeModal() {
     const organisation = form.querySelector('input[name="organisation"]')?.value.trim() || '—';
     const interest     = form.querySelector('select[name="area_of_interest"]')?.value   || '—';
 
+    if (typeof emailjs === 'undefined') {
+      errEl.textContent   = 'Email service failed to load. Please refresh the page and try again.';
+      errEl.style.display = 'block';
+      btn.disabled        = false;
+      btn.innerHTML       = 'Subscribe →';
+      return;
+    }
+
     try {
       /* 1 — Confirmation email → subscriber */
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
@@ -581,7 +589,8 @@ function initSubscribeModal() {
 
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
-  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  /* Guard: SDK may fail to load from CDN — must not block other init */
+  try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch (e) { console.warn('EmailJS SDK not ready:', e); }
   renderStats();
   renderEvents();
   initFilters();
