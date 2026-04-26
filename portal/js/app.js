@@ -473,19 +473,96 @@ function initTagClicks() {
 }
 
 /* ── Subscribe modal ── */
+
+// ▶ Replace YOUR_FORM_ID with your Formspree form ID.
+//   1. Go to https://formspree.io → New Form → copy the ID (e.g. "xpwrjdpz")
+//   2. In the Formspree dashboard enable "Auto-reply" so subscribers get a confirmation email.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
+function resetSubscribeModal() {
+  const form    = document.getElementById('subscribe-form');
+  const success = document.getElementById('modal-success');
+  const btn     = document.getElementById('subscribe-btn');
+  const errEl   = document.getElementById('subscribe-error');
+  if (form)    { form.reset(); form.style.display = 'flex'; }
+  if (success)   success.style.display = 'none';
+  if (btn)     { btn.disabled = false; btn.innerHTML = 'Subscribe →'; }
+  if (errEl)   { errEl.textContent = ''; errEl.style.display = 'none'; }
+}
+
 function initSubscribeModal() {
   const modal = document.getElementById('subscribe-modal');
+
+  /* Open modal */
   document.querySelectorAll('[data-open-subscribe]').forEach(btn =>
-    btn.addEventListener('click', () => modal?.classList.add('open'))
+    btn.addEventListener('click', () => {
+      resetSubscribeModal();
+      modal?.classList.add('open');
+    })
   );
+
+  /* Sidebar quick-subscribe: pre-fill email then open modal */
+  document.querySelector('.newsletter-input-wrap button')?.addEventListener('click', () => {
+    const sidebarEmail = document.querySelector('.newsletter-input-wrap input[type="email"]');
+    resetSubscribeModal();
+    modal?.classList.add('open');
+    if (sidebarEmail?.value) {
+      const modalEmail = document.querySelector('#subscribe-form input[name="email"]');
+      if (modalEmail) { modalEmail.value = sidebarEmail.value; sidebarEmail.value = ''; }
+    }
+  });
+
+  /* Close on X or backdrop click */
   document.getElementById('modal-close')?.addEventListener('click', () => modal?.classList.remove('open'));
   modal?.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
-  document.getElementById('subscribe-form')?.addEventListener('submit', e => {
+
+  /* Form submission → Formspree */
+  document.getElementById('subscribe-form')?.addEventListener('submit', async e => {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Subscribed!';
-    btn.style.background = '#059669';
-    setTimeout(() => modal?.classList.remove('open'), 1500);
+    const form  = e.target;
+    const btn   = document.getElementById('subscribe-btn');
+    const errEl = document.getElementById('subscribe-error');
+
+    /* Basic client-side validation */
+    const email = form.querySelector('input[name="email"]')?.value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errEl.textContent = 'Please enter a valid email address.';
+      errEl.style.display = 'block';
+      return;
+    }
+
+    /* Loading state */
+    btn.disabled = true;
+    btn.innerHTML = '<span class="btn-spinner"></span> Sending…';
+    errEl.style.display = 'none';
+
+    try {
+      const resp = await fetch(FORMSPREE_ENDPOINT, {
+        method:  'POST',
+        body:    new FormData(form),
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (resp.ok) {
+        /* Success → swap to confirmation screen */
+        form.style.display = 'none';
+        document.getElementById('modal-success').style.display = 'flex';
+      } else {
+        const json = await resp.json().catch(() => ({}));
+        const msg  = json.errors?.[0]?.message ||
+                     (resp.status === 422 ? 'Please check the form and try again.' :
+                      'Submission failed. Please try again shortly.');
+        errEl.textContent    = msg;
+        errEl.style.display  = 'block';
+        btn.disabled         = false;
+        btn.innerHTML        = 'Subscribe →';
+      }
+    } catch {
+      errEl.textContent   = 'Network error — please check your connection and retry.';
+      errEl.style.display = 'block';
+      btn.disabled        = false;
+      btn.innerHTML       = 'Subscribe →';
+    }
   });
 }
 
