@@ -482,9 +482,9 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkokelzv';
 
 // ▶ EmailJS — free at https://emailjs.com (200 emails/month)
 //   Fill in the 3 values below after completing the setup steps.
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // Account → API Keys
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // Email Services → Service ID
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // Email Templates → Template ID
+const EMAILJS_PUBLIC_KEY  = 'lq94KnANIXmSMbWg3';
+const EMAILJS_SERVICE_ID  = 'service_hfhg9fq';
+const EMAILJS_TEMPLATE_ID = 'template_z0vtqoi';
 
 /* Load & initialise the EmailJS browser SDK */
 (function () {
