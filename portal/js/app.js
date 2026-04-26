@@ -477,7 +477,7 @@ function initTagClicks() {
 // ▶ Replace YOUR_FORM_ID with your Formspree form ID.
 //   1. Go to https://formspree.io → New Form → copy the ID (e.g. "xpwrjdpz")
 //   2. In the Formspree dashboard enable "Auto-reply" so subscribers get a confirmation email.
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkokelzv';
 
 function resetSubscribeModal() {
   const form    = document.getElementById('subscribe-form');
