@@ -474,10 +474,30 @@ function initTagClicks() {
 
 /* ── Subscribe modal ── */
 
-// ▶ Replace YOUR_FORM_ID with your Formspree form ID.
-//   1. Go to https://formspree.io → New Form → copy the ID (e.g. "xpwrjdpz")
-//   2. In the Formspree dashboard enable "Auto-reply" so subscribers get a confirmation email.
+/* ── Email config ──────────────────────────────────────────────────────────
+   Formspree  → admin notification when someone subscribes
+   EmailJS    → confirmation email sent to the subscriber
+   ──────────────────────────────────────────────────────────────────────── */
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkokelzv';
+
+// ▶ EmailJS — free at https://emailjs.com (200 emails/month)
+//   Fill in the 3 values below after completing the setup steps.
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // Account → API Keys
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // Email Services → Service ID
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // Email Templates → Template ID
+
+/* Load & initialise the EmailJS browser SDK */
+(function () {
+  const s  = document.createElement('script');
+  s.src    = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+  s.async  = true;
+  s.onload = () => {
+    if (EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    }
+  };
+  document.head.appendChild(s);
+}());
 
 function resetSubscribeModal() {
   const form    = document.getElementById('subscribe-form');
@@ -544,6 +564,16 @@ function initSubscribeModal() {
       });
 
       if (resp.ok) {
+        /* Send confirmation email to subscriber via EmailJS (non-blocking) */
+        const firstName = form.querySelector('input[name="first_name"]')?.value.trim() || '';
+        if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
+          emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            to_name:  firstName || 'there',
+            to_email: email,
+            reply_to: 'contact@pharmaaIdatawatch.eu',
+          }).catch(() => { /* silent — don't block UX if auto-reply fails */ });
+        }
+
         /* Success → swap to confirmation screen */
         form.style.display = 'none';
         document.getElementById('modal-success').style.display = 'flex';
