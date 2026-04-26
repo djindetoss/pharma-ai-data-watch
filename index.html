@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=20260425" />
+  <link rel="stylesheet" href="css/styles.css?v=20260426" />
 </head>
 <body>
 
@@ -349,11 +349,12 @@
       <p>
         Receive the most relevant AI &amp; data pharma content — curated weekly and delivered every Monday morning.
       </p>
-      <form class="modal-form" id="subscribe-form">
-        <input type="text" placeholder="First name" required />
-        <input type="email" placeholder="Professional email address" required />
-        <input type="text" placeholder="Organisation (optional)" />
-        <select>
+      <form class="modal-form" id="subscribe-form" novalidate>
+        <input type="hidden" name="_subject" value="New subscriber — Pharma AI &amp; Data Watch" />
+        <input type="text"  name="first_name"       placeholder="First name" required />
+        <input type="email" name="email"             placeholder="Professional email address" required />
+        <input type="text"  name="organisation"      placeholder="Organisation (optional)" />
+        <select name="area_of_interest">
           <option value="" disabled selected>Area of interest</option>
           <option>Regulatory affairs</option>
           <option>Drug discovery / R&amp;D</option>
@@ -363,13 +364,24 @@
           <option>Academic research</option>
           <option>Other</option>
         </select>
-        <button type="submit">Subscribe →</button>
+        <div class="subscribe-error" id="subscribe-error"></div>
+        <button type="submit" id="subscribe-btn">Subscribe →</button>
         <p class="modal-privacy">🔒 No spam. Unsubscribe anytime. GDPR-compliant.</p>
       </form>
+
+      <!-- Success state (shown after submission) -->
+      <div class="modal-success" id="modal-success">
+        <div class="modal-success-icon">✅</div>
+        <h3>You're subscribed!</h3>
+        <p>A confirmation email is on its way to your inbox.<br/>Your first digest arrives next Monday at 8:00 CET.</p>
+        <button class="btn-primary modal-success-close" onclick="document.getElementById('subscribe-modal').classList.remove('open')">
+          Close
+        </button>
+      </div>
     </div>
   </div>
 
-  <script src="js/data.js?v=20260425"></script>
-  <script src="js/app.js?v=20260425"></script>
+  <script src="js/data.js?v=20260426"></script>
+  <script src="js/app.js?v=20260426"></script>
 </body>
 </html>
