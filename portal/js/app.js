@@ -475,16 +475,14 @@ function initTagClicks() {
 /* ── Subscribe modal ── */
 
 /* ── Email config ──────────────────────────────────────────────────────────
-   Formspree  → admin notification when someone subscribes
-   EmailJS    → confirmation email sent to the subscriber
+   EmailJS handles both emails (Formspree removed):
+     EMAILJS_TEMPLATE_ID       → confirmation sent to the subscriber
+     EMAILJS_ADMIN_TEMPLATE_ID → notification sent to the admin
    ──────────────────────────────────────────────────────────────────────── */
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkokelzv';
-
-// ▶ EmailJS — free at https://emailjs.com (200 emails/month)
-//   Fill in the 3 values below after completing the setup steps.
-const EMAILJS_PUBLIC_KEY  = 'lq94KnANIXmSMbWg3';
-const EMAILJS_SERVICE_ID  = 'service_hfhg9fq';
-const EMAILJS_TEMPLATE_ID = 'template_z0vtqoi';
+const EMAILJS_PUBLIC_KEY       = 'lq94KnANIXmSMbWg3';
+const EMAILJS_SERVICE_ID       = 'service_hfhg9fq';
+const EMAILJS_TEMPLATE_ID      = 'template_z0vtqoi';  // → subscriber confirmation
+const EMAILJS_ADMIN_TEMPLATE_ID = 'YOUR_ADMIN_TEMPLATE_ID'; // → set after creating template
 
 /* Load & initialise the EmailJS browser SDK */
 (function () {
@@ -536,59 +534,54 @@ function initSubscribeModal() {
   document.getElementById('modal-close')?.addEventListener('click', () => modal?.classList.remove('open'));
   modal?.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
 
-  /* Form submission → Formspree */
+  /* Form submission → EmailJS only (Formspree removed) */
   document.getElementById('subscribe-form')?.addEventListener('submit', async e => {
     e.preventDefault();
     const form  = e.target;
     const btn   = document.getElementById('subscribe-btn');
     const errEl = document.getElementById('subscribe-error');
 
-    /* Basic client-side validation */
+    /* Client-side validation */
     const email = form.querySelector('input[name="email"]')?.value.trim();
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      errEl.textContent = 'Please enter a valid email address.';
-      errEl.style.display = 'block';
+      errEl.textContent    = 'Please enter a valid email address.';
+      errEl.style.display  = 'block';
       return;
     }
 
     /* Loading state */
-    btn.disabled = true;
+    btn.disabled  = true;
     btn.innerHTML = '<span class="btn-spinner"></span> Sending…';
     errEl.style.display = 'none';
 
+    const firstName    = form.querySelector('input[name="first_name"]')?.value.trim() || '';
+    const organisation = form.querySelector('input[name="organisation"]')?.value.trim() || '—';
+    const interest     = form.querySelector('select[name="area_of_interest"]')?.value   || '—';
+
     try {
-      const resp = await fetch(FORMSPREE_ENDPOINT, {
-        method:  'POST',
-        body:    new FormData(form),
-        headers: { 'Accept': 'application/json' },
+      /* 1 — Confirmation email → subscriber */
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        to_name:  firstName || 'there',
+        to_email: email,
+        reply_to: 'contact@pharmaaIdatawatch.eu',
       });
 
-      if (resp.ok) {
-        /* Send confirmation email to subscriber via EmailJS (non-blocking) */
-        const firstName = form.querySelector('input[name="first_name"]')?.value.trim() || '';
-        if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
-          emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-            to_name:  firstName || 'there',
-            to_email: email,
-            reply_to: 'contact@pharmaaIdatawatch.eu',
-          }).catch(() => { /* silent — don't block UX if auto-reply fails */ });
-        }
-
-        /* Success → swap to confirmation screen */
-        form.style.display = 'none';
-        document.getElementById('modal-success').style.display = 'flex';
-      } else {
-        const json = await resp.json().catch(() => ({}));
-        const msg  = json.errors?.[0]?.message ||
-                     (resp.status === 422 ? 'Please check the form and try again.' :
-                      'Submission failed. Please try again shortly.');
-        errEl.textContent    = msg;
-        errEl.style.display  = 'block';
-        btn.disabled         = false;
-        btn.innerHTML        = 'Subscribe →';
+      /* 2 — Admin notification (non-blocking, fires in parallel) */
+      if (EMAILJS_ADMIN_TEMPLATE_ID !== 'YOUR_ADMIN_TEMPLATE_ID') {
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_ADMIN_TEMPLATE_ID, {
+          subscriber_name:         firstName  || '—',
+          subscriber_email:        email,
+          subscriber_organisation: organisation,
+          subscriber_interest:     interest,
+        }).catch(() => {});
       }
-    } catch {
-      errEl.textContent   = 'Network error — please check your connection and retry.';
+
+      /* Success screen */
+      form.style.display = 'none';
+      document.getElementById('modal-success').style.display = 'flex';
+
+    } catch (err) {
+      errEl.textContent   = 'Could not send — please try again or contact us directly.';
       errEl.style.display = 'block';
       btn.disabled        = false;
       btn.innerHTML       = 'Subscribe →';
