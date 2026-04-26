@@ -72,6 +72,8 @@ jobs:
           fi
 
       - name: Sync articles.json to gh-pages (live site)
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -81,6 +83,11 @@ jobs:
 
           git fetch origin gh-pages
           git checkout gh-pages
+
+          # Inject Brevo API key into app.js (key never stored in git history)
+          if [ -n "$BREVO_API_KEY" ]; then
+            sed -i "s|__BREVO_API_KEY__|${BREVO_API_KEY}|g" js/app.js
+          fi
 
           # Only update if content actually changed
           if ! diff -q /tmp/articles.json js/articles.json > /dev/null 2>&1; then
