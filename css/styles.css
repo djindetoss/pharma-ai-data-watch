@@ -977,11 +977,27 @@ a.filter-btn-link:hover { background: var(--light); color: var(--dark); }
   border-radius: var(--radius-lg);
   padding: 22px;
   transition: all 0.2s;
+  cursor: pointer;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
-.pillar-card:hover { border-color: var(--primary-light); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.pillar-card:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  background: var(--white);
+}
+.pillar-card:hover .pillar-cta { color: var(--primary-light); }
 .pillar-icon { font-size: 28px; margin-bottom: 10px; }
 .pillar-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
-.pillar-desc { font-size: 12.5px; color: var(--mid); line-height: 1.5; }
+.pillar-desc { font-size: 12.5px; color: var(--mid); line-height: 1.5; margin-bottom: 14px; }
+.pillar-cta {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--mid);
+  transition: color 0.15s;
+}
 
 @media (max-width: 900px) {
   .about-section-inner { grid-template-columns: 1fr; gap: 32px; }
