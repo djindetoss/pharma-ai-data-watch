@@ -484,18 +484,8 @@ const EMAILJS_SERVICE_ID       = 'service_hfhg9fq';
 const EMAILJS_TEMPLATE_ID      = 'template_z0vtqoi';  // → subscriber confirmation
 const EMAILJS_ADMIN_TEMPLATE_ID = 'template_ye3iwfj';        // → admin notification
 
-/* Load & initialise the EmailJS browser SDK */
-(function () {
-  const s  = document.createElement('script');
-  s.src    = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-  s.async  = true;
-  s.onload = () => {
-    if (EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
-      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    }
-  };
-  document.head.appendChild(s);
-}());
+/* EmailJS is loaded via a <script> tag in index.html before this file.
+   We call emailjs.init() inside DOMContentLoaded (see bottom of file). */
 
 function resetSubscribeModal() {
   const form    = document.getElementById('subscribe-form');
@@ -566,22 +556,22 @@ function initSubscribeModal() {
         reply_to: 'contact@pharmaaIdatawatch.eu',
       });
 
-      /* 2 — Admin notification (non-blocking, fires in parallel) */
-      if (EMAILJS_ADMIN_TEMPLATE_ID !== 'YOUR_ADMIN_TEMPLATE_ID') {
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_ADMIN_TEMPLATE_ID, {
-          subscriber_name:         firstName  || '—',
-          subscriber_email:        email,
-          subscriber_organisation: organisation,
-          subscriber_interest:     interest,
-        }).catch(() => {});
-      }
+      /* 2 — Admin notification (non-blocking) */
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_ADMIN_TEMPLATE_ID, {
+        subscriber_name:         firstName    || '—',
+        subscriber_email:        email,
+        subscriber_organisation: organisation,
+        subscriber_interest:     interest,
+      }).catch(err => console.warn('Admin notify failed:', err));
 
       /* Success screen */
       form.style.display = 'none';
       document.getElementById('modal-success').style.display = 'flex';
 
     } catch (err) {
-      errEl.textContent   = 'Could not send — please try again or contact us directly.';
+      console.error('EmailJS error:', err);
+      const msg = err?.text || err?.message || JSON.stringify(err);
+      errEl.textContent   = 'Could not send (' + msg + '). Please try again.';
       errEl.style.display = 'block';
       btn.disabled        = false;
       btn.innerHTML       = 'Subscribe →';
@@ -591,6 +581,7 @@ function initSubscribeModal() {
 
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
   renderStats();
   renderEvents();
   initFilters();
