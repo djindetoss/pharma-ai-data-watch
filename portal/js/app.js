@@ -1,10 +1,20 @@
 'use strict';
 
 /* ── State ── */
-let activeFilter      = 'all';   // type filter
-let activeTopicFilter = 'all';   // topic filter
+let activeFilter      = 'all';
+let activeTopicFilter = 'all';
 let searchQuery       = '';
-let ALL_ARTICLES      = [];      // populated from articles.json
+let ALL_ARTICLES      = [];
+let currentPage       = 1;
+const PER_PAGE        = 20;
+
+/* ── Brevo (newsletter list) ─────────────────────────────────────────────────
+   Sign up free at https://brevo.com → API Keys → create key → paste below.
+   Create a contact list → note its numeric ID.
+   Free tier: 300 emails/day, unlimited contacts.
+   ──────────────────────────────────────────────────────────────────────────── */
+const BREVO_API_KEY = 'YOUR_BREVO_API_KEY';
+const BREVO_LIST_ID = 0; // replace with your list ID (number)
 
 /* ── Topic filter definitions ── */
 const TOPIC_FILTERS = {
@@ -156,6 +166,97 @@ function filterArticles() {
   });
 }
 
+/* ── Share helpers ── */
+function shareButtons(url, title) {
+  const eu  = encodeURIComponent(url);
+  const et  = encodeURIComponent(title);
+  const tw  = `https://twitter.com/intent/tweet?url=${eu}&text=${et}`;
+  const li  = `https://www.linkedin.com/sharing/share-offsite/?url=${eu}`;
+  const euu = encodeURIComponent(url);
+  return `
+    <div class="card-share" onclick="event.stopPropagation()">
+      <a href="${tw}" target="_blank" rel="noopener" class="share-btn share-twitter" title="Share on X">𝕏</a>
+      <a href="${li}" target="_blank" rel="noopener" class="share-btn share-linkedin" title="Share on LinkedIn">in</a>
+      <button class="share-btn share-copy" title="Copy link" onclick="copyLink('${euu}',this)">🔗</button>
+    </div>`;
+}
+
+function copyLink(encodedUrl, btn) {
+  navigator.clipboard.writeText(decodeURIComponent(encodedUrl)).then(() => {
+    const prev = btn.innerHTML;
+    btn.innerHTML = '✓';
+    btn.style.color = '#059669';
+    setTimeout(() => { btn.innerHTML = prev; btn.style.color = ''; }, 1800);
+  });
+}
+
+/* ── Article detail modal ── */
+function openArticleModal(encodedUrl) {
+  const url     = decodeURIComponent(encodedUrl);
+  const article = ALL_ARTICLES.find(a => a.url === url);
+  if (!article) return;
+  const cfg   = TYPE_CONFIG[article.type] || TYPE_CONFIG.news;
+  const eu    = encodeURIComponent(url);
+  const et    = encodeURIComponent(article.title);
+  const tw    = `https://twitter.com/intent/tweet?url=${eu}&text=${et}`;
+  const li    = `https://www.linkedin.com/sharing/share-offsite/?url=${eu}`;
+  document.getElementById('article-modal-content').innerHTML = `
+    <div class="amodal-meta">
+      <span class="badge ${cfg.badgeClass}">${cfg.label}</span>
+      ${article.badge ? `<span class="badge badge-label">${article.badge}</span>` : ''}
+      <span class="card-meta-source">${article.source}</span>
+      <span class="card-meta-date">${formatDate(article.date)}</span>
+    </div>
+    <h2 class="amodal-title">${article.title}</h2>
+    <p class="amodal-excerpt">${article.excerpt}</p>
+    ${article.eventDate ? `<p class="card-event-date">📅 ${article.eventDate}</p>` : ''}
+    <div class="amodal-tags">${(article.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+    <div class="amodal-actions">
+      <a href="${url}" target="_blank" rel="noopener" class="btn-primary amodal-read-btn">Read original article →</a>
+      <div class="amodal-share">
+        <span class="share-label">Share:</span>
+        <a href="${tw}" target="_blank" rel="noopener" class="share-btn share-twitter" title="Share on X">𝕏</a>
+        <a href="${li}" target="_blank" rel="noopener" class="share-btn share-linkedin" title="Share on LinkedIn">in</a>
+        <button class="share-btn share-copy" title="Copy link" onclick="copyLink('${eu}',this)">🔗</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('article-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeArticleModal() {
+  document.getElementById('article-modal')?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ── Pagination ── */
+function renderPagination(total) {
+  const pages = Math.ceil(total / PER_PAGE);
+  if (pages <= 1) return '';
+  const prev = currentPage > 1;
+  const next = currentPage < pages;
+  return `
+    <div class="pagination">
+      <button class="page-btn" ${prev ? '' : 'disabled'} onclick="setPage(${currentPage-1})">← Previous</button>
+      <span class="page-info">Page ${currentPage} of ${pages} &nbsp;·&nbsp; ${total} articles</span>
+      <button class="page-btn" ${next ? '' : 'disabled'} onclick="setPage(${currentPage+1})">Next →</button>
+    </div>`;
+}
+
+function setPage(n) {
+  currentPage = n;
+  render();
+  requestAnimationFrame(() => {
+    const el = document.getElementById('articles-list');
+    if (!el) return;
+    const offset = (document.querySelector('header')?.offsetHeight || 64) + 12;
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+  });
+}
+
+function resetAndRender() { currentPage = 1; render(); }
+
 /* ── Render Featured Cards ── */
 function renderFeatured(articles) {
   const featured = articles.filter(a => a.featured).slice(0, 3);
@@ -164,9 +265,9 @@ function renderFeatured(articles) {
   if (featured.length === 0) { container.innerHTML = ''; return; }
   container.innerHTML = featured.map((a, i) => {
     const cfg = TYPE_CONFIG[a.type] || TYPE_CONFIG.news;
-    const isFirst = i === 0;
+    const eu  = encodeURIComponent(a.url);
     return `
-      <article class="card-featured" onclick="window.open('${a.url}','_blank')">
+      <article class="card-featured" onclick="openArticleModal('${eu}')" style="cursor:pointer">
         <div class="card-featured-image">${cfg.icon}</div>
         <div class="card-featured-body">
           <div class="card-meta">
@@ -180,13 +281,12 @@ function renderFeatured(articles) {
           ${a.eventDate ? `<p class="card-event-date">📅 ${a.eventDate}</p>` : ''}
           <div class="card-footer">
             <div class="card-tags">
-              ${(a.tags || []).slice(0, isFirst ? 4 : 2).map(t => `<span class="tag">${t}</span>`).join('')}
+              ${(a.tags || []).slice(0, i === 0 ? 4 : 2).map(t => `<span class="tag">${t}</span>`).join('')}
             </div>
-            <span class="read-time">⏱ ${a.readTime}</span>
+            ${shareButtons(a.url, a.title)}
           </div>
         </div>
-      </article>
-    `;
+      </article>`;
   }).join('');
 }
 
@@ -205,11 +305,16 @@ function renderList(articles) {
       </div>`;
     return;
   }
-  container.innerHTML = list.map(a => {
-    const cfg = TYPE_CONFIG[a.type] || TYPE_CONFIG.news;
+  const totalPages = Math.max(1, Math.ceil(list.length / PER_PAGE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  const page = list.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
+
+  container.innerHTML = page.map(a => {
+    const cfg     = TYPE_CONFIG[a.type] || TYPE_CONFIG.news;
     const isEvent = a.type === 'webinar' || a.type === 'seminar';
+    const eu      = encodeURIComponent(a.url);
     return `
-      <article class="card-list" onclick="window.open('${a.url}','_blank')" style="cursor:pointer">
+      <article class="card-list" onclick="openArticleModal('${eu}')" style="cursor:pointer">
         <div class="card-list-icon ${cfg.iconClass}">${cfg.icon}</div>
         <div class="card-list-body">
           <div class="card-meta">
@@ -225,14 +330,16 @@ function renderList(articles) {
             <div class="card-tags">
               ${(a.tags || []).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('')}
             </div>
-            ${isEvent
-              ? `<a class="event-link-btn" href="${a.url}" target="_blank" onclick="event.stopPropagation()">View event →</a>`
-              : `<span class="read-time">⏱ ${a.readTime}</span>`}
+            <div class="card-footer-right">
+              ${isEvent
+                ? `<a class="event-link-btn" href="${a.url}" target="_blank" onclick="event.stopPropagation()">View event →</a>`
+                : `<span class="read-time">⏱ ${a.readTime}</span>`}
+              ${shareButtons(a.url, a.title)}
+            </div>
           </div>
         </div>
-      </article>
-    `;
-  }).join('');
+      </article>`;
+  }).join('') + renderPagination(list.length);
 }
 
 /* ── Update filter counts ── */
@@ -379,7 +486,7 @@ function initFilters() {
       document.querySelectorAll('.filter-btn[data-filter]').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       document.querySelectorAll('nav a[data-filter-link]').forEach(l => l.classList.remove('active'));
-      render();
+      resetAndRender();
       document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
@@ -392,11 +499,10 @@ function initTopicFilters() {
       activeTopicFilter = btn.dataset.topic;
       document.querySelectorAll('.topic-btn[data-topic]').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      // Sync nav
       document.querySelectorAll('nav a[data-topic-link]').forEach(l =>
         l.classList.toggle('active', l.dataset.topicLink === activeTopicFilter)
       );
-      render();
+      resetAndRender();
       document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
@@ -404,7 +510,6 @@ function initTopicFilters() {
 
 /* ── Nav ── */
 function initNav() {
-  // Type-based nav links
   document.querySelectorAll('nav a[data-filter-link]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
@@ -414,27 +519,25 @@ function initNav() {
       );
       document.querySelectorAll('nav a[data-filter-link]').forEach(l => l.classList.remove('active'));
       link.classList.add('active');
-      render();
+      resetAndRender();
       document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
-  // Topic-based nav links
   document.querySelectorAll('nav a[data-topic-link]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       activeTopicFilter = link.dataset.topicLink;
+      activeFilter = 'all';
       document.querySelectorAll('.topic-btn[data-topic]').forEach(b =>
         b.classList.toggle('active', b.dataset.topic === activeTopicFilter)
       );
       document.querySelectorAll('nav a[data-topic-link]').forEach(l => l.classList.remove('active'));
       link.classList.add('active');
-      // Reset type filter to all when picking a topic
-      activeFilter = 'all';
       document.querySelectorAll('.filter-btn[data-filter]').forEach(b =>
         b.classList.toggle('active', b.dataset.filter === 'all')
       );
-      render();
+      resetAndRender();
       document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
     });
   });
@@ -449,16 +552,13 @@ function initPillarCards() {
       activeTopicFilter = topic;
       activeFilter      = 'all';
       searchQuery       = '';
-      /* Sync topic buttons */
       document.querySelectorAll('.topic-btn[data-topic]').forEach(b =>
         b.classList.toggle('active', b.dataset.topic === topic)
       );
-      /* Sync type filter buttons */
       document.querySelectorAll('.filter-btn[data-filter]').forEach(b =>
         b.classList.toggle('active', b.dataset.filter === 'all')
       );
-      render();
-      /* Wait one frame for DOM to repaint, then scroll below the sticky header */
+      resetAndRender();
       requestAnimationFrame(() => {
         const el     = document.getElementById('featured-section');
         const header = document.querySelector('header');
@@ -496,7 +596,7 @@ function initTagClicks() {
       document.querySelectorAll('.topic-btn').forEach(b =>
         b.classList.toggle('active', b.dataset.topic === 'all')
       );
-      render();
+      resetAndRender();
       document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
     }
   });
@@ -602,6 +702,20 @@ function initSubscribeModal() {
         subscriber_interest:     interest,
       }).catch(err => console.warn('Admin notify failed:', err));
 
+      /* 3 — Add to Brevo contact list (non-blocking, fires once API key is set) */
+      if (BREVO_API_KEY !== 'YOUR_BREVO_API_KEY' && BREVO_LIST_ID > 0) {
+        fetch('https://api.brevo.com/v3/contacts', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json', 'api-key': BREVO_API_KEY },
+          body: JSON.stringify({
+            email,
+            attributes: { FIRSTNAME: firstName, ORGANISATION: organisation, INTEREST: interest },
+            listIds:    [BREVO_LIST_ID],
+            updateEnabled: true,
+          }),
+        }).catch(() => {});
+      }
+
       /* Success screen */
       form.style.display = 'none';
       document.getElementById('modal-success').style.display = 'flex';
@@ -631,4 +745,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initPillarCards();
   loadArticles();
+
+  /* Article modal — close on X or backdrop */
+  document.getElementById('article-modal-close')?.addEventListener('click', closeArticleModal);
+  document.getElementById('article-modal')?.addEventListener('click', e => {
+    if (e.target === document.getElementById('article-modal')) closeArticleModal();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeArticleModal(); });
 });

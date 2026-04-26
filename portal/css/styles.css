@@ -1157,6 +1157,156 @@ footer {
 .modal-form button:hover { opacity: 0.9; }
 .modal-privacy { font-size: 12px; color: var(--mid); text-align: center; }
 
+/* ══════════════════════════════════════════
+   ARTICLE DETAIL MODAL
+══════════════════════════════════════════ */
+.article-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(15,23,42,0.72);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.article-modal.open { display: flex; }
+
+.article-modal-box {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 44px 40px 36px;
+  max-width: 680px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeInUp 0.25s ease;
+}
+
+.amodal-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.amodal-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+.amodal-excerpt {
+  font-size: 14.5px;
+  color: var(--dark-3);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.amodal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+.amodal-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.amodal-read-btn {
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary-light), var(--accent));
+  color: var(--white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.amodal-read-btn:hover { opacity: 0.88; }
+.amodal-share {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* ══════════════════════════════════════════
+   SHARE BUTTONS
+══════════════════════════════════════════ */
+.share-label { font-size: 12px; color: var(--mid); font-weight: 600; }
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.share-btn:hover { opacity: 0.82; transform: scale(1.1); }
+.share-twitter  { background: #000; color: #fff; }
+.share-linkedin { background: #0a66c2; color: #fff; }
+.share-copy     { background: var(--light); color: var(--dark-3); font-size: 14px; }
+
+/* Card-level share row — shown on hover */
+.card-share {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-left: 8px;
+}
+.card-list:hover .card-share,
+.card-featured:hover .card-share { opacity: 1; }
+
+.card-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+
+/* ══════════════════════════════════════════
+   PAGINATION
+══════════════════════════════════════════ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 0 8px;
+  flex-wrap: wrap;
+}
+.page-btn {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-light);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.page-btn:hover:not(:disabled) { background: var(--primary-light); color: var(--white); border-color: var(--primary-light); }
+.page-btn:disabled { opacity: 0.35; cursor: default; }
+.page-info { font-size: 13px; color: var(--mid); }
+
 /* ── Subscribe: inline error ── */
 .subscribe-error {
   display: none;
