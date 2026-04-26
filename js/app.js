@@ -482,7 +482,7 @@ function initTagClicks() {
 const EMAILJS_PUBLIC_KEY       = 'lq94KnANIXmSMbWg3';
 const EMAILJS_SERVICE_ID       = 'service_hfhg9fq';
 const EMAILJS_TEMPLATE_ID      = 'template_z0vtqoi';  // → subscriber confirmation
-const EMAILJS_ADMIN_TEMPLATE_ID = 'YOUR_ADMIN_TEMPLATE_ID'; // → set after creating template
+const EMAILJS_ADMIN_TEMPLATE_ID = 'template_ye3iwfj';        // → admin notification
 
 /* Load & initialise the EmailJS browser SDK */
 (function () {
