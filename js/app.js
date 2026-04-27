@@ -13,7 +13,7 @@ const PER_PAGE        = 20;
    Create a contact list → note its numeric ID.
    Free tier: 300 emails/day, unlimited contacts.
    ──────────────────────────────────────────────────────────────────────────── */
-const BREVO_API_KEY = '__BREVO_API_KEY__'; // injected by GitHub Actions from repository secret
+const BREVO_API_KEY = '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'; // injected by GitHub Actions from repository secret
 const BREVO_LIST_ID = 3;
 
 /* ── Topic filter definitions ── */
