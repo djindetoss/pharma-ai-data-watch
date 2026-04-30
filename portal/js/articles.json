@@ -68,6 +68,25 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "auto-7c926b75323e",
+    "type": "paper",
+    "title": "[Physiological age estimation model on pediatric panoramic radiographs based on machine learning and deep learning]",
+    "excerpt": "Researchers developed a physiological age estimation model using machine learning and deep learning techniques applied to pediatric panoramic radiographs. The study, published in the Chinese Journal of Stomatology, involved multiple departments at Peking University School and Hospital of Stomatology and represents work from the National Center for Stomatology and National Clinical Research Center for Oral Diseases.",
+    "source": "Zhonghua Kou Qiang Yi Xue Za Zhi",
+    "date": "2026-04-30",
+    "tags": [
+      "Machine Learning",
+      "Deep Learning",
+      "Pediatric Dentistry",
+      "Radiography"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42056038/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-d303028abf40",
     "type": "paper",
     "title": "Exertional leg pain in pediatric familial mediterranean fever: clinical associations and implications for treatment",
@@ -85,6 +104,383 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42050020/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-d5b05ca8176c",
+    "type": "news",
+    "title": "Is enterprise technology on the cusp of quantum AI?",
+    "excerpt": "As the enterprise technology stack and its corresponding supply chain functions now align to (soon, we hope) support quantum hardware in a stabilised state, discussion is still open as to when this ...",
+    "source": "ComputerWeekly.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.computerweekly.com/blog/CW-Developer-Network/Is-enterprise-technology-on-the-cusp-of-quantum-AI",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-26b4cb1f00f8",
+    "type": "news",
+    "title": "Peggy antonakou (google): “from kasos to a global audience” – how AI is transforming everything for greek businesses",
+    "excerpt": "Artificial intelligence is no longer a tool of the future. It is already here—quietly reshaping the way we search for information, organize our work, and make decisions.\n“It feels like…\nPeggy Antonakou (Google): “From Kasos to a Global Audience” – How AI Is T…",
+    "source": "Naftemporiki.gr",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.naftemporiki.gr/english/2103992/peggy-antonakou-google-from-kasos-to-a-global-audience-how-ai-is-transforming-everything-for-greek-businesses/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-fd7d4d3db95c",
+    "type": "news",
+    "title": "Esig-net: an interaction language model that decodes the protein code of single mutations",
+    "excerpt": "eSIG-Net is an interaction language model that predicts the effects of mutations on protein interaction.",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41592-026-03086-x",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-6a84a3d8395c",
+    "type": "news",
+    "title": "The past, present and future of de novo protein design",
+    "excerpt": "A Review of de novo protein design&nbsp;highlights key methodological advances and achievements, current challenges and future applications.",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41586-026-10328-7",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-a55e5a1d7078",
+    "type": "news",
+    "title": "EU and parliament fail to agree on AI act changes after 12 hours of talks, pushing deal to next month",
+    "excerpt": "The collapse of Tuesday’s trilogue exposes deep divisions over whether high-risk AI systems embedded in consumer products should be exempt from the world’s strictest AI rules After 12 hours of negotiations on Tuesday, EU member states and European Parliament …",
+    "source": "The Next Web",
+    "date": "2026-04-29",
+    "tags": [
+      "EU AI Act"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-c4ea6c2f1aa0",
+    "type": "news",
+    "title": "AI procurement: what it is and how to use it to buy smarter, faster, and safer",
+    "excerpt": "Learn what AI procurement is and how to use it for spend analysis, supplier review, contract checks, invoice work, and risk control with a practical rollout plan.",
+    "source": "C-sharpcorner.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.c-sharpcorner.com/article/ai-procurement-what-it-is-and-how-to-use-it-to-buy-smarter-faster-and-safer/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-9115fffcb553",
+    "type": "news",
+    "title": "Eclipse paneval creation",
+    "excerpt": "Eclipse PanEval is an open-source large model evaluation platform and framework, designed to establish scientific, impartial, and open evaluation benchmarks, methodologies, and toolsets. It comprehensively assesses foundation model performance across language…",
+    "source": "Eclipse.org",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://projects.eclipse.org/projects/technology.paneval/reviews/creation-review",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-6e42638d6270",
+    "type": "news",
+    "title": "New federal bills promote US AI leadership and child safety",
+    "excerpt": "U.S. lawmakers have introduced two bills covering artificial intelligence: one that would give parents control over their kids’ use of AI chatbots, and one that aims to strengthen U.S. leadership in AI. The Children’s Health, Advancement, Trust, Boundaries, a…",
+    "source": "pymnts.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.pymnts.com/artificial-intelligence-2/2026/new-federal-bills-promote-us-ai-leadership-and-child-safety/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-b06995545665",
+    "type": "news",
+    "title": "EU countries, lawmakers fail to reach deal on watered-down AI rules",
+    "excerpt": "European Union nations and Parliament members could not agree on updated artificial intelligence rules. Talks stalled after 12 hours. Negotiations will restart next month. Some countries wanted exemptions for industries already under regulation. This failure …",
+    "source": "The Times of India",
+    "date": "2026-04-29",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://economictimes.indiatimes.com/tech/technology/eu-countries-lawmakers-fail-to-reach-deal-on-watered-down-ai-rules/articleshow/130593132.cms",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-cad16a706313",
+    "type": "news",
+    "title": "EU countries, lawmakers fail to reach deal on watered-down AI rules",
+    "excerpt": "BRUSSELS, April 29 : EU countries and European Parliament lawmakers failed to reach a deal on watered-down landmark artificial intelligence rules after 12 hours of negotiations on Tuesday and will resume talks next month. The changes to the AI Act, which ente…",
+    "source": "CNA",
+    "date": "2026-04-29",
+    "tags": [
+      "EU AI Act"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.channelnewsasia.com/business/eu-countries-lawmakers-fail-reach-deal-watered-down-ai-rules-6087746",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-af95e6e6e9a9",
+    "type": "news",
+    "title": "Premier floats big fines for companies that violate proposed manitoba ban on AI, social media use by youth",
+    "excerpt": "Big tech companies could face fines in the billions if they fail to adhere to a promised ban on social media and AI chatbot use by youth, Manitoba's premier says. Wab Kinew took questions Tuesday for the first time since announcing the plans Saturday.",
+    "source": "CBC News",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cbc.ca/news/canada/manitoba/kinew-on-ai-social-media-youth-ban-9.7180688",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-ec2aded210d2",
+    "type": "news",
+    "title": "Bevey miner, consensus cloud solutions",
+    "excerpt": "This is a transcript of my HIMSS interview with Bevey Miner, EVP Healthcare Strategy & Policy at Consensus Cloud Solutions. Usually I’d show the video but in this case my fancy newContinue reading...",
+    "source": "Thehealthcareblog.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thehealthcareblog.com/blog/2026/04/29/bevey-miner-consensus-cloud-solutions-3/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-275904e775f4",
+    "type": "news",
+    "title": "Sas cements agentic ai-ready data management foundation",
+    "excerpt": "Implementing agents and automation, with governance built in, now appears to be a central mission for organisations in practically every vertical, as they look to operationalise AI at enterprise ...",
+    "source": "ComputerWeekly.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.computerweekly.com/blog/CW-Developer-Network/SAS-cements-agentic-AI-ready-data-management-foundation",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-2273169d00be",
+    "type": "news",
+    "title": "How will FDA speed up clinical trials? #health",
+    "excerpt": "FDA plans real time AI assisted trial review The FDA announced efforts intended to make clinical trials more efficient, starting with reviewing data in real time from trials conducted by sponsors. The initiative is positioned as a way to reduce “dead time” in…",
+    "source": "Alltoc.com",
+    "date": "2026-04-29",
+    "tags": [
+      "FDA",
+      "Clinical trials"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://alltoc.com/health/how-will-fda-speed-up-clinical-trials",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-780ac43d4dfc",
+    "type": "news",
+    "title": "Multi-ancestry genome-wide association and integrated multi-omics analyses of endometriosis and its clinical manifestations",
+    "excerpt": "Multi-ancestry genome-wide association analyses coupled with multi-omics integration identify new risk loci for endometriosis and adenomyosis, shed light on underlying molecular mechanisms and suggest potential therapeutic interventions.",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02582-2",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-3b7dab5ebd47",
+    "type": "news",
+    "title": "Evolutionary characterization of lung cancer metastasis",
+    "excerpt": "DNA-sequencing data from primary tumours and paired metastases from participants in the TRACERx lung study and PEACE autopsy programme are used to analyse the metastatic diversity of advanced non-small cell lung cancer&nbsp;and the seeding patterns that under…",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41586-026-10428-4",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-e0f9bb7a37b0",
+    "type": "news",
+    "title": "Spatial atlas of diabetic kidney disease reveals a b cell-rich subgroup",
+    "excerpt": "A&nbsp;single-cell spatial atlas identifies&nbsp;a B cell-predominant microenvironment within the profibrotic tubular niche that marks a subset of&nbsp;patients with diabetic kidney disease with rapid&nbsp;progression.",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41586-026-10363-4",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-fbfd6d3be906",
+    "type": "ainews",
+    "title": "Improving access to essential medicines via decision-aware machine learning",
+    "excerpt": "Nationwide deployment of a novel decision-aware machine learning framework as a decision support tool for the allocation of essential medicines in Sierra Leone resulted in improved access to essential healthcare in this resource-constrained setting.",
+    "source": "Nature.com",
+    "date": "2026-04-29",
+    "tags": [
+      "Machine learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41586-026-10433-7",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-3a0f22a0f287",
+    "type": "paper",
+    "title": "CYPRI: a clinical decision-making tool to select psychiatric patients for pharmacogenetic testing",
+    "excerpt": "CYPRI is a clinical decision-making tool designed to help identify psychiatric patients who would benefit from pharmacogenetic testing to optimize medication selection and dosing based on individual genetic profiles. The tool was developed by researchers at psychiatric institutions in the Czech Republic to improve treatment outcomes by integrating genetic information into psychiatric medication management. This approach aims to reduce adverse drug reactions and treatment failures by matching patients to psychiatric medications suited to their pharmacogenetic profiles.",
+    "source": "Pharmacogenomics J",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharmacogenetics",
+      "Psychiatric medication",
+      "Clinical decision support",
+      "Personalized medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42056077/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-0e9c288a00d5",
+    "type": "news",
+    "title": "FDA Releases Results from Largest-Ever Testing of Infant Formula in the U.S.",
+    "excerpt": "FDA announces results from the largest and most rigorous examination ever conducted focused on chemical contaminants in infant formula available on the U.S. market.",
+    "source": "FDA",
+    "date": "2026-04-29",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.fda.gov/news-events/press-announcements/fda-releases-results-largest-ever-testing-infant-formula-us",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-4acbd4b7c3db",
+    "type": "news",
+    "title": "Kettering Health restructures its post-implant heart failure care with new EHR integration",
+    "excerpt": "CardioMEMS – an implantable wireless sensor that monitors pulmonary artery pressure in heart failure patients who have been hospitalized in the past year – was one of the most promising tools in Kettering Health's heart failure toolkit.&nbsp; Clinically, it was delivering. The data it collected was helping the Ohio health system's specialty care teams make better decisions about volume management. THE CHALLENGE",
+    "source": "Healthcare IT News",
+    "date": "2026-04-29",
+    "tags": [
+      "Healthcare IT News"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.healthcareitnews.com/news/kettering-health-restructures-its-post-implant-heart-failure-care-new-ehr-integration",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-ceed915d20e6",
+    "type": "news",
+    "title": "STAT+: A patent win for Pfizer and BridgeBio",
+    "excerpt": "A change to FDA clinical trial data review, Rocket sells its priority review voucher, and more biotech news from The Readout",
+    "source": "STAT News",
+    "date": "2026-04-29",
+    "tags": [
+      "Biotech",
+      "Business",
+      "Pharma",
+      "The Readout"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/04/29/biotech-news-a-patent-win-for-pfizer-and-bridgebio/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-b091538de2ea",
+    "type": "news",
+    "title": "STAT+: Pharmalittle: We’re reading about the FDA speeding up trials, a Supreme Court hearing on ‘skinny labels,’ and more",
+    "excerpt": "The FDA announced efforts to make clinical trials more efficient, starting by reviewing data in real time from trials conducted by AstraZeneca and Amgen",
+    "source": "STAT News",
+    "date": "2026-04-29",
+    "tags": [
+      "Pharma",
+      "Pharmalot",
+      "pharmalittle",
+      "STAT+"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/pharmalot/2026/04/29/fda-plan-to-speed-clinical-trials-supreme-court-skinny-labels/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
   },
   {
     "id": "nws-ed63fc1530bf",
@@ -286,6 +682,423 @@
     "url": "https://www.statnews.com/2026/04/28/fda-clinical-trial-endpoints-real-time-drug-development/?utm_campaign=rss",
     "badge": "Data",
     "topic": "data-governance"
+  },
+  {
+    "id": "nws-7fd72346c315",
+    "type": "news",
+    "title": "Capsular specificity in temperate phages of klebsiella pneumoniae is driven by diverse receptor-binding enzymes",
+    "excerpt": "Bacteriophages infecting Klebsiella pneumoniae show capsule specificity that strongly shapes host range, yet its basis in temperate phages is unclear. This study reveals diverse prophage-encoded receptor-binding enzymes, including esterases, that drive capsul…",
+    "source": "Plos.org",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003716",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-17a609b9c490",
+    "type": "news",
+    "title": "Msgabpred: a b-cell epitope predictor integrating alphafold3-predicted structures with multi-scale gcns and pre-trained language model esm-c",
+    "excerpt": "Author summary B cells arise from hematopoietic stem cells in the bone marrow and are essential mediators of humoral immunity, primarily through the secretion of antibodies that enable targeted and durable defense against invading pathogens. The precise segme…",
+    "source": "Plos.org",
+    "date": "2026-04-28",
+    "tags": [
+      "EMA",
+      "AlphaFold"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014195",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-4de51ab69c23",
+    "type": "news",
+    "title": "What is AI really costing the planet?",
+    "excerpt": "Behind every prompt sits a vast, energy-hungry machine with a growing environmental bill nobody wants to pay.",
+    "source": "Uxdesign.cc",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://uxdesign.cc/what-is-ai-really-costing-the-planet-ec14be648d65",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-526f32ae70e6",
+    "type": "news",
+    "title": "South africa used AI to write its AI policy. the citations were fake.",
+    "excerpt": "South Africa’s Department of Communications and Digital Technologies spent months drafting a national artificial intelligence policy. It proposed a National AI Commission, an AI Ethics Board, an AI Regulatory Authority, an AI Ombudsperson, a National AI Safet…",
+    "source": "The Next Web",
+    "date": "2026-04-28",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/south-africa-ai-policy-hallucinated-citations/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-f66c555ed54d",
+    "type": "news",
+    "title": "Feds reveal 6 pillars for long-touted, repeatedly delayed national AI strategy",
+    "excerpt": "Although it doesn’t appear in full in the latest economic update, the federal government has unveiled the six pillars of its forthcoming AI strategy — a long-touted but repeatedly delayed document that’s expected to chart out Ottawa's goals for the evolving t…",
+    "source": "CBC News",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cbc.ca/news/politics/ai-strategy-pillars-evan-solomon-9.7180418",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-d19c6ca3ced3",
+    "type": "news",
+    "title": "Republicans in florida again block ron desantis' push to regulate AI",
+    "excerpt": "Florida Gov. Ron DeSantis is emerging as a voice of AI skepticism in the Republican Party, but the state Legislature declined to take up his push for AI legislation.",
+    "source": "NBC News",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nbcnews.com/politics/2028-election/republicans-florida-block-ron-desantis-push-regulate-ai-rcna342489",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-2d5c8e294c1e",
+    "type": "news",
+    "title": "How are regulations shaping ad tech in 2026?",
+    "excerpt": "We look at how regulations are shaping at tech at the moment. What are the latest significant changes, and what’s on the horizon for the rest of 2026?  \nAs 2026 unfolds, regulations are one of the driving forces of change. \nIt looks [...]\nThe post How are Reg…",
+    "source": "ExchangeWire",
+    "date": "2026-04-28",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.exchangewire.com/blog/2026/04/28/how-are-regulations-shaping-ad-tech-in-2026/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-2a29b9cd275d",
+    "type": "news",
+    "title": "Implementing AI governance",
+    "excerpt": "Implementing AI Governance: A Practical Guide.",
+    "source": "C-sharpcorner.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.c-sharpcorner.com/article/implementing-ai-governance/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-702a9d671462",
+    "type": "news",
+    "title": "Rebuilding britain for the new world: liz kendall’s speech at the royal united services institute",
+    "excerpt": "Secretary of State for Science, Innovation, and Technology, Liz Kendall, delivered a speech at Royal United Services Institute (RUSI) on Tuesday 28 April 2026.",
+    "source": "Www.gov.uk",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.gov.uk/government/speeches/rebuilding-britain-for-the-new-world-liz-kendalls-speech-at-the-royal-united-services-institute",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-6cd1b1126ced",
+    "type": "news",
+    "title": "Supercharging network intelligence (blog)",
+    "excerpt": "How network organizations can use AI to better understand and support their members in real time.",
+    "source": "Ssir.org",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://ssir.org/articles/entry/supercharging-network-intelligence",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-dd2a52699fb8",
+    "type": "news",
+    "title": "The environmental impact of llms vs. slms",
+    "excerpt": "Large and small language models differ in their environmental impacts. Hybrid deployments and sustainable practices can help balance performance and energy use.",
+    "source": "Techtarget.com",
+    "date": "2026-04-28",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techtarget.com/sustainability/tip/The-environmental-impact-of-LLMs-vs-SLMs",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-e459fd767a80",
+    "type": "news",
+    "title": "News site linked to openai super pac sent bots posing as journalists to interview real people — site has published nearly 100 articles with real quotes gathered by fake writers",
+    "excerpt": "The site has published 94 articles since late December using a fully automated pipeline that drafts stories, reviews them, and deploys bots to solicit quotes from real people under fake bylines.",
+    "source": "Tom's Hardware UK",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/news-site-linked-to-openai-super-pac-sent-bots-posing-as-journalists-to-interview-real-people",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-f9fe0eb8c82e",
+    "type": "news",
+    "title": "Virtue AI policyguard stacks custom AI guardrails with compliance frameworks",
+    "excerpt": "There’s a whole lot of discussion around the need to give enterprises control over how AI policy is defined and enforced across agents, models and applications. Deeper than those core parameters, ...",
+    "source": "ComputerWeekly.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.computerweekly.com/blog/CW-Developer-Network/Virtue-AI-PolicyGuard-stacks-custom-AI-guardrails-with-compliance-frameworks",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-fd12808a51c2",
+    "type": "news",
+    "title": "Image quality improvement of liver ultrasound using unsupervised deep learning",
+    "excerpt": "Chronic liver disease (CLD) and subsequent liver cirrhosis (LC) are common causes of death and healthcare-related socio-economical costs worldwide. Ultrasound (US) is the first-line imaging modality for assessing the liver and associated hepatocellular carcin…",
+    "source": "Plos.org",
+    "date": "2026-04-28",
+    "tags": [
+      "Deep learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0348137",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-11bac169bd66",
+    "type": "news",
+    "title": "Caser: a semi-supervised model with multi-omics data integration prioritizes cancer-associated epigenetic regulator genes",
+    "excerpt": "Author summary The chromatin architecture of any given cell is influenced and sustained by epigenetic regulators (ERs), which are defined as a cohort of proteins capable of catalyzing the addition or removal of epigenetic marks (referred to as writers or eras…",
+    "source": "Plos.org",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014253",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-67859fdc366a",
+    "type": "news",
+    "title": "From months to minutes: building real-time clinical data pipelines with natural language",
+    "excerpt": "*From months to minutes — Building EHR data pipelines used to take weeks of specialized integration work. The Databricks + Redox partnership lets teams stand up real-time clinical data pipelines using natural language prompts, no HL7 experts required.\r\n*Real-…",
+    "source": "Databricks.com",
+    "date": "2026-04-28",
+    "tags": [
+      "FHIR",
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/months-minutes-building-real-time-clinical-data-pipelines-natural-language",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-8f736d9be6ce",
+    "type": "news",
+    "title": "AI uncovers 38 vulnerabilities in largest open source medical record software",
+    "excerpt": "38 zero-day security vulnerabilities, three critical, and the shift from disclosure to prevention in healthcare software",
+    "source": "Aisle.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://aisle.com/blog/aisle-discovers-38-critical-security-vulnerabilities-in-healthcare-software-used-by-100000-providers",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-15acc623c300",
+    "type": "news",
+    "title": "Klas finds provider-payer collaborations focused on value-based care workflows",
+    "excerpt": "KLAS's 2026 numbers are striking: 80% of award-winning provider-payer partnerships now focus on value-based care, up from less than half a year ago. So where is this work actually moving, and what does it take to keep up?\nSource: KLAS Finds Provider-Payer Col…",
+    "source": "Healthsystemcio.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://healthsystemcio.com/2026/04/28/provider-payer-vbc-pivot/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-378a2c5a7092",
+    "type": "news",
+    "title": "Aha calls for tefca individual access sop delay, citing patient privacy concerns",
+    "excerpt": "The AHA asserted that the proposed individual access SOP, with new patient-matching and consent rules, may risk patient privacy through data misattribution or unauthorized access.",
+    "source": "Techtarget.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techtarget.com/searchhealthit/news/366642477/AHA-calls-for-TEFCA-individual-access-SOP-delay-citing-patient-privacy-concerns",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-b2e33b1d2554",
+    "type": "news",
+    "title": "Tonsillectomy doesn’t lead to illness, but tonsillitis just might",
+    "excerpt": "Tonsil infections may be linked to other chronic inflammatory disorders, according to new study.",
+    "source": "Forbes",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.forbes.com/sites/ninashapiro/2026/04/28/tonsillectomy-doesnt-lead-to-illness-but-tonsillitis-just-might/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-4f982c0a2e5c",
+    "type": "news",
+    "title": "UN agencies hail kebbi’s healthcare efforts, urge sustained polio fight",
+    "excerpt": "UN agencies, including UNICEF and WHO, commend Kebbi’s healthcare investments. Learn about the state’s efforts to revitalize health centers and fight polio\n\nRead More: https://punchng.com/un-agencies-hail-kebbis-healthcare-efforts-urge-sustained-polio-fight/",
+    "source": "The Punch",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://punchng.com/un-agencies-hail-kebbis-healthcare-efforts-urge-sustained-polio-fight/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-1689e262d479",
+    "type": "news",
+    "title": "Operationalizing AI for public sector fraud prevention",
+    "excerpt": "* Why AI-powered fraud is growing fast — and why government agencies need a smarter, scalable way to catch it\r\n* How clean data, smart automation, and real-time insights team up to spot and investigate fraud risks\r\n* What it takes to bring AI into everyday wo…",
+    "source": "Databricks.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/operationalizing-ai-public-sector-fraud-prevention",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-6ad464fcece1",
+    "type": "news",
+    "title": "Choosing safer diabetes medications for older adults",
+    "excerpt": "Older adults with type 2 diabetes are among the most vulnerable to medication-related harms yet are often underrepresented in the clinical trials that guide treatment decisions. A new study led by Yale researchers helps address this gap by providing large-sca…",
+    "source": "Yale.edu",
+    "date": "2026-04-28",
+    "tags": [
+      "Clinical trials"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://medicine.yale.edu/news-article/choosing-safer-diabetes-medications-older-adults/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-421841b87574",
+    "type": "news",
+    "title": "Why leadership should be involved in data backup policies",
+    "excerpt": "While IT administrators lead the day-to-day operations of data backups, business leaders have a key role to play in shaping their organization's backup policy.",
+    "source": "Techtarget.com",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techtarget.com/searchdatabackup/tip/Why-leadership-should-be-involved-in-data-backup-policies",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-05c360943aff",
+    "type": "news",
+    "title": "Commercial insurance has a data problem that underwriters can no longer afford to ignore",
+    "excerpt": "Building a robust AI foundation has become the decisive competitive advantage for insurers, yet most carriers are still wrestling with fragmented, siloed data spread across dozens of legacy systems and geographies. Nowhere is that tension more acute than in c…",
+    "source": "SiliconANGLE News",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://siliconangle.com/2026/04/28/ai-foundation-commercial-insurers-cant-afford-phimomentsatnext/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-68a5f20b0bb9",
+    "type": "seminar",
+    "title": "Zenatech’s zenadrone subsidiary and defense solutions in the spotlight at company’s largest ever presence at auvsi exponential 2026 conference and tradeshow in detroit",
+    "excerpt": "Company to engage with defense decision makers, showcase drone products and podcasting opportunities, and present keynote address on its DaaS model facilitating scalable AI autonomy platforms for defense VANCOUVER, British Columbia, April 28, 2026 (GLOBE NEWS…",
+    "source": "Financial Post",
+    "date": "2026-04-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://financialpost.com/globe-newswire/zenatechs-zenadrone-subsidiary-and-defense-solutions-in-the-spotlight-at-companys-largest-ever-presence-at-auvsi-exponential-2026-conference-and-tradeshow-in-detroit",
+    "badge": "Event"
   },
   {
     "id": "auto-ce94d52ec3c0",
@@ -2517,6 +3330,118 @@
     "topic": "regulatory"
   },
   {
+    "id": "auto-27f2c7563b4f",
+    "type": "paper",
+    "title": "Deep representation learning for temporal inference in cancer omics: a systematic review",
+    "excerpt": "Deep learning methods, including deep representation learning (DRL) approaches such as variational au-toencoders (VAEs), have been widely applied to cancer omics data to address the high dimensionality of these datasets. Despite remarkable advances, cancer remains a complex and dynamic disease that is challenging to study, and the temporal resolution of cancer progression captured by omics-based studies remains limited. In this systematic literature review, we explore the use of DRL, particularly the VAE, in cancer omics studies for modeling time-related processes, such as tumor progression an",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Bioinformatics",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "2 min",
+    "url": "https://doi.org/10.1101/2025.05.29.656750",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-222fa30df670",
+    "type": "paper",
+    "title": "Flipper: An advanced framework for identifyingdifferential RNA binding behavior with eCLIP data",
+    "excerpt": "MotivationCrosslinking and immunoprecipitation (CLIP) methods remain the gold stan-dard for characterizing RNA binding protein (RBP) behavior. As a result, many researchers rely on CLIP to assess how treatments targeting RBPs alter binding patterns and regulatory activity. However, current tools for differential RBP binding analysis lack core features required for rigorous statistical inference, including proper normalization and appropriate handling of replicate experiments. Furthermore, existing approaches cannot adequately separate expression driven effects from true changes in RBP binding,",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Bioinformatics",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.03.13.711628",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-fa6a20045eec",
+    "type": "paper",
+    "title": "Disrupted Neurovisceral Integration and Emotional Processing in Early Cerebral Small Vessel Disease",
+    "excerpt": "BackgroundCerebral small vessel disease (cSVD) is a prevalent age-related microangiopathy leading to cognitive decline. Beyond established mechanisms and risk factors, disturbances in neurovisceral integration--the brain-body coordination of emotional and cardiovascular responses--may represent a systems-level pathway relevant to cSVD pathogenesis. We therefore investigated whether early cSVD is characterised by altered neurovisceral integration and emotional processing. MethodsEighty-two adults were studied: middle-aged adults with early cSVD (n=37), age-matched adults without brain abnormali",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Neuroscience",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.1101/2025.10.03.678529",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-8de6fdafb576",
+    "type": "paper",
+    "title": "Structural Insights into Bromodomain-Containing Complexes from Trypanosoma cruzi Revealed by Proximity Labeling and Stoichiometric Space Exploration",
+    "excerpt": "Trypanosoma cruzi is the causative agent of Chagas disease, a neglected illness with outdated treatments. Bromodomain factors (BDFs) are essential proteins that recognize acetylated lysines and have strong therapeutic potential. They form part of epigenetic complexes that regulate chromatin accessibility and, therefore, gene expression. However, little is known about their structure in trypanosomatids. Here, we used a combination of experimental and bioinformatic approaches to infer the stoichiometry and structure of T. cruzi bromodomain-containing complexes. By reconstructing the proximity ne",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Molecular Biology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.03.22.713544",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-471e36c0f79a",
+    "type": "paper",
+    "title": "CHD4 and NKX2.2 Cooperate to Regulate Beta Cell Function by Repressing Non-Beta Cell Gene Programs",
+    "excerpt": "NKX2.2 is a transcription factor that regulates pancreatic islet beta ({beta}) cell identity and function; however, cofactor proteins that modulate the functional activity of NKX2.2 in {beta} cells are relatively unexplored. An unbiased proteomics screen identified chromodomain helicase DNA-binding protein 4 (CHD4) as an NKX2.2 interacting partner. CHD4 is a nucleosome remodeler that directs the appropriate differentiation, maturation and function of many cell types. To characterize the roles of CHD4 in {beta} cells, we generated Chd4 {beta}KO mice. Deletion of Chd4 substantially impaired the ",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Developmental Biology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.1101/2025.06.16.659956",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-f534198f026f",
+    "type": "paper",
+    "title": "A Three-dimensional Analytical Framework for Retinal Microvasculature Reveals Layer-associated Vulnerability in Development and Neovascular Remodeling",
+    "excerpt": "The neurosensory retina is one of the most metabolically active tissues in the body and a uniquely accessible extension of the central nervous system, where neuronal and vascular structures can be visualized non-invasively. Its accessibility and highly organized laminar architecture make it a powerful model for studying vascular development and a window into systemic health. Although computational analyses of retinal images have enabled risk assessment for ocular and systemic diseases, most vascular studies rely on two-dimensional frameworks with limited resolution of capillary structure and l",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Bioengineering",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.03.16.711909",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-5043a5b1163d",
+    "type": "paper",
+    "title": "Compact refractive dual-channel AOSLO for wide-field imaging in mice reveals microglial interactions with transplanted neurons",
+    "excerpt": "Adaptive optics (AO) enables cellular-resolution retinal imaging, yet mirror-based AOSLO systems are constrained by off-axis aberrations that restrict high-quality imaging to narrow fields of view, limiting in vivo studies of dynamic, large-scale retinal processes. Clinical translation of regenerative cell therapy to neurologic disease is hampered by attrition of donor neurons following transplantation. We hypothesized that early innate neuroinflammatory responses to retinal ganglion cell (RGC) transplantation underlie early death of donor cells and that next-generation imaging technologies wo",
+    "source": "bioRxiv",
+    "date": "2026-03-31",
+    "tags": [
+      "Bioengineering",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "2 min",
+    "url": "https://doi.org/10.1101/2025.03.31.645335",
+    "badge": "Preprint"
+  },
+  {
     "id": "auto-1a622279a8b2",
     "type": "paper",
     "title": "A Comparative Review of Artificial Intelligence Applications in Small Molecule Versus Peptide Drug Discovery",
@@ -3452,5 +4377,39 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/41409583/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-eb75bb55cd19",
+    "type": "paper",
+    "title": "Innovative Approaches in Regulatory Affairs: Leveraging Artificial Intelligence and Machine Learning for Efficient Compliance and Decision-Making",
+    "excerpt": "1. AAPS J. 2025 Jan 7;27(1):22. doi: 10.1208/s12248-024-01006-5. Innovative Approaches in Regulatory Affairs: Leveraging Artificial Intelligence and Machine Learning for Efficient Compliance and Decision-Making. Ajmal CS(1), Yerram S(1), Abishek V(1), Nizam VPM(1), Aglave G(1), Patnam JD(1), Raghuvanshi RS(2), Srivastava S(3)(4). Author information: (1)Department of Regulatory Affairs, National Institute of Pharmaceutical Education and Research (NIPER), Hyderabad, Telangana, India. (2)Central Drugs Standard Control Organization (CDSCO), Directorate General of Health Services, Ministry o",
+    "source": "AAPS J",
+    "date": "2025-01-07",
+    "tags": [
+      "Pharma AI",
+      "Drug discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39776314/",
+    "badge": "PubMed",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-20656ffbbbc1",
+    "type": "paper",
+    "title": "Biosimilars in the Era of Artificial Intelligence-International Regulations and the Use in Oncological Treatments",
+    "excerpt": "1. Pharmaceuticals (Basel). 2024 Jul 10;17(7):925. doi: 10.3390/ph17070925. Biosimilars in the Era of Artificial Intelligence-International Regulations and the Use in Oncological Treatments. Bas TG(1), Duarte V(1). Author information: (1)Escuela de Ciencias Empresariales, Universidad Católica del Norte, Coquimbo 1781421, Chile. This research is based on three fundamental aspects of successful biosimilar development in the challenging biopharmaceutical market. First, biosimilar regulations in eight selected countries: Japan, South Korea, the United States, Canada, Brazil, Argentina, Au",
+    "source": "Pharmaceuticals (Basel)",
+    "date": "2024-07-10",
+    "tags": [
+      "Pharma AI",
+      "Drug discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39065775/",
+    "badge": "PubMed",
+    "topic": "regulatory"
   }
 ]
