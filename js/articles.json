@@ -68,6 +68,177 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "auto-7999834077da",
+    "type": "paper",
+    "title": "Dynamic Borrowing From Historical Controls via the Synthetic Prior With Covariates in Randomized Clinical Trials",
+    "excerpt": "Researchers propose SPx, a Bayesian statistical method that dynamically incorporates historical control data into randomized clinical trials through a synthetic prior approach that accounts for patient characteristics. The method, motivated by a rheumatoid arthritis trial application, enables flexible borrowing of information from historical controls to potentially improve trial efficiency while maintaining rigor in concurrent randomization.",
+    "source": "Stat Med",
+    "date": "2026-05-05",
+    "tags": [
+      "Bayesian Methods",
+      "Historical Controls",
+      "Clinical Trial Design",
+      "Synthetic Prior"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42082895/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-8554d079e7b5",
+    "type": "paper",
+    "title": "Cobalt complexes in biology and medicine: enzymatic functions, pharmacological applications, and health challenges",
+    "excerpt": "Cobalt complexes exhibit diverse enzymatic functions and hold significant potential for pharmaceutical applications, though their use in medicine requires careful consideration of associated health risks. This review examines the biological roles of cobalt-based compounds, their therapeutic applications, and the safety challenges relevant to their clinical development. Understanding these aspects is essential for optimizing cobalt complex design in drug discovery and regulatory decision-making.",
+    "source": "J Biol Inorg Chem",
+    "date": "2026-05-05",
+    "tags": [
+      "Cobalt complexes",
+      "Enzymatic function",
+      "Pharmacological applications",
+      "Drug safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42082802/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-2b96ebb64341",
+    "type": "news",
+    "title": "Emergence of specific binding and catalysis from a designed generalist binding protein",
+    "excerpt": "Promiscuous interactions underpin natural protein evolution, but ways to harness such promiscuity to design new functions remain underexplored. Now it is shown that mapping this promiscuity with geometric precision in a de novo protein can guide its redesign …",
+    "source": "Nature.com",
+    "date": "2026-05-04",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41557-026-02125-6",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-627b0b2c4e36",
+    "type": "news",
+    "title": "Powerful tools are revealing the ‘control knobs’ of the genome",
+    "excerpt": "By accelerating the identification of DNA sequences that control gene expression, assays are revealing the hidden grammar of the regulatory genome — and giving scientists the means to rewrite it",
+    "source": "Nature.com",
+    "date": "2026-05-04",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/d41586-026-01410-1",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-69987cbb1d7a",
+    "type": "news",
+    "title": "The next satisfactory standard for data governance may not come from brussels. it may come from beijing.",
+    "excerpt": "The European Union treats data as a privacy right. The United States treats it as a corporate asset. China treats it as a factor of production, a national economic resource on par with land, labour, capital, and technology. That distinction, which sounds like…",
+    "source": "The Next Web",
+    "date": "2026-05-04",
+    "tags": [
+      "Data governance"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/china-data-governance-global-standard/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-45f5b5f45afb",
+    "type": "news",
+    "title": "How australian firms are using AI in customer experience",
+    "excerpt": "Local tech leaders from MYOB, Guzman y Gomez, and Aware Super reveal how AI is reshaping customer experience, streamlining business operations and driving efficiency",
+    "source": "ComputerWeekly.com",
+    "date": "2026-05-04",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.computerweekly.com/news/366642624/How-Australian-firms-are-using-AI-in-customer-experience",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-51e9f0b8bd8e",
+    "type": "ainews",
+    "title": "Unsupervised transfer learning enables multi-animal tracking without training annotation",
+    "excerpt": "UDMT is a multi-animal tracker for behavioral research that is based on a transformer architecture, which negates the need for manually annotated training data. UDMT is showcased on datasets encompassing mice, rats, Drosophila, C. elegans and betta fish.",
+    "source": "Nature.com",
+    "date": "2026-05-04",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41592-026-03051-8",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-a689b48631a7",
+    "type": "news",
+    "title": "How one practice combines in-clinic, telehealth and in-home care",
+    "excerpt": "Dr. Payam Zamani is a practicing family medicine physician and founder and CEO of My Dr Now, one of the largest primary care providers in the Southwest. It's designed as a hybrid in-person/telehealth/in-home health system. THE CHALLENGE Before Zamani and his team built anything new, the problem was simple and widespread: People could not get care when they needed it. Even though My Dr Now had begun using telehealth prior to the COVID-19 pandemic, access across the broader healthcare system remained rigid, slow and disconnected from real life.",
+    "source": "Healthcare IT News",
+    "date": "2026-05-04",
+    "tags": [
+      "Healthcare IT News"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.healthcareitnews.com/news/how-one-practice-combines-clinic-telehealth-and-home-care",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-ea31ae5b1455",
+    "type": "news",
+    "title": "UCB to acquire maker of antibody treatments for autoimmune diseases",
+    "excerpt": "A second shot at gene therapy for Huntington's, China's tightening grip on pharma supply chains, and more Readout biotech updates",
+    "source": "STAT News",
+    "date": "2026-05-04",
+    "tags": [
+      "Biotech",
+      "Business",
+      "Pharma",
+      "The Readout"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/05/04/biotech-news-ucb-acquires-candid-antibody-treatments/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-12450494e072",
+    "type": "news",
+    "title": "STAT+: Biotech raises $42 million to run Huntington’s disease trial",
+    "excerpt": "Latus Bio raised $42 million as it prepares to seek FDA approval to start a clinical trial for its gene therapy for Huntington's disease.",
+    "source": "STAT News",
+    "date": "2026-05-04",
+    "tags": [
+      "Biotech",
+      "Exclusive",
+      "biotechnology",
+      "Gene therapy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/05/04/biotech-startup-latus-bio-raises-42-million-run-huntingtons-trial/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
     "id": "nws-9f33a9e2ec5b",
     "type": "news",
     "title": "Brain-computer interfaces just received FDA clearance for commercial use and the first consumer devices ship this fall",
@@ -149,6 +320,53 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42071118/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-36b6902ee61c",
+    "type": "news",
+    "title": "A new atlas reveals hidden details of the human body like never before",
+    "excerpt": "A pioneering project has revealed the human body like never before, from entire organs down to cellular structures, with unprecedented precision on the scale of a single micron – about 50 times thinner than a strand of human hair.",
+    "source": "ScienceAlert",
+    "date": "2026-05-03",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencealert.com/the-human-organ-atlas-reveals-the-human-body-in-unprecedented-detail",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-5aa10e9a8a5e",
+    "type": "news",
+    "title": "Ghana rejects US health data deal over privacy concerns",
+    "excerpt": "Ghana has formally rejected a proposed health sector agreement with the United States, citing concerns over data privacy and national control of sensitive",
+    "source": "Todaysw.com",
+    "date": "2026-05-03",
+    "tags": [
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://todaysw.com/2026/05/03/ghana-rejects-us-health-data-deal-over-privacy-concerns/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-6146bf653641",
+    "type": "seminar",
+    "title": "A world reshaped by disruption. a conference built to respond",
+    "excerpt": "LOS ANGELES--(BUSINESS WIRE)--May 3, 2026-- The Milken Institute’s 29th annual Global Conference opens today, May 3, 2026, and runs through May 6, 2026, at The Beverly Hilton and Waldorf Astoria Beverly Hills in Los Angeles.",
+    "source": "Associated Press",
+    "date": "2026-05-03",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://apnews.com/press-release/business-wire/a-world-reshaped-by-disruption-a-conference-built-to-respond-2c8cbb2430c74a1ea74f9f8fe576ac9f",
+    "badge": "Event"
   },
   {
     "id": "nws-de6b080c145f",
@@ -761,6 +979,54 @@
     "topic": "data-governance"
   },
   {
+    "id": "nws-6178e1dfbf5e",
+    "type": "news",
+    "title": "Generative AI for business: a complete strategy and implementation guide",
+    "excerpt": "* Generative AI for business is projected to add $2.6–4.4 trillion in annual economic value, with 75% concentrated in customer operations, marketing, software engineering, and R&D\r\n* Successful adoption follows a staged methodology — inventorying proprietary …",
+    "source": "Databricks.com",
+    "date": "2026-05-01",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/generative-ai-for-business",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a58acd7bc817",
+    "type": "news",
+    "title": "AI applications: tools, use cases, and platforms",
+    "excerpt": "* AI applications span four distinct capability tiers—predictive, generative, conversational, and agentic—each with different data requirements, cost structures, and evaluation frameworks, and most enterprise deployments stall not because the model underperfo…",
+    "source": "Databricks.com",
+    "date": "2026-05-01",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/ai-applications",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-1cec3bd5ed95",
+    "type": "news",
+    "title": "Agentic AI vs generative AI: comparing autonomy, workflows, and use cases",
+    "excerpt": "* Generative AI produces content reactively in response to prompts; agentic AI autonomously manages multi-step workflows, maintains memory across steps, and calls external tools to complete tasks with minimal human intervention\r\n* The two are most powerful in…",
+    "source": "Databricks.com",
+    "date": "2026-05-01",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/agentic-ai-vs-generative-ai",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
     "id": "auto-7c926b75323e",
     "type": "paper",
     "title": "[Physiological age estimation model on pediatric panoramic radiographs based on machine learning and deep learning]",
@@ -1362,6 +1628,22 @@
     "readTime": "1 min",
     "url": "https://www.wired.com/story/reid-hoffman-ai-doctor-second-opinion-wired-health/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-5493af4fd0f0",
+    "type": "news",
+    "title": "Closing the gap in exposure-response data: a pharmaverse framework",
+    "excerpt": "The Missing Standard\nCDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — wh...\nContinue read…",
+    "source": "R-bloggers.com",
+    "date": "2026-04-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.r-bloggers.com/2026/04/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework/",
+    "badge": "Data",
+    "topic": "data-governance"
   },
   {
     "id": "auto-d303028abf40",
@@ -4610,269 +4892,5 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
     "badge": "Tech"
-  },
-  {
-    "id": "nws-0d0d5b8dc7b4",
-    "type": "ainews",
-    "title": "Identification of potential ment3 inhibitors for mycobacterium tuberculosis using the generative artificial intelligence and silicoxplore platform",
-    "excerpt": "Tuberculosis (TB) is the leading cause of death from a single infectious agent, with rising multidrug resistance undermining current treatments. The mycobacterial toxin MenT3 inhibits protein synthesis by covalently attaching CMP to the 3′-CCA end of tRNA, pr…",
-    "source": "Nature.com",
-    "date": "2026-04-21",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41598-026-49174-y",
-    "badge": "Tech",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-ec39b0d89085",
-    "type": "ainews",
-    "title": "AI doom warnings are getting louder. are they realistic?",
-    "excerpt": "Researchers are increasingly sounding the alarm that artificial intelligence could end humanity. But such doomsday warnings carry their own risks.",
-    "source": "Nature.com",
-    "date": "2026-04-21",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-01257-6",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-81ab74a3bfce",
-    "type": "news",
-    "title": "FDA Achieves Year 1 Goals in Reducing Animal Testing in Drug Development",
-    "excerpt": "Since publishing roadmap last April, agency has successfully launched several key initiatives to replace animal testing with better alternatives",
-    "source": "FDA",
-    "date": "2026-04-20",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-achieves-year-1-goals-reducing-animal-testing-drug-development",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-0ae5b4da7ec9",
-    "type": "ainews",
-    "title": "Got bugs? here’s how to catch the errors in your scientific software",
-    "excerpt": "Computer scientists share their advice for ensuring that your scientific software does what it’s supposed to do.",
-    "source": "Nature.com",
-    "date": "2026-04-20",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-01261-w",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-b535c80de53a",
-    "type": "ainews",
-    "title": "The app store is booming again, and AI may be why",
-    "excerpt": "New data from Appfigures shows a swell of new app launches in 2026, suggesting AI tools could be fueling a mobile software boom.",
-    "source": "TechCrunch",
-    "date": "2026-04-18",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-94f409168cff",
-    "type": "ainews",
-    "title": "Kevin weil and bill peebles exit openai as company continues to shed 'side quests' | techcrunch",
-    "excerpt": "Kevin Weil and Bill Peebles are leaving OpenAI as the company shuts down Sora and folds its science team, signaling a sharp pivot away from consumer moonshots toward enterprise AI.",
-    "source": "TechCrunch",
-    "date": "2026-04-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-d41a61e613f3",
-    "type": "ainews",
-    "title": "The download: bad news for inner neanderthals, and AI warfare’s human illusion",
-    "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The problem with thinking you’re part Neanderthal There’s a theory that many of us have an “inner Neanderthal.” The idea …",
-    "source": "MIT Technology Review",
-    "date": "2026-04-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/04/17/1136112/the-download-inner-neanderthal-ai-war-human-in-the-loop/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-793ad91565d8",
-    "type": "ainews",
-    "title": "Slc33a1 exports oxidized glutathione to maintain endoplasmic reticulum redox homeostasis",
-    "excerpt": "Liu, Gad et al. develop an approach to purify the endoplasmic reticulum and integrate genetic, structural, molecular and cell biological analyses to identify SLC33A1 as an endoplasmic reticulum oxidized glutathione (GSSG) exporter in mammalian cells.",
-    "source": "Nature.com",
-    "date": "2026-04-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41556-026-01922-y",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-de4fcaf69d3c",
-    "type": "ainews",
-    "title": "Orthrus: toward evolutionary and functional rna foundation models",
-    "excerpt": "Orthrus is an RNA foundation model pretrained via contrastive learning based on splicing isoforms and orthologous transcripts. This pretraining strategy leads to its strong performances in various tasks about RNA properties and functions, distinguishing Orthr…",
-    "source": "Nature.com",
-    "date": "2026-04-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41592-026-03064-3",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-feeea75b827f",
-    "type": "news",
-    "title": "FDA Takes Step Forward on Testosterone Therapy for Men",
-    "excerpt": "FDA is taking an initial step to advance treatment options for men’s health by encouraging sponsors of approved testosterone replacement therapy products to contact FDA for information if they are interested in pursuing a potential new indication for low libido in men with idiopathic hypogonadism.",
-    "source": "FDA",
-    "date": "2026-04-16",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-takes-step-forward-testosterone-therapy-men",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-194bb49016e6",
-    "type": "news",
-    "title": "Assessing the real-world safety of vutrisiran for transthyretin-mediated amyloidosis with polyneuropathy: based on who-vigiaccess and faers databases",
-    "excerpt": "Background Vutrisiran is a double-stranded siRNA targeting transthyretin mRNA, primarily for the treatment of transthyretin-mediated amyloidosis (ATTR) with polyneuropathy. Understanding its safety in real-world settings is crucial for achieving optimal treat…",
-    "source": "Plos.org",
-    "date": "2026-04-15",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0347417",
-    "badge": "Data",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-3df1361310ac",
-    "type": "seminar",
-    "title": "Ad scientiam launches u.s. subsidiary and expands deployment of mscopilot® following FDA registration",
-    "excerpt": "Ad Scientiam announces the creation of its U.S. subsidiary, Ad Scientiam Inc., to support the deployment of MSCopilot® in the United States.",
-    "source": "Associated Press",
-    "date": "2026-04-15",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://apnews.com/press-release/ein-presswire-newsmatics/ad-scientiam-launches-u-s-subsidiary-and-expands-deployment-of-mscopilot-following-fda-registration-31a26b684b7af53557230365e48fb70c",
-    "badge": "Event"
-  },
-  {
-    "id": "auto-79b4d2086c22",
-    "type": "news",
-    "title": "FDA Issues Draft Guidance on Genome Editing Safety Standards to Advance Gene Therapy Development",
-    "excerpt": "The U.S. Food and Drug Administration today issued a draft guidance for sponsors seeking approval of human gene therapy products involving genome editing technologies.",
-    "source": "FDA",
-    "date": "2026-04-14",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-draft-guidance-genome-editing-safety-standards-advance-gene-therapy-development",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-2b0a95d04c99",
-    "type": "news",
-    "title": "FDA Reminds More Than 2,200 Sponsors and Researchers to Disclose Trial Results",
-    "excerpt": "The U.S. Food and Drug Administration has reminded more than 2,200 medical product companies and researchers of the requirements to submit certain clinical trial results information to ClinicalTrials.gov.",
-    "source": "FDA",
-    "date": "2026-04-13",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-reminds-more-2200-sponsors-and-researchers-disclose-trial-results",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-cccc5c4b0974",
-    "type": "news",
-    "title": "The fight over the future of meat",
-    "excerpt": "The United States lost the EV race to China. Food could be next.",
-    "source": "Foreign Policy",
-    "date": "2026-04-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://foreignpolicy.com/2026/04/10/alternative-meat-future-geopolitics-us-china-race-food-security-agriculture/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-817898fefe01",
-    "type": "news",
-    "title": "Mhra expands AI airlock programme with a £3.6 million funding boost over three years",
-    "excerpt": "The MHRA continues to be at the forefront of innovation and secures multi-year funding to expand its pioneering AI Airlock programme.",
-    "source": "Www.gov.uk",
-    "date": "2026-04-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.gov.uk/government/news/mhra-expands-ai-airlock-programme-with-a-36-million-funding-boost-over-three-years",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-68f1f2995795",
-    "type": "paper",
-    "title": "The Cerebellar Engine: Multiscale Digital Brain Co-simulations Reveal How Cerebellar Spiking Architecture Shapes Cortical Coherence",
-    "excerpt": "The impact of cellular activities on large-scale brain dynamics is thought to determine brain functioning and disease, yet the causal relationships of neural mechanisms across scales remain unclear. Recently, the cerebellum has been reported to affect whole-brain dynamics during sensorimotor integration. To disclose the underlying mechanisms, we have developed a multiscale digital brain co-simulator, in which a spiking neural network of the olivo-cerebellar microcircuit is embedded in a mouse virtual brain and wired with other nodes using an atlas-based long-range connectome. Parameters and bi",
-    "source": "bioRxiv",
-    "date": "2026-04-04",
-    "tags": [
-      "Neuroscience",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.04.02.715849",
-    "badge": "Preprint"
   }
 ]
