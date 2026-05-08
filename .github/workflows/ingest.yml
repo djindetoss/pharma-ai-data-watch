@@ -16,10 +16,18 @@ on:
         required: false
         default: "false"
 
+# Prevent two runs from racing on git pushes.
+# cancel-in-progress: false → a new scheduled run queues instead of
+# killing a run that is already writing to master / gh-pages.
+concurrency:
+  group: ingest-pipeline
+  cancel-in-progress: false
+
 jobs:
   ingest:
     name: Fetch and publish new articles
     runs-on: ubuntu-latest
+    timeout-minutes: 30   # fail fast if a step hangs (default is 6 h)
 
     permissions:
       contents: write   # needed to push articles.json back to the repo
@@ -27,6 +35,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history needed for cross-branch git operations
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -68,13 +78,17 @@ jobs:
           else
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
             git commit -m "chore: auto-ingest articles — $TIMESTAMP"
-            git push
+            # Pull with rebase first to handle any concurrent pushes to master
+            git pull --rebase origin master
+            git push origin master
           fi
 
       - name: Sync articles.json to gh-pages (live site)
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         run: |
+          set -euo pipefail
+
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -86,7 +100,7 @@ jobs:
 
           # Always sync latest app.js from master and inject Brevo key
           git show origin/master:portal/js/app.js > js/app.js
-          if [ -n "$BREVO_API_KEY" ]; then
+          if [ -n "${BREVO_API_KEY:-}" ]; then
             sed -i "s|__BREVO_API_KEY__|${BREVO_API_KEY}|g" js/app.js
           fi
 
@@ -107,12 +121,15 @@ jobs:
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
             git add js/articles.json js/app.js
             git commit -m "chore: sync to gh-pages — $TIMESTAMP"
+            # Pull with rebase to handle any concurrent pushes to gh-pages
+            git pull --rebase origin gh-pages
             git push origin gh-pages
             echo "gh-pages updated."
           else
             echo "No changes to sync to gh-pages."
           fi
 
+          # Return to master so subsequent steps work on the right branch
           git checkout master
 
       - name: Upload draft files as artefact
