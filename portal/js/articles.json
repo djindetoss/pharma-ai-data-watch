@@ -87,6 +87,69 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "auto-ab64ff89da46",
+    "type": "ainews",
+    "title": "Immunotherapy drug target identification using machine learning and patient-derived tumour explant validation",
+    "excerpt": "Nature Machine Intelligence, Published online: 18 May 2026; doi:10.1038/s42256-026-01201-3 Augustine et al. present a multimodal graph neural network that identifies cancer immunotherapy targets. It distinguishes approved and prospective targets, and promising candidates are validated using a clinically relevant patient-derived platform.",
+    "source": "Nature Machine Intelligence",
+    "date": "2026-05-18",
+    "tags": [
+      "Nature Machine Intelligence"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s42256-026-01201-3",
+    "badge": "Research"
+  },
+  {
+    "id": "nws-752c5fd48026",
+    "type": "news",
+    "title": "Palantir pltr stock hits fresh highs as AI government contracts drive momentum",
+    "excerpt": "Palantir Technologies' shares rose, pushing its market cap over $300 billion, driven by AI contracts with government and commercial clients, solidifying its position in the AI sector.",
+    "source": "Ibtimes.com.au",
+    "date": "2026-05-17",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ibtimes.com.au/palantir-technologies-ai-expansion-market-cap-1869022",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-739665b1162a",
+    "type": "news",
+    "title": "Amaravati still under construction, but quantum valley project already luring deep tech startups, scientists",
+    "excerpt": "Amaravati, a new city in Andhra Pradesh, is becoming a hub for quantum computing. A technology park called Quantum Valley is attracting scientists and startups. This initiative aims to make India a builder of advanced technology. Early settlers are moving in …",
+    "source": "The Times of India",
+    "date": "2026-05-17",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://economictimes.indiatimes.com/news/india/amaravati-still-under-construction-but-quantum-valley-project-already-luring-deeptech-startups-scientists/articleshow/131148367.cms",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-cbf87d31464e",
+    "type": "news",
+    "title": "Morning brief podcast: et deep dive: quantum city",
+    "excerpt": "Amaravati, Andhra Pradesh's under-construction capital, is still a landscape of earthmovers and iron poles — but its Quantum Valley is already drawing scientists and engineers from across India and abroad. Young engineers have left metro jobs, postdoctoral re…",
+    "source": "The Times of India",
+    "date": "2026-05-17",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://economictimes.indiatimes.com/news/morning-brief-podcast/morning-brief-podcast-et-deep-dive-quantum-city/podcast/131148115.cms",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "nws-43634896a8f9",
     "type": "news",
     "title": "AI in pharma marketing: autonomous media buying - ehealthcare solutions digital advertising network",
@@ -151,6 +214,90 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-cc7432a905d6",
+    "type": "news",
+    "title": "China claims new quantum computer solves task in microseconds what frontier can’t in years",
+    "excerpt": "The Jiuzhang 4.0 can manipulate and detect 3,050 photons at once, which is 10 times more than its predecessor. Jiuzhang 4.0, China’s latest photonic quantum computer, is staking a claim to quantum supremacy. The photonic supercomputer completed a complex calc…",
+    "source": "Freerepublic.com",
+    "date": "2026-05-16",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://freerepublic.com/focus/f-chat/4379531/posts",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-6565dbf58019",
+    "type": "news",
+    "title": "Show hn: agenda intel md – schemas and cli to audit LLM strategic-risk briefs",
+    "excerpt": "Evidence &amp; eval layer for strategic intelligence agents. Markdown protocol, JSON schemas, CLI checks, and a stdio MCP server that help AI agents produce auditable, schema-valid, evidence-aware ...",
+    "source": "Github.com",
+    "date": "2026-05-16",
+    "tags": [
+      "EMA",
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://github.com/vassiliylakhonin/agenda-intelligence-md",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-eba89f17b2e4",
+    "type": "news",
+    "title": "I’ve been studying big tech for a long time. what just happened with anthropic and the pentagon terrifies me",
+    "excerpt": "For years, I watched regulators fail to keep pace with Silicon Valley. The Anthropic-Pentagon standoff is proof we've run out of time.",
+    "source": "Fortune",
+    "date": "2026-05-16",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://fortune.com/2026/05/16/ftc-anthropic-pentagon-ai-regulation-federal-trade-commission/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-de198266b8f5",
+    "type": "news",
+    "title": "Health and technology",
+    "excerpt": "Instructions for Authors Types of Papers  Types of PapersWord LimitReferences/Figures/TablesAbstractReview article5000No limitStructured, up to 250 ...",
+    "source": "Springer.com",
+    "date": "2026-05-16",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://link.springer.com/journal/12553/submission-guidelines",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-3ca5b740c441",
+    "type": "paper",
+    "title": "Progress in Precision Drug Delivery Systems for Neurodegenerative Diseases with Muscle Atrophy",
+    "excerpt": "This review examines advances in precision drug delivery systems designed to treat neurodegenerative diseases accompanied by muscle atrophy. The article synthesizes current progress in targeted pharmaceutical approaches for this patient population, integrating findings from research conducted at leading geriatric and clinical research centers.",
+    "source": "Neuropharmacology",
+    "date": "2026-05-16",
+    "tags": [
+      "Drug delivery systems",
+      "Neurodegenerative diseases",
+      "Muscle atrophy",
+      "Precision medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42144072/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
   },
   {
     "id": "nws-b8d51f387e4d",
@@ -4757,151 +4904,5 @@
     "url": "https://www.michaelgeist.ca/2026/05/why-social-media-and-ai-chatbot-bans-for-kids-are-bad-policy-making-the-case-at-the-senate-social-affairs-science-and-tech-committee/",
     "badge": "Regulatory",
     "topic": "regulatory"
-  },
-  {
-    "id": "nws-e64780412e15",
-    "type": "news",
-    "title": "What did EU do to AI act rules? #tech",
-    "excerpt": "EU delays AI Act high risk compliance The European Union moved to “thin out” and effectively ease parts of the AI Act after industry backlash. The deal pushes back a major high risk compliance deadline and lightens paperwork burdens for smaller players. Speci…",
-    "source": "Alltoc.com",
-    "date": "2026-05-07",
-    "tags": [
-      "EU AI Act",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://alltoc.com/tech/what-did-eu-do-to-ai-act-rules",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-bea47992b5f0",
-    "type": "news",
-    "title": "Netramark announces change to board of directors",
-    "excerpt": "TORONTO, May 07, 2026 (GLOBE NEWSWIRE) — NetraMark Holdings Inc. (the “Company” or “NetraMark”) (TSX: AIAI) (OTCQB: AINMF) (Frankfurt: PF0), a premier artificial intelligence (AI) company transforming clinical trials with AI-powered precision analytics in the…",
-    "source": "Financial Post",
-    "date": "2026-05-07",
-    "tags": [
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/globe-newswire/netramark-announces-change-to-board-of-directors",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-042cced3131f",
-    "type": "news",
-    "title": "Singapore innovations changing how you live",
-    "excerpt": "Discover Singapore-led innovations from global companies, including myopia-slowing lenses and Dyson vacuums, that are transforming daily life. Read more at straitstimes.com. Read more at straitstimes.com.",
-    "source": "The Straits Times",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.straitstimes.com/business/dyson-ultra-slim-vacuum-myopia-lenses-sleep-apnoea-solution-singapore-led-innovations",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-d3b142a0d261",
-    "type": "news",
-    "title": "How algorithmic value sets enhance clinical decision-making",
-    "excerpt": "As healthcare providers study data to make decisions on the level of care, structured, intelligent algorithms can speed up these workflows for clinical reviewers.",
-    "source": "Techtarget.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techtarget.com/healthtechanalytics/feature/How-algorithmic-value-sets-enhance-clinical-decision-making",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-1d0d4b9dd1af",
-    "type": "news",
-    "title": "Omada health joins lilly employer connect, expanding its access pathways for glp-1 care as patients seek more lifestyle support",
-    "excerpt": "Survey of more than 3,000 GLP‑1 patients reveals care gaps and rising out‑of‑pocket costs, underscoring employers’ need to pair flexible GLP‑1 access",
-    "source": "Crweworld.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://crweworld.com/article/news-provided-by-globenewswire/3837243/omada-health-joins-lilly-employer-connect-expanding-its-access-pathways-for-glp-1-care-as-patients-seek-more-lifestyle-support",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-bb9ef51cea83",
-    "type": "news",
-    "title": "AI and health: discussing the new paradigm in evidence generation in milan",
-    "excerpt": "Under the patronage of Regione Lombardia, Aindo gathered leading IRCCS directors, pharma leaders, and institutions to shape the future of AI in healthcare.",
-    "source": "Aindo.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.aindo.com/news/aiandhealthmilanevent/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-8e0ae27c460b",
-    "type": "news",
-    "title": "Aws and atlassian reframe AI as an organizational challenge, not an it one",
-    "excerpt": "Enterprises racing to achieve true AI-native status are discovering that the technology gap is often the smaller obstacle. Instead, the harder challenge is reshaping the people, processes and organizational structures that AI must ultimately run on. As AI-dri…",
-    "source": "SiliconANGLE News",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://siliconangle.com/2026/05/07/ai-native-strategy-evolution-business-margins-atlassianteam/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-58ed1c76f1bf",
-    "type": "news",
-    "title": "Department of health – abu dhabi and ōura partner to advance preventive health in abu dhabi",
-    "excerpt": "Initially focused on women’s health, the partnership will unite Department of Health – Abu Dhabi’s longitudinal health data with ŌURA’s real-time insights, underpinned by a rigorous joint data governance framework ABU DHABI, United Arab Emirates — Department …",
-    "source": "Financial Post",
-    "date": "2026-05-07",
-    "tags": [
-      "Data governance",
-      "Health data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/department-of-health-abu-dhabi-and-oura-partner-to-advance-preventive-health-in-abu-dhabi",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-272379776a3f",
-    "type": "news",
-    "title": "Genai and synthetic data: what can go wrong in business?",
-    "excerpt": "GenAI's ability to improve everything it touches, including synthetic data, is undeniable, but when misused, simulated data can amplify bias, taint data and compromise security.",
-    "source": "Techtarget.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/GenAI-and-synthetic-data-What-can-go-wrong-in-business",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
