@@ -102,6 +102,165 @@
     "badge": "Research"
   },
   {
+    "id": "nws-94d9ecec7198",
+    "type": "news",
+    "title": "The seed 100: the best early-stage investors of 2026",
+    "excerpt": "Business Insider's annual Seed 100 list recognizes the early-stage investors who provide crucial support to budding startups.",
+    "source": "Business Insider",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.businessinsider.com/seed-100-best-early-stage-vc-investors-2026-5",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-9080a97940e7",
+    "type": "news",
+    "title": "From possibility to precision in macromolecular ensemble prediction",
+    "excerpt": "This Perspective discusses current challenges in macromolecular ensemble prediction and the infrastructure and methodological advances needed to overcome these barriers.",
+    "source": "Nature.com",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41592-026-03084-z",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-5da3d78fbd5f",
+    "type": "news",
+    "title": "Cba names AI researcher professor mary-anne williams as chief AI scientist",
+    "excerpt": "The Sydney-based AAAI Fellow joins the UNSW Business AI Lab to lead a team of Distinguished AI Scientists, in the latest step of Commonwealth Bank’s frontier-AI build-out. Commonwealth Bank of Australia appointed Professor Mary-Anne Williams as its first Chie…",
+    "source": "The Next Web",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/cba-mary-anne-williams-chief-ai-scientist/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-3b20f3201c1e",
+    "type": "news",
+    "title": "Tracing data lineage in AI systems",
+    "excerpt": "Data lineage records how data moves through AI pipelines, turning model debugging, impact analysis and audits into queries rather than manual investigations.",
+    "source": "Techtarget.com",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techtarget.com/searchdatamanagement/opinion/Tracing-data-lineage-in-AI-systems",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-15df8b695d62",
+    "type": "news",
+    "title": "AI turning vital to healthcare, need to prepare doctors to use it responsibly: nmc chairperson",
+    "excerpt": "National Medical Commission chairperson Abhijat Sheth emphasised the need to prepare doctors and healthcare systems for responsible AI integration in healthcare. He highlighted that medical education must adapt to AI's growing role, ensuring doctors can criti…",
+    "source": "The Times of India",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-turning-vital-to-healthcare-need-to-prepare-doctors-to-use-it-responsibly-nmc-chairperson/articleshow/131170881.cms",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-f04c9b06d53f",
+    "type": "news",
+    "title": "Taiwan’s health revolution strengthens call for inclusion",
+    "excerpt": "Taiwan’s Health Revolution strengthens call for Inclusionindiannewslink.co.nz",
+    "source": "Indiannewslink.co.nz",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://indiannewslink.co.nz/taiwan-s-health-revolution-strengthens-call-for-inclusion",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-25251ae9a1a9",
+    "type": "news",
+    "title": "The hidden data layer enterprises can't afford to ignore",
+    "excerpt": "Fragmented entity data undermines compliance, control, automation, resilience, and growth.",
+    "source": "TechRadar",
+    "date": "2026-05-18",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techradar.com/pro/the-hidden-data-layer-enterprises-cant-afford-to-ignore",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-4e614b4a0120",
+    "type": "news",
+    "title": "Association of frailty and frailty trajectory with risk for respiratory infectious diseases",
+    "excerpt": "Frailty and Respiratory Infectious Diseases",
+    "source": "Cdc.gov",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://wwwnc.cdc.gov/eid/article/32/6/25-1235_article",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-95bd438562e2",
+    "type": "news",
+    "title": "Integrated multi-omics identifies distinct macrophage alterations during progression of metabolic dysfunction-associated steatohepatitis",
+    "excerpt": "This study uses multi-omics approaches to dissect the roles of macrophage populations in the progression of metabolic dysfunction-associated steatohepatitis. GPNMB+ macrophages accumulate in the portal tract in advanced disease and may have antigen-presenting…",
+    "source": "Nature.com",
+    "date": "2026-05-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02600-3",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-d69fa60bdd9f",
+    "type": "ainews",
+    "title": "Computational approaches for multimodal lineage tracing",
+    "excerpt": "Multimodal lineage tracing links heritable ancestry with single-cell molecular states to reveal how cell fates emerge during development, regeneration and disease. In this Review, the authors survey key computational challenges and methods for phylogenetic in…",
+    "source": "Nature.com",
+    "date": "2026-05-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41576-026-00969-9",
+    "badge": "Tech"
+  },
+  {
     "id": "nws-752c5fd48026",
     "type": "news",
     "title": "Palantir pltr stock hits fresh highs as AI government contracts drive momentum",
@@ -148,6 +307,69 @@
     "url": "https://economictimes.indiatimes.com/news/morning-brief-podcast/morning-brief-podcast-et-deep-dive-quantum-city/podcast/131148115.cms",
     "badge": "Pharma AI",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-14c5d190f065",
+    "type": "news",
+    "title": "United kingdom proposes AI ‘kill switch’ in cyber security bill",
+    "excerpt": "The UK's AI 'kill switch' proposal could enhance national security but may disrupt digital markets, highlighting regulatory challenges.\nThe post United Kingdom proposes AI ‘kill switch’ in cyber security bill appeared first on Crypto Briefing.",
+    "source": "Crypto Briefing",
+    "date": "2026-05-17",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://cryptobriefing.com/uk-ai-kill-switch-cyber-security-bill/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-8f3e2606861e",
+    "type": "news",
+    "title": "Pro-chancellors urge govts to set up AI, digital committees for sustainable funding",
+    "excerpt": "Pro-Chancellors urge Nigerian universities to create AI & digital committees to drive responsible AI adoption and ensure sustainable education funding.\n\nRead More: https://punchng.com/pro-chancellors-urge-govts-to-set-up-ai-digital-committees-for-sustainable-…",
+    "source": "The Punch",
+    "date": "2026-05-17",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://punchng.com/pro-chancellors-urge-govts-to-set-up-ai-digital-committees-for-sustainable-funding/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-e42488845249",
+    "type": "news",
+    "title": "Taiwan’s integrated health data platform and vision for smart medicine | the jerusalem post",
+    "excerpt": "Taiwan’s digital health model uses advanced data integration and AI to improve care while advocating for WHO inclusion.",
+    "source": "The Jerusalem Post",
+    "date": "2026-05-17",
+    "tags": [
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.jpost.com/opinion/article-896191",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-0e3cc32ef9cf",
+    "type": "ainews",
+    "title": "For eclipse, the $2.5b cerebras win is just the start of realizing its physical-world thesis | techcrunch",
+    "excerpt": "Investing in the real world was lonely for Lior Susan 10 years ago. Now his firm finds itself at the center of the tech world's action.",
+    "source": "TechCrunch",
+    "date": "2026-05-17",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/05/17/for-eclipse-the-2-5b-cerebras-win-is-just-the-start-of-realizing-its-physical-world-thesis/",
+    "badge": "Tech"
   },
   {
     "id": "nws-43634896a8f9",
@@ -1526,6 +1748,44 @@
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349025",
     "badge": "Data",
     "topic": "data-governance"
+  },
+  {
+    "id": "auto-7a488d02d250",
+    "type": "paper",
+    "title": "Design, Synthesis, and Biological Evaluation of Small-Molecule PD-1/PD-L1 Inhibitors Bearing a Rigid Benz[d]oxazole Skeleton",
+    "excerpt": "Researchers designed and synthesized small-molecule inhibitors targeting the PD-1/PD-L1 immune checkpoint pathway using a rigid benz[d]oxazole scaffold, followed by biological evaluation of these compounds. This work represents a chemical approach to PD-1/PD-L1 modulation as an alternative to monoclonal antibody-based therapeutics. The study was conducted at the Department of Medicinal Chemistry and Center for Drug Discovery at China Pharmaceutical University.",
+    "source": "ChemMedChem",
+    "date": "2026-05-14",
+    "tags": [
+      "Immunotherapy",
+      "PD-1/PD-L1 inhibitors",
+      "Small-molecule drug design",
+      "Medicinal chemistry"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42151523/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-29bcb6507f8d",
+    "type": "paper",
+    "title": "α-Halothioamide warheads with enhanced cysteine reactivity and specificity for covalent protein labelling",
+    "excerpt": "Researchers have developed α-halothioamide chemical warheads that selectively and efficiently bind to cysteine residues on proteins, enabling improved covalent protein labeling. These engineered compounds demonstrate enhanced reactivity and specificity compared to existing approaches, offering a potentially valuable tool for targeted protein modification in drug discovery and research applications.",
+    "source": "Nat Commun",
+    "date": "2026-05-14",
+    "tags": [
+      "Covalent Chemistry",
+      "Protein Engineering",
+      "Drug Discovery Tools",
+      "Chemical Biology"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42151150/",
+    "badge": "Open Access",
+    "topic": "drug-discovery"
   },
   {
     "id": "auto-e5ef896baa91",
@@ -3614,6 +3874,25 @@
     "topic": "data-governance"
   },
   {
+    "id": "auto-1d19e4ecfdf5",
+    "type": "paper",
+    "title": "[Analysis on factors associated with life quality of HIV-infected individuals in antiretroviral therapy in Wuxi based on three models]",
+    "excerpt": "This study analyzes factors associated with quality of life in HIV-infected individuals receiving antiretroviral therapy in Wuxi, China using three statistical models. The research employed multivariate analytical approaches to identify key determinants of health-related quality of life outcomes among treated HIV patients. Findings provide insight into modifiable and non-modifiable factors affecting patient well-being and treatment outcomes in this population.",
+    "source": "Zhonghua Liu Xing Bing Xue Za Zhi",
+    "date": "2026-05-10",
+    "tags": [
+      "HIV/AIDS",
+      "Antiretroviral Therapy",
+      "Quality of Life",
+      "China"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42151074/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-a0f7007612cd",
     "type": "paper",
     "title": "Supply and Demand in the Mathematics of Rare Disease Drug Development: Why Choosing the Right Model Is Crucial",
@@ -4628,281 +4907,5 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42097972/",
     "badge": "PubMed",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-b6023524851f",
-    "type": "news",
-    "title": "STAT+: FDA revisits a rare cancer treatment it rejected a few months ago",
-    "excerpt": "Secret drug pricing deals, a virtual AI cancer clinic, and other biotech news from The Readout",
-    "source": "STAT News",
-    "date": "2026-05-07",
-    "tags": [
-      "Biotech",
-      "Business",
-      "Pharma",
-      "The Readout"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/05/07/biotech-news-fda-reconsiders-rare-cancer-treatment-after-surprise-rejection/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-265a65b4e496",
-    "type": "ainews",
-    "title": "OpenAI introduces new ‘Trusted Contact’ safeguard for cases of possible self-harm",
-    "excerpt": "The company is expanding its efforts to protect ChatGPT users in cases where conversations may turn to self-harm.",
-    "source": "TechCrunch AI",
-    "date": "2026-05-07",
-    "tags": [
-      "AI",
-      "TC",
-      "ChatGPT",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-e64d34de0051",
-    "type": "ainews",
-    "title": "Platonic representation of foundation machine learning interatomic potentials",
-    "excerpt": "Nature Machine Intelligence, Published online: 07 May 2026; doi:10.1038/s42256-026-01235-7 Li and Walsh show that a unified ‘platonic’ geometry emerges across the representations of independent foundation models for learning interatomic potentials. The observation enables cross-model comparison, embedding arithmetic and ground-truth-free diagnostics.",
-    "source": "Nature Machine Intelligence",
-    "date": "2026-05-07",
-    "tags": [
-      "Nature Machine Intelligence"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s42256-026-01235-7",
-    "badge": "Research"
-  },
-  {
-    "id": "nws-cdb7d5fd2015",
-    "type": "news",
-    "title": "Inside fdp – part 2: delivering on the nhs vision for data",
-    "excerpt": "In the second of an exclusive series of articles by the former deputy director of data engineering at NHS England, we examine the key elements of the data architecture that supports the Federated Data Platform programme",
-    "source": "ComputerWeekly.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Federated data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.computerweekly.com/opinion/Inside-FDP-part-2-Delivering-on-the-NHS-vision-for-data",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-049666cfa3c7",
-    "type": "news",
-    "title": "Alphaevolve: gemini-powered coding agent scaling impact across fields",
-    "excerpt": "Discover how AlphaEvolve optimizes algorithms for genomics, quantum physics, global infrastructure, and more to accelerate scientific progress and solve real-world challenges.",
-    "source": "Deepmind.google",
-    "date": "2026-05-07",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://deepmind.google/blog/alphaevolve-impact/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-a545f86252aa",
-    "type": "news",
-    "title": "Find out how alphaevolve has gone from research to solving real-life problems.",
-    "excerpt": "AlphaEvolve has become a powerful engine for scientific and societal progress.",
-    "source": "Blog.google",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-da3e80724b6f",
-    "type": "news",
-    "title": "Artificial intelligence algorithm for real-time detection and counting of trypanosoma cruzi parasites using smartphone microscopy",
-    "excerpt": "Author summary Chagas disease is a life-threatening illness affecting millions, primarily in Latin America, where access to advanced laboratory equipment and trained specialists is limited. One method of diagnosis is microscopic examination of blood or cerebr…",
-    "source": "Plos.org",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012955",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-83252f24d1bb",
-    "type": "news",
-    "title": "Ten simple rules for establishing a drug discovery lab in resource-limited settings",
-    "excerpt": "Citation: Shoko R, Lombe C, Manyadza TF, Ngwenya S, Cheuka PM, Mugumbate G (2026) Ten simple rules for establishing a drug discovery lab in resource-limited settings. PLoS Comput Biol 22(5):\r\n e10142… 19387",
-    "source": "Plos.org",
-    "date": "2026-05-07",
-    "tags": [
-      "Drug discovery"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014249",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-eee20fca46d5",
-    "type": "news",
-    "title": "Trump pivots on AI regulation, worker ousted by doge runs for office, and hantavirus explained",
-    "excerpt": "Today on “Uncanny Valley,” we’re diving into recent reports that the Trump administration is considering an executive order that would establish some sort of federal oversight over new AI models.",
-    "source": "Wired",
-    "date": "2026-05-07",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/uncanny-valley-podcast-trump-pivots-ai-regulation-worker-ousted-by-doge-runs-for-office-hantavirus-explained/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9767ce654c01",
-    "type": "news",
-    "title": "White house reportedly considers mandatory government vetting of AI models before release — executive order under discussion",
-    "excerpt": "The Trump administration is in early discussions about an executive order that would create a government review process for AI models before public release.",
-    "source": "Tom's Hardware UK",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/white-house-considers-mandatory-government-vetting-of-ai-models-before-release",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-2bcfc110a737",
-    "type": "news",
-    "title": "Interra systems to showcase best-in-class qc, monitoring, and ai-based solutions across live ott, linear, and vod workflows at broadcastasia 2026",
-    "excerpt": "At BroadcastAsia 2026, Interra Systems will demonstrate its latest innovations in automated quality control (QC), real-time monitoring, and captioning.",
-    "source": "Streamingmedia.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.streamingmedia.com/PressRelease/Interra-Systems-to-Showcase-Best-in-Class-QC-Monitoring-and-AI-Based-Solutions-Across-Live-OTT-Linear-and-VOD-Workflows-at-BroadcastAsia-2026_57646.aspx",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-50268c84076d",
-    "type": "news",
-    "title": "Administration mulls AI regulation executive orders, but substance in flux",
-    "excerpt": "The White House is contemplating executive orders on artificial intelligence regulation, but the specifics of the orders are still the subject of active debate, sources close to the administration told The Daily Signal. The New York Times first reported that …",
-    "source": "Daily Signal",
-    "date": "2026-05-07",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.dailysignal.com/2026/05/07/trump-mulls-ai-regulation-orders/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-2dc20bcbfdc5",
-    "type": "news",
-    "title": "Corporate social action prevailed in an era of disruption",
-    "excerpt": "The Benevity 2025 Annual Impact Report reveals $2.7B in corporate giving despite political pressures and funding pullbacks CALGARY, Alberta, May 07, 2026 (GLOBE NEWSWIRE) — Benevity, Inc., the global leader in enterprise impact software, has released its 2025…",
-    "source": "Financial Post",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/globe-newswire/corporate-social-action-prevailed-in-an-era-of-disruption",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-128bd2344e00",
-    "type": "news",
-    "title": "Looking at the data behind prediction markets",
-    "excerpt": "We all know they’re casinos. It’s time to look at the data behind the froth.",
-    "source": "Asteriskmag.com",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://asteriskmag.com/issues/14/are-prediction-markets-good-for-anything",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-3a081a67a539",
-    "type": "news",
-    "title": "The largest education data breach in history was not an attack on a school. it was an attack on a vendor.",
-    "excerpt": "The largest education data breach in history was not an attack on a school. It was an attack on a vendor. On 30 April, hackers exploited a vulnerability in the systems of Instructure, the company that makes Canvas, the learning management system used by 41 pe…",
-    "source": "The Next Web",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/the-largest-education-data-breach-in-history-was-not-an-attack-on-a-school-it-was-an-attack-on-a-vendor/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-bc4689df4337",
-    "type": "news",
-    "title": "Silicon valley spent $25 million on a california governor candidate. he is polling at 4 per cent",
-    "excerpt": "Silicon Valley has spent more than 25 million dollars trying to make one of its own the next governor of California. The candidate is polling at four per cent. The June 2 primary is less than four weeks away. And the most instructive thing about the campaign …",
-    "source": "The Next Web",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/silicon-valley-matt-mahan-california-governor-tech-money/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-2cf141b3b9e8",
-    "type": "news",
-    "title": "Why social media and AI chatbot bans for kids are bad policy: making the case at the senate social affairs, science and tech committee",
-    "excerpt": "The Standing Senate Committee on Social Affairs, Science and Technology is one of several committees in the House and Senate conducting hearings on artificial intelligence. I appeared before the committee yesterday (my fourth appearance on the issue in recent…",
-    "source": "Michaelgeist.ca",
-    "date": "2026-05-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.michaelgeist.ca/2026/05/why-social-media-and-ai-chatbot-bans-for-kids-are-bad-policy-making-the-case-at-the-senate-social-affairs-science-and-tech-committee/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
