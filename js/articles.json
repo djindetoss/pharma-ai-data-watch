@@ -108,6 +108,25 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "auto-f1b298612876",
+    "type": "paper",
+    "title": "Antibody-drug conjugates in cancer therapy: do we need biomarkers? A comprehensive review",
+    "excerpt": "Antibody-drug conjugates (ADCs) have revolutionized targeted cancer therapy. This comprehensive review examines the role of biomarkers in optimizing ADC treatment selection and outcomes in oncology. The analysis addresses whether biomarker-guided approaches are necessary to improve the efficacy and safety of ADC-based cancer therapies.",
+    "source": "Cancer Metastasis Rev",
+    "date": "2026-05-26",
+    "tags": [
+      "Antibody-drug conjugates",
+      "Biomarkers",
+      "Cancer therapy",
+      "Targeted therapy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42185658/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-71f713d75d0c",
     "type": "paper",
     "title": "Artificial Intelligence in Drug Discovery and Development: Transforming Pharmaceutical Innovation",
@@ -123,6 +142,141 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42003205/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-0ab692bc5098",
+    "type": "news",
+    "title": "The fed may open direct settlement rails to crypto firms as banks warn of liquidity risk",
+    "excerpt": "You never see the most important part of any of your payments. When an app says your money moved, a number changes on your screen, and the transaction looks and feels finished. But underneath those interfaces lies a separate, invisible chain of bank reserves,…",
+    "source": "CryptoSlate",
+    "date": "2026-05-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://cryptoslate.com/the-fed-may-open-direct-settlement-rails-to-crypto-firms-as-banks-warn-of-liquidity-risk/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-377293b0bb43",
+    "type": "news",
+    "title": "The ecb is convening banks to fix the cybersecurity flaws that AI models like mythos keep finding",
+    "excerpt": "The European Central Bank is calling banks in for a meeting on Tuesday to address the cybersecurity risks created by a new generation of AI models that can find and exploit software vulnerabilities faster than any human team. The meeting follows months of gro…",
+    "source": "The Next Web",
+    "date": "2026-05-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/ecb-banks-cybersecurity-ai-mythos-elderson/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-57eefc524cfe",
+    "type": "news",
+    "title": "Exome-wide association study of blood lipids in 1,158,017 individuals from diverse populations",
+    "excerpt": "Multi-ancestry exome-wide analyses in the Million Veteran Program, UK Biobank and All of Us identify rare coding variants across 209 genes associated with blood lipid traits, highlighting new candidate drug targets across diverse populations.",
+    "source": "Nature.com",
+    "date": "2026-05-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02613-y",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-363f1a8a80df",
+    "type": "ainews",
+    "title": "Decoding sequence determinants of gene expression in diverse cellular and disease states",
+    "excerpt": "Decima learns to predict cell-type-specific gene expression based on DNA sequences, contributing to the analysis of gene regulation and design of context-specific regulatory elements.",
+    "source": "Nature.com",
+    "date": "2026-05-25",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41592-026-03102-0",
+    "badge": "Tech"
+  },
+  {
+    "id": "nws-20fc981237a2",
+    "type": "ainews",
+    "title": "De novo design of dna origami with a generative diffusion model",
+    "excerpt": "AI-based inverse design of DNA origami has been limited by the scarcity of large, standardised datasets. Here, the authors present a diffusion-based design framework trained on simulated equilibrium conformations, highlighting the promise of generative AI mod…",
+    "source": "Nature.com",
+    "date": "2026-05-25",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41467-026-73578-z",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-c2dc6b2e9fc1",
+    "type": "paper",
+    "title": "Recent advances in stimuli-responsive nanomaterials for the treatment of acute kidney injury",
+    "excerpt": "This review examines recent advances in stimuli-responsive nanomaterials for treating acute kidney injury, which represent an emerging therapeutic approach that responds to physiological or environmental triggers to deliver targeted treatment at the site of kidney damage.",
+    "source": "J Nanobiotechnology",
+    "date": "2026-05-25",
+    "tags": [
+      "Nanomaterials",
+      "Acute kidney injury",
+      "Drug delivery",
+      "Stimuli-responsive systems"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42185897/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-1db70070b4c3",
+    "type": "paper",
+    "title": "In silico discovery of novel small-molecule PD-L1 inhibitors through a multi-stage computational workflow integrating machine learning and molecular dynamics",
+    "excerpt": "Researchers used a multi-stage computational approach combining machine learning and molecular dynamics simulations to identify novel small-molecule inhibitors of PD-L1, an immune checkpoint protein relevant to cancer immunotherapy. The study demonstrates an in silico discovery workflow designed to accelerate the identification of new drug candidates targeting this validated therapeutic target.",
+    "source": "J Comput Aided Mol Des",
+    "date": "2026-05-25",
+    "tags": [
+      "Computational Chemistry",
+      "PD-L1 Inhibitors",
+      "Machine Learning",
+      "Drug Discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42185552/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-f6ccf115470d",
+    "type": "news",
+    "title": "STAT+: Eli Lilly says Verve’s gene editor lowers cholesterol levels in early study",
+    "excerpt": "Eli Lilly said Monday that a high dose of its gene-editing therapy reduced cholesterol levels by 62% in participants in a clinical trial.",
+    "source": "STAT News",
+    "date": "2026-05-25",
+    "tags": [
+      "Biotech",
+      "Pharma",
+      "biotechnology",
+      "Eli Lilly"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/05/25/eli-lilly-verv-102-gene-editing-cholesterol-phase-1-trial-data/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
   },
   {
     "id": "auto-8fb98e462b66",
@@ -206,6 +360,54 @@
     "url": "https://completeaitraining.com/news/iks-health-acquires-arai-solutions-to-build-proprietary/",
     "badge": "Clinical AI",
     "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-ed7f32355a7b",
+    "type": "news",
+    "title": "Surgeon general issues new advisory warning of screen time risks for children and teens",
+    "excerpt": "Amid growing concerns over screen time addiction in the United States and worldwide, the Office of the Surgeon General issued a warning about its potential health risks, particularly for young people.",
+    "source": "Medical Daily",
+    "date": "2026-05-24",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medicaldaily.com/surgeon-general-issues-new-advisory-warning-screen-time-risks-children-teens-475432",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-bbca571b9313",
+    "type": "news",
+    "title": "AI scans 400,000 reddit posts and finds hidden ozempic side effects",
+    "excerpt": "By analyzing over 400,000 Reddit posts, researchers discovered that users of popular GLP-1 weight-loss drugs frequently discussed unexpected symptoms like menstrual irregularities, chills, and hot flashes. The findings suggest AI could turn social media into …",
+    "source": "Science Daily",
+    "date": "2026-05-24",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260523103914.htm",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-e7f58b64d280",
+    "type": "news",
+    "title": "Bowel cancer. 12 months to live... gemma was 35 with two children when she got the call - but these treatments have kept her alive six years on as a new trial offers hope",
+    "excerpt": "Gemma Farquhar will always remember her children's ages in April 2020: four and six. 'I thought I'd never see another milestone.' Six years on, she's still fighting",
+    "source": "Dailymail.com",
+    "date": "2026-05-24",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.dailymail.com/health/article-15832995/Early-onset-bowel-cancer-12-months-prognosis-Gemma-Farquhar.html",
+    "badge": "Data",
+    "topic": "data-governance"
   },
   {
     "id": "nws-aa58ed0c1aa8",
@@ -4710,199 +4912,5 @@
     "url": "https://github.com/anthropics/claude-for-legal",
     "badge": "Regulatory",
     "topic": "regulatory"
-  },
-  {
-    "id": "nws-449dae02df02",
-    "type": "news",
-    "title": "Show hn: scope mcp, compliance checking for vibe coding teams",
-    "excerpt": "Article URL: https://scope-mcp.langguard.ai/\nComments URL: https://news.ycombinator.com/item?id=48138979\nPoints: 1\n# Comments: 0",
-    "source": "Langguard.ai",
-    "date": "2026-05-14",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://scope-mcp.langguard.ai/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-786123ad8a95",
-    "type": "news",
-    "title": "10 best itgc tools and software for automated it controls in 2026",
-    "excerpt": "Every SOX audit season, IT teams scramble to collect evidence across dozens of systems, validate user access permissions, and document change management procedures. IT General Controls (ITGCs) cover the foundation of IT operations that auditors examine: acces…",
-    "source": "The Next Web",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/10-best-itgc-tools-and-software-for-automated-it-controls-in-2026/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-344b764dc1df",
-    "type": "news",
-    "title": "AI therapy and AI mental health tools are rising fast, but the ethics of AI in healthcare still matter",
-    "excerpt": "AI therapy and AI mental health tools are transforming emotional support, but experts warn the ethics of AI in healthcare must keep pace with innovation, privacy, and patient safety.",
-    "source": "Medical Daily",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.medicaldaily.com/ai-therapy-ai-mental-health-tools-are-rising-fast-ethics-ai-healthcare-still-matter-475360",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-838fa070396a",
-    "type": "news",
-    "title": "Sensex today | stock market highlights: sensex gains 789 pts, nifty ends at 23,689 as us-china trade talks lift investor sentiment",
-    "excerpt": "Sensex, Nifty, Share Prices Highlights: Indian shares rose on Thursday, supported by steady earnings ​and signs of progress in U.S.-China trade relations, though sentiment ‌remained fragile as elevated oil prices and foreign ​outflows drove the rupee to anoth…",
-    "source": "BusinessLine",
-    "date": "2026-05-14",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-14th-may-2026/article70974643.ece",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9afe3f2264c3",
-    "type": "news",
-    "title": "Scott wiener opposes a california billionaire tax. so do his tech CEO backers.",
-    "excerpt": "Crypto executive Chris Larsen has spent millions fighting billionaire tax measures, and he’s the largest individual donor to a PAC backing Wiener.\nThe post Scott Wiener Opposes a California Billionaire Tax. So Do His Tech CEO Backers. appeared first on The In…",
-    "source": "The Intercept",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://theintercept.com/2026/05/14/scott-wiener-billionaire-tax-california-house-race/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-1d386fc68977",
-    "type": "news",
-    "title": "Netramark provides second quarter update and highlights continued commercial, scientific, regulatory and capital markets momentum",
-    "excerpt": "TORONTO, May 14, 2026 (GLOBE NEWSWIRE) — NetraMark Holdings Inc. (the “Company” or “NetraMark”) (TSX: AIAI) (OTCQB: AINMF) (Frankfurt: PF0) a premier artificial intelligence (AI) company that is transforming clinical trials with AI powered precision analytics…",
-    "source": "Financial Post",
-    "date": "2026-05-14",
-    "tags": [
-      "Clinical trials",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/globe-newswire/netramark-provides-second-quarter-update-and-highlights-continued-commercial-scientific-regulatory-and-capital-markets-momentum",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-5fe0dcfc00ed",
-    "type": "news",
-    "title": "Peripheral leukocyte transcriptomic changes in preweaned holstein heifer calves with varying stages of bovine respiratory disease",
-    "excerpt": "Reduction of morbidity and mortality attributable to Bovine Respiratory Disease (BRD) requires a nuanced approach rooted in understanding associated pathophysiological transcriptomic changes. This study aimed to identify 1) transcriptomic changes in periphera…",
-    "source": "Plos.org",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349348",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-be1176cba974",
-    "type": "news",
-    "title": "Application of artificial intelligence based on contrast-enhanced ct imaging for predicting peritoneal metastasis in patients with t3/t4 stage gastric cancer",
-    "excerpt": "Gastric cancer, prevalent in East Asia, often presents with peritoneal metastasis at diagnosis, limiting surgical options and reducing survival rates. Given the low sensitivity of current diagnostic methods, this study aimed to develop and evaluate deep learn…",
-    "source": "Plos.org",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349614",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-f946793c3f86",
-    "type": "news",
-    "title": "Development of ai-based dopamine transporter (dat) image generation technique using early phase [18f]-fp-cit pet imaging",
-    "excerpt": "Objectives To develop and validate a deep learning-based model capable of generating dopamine transporter (DAT) images from early-phase [18F]-FP-CIT positron emission tomography (PET) imaging.   Materials and methods Conditional generative adversarial network…",
-    "source": "Plos.org",
-    "date": "2026-05-14",
-    "tags": [
-      "Deep learning"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349375",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-e334c6a6b4d5",
-    "type": "news",
-    "title": "Iks health announces acquisition of arai solutions, an AI management and technology company",
-    "excerpt": "IKS Health Announces Acquisition of ARAI Solutions, an AI Management and Technology Company",
-    "source": "BusinessLine",
-    "date": "2026-05-14",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.thehindubusinessline.com/brandhub/pr-release/iks-health-announces-acquisition-of-arai-solutions-an-ai-management-and-technology-company/article70977150.ece",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-343909fec817",
-    "type": "news",
-    "title": "Morning minute: what’s at stake with trump in beijing",
-    "excerpt": "Trump's in Beijing for the biggest potential market-moving event of the year, while Claude helped one lucky user recover $400,000 in Bitcoin.",
-    "source": "Decrypt",
-    "date": "2026-05-14",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://decrypt.co/367825/morning-minute-whats-at-stake-with-trump-in-beijing",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-59754aef6e06",
-    "type": "news",
-    "title": "Optimising supervised machine learning algorithms predicting cigarette cravings and lapses for a smoking cessation just-in-time adaptive intervention (jitai)",
-    "excerpt": "This study aimed to optimise the balance between participant burden and algorithm performance for predicting high-risk moments in a smoking cessation just-in-time adaptive intervention (JITAI) by systematically varying ecological momentary assessment (EMA) pr…",
-    "source": "Plos.org",
-    "date": "2026-05-14",
-    "tags": [
-      "EMA",
-      "Machine learning"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349028",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
