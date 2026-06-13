@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Digest — Pharma AI &amp; Data Watch</title>
+  <meta name="description" content="Veille mensuelle en IA pharmaceutique et réglementation. Digest cumulatif mis à jour chaque lundi." />
+
+  <link rel="canonical" href="https://djindetoss.github.io/pharma-ai-data-watch/digest.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="AI Digest — Pharma AI &amp; Data Watch" />
+  <meta property="og:description" content="Veille mensuelle : articles, papiers et actualités IA en pharma et réglementation." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=digest1" />
+
+  <style>
+    /* ── Digest-specific styles ── */
+
+    /* Hero */
+    .digest-hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #1e3a6e 55%, #1d4ed8 100%);
+      color: var(--white);
+      padding: 52px 24px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .digest-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .digest-hero-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .digest-hero-left { flex: 1; min-width: 280px; }
+    .digest-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(14,165,233,0.2);
+      border: 1px solid rgba(14,165,233,0.3);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .digest-hero h1 {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.8px;
+      margin-bottom: 10px;
+    }
+    .digest-hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--accent) 0%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .digest-hero-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      max-width: 520px;
+    }
+
+    /* Month selector */
+    .digest-hero-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .month-select-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-end;
+    }
+    .month-select-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(255,255,255,0.45);
+    }
+    #month-select {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-sm);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 9px 36px 9px 14px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23ffffff' opacity='0.5' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      transition: border-color 0.15s;
+    }
+    #month-select:focus { border-color: var(--accent); }
+    #month-select option { background: var(--dark-2); color: var(--white); }
+
+    .digest-meta-badges { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .meta-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+    }
+    .meta-badge.accent { background: rgba(14,165,233,0.2); border-color: rgba(14,165,233,0.3); color: var(--accent); }
+
+    /* ── Signal block ── */
+    .signal-wrap {
+      max-width: 1400px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+    }
+    .signal-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .signal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .signal-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--accent), var(--primary-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .signal-header h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .signal-text {
+      font-size: 14px;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .signal-stats {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .signal-stat { text-align: center; }
+    .signal-stat-value {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .signal-stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--mid);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    /* Category bar chart (CSS only) */
+    .cat-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+    .cat-bar-row {
+      display: grid;
+      grid-template-columns: 110px 1fr 28px;
+      align-items: center;
+      gap: 8px;
+    }
+    .cat-bar-label { font-size: 11.5px; font-weight: 600; color: var(--dark-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cat-bar-track { height: 7px; background: var(--light); border-radius: 4px; overflow: hidden; }
+    .cat-bar-fill  { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+    .cat-bar-count { font-size: 11px; font-weight: 600; color: var(--mid); text-align: right; }
+
+    /* ── Filter / toolbar ── */
+    .digest-toolbar {
+      max-width: 1400px;
+      margin: 20px auto 0;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .digest-search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+    .digest-search-wrap input {
+      width: 100%;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 9px 16px 9px 36px;
+      font-size: 13.5px;
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .digest-search-wrap input:focus { border-color: var(--primary-light); }
+    .digest-search-wrap .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: var(--mid);
+      pointer-events: none;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .filter-group-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--mid);
+    }
+
+    .rel-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 13px;
+      border-radius: 16px;
+      font-size: 12.5px;
+      font-weight: 500;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .rel-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .rel-btn.active { background: var(--dark); color: var(--white); border-color: var(--dark); }
+
+    .result-count {
+      margin-left: auto;
+      font-size: 12.5px;
+      color: var(--mid);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    /* Category toggle pills */
+    .cat-pills-wrap {
+      max-width: 1400px;
+      margin: 12px auto 0;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .cat-pill-all {
+      padding: 4px 13px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1.5px solid var(--dark);
+      background: var(--dark);
+      color: var(--white);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .cat-pill-all.inactive { background: var(--white); color: var(--mid); border-color: var(--border); }
+    .cat-pill {
+      padding: 4px 13px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s;
+      opacity: 0.45;
+    }
+    .cat-pill.active { opacity: 1; border-color: currentColor; }
+
+    /* ── Article list ── */
+    .digest-body {
+      max-width: 1400px;
+      margin: 20px auto 0;
+      padding: 0 24px 64px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    #article-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .digest-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+    }
+    .digest-card:hover {
+      border-color: var(--primary-light);
+      box-shadow: var(--shadow-md);
+      transform: translateX(3px);
+    }
+    .digest-card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .cat-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 9px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .rel-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .rel-CRITIQUE    { background: #fee2e2; color: #991b1b; }
+    .rel-IMPORTANT   { background: #fef3c7; color: #78350f; }
+    .rel-A_SURVEILLER{ background: var(--light); color: var(--mid); }
+
+    .digest-card-source {
+      font-size: 12px;
+      color: var(--mid);
+      font-weight: 500;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .digest-card h3 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.35;
+      margin-bottom: 7px;
+    }
+    .digest-card h3 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .digest-card h3 a:hover { color: var(--primary-light); text-decoration: underline; }
+    .digest-card-summary {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .digest-card-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .digest-tag {
+      background: var(--light);
+      color: var(--mid);
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .digest-card-link {
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--primary-light);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .digest-card-link:hover { text-decoration: underline; }
+
+    /* ── Sidebar ── */
+    .digest-sidebar { display: flex; flex-direction: column; gap: 20px; }
+
+    .digest-sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .digest-sidebar-header {
+      padding: 16px 18px 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .digest-sidebar-header h3 { font-size: 14px; font-weight: 700; color: var(--dark); }
+
+    /* Archive list */
+    .archive-list { padding: 8px 0; }
+    .archive-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 18px;
+      cursor: pointer;
+      transition: background 0.12s;
+      border-radius: 0;
+    }
+    .archive-item:hover { background: var(--light); }
+    .archive-item.active { background: #eff6ff; }
+    .archive-label { font-size: 13px; font-weight: 600; color: var(--dark-3); text-transform: capitalize; }
+    .archive-item.active .archive-label { color: var(--primary-light); }
+    .archive-count {
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--light);
+      color: var(--mid);
+      border-radius: 10px;
+      padding: 2px 8px;
+    }
+
+    /* ── Spinner / empty states ── */
+    .digest-spinner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 14px;
+      color: var(--mid);
+    }
+    .spinner-ring {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--primary-light);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .digest-empty {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--mid);
+    }
+    .digest-empty-icon { font-size: 42px; margin-bottom: 12px; }
+    .digest-empty h3 { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .digest-body { grid-template-columns: 1fr; }
+      .digest-sidebar { display: grid; grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .digest-hero-right { align-items: flex-start; width: 100%; }
+      .digest-sidebar { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AI</div>
+        <div class="logo-text">
+          <span class="logo-title">Pharma AI &amp; Data Watch</span>
+          <span class="logo-sub">Intelligence portal · Drug development</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="index.html" data-filter-link="all">All</a>
+        <a href="index.html" data-filter-link="news">News</a>
+        <a href="index.html" data-filter-link="paper">Papers</a>
+        <a href="index.html" data-filter-link="ainews">🤖 AI news</a>
+        <span class="nav-divider">|</span>
+        <a href="index.html" data-topic-link="regulatory">Regulatory science</a>
+        <a href="index.html" data-topic-link="data-governance">Data</a>
+        <a href="index.html" data-topic-link="drug-discovery">AI in drug discovery</a>
+        <a href="index.html" data-topic-link="clinical-ai">Clinical AI</a>
+        <span class="nav-divider">|</span>
+        <a href="events.html">📅 Events</a>
+        <a href="digest.html" class="active">📊 Digest</a>
+        <a href="index.html#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn-subscribe" style="text-decoration:none;">← Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="digest-hero">
+    <div class="digest-hero-inner">
+      <div class="digest-hero-left">
+        <div class="digest-eyebrow">📊 Veille mensuelle</div>
+        <h1>AI Digest —<br/><em>Pharma &amp; Régulation</em></h1>
+        <p class="digest-hero-desc">
+          Tous les articles collectés par le pipeline, organisés par mois et catégorie.
+          Mis à jour chaque lundi matin. Aucune sélection manuelle — 100 % automatique.
+        </p>
+        <div id="digest-hero-badges" class="digest-meta-badges">
+          <span class="meta-badge accent" id="badge-count">— articles</span>
+          <span class="meta-badge" id="badge-updated">Chargement…</span>
+        </div>
+      </div>
+
+      <div class="digest-hero-right">
+        <div class="month-select-wrap">
+          <span class="month-select-label">Mois affiché</span>
+          <select id="month-select">
+            <option value="">Chargement…</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SIGNAL DU MOIS ── -->
+  <div class="signal-wrap">
+    <div class="signal-card" id="signal-card" style="display:none">
+      <div class="signal-header">
+        <div class="signal-icon">📈</div>
+        <h2>Signal du mois</h2>
+      </div>
+      <p class="signal-text" id="signal-text"></p>
+      <div class="signal-stats" id="signal-stats"></div>
+      <div class="cat-bars" id="cat-bars"></div>
+    </div>
+  </div>
+
+  <!-- ── TOOLBAR ── -->
+  <div class="digest-toolbar">
+    <div class="digest-search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="search" id="digest-search" placeholder="Rechercher dans les articles…" autocomplete="off" />
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group-label">Pertinence :</span>
+      <button class="rel-btn active" data-rel="all">Tous</button>
+      <button class="rel-btn" data-rel="CRITIQUE">★★★ Critique</button>
+      <button class="rel-btn" data-rel="IMPORTANT">★★☆ Important</button>
+      <button class="rel-btn" data-rel="A_SURVEILLER">★☆☆ À surveiller</button>
+    </div>
+
+    <span class="result-count" id="result-count"></span>
+  </div>
+
+  <!-- ── CATEGORY PILLS ── -->
+  <div class="cat-pills-wrap" id="cat-pills-wrap">
+    <button class="cat-pill-all" id="cat-all-btn">Toutes catégories</button>
+    <!-- dynamic pills inserted here -->
+  </div>
+
+  <!-- ── MAIN BODY ── -->
+  <div class="digest-body">
+    <main>
+      <div id="article-list">
+        <div class="digest-spinner">
+          <div class="spinner-ring"></div>
+          <span>Chargement du digest…</span>
+        </div>
+      </div>
+    </main>
+
+    <aside class="digest-sidebar">
+      <!-- Archive -->
+      <div class="digest-sidebar-card">
+        <div class="digest-sidebar-header">
+          <div class="sidebar-icon" style="background:#dbeafe">📁</div>
+          <h3>Digests précédents</h3>
+        </div>
+        <div class="archive-list" id="archive-list">
+          <p style="padding:12px 18px;font-size:13px;color:var(--mid)">Chargement…</p>
+        </div>
+      </div>
+
+      <!-- Category legend -->
+      <div class="digest-sidebar-card">
+        <div class="digest-sidebar-header">
+          <div class="sidebar-icon" style="background:#ede9fe">🏷</div>
+          <h3>Catégories</h3>
+        </div>
+        <div id="cat-legend" style="padding:12px 18px;display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:14px;">
+            <div class="logo-icon">AI</div>
+            <div class="logo-text">
+              <span class="logo-title">Pharma AI &amp; Data Watch</span>
+              <span class="logo-sub">Intelligence portal · Drug development</span>
+            </div>
+          </div>
+          <p>An independent portal tracking AI, data, and regulatory science across the drug development ecosystem.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="index.html">News &amp; papers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="digest.html">AI Digest</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="index.html">Regulatory science</a></li>
+            <li><a href="index.html">Drug discovery AI</a></li>
+            <li><a href="index.html">Clinical trials</a></li>
+            <li><a href="index.html">Data</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Portal</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#">Suggest content</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pharma AI &amp; Data Watch — Maintained by <strong>Félicien Tosso</strong>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  'use strict';
+
+  /* ── Category config ── */
+  const CATEGORIES = {
+    TECHNIQUE:     { label: 'Technique',              color: '#534AB7', bg: '#EEEDFE' },
+    REGLEMENTAIRE: { label: 'Réglementaire',          color: '#0F6E56', bg: '#E1F5EE' },
+    INDUSTRIE:     { label: 'Industrie',              color: '#185FA5', bg: '#E6F1FB' },
+    ETHIQUE:       { label: 'Éthique & société',      color: '#854F0B', bg: '#FAEEDA' },
+    SCIENCE:       { label: 'Science',                color: '#3B6D11', bg: '#EAF3DE' },
+    PHARMA:        { label: 'Pharma & biotech',       color: '#993C1D', bg: '#FAECE7' },
+    MEDECINE:      { label: 'Médecine & santé',       color: '#72243E', bg: '#FBEAF0' },
+    EUROPE:        { label: 'Europe',                 color: '#0C447C', bg: '#E6F1FB' },
+    ACADEMIQUE:    { label: 'Académique',             color: '#3C3489', bg: '#EEEDFE' },
+    GEOPOLITIQUE:  { label: 'Géopolitique',           color: '#444441', bg: '#F1EFE8' },
+    SOUVERAINETE:  { label: 'Souveraineté numérique', color: '#633806', bg: '#FAEEDA' },
+    SECURITE:      { label: 'Cybersécurité & IA',     color: '#791F1F', bg: '#FCEBEB' },
+    ECONOMIE:      { label: 'Économie & travail',     color: '#085041', bg: '#E1F5EE' },
+    PHILOSOPHIE:   { label: 'Philosophie & IA',       color: '#26215C', bg: '#EEEDFE' },
+    ENVIRONNEMENT: { label: 'Environnement',          color: '#27500A', bg: '#EAF3DE' },
+  };
+
+  const REL_LABELS = {
+    CRITIQUE:    '★★★',
+    IMPORTANT:   '★★☆',
+    A_SURVEILLER:'★☆☆',
+  };
+
+  /* ── State ── */
+  let currentDigest  = null;
+  let activeRel      = 'all';
+  let activeCats     = new Set();   // empty = all
+  let searchQuery    = '';
+  let digestIndex    = [];
+  let currentMonthId = '';
+
+  /* ── Helpers ── */
+  function fmtDate(iso) {
+    if (!iso) return '';
+    try {
+      return new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' });
+    } catch { return iso; }
+  }
+
+  function catBadge(cat) {
+    const cfg = CATEGORIES[cat] || { label: cat, color: '#475569', bg: '#f1f5f9' };
+    return `<span class="cat-badge" style="color:${cfg.color};background:${cfg.bg}">${cfg.label}</span>`;
+  }
+
+  function relBadge(rel) {
+    return `<span class="rel-badge rel-${rel}">${REL_LABELS[rel] || rel}</span>`;
+  }
+
+  /* ── Filter articles ── */
+  function filterArticles(articles) {
+    return articles.filter(a => {
+      if (activeRel !== 'all' && a.relevance !== activeRel) return false;
+      if (activeCats.size > 0 && !activeCats.has(a.category)) return false;
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        const hay = `${a.title} ${a.summary} ${(a.tags||[]).join(' ')} ${a.source}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }
+
+  /* ── Render signal ── */
+  function renderSignal(signal) {
+    if (!signal) return;
+    document.getElementById('signal-card').style.display = '';
+    document.getElementById('signal-text').textContent   = signal.text;
+
+    const stats = document.getElementById('signal-stats');
+    stats.innerHTML = [
+      { v: signal.totalArticles,   l: 'articles' },
+      { v: signal.criticalCount,   l: 'critiques' },
+      { v: signal.importantCount,  l: 'importants' },
+      { v: signal.paperCount,      l: 'publications' },
+    ].map(s => `
+      <div class="signal-stat">
+        <div class="signal-stat-value">${s.v ?? 0}</div>
+        <div class="signal-stat-label">${s.l}</div>
+      </div>`).join('');
+
+    /* Category bar chart */
+    const bars     = document.getElementById('cat-bars');
+    const catData  = Object.entries(signal.categoryCounts || {}).sort((a, b) => b[1] - a[1]).slice(0, 6);
+    const maxCount = catData[0]?.[1] || 1;
+    bars.innerHTML = catData.map(([cat, n]) => {
+      const cfg  = CATEGORIES[cat] || { label: cat, color: '#94a3b8', bg: '#f1f5f9' };
+      const pct  = Math.round((n / maxCount) * 100);
+      return `
+        <div class="cat-bar-row">
+          <span class="cat-bar-label" title="${cfg.label}">${cfg.label}</span>
+          <div class="cat-bar-track">
+            <div class="cat-bar-fill" style="width:${pct}%;background:${cfg.color}"></div>
+          </div>
+          <span class="cat-bar-count">${n}</span>
+        </div>`;
+    }).join('');
+  }
+
+  /* ── Render category pills ── */
+  function renderCatPills(articles) {
+    const catCounts = {};
+    for (const a of articles) catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+    const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+
+    const wrap = document.getElementById('cat-pills-wrap');
+    // Keep the "All" button, replace the rest
+    const allBtn = document.getElementById('cat-all-btn');
+    wrap.innerHTML = '';
+    wrap.appendChild(allBtn);
+
+    for (const [cat, n] of sorted) {
+      const cfg = CATEGORIES[cat] || { label: cat, color: '#475569', bg: '#f1f5f9' };
+      const btn = document.createElement('button');
+      btn.className = 'cat-pill' + (activeCats.size === 0 || activeCats.has(cat) ? ' active' : '');
+      btn.dataset.cat = cat;
+      btn.style.color      = cfg.color;
+      btn.style.background = activeCats.has(cat) ? cfg.bg : 'transparent';
+      btn.style.borderColor = 'transparent';
+      btn.textContent = `${cfg.label} (${n})`;
+      btn.addEventListener('click', () => toggleCat(cat));
+      wrap.appendChild(btn);
+    }
+
+    /* Category legend (sidebar) */
+    const legend = document.getElementById('cat-legend');
+    legend.innerHTML = sorted.map(([cat, n]) => {
+      const cfg = CATEGORIES[cat] || { label: cat, color: '#475569', bg: '#f1f5f9' };
+      return `<div style="display:flex;align-items:center;gap:8px">
+        <span style="width:10px;height:10px;border-radius:3px;background:${cfg.color};flex-shrink:0"></span>
+        <span style="font-size:12.5px;color:var(--dark-3);flex:1">${cfg.label}</span>
+        <span style="font-size:11px;color:var(--mid);font-weight:600">${n}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function toggleCat(cat) {
+    if (activeCats.has(cat)) {
+      activeCats.delete(cat);
+    } else {
+      activeCats.add(cat);
+    }
+    updateCatPillStyles();
+    renderArticles();
+  }
+
+  function updateCatPillStyles() {
+    const allActive = activeCats.size === 0;
+    const allBtn = document.getElementById('cat-all-btn');
+    allBtn.className = 'cat-pill-all' + (allActive ? '' : ' inactive');
+    document.querySelectorAll('.cat-pill[data-cat]').forEach(btn => {
+      const cat = btn.dataset.cat;
+      const cfg = CATEGORIES[cat] || { color: '#475569', bg: '#f1f5f9' };
+      const isActive = allActive || activeCats.has(cat);
+      btn.className  = 'cat-pill' + (isActive ? ' active' : '');
+      btn.style.background  = activeCats.has(cat) ? cfg.bg : 'transparent';
+      btn.style.borderColor = activeCats.has(cat) ? cfg.color : 'transparent';
+    });
+  }
+
+  /* ── Render articles ── */
+  function renderArticles() {
+    if (!currentDigest) return;
+    const filtered = filterArticles(currentDigest.articles || []);
+    const list = document.getElementById('article-list');
+    const countEl = document.getElementById('result-count');
+
+    countEl.textContent = `${filtered.length} / ${currentDigest.articles.length} articles`;
+
+    if (filtered.length === 0) {
+      list.innerHTML = `
+        <div class="digest-empty">
+          <div class="digest-empty-icon">🔍</div>
+          <h3>Aucun résultat</h3>
+          <p>Modifier vos filtres ou la recherche pour afficher des articles.</p>
+        </div>`;
+      return;
+    }
+
+    list.innerHTML = filtered.map(a => {
+      const cfg     = CATEGORIES[a.category] || { label: a.category, color: '#475569', bg: '#f1f5f9' };
+      const tagsHtml = (a.tags || []).slice(0, 3).map(t =>
+        `<span class="digest-tag">${t}</span>`).join('');
+      const srcDate = [a.source, fmtDate(a.publishedDate)].filter(Boolean).join(' · ');
+      return `
+        <article class="digest-card">
+          <div class="digest-card-top">
+            ${catBadge(a.category)}
+            ${relBadge(a.relevance)}
+            <span class="digest-card-source">${srcDate}</span>
+          </div>
+          <h3>
+            ${a.url && a.url !== '#'
+              ? `<a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>`
+              : a.title}
+          </h3>
+          ${a.summary ? `<p class="digest-card-summary">${a.summary}</p>` : ''}
+          <div class="digest-card-footer">
+            ${tagsHtml}
+            ${a.url && a.url !== '#'
+              ? `<a class="digest-card-link" href="${a.url}" target="_blank" rel="noopener">Lire l'article →</a>`
+              : ''}
+          </div>
+        </article>`;
+    }).join('');
+  }
+
+  /* ── Load a digest by ID ── */
+  async function loadDigest(id) {
+    currentMonthId = id;
+    document.getElementById('signal-card').style.display = 'none';
+    document.getElementById('article-list').innerHTML = `
+      <div class="digest-spinner">
+        <div class="spinner-ring"></div>
+        <span>Chargement du digest ${id}…</span>
+      </div>`;
+
+    try {
+      const res = await fetch(`./data/digests/${id}.json?v=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      currentDigest = await res.json();
+    } catch (e) {
+      document.getElementById('article-list').innerHTML = `
+        <div class="digest-empty">
+          <div class="digest-empty-icon">⚠️</div>
+          <h3>Digest non disponible</h3>
+          <p>Le fichier <code>data/digests/${id}.json</code> n'a pas pu être chargé.<br/>
+             Déclenchez le workflow <em>Build Weekly Digest</em> depuis GitHub Actions pour le générer.</p>
+        </div>`;
+      return;
+    }
+
+    /* Update hero badges */
+    const sig = currentDigest.signal;
+    document.getElementById('badge-count').textContent =
+      `${currentDigest.articles?.length ?? 0} articles`;
+    document.getElementById('badge-updated').textContent =
+      `Mis à jour le ${fmtDate(currentDigest.generatedAt)}`;
+
+    /* Reset filters */
+    activeCats.clear();
+    searchQuery = '';
+    document.getElementById('digest-search').value = '';
+    document.querySelectorAll('.rel-btn').forEach(b =>
+      b.classList.toggle('active', b.dataset.rel === 'all'));
+    activeRel = 'all';
+
+    /* Render */
+    renderSignal(sig);
+    renderCatPills(currentDigest.articles || []);
+    renderArticles();
+
+    /* Highlight active archive item */
+    document.querySelectorAll('.archive-item').forEach(el =>
+      el.classList.toggle('active', el.dataset.id === id));
+  }
+
+  /* ── Load index ── */
+  async function init() {
+    let index = [];
+    try {
+      const res = await fetch(`./data/digests/index.json?v=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      index = await res.json();
+    } catch (e) {
+      console.warn('Could not load digest index:', e);
+    }
+
+    digestIndex = index;
+
+    /* Populate month selector */
+    const sel = document.getElementById('month-select');
+    if (!index.length) {
+      sel.innerHTML = '<option value="">Aucun digest disponible</option>';
+      document.getElementById('article-list').innerHTML = `
+        <div class="digest-empty">
+          <div class="digest-empty-icon">📭</div>
+          <h3>Aucun digest généré</h3>
+          <p>Le digest sera disponible après le premier run du workflow <em>Build Weekly Digest</em>
+             (chaque lundi à 07:00 UTC, ou manuellement depuis GitHub Actions).</p>
+        </div>`;
+      return;
+    }
+
+    sel.innerHTML = index.map(e =>
+      `<option value="${e.id}">${e.label} (${e.totalArticles} articles)</option>`
+    ).join('');
+
+    /* Archive sidebar */
+    document.getElementById('archive-list').innerHTML = index.map(e => `
+      <div class="archive-item" data-id="${e.id}" onclick="loadDigest('${e.id}')">
+        <span class="archive-label">${e.label}</span>
+        <span class="archive-count">${e.totalArticles}</span>
+      </div>`).join('');
+
+    /* Load most recent digest */
+    const latestId = index[0].id;
+    sel.value = latestId;
+    await loadDigest(latestId);
+  }
+
+  /* ── Event listeners ── */
+  document.getElementById('month-select').addEventListener('change', e => {
+    if (e.target.value) loadDigest(e.target.value);
+  });
+
+  document.getElementById('digest-search').addEventListener('input', e => {
+    searchQuery = e.target.value.trim();
+    renderArticles();
+  });
+
+  document.querySelectorAll('.rel-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeRel = btn.dataset.rel;
+      document.querySelectorAll('.rel-btn').forEach(b =>
+        b.classList.toggle('active', b === btn));
+      renderArticles();
+    });
+  });
+
+  document.getElementById('cat-all-btn').addEventListener('click', () => {
+    activeCats.clear();
+    updateCatPillStyles();
+    renderArticles();
+  });
+
+  /* ── Boot ── */
+  init();
+  </script>
+
+</body>
+</html>
