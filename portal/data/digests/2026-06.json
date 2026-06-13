@@ -1,0 +1,95 @@
+{
+  "id": "2026-06",
+  "generatedAt": "2026-06-13T19:20:59.352Z",
+  "weekStart": "2026-06-06",
+  "signal": {
+    "monthLabel": "juin 2026",
+    "totalArticles": 3,
+    "categoryCounts": {
+      "PHARMA": 3
+    },
+    "dominantCategory": "PHARMA",
+    "dominantCategoryCount": 3,
+    "topSources": [
+      "Gut Microbes",
+      "Eur J Med Chem",
+      "New Microbes New Infect"
+    ],
+    "paperCount": 3,
+    "criticalCount": 0,
+    "importantCount": 3,
+    "text": "Ce mois de juin 2026, le digest recense 3 articles. Thématique dominante : PHARMA (3 articles). Sources les plus actives : Gut Microbes, Eur J Med Chem, New Microbes New Infect. 3 publications académiques incluses.",
+    "generatedAt": "2026-06-13T19:20:59.352Z"
+  },
+  "articles": [
+    {
+      "id": "auto-695f513beba2",
+      "title": "Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types",
+      "titleFr": null,
+      "source": "Gut Microbes",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42026803/",
+      "publishedDate": "2026-12-31",
+      "type": "paper",
+      "category": "PHARMA",
+      "relevance": "IMPORTANT",
+      "summary": "1. Gut Microbes. 2026 Dec 31;18(1):2662690. doi: 10.1080/19490976.2026.2662690. Epub 2026 Apr 23. Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types. Zhang F(1), Hu K(1), Sun C(2), Chen R(3), Ni G(4)(5)(6)(7), Liu X(8)(9), Wei L(10), Su R(1).",
+      "regulatoryAngle": null,
+      "tags": [
+        "Pharma AI",
+        "Drug discovery"
+      ],
+      "badge": "PubMed",
+      "topic": "drug-discovery",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "auto-bf93918bb754",
+      "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
+      "titleFr": null,
+      "source": "Eur J Med Chem",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
+      "publishedDate": "2026-07-05",
+      "type": "paper",
+      "category": "PHARMA",
+      "relevance": "IMPORTANT",
+      "summary": "1. Eur J Med Chem. 2026 Jul 5;311:118855. doi: 10.1016/j.ejmech.2026.118855. Epub 2026 Apr 9. Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations. Qiu K(1), Li K(1), Qiao J(1), Wang D(2), Jin J(1), Yan Z(1), Wong KC(3), Wei L(4).",
+      "regulatoryAngle": null,
+      "tags": [
+        "Pharma AI",
+        "Drug discovery"
+      ],
+      "badge": "PubMed",
+      "topic": "drug-discovery",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "auto-ea8abb2ebaf3",
+      "title": "Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era",
+      "titleFr": null,
+      "source": "New Microbes New Infect",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42027758/",
+      "publishedDate": "2026-06-25",
+      "type": "paper",
+      "category": "PHARMA",
+      "relevance": "IMPORTANT",
+      "summary": "1. New Microbes New Infect. 2026 Apr 10;71:101751. doi: 10.1016/j.nmni.2026.101751. eCollection 2026 Jun. Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era. Nasr DS(1)(2), Alraee NB(3), Katbi SWA(3), Kouli NM(3), Asaad NI(3), Ismail MM(3), Khanday S(1).",
+      "regulatoryAngle": null,
+      "tags": [
+        "Pharma AI",
+        "Drug discovery"
+      ],
+      "badge": "PubMed",
+      "topic": "drug-discovery",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    }
+  ]
+}

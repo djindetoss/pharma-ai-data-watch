@@ -1,0 +1,89 @@
+name: Build Weekly Digest
+
+on:
+  schedule:
+    # Lundi 07:00 UTC — 1 h après le pipeline quotidien (06:00 UTC)
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: digest-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-digest:
+    name: Build and publish monthly digest
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build digest from existing articles
+        # Zero API calls — reads portal/js/articles.json, writes portal/data/digests/
+        run: node .github/scripts/build-digest.mjs
+
+      - name: Commit digest to master
+        run: |
+          git config user.name  "Digest Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git add portal/data/digests/
+          if git diff --cached --quiet; then
+            echo "No new digest content — nothing to commit."
+          else
+            git commit -m "digest: $(date +'%Y-%m') — semaine du $(date +'%d/%m/%Y')"
+            git pull --rebase origin master
+            git push origin master
+          fi
+
+      - name: Sync digest to gh-pages (live site)
+        run: |
+          set -euo pipefail
+          git config user.name  "Digest Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+
+          # Snapshot files from master before switching branches
+          mkdir -p /tmp/digests
+          cp -r portal/data/digests/. /tmp/digests/
+          cp portal/digest.html /tmp/digest.html
+
+          git fetch origin gh-pages
+          git checkout gh-pages
+
+          mkdir -p data/digests
+          cp -r /tmp/digests/. data/digests/
+          cp /tmp/digest.html digest.html
+
+          # Update nav in index.html if digest link is missing
+          # (already added manually to the gh-pages version — skip if present)
+
+          CHANGED=false
+          if ! git diff --quiet data/digests/ digest.html 2>/dev/null; then
+            CHANGED=true
+          fi
+          if git ls-files --others --exclude-standard data/digests/ digest.html | grep -q .; then
+            CHANGED=true
+          fi
+
+          if [ "$CHANGED" = "true" ]; then
+            git add data/digests/ digest.html
+            git commit -m "digest: sync to gh-pages — $(date +'%Y-%m-%d')"
+            git pull --rebase origin gh-pages
+            git push origin gh-pages
+            echo "gh-pages updated with new digest."
+          else
+            echo "No changes to sync to gh-pages."
+          fi
+
+          git checkout master
