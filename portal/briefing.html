@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Intelligence Briefing — Pharma AI &amp; Data Watch</title>
+  <meta name="description" content="Weekly expert AI briefing for pharmaceutical and regulatory science professionals. Sourced from scientific journals, regulatory agencies, and specialized media." />
+  <link rel="canonical" href="https://djindetoss.github.io/pharma-ai-data-watch/briefing.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=briefing1" />
+  <style>
+    /* ══════════════════════════════════════════════════════════════
+       BRIEFING PAGE — INTELLIGENCE REPORT STYLE
+    ══════════════════════════════════════════════════════════════ */
+
+    /* ── Top edition bar ── */
+    .edition-bar {
+      background: var(--dark);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 7px 24px;
+    }
+    .edition-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .edition-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+    }
+    .edition-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .edition-meta span {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      font-weight: 500;
+    }
+    .edition-meta .sep { opacity: 0.2; }
+
+    /* Week selector */
+    #week-select {
+      background: transparent;
+      border: none;
+      color: rgba(255,255,255,0.5);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      font-family: inherit;
+    }
+    #week-select option { background: #1e293b; color: #fff; }
+
+    /* ── Hero: Lead story ── */
+    .briefing-hero {
+      background: var(--dark);
+      padding: 56px 24px 0;
+      border-bottom: 3px solid var(--primary-light);
+    }
+    .briefing-hero-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: var(--dark);
+      border-radius: 3px;
+      padding: 3px 10px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 48px;
+      align-items: start;
+      padding-bottom: 48px;
+    }
+    .hero-main {}
+    .hero-headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(30px, 4vw, 52px);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+    .hero-standfirst {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 20px;
+      max-width: 580px;
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
+    }
+    .hero-body {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+      max-width: 580px;
+    }
+    .hero-sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 20px;
+    }
+    .source-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .source-chip:hover { background: rgba(255,255,255,0.12); color: var(--white); }
+    .source-chip-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+    /* Hero sidebar: week stats */
+    .hero-sidebar {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+    .hero-sidebar-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 18px;
+    }
+    .hero-stat-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero-stat-row:last-child { border-bottom: none; }
+    .hero-stat-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      min-width: 42px;
+    }
+    .hero-stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    .hero-model-badge {
+      margin-top: 18px;
+      padding: 8px 12px;
+      background: rgba(14,165,233,0.12);
+      border: 1px solid rgba(14,165,233,0.2);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Section grid ── */
+    .briefing-body {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    .sections-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .section-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-icon {
+      font-size: 18px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--dark);
+    }
+    .section-count {
+      margin-left: auto;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--mid);
+      background: var(--light);
+      border-radius: 10px;
+      padding: 2px 8px;
+    }
+    .section-items { padding: 4px 0; }
+
+    .brief-item {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .brief-item:last-child { border-bottom: none; }
+    .brief-item-headline {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.35;
+      margin-bottom: 6px;
+    }
+    .brief-item-body {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .brief-item-sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .brief-source-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--primary-light);
+      background: #eff6ff;
+      border-radius: 4px;
+      padding: 2px 8px;
+      text-decoration: none;
+      transition: background 0.12s;
+    }
+    .brief-source-tag:hover { background: #dbeafe; }
+
+    /* ── Pharma Focus section ── */
+    .pharma-focus {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a6e 60%, #1d4ed8 100%);
+      border-radius: var(--radius-xl);
+      padding: 40px 36px;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pharma-focus::before {
+      content: '🧬';
+      position: absolute;
+      right: 32px;
+      top: 24px;
+      font-size: 72px;
+      opacity: 0.07;
+      line-height: 1;
+    }
+    .pharma-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(14,165,233,0.2);
+      border: 1px solid rgba(14,165,233,0.3);
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .pharma-headline {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .pharma-standfirst {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 680px;
+      border-left: 3px solid var(--accent);
+      padding-left: 14px;
+    }
+    .pharma-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .pharma-item {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      transition: background 0.15s;
+    }
+    .pharma-item:hover { background: rgba(255,255,255,0.1); }
+    .pharma-item-headline {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .pharma-item-body {
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .pharma-source-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(14,165,233,0.15);
+      border-radius: 4px;
+      padding: 2px 8px;
+      text-decoration: none;
+    }
+    .pharma-source-tag:hover { background: rgba(14,165,233,0.25); }
+
+    /* ── Editor's note ── */
+    .editor-note {
+      background: var(--light);
+      border-left: 4px solid var(--primary-light);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .editor-note-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .editor-note-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary-light);
+      margin-bottom: 4px;
+    }
+    .editor-note-text {
+      font-size: 14px;
+      color: var(--dark-3);
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    /* ── Sources index ── */
+    .sources-section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .sources-header {
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sources-header h2 {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--dark);
+    }
+    .sources-count {
+      font-size: 11px;
+      color: var(--mid);
+      font-weight: 500;
+    }
+    .sources-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0;
+    }
+    .source-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      transition: background 0.12s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .source-entry:hover { background: var(--lighter); }
+    .source-entry-num {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--mid);
+      min-width: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .source-entry-body {}
+    .source-entry-title {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--dark);
+      line-height: 1.35;
+      margin-bottom: 3px;
+    }
+    .source-entry:hover .source-entry-title { color: var(--primary-light); }
+    .source-entry-meta {
+      font-size: 11px;
+      color: var(--mid);
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .source-type-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Loading / empty ── */
+    .b-spinner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 14px;
+      color: var(--mid);
+    }
+    .b-spinner-ring {
+      width: 38px;
+      height: 38px;
+      border: 3px solid var(--border);
+      border-top-color: var(--primary-light);
+      border-radius: 50%;
+      animation: bspin 0.7s linear infinite;
+    }
+    @keyframes bspin { to { transform: rotate(360deg); } }
+
+    .b-empty {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .b-empty-icon { font-size: 48px; margin-bottom: 14px; }
+    .b-empty h2 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .b-empty p  { font-size: 14px; color: var(--mid); line-height: 1.6; max-width: 460px; margin: 0 auto; }
+
+    /* ── Responsive ── */
+    @media (max-width: 1000px) {
+      .hero-layout { grid-template-columns: 1fr; }
+      .hero-sidebar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+      .hero-sidebar-title { grid-column: 1 / -1; }
+      .hero-stat-row { border-bottom: none; flex-direction: column; gap: 2px; }
+      .sections-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .briefing-hero { padding: 36px 16px 0; }
+      .briefing-body  { padding: 24px 16px 48px; }
+      .pharma-focus   { padding: 28px 20px; }
+      .hero-sidebar   { grid-template-columns: 1fr 1fr; }
+      .pharma-grid    { grid-template-columns: 1fr; }
+      .sources-list   { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">AI</div>
+        <div class="logo-text">
+          <span class="logo-title">Pharma AI &amp; Data Watch</span>
+          <span class="logo-sub">Intelligence portal · Drug development</span>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html" data-filter-link="all">All</a>
+        <a href="index.html" data-filter-link="news">News</a>
+        <a href="index.html" data-filter-link="paper">Papers</a>
+        <a href="index.html" data-filter-link="ainews">🤖 AI news</a>
+        <span class="nav-divider">|</span>
+        <a href="index.html" data-topic-link="regulatory">Regulatory</a>
+        <a href="index.html" data-topic-link="drug-discovery">Drug discovery</a>
+        <a href="index.html" data-topic-link="clinical-ai">Clinical AI</a>
+        <span class="nav-divider">|</span>
+        <a href="events.html">📅 Events</a>
+        <a href="digest.html">📊 Digest</a>
+        <a href="briefing.html" class="active">📰 Briefing</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html" class="btn-subscribe" style="text-decoration:none;">← Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── EDITION BAR ── -->
+  <div class="edition-bar">
+    <div class="edition-bar-inner">
+      <span class="edition-label">📰 AI Intelligence Briefing</span>
+      <div class="edition-meta">
+        <span id="edition-week">—</span>
+        <span class="sep">·</span>
+        <span id="edition-sources">— sources</span>
+        <span class="sep">·</span>
+        <select id="week-select" title="Select briefing week">
+          <option value="">Loading…</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HERO (Lead story) ── -->
+  <section class="briefing-hero" id="briefing-hero">
+    <div class="briefing-hero-inner">
+      <div id="hero-content">
+        <div class="b-spinner">
+          <div class="b-spinner-ring"></div>
+          <span>Loading this week's briefing…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BODY ── -->
+  <div class="briefing-body" id="briefing-body" style="display:none">
+    <!-- Section grid -->
+    <div class="sections-grid" id="sections-grid"></div>
+
+    <!-- Editor's note -->
+    <div class="editor-note" id="editor-note" style="display:none">
+      <span class="editor-note-icon">✍️</span>
+      <div>
+        <div class="editor-note-label">Editor's analysis</div>
+        <p class="editor-note-text" id="editor-note-text"></p>
+      </div>
+    </div>
+
+    <!-- Pharma Focus -->
+    <div id="pharma-section"></div>
+
+    <!-- Sources index -->
+    <div class="sources-section" id="sources-section" style="display:none">
+      <div class="sources-header">
+        <h2>📎 Sources — This Edition</h2>
+        <span class="sources-count" id="sources-count"></span>
+      </div>
+      <div class="sources-list" id="sources-list"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:14px;">
+            <div class="logo-icon">AI</div>
+            <div class="logo-text">
+              <span class="logo-title">Pharma AI &amp; Data Watch</span>
+              <span class="logo-sub">Intelligence portal · Drug development</span>
+            </div>
+          </div>
+          <p>An independent portal tracking AI, data, and regulatory science across the drug development ecosystem.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="index.html">News &amp; papers</a></li>
+            <li><a href="briefing.html">AI Briefing</a></li>
+            <li><a href="digest.html">Monthly Digest</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="index.html">Regulatory science</a></li>
+            <li><a href="index.html">Drug discovery AI</a></li>
+            <li><a href="index.html">Clinical AI</a></li>
+            <li><a href="index.html">Data governance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Portal</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#">Suggest content</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pharma AI &amp; Data Watch — Maintained by <strong>Félicien Tosso</strong>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookie policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  'use strict';
+
+  /* ── Type colors ── */
+  const TYPE_COLORS = {
+    paper:   '#059669',
+    news:    '#2563eb',
+    ainews:  '#d97706',
+    seminar: '#7c3aed',
+    webinar: '#7c3aed',
+  };
+
+  function typeColor(t) { return TYPE_COLORS[t] || '#64748b'; }
+
+  /* ── Helpers ── */
+  function fmtDate(iso) {
+    if (!iso) return '';
+    try { return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); }
+    catch { return iso; }
+  }
+
+  function sourceChip(s, dark = false) {
+    if (!s || !s.url || s.url === '#') return '';
+    const cls = dark ? 'pharma-source-tag' : 'brief-source-tag';
+    return `<a class="${cls}" href="${s.url}" target="_blank" rel="noopener">
+      <span style="width:5px;height:5px;border-radius:50%;background:${typeColor(s.type)};display:inline-block;flex-shrink:0"></span>
+      ${s.source || 'Source'}
+    </a>`;
+  }
+
+  /* ── Render hero (lead story) ── */
+  function renderHero(b) {
+    const ls = b.leadStory || {};
+    const stats = b.meta || {};
+    const model = stats.model === 'claude-haiku-4-5' ? 'Claude Haiku 4.5' : 'Auto-generated';
+    const sourcesHtml = (ls.sources || []).map(s => `
+      <a class="source-chip" href="${s.url}" target="_blank" rel="noopener">
+        <span class="source-chip-dot"></span>${s.source || '—'}
+      </a>`).join('');
+
+    document.getElementById('hero-content').innerHTML = `
+      <div class="hero-layout">
+        <div class="hero-main">
+          <div class="hero-kicker">🔺 Lead story</div>
+          <h1 class="hero-headline">${ls.headline || 'AI Intelligence Briefing'}</h1>
+          <p class="hero-standfirst">${ls.standfirst || ''}</p>
+          <p class="hero-body">${ls.body || ''}</p>
+          <div class="hero-sources">${sourcesHtml}</div>
+        </div>
+        <div class="hero-sidebar">
+          <div class="hero-sidebar-title">This week in numbers</div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-num">${stats.articlesAnalyzed || '—'}</div>
+            <div class="hero-stat-label">sources<br/>analysed</div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-num">${b.allSources?.length || '—'}</div>
+            <div class="hero-stat-label">cited in<br/>this edition</div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-num">${(b.sections || []).reduce((n, s) => n + (s.items?.length || 0), 0) + (b.pharmaFocus?.items?.length || 0)}</div>
+            <div class="hero-stat-label">stories<br/>covered</div>
+          </div>
+          <div class="hero-stat-row">
+            <div class="hero-stat-num">${(b.sections || []).length}</div>
+            <div class="hero-stat-label">topic<br/>sections</div>
+          </div>
+          <div class="hero-model-badge">
+            ✦ ${model}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ── Render sections grid ── */
+  function renderSections(sections) {
+    const grid = document.getElementById('sections-grid');
+    const SECTION_ACCENTS = {
+      frontier:   '#534AB7',
+      regulatory: '#0F6E56',
+      research:   '#1e40af',
+      industry:   '#78350f',
+    };
+
+    grid.innerHTML = (sections || []).map(sec => {
+      const accent = SECTION_ACCENTS[sec.id] || '#334155';
+      const items  = (sec.items || []).map(item => {
+        const srcs = (item.sources || []).map(s => sourceChip(s)).join('');
+        return `
+          <div class="brief-item">
+            <div class="brief-item-headline">${item.headline || ''}</div>
+            <p class="brief-item-body">${item.body || ''}</p>
+            <div class="brief-item-sources">${srcs}</div>
+          </div>`;
+      }).join('');
+
+      return `
+        <div class="section-card">
+          <div class="section-header" style="border-top: 3px solid ${accent}">
+            <span class="section-icon">${sec.icon || '•'}</span>
+            <span class="section-title">${sec.title}</span>
+            <span class="section-count">${sec.items?.length || 0}</span>
+          </div>
+          <div class="section-items">${items || '<p style="padding:16px 20px;font-size:13px;color:var(--mid)">No items this week.</p>'}</div>
+        </div>`;
+    }).join('');
+  }
+
+  /* ── Render pharma focus ── */
+  function renderPharmaFocus(pf) {
+    const el = document.getElementById('pharma-section');
+    if (!pf || !pf.items?.length) { el.innerHTML = ''; return; }
+
+    const items = pf.items.map(item => {
+      const srcs = (item.sources || []).map(s => sourceChip(s, true)).join('');
+      return `
+        <div class="pharma-item">
+          <div class="pharma-item-headline">${item.headline || ''}</div>
+          <p class="pharma-item-body">${item.body || ''}</p>
+          <div>${srcs}</div>
+        </div>`;
+    }).join('');
+
+    el.innerHTML = `
+      <div class="pharma-focus">
+        <div class="pharma-kicker">🧬 Pharma focus</div>
+        <h2 class="pharma-headline">${pf.headline || 'Pharma & Drug Development'}</h2>
+        ${pf.standfirst ? `<p class="pharma-standfirst">${pf.standfirst}</p>` : ''}
+        <div class="pharma-grid">${items}</div>
+      </div>`;
+  }
+
+  /* ── Render sources index ── */
+  function renderSources(sources) {
+    if (!sources?.length) return;
+    const sec = document.getElementById('sources-section');
+    sec.style.display = '';
+    document.getElementById('sources-count').textContent = `${sources.length} article${sources.length > 1 ? 's' : ''} cited`;
+    document.getElementById('sources-list').innerHTML = sources.map((s, i) => `
+      <a class="source-entry" href="${s.url}" target="_blank" rel="noopener">
+        <span class="source-entry-num">${i + 1}</span>
+        <div class="source-entry-body">
+          <div class="source-entry-title">${s.title || 'Untitled'}</div>
+          <div class="source-entry-meta">
+            <span class="source-type-dot" style="background:${typeColor(s.type)}"></span>
+            <span>${s.source || '—'}</span>
+            <span>·</span>
+            <span>${fmtDate(s.date)}</span>
+          </div>
+        </div>
+      </a>`).join('');
+  }
+
+  /* ── Render full briefing ── */
+  function renderBriefing(b) {
+    // Hero
+    renderHero(b);
+
+    // Update edition bar
+    document.getElementById('edition-week').textContent  = b.weekLabel || b.id;
+    document.getElementById('edition-sources').textContent = `${b.allSources?.length || 0} sources`;
+
+    // Body
+    document.getElementById('briefing-body').style.display = '';
+
+    // Sections
+    renderSections(b.sections);
+
+    // Editor note
+    const noteEl = document.getElementById('editor-note');
+    if (b.editorNote) {
+      noteEl.style.display = '';
+      document.getElementById('editor-note-text').textContent = b.editorNote;
+    }
+
+    // Pharma focus
+    renderPharmaFocus(b.pharmaFocus);
+
+    // Sources
+    renderSources(b.allSources);
+  }
+
+  /* ── Load briefing ── */
+  async function loadBriefing(id) {
+    document.getElementById('hero-content').innerHTML = `
+      <div class="b-spinner" style="min-height:260px">
+        <div class="b-spinner-ring"></div>
+        <span>Loading briefing ${id}…</span>
+      </div>`;
+    document.getElementById('briefing-body').style.display = 'none';
+
+    try {
+      const res = await fetch(`./data/briefings/${id}.json?v=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const b = await res.json();
+      renderBriefing(b);
+
+      // Highlight active archive item
+      document.querySelectorAll('.week-select option').forEach(opt =>
+        opt.selected = opt.value === id);
+    } catch (e) {
+      document.getElementById('hero-content').innerHTML = `
+        <div class="b-empty" style="min-height:260px">
+          <div class="b-empty-icon">⚠️</div>
+          <h2>Briefing unavailable</h2>
+          <p>Could not load <code>data/briefings/${id}.json</code>.<br/>
+             Trigger the <em>Build Weekly Briefing</em> workflow from GitHub Actions to generate it.</p>
+        </div>`;
+    }
+  }
+
+  /* ── Init: load index ── */
+  async function init() {
+    let index = [];
+    try {
+      const res = await fetch(`./data/briefings/index.json?v=${Date.now()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      index = await res.json();
+    } catch {}
+
+    const sel = document.getElementById('week-select');
+
+    if (!index.length) {
+      sel.innerHTML = '<option value="">No briefings yet</option>';
+      document.getElementById('hero-content').innerHTML = `
+        <div class="b-empty" style="min-height:260px">
+          <div class="b-empty-icon">📭</div>
+          <h2>First briefing not yet generated</h2>
+          <p>The weekly AI briefing will be available after the first run of the
+             <em>Build Weekly Briefing</em> workflow (every Monday at 07:30 UTC,
+             or trigger it manually from GitHub Actions).</p>
+        </div>`;
+      return;
+    }
+
+    sel.innerHTML = index.map(e =>
+      `<option value="${e.id}">${e.weekLabel}</option>`
+    ).join('');
+
+    sel.addEventListener('change', e => { if (e.target.value) loadBriefing(e.target.value); });
+
+    await loadBriefing(index[0].id);
+  }
+
+  init();
+  </script>
+</body>
+</html>

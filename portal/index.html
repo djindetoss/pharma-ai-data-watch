@@ -56,6 +56,7 @@
         <span class="nav-divider">|</span>
         <a href="events.html">📅 Events</a>
         <a href="digest.html">📊 Digest</a>
+        <a href="briefing.html">📰 Briefing</a>
         <a href="#about">About</a>
       </nav>
 
@@ -198,6 +199,21 @@
           <p id="digest-widget-count" style="font-size:12px;color:var(--mid);margin-bottom:12px"></p>
           <a href="digest.html" class="btn-primary" style="display:inline-flex;font-size:13px;padding:8px 16px">
             Voir le digest complet →
+          </a>
+        </div>
+      </div>
+
+      <!-- Briefing widget -->
+      <div class="sidebar-card" id="briefing-widget" style="display:none">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#fef3c7">📰</div>
+          <h3>Dernier briefing</h3>
+        </div>
+        <div style="padding:14px 20px">
+          <p id="briefing-widget-label" style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:4px"></p>
+          <p id="briefing-widget-meta" style="font-size:12px;color:var(--mid);margin-bottom:12px"></p>
+          <a href="briefing.html" class="btn-primary" style="display:inline-flex;font-size:13px;padding:8px 16px">
+            Lire le briefing →
           </a>
         </div>
       </div>
@@ -447,6 +463,20 @@
         widget.style.display = '';
       })
       .catch(() => {}); // silent — widget simply stays hidden
+
+    // Load latest briefing info into sidebar widget
+    fetch('./data/briefings/index.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : [])
+      .then(index => {
+        if (!index.length) return;
+        const latest = index[0];
+        const widget = document.getElementById('briefing-widget');
+        document.getElementById('briefing-widget-label').textContent = latest.weekLabel || latest.id;
+        document.getElementById('briefing-widget-meta').textContent =
+          (latest.sourcesCount || '—') + ' sources · ' + (latest.storiesCount || '—') + ' stories';
+        widget.style.display = '';
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>

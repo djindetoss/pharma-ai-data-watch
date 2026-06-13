@@ -1,0 +1,77 @@
+name: Build Weekly Briefing
+
+on:
+  schedule:
+    # Lundi 07:30 UTC — après le pipeline (06:00) et le digest (07:00)
+    - cron: '30 7 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: briefing-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-briefing:
+    name: Generate and publish weekly AI briefing
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node .github/scripts/build-briefing.mjs
+
+      - name: Commit briefing to master
+        run: |
+          git config user.name  "Briefing Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git add portal/data/briefings/
+          if git diff --cached --quiet; then
+            echo "No changes — nothing to commit."
+          else
+            WEEK=$(node -e "const d=new Date();const w=Math.ceil(((d-new Date(d.getFullYear(),0,1))/86400000+1)/7);console.log(d.getFullYear()+'-W'+String(w).padStart(2,'0'))")
+            git commit -m "briefing: ${WEEK} — $(date +'%d/%m/%Y')"
+            git pull --rebase origin master
+            git push origin master
+          fi
+
+      - name: Sync briefing to gh-pages
+        run: |
+          set -euo pipefail
+          git config user.name  "Briefing Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+
+          mkdir -p /tmp/briefings
+          cp -r portal/data/briefings/. /tmp/briefings/
+          cp portal/briefing.html /tmp/briefing.html
+
+          git fetch origin gh-pages
+          git checkout gh-pages
+
+          mkdir -p data/briefings
+          cp -r /tmp/briefings/. data/briefings/
+          cp /tmp/briefing.html briefing.html
+
+          CHANGED=false
+          git add data/briefings/ briefing.html
+          if ! git diff --cached --quiet; then CHANGED=true; fi
+
+          if [ "$CHANGED" = "true" ]; then
+            git commit -m "briefing: sync to gh-pages — $(date +'%Y-%m-%d')"
+            git pull --rebase origin gh-pages
+            git push origin gh-pages
+          fi
+
+          git checkout master
