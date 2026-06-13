@@ -24,122 +24,442 @@ log = logging.getLogger("pipeline.newsapi")
 
 NEWSAPI_BASE = "https://newsapi.org/v2/everything"
 
+# ── Per-source editorial guide ─────────────────────────────────────────────────
+# Documents what specific content is valuable (or not) per outlet.
+# Used by the briefing generator and as human-readable editorial policy.
+
+SOURCE_EDITORIAL_GUIDE = {
+
+    # ── General AI media — high trust ─────────────────────────────────────────
+
+    "TechCrunch": {
+        "trust": "high",
+        "keep": [
+            "Model launches from major labs (GPT, Claude, Gemini, LLaMA, Mistral, Grok)",
+            "AI startup fundraising for health/biotech/pharma (Series A+ preferred)",
+            "Enterprise AI adoption in life sciences and healthcare",
+            "Big tech AI strategy (Microsoft Copilot, Google Workspace AI, AWS Bedrock)",
+            "OpenAI / Anthropic / DeepMind / Meta AI / xAI company milestones",
+            "AI regulation US/EU coverage",
+        ],
+        "skip": [
+            "Social media platforms without AI angle",
+            "Fintech and crypto unrelated to AI",
+            "General startup news (no pharma/health/AI angle)",
+        ],
+    },
+
+    "TechCrunch AI": {
+        "trust": "high",
+        "keep": ["Same as TechCrunch — AI-section feed, all content relevant"],
+        "skip": [],
+    },
+
+    "Wired": {
+        "trust": "high",
+        "keep": [
+            "AI ethics, safety and alignment — long-form analysis",
+            "Foundation model landscape analysis (new capabilities, limitations)",
+            "AI in science: drug discovery, biology, materials, climate",
+            "AI regulation and society impact (EU AI Act, copyright, labour)",
+            "Lab culture and strategy investigations (OpenAI, Anthropic, DeepMind)",
+            "AI existential risk and governance debates",
+        ],
+        "skip": [
+            "Gadget reviews and consumer electronics without AI angle",
+            "Cybersecurity articles unrelated to AI/ML security",
+            "Culture and entertainment (film, music, fashion)",
+        ],
+    },
+
+    "MIT Technology Review": {
+        "trust": "high",
+        "keep": [
+            "AI safety and alignment research coverage (must-read tier)",
+            "Foundation model capabilities deep-dives (reasoning, coding, multimodal)",
+            "AI in scientific research (Nature-equivalent analysis)",
+            "AI policy analysis: NIST AI RMF, US AI EO, EU AI Act, G7 AI",
+            "Emerging AI paradigms: agents, reasoning chains, multimodal, world models",
+            "Critical investigations: data sourcing, compute concentration, AI hype vs reality",
+        ],
+        "skip": [
+            "General biotech without AI component",
+            "Climate tech without AI component",
+            "Consumer gadgets and device reviews",
+        ],
+    },
+
+    "VentureBeat": {
+        "trust": "high",
+        "keep": [
+            "Enterprise LLM deployment: RAG, fine-tuning, agents in production",
+            "AI infrastructure: GPU supply chain, cloud AI, MLOps, inference optimization",
+            "Open-source model releases (Hugging Face, Mistral, Meta LLaMA milestones)",
+            "AI for healthcare/pharma enterprise use cases",
+            "Agentic AI and AI developer tools announcements",
+            "B2B AI platform comparisons and enterprise AI strategy",
+        ],
+        "skip": [
+            "Marketing/SEO AI tools (low scientific signal)",
+            "General SaaS without AI angle",
+            "Consumer gaming",
+        ],
+    },
+
+    "VentureBeat AI": {
+        "trust": "high",
+        "keep": ["Same as VentureBeat — AI-section feed"],
+        "skip": [],
+    },
+
+    "The Verge": {
+        "trust": "high",
+        "keep": [
+            "Consumer AI product updates (ChatGPT, Copilot, Gemini app, Claude.ai)",
+            "Big tech AI competitive dynamics (Google vs Microsoft vs OpenAI vs Apple)",
+            "AI hardware launches: NVIDIA chips, AI PCs, custom silicon",
+            "AI policy consumer impact (copyright, privacy, deepfakes)",
+            "AI creative tools and generative media",
+        ],
+        "skip": [
+            "Gaming hardware and game releases without AI",
+            "EV/auto without autonomous driving/AI",
+            "General consumer electronics (headphones, cameras)",
+        ],
+    },
+
+    "Ars Technica": {
+        "trust": "high",
+        "keep": [
+            "Technical deep-dives: model architecture, training details, inference optimization",
+            "AI hardware and compute: NVIDIA earnings, TPUs, custom AI chips",
+            "AI law, copyright and regulatory compliance analysis",
+            "Scientific AI breakthroughs with technical depth",
+            "AI security vulnerabilities, prompt injection, adversarial ML",
+            "AI benchmark analysis and model capability comparisons",
+        ],
+        "skip": [
+            "Gaming hardware and game reviews",
+            "General IT security without AI angle",
+            "Telecoms and networking without AI",
+        ],
+    },
+
+    "The Register": {
+        "trust": "high",
+        "keep": [
+            "EU AI Act legislative calendar: votes, trilogues, implementing acts",
+            "Enterprise AI cloud: AWS Bedrock, Azure AI, GCP Vertex AI deployments",
+            "AI chip market and data center investment (critical for compute context)",
+            "Critical/skeptical AI coverage (contrarian perspective, important for balance)",
+            "AI energy consumption and sustainability data",
+            "UK government AI policy (DSIT, AI Safety Institute)",
+        ],
+        "skip": [
+            "General IT security incidents without AI",
+            "Telecoms spectrum and networking",
+            "Legacy hardware reviews",
+        ],
+    },
+
+    # ── Science and research ──────────────────────────────────────────────────
+
+    "Nature Machine Intelligence": {
+        "trust": "critical",
+        "keep": [
+            "ALL peer-reviewed AI research — 100% signal, no filtering needed",
+            "Priority areas: drug discovery, clinical AI, regulatory AI, protein ML",
+            "Especially: AlphaFold/structure prediction, molecular generation, clinical LLMs",
+        ],
+        "skip": [],
+    },
+
+    "Nature.com": {
+        "trust": "high",
+        "keep": [
+            "AI/ML papers in Nature, Nature Medicine, Nature Biotechnology",
+            "AI in drug discovery and molecular biology",
+            "AlphaFold and protein structure prediction updates",
+            "AI benchmarks and scientific capability assessments",
+            "AI in clinical research, genomics, and omics",
+            "AI ethics and governance (Nature editorial positions)",
+        ],
+        "skip": [
+            "Ecology, particle physics, climate science without AI",
+            "Pure chemistry/materials without ML component",
+        ],
+    },
+
+    "STAT News": {
+        "trust": "critical",
+        "keep": [
+            "ALL content — specialized health/pharma AI, highest signal source",
+            "FDA decisions on AI-enabled medical devices (510k, PMA)",
+            "Clinical AI deployments: EHR AI, diagnostic AI in hospitals",
+            "AI in drug discovery and biotech R&D",
+            "Health AI policy and regulation",
+            "Clinical trial AI (adaptive trials, patient selection, endpoints)",
+        ],
+        "skip": [],
+    },
+
+    "Hugging Face Blog": {
+        "trust": "high",
+        "keep": [
+            "New model releases (especially biomedical, clinical, multilingual)",
+            "Open-source AI ecosystem news (model hubs, datasets, spaces)",
+            "AI safety and responsible AI tooling",
+            "Benchmark updates and leaderboards",
+            "Papers with code that reveal new state-of-the-art",
+        ],
+        "skip": [
+            "General ML tutorials without new capabilities",
+            "Student/beginner content without novel technical insight",
+        ],
+    },
+
+    # ── Regulatory and pharma ─────────────────────────────────────────────────
+
+    "FDA": {
+        "trust": "critical",
+        "keep": [
+            "AI/ML-enabled medical device approvals (510k, De Novo, PMA)",
+            "AI guidance documents and discussion papers",
+            "Digital health framework updates (DSCSA, SaMD)",
+            "Pharmacovigilance AI guidance: signal detection, adverse event reporting",
+            "Real-world data use guidance",
+        ],
+        "skip": [
+            "Drug approvals without AI component",
+            "Food safety and cosmetics",
+            "Enforcement actions without data/AI angle",
+        ],
+    },
+
+    "FDA.gov": {
+        "trust": "critical",
+        "keep": ["Same as FDA"],
+        "skip": ["Consumer safety alerts", "Recalls", "Generic press releases without AI"],
+    },
+
+    "EMA": {
+        "trust": "critical",
+        "keep": [
+            "ALL AI/ML guideline documents and reflection papers",
+            "DARWIN EU programme updates",
+            "EHDS implementation news from EMA perspective",
+            "ICH guidelines with AI implications (ICH E6, ICH M7, ICH S1)",
+            "HMA/EMA joint taskforce on AI",
+        ],
+        "skip": [
+            "Individual drug approvals without AI/data angle",
+            "Veterinary medicines without data science angle",
+        ],
+    },
+
+    # ── AI infrastructure and open-source ─────────────────────────────────────
+
+    "Databricks.com": {
+        "trust": "medium",
+        "keep": [
+            "Open-source AI/LLM releases (DBRX, Dolly, series)",
+            "Mosaic AI and data lakehouse for healthcare/life sciences",
+            "AI governance and responsible AI tooling",
+            "Benchmarks: MMLU, BioASQ, clinical NLP",
+        ],
+        "skip": [
+            "General data engineering and ETL tutorials",
+            "BI dashboards without AI",
+        ],
+    },
+
+    "GitHub": {
+        "trust": "medium",
+        "keep": [
+            "Major open-source AI project releases (models, datasets, benchmarks)",
+            "AlphaFold variants, clinical NLP repos, drug discovery ML tools",
+        ],
+        "skip": [
+            "General coding repos without AI angle",
+        ],
+    },
+
+    "IEEE": {
+        "trust": "high",
+        "keep": [
+            "AI standards development (IEEE P3119, IEEE 7000 series on AI ethics)",
+            "AI in biomedical engineering and medical devices",
+            "AI safety and reliability standards",
+        ],
+        "skip": [
+            "Electrical engineering without AI",
+            "Pure hardware/circuit design",
+        ],
+    },
+}
+
+
 # ── Search queries ─────────────────────────────────────────────────────────────
 # Each query targets a specific content niche.
 # Results are mapped to a portal article type.
 
 SEARCH_QUERIES = [
+    # ══════════════════════════════════════════════════════════════════════════
+    # PHARMA & REGULATORY TOPICS
+    # ══════════════════════════════════════════════════════════════════════════
+
     # ── Topic: drug-discovery ──────────────────────────────────────────────────
     {
-        "topic":       "AI in drug discovery and pharmaceutical R&D",
+        "topic":        "AI in drug discovery and pharmaceutical R&D",
         "portal_topic": "drug-discovery",
-        "q":           "(\"artificial intelligence\" OR \"machine learning\" OR \"deep learning\") AND (\"drug discovery\" OR \"drug design\" OR \"lead optimisation\" OR \"virtual screening\" OR ADMET OR AlphaFold OR \"molecular generation\" OR \"generative chemistry\" OR \"protein structure prediction\")",
-        "type":        "news",
-        "badge":       "Pharma AI",
-        "sources":     None,
+        "q":            '("artificial intelligence" OR "machine learning" OR "deep learning") AND ("drug discovery" OR "drug design" OR "lead optimisation" OR "virtual screening" OR ADMET OR AlphaFold OR "molecular generation" OR "generative chemistry" OR "protein structure prediction")',
+        "type":         "news",
+        "badge":        "Pharma AI",
+        "sources":      None,
     },
     # ── Topic: regulatory ─────────────────────────────────────────────────────
     {
-        "topic":       "EMA and FDA regulatory AI guidance",
+        "topic":        "EMA and FDA regulatory AI guidance",
         "portal_topic": "regulatory",
-        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"regulatory guidance\" OR \"reflection paper\" OR \"regulatory framework\" OR \"approval pathway\" OR CHMP OR ICH OR \"regulatory science\") AND (pharmaceutical OR \"drug development\" OR medicine OR EMA OR FDA OR MHRA)",
-        "type":        "news",
-        "badge":       "Regulatory",
-        "sources":     None,
+        "q":            '("artificial intelligence" OR "machine learning") AND ("regulatory guidance" OR "reflection paper" OR "regulatory framework" OR "approval pathway" OR CHMP OR ICH OR "regulatory science") AND (pharmaceutical OR "drug development" OR medicine OR EMA OR FDA OR MHRA)',
+        "type":         "news",
+        "badge":        "Regulatory",
+        "sources":      None,
     },
     {
-        "topic":       "EU AI Act and pharma/health AI regulation",
+        "topic":        "EU AI Act and pharma/health AI regulation",
         "portal_topic": "regulatory",
-        "q":           "(\"EU AI Act\" OR \"AI Act\" OR \"AI regulation\" OR \"responsible AI\" OR \"algorithmic accountability\") AND (pharmaceutical OR \"medical device\" OR clinical OR \"drug development\" OR \"health\" OR EMA OR FDA OR \"regulatory\")",
-        "type":        "news",
-        "badge":       "Regulatory",
-        "sources":     None,
+        "q":            '("EU AI Act" OR "AI Act" OR "AI regulation" OR "responsible AI" OR "algorithmic accountability") AND (pharmaceutical OR "medical device" OR clinical OR "drug development" OR health OR EMA OR FDA OR regulatory)',
+        "type":         "news",
+        "badge":        "Regulatory",
+        "sources":      None,
     },
     # ── Topic: clinical-ai ────────────────────────────────────────────────────
     {
-        "topic":       "Clinical trials AI and pharmacovigilance",
+        "topic":        "Clinical trials AI and pharmacovigilance",
         "portal_topic": "clinical-ai",
-        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"clinical trial\" OR \"adaptive trial\" OR \"decentralised trial\" OR pharmacovigilance OR \"adverse event detection\" OR \"signal detection\") AND (pharmaceutical OR \"drug development\" OR regulatory)",
-        "type":        "news",
-        "badge":       "Clinical AI",
-        "sources":     None,
+        "q":            '("artificial intelligence" OR "machine learning") AND ("clinical trial" OR "adaptive trial" OR "decentralised trial" OR pharmacovigilance OR "adverse event detection" OR "signal detection") AND (pharmaceutical OR "drug development" OR regulatory)',
+        "type":         "news",
+        "badge":        "Clinical AI",
+        "sources":      None,
     },
     {
-        "topic":       "Precision medicine, digital biomarkers and medical imaging AI",
+        "topic":        "Precision medicine, digital biomarkers and medical imaging AI",
         "portal_topic": "clinical-ai",
-        "q":           "(\"artificial intelligence\" OR \"machine learning\") AND (\"precision medicine\" OR \"digital biomarker\" OR \"medical imaging\" OR \"patient stratification\" OR \"treatment response prediction\") AND (pharmaceutical OR clinical OR healthcare OR \"drug development\")",
-        "type":        "news",
-        "badge":       "Clinical AI",
-        "sources":     None,
+        "q":            '("artificial intelligence" OR "machine learning") AND ("precision medicine" OR "digital biomarker" OR "medical imaging" OR "patient stratification" OR "treatment response prediction") AND (pharmaceutical OR clinical OR healthcare OR "drug development")',
+        "type":         "news",
+        "badge":        "Clinical AI",
+        "sources":      None,
     },
     # ── Topic: data-governance ────────────────────────────────────────────────
     {
-        "topic":       "EHDS and European health data governance",
+        "topic":        "EHDS and European health data governance",
         "portal_topic": "data-governance",
-        "q":           "(\"European Health Data Space\" OR EHDS OR \"health data space\" OR TEHDAS OR \"secondary use of health data\" OR \"health data permit\" OR \"health data act\") AND (pharmaceutical OR regulatory OR EMA OR clinical OR medicine OR \"drug development\")",
-        "type":        "news",
-        "badge":       "Data",
-        "sources":     None,
+        "q":            '("European Health Data Space" OR EHDS OR "health data space" OR TEHDAS OR "secondary use of health data" OR "health data permit" OR "health data act") AND (pharmaceutical OR regulatory OR EMA OR clinical OR medicine OR "drug development")',
+        "type":         "news",
+        "badge":        "Data",
+        "sources":      None,
     },
     {
-        "topic":       "IDMP, FHIR, OMOP and regulatory data standards",
+        "topic":        "IDMP, FHIR, OMOP and regulatory data standards",
         "portal_topic": "data-governance",
-        "q":           "(IDMP OR SPOR OR FHIR OR \"HL7 FHIR\" OR \"OMOP CDM\" OR CDISC OR SDTM OR MedDRA OR \"common data model\" OR \"data standard\" OR \"data interoperability\") AND (pharmaceutical OR regulatory OR EMA OR FDA OR clinical OR healthcare OR \"drug development\")",
-        "type":        "news",
-        "badge":       "Data",
-        "sources":     None,
+        "q":            '(IDMP OR SPOR OR FHIR OR "HL7 FHIR" OR "OMOP CDM" OR CDISC OR SDTM OR MedDRA OR "common data model" OR "data standard" OR "data interoperability") AND (pharmaceutical OR regulatory OR EMA OR FDA OR clinical OR healthcare OR "drug development")',
+        "type":         "news",
+        "badge":        "Data",
+        "sources":      None,
     },
     {
-        "topic":       "DARWIN EU, NDSG and EMA data programmes",
+        "topic":        "DARWIN EU, NDSG and EMA data programmes",
         "portal_topic": "data-governance",
-        "q":           "(\"DARWIN EU\" OR \"network data steering\" OR NDSG OR \"EMA data\" OR \"distributed data analysis\" OR \"federated analysis\" OR \"real-world data network\" OR \"data analytics centre\") AND (pharmaceutical OR regulatory OR EMA OR clinical OR healthcare)",
-        "type":        "news",
-        "badge":       "Data",
-        "sources":     None,
+        "q":            '("DARWIN EU" OR "network data steering" OR NDSG OR "EMA data" OR "distributed data analysis" OR "federated analysis" OR "real-world data network" OR "data analytics centre") AND (pharmaceutical OR regulatory OR EMA OR clinical OR healthcare)',
+        "type":         "news",
+        "badge":        "Data",
+        "sources":      None,
     },
     {
-        "topic":       "RWD/RWE governance, data quality and interoperability",
+        "topic":        "RWD/RWE governance, data quality and interoperability",
         "portal_topic": "data-governance",
-        "q":           "(\"real-world evidence\" OR \"real-world data\" OR \"data governance\" OR \"data stewardship\" OR \"data quality\" OR \"federated learning\" OR \"data interoperability\" OR \"trusted research environment\" OR \"patient registry\" OR biobank) AND (pharmaceutical OR healthcare OR regulatory OR EMA OR FDA OR \"drug development\" OR clinical)",
-        "type":        "news",
-        "badge":       "Data",
-        "sources":     None,
+        "q":            '("real-world evidence" OR "real-world data" OR "data governance" OR "data stewardship" OR "data quality" OR "federated learning" OR "data interoperability" OR "trusted research environment" OR "patient registry" OR biobank) AND (pharmaceutical OR healthcare OR regulatory OR EMA OR FDA OR "drug development" OR clinical)',
+        "type":         "news",
+        "badge":        "Data",
+        "sources":      None,
     },
     # ── Events ────────────────────────────────────────────────────────────────
     {
-        "topic":       "Pharma AI webinars (online events)",
+        "topic":        "Pharma AI webinars (online events)",
         "portal_topic": None,
-        "q":           "(webinar OR \"online seminar\" OR \"virtual event\") AND (\"artificial intelligence\" OR \"machine learning\" OR \"generative AI\") AND (pharmaceutical OR healthcare OR \"drug development\" OR regulatory OR biotech)",
-        "type":        "webinar",
-        "badge":       "Event",
-        "sources":     None,
+        "q":            '(webinar OR "online seminar" OR "virtual event") AND ("artificial intelligence" OR "machine learning" OR "generative AI") AND (pharmaceutical OR healthcare OR "drug development" OR regulatory OR biotech)',
+        "type":         "webinar",
+        "badge":        "Event",
+        "sources":      None,
     },
     {
-        "topic":       "Pharma AI conferences and summits",
+        "topic":        "Pharma AI conferences and summits",
         "portal_topic": None,
-        "q":           "(conference OR summit OR symposium OR \"annual meeting\") AND (\"artificial intelligence\" OR \"machine learning\") AND (pharmaceutical OR \"drug discovery\" OR \"clinical trial\" OR regulatory OR \"health data\" OR biotech)",
-        "type":        "seminar",
-        "badge":       "Event",
-        "sources":     None,
+        "q":            '(conference OR summit OR symposium OR "annual meeting") AND ("artificial intelligence" OR "machine learning") AND (pharmaceutical OR "drug discovery" OR "clinical trial" OR regulatory OR "health data" OR biotech)',
+        "type":         "seminar",
+        "badge":        "Event",
+        "sources":      None,
     },
     {
-        "topic":       "Health data and EHDS events",
+        "topic":        "Health data and EHDS events",
         "portal_topic": None,
-        "q":           "(webinar OR conference OR workshop OR summit) AND (\"health data\" OR EHDS OR \"real-world evidence\" OR \"data governance\" OR FHIR OR interoperability) AND (pharmaceutical OR clinical OR regulatory OR medicine OR healthcare)",
-        "type":        "seminar",
-        "badge":       "Event",
-        "sources":     None,
+        "q":            '(webinar OR conference OR workshop OR summit) AND ("health data" OR EHDS OR "real-world evidence" OR "data governance" OR FHIR OR interoperability) AND (pharmaceutical OR clinical OR regulatory OR medicine OR healthcare)',
+        "type":         "seminar",
+        "badge":        "Event",
+        "sources":      None,
     },
-    # ── AI news ───────────────────────────────────────────────────────────────
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # AI NEWS — 3 targeted queries replacing the single pharma-constrained one
+    # ══════════════════════════════════════════════════════════════════════════
+
+    # ── Query A: AI Lab & Company News ────────────────────────────────────────
+    # What the major AI labs are building, releasing, and announcing.
+    # Sources: tech media that cover labs in depth. No pharma constraint.
+    # Keep: model releases, research papers, safety announcements, funding, API changes.
     {
-        "topic":       "General AI breakthroughs for ainews tab",
+        "topic":        "AI lab announcements — model releases, research, company strategy",
         "portal_topic": None,
-        "q":           "(\"large language model\" OR \"foundation model\" OR \"generative AI\" OR GPT OR Claude OR Gemini OR \"EU AI Act\") AND (health OR science OR regulation OR biomedical OR pharmaceutical)",
-        "type":        "ainews",
-        "badge":       "Tech",
-        "sources":     "techcrunch.com,wired.com,nature.com,statnews.com,technologyreview.com,venturebeat.com",
+        "q":            '(OpenAI OR Anthropic OR "Google DeepMind" OR DeepMind OR "Meta AI" OR "Mistral AI" OR Mistral OR "xAI" OR Cohere OR "Hugging Face" OR "AI lab") AND (model OR launch OR release OR paper OR research OR capability OR GPT OR Claude OR Gemini OR LLaMA OR agent OR alignment OR safety OR funding OR reasoning)',
+        "type":         "ainews",
+        "badge":        "AI Lab",
+        "sources":      "techcrunch.com,theverge.com,wired.com,venturebeat.com,arstechnica.com,technologyreview.com,theregister.com",
+        "max_results":  20,
+    },
+
+    # ── Query B: AI Frontier Technology ──────────────────────────────────────
+    # Capabilities, benchmarks, agents, safety research, infrastructure.
+    # Covers what AI systems can DO — not lab identity.
+    # Sources: outlets that provide technical depth. No pharma constraint.
+    # Keep: reasoning, multimodal, agents, benchmarks, safety/alignment, chips, compute.
+    {
+        "topic":        "AI frontier — reasoning, agents, multimodal, benchmarks, safety",
+        "portal_topic": None,
+        "q":            '("AI agent" OR "agentic AI" OR "reasoning model" OR "multimodal AI" OR "vision-language model" OR "AI safety" OR "AI alignment" OR "AI benchmark" OR "chain-of-thought" OR "AI hallucination" OR "model reliability" OR "model collapse" OR "AI accelerator" OR "inference optimization" OR "AI chip" OR "foundation model")',
+        "type":         "ainews",
+        "badge":        "AI Tech",
+        "sources":      "techcrunch.com,theverge.com,wired.com,arstechnica.com,technologyreview.com,venturebeat.com,theregister.com,statnews.com",
+        "max_results":  20,
+    },
+
+    # ── Query C: AI Policy & Global Governance ────────────────────────────────
+    # Regulation, law, copyright, ethics frameworks at national/global level.
+    # Broader than pharma regulation — covers the whole AI governance landscape.
+    # Keep: EU AI Act (legislative calendar, implementing acts), NIST AI RMF,
+    # US AI Executive Orders, G7 Hiroshima Process, GPAI, copyright/liability,
+    # national AI strategies, AI safety institutes (UK, US, EU, JP, KR).
+    {
+        "topic":        "AI policy — regulation, law, governance, ethics at global level",
+        "portal_topic": None,
+        "q":            '("EU AI Act" OR "AI regulation" OR "AI governance" OR "NIST AI" OR "AI executive order" OR "G7 AI" OR GPAI OR "AI liability" OR "AI copyright" OR "AI accountability" OR "AI transparency" OR "AI audit" OR "AI risk" OR "AI safety institute" OR "trustworthy AI" OR "AI Act compliance" OR "national AI strategy")',
+        "type":         "ainews",
+        "badge":        "AI Policy",
+        "sources":      "techcrunch.com,wired.com,arstechnica.com,technologyreview.com,theregister.com,venturebeat.com",
+        "max_results":  15,
     },
 ]
+
 
 # ── Quality blocklist ──────────────────────────────────────────────────────────
 # Sources and title patterns that reliably produce low-quality / off-topic content.
@@ -154,6 +474,10 @@ _BLOCKED_DOMAINS = {
     # Financial / stock sites
     "stocktitan.net", "finance.yahoo.com", "seekingalpha.com",
     "marketwatch.com", "investing.com", "benzinga.com", "fool.com",
+    "barchart.com", "tradingview.com", "stoculator.com",
+    # Crypto / blockchain (high volume, zero pharma/AI signal)
+    "crypto-briefing.com", "coindesk.com", "decrypt.co", "cointelegraph.com",
+    "beincrypto.com", "cryptonews.com",
     # Entertainment / tabloid aggregators
     "yahoo.com", "msn.com", "huffpost.com",
     # Consumer health / natural medicine
@@ -162,26 +486,33 @@ _BLOCKED_DOMAINS = {
     # Cybersecurity (unrelated to pharma data governance)
     "malwarebytes.com", "helpnetsecurity.com", "tenable.com",
     "darkreading.com", "securityweek.com", "threatpost.com",
-    # Political / opinion / general news
-    "foxnews.com", "breitbart.com", "dailymail.co.uk", "theguardian.com",
+    # Political / opinion / general news (low signal-to-noise for our topics)
+    "foxnews.com", "breitbart.com", "dailymail.co.uk",
     "fairobserver.com", "opiniojuris.org",
     # Python/software package registries
     "pypi.org",
-    # Personal / lifestyle blogs
+    # Personal / lifestyle / coding tutorial blogs
     "tim.blog", "kevinmd.com", "substack.com", "medium.com",
+    "c-sharpcorner.com", "smashingapps.com", "marketing-tutor.com",
     # eLearning / UX / design
     "elearningindustry.com", "ixdf.org", "coursera.org",
     # Fact-checking / consumer sites
     "snopes.com", "factcheck.org",
     # SEO / marketing
     "searchenginejournal.com", "searchengineland.com",
-    # General tech (not pharma focused) — keep for ainews only
+    # General tech (not pharma focused)
     "redhat.com", "histalk2.com",
+    # Regional general news (high volume, low pharma-AI relevance)
+    "thechronicle.com.gh", "ewtnnews.com", "siamnews.net",
+    "dou.ua", "ibtimes.com.au", "mymotherlode.com",
     # Misc low-quality
     "betalist.com", "peoplesreview.com.np",
+    "wordpress.com", "bitrebels.com", "syllad.com",
+    "cloudtweaks.com", "geeky-gadgets.com", "studyfinds.com",
+    "internationalaccountingbulletin.com",
 }
 
-# Source names (as returned by NewsAPI) that are blocked
+# Source names (as returned by NewsAPI) that are always blocked
 _BLOCKED_SOURCE_NAMES = {
     "GlobeNewswire", "PR Newswire", "PR Newswire UK", "Business Wire",
     "EIN Presswire", "PRWeb", "OpenPR", "AccessWire",
@@ -189,11 +520,88 @@ _BLOCKED_SOURCE_NAMES = {
     "Yahoo Entertainment", "Yahoo Finance", "MSN",
     "Natural News", "Mercola", "WebMD", "Healthline",
     "Malwarebytes", "Help Net Security", "Tenable",
-    "Fox News", "Daily Mail", "The Guardian",
+    "Fox News", "Daily Mail",
     "Search Engine Journal", "Search Engine Land",
     "Snopes", "eLearning Industry",
     "Stocktitan", "Seeking Alpha", "Benzinga",
+    # Crypto — high volume, no pharma/AI value
+    "Crypto Briefing", "CoinDesk", "Decrypt", "CoinTelegraph", "BeInCrypto",
+    # Regional general news — consistently off-topic
+    "The Punch",          # Nigerian general newspaper
+    "BusinessLine",       # Indian business paper (use Financial Post queries instead)
+    "The Times of India", # Indian general news
+    "Antaranews.com",     # Indonesian news agency
+    "Geeky Gadgets",      # Consumer tech blog
+    "C-sharpcorner.com",  # Coding tutorials
+    "Siamnews.net",       # Thai news
 }
+
+# ── Per-source relevance gate ──────────────────────────────────────────────────
+# For sources that slip through but produce noisy content, require at least one
+# of these keywords in the title. Applied ONLY to sources listed here.
+# All other sources are evaluated by the global quality gate only.
+
+_SOURCE_TITLE_GATE = {
+    # Financial press: keep only when explicitly about AI or pharma
+    "Financial Post": [
+        "artificial intelligence", "machine learning", "AI", "pharma",
+        "pharmaceutical", "drug", "biotech", "clinical", "FDA", "EMA",
+    ],
+    "Fortune": [
+        "artificial intelligence", "machine learning", "AI",
+        "pharma", "drug discovery", "biotech",
+    ],
+    # General tech: keep only AI-specific articles
+    "ZDNet": [
+        "artificial intelligence", "machine learning", "AI", "LLM",
+        "generative AI", "foundation model",
+    ],
+    "PCMag": [
+        "artificial intelligence", "machine learning", "AI", "LLM",
+        "generative AI",
+    ],
+    "TechRadar": [
+        "artificial intelligence", "machine learning", "AI", "LLM",
+        "generative AI", "neural network",
+    ],
+    # Australian/general news
+    "ABC News (AU)": [
+        "artificial intelligence", "machine learning", "AI", "pharma",
+        "pharmaceutical", "drug", "clinical",
+    ],
+    # General science
+    "ScienceAlert": [
+        "artificial intelligence", "machine learning", "AI", "drug",
+        "pharmaceutical", "clinical", "protein", "AlphaFold",
+    ],
+}
+
+
+def _is_blocked(title: str, source_name: str, url: str) -> bool:
+    """Return True if this article should be rejected on quality grounds."""
+    # Check source name blocklist
+    if source_name in _BLOCKED_SOURCE_NAMES:
+        return True
+    # Check domain blocklist
+    try:
+        from urllib.parse import urlparse
+        domain = urlparse(url).netloc.lstrip("www.")
+        if any(blocked in domain for blocked in _BLOCKED_DOMAINS):
+            return True
+    except Exception:
+        pass
+    # Per-source title gate
+    if source_name in _SOURCE_TITLE_GATE:
+        t = title.lower()
+        required = _SOURCE_TITLE_GATE[source_name]
+        if not any(kw.lower() in t for kw in required):
+            return True
+    # Title pattern blocklist
+    t = title.lower()
+    if any(pat in t for pat in _BLOCKED_TITLE_PATTERNS):
+        return True
+    return False
+
 
 # Title patterns that indicate low-quality / off-topic content
 _BLOCKED_TITLE_PATTERNS = [
@@ -208,6 +616,9 @@ _BLOCKED_TITLE_PATTERNS = [
     "stock alert", "price target", "earnings call", "quarterly result",
     "fiscal year", "revenue grew", "investor relation",
     "pt increased", "raises $", " ipo ", "valuation",
+    # Crypto noise
+    "bitcoin", "ethereum", "crypto", "blockchain", "token", "nft",
+    "defi", "web3", "cryptocurrency",
     # Software package releases
     "added to pypi", "released on pypi", "version 0.", "version 1.",
     "version 2.", "version 3.", "changelog",
@@ -228,26 +639,6 @@ _SEMINAR_SIGNALS = {"annual conference", "annual congress", "annual symposium",
                     "register now", "registration open", "call for abstracts",
                     "abstract submission", "save the date", "early bird",
                     "register today", "tickets available", "join us for"}
-
-
-def _is_blocked(title: str, source_name: str, url: str) -> bool:
-    """Return True if this article should be rejected on quality grounds."""
-    # Check source name
-    if source_name in _BLOCKED_SOURCE_NAMES:
-        return True
-    # Check domain
-    try:
-        from urllib.parse import urlparse
-        domain = urlparse(url).netloc.lstrip("www.")
-        if any(blocked in domain for blocked in _BLOCKED_DOMAINS):
-            return True
-    except Exception:
-        pass
-    # Check title patterns
-    t = title.lower()
-    if any(pat in t for pat in _BLOCKED_TITLE_PATTERNS):
-        return True
-    return False
 
 
 def _classify_event_type(title: str, excerpt: str) -> str:
@@ -312,17 +703,18 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
         log.warning("NEWSAPI_KEY not set — skipping NewsAPI source.")
         return []
 
-    days_back  = config["settings"]["days_lookback"]
-    max_per_q  = config.get("newsapi", {}).get("max_results_per_query", 10)
-    from_date  = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+    days_back    = config["settings"]["days_lookback"]
+    default_max  = config.get("newsapi", {}).get("max_results_per_query", 10)
+    from_date    = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
 
     all_articles = []
 
     for search in SEARCH_QUERIES:
         topic        = search["topic"]
-        portal_topic = search.get("portal_topic")   # explicit topic for JS filter
+        portal_topic = search.get("portal_topic")
         article_type = search["type"]
         badge        = search["badge"]
+        max_per_q    = search.get("max_results", default_max)  # per-query override
 
         log.info(f"NewsAPI search: {topic!r}")
 
@@ -364,37 +756,31 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 published   = art.get("publishedAt", "")
                 source_name = (art.get("source") or {}).get("name", "NewsAPI")
 
-                # Skip articles with no useful content
                 if not title or title == "[Removed]":
                     continue
                 if not url or not url.startswith("http"):
                     continue
 
-                # Use description as excerpt; fall back to truncated content
                 excerpt = description or content
                 if not excerpt:
                     continue
 
-                # ── Quality gate: block low-value sources and titles ──────────
+                # Quality gate
                 if _is_blocked(title, source_name, url):
                     log.debug(f"  [blocked] {title[:60]}")
                     continue
 
-                # For event-type queries, require the TITLE to clearly signal an event.
-                # This prevents "I went to a conference" or "earnings call" articles
-                # from being classified as events just because they match the query.
+                # For event queries, require event signal in title
                 is_event_query = article_type in ("webinar", "seminar")
                 if is_event_query and not _title_is_event(title):
                     continue
 
-                # Refine event type (webinar vs seminar) from title + content
                 effective_type = (
                     _classify_event_type(title, excerpt)
                     if is_event_query
                     else article_type
                 )
 
-                # Auto-extract simple tags from title
                 tags = _extract_tags(title + " " + excerpt, effective_type)
 
                 article = {
@@ -413,7 +799,6 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                     "_auto_approve": True,
                     "_source":      f"newsapi:{topic}",
                 }
-                # Attach explicit topic so the JS filter can match exactly
                 if portal_topic:
                     article["topic"] = portal_topic
                 all_articles.append(article)
@@ -428,7 +813,7 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
     return all_articles
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# ── Tag extraction ─────────────────────────────────────────────────────────────
 
 _KNOWN_TAGS = [
     ("EMA",              ["ema", "european medicines"]),
@@ -436,6 +821,10 @@ _KNOWN_TAGS = [
     ("Machine learning", ["machine learning"]),
     ("Deep learning",    ["deep learning", "neural network"]),
     ("LLM",              ["large language model", "llm", "gpt", "gemini", "claude", "llama"]),
+    ("AI agent",         ["ai agent", "agentic ai", "autonomous agent"]),
+    ("AI safety",        ["ai safety", "ai alignment", "alignment research"]),
+    ("Reasoning AI",     ["reasoning model", "chain-of-thought", "o1", "o3", "o4"]),
+    ("Multimodal AI",    ["multimodal", "vision-language", "image-text"]),
     ("Drug discovery",   ["drug discovery", "drug design"]),
     ("Clinical trials",  ["clinical trial"]),
     ("Pharmacovigilance",["pharmacovigilance", "adverse event", "drug safety"]),
@@ -455,6 +844,11 @@ _KNOWN_TAGS = [
     ("Federated data",   ["federated learning", "federated data", "federated analysis"]),
     ("Data governance",  ["data governance", "data steward", "secondary use of health"]),
     ("Health data",      ["health data", "patient data", "clinical data"]),
+    ("OpenAI",           ["openai"]),
+    ("Anthropic",        ["anthropic"]),
+    ("DeepMind",         ["deepmind", "google deepmind"]),
+    ("AI benchmark",     ["benchmark", "leaderboard", "mmlu", "bioasq", "helm"]),
+    ("AI policy",        ["ai governance", "ai regulation", "nist ai", "gpai"]),
 ]
 
 
@@ -485,10 +879,9 @@ def _sentence_case(title: str) -> str:
     words = title.split()
     result = []
     for i, word in enumerate(words):
-        # Strip punctuation for checking
         core = word.strip(".,;:!?\"'()")
         if core.upper() in ACRONYMS:
-            result.append(word)       # keep acronym as-is
+            result.append(word)
         elif i == 0:
             result.append(word[0].upper() + word[1:].lower() if len(word) > 1 else word.upper())
         else:

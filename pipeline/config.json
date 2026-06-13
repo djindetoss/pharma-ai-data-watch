@@ -120,37 +120,78 @@
   },
 
   "ai_news_sources": {
+    "_comment": "RSS feeds for the AI News tab. require_pharma=false so all AI content passes. Score gate uses ai_keywords only.",
     "enabled": true,
     "feeds": [
       {
         "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
         "name": "TechCrunch AI",
         "type": "ainews",
-        "badge": "Tech"
+        "badge": "Tech",
+        "_keep": "Model launches, lab funding, enterprise AI adoption, big tech AI strategy"
       },
       {
         "url": "https://www.technologyreview.com/feed/",
         "name": "MIT Technology Review",
         "type": "ainews",
-        "badge": "Research"
+        "badge": "Research",
+        "_keep": "AI safety/alignment analysis, capabilities deep-dives, AI in science, policy analysis"
       },
       {
         "url": "https://www.theverge.com/rss/ai-artificial-intelligence/rss.xml",
         "name": "The Verge",
         "type": "ainews",
-        "badge": "Tech"
+        "badge": "Tech",
+        "_keep": "Consumer AI products, big tech AI competitive dynamics, AI hardware launches"
       },
       {
         "url": "https://feeds.nature.com/natmachintell/rss/current",
         "name": "Nature Machine Intelligence",
         "type": "ainews",
-        "badge": "Research"
+        "badge": "Research",
+        "_keep": "ALL peer-reviewed AI research — 100% signal, no filtering needed"
       },
       {
         "url": "https://venturebeat.com/category/ai/feed/",
         "name": "VentureBeat AI",
         "type": "ainews",
-        "badge": "Tech"
+        "badge": "Tech",
+        "_keep": "Enterprise LLM deployment, AI infrastructure, open-source model releases"
+      },
+      {
+        "url": "https://www.wired.com/feed/tag/artificial-intelligence/rss",
+        "name": "Wired AI",
+        "type": "ainews",
+        "badge": "Tech",
+        "_keep": "AI ethics/safety long-form, lab strategy investigations, AI in science, governance analysis"
+      },
+      {
+        "url": "https://arstechnica.com/ai/feed/",
+        "name": "Ars Technica AI",
+        "type": "ainews",
+        "badge": "Tech",
+        "_keep": "Technical deep-dives, AI hardware/compute, AI law/copyright, benchmarks, security"
+      },
+      {
+        "url": "https://www.theregister.com/tag/machine_learning/headlines.atom",
+        "name": "The Register AI",
+        "type": "ainews",
+        "badge": "Tech",
+        "_keep": "EU AI Act news, enterprise cloud AI, AI chip market, critical/contrarian AI coverage"
+      },
+      {
+        "url": "https://huggingface.co/blog/feed.xml",
+        "name": "Hugging Face Blog",
+        "type": "ainews",
+        "badge": "Research",
+        "_keep": "New model releases (especially biomedical), open-source AI ecosystem, benchmarks/leaderboards"
+      },
+      {
+        "url": "https://jack-clark.net/feed/",
+        "name": "Import AI",
+        "type": "ainews",
+        "badge": "Research",
+        "_keep": "Weekly expert curation of AI research (Jack Clark, ex-OpenAI) — highest editorial signal"
       }
     ]
   },
@@ -165,11 +206,28 @@
     "proteomics", "EHDS", "real-world evidence", "RWE", "adverse event"
   ],
 
+  "_ai_keywords_comment": "Used by relevance_score() for ainews articles. Covers what tech media writes: 'AI' abbreviation, lab names, capability terms, not just 'artificial intelligence'.",
   "ai_keywords": [
     "artificial intelligence", "machine learning", "deep learning", "neural network",
-    "large language model", "LLM", "transformer", "generative AI", "foundation model",
-    "reinforcement learning", "natural language processing", "NLP",
-    "computer vision", "graph neural network", "GNN", "diffusion model",
-    "AlphaFold", "ChatGPT", "GPT", "Claude", "Gemini", "Llama"
+    "large language model", "foundation model", "generative AI", "transformer model",
+    "reinforcement learning", "natural language processing",
+    "computer vision", "graph neural network", "diffusion model",
+
+    "AlphaFold", "ChatGPT", "GPT", "Claude", "Gemini", "Llama", "LLaMA",
+    "Mistral", "Grok", "Copilot", "Bard",
+
+    "OpenAI", "Anthropic", "DeepMind", "Google DeepMind", "Meta AI",
+    "Hugging Face", "xAI", "Cohere", "Stability AI",
+
+    "AI agent", "agentic AI", "reasoning model", "multimodal AI",
+    "vision-language model", "AI safety", "AI alignment",
+    "AI benchmark", "AI chip", "AI accelerator",
+    "AI regulation", "AI governance", "AI Act",
+    "AI hallucination", "AI reliability",
+
+    "LLM", "NLP", "GNN", "RAG", "RLHF", "SFT", "LoRA",
+
+    "AI-powered", "AI-enabled", "AI-assisted",
+    "AI model", "AI system", "AI tool", "AI research"
   ]
 }
