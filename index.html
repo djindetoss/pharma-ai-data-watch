@@ -55,6 +55,8 @@
         <a href="#" data-topic-link="clinical-ai">Clinical AI</a>
         <span class="nav-divider">|</span>
         <a href="events.html">📅 Events</a>
+        <a href="digest.html">📊 Digest</a>
+        <a href="briefing.html">📰 Briefing</a>
         <a href="#about">About</a>
       </nav>
 
@@ -183,6 +185,36 @@
         <div class="newsletter-input-wrap">
           <input type="email" placeholder="your@email.com" />
           <button data-open-subscribe>Subscribe — free</button>
+        </div>
+      </div>
+
+      <!-- Digest widget -->
+      <div class="sidebar-card" id="digest-widget" style="display:none">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#ede9fe">📊</div>
+          <h3>Dernier digest</h3>
+        </div>
+        <div style="padding:14px 20px">
+          <p id="digest-widget-label" style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:4px"></p>
+          <p id="digest-widget-count" style="font-size:12px;color:var(--mid);margin-bottom:12px"></p>
+          <a href="digest.html" class="btn-primary" style="display:inline-flex;font-size:13px;padding:8px 16px">
+            Voir le digest complet →
+          </a>
+        </div>
+      </div>
+
+      <!-- Briefing widget -->
+      <div class="sidebar-card" id="briefing-widget" style="display:none">
+        <div class="sidebar-header">
+          <div class="sidebar-icon" style="background:#fef3c7">📰</div>
+          <h3>Dernier briefing</h3>
+        </div>
+        <div style="padding:14px 20px">
+          <p id="briefing-widget-label" style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:4px"></p>
+          <p id="briefing-widget-meta" style="font-size:12px;color:var(--mid);margin-bottom:12px"></p>
+          <a href="briefing.html" class="btn-primary" style="display:inline-flex;font-size:13px;padding:8px 16px">
+            Lire le briefing →
+          </a>
         </div>
       </div>
 
@@ -415,5 +447,36 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/data.js?v=20260426e"></script>
   <script src="js/app.js?v=20260426e"></script>
+  <script>
+    // Load latest digest info into sidebar widget
+    fetch('./data/digests/index.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : [])
+      .then(index => {
+        if (!index.length) return;
+        const latest = index[0];
+        const widget = document.getElementById('digest-widget');
+        const d = new Date(latest.updatedAt);
+        const dateStr = d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' });
+        document.getElementById('digest-widget-label').textContent = latest.label;
+        document.getElementById('digest-widget-count').textContent =
+          latest.totalArticles + ' articles · mis à jour le ' + dateStr;
+        widget.style.display = '';
+      })
+      .catch(() => {}); // silent — widget simply stays hidden
+
+    // Load latest briefing info into sidebar widget
+    fetch('./data/briefings/index.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : [])
+      .then(index => {
+        if (!index.length) return;
+        const latest = index[0];
+        const widget = document.getElementById('briefing-widget');
+        document.getElementById('briefing-widget-label').textContent = latest.weekLabel || latest.id;
+        document.getElementById('briefing-widget-meta').textContent =
+          (latest.sourcesCount || '—') + ' sources · ' + (latest.storiesCount || '—') + ' stories';
+        widget.style.display = '';
+      })
+      .catch(() => {});
+  </script>
 </body>
 </html>
