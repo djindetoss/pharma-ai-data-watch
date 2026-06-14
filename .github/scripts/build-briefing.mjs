@@ -84,8 +84,8 @@ function briefingScore(a) {
 const scored = recent.map(a => ({ ...a, _bs: briefingScore(a) }))
 scored.sort((a, b) => b._bs - a._bs || b.date.localeCompare(a.date))
 
-// Top 40 articles for the prompt
-const selected = scored.slice(0, 40)
+// Top 60 articles for the prompt (needed for 10 items × 4 sections + pharmaFocus)
+const selected = scored.slice(0, 60)
 
 console.log(`[briefing] Selected ${selected.length} articles from ${recent.length} recent`)
 
@@ -110,9 +110,9 @@ function buildPrompt(articles) {
 
   return `You are a senior AI intelligence analyst writing the weekly briefing for European pharmaceutical and regulatory science professionals: regulatory scientists, pharma R&D directors, data coordinators, and clinical development teams.
 
-Analyze the articles below and write a COMPREHENSIVE expert weekly briefing. Return ONLY a valid JSON object — no markdown, no backticks, no extra text.
+Analyze the articles below and write an EXHAUSTIVE expert weekly briefing covering every significant article. Return ONLY a valid JSON object — no markdown, no backticks, no extra text.
 
-REQUIRED JSON STRUCTURE:
+REQUIRED JSON STRUCTURE (10 items shown per section — this is the TARGET, not the maximum):
 {
   "leadStory": {
     "headline": "10-14 words, declarative, punchy",
@@ -126,18 +126,12 @@ REQUIRED JSON STRUCTURE:
       "title": "Frontier AI & Foundation Models",
       "icon": "🤖",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences, direct and expert", "sourceIndices": [1, 2] },
-        { "headline": "8-10 words", "body": "2-3 sentences, direct and expert", "sourceIndices": [3] },
+        { "headline": "8-10 words", "body": "2-3 sentences, direct and expert", "sourceIndices": [1] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [2] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [3] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [4] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [5] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [6] }
-      ]
-    },
-    {
-      "id": "regulatory",
-      "title": "Regulatory & Policy",
-      "icon": "🏛️",
-      "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [6] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [7] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
@@ -145,14 +139,37 @@ REQUIRED JSON STRUCTURE:
       ]
     },
     {
+      "id": "regulatory",
+      "title": "Regulatory & Policy",
+      "icon": "🏛️",
+      "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [11] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [12] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [13] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [14] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [15] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] }
+      ]
+    },
+    {
       "id": "research",
       "title": "Research Spotlight",
       "icon": "🔬",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [11, 12] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [13] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [14] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [15] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [21] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [22] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [23] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [25] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [26] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [27] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [28] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [29] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [30] }
       ]
     },
     {
@@ -160,10 +177,16 @@ REQUIRED JSON STRUCTURE:
       "title": "Industry & Ecosystem",
       "icon": "🏢",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [31] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [32] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [33] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [34] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [35] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [37] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [38] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [39] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [40] }
       ]
     }
   ],
@@ -171,10 +194,16 @@ REQUIRED JSON STRUCTURE:
     "headline": "Pharma & Drug Development — What It Means",
     "standfirst": "One sentence: the most important takeaway for drug development and EU regulatory science this week",
     "items": [
-      { "headline": "8-10 words", "body": "2-3 sentences on implications for drug R&D, regulatory submissions, or clinical AI", "sourceIndices": [20, 21] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [22] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [23] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] }
+      { "headline": "8-10 words", "body": "2-3 sentences on implications for drug R&D, regulatory submissions, or clinical AI", "sourceIndices": [41] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [42] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [43] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [44] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [45] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [46] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [47] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [48] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [49] },
+      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [50] }
     ]
   },
   "editorNote": "1-2 sentences: the week's overarching theme — what a senior professional needs to remember"
@@ -185,11 +214,13 @@ RULES:
 - NEVER start with "This week...", "In recent...", "The latest..."
 - Headlines: declarative, verb-led (e.g. "LLMs Outperform Clinical AI Tools on Diagnostic Benchmarks")
 - sourceIndices must be valid 0-based indices from the articles list below
-- Every item must cite at least one source
-- pharmaFocus: 4-5 items minimum, all must relate to drug development, regulatory science, or clinical AI
-- Each section: 4-6 items — use ALL relevant articles, do not truncate
+- Every item must cite at least one source index
+- EXHAUSTIVE COVERAGE: assign EVERY article to the most relevant section — do not leave articles out
+- Each section targets 8-10 items; use more if warranted by available articles
+- pharmaFocus targets 8-10 items covering drug R&D, regulatory science, and clinical AI implications
+- An article can appear in pharmaFocus AND in a section if it has dual relevance
 - Body text answers: "What does this mean for my work?"
-- If a section has more relevant articles than shown in the template, ADD more items — the template shows the minimum structure
+- If article count exceeds the template slots, ADD more items beyond the template
 
 ARTICLES (index | title | source | date | excerpt):
 ${articleList}`
@@ -215,7 +246,7 @@ async function generateWithClaude(articles) {
     },
     body: JSON.stringify({
       model:      'claude-haiku-4-5',
-      max_tokens: 4000,
+      max_tokens: 6500,
       messages:   [{ role: 'user', content: prompt }],
     }),
   })
@@ -268,11 +299,11 @@ function generateFallback(articles) {
   }
 
   const leadIdx = 0
-  const regulatoryArticles = articles.filter(a => a.topic === 'regulatory' || /regulatory/i.test(a.badge || '')).slice(0, 6)
-  const researchArticles   = articles.filter(a => a.type === 'paper').slice(0, 6)
-  const ainewsArticles     = articles.filter(a => a.type === 'ainews').slice(0, 6)
-  const pharmaArticles     = articles.filter(a => ['drug-discovery', 'clinical-ai'].includes(a.topic)).slice(0, 6)
-  const industryArticles   = articles.filter(a => !['regulatory'].includes(a.topic) && a.type === 'news').slice(0, 5)
+  const regulatoryArticles = articles.filter(a => a.topic === 'regulatory' || /regulatory/i.test(a.badge || '')).slice(0, 10)
+  const researchArticles   = articles.filter(a => a.type === 'paper').slice(0, 10)
+  const ainewsArticles     = articles.filter(a => a.type === 'ainews').slice(0, 10)
+  const pharmaArticles     = articles.filter(a => ['drug-discovery', 'clinical-ai'].includes(a.topic)).slice(0, 10)
+  const industryArticles   = articles.filter(a => !['regulatory'].includes(a.topic) && a.type === 'news').slice(0, 10)
 
   function idxOf(a) { return articles.indexOf(a) }
 
