@@ -110,20 +110,29 @@ function buildPrompt(articles) {
 
   return `You are a senior AI intelligence analyst writing the weekly briefing for European pharmaceutical and regulatory science professionals: regulatory scientists, pharma R&D directors, data coordinators, and clinical development teams.
 
-Analyze the articles below and write an EXHAUSTIVE expert weekly briefing covering every significant article. Return ONLY a valid JSON object — no markdown, no backticks, no extra text.
+This portal tracks 4 defined topic domains. Your briefing MUST map each article to one of these 5 sections:
 
-REQUIRED JSON STRUCTURE (10 items shown per section — this is the TARGET, not the maximum):
+SECTION DEFINITIONS:
+1. "frontier"        → Frontier AI & LLMs: new model releases, AI labs (OpenAI/Anthropic/DeepMind/Meta/Mistral), LLM benchmarks, AI agents, AI safety/alignment, foundation models, AI policy/regulation globally
+2. "regulatory"      → Regulatory Science: EMA, FDA, MHRA, ICH guidance, marketing authorisation, AI Act compliance, pharmacovigilance, GMP, PSUR, clinical trial regulations, EU regulatory frameworks
+3. "drug-discovery"  → Drug Discovery AI: ADMET prediction, molecular docking, generative chemistry, protein folding, lead optimisation, QSAR, cheminformatics, drug design, structure-based design, antibiotic discovery
+4. "clinical-ai"     → Clinical AI: AI in diagnostics, radiology/pathology AI, clinical decision support, patient outcome prediction, biomarker discovery, real-world evidence, EHR/EMR AI, clinical trial AI
+5. "data-governance" → Data & Governance: EHDS, IDMP, FHIR, OMOP, Darwin EU, RWD/RWE frameworks, data standards, interoperability, FAIR data, federated learning for health data, health data governance
+
+Analyze the articles below and write an EXHAUSTIVE expert weekly briefing. Return ONLY a valid JSON object — no markdown, no backticks, no extra text.
+
+REQUIRED JSON STRUCTURE:
 {
   "leadStory": {
     "headline": "10-14 words, declarative, punchy",
-    "standfirst": "One sentence: the single most consequential AI development this week and why it matters",
+    "standfirst": "One sentence: the single most consequential development this week and why it matters",
     "body": "3-4 sentences: expert framing, context, implications for pharma/regulatory professionals. Answer 'so what?'",
     "sourceIndices": [0]
   },
   "sections": [
     {
       "id": "frontier",
-      "title": "Frontier AI & Foundation Models",
+      "title": "Frontier AI & LLMs",
       "icon": "🤖",
       "items": [
         { "headline": "8-10 words", "body": "2-3 sentences, direct and expert", "sourceIndices": [1] },
@@ -133,37 +142,44 @@ REQUIRED JSON STRUCTURE (10 items shown per section — this is the TARGET, not 
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [5] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [6] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [7] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [10] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] }
       ]
     },
     {
       "id": "regulatory",
-      "title": "Regulatory & Policy",
+      "title": "Regulatory Science",
       "icon": "🏛️",
       "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [10] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [11] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [12] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [13] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [14] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [15] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] }
       ]
     },
     {
-      "id": "research",
-      "title": "Research Spotlight",
-      "icon": "🔬",
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
       "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [21] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [22] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [23] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [25] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [26] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [27] },
@@ -173,39 +189,19 @@ REQUIRED JSON STRUCTURE (10 items shown per section — this is the TARGET, not 
       ]
     },
     {
-      "id": "industry",
-      "title": "Industry & Ecosystem",
-      "icon": "🏢",
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
       "items": [
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [31] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [32] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [33] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [34] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [35] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [37] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [38] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [39] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [40] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] }
       ]
     }
   ],
-  "pharmaFocus": {
-    "headline": "Pharma & Drug Development — What It Means",
-    "standfirst": "One sentence: the most important takeaway for drug development and EU regulatory science this week",
-    "items": [
-      { "headline": "8-10 words", "body": "2-3 sentences on implications for drug R&D, regulatory submissions, or clinical AI", "sourceIndices": [41] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [42] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [43] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [44] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [45] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [46] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [47] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [48] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [49] },
-      { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [50] }
-    ]
-  },
   "editorNote": "1-2 sentences: the week's overarching theme — what a senior professional needs to remember"
 }
 
@@ -215,12 +211,10 @@ RULES:
 - Headlines: declarative, verb-led (e.g. "LLMs Outperform Clinical AI Tools on Diagnostic Benchmarks")
 - sourceIndices must be valid 0-based indices from the articles list below
 - Every item must cite at least one source index
-- EXHAUSTIVE COVERAGE: assign EVERY article to the most relevant section — do not leave articles out
-- Each section targets 8-10 items; use more if warranted by available articles
-- pharmaFocus targets 8-10 items covering drug R&D, regulatory science, and clinical AI implications
-- An article can appear in pharmaFocus AND in a section if it has dual relevance
+- EXHAUSTIVE COVERAGE: assign EVERY article to its most relevant section — do not leave articles uncovered
+- Each section: 6-10 items minimum; add more rows beyond the template if there are more relevant articles
 - Body text answers: "What does this mean for my work?"
-- If article count exceeds the template slots, ADD more items beyond the template
+- Drug Discovery and Clinical AI are SEPARATE sections — do not merge them
 
 ARTICLES (index | title | source | date | excerpt):
 ${articleList}`
@@ -298,12 +292,11 @@ function generateFallback(articles) {
     }
   }
 
-  const leadIdx = 0
-  const regulatoryArticles = articles.filter(a => a.topic === 'regulatory' || /regulatory/i.test(a.badge || '')).slice(0, 10)
-  const researchArticles   = articles.filter(a => a.type === 'paper').slice(0, 10)
-  const ainewsArticles     = articles.filter(a => a.type === 'ainews').slice(0, 10)
-  const pharmaArticles     = articles.filter(a => ['drug-discovery', 'clinical-ai'].includes(a.topic)).slice(0, 10)
-  const industryArticles   = articles.filter(a => !['regulatory'].includes(a.topic) && a.type === 'news').slice(0, 10)
+  const ainewsArticles      = articles.filter(a => a.type === 'ainews').slice(0, 10)
+  const regulatoryArticles  = articles.filter(a => a.topic === 'regulatory').slice(0, 10)
+  const drugDiscoveryArts   = articles.filter(a => a.topic === 'drug-discovery').slice(0, 10)
+  const clinicalAiArts      = articles.filter(a => a.topic === 'clinical-ai').slice(0, 10)
+  const dataGovArts         = articles.filter(a => a.topic === 'data-governance').slice(0, 10)
 
   function idxOf(a) { return articles.indexOf(a) }
 
@@ -317,35 +310,36 @@ function generateFallback(articles) {
     sections: [
       {
         id:    'frontier',
-        title: 'Frontier AI & Foundation Models',
+        title: 'Frontier AI & LLMs',
         icon:  '🤖',
         items: ainewsArticles.map(a => makeItem(a, idxOf(a))),
       },
       {
         id:    'regulatory',
-        title: 'Regulatory & Policy',
+        title: 'Regulatory Science',
         icon:  '🏛️',
         items: regulatoryArticles.map(a => makeItem(a, idxOf(a))),
       },
       {
-        id:    'research',
-        title: 'Research Spotlight',
-        icon:  '🔬',
-        items: researchArticles.map(a => makeItem(a, idxOf(a))),
+        id:    'drug-discovery',
+        title: 'AI in Drug Discovery',
+        icon:  '🧬',
+        items: drugDiscoveryArts.map(a => makeItem(a, idxOf(a))),
       },
       {
-        id:    'industry',
-        title: 'Industry & Ecosystem',
-        icon:  '🏢',
-        items: industryArticles.map(a => makeItem(a, idxOf(a))),
+        id:    'clinical-ai',
+        title: 'Clinical AI',
+        icon:  '🔬',
+        items: clinicalAiArts.map(a => makeItem(a, idxOf(a))),
+      },
+      {
+        id:    'data-governance',
+        title: 'Data & Governance',
+        icon:  '📊',
+        items: dataGovArts.map(a => makeItem(a, idxOf(a))),
       },
     ].filter(s => s.items.length > 0),
-    pharmaFocus: {
-      headline:   'Pharma & Drug Development — What It Means',
-      standfirst: 'Key developments in AI-driven drug discovery, clinical AI, and EU regulatory science.',
-      items:      pharmaArticles.map(a => makeItem(a, idxOf(a))),
-    },
-    editorNote: `${articles.length} sources analysed this week across regulatory, research, and industry channels. Pipeline-generated summary — no AI editorial layer.`,
+    editorNote: `${articles.length} sources analysed this week across regulatory, drug discovery, clinical AI, and data governance channels. Pipeline-generated summary — no AI editorial layer.`,
   }
 }
 
@@ -373,10 +367,12 @@ function resolveSources(content, articles) {
       ...s,
       items: (s.items || []).map(processItem),
     })),
-    pharmaFocus: {
-      ...content.pharmaFocus,
-      items: (content.pharmaFocus?.items || []).map(processItem),
-    },
+    ...(content.pharmaFocus ? {
+      pharmaFocus: {
+        ...content.pharmaFocus,
+        items: (content.pharmaFocus?.items || []).map(processItem),
+      }
+    } : {}),
   }
 }
 
@@ -409,6 +405,7 @@ for (const sec of resolved.sections || []) {
   for (const item of sec.items || []) collectSources(item.sources)
 }
 for (const item of resolved.pharmaFocus?.items || []) collectSources(item.sources)
+
 
 // Week label in French
 const monthEn = monday.toLocaleString('en-US', { month: 'long' })
