@@ -142,7 +142,9 @@ REQUIRED JSON STRUCTURE:
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [5] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [6] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [7] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [10] }
       ]
     },
     {
@@ -150,14 +152,16 @@ REQUIRED JSON STRUCTURE:
       "title": "Regulatory Science",
       "icon": "🏛️",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [10] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [11] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [12] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [13] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [14] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [15] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] }
       ]
     },
     {
@@ -165,21 +169,10 @@ REQUIRED JSON STRUCTURE:
       "title": "AI in Drug Discovery",
       "icon": "🧬",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [21] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [22] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [23] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] }
-      ]
-    },
-    {
-      "id": "clinical-ai",
-      "title": "Clinical AI",
-      "icon": "🔬",
-      "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [25] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [26] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [27] },
@@ -189,16 +182,37 @@ REQUIRED JSON STRUCTURE:
       ]
     },
     {
-      "id": "data-governance",
-      "title": "Data & Governance",
-      "icon": "📊",
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
       "items": [
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [31] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [32] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [33] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [34] },
         { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [35] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] }
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [37] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [38] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [39] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [40] }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [41] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [42] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [43] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [44] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [45] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [46] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [47] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [48] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [49] },
+        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [50] }
       ]
     }
   ],
@@ -212,7 +226,7 @@ RULES:
 - sourceIndices must be valid 0-based indices from the articles list below
 - Every item must cite at least one source index
 - EXHAUSTIVE COVERAGE: assign EVERY article to its most relevant section — do not leave articles uncovered
-- Each section: 6-10 items minimum; add more rows beyond the template if there are more relevant articles
+- Each section MUST have EXACTLY 10 items — the template shows 10 rows, fill them all
 - Body text answers: "What does this mean for my work?"
 - Drug Discovery and Clinical AI are SEPARATE sections — do not merge them
 
@@ -240,7 +254,7 @@ async function generateWithClaude(articles) {
     },
     body: JSON.stringify({
       model:      'claude-haiku-4-5',
-      max_tokens: 6500,
+      max_tokens: 8192,
       messages:   [{ role: 'user', content: prompt }],
     }),
   })
