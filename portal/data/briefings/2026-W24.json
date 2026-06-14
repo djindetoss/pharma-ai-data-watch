@@ -3,15 +3,15 @@
   "weekLabel": "Week 24 — June 8, 2026",
   "weekStart": "2026-06-08",
   "weekEnd": "2026-06-14",
-  "generatedAt": "2026-06-14T14:24:36.083Z",
+  "generatedAt": "2026-06-14T15:20:20.900Z",
   "meta": {
     "articlesAnalyzed": 60,
     "model": "claude-haiku-4-5"
   },
   "leadStory": {
-    "headline": "General-Purpose LLMs Outperform Specialized Clinical AI on Medical Benchmarks",
-    "standfirst": "Frontier language models now exceed purpose-built clinical AI tools across medical knowledge, clinician alignment, and diagnostic tasks—forcing a fundamental recalibration of AI procurement and validation strategies for pharmaceutical development and regulatory submissions.",
-    "body": "Independent evaluation reveals that frontier LLMs (GPT-4 class) outperform specialized clinical AI systems designed specifically for healthcare tasks. This finding disrupts the assumption that domain-specific models are inherently superior and raises critical questions about where pharma and regulators should invest in AI infrastructure. For regulatory scientists, this means that off-the-shelf foundation models may provide more robust support for clinical trial design, safety signal detection, and regulatory intelligence than custom-built tools. The implication: organizations must urgently reassess their clinical AI validation frameworks to accommodate frontier models, while ensuring traceability, interpretability, and compliance with GxP standards.",
+    "headline": "Frontier LLMs Outperform Specialized Clinical AI Tools Across Medical Benchmarks",
+    "standfirst": "General-purpose large language models have demonstrated superior performance compared to purpose-built clinical AI systems on standardized medical knowledge and clinician alignment evaluations, challenging the assumption that domain-specific tools guarantee superior clinical utility.",
+    "body": "This finding carries significant implications for pharmaceutical development and regulatory strategy. Organizations investing heavily in specialized clinical AI platforms must reassess their technology roadmaps and validate whether bespoke solutions offer genuine competitive advantage over commodity frontier models. The result suggests that model scale, training data breadth, and architectural sophistication may outweigh domain-specific optimization—a paradigm shift requiring immediate recalibration of clinical evidence generation strategies. For regulatory submissions, this raises critical questions about AI tool validation criteria and whether EMA/FDA guidance should pivot toward evaluating general-purpose models deployed with appropriate guardrails rather than mandating specialized certification.",
     "sourceIndices": [
       5
     ],
@@ -28,12 +28,12 @@
   "sections": [
     {
       "id": "frontier",
-      "title": "Frontier AI & Foundation Models",
+      "title": "Frontier AI & LLMs",
       "icon": "🤖",
       "items": [
         {
-          "headline": "Frontier LLMs Outperform Specialized Clinical Tools Across Benchmarks",
-          "body": "Large language models now exceed purpose-built clinical AI on medical knowledge, clinician alignment, and diagnostic metrics. This undermines the prevailing logic that domain-specific models inherently deliver superior performance and forces regulatory scientists to re-evaluate AI validation hierarchies.",
+          "headline": "Frontier LLMs Outperform Clinical AI Tools on Medical Benchmarks",
+          "body": "Independent evaluation demonstrates that general-purpose large language models exceed specialized clinical AI systems on medical knowledge, clinician alignment, and benchmark performance. This challenges assumptions that domain-specific architectures are necessary for clinical applications and suggests frontier models' scale and training breadth may be decisive factors. Implications for pharma R&D: reassess vendor lock-in risk and consider hybrid strategies leveraging frontier models with domain-specific fine-tuning.",
           "sourceIndices": [
             5
           ],
@@ -48,136 +48,8 @@
           ]
         },
         {
-          "headline": "Vision-Language Foundation Model for Kidney Cancer Precision Oncology",
-          "body": "RenalCLIP, a disease-centric vision-language foundation model, enables non-invasive assessment of renal masses using integrated imaging and text data. This approach demonstrates how foundation models can be fine-tuned for high-stakes clinical applications while maintaining multimodal reasoning capability.",
-          "sourceIndices": [
-            7
-          ],
-          "sources": [
-            {
-              "title": "A disease-centric vision-language foundation model for precision oncology in kidney cancer",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41467-026-74175-w",
-              "date": "2026-06-08",
-              "type": "ainews"
-            }
-          ]
-        },
-        {
-          "headline": "Single-Cell Foundation Models: Pretraining Dataset Size and Diversity Matter",
-          "body": "Study reveals that foundation model performance for single-cell genomics is highly dependent on pretraining dataset size and diversity, not just architecture. For pharma researchers using foundation models in cell and gene therapy, this highlights the need to scrutinize training data provenance and composition.",
-          "sourceIndices": [
-            26
-          ],
-          "sources": [
-            {
-              "title": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41592-026-03120-y",
-              "date": "2026-06-09",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Electron Density Point-Cloud Framework for Protein-Ligand Interaction Prediction",
-          "body": "E-CloudBind combines electron cloud representations with molecular graphs to predict drug-protein interactions robustly across diverse molecular contexts. This technique offers improved generalization for structure-guided drug discovery workflows compared to traditional graph-based approaches.",
-          "sourceIndices": [
-            18
-          ],
-          "sources": [
-            {
-              "title": "An electron-density point-cloud framework for robust protein-ligand interaction prediction",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41467-026-74196-5",
-              "date": "2026-06-11",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "PBCNet2.0: Atomic-Level Protein–Ligand Binding Affinity Prediction",
-          "body": "Advances in relative binding affinity prediction enable faster optimization of molecular probes and therapeutic candidates. This tool supports lead optimization phases by reducing the need for iterative biochemical assays.",
-          "sourceIndices": [
-            14
-          ],
-          "sources": [
-            {
-              "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41589-026-02241-x",
-              "date": "2026-06-12",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "AI Accelerates Antibiotic Discovery in Era of Resistance",
-          "body": "Artificial intelligence tools are now routinely deployed to screen novel antibiotic compounds and predict efficacy against resistant pathogens. These methods compress discovery timelines and expand the chemical space explored, critical given the antibiotic resistance crisis.",
-          "sourceIndices": [
-            30
-          ],
-          "sources": [
-            {
-              "title": "AI is taking on antibiotic resistance — here’s how",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/d41586-026-01818-9",
-              "date": "2026-06-08",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Machine Learning Targets Intrinsically Disordered AR-NTD for Drug Discovery",
-          "body": "Enhanced sampling workflows using machine learning identify druggable conformations of the androgen receptor N-terminal domain, a notoriously difficult target. This addresses a class of proteins long considered undruggable due to structural flexibility.",
-          "sourceIndices": [
-            39
-          ],
-          "sources": [
-            {
-              "title": "Targeting the intrinsically disordered ar-ntd through a machine learning-based enhanced sampling workflow",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41467-026-73863-x",
-              "date": "2026-06-05",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Folddisco Enables Protein Structural Motif Search at Million-Scale",
-          "body": "This tool permits rapid discovery of structural motifs across massive protein sequence databases, enabling sequence-based prioritization of targets. It accelerates hypothesis generation in early-stage drug discovery.",
-          "sourceIndices": [
-            37
-          ],
-          "sources": [
-            {
-              "title": "Structural motif search across the protein universe with folddisco",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41587-026-03162-9",
-              "date": "2026-06-05",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Hydrogen Exchange–Mass Spectrometry Reveals Hidden Energetic Protein Logic",
-          "body": "Advanced biophysical techniques combined with computational methods uncover how conserved protein folds support diverse functions. Understanding these energetic blueprints informs rational design of compounds targeting protein conformational states.",
-          "sourceIndices": [
-            38
-          ],
-          "sources": [
-            {
-              "title": "Distinct energetic blueprints diversify function of conserved protein folds",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41557-026-02163-0",
-              "date": "2026-06-05",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Scientists Express Broad Skepticism Toward AI Despite Recognizing Tool Value",
-          "body": "Nature poll reveals nearly half of scientists harbor negative attitudes toward AI, though they acknowledge certain tools are beneficial. This sentiment gap between skepticism and pragmatism will shape institutional adoption patterns in pharma R&D.",
+          "headline": "Scientists Broadly Skeptical of AI Despite Acknowledging Tool Differentiation",
+          "body": "Nearly half of surveyed scientists express negative sentiment toward AI broadly, though they recognize meaningful performance variation between tools. This cognitive dissonance reflects uncertainty about AI's utility and trustworthiness in research contexts. For regulatory science professionals: this sentiment gap may influence peer review of AI-augmented drug discovery submissions and requires transparent communication of validation methodologies.",
           "sourceIndices": [
             6
           ],
@@ -190,17 +62,113 @@
               "type": "ainews"
             }
           ]
+        },
+        {
+          "headline": "OpenAI Faces State-Level Regulatory Investigation on Consumer Protection Grounds",
+          "body": "A coalition of U.S. state attorneys general have initiated inquiry into OpenAI, signaling emerging regulatory pressure beyond federal frameworks. This precedes formal AI Act compliance timelines and may accelerate fragmented state-level AI governance. Pharmaceutical companies deploying OpenAI infrastructure for clinical decision support or regulatory documentation must monitor state-level AI liability frameworks.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Openai says it's engaging 'constructively' with state ags about concerns",
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html",
+              "date": "2026-06-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Anthropic Confronts Safety-Usability Tradeoff in Claude Model Safeguards",
+          "body": "Enhanced safety mechanisms on Claude have generated backlash regarding utility constraints, highlighting the fundamental tension between AI alignment and practical applicability. This mirrors regulatory oversight debates about whether strict guardrails inadvertently limit beneficial applications. For pharma: this demonstrates that AI safety governance must balance risk mitigation with operational necessity.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "Anthropic faces backlash over stricter safeguards on claude model",
+              "source": "Crypto Briefing",
+              "url": "https://cryptobriefing.com/anthropic-backlash-claude-safeguards/",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "OpenAI Establishes Madrid Office, Signaling European Market Expansion",
+          "body": "Strategic establishment of European operations positions OpenAI for closer engagement with EU regulatory frameworks and GDPR compliance infrastructure. This suggests frontier AI labs are preparing for sustained European regulatory engagement rather than treating AI Act compliance as temporary friction. Pharmaceutical companies should anticipate enhanced competition for AI talent and services within EU-regulated contexts.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "Openai opens madrid office to enhance chatgpt expansion in europe",
+              "source": "Crypto Briefing",
+              "url": "https://cryptobriefing.com/openai-madrid-office-europe-expansion/",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Canada Proposes Legislation Restricting AI Chatbot Use for Minors",
+          "body": "Regulatory framework targeting age-gated AI access signals government appetite for granular AI use-case regulation rather than blanket prohibition. This complements Canada's broader digital safety legislation and suggests jurisdictional fragmentation in AI governance will continue. Pharma companies developing AI for pediatric applications must anticipate similar age-restriction requirements.",
+          "sourceIndices": [
+            53
+          ],
+          "sources": [
+            {
+              "title": "Canada introduces legislation to ban social media for children under 16, regulate AI chatbots",
+              "source": "Crypto Briefing",
+              "url": "https://cryptobriefing.com/canada-social-media-ban-children-ai-chatbots/",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Nvidia Strategically Hires Government Affairs Lead in Washington D.C.",
+          "body": "Appointment of Bruce Andrews to head government affairs reflects chip-maker's recognition that AI regulatory and trade policy will shape market structure. This signals intensifying lobbying competition to influence U.S. AI policy formation. Pharmaceutical companies should monitor hardware-level policy developments affecting AI infrastructure costs and supply chain resilience.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Nvidia hires bruce andrews as head of government affairs in d.c.",
+              "source": "Crypto Briefing",
+              "url": "https://cryptobriefing.com/nvidia-hires-bruce-andrews-government-affairs/",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Indonesia's Communication Minister Calls for Specific AI Regulatory Legislation",
+          "body": "Emerging markets are developing independent AI governance frameworks rather than adopting EU/U.S. models, creating jurisdictional inconsistency for global pharma operations. This signals necessity for companies to implement regionally adapted AI compliance strategies. Regulatory submissions involving AI-augmented evidence generation will require market-specific justifications.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "Minister highlights urgency of specific AI laws for indonesia",
+              "source": "Antaranews.com",
+              "url": "https://en.antaranews.com/news/418895/minister-highlights-urgency-of-specific-ai-laws-for-indonesia",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
         }
       ]
     },
     {
       "id": "regulatory",
-      "title": "Regulatory & Policy",
+      "title": "Regulatory Science",
       "icon": "🏛️",
       "items": [
         {
           "headline": "FDA Clears First Over-the-Counter Continuous Glucose Monitor for Children",
-          "body": "Dexcom Stelo CGM approved for OTC use in pediatric patients marks a significant shift toward consumer-facing continuous monitoring. This regulatory pathway has implications for post-marketing surveillance data collection and real-world evidence generation in diabetes management.",
+          "body": "Dexcom Stelo CGM receives OTC marketing clearance for pediatric patients, establishing precedent for direct-to-consumer medical devices without prescription gatekeeping. This regulatory shift reflects FDA confidence in device safety/usability for non-professional users and signals broader deregulatory direction for continuous monitoring technologies. Implication: companies developing home-use diagnostic devices should prepare 510(k) submissions emphasizing consumer-safety validation rather than clinical-gating requirements.",
           "sourceIndices": [
             2,
             50
@@ -223,8 +191,8 @@
           ]
         },
         {
-          "headline": "FDA Issues Emergency Use Authorization for Screwworm Treatment in Animals",
-          "body": "Emergency authorization of generic nitenpyram for New World screwworm infestations in domestic animals demonstrates FDA's rapid response to zoonotic disease threats. This precedent may inform accelerated pathways for emerging infectious disease therapeutics.",
+          "headline": "FDA Issues Emergency Use Authorization for Screwworm Treatment in Companion Animals",
+          "body": "Generic Nitenpyram tablets receive EUA for novel indication (New World screwworm myiasis in dogs/cats), demonstrating FDA's rapid emergency authorization pathway for emerging infectious threats in veterinary medicine. This precedent may extend to human infectious disease applications facing similar urgency. Regulatory strategy implication: EUA pathways may accelerate access for newly recognized indications without requiring full clinical trial data.",
           "sourceIndices": [
             3
           ],
@@ -239,8 +207,8 @@
           ]
         },
         {
-          "headline": "FDA Expands Sunscreen Actives—First Approval in Two Decades",
-          "body": "Addition of bemotrizinol to permitted sunscreen ingredients signals FDA's willingness to modernize cosmetic-drug ingredient lists after prolonged inertia. This may catalyze similar reviews of other topical agents pending regulatory re-evaluation.",
+          "headline": "FDA Expands Sunscreen Options via New Active Ingredient Approval After 20-Year Gap",
+          "body": "Bemotrizinol's addition to permitted sunscreen ingredients represents first new UV filter authorization in two decades, suggesting FDA's willingness to revisit historical safety determinations. This signals potential reopening of stalled OTC monograph categories pending modern safety/efficacy reassessment. Implication for pharmacovigilance: historical regulatory decisions may be vulnerable to challenge with contemporary data, requiring companies to maintain robust safety dossiers.",
           "sourceIndices": [
             4
           ],
@@ -255,127 +223,8 @@
           ]
         },
         {
-          "headline": "ADMET Prediction: Integrating Structural and Global Molecular Context",
-          "body": "Enhanced ADMET models combining structural, geometric, and global molecular representations improve interpretability for regulatory submissions. These tools support a more robust scientific narrative in Common Technical Document sections 2.3 (quality) and 2.7 (clinical summaries).",
-          "sourceIndices": [
-            11
-          ],
-          "sources": [
-            {
-              "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
-              "source": "Eur J Med Chem",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
-              "date": "2026-07-05",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "AI Deployment in Emerging Infectious Disease Surveillance and Response",
-          "body": "Review examines AI applications across emerging infectious and parasitic disease detection, surveillance, and outbreak forecasting. For regulatory scientists, this underscores the growing role of AI in post-marketing safety monitoring and pharmacovigilance.",
-          "sourceIndices": [
-            12
-          ],
-          "sources": [
-            {
-              "title": "Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era",
-              "source": "New Microbes New Infect",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42027758/",
-              "date": "2026-06-25",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Pharmacokinetic/Pharmacodynamic Optimization in Neutropenic Sepsis",
-          "body": "Comprehensive review of PK/PD optimization for antimicrobial dosing in immunocompromised populations informs dose selection for clinical trial protocols. Proper PK/PD target attainment strengthens regulatory submissions for infectious disease agents.",
-          "sourceIndices": [
-            17
-          ],
-          "sources": [
-            {
-              "title": "Pharmacokinetic/pharmacodynamic optimization of antimicrobial therapy in neutropenic sepsis: a comprehensive review",
-              "source": "J Chemother",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42286825/",
-              "date": "2026-06-12",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Direct Oral Anticoagulant Consumption Linked to Acute Lung Injury Risk",
-          "body": "Case-crossover study using Japanese administrative data identifies a potential safety signal between DOAC use and interstitial lung disease. Findings underscore the value of pharmacoepidemiologic real-world data in post-authorization safety evaluation.",
-          "sourceIndices": [
-            13
-          ],
-          "sources": [
-            {
-              "title": "Direct Oral Anticoagulant Consumption and the Risk of Acute Interstitial Lung Diseases: A Case-Crossover Study Using Japanese Administrative Data",
-              "source": "Pharmacoepidemiol Drug Saf",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42175652/",
-              "date": "2026-06-24",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Proteomic Prediction of APOL1-Associated Kidney Disease Risk",
-          "body": "Proteomic signatures enable early stratification of APOL1 carriers at risk of kidney disease, enabling precision prevention strategies. This approach supports biomarker-driven clinical trial enrollment and subgroup analysis in kidney disease therapeutics.",
-          "sourceIndices": [
-            15
-          ],
-          "sources": [
-            {
-              "title": "Proteomic prediction of apol1-associated kidney disease",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41588-026-02650-7",
-              "date": "2026-06-12",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Large-Scale Spatially Resolved CRISPR Screening in Native Tissue Environments",
-          "body": "Perturb-dBIT technology enables in vivo genetic perturbation studies at scale with spatial resolution, bridging the gap between reductionist cell culture and whole-organism genetics. Results inform target validation and mechanism-of-action studies for cell-based therapies.",
-          "sourceIndices": [
-            20
-          ],
-          "sources": [
-            {
-              "title": "Large-scale, spatially resolved panoramic crispr screening in native tissue environments using perturb-dbit",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41587-026-03127-y",
-              "date": "2026-06-11",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Genomic Landscape of Vaginal Microbiome Linked to Host Genetics and Population",
-          "body": "Metagenomics coupled with GWAS identifies population-specific microbiome variation and host genetic loci. For women's health drug development, this highlights the importance of diverse population sampling in microbial-focused therapeutics trials.",
-          "sourceIndices": [
-            19
-          ],
-          "sources": [
-            {
-              "title": "Genomic landscape of the human vaginal microbiome is linked to host genetics and population of origin",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41588-026-02639-2",
-              "date": "2026-06-11",
-              "type": "news"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "research",
-      "title": "Research Spotlight",
-      "icon": "🔬",
-      "items": [
-        {
-          "headline": "AI-Augmented Decision-Making in Psychiatry: Precision Treatment for Heterogeneous Disorders",
-          "body": "Nature Machine Intelligence review examines how AI can parse unstructured psychiatric data to support personalized treatment selection. Heterogeneity in psychiatric disease requires interpretable AI that clinicians trust—a critical gap between algorithm performance and clinical utility.",
+          "headline": "Psychiatric AI Decision Support Requires Heterogeneity-Aware Clinical Validation Strategy",
+          "body": "Nature Machine Intelligence publication emphasizes psychiatric disorders' heterogeneity and necessity for AI systems to interpret unstructured clinical data, signaling regulatory expectation that mental health AI must demonstrate stratification capability. This directly impacts EMA/FDA submissions for psychiatry-indication AI software. Strategy implication: psychiatric AI validation must include subgroup performance analysis and demonstrate interpretability of decision logic across diagnostic heterogeneity.",
           "sourceIndices": [
             0
           ],
@@ -390,72 +239,8 @@
           ]
         },
         {
-          "headline": "Gene-Level Gut Microbiome Signatures Predict Immune Checkpoint Inhibitor Response",
-          "body": "Multi-cancer analysis identifies gene-level microbiome features associated with immunotherapy response, enabling prospective patient stratification. This biomarker approach supports precision oncology trial design and enrichment strategies.",
-          "sourceIndices": [
-            8
-          ],
-          "sources": [
-            {
-              "title": "Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types",
-              "source": "Gut Microbes",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42026803/",
-              "date": "2026-12-31",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Glucocorticoids in Acute Decompensated Heart Failure: Systematic Review Protocol",
-          "body": "Protocol for meta-analysis and trial sequential analysis examines glucocorticoid efficacy and safety in acute heart failure. Systematic reviews like this inform clinical practice and highlight evidence gaps for potential future trials.",
-          "sourceIndices": [
-            9
-          ],
-          "sources": [
-            {
-              "title": "Glucocorticoids for Patients With Acute Decompensated Heart Failure: A Protocol for a Systematic Review With Meta-Analysis and Trial Sequential Analysis",
-              "source": "Acta Anaesthesiol Scand",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42171507/",
-              "date": "2026-07-23",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Highly Sensitive m6A Electrochemical Biosensor Using Laser-Induced Graphene",
-          "body": "Novel biosensor detects N6-methyladenosine with high sensitivity using DNA nanostructures on graphene electrodes. This technique enables rapid RNA modification profiling, supporting biomarker discovery in cancer and other diseases.",
-          "sourceIndices": [
-            10
-          ],
-          "sources": [
-            {
-              "title": "Highly sensitive m6A electrochemical biosensor based on laser-induced graphene electrodes functionalized with DNA tetrahedron/gold-antibody nanoparticle",
-              "source": "Anal Chim Acta",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42108061/",
-              "date": "2026-07-15",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "GWAS Risk Genes for Major Depression: In Vivo AAV-Perturb-seq Transcriptomic Profiling",
-          "body": "Large-scale in vivo perturbation studies map GWAS-linked depression risk genes to transcriptomic features in native neuronal tissue. This bridges the gap between genetic association and functional mechanism, informing CNS drug target selection.",
-          "sourceIndices": [
-            23
-          ],
-          "sources": [
-            {
-              "title": "Linking gwas risk genes to transcriptional features of major depressive disorder via in vivo perturb-seq",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41588-026-02638-3",
-              "date": "2026-06-10",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Real-World Efficacy and Safety of Fexuprazan in GERD: Post-Marketing Surveillance",
-          "body": "Interim post-marketing surveillance analysis evaluates novel proton pump inhibitor efficacy and safety in clinical practice. Real-world data complements randomized trial evidence and informs ongoing safety monitoring.",
+          "headline": "Real-World Data on Fexuprazan Gastroesophageal Reflux Disease Efficacy Now Available",
+          "body": "Post-marketing surveillance interim analysis of fexuprazan demonstrates real-world safety/efficacy signal in GERD populations, providing evidence for label expansion or pediatric indication assessment. This exemplifies regulatory reliance on RWD to support pharmacovigilance and indication extension decisions. Implication: companies must design post-authorization surveillance protocols aligned with EMA's Real-World Evidence framework to support iterative indication development.",
           "sourceIndices": [
             24
           ],
@@ -470,65 +255,49 @@
           ]
         },
         {
-          "headline": "Pleiotropic Shared Heritability Quantifies Cross-Disease Genetic Overlap",
-          "body": "Method for estimating shared genetic variance between target and auxiliary diseases reveals complex polygenic architecture. Understanding pleiotropy informs patient stratification strategies and informs comorbidity-aware trial design.",
+          "headline": "Pharmacokinetic-Pharmacodynamic Optimization Essential for Neutropenic Sepsis Therapy",
+          "body": "Comprehensive review of PK/PD optimization strategies in neutropenic sepsis establishes clinical evidence base for dosing/administration optimization beyond standard labeling. This supports regulatory arguments for population-specific dosing strategies and therapeutic drug monitoring guidance in critical care. Implication: Phase IV pharmacokinetics studies should address PK/PD relationships in immunocompromised populations to support label improvements.",
           "sourceIndices": [
-            27
+            17
           ],
           "sources": [
             {
-              "title": "Pleiotropic shared heritability quantifies the shared genetic variance of common diseases",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41588-026-02607-w",
-              "date": "2026-06-09",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Spatially Conserved Salt Bridges in Proteins: Structural Characteristics and Function",
-          "body": "Systematic analysis of salt bridge conservation across protein structures identifies functional motifs and stability determinants. This knowledge supports rational design of protein therapeutics and variants with improved stability.",
-          "sourceIndices": [
-            28
-          ],
-          "sources": [
-            {
-              "title": "The Systematic Study of Spatially Conserved Salt Bridges in Protein",
-              "source": "J Chem Inf Model",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42253053/",
-              "date": "2026-06-08",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Ten-Year Trends in Type 2 Diabetes: Glycemic Control and Pharmacotherapy Patterns",
-          "body": "Descriptive analysis of statewide diabetes management trends reveals shifts in medication use and control outcomes over a decade. Longitudinal real-world data informs therapeutic guidelines and identifies gaps in patient outcomes.",
-          "sourceIndices": [
-            29
-          ],
-          "sources": [
-            {
-              "title": "Long-Term Glycemic Control and Pharmacotherapy in Type 2 Diabetes Mellitus: A Descriptive Analysis of 10-Year Trends in a Statewide Sample",
-              "source": "J Diabetes Res",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42252767/",
-              "date": "2026-06-08",
-              "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "Comparative Parkinson's Subtypes: Clinical, Pathological, and Data-Driven Classification",
-          "body": "Ten-year follow-up study compares disease progression across clinical, pathological, and machine learning-defined Parkinson's subtypes. Subtype heterogeneity has profound implications for trial design and outcome measure selection in neurodegenerative disease.",
-          "sourceIndices": [
-            16
-          ],
-          "sources": [
-            {
-              "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
-              "source": "NPJ Parkinsons Dis",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
+              "title": "Pharmacokinetic/pharmacodynamic optimization of antimicrobial therapy in neutropenic sepsis: a comprehensive review",
+              "source": "J Chemother",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42286825/",
               "date": "2026-06-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Quantitative Clinical Intrasubject Variability Measurement Methods Now Standardized",
+          "body": "AAPS Journal methodology establishes standardized approaches for measuring individual-level PK parameter variability in clinical studies, addressing long-standing pharmacokinetics measurement gaps. This supports more precise patient-level dosing guidance and personalized medicine claims in regulatory submissions. Implication: companies should integrate individual variability metrics into Phase III protocols to support precision dosing recommendations in prescribing information.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Quantitative Estimation of Clinical Intrasubject Variability of a Pharmacokinetic Parameter",
+              "source": "AAPS J",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42249247/",
+              "date": "2026-06-05",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "DOAC-Associated Interstitial Lung Disease Risk Identified in Japanese Administrative Data",
+          "body": "Case-crossover study using Japanese administrative claims data identifies potential safety signal linking direct oral anticoagulants to acute interstitial lung disease. This signals importance of pharmacoepidemiology approaches using real-world administrative data for safety signal detection. Implication: DOAC manufacturers must proactively engage with health authorities on emerging safety signals identified through RWD analytics to prevent label restrictions.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Direct Oral Anticoagulant Consumption and the Risk of Acute Interstitial Lung Diseases: A Case-Crossover Study Using Japanese Administrative Data",
+              "source": "Pharmacoepidemiol Drug Saf",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42175652/",
+              "date": "2026-06-24",
               "type": "paper"
             }
           ]
@@ -536,13 +305,61 @@
       ]
     },
     {
-      "id": "industry",
-      "title": "Industry & Ecosystem",
-      "icon": "🏢",
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
       "items": [
         {
-          "headline": "Using AI to Revive Failed Drugs: Chemistry Plus Biology Modeling",
-          "body": "Researcher combines computational chemistry, biology, and AI modeling to repurpose therapeutic candidates that failed earlier development. Drug repurposing accelerates time-to-market and reduces development costs—a high-impact strategy for rare disease and precision medicine.",
+          "headline": "ADMET Prediction Accuracy Improves via Integrated Molecular Context Representations",
+          "body": "European Journal of Medicinal Chemistry reports advancement in ADMET modeling through combined structural, geometric, and global molecular context features, enhancing interpretability and predictive performance. This directly addresses bottleneck in lead optimization pipelines where ADMET prediction failures delay candidate selection. Implication: drug discovery teams should evaluate whether updated ADMET tools reduce optimization cycles and support earlier triage of poorly-druggable chemical series.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
+              "source": "Eur J Med Chem",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
+              "date": "2026-07-05",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Electron-Density Point-Cloud Framework Enhances Protein-Ligand Interaction Prediction",
+          "body": "E-CloudBind methodology integrates electron cloud representations with molecular graphs to improve drug-protein interaction prediction robustness across diverse binding modalities. This addresses structural biology's long-standing challenge of modeling transient and allosteric interactions. Implication: structure-based drug design teams can leverage electron-density frameworks to identify cryptic binding sites and optimize binding kinetics beyond traditional docking approaches.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "An electron-density point-cloud framework for robust protein-ligand interaction prediction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-74196-5",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "PBCNet2.0 Enables Accurate Protein-Ligand Binding Affinity Prediction for Probes",
+          "body": "Nature publication demonstrates PBCNet2.0's capability to predict relative affinity changes from ligand modifications, accelerating molecular probe development for research applications. This extends computational chemistry beyond traditional drug discovery toward chemical biology tooling. Implication: companies can leverage probe-optimization AI to identify high-affinity binders for biomarker discovery, supporting patient stratification strategies in clinical development.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41589-026-02241-x",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Driven Drug Repurposing Revives Failed Candidates with Novel Efficacy Profiles",
+          "body": "Nature feature on combining chemistry, biology, and AI modeling for drug revival demonstrates systematic approach to identifying new therapeutic opportunities from discontinued compounds. This addresses portfolio risk by converting sunk R&D investments into novel assets. Implication: companies should implement AI-driven repositioning screens on failed clinical candidates to identify unexpected indication opportunities before full termination.",
           "sourceIndices": [
             22
           ],
@@ -557,56 +374,278 @@
           ]
         },
         {
-          "headline": "Safety and Efficacy of Advanced Combination Therapies in Inflammatory Bowel Disease",
-          "body": "Systematic review and meta-analysis assess combination biologic and small-molecule regimens for IBD. Combination therapy data guides clinical practice and informs future trial designs for inflammatory conditions.",
+          "headline": "Large-Scale In Vivo CRISPR Perturbations Enable Spatially Resolved Screening",
+          "body": "Perturb-dBit technology enables genome-scale CRISPR screens in native tissue environments with spatial resolution, overcoming limitations of cell-culture perturbation studies. This advances target identification in disease-relevant contexts and supports human biology validation. Implication: discovery teams can use spatially-resolved genetic perturbations to identify tissue-specific target dependencies and validate mechanism-of-action hypotheses before clinical advancement.",
           "sourceIndices": [
-            21
+            20
           ],
           "sources": [
             {
-              "title": "Safety and efficacy of advanced combination therapies for treating inflammatory bowel disease in adults: a systematic review and meta-analysis",
-              "source": "BMJ Open Gastroenterol",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42276736/",
+              "title": "Large-scale, spatially resolved panoramic crispr screening in native tissue environments using perturb-dbit",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41587-026-03127-y",
               "date": "2026-06-11",
-              "type": "paper"
+              "type": "news"
             }
           ]
         },
         {
-          "headline": "Hypoxia-Activated Albumin Conjugate for Tumor-Selective Chemotherapy",
-          "body": "Novel drug delivery platform uses host-guest molecular recognition to selectively release chemotherapy in hypoxic tumor microenvironments. This targeting approach may reduce systemic toxicity and improve therapeutic window.",
+          "headline": "FoldDisco Enables Structural Motif Search Across Million-Scale Protein Databases",
+          "body": "FoldDisco methodology permits rapid structural motif identification across massive protein structure databases, accelerating target discovery and off-target prediction. This addresses scalability limitations in traditional sequence-based target assessment. Implication: computational chemistry teams can use structural motif search to identify novel targets with evolutionary conservation supporting mechanism confidence.",
           "sourceIndices": [
-            34
+            37
           ],
           "sources": [
             {
-              "title": "A Hypoxia-Activated Supramolecular Albumin Conjugate for Tumor-Selective Chemotherapy via Host-Guest Recognition and Reductive Drug Release",
-              "source": "ACS Appl Mater Interfaces",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42252796/",
-              "date": "2026-06-07",
-              "type": "paper"
+              "title": "Structural motif search across the protein universe with folddisco",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41587-026-03162-9",
+              "date": "2026-06-05",
+              "type": "news"
             }
           ]
         },
         {
-          "headline": "Multivalent Aptamers: Engineering Strategies and Biomedical Applications",
-          "body": "Review examines contemporary strategies for engineering multivalent aptamers with enhanced binding affinity and selectivity. Aptamer therapeutics represent an emerging modality with potential advantages in specificity and manufacturing.",
+          "headline": "Machine Learning–Based Enhanced Sampling Targets Intrinsically Disordered Protein Regions",
+          "body": "Workflow targeting AR-NTD identifies druggable conformations of intrinsically disordered proteins, addressing historical underdevelopment of therapeutics against this protein class. This expands addressable target space beyond traditionally \"druggable\" domains. Implication: companies should explore disorder-targeting approaches for transcription factors and signaling proteins previously considered undruggable, potentially unlocking high-value targets.",
           "sourceIndices": [
-            35
+            39
           ],
           "sources": [
             {
-              "title": "Multivalent Aptamers: Contemporary Engineering Strategies and Biomedical Applications",
-              "source": "Small",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42252764/",
-              "date": "2026-06-07",
+              "title": "Targeting the intrinsically disordered ar-ntd through a machine learning-based enhanced sampling workflow",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-73863-x",
+              "date": "2026-06-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Conserved Protein Folds Enable Diverse Functional Outcomes via Energetic Logic",
+          "body": "Hydrogen exchange–mass spectrometry reveals that conserved protein folds achieve functional diversity through differential energy landscapes, informing structure-based design strategies. This provides mechanistic foundation for computational design of isoform-selective inhibitors. Implication: structure-based drug design can exploit energetic divergence within conserved folds to achieve selectivity, reducing off-target liabilities.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "Distinct energetic blueprints diversify function of conserved protein folds",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41557-026-02163-0",
+              "date": "2026-06-05",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "AI-Augmented Decision Making in Psychiatry Must Address Diagnostic Heterogeneity",
+          "body": "Nature Machine Intelligence establishes framework for psychiatric AI requiring interpretation of unstructured clinical data and accommodation of diagnostic heterogeneity, setting regulatory precedent for mental health AI validation. Psychiatric disorders' inherent complexity demands AI systems capable of multi-modal data integration and interpretability across diagnostic subgroups. Implication: clinical development teams must design AI validation studies demonstrating performance stratification across diagnostic subtypes and clinical presentation patterns to meet emerging regulatory expectations.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Towards AI-augmented decision making in psychiatry",
+              "source": "Nature Machine Intelligence",
+              "url": "https://www.nature.com/articles/s42256-026-01256-2",
+              "date": "2026-06-12",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "Single-Cell Foundation Models' Performance Dependent on Pretraining Data Scale",
+          "body": "Study evaluates single-cell foundation model performance as function of pretraining dataset size and diversity, identifying critical data dependencies for cellular biology AI. This directly impacts biomarker discovery pipelines relying on single-cell transcriptomics for patient stratification. Implication: companies developing cell-based biomarkers must ensure sufficient training data diversity to support robust predictions across patient populations, tissue types, and disease states.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03120-y",
+              "date": "2026-06-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Disease-Centric Vision-Language Model Advances Renal Mass Classification in Oncology",
+          "body": "RenalCLIP foundation model integrates imaging and clinical data for non-invasive renal mass characterization, addressing critical unmet need in urologic oncology. This exemplifies precision oncology AI's potential to improve diagnostic accuracy and staging precision. Implication: clinical development teams should explore multimodal foundation models for indication-specific diagnostic support, particularly in oncology where imaging interpretation remains subjective.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "A disease-centric vision-language foundation model for precision oncology in kidney cancer",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-74175-w",
+              "date": "2026-06-08",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "Gene-Level Gut Microbiome Signatures Predict Checkpoint Inhibitor Immunotherapy Response",
+          "body": "Gut microbiome biomarkers identified as predictive of immune checkpoint inhibitor efficacy across multiple cancer types, supporting mechanism-based patient stratification. This advances real-world implementation of precision oncology beyond genomic biomarkers. Implication: immunotherapy developers should incorporate microbiome characterization into basket trial designs and consider microbiome-targeted interventions to enhance responder populations.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types",
+              "source": "Gut Microbes",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42026803/",
+              "date": "2026-12-31",
               "type": "paper"
             }
           ]
         },
         {
-          "headline": "MEMORIAS Study: Mobile Team Impact on Medication Exposure in Alzheimer's",
-          "body": "Theoretical impact analysis of specialized geriatric dementia teams on medication management in community settings. Results inform service delivery models and medication safety interventions for older populations.",
+          "headline": "AI Accelerates Antibiotic Discovery Against Emerging Resistance Threats",
+          "body": "Suite of AI tools demonstrates capability to expedite antibiotic development addressing antimicrobial resistance crisis. AI-driven screening and optimization can compress discovery timelines and identify novel chemical scaffolds against resistant pathogens. Implication: anti-infective developers should integrate AI-enabled screening to accelerate candidate identification, particularly for Gram-negative pathogens and drug-resistant organisms where pipeline gaps persist.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "AI is taking on antibiotic resistance — here’s how",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-01818-9",
+              "date": "2026-06-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Long-Term Type 2 Diabetes Glycemic Control and Medication Trends Analyzed Over 10 Years",
+          "body": "Statewide descriptive analysis characterizes decade-long trends in glycemic control and medication utilization patterns in type 2 diabetes populations. This real-world evidence documents treatment intensification patterns and pharmacotherapy evolution. Implication: diabetes drug developers should use similar RWD analyses to understand therapeutic sequencing patterns, identify treatment gaps, and position novel agents within evolving standard-of-care algorithms.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Long-Term Glycemic Control and Pharmacotherapy in Type 2 Diabetes Mellitus: A Descriptive Analysis of 10-Year Trends in a Statewide Sample",
+              "source": "J Diabetes Res",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42252767/",
+              "date": "2026-06-08",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Proteomic Prediction of APOL1-Associated Kidney Disease via Plasma Biomarkers",
+          "body": "Proteomic signatures enable prediction of APOL1-associated kidney disease risk, demonstrating plasma biomarker utility for precision nephrology. This supports development of accessible screening tools for high-risk populations without requiring genetic testing. Implication: biomarker development teams should integrate proteomic profiling into patient stratification strategies, particularly for genetically-driven diseases where plasma signatures can enable non-invasive screening.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Proteomic prediction of apol1-associated kidney disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02650-7",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Parkinson's Disease Progression Subtypes Converge Across Clinical, Pathological Data Approaches",
+          "body": "10-year longitudinal study demonstrates convergence between clinical subtypes, pathological classifications, and data-driven stratification in Parkinson's disease progression. This validates that disease heterogeneity can be captured through multiple independent classification approaches. Implication: neurodegenerative disease developers should integrate multi-modal stratification approaches (clinical + biomarker + AI-derived) to ensure robust patient selection and enrichment in trial designs.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
+              "source": "NPJ Parkinsons Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
+              "date": "2026-06-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Pleiotropic Shared Heritability Quantifies Genetic Variance Across Common Diseases",
+          "body": "PHBC methodology estimates genetic variance shared across auxiliary diseases, enabling identification of common pathways and therapeutic opportunities across disease boundaries. This supports polygenic risk factor assessment and cross-indication development strategies. Implication: development teams should leverage pleiotropic heritability analysis to identify patient populations at simultaneous risk for multiple indications, enabling multi-indication trial designs.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Pleiotropic shared heritability quantifies the shared genetic variance of common diseases",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02607-w",
+              "date": "2026-06-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Host Genetic Loci Linked to Vaginal Microbiome Variation Across Populations",
+          "body": "Metagenomics and GWAS identify population-specific vaginal microbiome variation and host genetic loci controlling microbial composition. This demonstrates microbiome-host interaction genetics' importance for reproductive health precision medicine. Implication: women's health developers should incorporate host genetic and microbiome profiling into patient stratification, particularly for reproductive conditions where microbiota dysbiosis contributes to pathogenesis.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Genomic landscape of the human vaginal microbiome is linked to host genetics and population of origin",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02639-2",
+              "date": "2026-06-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Knowledge Distillation Enables Efficient NER in Traditional Chinese Medicine Documentation",
+          "body": "Knowledge distillation methodology for named entity recognition in TCM text demonstrates efficient AI application to non-English clinical documentation. This addresses global health documentation challenges and supports international clinical trial recruitment. Implication: multinational trial sponsors should invest in AI-driven documentation standardization across linguistic and medical tradition boundaries to enable real-time clinical data integration.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Knowledge distillation for named entity recognition in traditional chinese medicine",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-56313-y",
+              "date": "2026-06-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Gender Data Gaps in AI Training Create Systematic Representation Bias",
+          "body": "Analysis of AI gender bias emphasizes foundational data representation problems rather than algorithmic issues alone, requiring upstream data curation solutions. This addresses systematic underrepresentation of women in clinical and research datasets. Implication: clinical development teams must audit training data demographics for AI tools used in patient stratification and ensure adequate representation of historically underrepresented populations to prevent regulatory rejection.",
+          "sourceIndices": [
+            48
+          ],
+          "sources": [
+            {
+              "title": "The gender data gap and the need for representation in AI",
+              "source": "TechRadar",
+              "url": "https://www.techradar.com/pro/the-gender-data-gap-and-the-need-for-representation-in-ai",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Specialized Mobile Teams Reduce Medication Exposure in Community Elderly with Dementia",
+          "body": "MEMORIAS study investigates theoretical impact of dedicated mobile teams on polypharmacy reduction in community-dwelling older adults with Alzheimer's/related dementias. This supports healthcare system interventions targeting medication safety in vulnerable populations. Implication: geriatric developers should design studies demonstrating deprescribing-compatible efficacy profiles and safety in polypharmacy contexts, accounting for multimorbid elderly population realities.",
           "sourceIndices": [
             36
           ],
@@ -621,255 +660,25 @@
           ]
         },
         {
-          "headline": "Three-Dimensional Cancer Models: Biology, Mechanisms, and Personalized Approaches",
-          "body": "Review examines 3D organoid and tissue engineering platforms for understanding tumor behavior and testing therapeutics. These models bridge the gap between 2D cell culture and in vivo efficacy, supporting more predictive preclinical development.",
+          "headline": "Hypoxia-Activated Albumin Conjugate Enables Tumor-Selective Chemotherapy Delivery",
+          "body": "Supramolecular drug delivery platform using host-guest recognition achieves selective tumor chemotherapy activation via reductive drug release. This advances targeted delivery science beyond passive targeting toward environment-responsive mechanisms. Implication: oncology developers should explore bioresponsive delivery platforms to reduce systemic toxicity, particularly relevant for companion diagnostic codevelopment strategies.",
           "sourceIndices": [
-            40
+            34
           ],
           "sources": [
             {
-              "title": "Deconstructing cancer in 3D: models, mechanisms, and personalized solutions",
-              "source": "Mol Cancer",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42249357/",
-              "date": "2026-06-05",
+              "title": "A Hypoxia-Activated Supramolecular Albumin Conjugate for Tumor-Selective Chemotherapy via Host-Guest Recognition and Reductive Drug Release",
+              "source": "ACS Appl Mater Interfaces",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42252796/",
+              "date": "2026-06-07",
               "type": "paper"
-            }
-          ]
-        },
-        {
-          "headline": "OpenAI Establishes Madrid Office to Expand European Footprint",
-          "body": "Strategic European office opening signals OpenAI's commitment to scaling frontier AI services and regulatory engagement in the EU. For pharma, this underscores the likelihood of increased availability of advanced AI models and localized regulatory guidance.",
-          "sourceIndices": [
-            46
-          ],
-          "sources": [
-            {
-              "title": "Openai opens madrid office to enhance chatgpt expansion in europe",
-              "source": "Crypto Briefing",
-              "url": "https://cryptobriefing.com/openai-madrid-office-europe-expansion/",
-              "date": "2026-06-12",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "OpenAI Engages 'Constructively' With State Attorneys General Investigations",
-          "body": "OpenAI faces coalition investigation by state AGs regarding safety and compliance concerns. Regulatory scrutiny of AI providers will likely influence pharma's AI vendor risk assessments and contractual safeguard requirements.",
-          "sourceIndices": [
-            43
-          ],
-          "sources": [
-            {
-              "title": "Openai says it's engaging 'constructively' with state ags about concerns",
-              "source": "CNBC",
-              "url": "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html",
-              "date": "2026-06-13",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "SGLT2 Inhibition Reduces Heart Failure Hospitalization in Genetic Risk Carriers",
-          "body": "Whole-exome sequencing analysis demonstrates dapagliflozin benefit in cardiomyopathy-associated variant carriers. Stratification by genetic risk expands the precision medicine use case for SGLT2 inhibitors.",
-          "sourceIndices": [
-            31
-          ],
-          "sources": [
-            {
-              "title": "Effects of sglt2 inhibition on incident heart failure in carriers of cardiomyopathy-associated genetic variants",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41591-026-04439-x",
-              "date": "2026-06-08",
-              "type": "news"
-            }
-          ]
-        },
-        {
-          "headline": "Knowledge Distillation for Named Entity Recognition in Traditional Chinese Medicine",
-          "body": "Application of knowledge distillation techniques to extract clinical entities from TCM texts enables data integration. This bridges traditional and Western medicine data sources, relevant for global pharma operations.",
-          "sourceIndices": [
-            32
-          ],
-          "sources": [
-            {
-              "title": "Knowledge distillation for named entity recognition in traditional chinese medicine",
-              "source": "Nature.com",
-              "url": "https://www.nature.com/articles/s41598-026-56313-y",
-              "date": "2026-06-08",
-              "type": "news"
             }
           ]
         }
       ]
     }
   ],
-  "pharmaFocus": {
-    "headline": "Pharma & Drug Development — What It Means",
-    "standfirst": "Frontier foundation models now outperform specialized clinical AI, multimodal biomarkers are reshaping precision medicine trial design, and real-world data increasingly validates post-market safety—pharma must urgently reassess AI validation frameworks, biomarker strategies, and pharmacovigilance infrastructure to maintain competitive and regulatory advantage.",
-    "items": [
-      {
-        "headline": "Frontier LLMs Outperform Specialized Clinical AI: Procurement and Validation Implications",
-        "body": "Pharma must re-evaluate custom clinical AI investments in light of frontier model superiority. Organizations should establish rigorous validation frameworks for off-the-shelf models in GxP environments, including traceability, interpretability, and regulatory alignment. The implication: reduce dependence on proprietary clinical AI tools and invest instead in integration, validation, and governance of frontier models.",
-        "sourceIndices": [
-          5
-        ],
-        "sources": [
-          {
-            "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
-            "source": "Nature.com",
-            "url": "https://www.nature.com/articles/s41591-026-04431-5",
-            "date": "2026-06-12",
-            "type": "ainews"
-          }
-        ]
-      },
-      {
-        "headline": "AI-Augmented Psychiatry: Precision Treatment for Heterogeneous Psychiatric Disease",
-        "body": "CNS drug developers must prioritize AI-enabled patient stratification and mechanism-of-action confirmation for psychiatric indications. Heterogeneous psychiatric disorders require interpretable AI to support clinician trust and personalized dose/duration regimens. Future trials should embed AI-driven phenotyping to identify molecular subtypes.",
-        "sourceIndices": [
-          0
-        ],
-        "sources": [
-          {
-            "title": "Towards AI-augmented decision making in psychiatry",
-            "source": "Nature Machine Intelligence",
-            "url": "https://www.nature.com/articles/s42256-026-01256-2",
-            "date": "2026-06-12",
-            "type": "ainews"
-          }
-        ]
-      },
-      {
-        "headline": "Microbiome Biomarkers Predict Immunotherapy Response: Enrichment and Stratification Strategy",
-        "body": "Oncology trial designers should incorporate baseline microbiome profiling to enable patient enrichment strategies and stratified analysis. Gene-level microbiome signatures offer non-invasive, predictive biomarkers for immune checkpoint inhibitor response. This supports precision enrollment and improves trial power.",
-        "sourceIndices": [
-          8
-        ],
-        "sources": [
-          {
-            "title": "Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types",
-            "source": "Gut Microbes",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/42026803/",
-            "date": "2026-12-31",
-            "type": "paper"
-          }
-        ]
-      },
-      {
-        "headline": "Vision-Language Models Enable Disease-Centric Precision Oncology Assessment",
-        "body": "RenalCLIP and similar multimodal foundation models enable non-invasive tumor assessment, reducing biopsy burden and enabling repeated imaging-based monitoring. Pharma can leverage these models for biomarker discovery and treatment response assessment in oncology trials.",
-        "sourceIndices": [
-          7
-        ],
-        "sources": [
-          {
-            "title": "A disease-centric vision-language foundation model for precision oncology in kidney cancer",
-            "source": "Nature.com",
-            "url": "https://www.nature.com/articles/s41467-026-74175-w",
-            "date": "2026-06-08",
-            "type": "ainews"
-          }
-        ]
-      },
-      {
-        "headline": "Real-World Evidence from Post-Marketing Surveillance Strengthens Safety Profiles",
-        "body": "Post-marketing surveillance for novel agents like fexuprazan now routinely generates real-world efficacy and safety data that complements randomized trials. Pharma should establish automated systems to capture and analyze real-world data for regulatory updates, label optimization, and competitive positioning.",
-        "sourceIndices": [
-          24
-        ],
-        "sources": [
-          {
-            "title": "Real-World Data on the Efficacy and Safety of Fexuprazan in Patients with Gastroesophageal Reflux Disease: Interim Analysis of Post-Marketing Surveillance",
-            "source": "Gut Liver",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/42270329/",
-            "date": "2026-06-10",
-            "type": "paper"
-          }
-        ]
-      },
-      {
-        "headline": "ADMET Prediction Models Improve Regulatory Submission Quality and Confidence",
-        "body": "Interpretable ADMET models integrating structural and global molecular context enable pharma to strengthen the scientific narrative in CTD sections 2.3 and 2.7. Improved predictions reduce late-stage development risk and accelerate regulatory approval timelines.",
-        "sourceIndices": [
-          11
-        ],
-        "sources": [
-          {
-            "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
-            "source": "Eur J Med Chem",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
-            "date": "2026-07-05",
-            "type": "paper"
-          }
-        ]
-      },
-      {
-        "headline": "Quantitative Intrasubject PK Variability: Natural Variation in Clinical Studies",
-        "body": "Understanding and quantifying natural pharmacokinetic variability within individual subjects improves trial design and population PK analysis robustness. This knowledge informs dose individualization strategies and supports precision dosing claims.",
-        "sourceIndices": [
-          41
-        ],
-        "sources": [
-          {
-            "title": "Quantitative Estimation of Clinical Intrasubject Variability of a Pharmacokinetic Parameter",
-            "source": "AAPS J",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/42249247/",
-            "date": "2026-06-05",
-            "type": "paper"
-          }
-        ]
-      },
-      {
-        "headline": "ELARA Trial Design: Phase 3b Open-Label Efficacy in Retinal Disease",
-        "body": "Aflibercept 8 mg phase 3b trial in previously treated neovascular AMD and DME demonstrates the regulatory pathway for optimized dosing. Open-label designs for advanced therapies may accelerate market access when supported by robust phase 2 blinded data.",
-        "sourceIndices": [
-          42
-        ],
-        "sources": [
-          {
-            "title": "Infographic: Study design for ELARA, an open-label, phase 3b trial of aflibercept 8 mg in previously treated patients with neovascular age-related macular degeneration or diabetic macular edema",
-            "source": "Eye (Lond)",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/42249143/",
-            "date": "2026-06-05",
-            "type": "paper"
-          }
-        ]
-      },
-      {
-        "headline": "GWAS-to-Function Mapping in CNS: In Vivo Perturbation and Transcriptomics",
-        "body": "In vivo AAV-Perturb-seq enables direct mapping of GWAS-linked depression risk genes to transcriptomic features in native neural tissue. This approach accelerates target validation and mechanism confirmation for CNS drug candidates, reducing preclinical attrition.",
-        "sourceIndices": [
-          23
-        ],
-        "sources": [
-          {
-            "title": "Linking gwas risk genes to transcriptional features of major depressive disorder via in vivo perturb-seq",
-            "source": "Nature.com",
-            "url": "https://www.nature.com/articles/s41588-026-02638-3",
-            "date": "2026-06-10",
-            "type": "news"
-          }
-        ]
-      },
-      {
-        "headline": "Genetic Risk Stratification Expands SGLT2i Precision Medicine Utility Beyond Diabetes",
-        "body": "Dapagliflozin benefit in cardiomyopathy-associated variant carriers demonstrates the value of genetic stratification in expanding therapeutic indications. Future trials should incorporate whole-exome sequencing to identify genetically defined subpopulations for precision medicine claims.",
-        "sourceIndices": [
-          31
-        ],
-        "sources": [
-          {
-            "title": "Effects of sglt2 inhibition on incident heart failure in carriers of cardiomyopathy-associated genetic variants",
-            "source": "Nature.com",
-            "url": "https://www.nature.com/articles/s41591-026-04439-x",
-            "date": "2026-06-08",
-            "type": "news"
-          }
-        ]
-      }
-    ]
-  },
-  "editorNote": "The overarching theme this week is the maturation of AI as a foundational research and regulatory tool: frontier language models now exceed purpose-built clinical systems, multimodal biomarkers are reshaping trial design, and real-world data is becoming a legitimate regulatory evidence source. For senior pharma and regulatory professionals, the strategic imperative is to reassess AI governance frameworks, biomarker strategies, and pharmacovigilance infrastructure to align with this new landscape. Organizations that move quickly to validate frontier models and embed biomarker-driven precision medicine will maintain competitive advantage; those that cling to legacy AI procurement strategies will fall behind. Regulatory readiness is not optional—it is now central to development velocity and market access.",
+  "editorNote": "This week crystallizes two critical inflection points: (1) frontier LLMs' superiority over specialized clinical AI tools demands immediate reassessment of technology investment strategies and regulatory validation frameworks—organizations cannot assume domain-specific optimization ensures competitive advantage; (2) regulatory jurisdictions globally (FDA, EU, Canada, Indonesia) are moving toward granular, context-specific AI governance rather than blanket prohibition, requiring pharmaceutical companies to implement regionally-differentiated compliance strategies. The convergence signals that general-purpose AI models will increasingly mediate clinical evidence generation and regulatory submissions, mandating rigorous validation of frontier model outputs and transparent communication of guardrail architecture to regulators—this is no longer speculative; it is immediate operational reality.",
   "allSources": [
     {
       "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
@@ -879,67 +688,53 @@
       "type": "ainews"
     },
     {
-      "title": "A disease-centric vision-language foundation model for precision oncology in kidney cancer",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41467-026-74175-w",
-      "date": "2026-06-08",
-      "type": "ainews"
-    },
-    {
-      "title": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41592-026-03120-y",
-      "date": "2026-06-09",
-      "type": "news"
-    },
-    {
-      "title": "An electron-density point-cloud framework for robust protein-ligand interaction prediction",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41467-026-74196-5",
-      "date": "2026-06-11",
-      "type": "news"
-    },
-    {
-      "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41589-026-02241-x",
-      "date": "2026-06-12",
-      "type": "news"
-    },
-    {
-      "title": "AI is taking on antibiotic resistance — here’s how",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/d41586-026-01818-9",
-      "date": "2026-06-08",
-      "type": "news"
-    },
-    {
-      "title": "Targeting the intrinsically disordered ar-ntd through a machine learning-based enhanced sampling workflow",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41467-026-73863-x",
-      "date": "2026-06-05",
-      "type": "news"
-    },
-    {
-      "title": "Structural motif search across the protein universe with folddisco",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41587-026-03162-9",
-      "date": "2026-06-05",
-      "type": "news"
-    },
-    {
-      "title": "Distinct energetic blueprints diversify function of conserved protein folds",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41557-026-02163-0",
-      "date": "2026-06-05",
-      "type": "news"
-    },
-    {
       "title": "Scientists have a bad case of AI fomo, nature poll reveals",
       "source": "Nature.com",
       "url": "https://www.nature.com/articles/d41586-026-01690-7",
       "date": "2026-06-09",
       "type": "ainews"
+    },
+    {
+      "title": "Openai says it's engaging 'constructively' with state ags about concerns",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html",
+      "date": "2026-06-13",
+      "type": "news"
+    },
+    {
+      "title": "Anthropic faces backlash over stricter safeguards on claude model",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/anthropic-backlash-claude-safeguards/",
+      "date": "2026-06-11",
+      "type": "news"
+    },
+    {
+      "title": "Openai opens madrid office to enhance chatgpt expansion in europe",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/openai-madrid-office-europe-expansion/",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Canada introduces legislation to ban social media for children under 16, regulate AI chatbots",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/canada-social-media-ban-children-ai-chatbots/",
+      "date": "2026-06-11",
+      "type": "news"
+    },
+    {
+      "title": "Nvidia hires bruce andrews as head of government affairs in d.c.",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/nvidia-hires-bruce-andrews-government-affairs/",
+      "date": "2026-06-11",
+      "type": "news"
+    },
+    {
+      "title": "Minister highlights urgency of specific AI laws for indonesia",
+      "source": "Antaranews.com",
+      "url": "https://en.antaranews.com/news/418895/minister-highlights-urgency-of-specific-ai-laws-for-indonesia",
+      "date": "2026-06-11",
+      "type": "news"
     },
     {
       "title": "FDA Clears First Over-the-Counter Continuous Glucose Monitor for Children",
@@ -970,17 +765,17 @@
       "type": "news"
     },
     {
-      "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
-      "source": "Eur J Med Chem",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
-      "date": "2026-07-05",
-      "type": "paper"
+      "title": "Towards AI-augmented decision making in psychiatry",
+      "source": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/articles/s42256-026-01256-2",
+      "date": "2026-06-12",
+      "type": "ainews"
     },
     {
-      "title": "Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era",
-      "source": "New Microbes New Infect",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42027758/",
-      "date": "2026-06-25",
+      "title": "Real-World Data on the Efficacy and Safety of Fexuprazan in Patients with Gastroesophageal Reflux Disease: Interim Analysis of Post-Marketing Surveillance",
+      "source": "Gut Liver",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42270329/",
+      "date": "2026-06-10",
       "type": "paper"
     },
     {
@@ -991,6 +786,13 @@
       "type": "paper"
     },
     {
+      "title": "Quantitative Estimation of Clinical Intrasubject Variability of a Pharmacokinetic Parameter",
+      "source": "AAPS J",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42249247/",
+      "date": "2026-06-05",
+      "type": "paper"
+    },
+    {
       "title": "Direct Oral Anticoagulant Consumption and the Risk of Acute Interstitial Lung Diseases: A Case-Crossover Study Using Japanese Administrative Data",
       "source": "Pharmacoepidemiol Drug Saf",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42175652/",
@@ -998,10 +800,31 @@
       "type": "paper"
     },
     {
-      "title": "Proteomic prediction of apol1-associated kidney disease",
+      "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
+      "source": "Eur J Med Chem",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
+      "date": "2026-07-05",
+      "type": "paper"
+    },
+    {
+      "title": "An electron-density point-cloud framework for robust protein-ligand interaction prediction",
       "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41588-026-02650-7",
+      "url": "https://www.nature.com/articles/s41467-026-74196-5",
+      "date": "2026-06-11",
+      "type": "news"
+    },
+    {
+      "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41589-026-02241-x",
       "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "How i use AI to turn failed drugs into new medicines",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-01626-1",
+      "date": "2026-06-10",
       "type": "news"
     },
     {
@@ -1012,17 +835,38 @@
       "type": "news"
     },
     {
-      "title": "Genomic landscape of the human vaginal microbiome is linked to host genetics and population of origin",
+      "title": "Structural motif search across the protein universe with folddisco",
       "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41588-026-02639-2",
-      "date": "2026-06-11",
+      "url": "https://www.nature.com/articles/s41587-026-03162-9",
+      "date": "2026-06-05",
       "type": "news"
     },
     {
-      "title": "Towards AI-augmented decision making in psychiatry",
-      "source": "Nature Machine Intelligence",
-      "url": "https://www.nature.com/articles/s42256-026-01256-2",
-      "date": "2026-06-12",
+      "title": "Targeting the intrinsically disordered ar-ntd through a machine learning-based enhanced sampling workflow",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-73863-x",
+      "date": "2026-06-05",
+      "type": "news"
+    },
+    {
+      "title": "Distinct energetic blueprints diversify function of conserved protein folds",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41557-026-02163-0",
+      "date": "2026-06-05",
+      "type": "news"
+    },
+    {
+      "title": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03120-y",
+      "date": "2026-06-09",
+      "type": "news"
+    },
+    {
+      "title": "A disease-centric vision-language foundation model for precision oncology in kidney cancer",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-74175-w",
+      "date": "2026-06-08",
       "type": "ainews"
     },
     {
@@ -1033,31 +877,31 @@
       "type": "paper"
     },
     {
-      "title": "Glucocorticoids for Patients With Acute Decompensated Heart Failure: A Protocol for a Systematic Review With Meta-Analysis and Trial Sequential Analysis",
-      "source": "Acta Anaesthesiol Scand",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42171507/",
-      "date": "2026-07-23",
-      "type": "paper"
-    },
-    {
-      "title": "Highly sensitive m6A electrochemical biosensor based on laser-induced graphene electrodes functionalized with DNA tetrahedron/gold-antibody nanoparticle",
-      "source": "Anal Chim Acta",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42108061/",
-      "date": "2026-07-15",
-      "type": "paper"
-    },
-    {
-      "title": "Linking gwas risk genes to transcriptional features of major depressive disorder via in vivo perturb-seq",
+      "title": "AI is taking on antibiotic resistance — here’s how",
       "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41588-026-02638-3",
-      "date": "2026-06-10",
+      "url": "https://www.nature.com/articles/d41586-026-01818-9",
+      "date": "2026-06-08",
       "type": "news"
     },
     {
-      "title": "Real-World Data on the Efficacy and Safety of Fexuprazan in Patients with Gastroesophageal Reflux Disease: Interim Analysis of Post-Marketing Surveillance",
-      "source": "Gut Liver",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42270329/",
-      "date": "2026-06-10",
+      "title": "Long-Term Glycemic Control and Pharmacotherapy in Type 2 Diabetes Mellitus: A Descriptive Analysis of 10-Year Trends in a Statewide Sample",
+      "source": "J Diabetes Res",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42252767/",
+      "date": "2026-06-08",
+      "type": "paper"
+    },
+    {
+      "title": "Proteomic prediction of apol1-associated kidney disease",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02650-7",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
+      "source": "NPJ Parkinsons Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
+      "date": "2026-06-12",
       "type": "paper"
     },
     {
@@ -1068,87 +912,10 @@
       "type": "news"
     },
     {
-      "title": "The Systematic Study of Spatially Conserved Salt Bridges in Protein",
-      "source": "J Chem Inf Model",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42253053/",
-      "date": "2026-06-08",
-      "type": "paper"
-    },
-    {
-      "title": "Long-Term Glycemic Control and Pharmacotherapy in Type 2 Diabetes Mellitus: A Descriptive Analysis of 10-Year Trends in a Statewide Sample",
-      "source": "J Diabetes Res",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42252767/",
-      "date": "2026-06-08",
-      "type": "paper"
-    },
-    {
-      "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
-      "source": "NPJ Parkinsons Dis",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
-      "date": "2026-06-12",
-      "type": "paper"
-    },
-    {
-      "title": "How i use AI to turn failed drugs into new medicines",
+      "title": "Genomic landscape of the human vaginal microbiome is linked to host genetics and population of origin",
       "source": "Nature.com",
-      "url": "https://www.nature.com/articles/d41586-026-01626-1",
-      "date": "2026-06-10",
-      "type": "news"
-    },
-    {
-      "title": "Safety and efficacy of advanced combination therapies for treating inflammatory bowel disease in adults: a systematic review and meta-analysis",
-      "source": "BMJ Open Gastroenterol",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42276736/",
+      "url": "https://www.nature.com/articles/s41588-026-02639-2",
       "date": "2026-06-11",
-      "type": "paper"
-    },
-    {
-      "title": "A Hypoxia-Activated Supramolecular Albumin Conjugate for Tumor-Selective Chemotherapy via Host-Guest Recognition and Reductive Drug Release",
-      "source": "ACS Appl Mater Interfaces",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42252796/",
-      "date": "2026-06-07",
-      "type": "paper"
-    },
-    {
-      "title": "Multivalent Aptamers: Contemporary Engineering Strategies and Biomedical Applications",
-      "source": "Small",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42252764/",
-      "date": "2026-06-07",
-      "type": "paper"
-    },
-    {
-      "title": "Theoretical impact of a mobile team dedicated to patients with Alzheimer's disease and related dementias on medication exposure in community-dwelling older patients (MEMORIAS study)",
-      "source": "BMC Geriatr",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42249271/",
-      "date": "2026-06-06",
-      "type": "paper"
-    },
-    {
-      "title": "Deconstructing cancer in 3D: models, mechanisms, and personalized solutions",
-      "source": "Mol Cancer",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42249357/",
-      "date": "2026-06-05",
-      "type": "paper"
-    },
-    {
-      "title": "Openai opens madrid office to enhance chatgpt expansion in europe",
-      "source": "Crypto Briefing",
-      "url": "https://cryptobriefing.com/openai-madrid-office-europe-expansion/",
-      "date": "2026-06-12",
-      "type": "news"
-    },
-    {
-      "title": "Openai says it's engaging 'constructively' with state ags about concerns",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html",
-      "date": "2026-06-13",
-      "type": "news"
-    },
-    {
-      "title": "Effects of sglt2 inhibition on incident heart failure in carriers of cardiomyopathy-associated genetic variants",
-      "source": "Nature.com",
-      "url": "https://www.nature.com/articles/s41591-026-04439-x",
-      "date": "2026-06-08",
       "type": "news"
     },
     {
@@ -1159,17 +926,24 @@
       "type": "news"
     },
     {
-      "title": "Quantitative Estimation of Clinical Intrasubject Variability of a Pharmacokinetic Parameter",
-      "source": "AAPS J",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42249247/",
-      "date": "2026-06-05",
+      "title": "The gender data gap and the need for representation in AI",
+      "source": "TechRadar",
+      "url": "https://www.techradar.com/pro/the-gender-data-gap-and-the-need-for-representation-in-ai",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Theoretical impact of a mobile team dedicated to patients with Alzheimer's disease and related dementias on medication exposure in community-dwelling older patients (MEMORIAS study)",
+      "source": "BMC Geriatr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42249271/",
+      "date": "2026-06-06",
       "type": "paper"
     },
     {
-      "title": "Infographic: Study design for ELARA, an open-label, phase 3b trial of aflibercept 8 mg in previously treated patients with neovascular age-related macular degeneration or diabetic macular edema",
-      "source": "Eye (Lond)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42249143/",
-      "date": "2026-06-05",
+      "title": "A Hypoxia-Activated Supramolecular Albumin Conjugate for Tumor-Selective Chemotherapy via Host-Guest Recognition and Reductive Drug Release",
+      "source": "ACS Appl Mater Interfaces",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42252796/",
+      "date": "2026-06-07",
       "type": "paper"
     }
   ]
