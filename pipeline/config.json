@@ -196,6 +196,12 @@
     ]
   },
 
+  "source_blacklist": [
+    "Crypto Briefing", "CoinDesk", "Decrypt", "CoinTelegraph", "Bitcoin Magazine",
+    "CoinGecko", "BeInCrypto", "The Block", "CryptoSlate", "Blockworks",
+    "Daily Mail", "New York Post", "The Sun", "The Mirror", "TMZ"
+  ],
+
   "pharma_keywords": [
     "drug discovery", "drug development", "pharmaceutical", "medicinal",
     "clinical trial", "regulatory", "EMA", "FDA", "CHMP", "pharmacovigilance",

@@ -8,8 +8,14 @@
 
   <link rel="canonical" href="https://djindetoss.github.io/pharma-ai-data-watch/digest.html" />
   <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://djindetoss.github.io/pharma-ai-data-watch/digest.html" />
   <meta property="og:title"       content="AI Digest — Pharma AI &amp; Data Watch" />
   <meta property="og:description" content="Monthly AI digest: articles, papers and news at the intersection of AI, pharma and regulation." />
+  <meta property="og:image"       content="https://djindetoss.github.io/pharma-ai-data-watch/og-image.png" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="AI Digest — Pharma AI &amp; Data Watch" />
+  <meta name="twitter:description" content="Monthly AI digest for pharmaceutical and regulatory science professionals." />
+  <meta name="twitter:image"       content="https://djindetoss.github.io/pharma-ai-data-watch/og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -564,6 +570,7 @@
         <div id="digest-hero-badges" class="digest-meta-badges">
           <span class="meta-badge accent" id="badge-count">— articles</span>
           <span class="meta-badge" id="badge-updated">Loading…</span>
+          <span class="meta-badge" id="badge-freshness" title="Time since last pipeline run" style="display:none">🕐 —</span>
         </div>
       </div>
 
@@ -735,6 +742,47 @@
   let searchQuery    = '';
   let digestIndex    = [];
   let currentMonthId = '';
+  let _suppressPush  = false;  // avoid push during programmatic init
+
+  /* ── URL persistence ── */
+  function pushState() {
+    if (_suppressPush) return;
+    const params = new URLSearchParams();
+    if (currentMonthId) params.set('m', currentMonthId);
+    if (activeRel !== 'all') params.set('rel', activeRel);
+    if (activeCats.size > 0) params.set('cat', [...activeCats].sort().join(','));
+    if (searchQuery) params.set('q', searchQuery);
+    const str = params.toString();
+    history.replaceState(null, '', str ? '?' + str : location.pathname);
+  }
+
+  function readUrlState() {
+    const params = new URLSearchParams(location.search);
+    return {
+      month: params.get('m') || null,
+      rel:   params.get('rel') || 'all',
+      cats:  params.get('cat') ? params.get('cat').split(',') : [],
+      q:     params.get('q') || '',
+    };
+  }
+
+  /* ── Freshness ── */
+  function showFreshness(isoDate) {
+    const el = document.getElementById('badge-freshness');
+    if (!el || !isoDate) return;
+    const diff = Date.now() - new Date(isoDate).getTime();
+    const mins  = Math.round(diff / 60000);
+    const hours = Math.round(diff / 3600000);
+    const days  = Math.round(diff / 86400000);
+    let label;
+    if (mins < 60)        label = `${mins}m ago`;
+    else if (hours < 24)  label = `${hours}h ago`;
+    else if (days === 1)  label = 'Yesterday';
+    else                  label = `${days} days ago`;
+    el.textContent = `🕐 Updated ${label}`;
+    el.style.display = '';
+    el.title = `Last pipeline run: ${new Date(isoDate).toLocaleString('en-GB')}`;
+  }
 
   /* ── Helpers ── */
   function fmtDate(iso) {
@@ -858,6 +906,7 @@
     }
     updateCatPillStyles();
     renderArticles();
+    pushState();
   }
 
   function updateCatPillStyles() {
@@ -952,19 +1001,23 @@
       `${currentDigest.articles?.length ?? 0} articles`;
     document.getElementById('badge-updated').textContent =
       `Updated ${fmtDate(currentDigest.generatedAt)}`;
+    showFreshness(currentDigest.generatedAt);
 
-    /* Reset filters */
-    activeCats.clear();
-    searchQuery = '';
-    document.getElementById('digest-search').value = '';
-    document.querySelectorAll('.rel-btn').forEach(b =>
-      b.classList.toggle('active', b.dataset.rel === 'all'));
-    activeRel = 'all';
+    /* Reset filters (unless called from URL restore) */
+    if (!_suppressPush) {
+      activeCats.clear();
+      searchQuery = '';
+      document.getElementById('digest-search').value = '';
+      document.querySelectorAll('.rel-btn').forEach(b =>
+        b.classList.toggle('active', b.dataset.rel === 'all'));
+      activeRel = 'all';
+    }
 
     /* Render */
     renderSignal(sig);
     renderCatPills(currentDigest.articles || []);
     renderArticles();
+    pushState();
 
     /* Highlight active archive item */
     document.querySelectorAll('.archive-item').forEach(el =>
@@ -1009,10 +1062,31 @@
         <span class="archive-count">${e.totalArticles}</span>
       </div>`).join('');
 
-    /* Load most recent digest */
-    const latestId = index[0].id;
-    sel.value = latestId;
-    await loadDigest(latestId);
+    /* Restore from URL or load most recent */
+    const urlState  = readUrlState();
+    const targetId  = (urlState.month && index.find(e => e.id === urlState.month))
+                      ? urlState.month
+                      : index[0].id;
+
+    // Restore filter state from URL before loading (suppress push during restore)
+    _suppressPush = true;
+    if (urlState.rel !== 'all') {
+      activeRel = urlState.rel;
+      document.querySelectorAll('.rel-btn').forEach(b =>
+        b.classList.toggle('active', b.dataset.rel === urlState.rel));
+    }
+    if (urlState.cats.length) {
+      urlState.cats.forEach(c => activeCats.add(c));
+    }
+    if (urlState.q) {
+      searchQuery = urlState.q;
+      document.getElementById('digest-search').value = urlState.q;
+    }
+
+    sel.value = targetId;
+    await loadDigest(targetId);
+    _suppressPush = false;
+    pushState();  // write final clean URL
   }
 
   /* ── Event listeners ── */
@@ -1023,6 +1097,7 @@
   document.getElementById('digest-search').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
     renderArticles();
+    pushState();
   });
 
   document.querySelectorAll('.rel-btn').forEach(btn => {
@@ -1031,6 +1106,7 @@
       document.querySelectorAll('.rel-btn').forEach(b =>
         b.classList.toggle('active', b === btn));
       renderArticles();
+      pushState();
     });
   });
 
@@ -1038,6 +1114,7 @@
     activeCats.clear();
     updateCatPillStyles();
     renderArticles();
+    pushState();
   });
 
   /* ── Boot ── */

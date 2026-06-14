@@ -173,8 +173,17 @@ function toDigestItem(article) {
 
 // ── Select new articles ───────────────────────────────────────────
 // Include: articles in the current month OR ingested in the past 7 days
+// Exclude: future-dated articles (PubMed ahead-of-print) and blacklisted sources
+const today = now.toISOString().split('T')[0]
+const SOURCE_BLACKLIST = new Set([
+  'crypto briefing', 'coindesk', 'decrypt', 'cointelegraph', 'bitcoin magazine',
+  'coingecko', 'beincrypto', 'the block', 'cryptoslate', 'blockworks',
+  'daily mail', 'new york post', 'the sun', 'the mirror', 'tmz',
+])
 const newArticles = allArticles.filter(a => {
   if (existingIds.has(a.id)) return false
+  if ((a.date ?? '') > today) return false   // skip future-dated articles
+  if (SOURCE_BLACKLIST.has((a.source ?? '').toLowerCase())) return false
   const d = a.date ?? ''
   return d.startsWith(digestId) || d >= weekAgoStr
 })

@@ -51,18 +51,22 @@ console.log(`[briefing] ID: ${briefingId}  |  ${weekStart} → ${weekEnd}`)
 // ── Load & filter articles ────────────────────────────────────────
 const allArticles = JSON.parse(readFileSync(ARTICLES, 'utf8'))
 
+// Exclude future-dated articles (PubMed sometimes publishes ahead-of-print)
+const today = now.toISOString().split('T')[0]
+const validArticles = allArticles.filter(a => !a.date || a.date <= today)
+
 // Take articles from the past 14 days — enough content for a weekly brief
 const cutoff = new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-let recent = allArticles.filter(a => a.date >= cutoff)
+let recent = validArticles.filter(a => a.date >= cutoff)
 
 // If sparse (early in pipeline life), use last 30 days
 if (recent.length < 15) {
   const cutoff30 = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-  recent = allArticles.filter(a => a.date >= cutoff30)
+  recent = validArticles.filter(a => a.date >= cutoff30)
 }
 
 // If still sparse, use all articles
-if (recent.length < 10) recent = [...allArticles]
+if (recent.length < 10) recent = [...validArticles]
 
 // Score and rank articles for the briefing
 function briefingScore(a) {
@@ -101,33 +105,111 @@ function cleanExcerpt(text, maxLen = 180) {
   return t.length > maxLen ? t.slice(0, maxLen).replace(/\s\S*$/, '') + '…' : t
 }
 
+// ── Pre-categorize article into 1 of 5 sections (keyword-first) ──
+function preCategorize(article) {
+  const text = [
+    article.title    ?? '',
+    (article.tags    ?? []).join(' '),
+    article.excerpt  ?? '',
+    article.topic    ?? '',
+  ].join(' ').toLowerCase()
+
+  // ainews type → always frontier (AI lab news feed)
+  if (article.type === 'ainews') return 'frontier'
+
+  // Drug discovery (specific lab/chem terms, checked early)
+  if (/drug.discov|admet|molecular.dock|cheminformat|\bsmiles\b|protein.fold|alphafold|rosettafold|drug.design|lead.optim|generative.chem|de.novo.drug|qsar|hit.compound|virtual.screen|medicinal.chem|antibiotic.discov/i.test(text))
+    return 'drug-discovery'
+
+  // Clinical AI (diagnostics / imaging / EHR)
+  if (/\bdiagnos|\bimaging\b|radiolog|patholog|clinical.decision|patient.outcome|medical.imaging|\behr\b|\bemr\b|wearable|pharmacovigilance|adverse.event.detect/i.test(text))
+    return 'clinical-ai'
+
+  // Data governance (EHDS / FHIR / OMOP / interoperability)
+  if (/\behds\b|\bidmp\b|\bfhir\b|\bomop\b|darwin.eu|real.world.dat|rwd\b|interoperab|data.standard|health.data.gov|federated.learn.*health|data.space/i.test(text))
+    return 'data-governance'
+
+  // Regulatory science (EMA / FDA specific)
+  if (/\bema\b|\bfda\b|\bchmp\b|\bich\b|marketing.authoris|\bpsur\b|\bctd\b|\bgmp\b|reflection.paper|post.market.surveil|epar\b|benefit.risk/i.test(text))
+    return 'regulatory'
+
+  // LLM/AI platform keywords → frontier
+  if (/\bllm\b|large.language|transformer|\bgpt\b|foundation.model|ai.agent|ai.safety|openai|anthropic|deepmind|meta.ai|mistral|frontier.ai/i.test(text))
+    return 'frontier'
+
+  // topic field as final fallback (pipeline-assigned, 4 coarse buckets)
+  switch (article.topic) {
+    case 'drug-discovery':  return 'drug-discovery'
+    case 'clinical-ai':     return 'clinical-ai'
+    case 'regulatory':      return 'regulatory'
+    case 'data-governance': return 'data-governance'
+  }
+
+  return 'frontier'  // generic fallback
+}
+
 // ── Build the Haiku prompt ────────────────────────────────────────
+// Articles are PRE-CLASSIFIED by section before sending to Claude.
+// This ensures correct section assignment regardless of article order.
 function buildPrompt(articles) {
+  // 1. Group articles by section (pre-classification)
+  const SECTIONS = ['frontier', 'regulatory', 'drug-discovery', 'clinical-ai', 'data-governance']
+  const groups   = Object.fromEntries(SECTIONS.map(s => [s, []]))
+
+  articles.forEach((a, i) => {
+    const sec = preCategorize(a)
+    groups[sec].push(i)
+  })
+
+  // 2. Build article list with [SECTION] tag prefix so Claude sees the assignment
   const articleList = articles.map((a, i) => {
+    const sec     = preCategorize(a)
     const excerpt = cleanExcerpt(a.excerpt)
-    return `${i}: "${a.title}" | ${a.source} | ${a.date}${excerpt ? ' | ' + excerpt : ''}`
+    return `[${sec.toUpperCase()}] ${i}: "${a.title}" | ${a.source} | ${a.date}${excerpt ? ' | ' + excerpt : ''}`
+  }).join('\n')
+
+  // 3. Summarise index assignments for Claude
+  const assignmentSummary = SECTIONS.map(sec => {
+    const ids = groups[sec]
+    return `  ${sec.padEnd(16)}: [${ids.join(', ')}]  (${ids.length} articles pre-assigned)`
   }).join('\n')
 
   return `You are a senior AI intelligence analyst writing the weekly briefing for European pharmaceutical and regulatory science professionals: regulatory scientists, pharma R&D directors, data coordinators, and clinical development teams.
 
-This portal tracks 4 defined topic domains. Your briefing MUST map each article to one of these 5 sections:
+════════════════════════════════════════
+PRE-CLASSIFIED ARTICLE INDICES BY SECTION
+(derived from keyword analysis — use ONLY the indices shown for each section)
+════════════════════════════════════════
+${assignmentSummary}
 
 SECTION DEFINITIONS:
-1. "frontier"        → Frontier AI & LLMs: new model releases, AI labs (OpenAI/Anthropic/DeepMind/Meta/Mistral), LLM benchmarks, AI agents, AI safety/alignment, foundation models, AI policy/regulation globally
-2. "regulatory"      → Regulatory Science: EMA, FDA, MHRA, ICH guidance, marketing authorisation, AI Act compliance, pharmacovigilance, GMP, PSUR, clinical trial regulations, EU regulatory frameworks
-3. "drug-discovery"  → Drug Discovery AI: ADMET prediction, molecular docking, generative chemistry, protein folding, lead optimisation, QSAR, cheminformatics, drug design, structure-based design, antibiotic discovery
-4. "clinical-ai"     → Clinical AI: AI in diagnostics, radiology/pathology AI, clinical decision support, patient outcome prediction, biomarker discovery, real-world evidence, EHR/EMR AI, clinical trial AI
-5. "data-governance" → Data & Governance: EHDS, IDMP, FHIR, OMOP, Darwin EU, RWD/RWE frameworks, data standards, interoperability, FAIR data, federated learning for health data, health data governance
+1. "frontier"        → Frontier AI & LLMs: model releases, AI labs (OpenAI/Anthropic/DeepMind/Meta/Mistral), LLM benchmarks, AI agents, AI safety/alignment, foundation models, AI policy globally
+2. "regulatory"      → Regulatory Science: EMA, FDA, ICH guidance, marketing authorisation, pharmacovigilance, GMP, PSUR, clinical trial regulations, EU regulatory frameworks
+3. "drug-discovery"  → Drug Discovery AI: ADMET, molecular docking, generative chemistry, protein folding, lead optimisation, QSAR, cheminformatics, antibiotic discovery
+4. "clinical-ai"     → Clinical AI: diagnostics, radiology/pathology AI, clinical decision support, patient outcome prediction, biomarker discovery, EHR/EMR AI
+5. "data-governance" → Data & Governance: EHDS, IDMP, FHIR, OMOP, Darwin EU, RWD/RWE frameworks, data standards, interoperability, federated learning for health data
 
-Analyze the articles below and write an EXHAUSTIVE expert weekly briefing. Return ONLY a valid JSON object — no markdown, no backticks, no extra text.
+════════════════════════════════════════
+WRITING RULES
+════════════════════════════════════════
+- CRITICAL: each section MUST use ONLY the article indices pre-assigned to it above
+- If a section has fewer than 10 pre-assigned articles, fill remaining items using the NEAREST thematically adjacent indices
+- Each section MUST have EXACTLY 10 items
+- Write as a domain expert: implications first, facts second
+- NEVER start headline or body with "This week", "In recent", "The latest", "Recently"
+- Headlines: 8-10 words, declarative, verb-led (e.g. "AlphaFold 3 Accelerates ADMET Screening by 40%")
+- Body: 2-3 sentences answering "What does this mean for my work?"
+- sourceIndices: use valid 0-based indices from the list below
+- Drug Discovery and Clinical AI are SEPARATE sections — never merge them
 
-REQUIRED JSON STRUCTURE:
+Return ONLY valid JSON — no markdown, no backticks, no commentary before or after:
+
 {
   "leadStory": {
     "headline": "10-14 words, declarative, punchy",
-    "standfirst": "One sentence: the single most consequential development this week and why it matters",
-    "body": "3-4 sentences: expert framing, context, implications for pharma/regulatory professionals. Answer 'so what?'",
-    "sourceIndices": [0]
+    "standfirst": "One sentence: the single most consequential development this week and why it matters for pharma/regulatory professionals",
+    "body": "3-4 sentences: expert framing, implications, what changes for practitioners",
+    "sourceIndices": [BEST_INDEX]
   },
   "sections": [
     {
@@ -135,16 +217,8 @@ REQUIRED JSON STRUCTURE:
       "title": "Frontier AI & LLMs",
       "icon": "🤖",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences, direct and expert", "sourceIndices": [1] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [2] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [3] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [4] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [5] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [6] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [7] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [8] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [9] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [10] }
+        { "headline": "8-10 words, verb-led", "body": "2-3 expert sentences", "sourceIndices": [FRONTIER_IDX] },
+        "... (exactly 10 items, using ONLY pre-assigned frontier indices)"
       ]
     },
     {
@@ -152,16 +226,7 @@ REQUIRED JSON STRUCTURE:
       "title": "Regulatory Science",
       "icon": "🏛️",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [11] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [12] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [13] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [14] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [15] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [16] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [17] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [18] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [19] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [20] }
+        "... (exactly 10 items, using ONLY pre-assigned regulatory indices)"
       ]
     },
     {
@@ -169,16 +234,7 @@ REQUIRED JSON STRUCTURE:
       "title": "AI in Drug Discovery",
       "icon": "🧬",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [21] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [22] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [23] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [24] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [25] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [26] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [27] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [28] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [29] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [30] }
+        "... (exactly 10 items, using ONLY pre-assigned drug-discovery indices)"
       ]
     },
     {
@@ -186,16 +242,7 @@ REQUIRED JSON STRUCTURE:
       "title": "Clinical AI",
       "icon": "🔬",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [31] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [32] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [33] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [34] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [35] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [36] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [37] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [38] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [39] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [40] }
+        "... (exactly 10 items, using ONLY pre-assigned clinical-ai indices)"
       ]
     },
     {
@@ -203,34 +250,16 @@ REQUIRED JSON STRUCTURE:
       "title": "Data & Governance",
       "icon": "📊",
       "items": [
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [41] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [42] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [43] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [44] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [45] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [46] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [47] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [48] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [49] },
-        { "headline": "8-10 words", "body": "2-3 sentences", "sourceIndices": [50] }
+        "... (exactly 10 items, using ONLY pre-assigned data-governance indices)"
       ]
     }
   ],
-  "editorNote": "1-2 sentences: the week's overarching theme — what a senior professional needs to remember"
+  "editorNote": "1-2 sentences: the week's overarching theme — what a senior pharma professional needs to remember"
 }
 
-RULES:
-- Write as a domain expert, not a journalist. Implications first, facts second.
-- NEVER start with "This week...", "In recent...", "The latest..."
-- Headlines: declarative, verb-led (e.g. "LLMs Outperform Clinical AI Tools on Diagnostic Benchmarks")
-- sourceIndices must be valid 0-based indices from the articles list below
-- Every item must cite at least one source index
-- EXHAUSTIVE COVERAGE: assign EVERY article to its most relevant section — do not leave articles uncovered
-- Each section MUST have EXACTLY 10 items — the template shows 10 rows, fill them all
-- Body text answers: "What does this mean for my work?"
-- Drug Discovery and Clinical AI are SEPARATE sections — do not merge them
-
-ARTICLES (index | title | source | date | excerpt):
+════════════════════════════════════════
+ARTICLES — format: [SECTION] index: "title" | source | date | excerpt
+════════════════════════════════════════
 ${articleList}`
 }
 

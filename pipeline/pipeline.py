@@ -77,8 +77,9 @@ MIN_SCORE        = CONFIG["settings"]["min_relevance_score"]
 MAX_TOTAL        = CONFIG["settings"]["max_total_articles"]
 DAYS_LOOKBACK    = CONFIG["settings"]["days_lookback"]
 
-PHARMA_KW = [k.lower() for k in CONFIG["pharma_keywords"]]
-AI_KW     = [k.lower() for k in CONFIG["ai_keywords"]]
+PHARMA_KW        = [k.lower() for k in CONFIG["pharma_keywords"]]
+AI_KW            = [k.lower() for k in CONFIG["ai_keywords"]]
+SOURCE_BLACKLIST = {s.lower() for s in CONFIG.get("source_blacklist", [])}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -115,6 +116,17 @@ def load_existing_articles() -> list:
 
 
 def save_articles(articles: list):
+    today = datetime.now().strftime("%Y-%m-%d")
+    # Apply source blacklist and future-date filter
+    before = len(articles)
+    articles = [
+        a for a in articles
+        if a.get("source", "").lower() not in SOURCE_BLACKLIST
+        and (not a.get("date") or a["date"] <= today)
+    ]
+    removed = before - len(articles)
+    if removed:
+        log.info(f"Filtered {removed} articles (blacklisted source or future date)")
     articles_sorted = sorted(articles, key=lambda a: a.get("date", ""), reverse=True)
     articles_trimmed = articles_sorted[:MAX_TOTAL]
     OUTPUT_JSON.write_text(json.dumps(articles_trimmed, indent=2, ensure_ascii=False))
