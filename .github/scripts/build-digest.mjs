@@ -46,6 +46,9 @@ if (existsSync(digestFile)) {
 const existingIds = new Set((existingDigest.articles || []).map(a => a.id))
 
 // ── Category classification (no LLM) ─────────────────────────────
+// Priority: fine-grained keywords FIRST (15 categories), topic field as fallback only.
+// The topic field is too coarse (4 buckets) and would swallow 80% of articles
+// into PHARMA/MEDICINE/REGULATORY/EU DATA, hiding the other 11 categories.
 function categorize(article) {
   const text = [
     article.title    ?? '',
@@ -56,7 +59,66 @@ function categorize(article) {
     article.topic    ?? '',
   ].join(' ').toLowerCase()
 
-  // Topic field from pipeline (most reliable — set by PubMed query config)
+  // ── 1. Specific domain keywords (highest signal, checked first) ────────────
+
+  // Geopolitics & global governance (before EU DATA — more specific)
+  if (/geopolit|\bchina\b|usa.*eu|export.control|\bnato\b|\bg7\b|\bg20\b|military|defense|us.china|taiwan|tech.war|arms.race/i.test(text))
+    return 'GEOPOLITICS'
+
+  // Digital sovereignty (before EU DATA — more specific)
+  if (/sovereignty|souverain|gaia.x|cloud.europ|aleph.alpha|semiconductor|chip.sovereignty|asml|\bimec\b|strategic.autonomy|tech.independence/i.test(text))
+    return 'SOVEREIGNTY'
+
+  // Cybersecurity
+  if (/cybersec|cyberattack|malware|phishing|deepfake|adversarial.attack|red.team|vulnerability|threat.actor|ransomware|data.breach/i.test(text))
+    return 'SECURITY'
+
+  // Ethics & society
+  if (/\bethics\b|ethical.ai|\bbias\b|fairness|privacy.rights|surveillance|discriminat|accountability|transparency.ai|explainab|trustworthy.ai/i.test(text))
+    return 'ETHICS'
+
+  // Environment & climate
+  if (/carbon.footprint|energy.consumption|sustainab|green.ai|environment|climate.change|emissions|net.zero|carbon.neutral/i.test(text))
+    return 'ENVIRONMENT'
+
+  // Economy & labour
+  if (/job.loss|automation.*work|workforce|labour.market|employment.ai|productivity.gain|economic.impact|\bgdp\b|labour.market/i.test(text))
+    return 'ECONOMY'
+
+  // Industry & ecosystem (AI companies, startups, deals, product launches)
+  if (/\bstartup\b|venture.capital|\bvc\b|vc.funding|series.[abcd]|funding.round|market.cap|acquisition|merger|partnership|product.launch|big.tech|openai|anthropic|google.deepmind|meta.ai|mistral|cohere|\bxai\b|hugging.face|nvidia|microsoft.ai/i.test(text))
+    return 'INDUSTRY'
+
+  // Philosophy & AI safety/alignment (before TECHNICAL — specific terms)
+  if (/\bphilosophy\b|consciousness|sentien|\bagi\b|artificial.general|alignment.problem|existential.risk|ai.safety|x.risk|superintelligence/i.test(text))
+    return 'PHILOSOPHY'
+
+  // ── 2. Drug discovery (very specific scientific terms) ────────────────────
+  if (/drug.discov|admet|molecular.dock|cheminformat|\bsmiles\b|protein.fold|alphafold|rosettafold|drug.design|lead.optim|generative.chem|de.novo.drug|qsar|hit.compound|virtual.screening|docking.score|scaffold|medicinal.chem/i.test(text))
+    return 'PHARMA'
+
+  // ── 3. Clinical AI & medicine ─────────────────────────────────────────────
+  if (/\bdiagnos|\bimaging\b|radiolog|patholog|pharmacovigilance|adverse.event|\brwe\b|real.world.evidence|\behr\b|\bemr\b|clinical.decision|patient.outcome|medical.imaging|ct.scan|\bmri\b|ecg.ai|wearable/i.test(text))
+    return 'MEDICINE'
+
+  // ── 4. Regulatory science ─────────────────────────────────────────────────
+  if (/\bema\b|\bfda\b|\bchmp\b|marketing.authoris|conditional.approval|orphan.drug|benefit.risk|\bpsur\b|\bctd\b|pharmacopoeia|\bgmp\b|\bgdp\b|\bich\b|reflection.paper|\bepar\b|regulatory.submission|dossier|post.market.surveillance/i.test(text))
+    return 'REGULATORY'
+
+  // EU policy & data frameworks (broadened — catches AI Act, EHDS, GDPR, FHIR etc.)
+  if (/ai.act|eu.ai|\bghds\b|\behds\b|\bidmp\b|\bfhir\b|\bomop\b|darwin.eu|\bgdpr\b|\bmdr\b|\bivdr\b|\bndsg\b|european.health|data.space|data.governance|interoperab|data.standard|europe|european.commission|brussels|parliament.eu/i.test(text))
+    return 'EU DATA'
+
+  // Academic research (peer-reviewed, before TECHNICAL — no mainstream tech press)
+  if (/\barxiv\b|preprint|\bjournal\b|\bnature\b|\bcell\b|\blancet\b|\bnejm\b|pubmed|\bbiorxiv\b|peer.review|systematic.review|meta.analysis|clinical.study|cohort/i.test(text) &&
+      !/techcrunch|wired|venturebeat|the.verge|theregister|ars.technica/i.test(text))
+    return 'ACADEMIC'
+
+  // Technical AI (broad — catches LLMs, models, agents, benchmarks)
+  if (/\bllm\b|large.language|transformer|\bgpt\b|\bbert\b|neural.network|deep.learn|fine.tun|\brag\b|retrieval.augment|\bagent\b|benchmark|multimodal|foundation.model|diffusion.model|generative.ai|open.source.model|model.release|inference|tokeniz/i.test(text))
+    return 'TECHNICAL'
+
+  // ── 5. Pipeline topic field as final fallback (when no keyword matched) ───
   switch (article.topic) {
     case 'drug-discovery':  return 'PHARMA'
     case 'clinical-ai':     return 'MEDICINE'
@@ -64,35 +126,7 @@ function categorize(article) {
     case 'data-governance': return 'EU DATA'
   }
 
-  // Keyword fallback
-  if (/drug.discov|admet|molecular.dock|cheminformat|smiles|protein.fold|alphafold|rosetta|drug.design|lead.optim|generative.chem|de.novo|qsar/i.test(text))
-    return 'PHARMA'
-  if (/diagnos|imaging|radiolog|patholog|clinical.trial|patient|therapy|pharmacovigilance|adverse.event|rwe|real.world.evidence|ehr|emr/i.test(text))
-    return 'MEDICINE'
-  if (/\bema\b|fda|chmp|regulation|guideline|compliance|marketing.authoris|approval|authoriz|directive|ai.act|gdpr|mdr|ivdr|pharmacopoeia|gmp|psur|ctd|idmp|fhir|ehds|darwin/i.test(text))
-    return 'REGULATORY'
-  if (/sovereignty|souverain|gaia.x|cloud.europ|mistral|aleph.alpha|semiconductor|chip|asml|imec/i.test(text))
-    return 'SOVEREIGNTY'
-  if (/cybersec|attack|malware|phishing|deepfake|adversarial|red.team|vulnerability|threat/i.test(text))
-    return 'SECURITY'
-  if (/geopolit|china|usa.*eu|export.control|nato|g7|g20|military|defense/i.test(text))
-    return 'GEOPOLITICS'
-  if (/carbon|energy|sustainab|green.ai|environment|climate/i.test(text))
-    return 'ENVIRONMENT'
-  if (/ethics|bias|fairness|privacy|rights|surveillance|discriminat/i.test(text))
-    return 'ETHICS'
-  if (/economy|job|employ|workforce|productivity|market|startup|invest/i.test(text))
-    return 'ECONOMY'
-  if (/philosophy|consciousness|agi|alignment|safety|existential|sentient/i.test(text))
-    return 'PHILOSOPHY'
-  if (/europe|eu |european|brussels|commission|parliament|ehds/i.test(text))
-    return 'EU DATA'
-  if (/llm|transformer|neural.network|deep.learn|fine.tun|rag|agent|benchmark|multimodal|foundation.model|large.language/i.test(text))
-    return 'TECHNICAL'
-  if (/university|arxiv|preprint|\bjournal\b|nature|cell|lancet|nejm|pubmed|biorxiv|research|laboratory|institute/i.test(text) &&
-      !/techcrunch|wired|venturebeat|the.verge/i.test(text))
-    return 'ACADEMIC'
-  return 'SCIENCE'
+  return 'SCIENCE'  // true fallback
 }
 
 // ── Relevance scoring (no LLM) ────────────────────────────────────
