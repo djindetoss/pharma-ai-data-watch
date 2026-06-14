@@ -320,6 +320,7 @@
       opacity: 0.45;
     }
     .cat-pill.active { opacity: 1; border-color: currentColor; }
+    .cat-pill.cat-pill-empty { cursor: default; font-style: italic; }
 
     /* ── Article list ── */
     .digest-body {
@@ -804,32 +805,42 @@
 
   /* ── Render category pills ── */
   function renderCatPills(articles) {
+    // Count articles per category from loaded data
     const catCounts = {};
     for (const a of articles) catCounts[a.category] = (catCounts[a.category] || 0) + 1;
-    const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+
+    // Merge: show ALL defined categories, sorted by count desc, zeros last
+    const allCats = Object.keys(CATEGORIES).map(cat => [cat, catCounts[cat] || 0]);
+    // Also add any category in data not in CATEGORIES definition
+    for (const cat of Object.keys(catCounts)) {
+      if (!CATEGORIES[cat]) allCats.push([cat, catCounts[cat]]);
+    }
+    allCats.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 
     const wrap = document.getElementById('cat-pills-wrap');
-    // Keep the "All" button, replace the rest
     const allBtn = document.getElementById('cat-all-btn');
     wrap.innerHTML = '';
     wrap.appendChild(allBtn);
 
-    for (const [cat, n] of sorted) {
+    for (const [cat, n] of allCats) {
       const cfg = CATEGORIES[cat] || { label: cat, color: '#475569', bg: '#f1f5f9' };
       const btn = document.createElement('button');
+      const isEmpty = n === 0;
       btn.className = 'cat-pill' + (activeCats.size === 0 || activeCats.has(cat) ? ' active' : '');
+      if (isEmpty) btn.className += ' cat-pill-empty';
       btn.dataset.cat = cat;
-      btn.style.color      = cfg.color;
-      btn.style.background = activeCats.has(cat) ? cfg.bg : 'transparent';
+      btn.style.color       = cfg.color;
+      btn.style.background  = activeCats.has(cat) ? cfg.bg : 'transparent';
       btn.style.borderColor = 'transparent';
-      btn.textContent = `${cfg.label} (${n})`;
-      btn.addEventListener('click', () => toggleCat(cat));
+      btn.style.opacity     = isEmpty ? '0.4' : '1';
+      btn.textContent = isEmpty ? cfg.label : `${cfg.label} (${n})`;
+      if (!isEmpty) btn.addEventListener('click', () => toggleCat(cat));
       wrap.appendChild(btn);
     }
 
-    /* Category legend (sidebar) */
+    /* Category legend (sidebar) — only categories with articles */
     const legend = document.getElementById('cat-legend');
-    legend.innerHTML = sorted.map(([cat, n]) => {
+    legend.innerHTML = allCats.filter(([,n]) => n > 0).map(([cat, n]) => {
       const cfg = CATEGORIES[cat] || { label: cat, color: '#475569', bg: '#f1f5f9' };
       return `<div style="display:flex;align-items:center;gap:8px">
         <span style="width:10px;height:10px;border-radius:3px;background:${cfg.color};flex-shrink:0"></span>
