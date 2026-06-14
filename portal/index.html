@@ -106,41 +106,31 @@
     </div>
   </section>
 
-  <!-- ── TYPE FILTER BAR ── -->
+  <!-- ── UNIFIED FILTER BAR ── -->
   <div class="filter-bar" id="main-content">
     <div class="filter-inner">
-      <button class="filter-btn active" data-filter="all">
-        🗂 All <span class="count">–</span>
-      </button>
-      <div class="filter-divider"></div>
-      <button class="filter-btn" data-filter="news">
-        📰 News <span class="count">–</span>
-      </button>
-      <button class="filter-btn" data-filter="paper">
-        📄 Papers <span class="count">–</span>
-      </button>
-      <button class="filter-btn" data-filter="webinar">
-        🎥 Webinars <span class="count">–</span>
-      </button>
-      <a href="events.html" class="filter-btn filter-btn-link">
-        🎓 Events
-      </a>
-      <div class="filter-divider"></div>
-      <button class="filter-btn" data-filter="ainews">
-        🤖 AI news <span class="count">–</span>
-      </button>
-    </div>
-  </div>
 
-  <!-- ── TOPIC FILTER BAR ── -->
-  <div class="topic-bar">
-    <div class="filter-inner">
-      <span class="topic-bar-label">Topic:</span>
-      <button class="topic-btn active" data-topic="all">All topics</button>
-      <button class="topic-btn" data-topic="regulatory">🏛️ Regulatory science</button>
-      <button class="topic-btn" data-topic="data-governance">📊 Data</button>
-      <button class="topic-btn" data-topic="drug-discovery">🧬 AI in drug discovery</button>
-      <button class="topic-btn" data-topic="clinical-ai">🔬 Clinical AI</button>
+      <!-- Content type tabs -->
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All <span class="count">–</span></button>
+        <button class="filter-btn" data-filter="news">📰 News <span class="count">–</span></button>
+        <button class="filter-btn" data-filter="paper">📄 Papers <span class="count">–</span></button>
+        <button class="filter-btn" data-filter="webinar">🎥 Webinars <span class="count">–</span></button>
+        <button class="filter-btn" data-filter="ainews">🤖 AI news <span class="count">–</span></button>
+        <a href="events.html" class="filter-btn filter-btn-link filter-btn-events">🎓 Events ↗</a>
+      </div>
+
+      <div class="filter-divider"></div>
+
+      <!-- Topic pills -->
+      <div class="filter-group filter-group-topics">
+        <button class="topic-btn active" data-topic="all">All</button>
+        <button class="topic-btn" data-topic="regulatory">🏛️ Regulatory</button>
+        <button class="topic-btn" data-topic="data-governance">📊 Data</button>
+        <button class="topic-btn" data-topic="drug-discovery">🧬 Drug discovery</button>
+        <button class="topic-btn" data-topic="clinical-ai">🔬 Clinical AI</button>
+      </div>
+
     </div>
   </div>
 
