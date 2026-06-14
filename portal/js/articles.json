@@ -108,6 +108,83 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "nws-b81df8b5b179",
+    "type": "news",
+    "title": "Openai says it's engaging 'constructively' with state ags about concerns",
+    "excerpt": "The Wall Street Journal reported that a coalition of state attorneys general have opened an investigation into OpenAI.",
+    "source": "CNBC",
+    "date": "2026-06-13",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-60b23d1dd928",
+    "type": "ainews",
+    "title": "Anthropic's safety warnings may have just backfired — the government has pulled the plug on its most powerful AI",
+    "excerpt": "Anthropic isn't hiding its frustration. \"We disagree that the finding of a narrow potential jailbreak should be cause for recalling a commercial model deployed to hundreds of millions of people,\" the company wrote in a blog post.",
+    "source": "TechCrunch",
+    "date": "2026-06-13",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-5e7efd707c5f",
+    "type": "ainews",
+    "title": "Anthropic says it’s taking claude fable 5 offline to comply with US government order",
+    "excerpt": "“The government believes it has become aware of a method of bypassing, or ‘jailbreaking’ Fable 5,” the company said in a blog post.",
+    "source": "Wired",
+    "date": "2026-06-13",
+    "tags": [
+      "LLM",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-70d9e4eb64da",
+    "type": "ainews",
+    "title": "A better way to manage all your screenshots",
+    "excerpt": "Hi, friends! Welcome to Installer No. 132, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy soccer, and also you can read all the old editions at the Installer homepage.) This week, I've been preparing for a month …",
+    "source": "The Verge",
+    "date": "2026-06-13",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/tech/949465/pool-screenshots-app-disclosure-day-installer",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-06fccedb7677",
+    "type": "ainews",
+    "title": "Here’s how AI agents can protect ev chargers",
+    "excerpt": "An AI agent system proposed by researchers in Spain promises to prevent energy theft and damage to EV chargers, as well as the critical energy infrastructure that powers them.",
+    "source": "Wired",
+    "date": "2026-06-13",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/researchers-in-spain-show-how-ai-agents-can-protect-ev-chargers/",
+    "badge": "AI Tech"
+  },
+  {
     "id": "auto-2ed965d34b34",
     "type": "ainews",
     "title": "Towards AI-augmented decision making in psychiatry",
@@ -697,6 +774,67 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/podcast/its-hot-ipo-summer-and-the-mangos-are-ripe/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-47dedc114b8b",
+    "type": "news",
+    "title": "AI designs a vaccine for viruses that do not yet exist",
+    "excerpt": "New research signals the path towards a new generation of AI‑designed vaccines, which aim not just to match today’s virus, but to stay effective against tomorrow’s.\nThe post AI designs a vaccine for viruses that do not yet exist appeared first on Digital Jour…",
+    "source": "Digital Journal",
+    "date": "2026-06-12",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.digitaljournal.com/article/ai-designs-a-vaccine-for-viruses-that-do-not-yet-exist/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-d96369fb0eb3",
+    "type": "ainews",
+    "title": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | techcrunch",
+    "excerpt": "Meta's months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-06-12",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-6edfbdee00a0",
+    "type": "ainews",
+    "title": "The future of hollywood isn’t feeding prompts into vanilla gen AI models",
+    "excerpt": "For all the noise that's been made about how generative AI is poised to revolutionize the filmmaking industry, there haven't really been any projects created with the technology that felt like the sort of entertainment people would pay to see. Most AI firms' …",
+    "source": "The Verge",
+    "date": "2026-06-12",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-ef2ac9bec403",
+    "type": "ainews",
+    "title": "Google researchers introduce 'faithful uncertainty', allowing llms to offer best guesses instead of hallucinations",
+    "excerpt": "Chasing zero hallucinations is costing you valid answers. Google researchers propose a \"metacognitive\" approach to save enterprise AI.",
+    "source": "VentureBeat",
+    "date": "2026-06-12",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://venturebeat.com/orchestration/google-researchers-introduce-faithful-uncertainty-allowing-llms-to-offer-best-guesses-instead-of-hallucinations",
+    "badge": "AI Tech"
   },
   {
     "id": "nws-49cb2adbbbb0",
@@ -4685,152 +4823,5 @@
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0351214",
     "badge": "Data",
     "topic": "data-governance"
-  },
-  {
-    "id": "nws-2b089a5535dc",
-    "type": "news",
-    "title": "Stpedf: cell trajectory inference of spatial transcriptomics via spatial proximity embedding and spatial density-adaptive fusion",
-    "excerpt": "Author summary The formation of tissue structure depends on the coordinated changes in cell states and their spatial arrangement during development, regeneration, and disease. Understanding these processes requires not only identifying gene activity but also …",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014346",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-133708838e6b",
-    "type": "news",
-    "title": "Prevalence and determinants of metabolic syndrome among long-shift healthcare professionals in primary hospitals of central gondar zone, northwest ethiopia",
-    "excerpt": "Background Metabolic syndrome (MetS) is a group of interrelated metabolic aberrations that significantly elevates the risk of poor cardiovascular outcomes and type 2 diabetes mellitus. Healthcare professionals, particularly those working long shifts, may have…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350807",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-a4a93247530d",
-    "type": "news",
-    "title": "Focusing on legal cases: automatic classification of legal documents with sentence embeddings and deep learning models",
-    "excerpt": "The justice system is indispensable to any society as it enforces the rule of law, safeguards fundamental rights, and ensures the equitable resolution of disputes through structured legal frameworks. Artificial Intelligence (AI) has significantly advanced the…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Deep learning"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350673",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-2e83da69e3eb",
-    "type": "news",
-    "title": "Topological data analysis for predicting disease outbreaks in humanitarian settings: a machine learning approach",
-    "excerpt": "Background Humanitarian settings are highly vulnerable to infectious disease outbreaks because displacement, crowding, disruption of health services, insecurity, and inadequate water and sanitation often interact in ways that are difficult to capture with con…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Machine learning"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350644",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-617a9bcb7b12",
-    "type": "news",
-    "title": "Aveva expands connect in india with new AI capabilities to accelerate industrial intelligence",
-    "excerpt": "New AI capabilities empower local enterprises to safely scale operations, manage complexity, and drive sustainable growth.",
-    "source": "BusinessLine",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.thehindubusinessline.com/brandhub/pr-release/aveva-expands-connect-in-india-with-new-ai-capabilities-to-accelerate-industrial-intelligence/article71064310.ece",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-590a3ab87aa0",
-    "type": "seminar",
-    "title": "Supreme court judges, global legal scholars, and international academic leaders converge at galgotias for international conference on comparative law",
-    "excerpt": "Greater Noida (Uttar Pradesh) [India], June 5: Galgotias University, in collaboration with the School of Business and Law at Edith Cowan University, Australia, brought together judges, legal scholars, policymakers, vice-chancellors, academicians, and legal pr…",
-    "source": "ANI News",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.aninews.in/news/business/supreme-court-judges-global-legal-scholars-and-international-academic-leaders-converge-at-galgotias-for-international-conference-on-comparative-law20260605162009",
-    "badge": "Event"
-  },
-  {
-    "id": "nws-44c3a021b68c",
-    "type": "ainews",
-    "title": "Has microsoft lost its mojo (again)?",
-    "excerpt": "Microsoft’s AI products aren’t selling and Github’s been plagued with troubles. WIRED spoke with VP Scott Hanselman about whether the company is in catch-up mode.",
-    "source": "Wired",
-    "date": "2026-06-05",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-bfd4d0fbee03",
-    "type": "paper",
-    "title": "Delivering living medicines with polysaccharide derivatives for disease treatment",
-    "excerpt": "This review examines the use of polysaccharide derivative formulations as delivery systems for living medicines in disease treatment. Polysaccharide-based carriers offer a platform for transporting cellular or biological therapeutic agents, with potential applications across multiple disease areas. The approach represents a strategy to improve the stability, targeting, and efficacy of living therapeutic modalities.",
-    "source": "J Control Release",
-    "date": "2026-06-05",
-    "tags": [
-      "Drug Delivery Systems",
-      "Polysaccharides",
-      "Living Medicines",
-      "Formulation Science"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42250609/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-064fbfebbeee",
-    "type": "ainews",
-    "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
-    "excerpt": "SpaceX won’t get easy access to billions of dollars from passive investors.",
-    "source": "Ars Technica AI",
-    "date": "2026-06-05",
-    "tags": [
-      "AI",
-      "Policy",
-      "AI companies",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
-    "badge": "Tech"
   }
 ]
