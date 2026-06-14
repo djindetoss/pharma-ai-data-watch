@@ -163,6 +163,108 @@ jobs:
               console.log(`Closed issue #${issue.number}`)
             }
 
+      - name: Send email notification via Brevo
+        if: always()   # Always send — success OR failure
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          NOTIFY_EMAIL:  ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_FROM:   ${{ secrets.NOTIFY_FROM_EMAIL }}
+        run: |
+          python3 << 'PYEOF'
+          import os, json, urllib.request, urllib.error, datetime
+
+          api_key    = os.environ.get('BREVO_API_KEY', '')
+          to_email   = os.environ.get('NOTIFY_EMAIL', '')
+          from_email = os.environ.get('NOTIFY_FROM', '')
+
+          if not api_key or not to_email or not from_email:
+              print('⚠️  BREVO_API_KEY / NOTIFY_EMAIL / NOTIFY_FROM_EMAIL not set — skipping email')
+              exit(0)
+
+          # Read outputs from environment (passed via GITHUB_OUTPUT in the check step)
+          html_broken = '${{ steps.check.outputs.html_broken }}'  or '?'
+          feed_broken = '${{ steps.check.outputs.feed_broken }}'  or '?'
+          art_broken  = '${{ steps.check.outputs.art_broken }}'   or '?'
+          ev_broken   = '${{ steps.check.outputs.ev_broken }}'    or '?'
+          ev_stale    = '${{ steps.check.outputs.ev_stale }}'     or '?'
+          outcome     = '${{ steps.check.outcome }}'
+
+          today = datetime.date.today().strftime('%Y-%m-%d')
+          run_url = 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+
+          all_ok = (html_broken == '0' and feed_broken == '0' and
+                    art_broken  == '0' and ev_broken  == '0' and
+                    ev_stale    == '0')
+
+          status_icon  = '✅' if all_ok else '⚠️' if outcome == 'success' else '❌'
+          status_label = 'Tout est OK' if all_ok else 'Avertissements' if outcome == 'success' else 'Erreurs détectées'
+
+          # ── Build HTML email ─────────────────────────────────────────────────
+          def row(icon, label, count, ok_val='0'):
+              color = '#16a34a' if count == ok_val else '#dc2626' if count not in ('0', '?') else '#92400e'
+              badge = f'<span style="background:{color};color:#fff;padding:2px 10px;border-radius:12px;font-size:13px;font-weight:700">{count}</span>'
+              return f'<tr><td style="padding:8px 0;color:#374151">{icon} {label}</td><td style="text-align:right">{badge}</td></tr>'
+
+          table_rows  = row('🔗', 'Liens HTML statiques cassés',        html_broken)
+          table_rows += row('📡', 'Flux RSS/API pipeline cassés',       feed_broken)
+          table_rows += row('📰', 'Articles récents cassés (30j)',       art_broken)
+          table_rows += row('🗓️', 'Liens événements cassés',            ev_broken)
+          table_rows += row('⏰', 'Liens événements non re-vérifiés (90j+)', ev_stale)
+
+          header_bg = '#16a34a' if all_ok else '#b45309' if outcome == 'success' else '#dc2626'
+
+          html = f"""
+          <div style="font-family:Inter,system-ui,sans-serif;max-width:600px;margin:0 auto;background:#f9fafb;padding:24px;border-radius:12px">
+            <div style="background:{header_bg};color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:20px">
+              <div style="font-size:22px;font-weight:700">{status_icon} Vérification des liens — {today}</div>
+              <div style="font-size:14px;opacity:.85;margin-top:4px">{status_label} · Pharma AI &amp; Data Watch</div>
+            </div>
+
+            <div style="background:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px;border:1px solid #e5e7eb">
+              <table style="width:100%;border-collapse:collapse">
+                {table_rows}
+              </table>
+            </div>
+
+            <div style="background:#fff;padding:16px 24px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;color:#6b7280">
+              {'<p style="color:#16a34a;font-weight:600">✅ Tous les liens sont accessibles. Aucune action requise.</p>' if all_ok else
+               '<p>Des problèmes ont été détectés. Voir le rapport complet sur GitHub&nbsp;:</p>'}
+              <a href="{run_url}" style="display:inline-block;margin-top:8px;background:#1d4ed8;color:#fff;padding:8px 18px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600">
+                Voir le rapport Actions →
+              </a>
+            </div>
+
+            <p style="font-size:11px;color:#9ca3af;text-align:center;margin-top:16px">
+              Vérification automatique · chaque lundi 07h00 UTC ·
+              <a href="https://github.com/${{ github.repository }}/actions/workflows/check-links.yml" style="color:#9ca3af">Désactiver</a>
+            </p>
+          </div>
+          """
+
+          subject = f"{status_icon} Liens site — {status_label} · {today}"
+
+          payload = {
+              'sender':      {'name': 'Pharma AI Watch', 'email': from_email},
+              'to':          [{'email': to_email}],
+              'subject':     subject,
+              'htmlContent': html,
+          }
+
+          req = urllib.request.Request(
+              'https://api.brevo.com/v3/smtp/email',
+              data    = json.dumps(payload).encode(),
+              headers = {'Content-Type': 'application/json', 'api-key': api_key},
+              method  = 'POST',
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  print(f'✅ Email envoyé à {to_email} (status {r.status})')
+          except urllib.error.HTTPError as e:
+              body = e.read().decode()
+              print(f'❌ Brevo API error {e.code}: {body}')
+              exit(1)
+          PYEOF
+
       - name: Upload link report as artifact
         uses: actions/upload-artifact@v4
         if: always()
