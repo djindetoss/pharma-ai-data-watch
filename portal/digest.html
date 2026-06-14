@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Digest — Pharma AI &amp; Data Watch</title>
-  <meta name="description" content="Veille mensuelle en IA pharmaceutique et réglementation. Digest cumulatif mis à jour chaque lundi." />
+  <meta name="description" content="Monthly AI digest for pharmaceutical and regulatory science. All articles collected by the pipeline, organized by topic and relevance." />
 
   <link rel="canonical" href="https://djindetoss.github.io/pharma-ai-data-watch/digest.html" />
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="AI Digest — Pharma AI &amp; Data Watch" />
-  <meta property="og:description" content="Veille mensuelle : articles, papiers et actualités IA en pharma et réglementation." />
+  <meta property="og:description" content="Monthly AI digest: articles, papers and news at the intersection of AI, pharma and regulation." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -374,9 +374,9 @@
       font-weight: 700;
       flex-shrink: 0;
     }
-    .rel-CRITIQUE    { background: #fee2e2; color: #991b1b; }
-    .rel-IMPORTANT   { background: #fef3c7; color: #78350f; }
-    .rel-A_SURVEILLER{ background: var(--light); color: var(--mid); }
+    .rel-CRITICAL { background: #fee2e2; color: #991b1b; }
+    .rel-IMPORTANT{ background: #fef3c7; color: #78350f; }
+    .rel-WATCH    { background: var(--light); color: var(--mid); }
 
     .digest-card-source {
       font-size: 12px;
@@ -554,23 +554,23 @@
   <section class="digest-hero">
     <div class="digest-hero-inner">
       <div class="digest-hero-left">
-        <div class="digest-eyebrow">📊 Veille mensuelle</div>
-        <h1>AI Digest —<br/><em>Pharma &amp; Régulation</em></h1>
+        <div class="digest-eyebrow">📊 Monthly digest</div>
+        <h1>AI Digest —<br/><em>Pharma &amp; Regulation</em></h1>
         <p class="digest-hero-desc">
-          Tous les articles collectés par le pipeline, organisés par mois et catégorie.
-          Mis à jour chaque lundi matin. Aucune sélection manuelle — 100 % automatique.
+          All articles collected by the pipeline, organized by month and topic.
+          Updated every Monday morning. Fully automated — no manual curation.
         </p>
         <div id="digest-hero-badges" class="digest-meta-badges">
           <span class="meta-badge accent" id="badge-count">— articles</span>
-          <span class="meta-badge" id="badge-updated">Chargement…</span>
+          <span class="meta-badge" id="badge-updated">Loading…</span>
         </div>
       </div>
 
       <div class="digest-hero-right">
         <div class="month-select-wrap">
-          <span class="month-select-label">Mois affiché</span>
+          <span class="month-select-label">Month</span>
           <select id="month-select">
-            <option value="">Chargement…</option>
+            <option value="">Loading…</option>
           </select>
         </div>
       </div>
@@ -582,7 +582,7 @@
     <div class="signal-card" id="signal-card" style="display:none">
       <div class="signal-header">
         <div class="signal-icon">📈</div>
-        <h2>Signal du mois</h2>
+        <h2>Monthly signal</h2>
       </div>
       <p class="signal-text" id="signal-text"></p>
       <div class="signal-stats" id="signal-stats"></div>
@@ -594,15 +594,15 @@
   <div class="digest-toolbar">
     <div class="digest-search-wrap">
       <span class="search-icon">🔍</span>
-      <input type="search" id="digest-search" placeholder="Rechercher dans les articles…" autocomplete="off" />
+      <input type="search" id="digest-search" placeholder="Search articles…" autocomplete="off" />
     </div>
 
     <div class="filter-group">
-      <span class="filter-group-label">Pertinence :</span>
-      <button class="rel-btn active" data-rel="all">Tous</button>
-      <button class="rel-btn" data-rel="CRITIQUE">★★★ Critique</button>
+      <span class="filter-group-label">Relevance:</span>
+      <button class="rel-btn active" data-rel="all">All</button>
+      <button class="rel-btn" data-rel="CRITICAL">★★★ Critical</button>
       <button class="rel-btn" data-rel="IMPORTANT">★★☆ Important</button>
-      <button class="rel-btn" data-rel="A_SURVEILLER">★☆☆ À surveiller</button>
+      <button class="rel-btn" data-rel="WATCH">★☆☆ Watch</button>
     </div>
 
     <span class="result-count" id="result-count"></span>
@@ -610,7 +610,7 @@
 
   <!-- ── CATEGORY PILLS ── -->
   <div class="cat-pills-wrap" id="cat-pills-wrap">
-    <button class="cat-pill-all" id="cat-all-btn">Toutes catégories</button>
+    <button class="cat-pill-all" id="cat-all-btn">All categories</button>
     <!-- dynamic pills inserted here -->
   </div>
 
@@ -620,7 +620,7 @@
       <div id="article-list">
         <div class="digest-spinner">
           <div class="spinner-ring"></div>
-          <span>Chargement du digest…</span>
+          <span>Loading digest…</span>
         </div>
       </div>
     </main>
@@ -630,10 +630,10 @@
       <div class="digest-sidebar-card">
         <div class="digest-sidebar-header">
           <div class="sidebar-icon" style="background:#dbeafe">📁</div>
-          <h3>Digests précédents</h3>
+          <h3>Previous digests</h3>
         </div>
         <div class="archive-list" id="archive-list">
-          <p style="padding:12px 18px;font-size:13px;color:var(--mid)">Chargement…</p>
+          <p style="padding:12px 18px;font-size:13px;color:var(--mid)">Loading…</p>
         </div>
       </div>
 
@@ -641,7 +641,7 @@
       <div class="digest-sidebar-card">
         <div class="digest-sidebar-header">
           <div class="sidebar-icon" style="background:#ede9fe">🏷</div>
-          <h3>Catégories</h3>
+          <h3>Categories</h3>
         </div>
         <div id="cat-legend" style="padding:12px 18px;display:flex;flex-direction:column;gap:6px;"></div>
       </div>
@@ -704,27 +704,27 @@
 
   /* ── Category config ── */
   const CATEGORIES = {
-    TECHNIQUE:     { label: 'Technique',              color: '#534AB7', bg: '#EEEDFE' },
-    REGLEMENTAIRE: { label: 'Réglementaire',          color: '#0F6E56', bg: '#E1F5EE' },
-    INDUSTRIE:     { label: 'Industrie',              color: '#185FA5', bg: '#E6F1FB' },
-    ETHIQUE:       { label: 'Éthique & société',      color: '#854F0B', bg: '#FAEEDA' },
-    SCIENCE:       { label: 'Science',                color: '#3B6D11', bg: '#EAF3DE' },
-    PHARMA:        { label: 'Pharma & biotech',       color: '#993C1D', bg: '#FAECE7' },
-    MEDECINE:      { label: 'Médecine & santé',       color: '#72243E', bg: '#FBEAF0' },
-    EUROPE:        { label: 'Europe',                 color: '#0C447C', bg: '#E6F1FB' },
-    ACADEMIQUE:    { label: 'Académique',             color: '#3C3489', bg: '#EEEDFE' },
-    GEOPOLITIQUE:  { label: 'Géopolitique',           color: '#444441', bg: '#F1EFE8' },
-    SOUVERAINETE:  { label: 'Souveraineté numérique', color: '#633806', bg: '#FAEEDA' },
-    SECURITE:      { label: 'Cybersécurité & IA',     color: '#791F1F', bg: '#FCEBEB' },
-    ECONOMIE:      { label: 'Économie & travail',     color: '#085041', bg: '#E1F5EE' },
-    PHILOSOPHIE:   { label: 'Philosophie & IA',       color: '#26215C', bg: '#EEEDFE' },
-    ENVIRONNEMENT: { label: 'Environnement',          color: '#27500A', bg: '#EAF3DE' },
+    TECHNICAL:   { label: 'Technical',           color: '#534AB7', bg: '#EEEDFE' },
+    REGULATORY:  { label: 'Regulatory',          color: '#0F6E56', bg: '#E1F5EE' },
+    INDUSTRY:    { label: 'Industry',            color: '#185FA5', bg: '#E6F1FB' },
+    ETHICS:      { label: 'Ethics & society',    color: '#854F0B', bg: '#FAEEDA' },
+    SCIENCE:     { label: 'Science',             color: '#3B6D11', bg: '#EAF3DE' },
+    PHARMA:      { label: 'Pharma & biotech',    color: '#993C1D', bg: '#FAECE7' },
+    MEDICINE:    { label: 'Medicine & health',   color: '#72243E', bg: '#FBEAF0' },
+    'EU DATA':   { label: 'EU data & policy',   color: '#0C447C', bg: '#E6F1FB' },
+    ACADEMIC:    { label: 'Academic',            color: '#3C3489', bg: '#EEEDFE' },
+    GEOPOLITICS: { label: 'Geopolitics',         color: '#444441', bg: '#F1EFE8' },
+    SOVEREIGNTY: { label: 'Digital sovereignty', color: '#633806', bg: '#FAEEDA' },
+    SECURITY:    { label: 'Cybersecurity & AI',  color: '#791F1F', bg: '#FCEBEB' },
+    ECONOMY:     { label: 'Economy & labour',    color: '#085041', bg: '#E1F5EE' },
+    PHILOSOPHY:  { label: 'Philosophy & AI',     color: '#26215C', bg: '#EEEDFE' },
+    ENVIRONMENT: { label: 'Environment',         color: '#27500A', bg: '#EAF3DE' },
   };
 
   const REL_LABELS = {
-    CRITIQUE:    '★★★',
-    IMPORTANT:   '★★☆',
-    A_SURVEILLER:'★☆☆',
+    CRITICAL: '★★★',
+    IMPORTANT:'★★☆',
+    WATCH:    '★☆☆',
   };
 
   /* ── State ── */
@@ -739,7 +739,7 @@
   function fmtDate(iso) {
     if (!iso) return '';
     try {
-      return new Date(iso).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' });
+      return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     } catch { return iso; }
   }
 
@@ -775,8 +775,8 @@
     const stats = document.getElementById('signal-stats');
     stats.innerHTML = [
       { v: signal.totalArticles,   l: 'articles' },
-      { v: signal.criticalCount,   l: 'critiques' },
-      { v: signal.importantCount,  l: 'importants' },
+      { v: signal.criticalCount,   l: 'critical' },
+      { v: signal.importantCount,  l: 'important' },
       { v: signal.paperCount,      l: 'publications' },
     ].map(s => `
       <div class="signal-stat">
@@ -876,8 +876,8 @@
       list.innerHTML = `
         <div class="digest-empty">
           <div class="digest-empty-icon">🔍</div>
-          <h3>Aucun résultat</h3>
-          <p>Modifier vos filtres ou la recherche pour afficher des articles.</p>
+          <h3>No results</h3>
+          <p>Adjust your filters or search to display articles.</p>
         </div>`;
       return;
     }
@@ -917,7 +917,7 @@
     document.getElementById('article-list').innerHTML = `
       <div class="digest-spinner">
         <div class="spinner-ring"></div>
-        <span>Chargement du digest ${id}…</span>
+        <span>Loading digest ${id}…</span>
       </div>`;
 
     try {
@@ -940,7 +940,7 @@
     document.getElementById('badge-count').textContent =
       `${currentDigest.articles?.length ?? 0} articles`;
     document.getElementById('badge-updated').textContent =
-      `Mis à jour le ${fmtDate(currentDigest.generatedAt)}`;
+      `Updated ${fmtDate(currentDigest.generatedAt)}`;
 
     /* Reset filters */
     activeCats.clear();
@@ -976,13 +976,13 @@
     /* Populate month selector */
     const sel = document.getElementById('month-select');
     if (!index.length) {
-      sel.innerHTML = '<option value="">Aucun digest disponible</option>';
+      sel.innerHTML = '<option value="">No digest available</option>';
       document.getElementById('article-list').innerHTML = `
         <div class="digest-empty">
           <div class="digest-empty-icon">📭</div>
-          <h3>Aucun digest généré</h3>
-          <p>Le digest sera disponible après le premier run du workflow <em>Build Weekly Digest</em>
-             (chaque lundi à 07:00 UTC, ou manuellement depuis GitHub Actions).</p>
+          <h3>No digest generated yet</h3>
+          <p>The digest will be available after the first run of the <em>Build Weekly Digest</em> workflow
+             (every Monday at 07:00 UTC, or trigger it manually from GitHub Actions).</p>
         </div>`;
       return;
     }

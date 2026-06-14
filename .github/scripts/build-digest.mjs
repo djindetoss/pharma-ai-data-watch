@@ -59,39 +59,39 @@ function categorize(article) {
   // Topic field from pipeline (most reliable — set by PubMed query config)
   switch (article.topic) {
     case 'drug-discovery':  return 'PHARMA'
-    case 'clinical-ai':     return 'MEDECINE'
-    case 'regulatory':      return 'REGLEMENTAIRE'
-    case 'data-governance': return 'EUROPE'   // EU data governance
+    case 'clinical-ai':     return 'MEDICINE'
+    case 'regulatory':      return 'REGULATORY'
+    case 'data-governance': return 'EU DATA'
   }
 
   // Keyword fallback
   if (/drug.discov|admet|molecular.dock|cheminformat|smiles|protein.fold|alphafold|rosetta|drug.design|lead.optim|generative.chem|de.novo|qsar/i.test(text))
     return 'PHARMA'
   if (/diagnos|imaging|radiolog|patholog|clinical.trial|patient|therapy|pharmacovigilance|adverse.event|rwe|real.world.evidence|ehr|emr/i.test(text))
-    return 'MEDECINE'
+    return 'MEDICINE'
   if (/\bema\b|fda|chmp|regulation|guideline|compliance|marketing.authoris|approval|authoriz|directive|ai.act|gdpr|mdr|ivdr|pharmacopoeia|gmp|psur|ctd|idmp|fhir|ehds|darwin/i.test(text))
-    return 'REGLEMENTAIRE'
+    return 'REGULATORY'
   if (/sovereignty|souverain|gaia.x|cloud.europ|mistral|aleph.alpha|semiconductor|chip|asml|imec/i.test(text))
-    return 'SOUVERAINETE'
+    return 'SOVEREIGNTY'
   if (/cybersec|attack|malware|phishing|deepfake|adversarial|red.team|vulnerability|threat/i.test(text))
-    return 'SECURITE'
+    return 'SECURITY'
   if (/geopolit|china|usa.*eu|export.control|nato|g7|g20|military|defense/i.test(text))
-    return 'GEOPOLITIQUE'
+    return 'GEOPOLITICS'
   if (/carbon|energy|sustainab|green.ai|environment|climate/i.test(text))
-    return 'ENVIRONNEMENT'
+    return 'ENVIRONMENT'
   if (/ethics|bias|fairness|privacy|rights|surveillance|discriminat/i.test(text))
-    return 'ETHIQUE'
+    return 'ETHICS'
   if (/economy|job|employ|workforce|productivity|market|startup|invest/i.test(text))
-    return 'ECONOMIE'
+    return 'ECONOMY'
   if (/philosophy|consciousness|agi|alignment|safety|existential|sentient/i.test(text))
-    return 'PHILOSOPHIE'
+    return 'PHILOSOPHY'
   if (/europe|eu |european|brussels|commission|parliament|ehds/i.test(text))
-    return 'EUROPE'
+    return 'EU DATA'
   if (/llm|transformer|neural.network|deep.learn|fine.tun|rag|agent|benchmark|multimodal|foundation.model|large.language/i.test(text))
-    return 'TECHNIQUE'
+    return 'TECHNICAL'
   if (/university|arxiv|preprint|\bjournal\b|nature|cell|lancet|nejm|pubmed|biorxiv|research|laboratory|institute/i.test(text) &&
       !/techcrunch|wired|venturebeat|the.verge/i.test(text))
-    return 'ACADEMIQUE'
+    return 'ACADEMIC'
   return 'SCIENCE'
 }
 
@@ -100,12 +100,12 @@ function scoreRelevance(article) {
   const src = (article.source ?? '').toLowerCase()
   // Tier 1 — top peer-reviewed journals
   if (/\bnature\b|nature machine|science\b|cell\b|lancet|new england|nejm|\bpnas\b/i.test(src))
-    return 'CRITIQUE'
+    return 'CRITICAL'
   // Tier 2 — peer-reviewed papers, official regulatory sources
   if (article.type === 'paper' || article.badge === 'Regulatory' || src === 'ema' || src === 'fda')
     return 'IMPORTANT'
   // Tier 3 — news, preprints, AI news feeds
-  return 'A_SURVEILLER'
+  return 'WATCH'
 }
 
 // ── Map pipeline article → digest item ───────────────────────────
@@ -150,7 +150,7 @@ console.log(`[digest] New articles to add this week: ${newArticles.length}`)
 const newDigestItems = newArticles.map(toDigestItem)
 
 // ── Merge + sort ──────────────────────────────────────────────────
-const relevanceOrder = { CRITIQUE: 0, IMPORTANT: 1, A_SURVEILLER: 2 }
+const relevanceOrder = { CRITICAL: 0, IMPORTANT: 1, WATCH: 2 }
 const allItems = [...(existingDigest.articles ?? []), ...newDigestItems]
 allItems.sort((a, b) => {
   const r = (relevanceOrder[a.relevance] ?? 1) - (relevanceOrder[b.relevance] ?? 1)
@@ -172,19 +172,18 @@ function generateSignal(items) {
   const topSources = Object.entries(srcCounts).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([s]) => s)
   const paperCount = items.filter(i => i.type === 'paper').length
 
-  // Month label in French
-  const monthLabel = new Date(digestId + '-02').toLocaleString('fr-FR', { month: 'long', year: 'numeric' })
+  const monthLabel = new Date(digestId + '-02').toLocaleString('en-US', { month: 'long', year: 'numeric' })
 
   const text = [
-    `Ce mois de ${monthLabel}, le digest recense ${items.length} article${items.length > 1 ? 's' : ''}.`,
+    `${monthLabel}: ${items.length} article${items.length > 1 ? 's' : ''} collected.`,
     dominant
-      ? `Thématique dominante : ${dominant[0]} (${dominant[1]} article${dominant[1] > 1 ? 's' : ''}).`
+      ? `Dominant topic: ${dominant[0]} (${dominant[1]} article${dominant[1] > 1 ? 's' : ''}).`
       : '',
     topSources.length
-      ? `Sources les plus actives : ${topSources.join(', ')}.`
+      ? `Most active sources: ${topSources.join(', ')}.`
       : '',
     paperCount > 0
-      ? `${paperCount} publication${paperCount > 1 ? 's' : ''} académique${paperCount > 1 ? 's' : ''} incluse${paperCount > 1 ? 's' : ''}.`
+      ? `${paperCount} peer-reviewed paper${paperCount > 1 ? 's' : ''} included.`
       : '',
   ].filter(Boolean).join(' ')
 
@@ -196,7 +195,7 @@ function generateSignal(items) {
     dominantCategoryCount:  dominant?.[1] ?? 0,
     topSources,
     paperCount,
-    criticalCount:          items.filter(i => i.relevance === 'CRITIQUE').length,
+    criticalCount:          items.filter(i => i.relevance === 'CRITICAL').length,
     importantCount:         items.filter(i => i.relevance === 'IMPORTANT').length,
     text,
     generatedAt:            now.toISOString(),

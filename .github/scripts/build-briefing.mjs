@@ -365,8 +365,8 @@ for (const sec of resolved.sections || []) {
 for (const item of resolved.pharmaFocus?.items || []) collectSources(item.sources)
 
 // Week label in French
-const monthFr = monday.toLocaleString('fr-FR', { month: 'long' })
-const weekLabel = `Semaine ${week} — ${monday.getDate()} ${monthFr} ${year}`
+const monthEn = monday.toLocaleString('en-US', { month: 'long' })
+const weekLabel = `Week ${week} — ${monthEn} ${monday.getDate()}, ${year}`
 
 // Final briefing object
 const briefing = {
