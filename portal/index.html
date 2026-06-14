@@ -22,9 +22,8 @@
   <!-- RSS feed discovery -->
   <link rel="alternate" type="application/rss+xml" title="Pharma AI &amp; Data Watch — RSS Feed" href="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml" />
 
-  <!-- Analytics (Plausible — privacy-friendly, no cookies, no GDPR banner needed)
-       Sign up free at https://plausible.io → add your site → replace the domain below -->
-  <!-- <script defer data-domain="djindetoss.github.io/pharma-ai-data-watch" src="https://plausible.io/js/script.js"></script> -->
+  <!-- Analytics: Plausible (privacy-friendly, no cookies, GDPR-compliant) -->
+  <script defer data-domain="djindetoss.github.io/pharma-ai-data-watch" src="https://plausible.io/js/script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,6 +62,7 @@
       </nav>
 
       <div class="header-actions">
+        <span id="pipeline-freshness" class="pipeline-freshness" style="display:none" title="Time since last pipeline run"></span>
         <div class="search-wrap">
           <span class="search-icon">🔍</span>
           <input type="search" class="search-input" placeholder="Search articles, tags…" autocomplete="off" />
@@ -436,10 +436,36 @@
     </div>
   </div>
 
+  <!-- Fuse.js — fast fuzzy search (no backend needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/data.js?v=20260614"></script>
   <script src="js/app.js?v=20260614"></script>
   <script>
+    // ── Pipeline freshness badge ──────────────────────────────────────────────
+    fetch('js/pipeline_meta.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : null)
+      .then(meta => {
+        if (!meta || !meta.generated_at) return;
+        const el = document.getElementById('pipeline-freshness');
+        if (!el) return;
+        const gen  = new Date(meta.generated_at);
+        const now  = new Date();
+        const diff = Math.round((now - gen) / 60000); // minutes
+        let label;
+        if      (diff < 60)         label = `Updated ${diff}m ago`;
+        else if (diff < 1440)       label = `Updated ${Math.round(diff/60)}h ago`;
+        else                        label = `Updated ${Math.round(diff/1440)}d ago`;
+        const isStale = diff > 1440 * 2; // > 2 days
+        el.textContent = `🟢 ${label}`;
+        if (isStale) {
+          el.textContent = `🔴 ${label}`;
+          el.title = 'Pipeline may be down — last update was more than 2 days ago';
+        }
+        el.style.display = 'inline-flex';
+      })
+      .catch(() => {});
+
     // Load latest digest info into sidebar widget
     fetch('./data/digests/index.json?v=' + Date.now())
       .then(r => r.ok ? r.json() : [])

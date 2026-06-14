@@ -5,6 +5,18 @@ let activeFilter      = 'all';
 let activeTopicFilter = 'all';
 let searchQuery       = '';
 let ALL_ARTICLES      = [];
+let _fuseIndex        = null;   // Fuse.js instance, built after articles load
+
+function _buildFuseIndex() {
+  if (typeof Fuse === 'undefined' || !ALL_ARTICLES.length) return;
+  _fuseIndex = new Fuse(ALL_ARTICLES, {
+    keys:             [{ name: 'title', weight: 0.6 }, { name: 'tags', weight: 0.25 }, { name: 'excerpt', weight: 0.1 }, { name: 'source', weight: 0.05 }],
+    threshold:        0.35,   // 0 = exact, 1 = match anything
+    minMatchCharLen:  2,
+    includeScore:     false,
+    ignoreLocation:   true,
+  });
+}
 let currentPage       = 1;
 const PER_PAGE        = 20;
 
@@ -153,16 +165,25 @@ function matchesTopic(article, topicKey) {
 
 /* ── Filtering ── */
 function filterArticles() {
-  return ALL_ARTICLES.filter(a => {
+  // When searching, use Fuse.js for fuzzy matching; fall back to simple includes
+  let pool = ALL_ARTICLES;
+  if (searchQuery) {
+    if (_fuseIndex) {
+      pool = _fuseIndex.search(searchQuery).map(r => r.item);
+    } else {
+      const q = searchQuery.toLowerCase();
+      pool = ALL_ARTICLES.filter(a =>
+        a.title.toLowerCase().includes(q) ||
+        a.excerpt.toLowerCase().includes(q) ||
+        (a.tags || []).some(t => t.toLowerCase().includes(q)) ||
+        a.source.toLowerCase().includes(q)
+      );
+    }
+  }
+  return pool.filter(a => {
     const matchType  = activeFilter === 'all' || a.type === activeFilter;
     const matchTopic = matchesTopic(a, activeTopicFilter);
-    const q = searchQuery.toLowerCase();
-    const matchSearch = !q ||
-      a.title.toLowerCase().includes(q) ||
-      a.excerpt.toLowerCase().includes(q) ||
-      (a.tags || []).some(t => t.toLowerCase().includes(q)) ||
-      a.source.toLowerCase().includes(q);
-    return matchType && matchTopic && matchSearch;
+    return matchType && matchTopic;
   });
 }
 
@@ -344,16 +365,16 @@ function renderList(articles) {
 
 /* ── Update filter counts ── */
 function updateFilterCounts() {
-  const base = ALL_ARTICLES.filter(a => {
-    const matchTopic = matchesTopic(a, activeTopicFilter);
-    if (!searchQuery) return matchTopic;
-    const q = searchQuery.toLowerCase();
-    return matchTopic && (
-      a.title.toLowerCase().includes(q) ||
-      a.excerpt.toLowerCase().includes(q) ||
-      (a.tags || []).some(t => t.toLowerCase().includes(q))
-    );
-  });
+  // Reuse filterArticles() pool for counts (Fuse-aware)
+  const searchPool = searchQuery
+    ? (_fuseIndex ? _fuseIndex.search(searchQuery).map(r => r.item) : ALL_ARTICLES.filter(a => {
+        const q = searchQuery.toLowerCase();
+        return a.title.toLowerCase().includes(q) ||
+               a.excerpt.toLowerCase().includes(q) ||
+               (a.tags || []).some(t => t.toLowerCase().includes(q));
+      }))
+    : ALL_ARTICLES;
+  const base = searchPool.filter(a => matchesTopic(a, activeTopicFilter));
 
   document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
     const f = btn.dataset.filter;
@@ -475,6 +496,7 @@ async function loadArticles() {
     console.warn('Could not load articles.json, using fallback data.', e);
     ALL_ARTICLES = typeof ARTICLES !== 'undefined' ? ARTICLES : [];
   }
+  _buildFuseIndex();   // build fuzzy search index once articles are loaded
   render();
 }
 

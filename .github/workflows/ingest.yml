@@ -68,6 +68,9 @@ jobs:
       - name: Generate RSS feed
         run: node .github/scripts/build-rss.mjs
 
+      - name: Generate sitemap.xml
+        run: node .github/scripts/build-sitemap.mjs || true
+
       - name: Rebuild events.html from events.json (warns on stale links)
         run: node .github/scripts/build-events.mjs || true
 
@@ -76,7 +79,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add portal/js/articles.json pipeline/processed/seen_ids.json portal/feed.xml portal/events.html portal/data/events.json
+          git add portal/js/articles.json portal/js/pipeline_meta.json pipeline/processed/seen_ids.json portal/feed.xml portal/sitemap.xml portal/events.html portal/data/events.json
 
           # Only commit if there are actual changes
           if git diff --cached --quiet; then
@@ -100,7 +103,9 @@ jobs:
 
           # Capture updated files from master before switching branches
           cp portal/js/articles.json /tmp/articles.json
+          cp portal/js/pipeline_meta.json /tmp/pipeline_meta.json 2>/dev/null || true
           cp portal/feed.xml /tmp/feed.xml
+          cp portal/sitemap.xml /tmp/sitemap.xml 2>/dev/null || true
           cp portal/events.html /tmp/events.html
 
           git fetch origin gh-pages
@@ -126,6 +131,23 @@ jobs:
             CHANGED=true
           fi
 
+          # Check pipeline_meta.json
+          if [ -f /tmp/pipeline_meta.json ]; then
+            mkdir -p js
+            if ! diff -q /tmp/pipeline_meta.json js/pipeline_meta.json > /dev/null 2>&1; then
+              cp /tmp/pipeline_meta.json js/pipeline_meta.json
+              CHANGED=true
+            fi
+          fi
+
+          # Check sitemap.xml
+          if [ -f /tmp/sitemap.xml ]; then
+            if ! diff -q /tmp/sitemap.xml sitemap.xml > /dev/null 2>&1; then
+              cp /tmp/sitemap.xml sitemap.xml
+              CHANGED=true
+            fi
+          fi
+
           # Check events.html
           if ! diff -q /tmp/events.html events.html > /dev/null 2>&1; then
             cp /tmp/events.html events.html
@@ -139,7 +161,7 @@ jobs:
 
           if [ "$CHANGED" = "true" ]; then
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
-            git add js/articles.json js/app.js feed.xml events.html
+            git add js/articles.json js/pipeline_meta.json js/app.js feed.xml sitemap.xml events.html
             git commit -m "chore: sync to gh-pages — $TIMESTAMP"
             # Pull with rebase to handle any concurrent pushes to gh-pages
             git pull --rebase origin gh-pages
@@ -151,6 +173,71 @@ jobs:
 
           # Return to master so subsequent steps work on the right branch
           git checkout master
+
+      - name: Notify on pipeline failure via Brevo
+        if: failure()
+        env:
+          BREVO_API_KEY:   ${{ secrets.BREVO_API_KEY }}
+          NOTIFY_EMAIL:    ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_FROM:     ${{ secrets.NOTIFY_FROM_EMAIL }}
+        run: |
+          python3 << 'PYEOF'
+          import os, json, urllib.request, datetime
+
+          api_key    = os.environ.get('BREVO_API_KEY', '')
+          to_email   = os.environ.get('NOTIFY_EMAIL', '')
+          from_email = os.environ.get('NOTIFY_FROM', '')
+
+          if not api_key or not to_email or not from_email:
+              print('⚠️  Email secrets not configured — skipping failure alert')
+              exit(0)
+
+          today   = datetime.date.today().isoformat()
+          run_url = 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+
+          html = f"""
+          <div style="font-family:Inter,system-ui,sans-serif;max-width:600px;margin:0 auto;background:#f9fafb;padding:24px;border-radius:12px">
+            <div style="background:#dc2626;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:20px">
+              <div style="font-size:22px;font-weight:700">❌ Pipeline d'ingestion en échec</div>
+              <div style="font-size:14px;opacity:.85;margin-top:4px">{today} · Pharma AI &amp; Data Watch</div>
+            </div>
+            <div style="background:#fff;padding:20px 24px;border-radius:8px;border:1px solid #e5e7eb;margin-bottom:16px">
+              <p style="color:#374151;margin-bottom:12px">
+                Le pipeline quotidien d'ingestion d'articles a rencontré une erreur.
+                Le site n'a pas été mis à jour ce jour.
+              </p>
+              <p style="color:#374151;font-size:13px">
+                Causes fréquentes : quota NCBI dépassé · API Anthropic indisponible ·
+                flux RSS inaccessible · erreur de commit git.
+              </p>
+            </div>
+            <a href="{run_url}" style="display:inline-block;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600">
+              Voir le log Actions →
+            </a>
+            <p style="font-size:11px;color:#9ca3af;margin-top:16px">
+              Notification automatique · pipeline ingest.yml
+            </p>
+          </div>
+          """
+
+          payload = {
+              'sender':      {'name': 'Pharma AI Watch', 'email': from_email},
+              'to':          [{'email': to_email}],
+              'subject':     f'❌ Pipeline ingestion failed — {today}',
+              'htmlContent': html,
+          }
+          req = urllib.request.Request(
+              'https://api.brevo.com/v3/smtp/email',
+              data    = json.dumps(payload).encode(),
+              headers = {'Content-Type': 'application/json', 'api-key': api_key},
+              method  = 'POST',
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  print(f'✅ Failure alert sent to {to_email}')
+          except Exception as e:
+              print(f'Could not send failure email: {e}')
+          PYEOF
 
       - name: Upload draft files as artefact
         uses: actions/upload-artifact@v4

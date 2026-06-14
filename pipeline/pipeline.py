@@ -67,6 +67,7 @@ with CONFIG_FILE.open() as f:
 OUTPUT_JSON   = (BASE_DIR / CONFIG["output"]["articles_json"]).resolve()
 DRAFTS_DIR    = BASE_DIR / CONFIG["output"]["drafts_dir"]
 SEEN_IDS_FILE = BASE_DIR / CONFIG["output"]["processed_ids_file"]
+META_JSON     = (BASE_DIR / CONFIG["output"]["articles_json"]).parent / "pipeline_meta.json"
 
 DRAFTS_DIR.mkdir(exist_ok=True)
 SEEN_IDS_FILE.parent.mkdir(exist_ok=True)
@@ -131,6 +132,15 @@ def save_articles(articles: list):
     articles_trimmed = articles_sorted[:MAX_TOTAL]
     OUTPUT_JSON.write_text(json.dumps(articles_trimmed, indent=2, ensure_ascii=False))
     log.info(f"Saved {len(articles_trimmed)} articles → {OUTPUT_JSON}")
+
+    # Write pipeline metadata (freshness badge on the portal)
+    meta = {
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "article_count": len(articles_trimmed),
+        "date": today,
+    }
+    META_JSON.write_text(json.dumps(meta, indent=2))
+    log.info(f"Pipeline meta written → {META_JSON}")
 
 
 def relevance_score(text: str, article_type: str = "") -> int:
@@ -356,6 +366,71 @@ def fetch_biorxiv(dry_run=False) -> list:
     return results
 
 
+# ── RSS retry helper ─────────────────────────────────────────────────────────
+
+def _parse_feed_with_retry(url: str, max_retries: int = 3, base_backoff: float = 1.5):
+    """Parse a feed URL with exponential backoff retry on transient failures."""
+    last_exc = None
+    for attempt in range(max_retries):
+        try:
+            parsed = feedparser.parse(url)
+            # bozo=True but has entries → partial parse, still usable
+            if parsed.entries or not parsed.bozo:
+                return parsed
+            last_exc = parsed.bozo_exception
+        except Exception as exc:
+            last_exc = exc
+        if attempt < max_retries - 1:
+            delay = base_backoff * (2 ** attempt)
+            log.warning(f"Feed parse failed (attempt {attempt+1}/{max_retries}), retry in {delay:.1f}s: {url}")
+            time.sleep(delay)
+    log.warning(f"Feed permanently failed after {max_retries} retries: {url} — {last_exc}")
+    # Return a dummy result so callers handle gracefully
+    class _Empty: entries = []; bozo = True; bozo_exception = last_exc
+    return _Empty()
+
+
+# ── Cross-source deduplication ─────────────────────────────────────────────────
+
+_STOPWORDS = {
+    'a','an','the','in','on','at','to','for','of','and','or','is','are','was',
+    'were','has','have','had','be','been','with','from','by','as','it','its',
+    'this','that','these','those','new','says','said','will','can','may',
+}
+
+def _norm_title(title: str) -> str:
+    """Return a normalised fingerprint of a title for cross-source dedup."""
+    t = re.sub(r'[^\w\s]', '', title.lower())
+    words = [w for w in t.split() if w not in _STOPWORDS]
+    return ' '.join(words[:10])  # first 10 significant words
+
+
+def cross_source_dedup(items: list) -> tuple[list, int]:
+    """
+    Remove near-duplicate articles that cover the same story across sources.
+    When two articles share the same normalised title prefix on the same date,
+    keep the one with the higher relevance score.
+    Returns (deduped_list, n_removed).
+    """
+    seen: dict[tuple, dict] = {}   # (norm_title, date) → best_item
+    order: list[tuple] = []        # preserve insertion order for determinism
+
+    for item in items:
+        key = (_norm_title(item.get("title", "")), item.get("date", ""))
+        if key in seen:
+            if item.get("_score", 0) > seen[key].get("_score", 0):
+                seen[key] = item   # replace with better-scored version
+        else:
+            seen[key] = item
+            order.append(key)
+
+    deduped = [seen[k] for k in order]
+    removed = len(items) - len(deduped)
+    if removed:
+        log.info(f"Cross-source dedup: removed {removed} near-duplicate article(s)")
+    return deduped, removed
+
+
 # ── RSS generic fetcher ───────────────────────────────────────────────────────
 
 # Only unambiguous multi-word or very specific event signals — avoids false positives
@@ -413,10 +488,10 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
 
     try:
         log.info(f"RSS [{name}]: {url}")
-        parsed = feedparser.parse(url)
+        parsed = _parse_feed_with_retry(url)
 
-        if parsed.bozo and not parsed.entries:
-            log.warning(f"RSS [{name}]: feed parse error — {parsed.bozo_exception}")
+        if not parsed.entries:
+            log.warning(f"RSS [{name}]: no entries returned — skipping")
             return []
 
         for entry in parsed.entries[:MAX_PER_SOURCE]:
@@ -632,6 +707,9 @@ def main():
         new_items += fetch_events_rss(dry_run=args.dry_run)
 
     log.info(f"Total fetched: {len(new_items)} items across all sources")
+
+    # ── Cross-source deduplication ────────────────────────────────────────────
+    new_items, _dupes = cross_source_dedup(new_items)
 
     # ── Optional: Claude excerpt enhancement ─────────────────────────────────
     if _HAS_CLAUDE and CONFIG.get("claude_enhancer", {}).get("enabled") and not args.dry_run:
