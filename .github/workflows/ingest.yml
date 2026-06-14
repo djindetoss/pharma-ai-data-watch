@@ -68,12 +68,15 @@ jobs:
       - name: Generate RSS feed
         run: node .github/scripts/build-rss.mjs
 
+      - name: Rebuild events.html from events.json (warns on stale links)
+        run: node .github/scripts/build-events.mjs || true
+
       - name: Commit and push updated articles.json + feed.xml
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add portal/js/articles.json pipeline/processed/seen_ids.json portal/feed.xml
+          git add portal/js/articles.json pipeline/processed/seen_ids.json portal/feed.xml portal/events.html portal/data/events.json
 
           # Only commit if there are actual changes
           if git diff --cached --quiet; then
@@ -98,6 +101,7 @@ jobs:
           # Capture updated files from master before switching branches
           cp portal/js/articles.json /tmp/articles.json
           cp portal/feed.xml /tmp/feed.xml
+          cp portal/events.html /tmp/events.html
 
           git fetch origin gh-pages
           git checkout gh-pages
@@ -122,6 +126,12 @@ jobs:
             CHANGED=true
           fi
 
+          # Check events.html
+          if ! diff -q /tmp/events.html events.html > /dev/null 2>&1; then
+            cp /tmp/events.html events.html
+            CHANGED=true
+          fi
+
           # Check app.js (will differ due to key injection)
           if ! git diff --quiet js/app.js; then
             CHANGED=true
@@ -129,7 +139,7 @@ jobs:
 
           if [ "$CHANGED" = "true" ]; then
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
-            git add js/articles.json js/app.js feed.xml
+            git add js/articles.json js/app.js feed.xml events.html
             git commit -m "chore: sync to gh-pages — $TIMESTAMP"
             # Pull with rebase to handle any concurrent pushes to gh-pages
             git pull --rebase origin gh-pages
