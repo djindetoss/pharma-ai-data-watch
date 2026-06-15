@@ -1,22 +1,25 @@
 name: Pipeline watchdog
 
-# Runs 3 hours after the scheduled ingest (06:00 UTC).
-# If no successful ingest run has completed today, it re-triggers it.
-# This guards against GitHub's scheduler silently skipping runs.
+# Runs at 09:00 UTC (Mon–Sun) to check ingest, and at 09:30 UTC on Mondays to check briefing.
+# Re-triggers any workflow that was skipped by GitHub's scheduler.
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 09:00 UTC — checks whether 06:00 run happened
-  workflow_dispatch:        # Manual trigger for testing
+    - cron: '0 9 * * *'    # 09:00 UTC daily  — guards daily ingest (scheduled 06:00)
+    - cron: '30 9 * * 1'   # 09:30 UTC Monday — guards weekly briefing (scheduled 07:30)
+  workflow_dispatch:
+    inputs:
+      check:
+        description: "Which workflow to check (ingest / briefing / all)"
+        default: "all"
 
 jobs:
-  watchdog:
-    name: Ensure daily ingest ran
+  # ── 1. Daily ingest watchdog ────────────────────────────────────────────────
+  guard-ingest:
+    name: Guard daily ingest
     runs-on: ubuntu-latest
-
     permissions:
-      actions: write    # needed to trigger workflow_dispatch
-
+      actions: write
     steps:
       - name: Check if ingest ran today
         id: check
@@ -24,9 +27,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TODAY=$(date -u +%Y-%m-%d)
-          echo "Checking for successful ingest runs on $TODAY …"
-
-          # List recent completed runs of ingest.yml
           RUNS=$(gh run list \
             --repo "${{ github.repository }}" \
             --workflow ingest.yml \
@@ -34,86 +34,145 @@ jobs:
             --limit 5 \
             --json conclusion,createdAt \
             --jq ".[] | select(.conclusion == \"success\" and (.createdAt | startswith(\"$TODAY\")))")
-
           if [ -n "$RUNS" ]; then
-            echo "✅ Ingest already ran successfully today ($TODAY). Nothing to do."
+            echo "✅ Ingest ran successfully today ($TODAY)."
             echo "needs_rerun=false" >> "$GITHUB_OUTPUT"
           else
-            echo "⚠️  No successful ingest found for $TODAY — will trigger a re-run."
+            echo "⚠️  No ingest run found for $TODAY — triggering re-run."
             echo "needs_rerun=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Re-trigger ingest pipeline
+      - name: Re-trigger ingest
         if: steps.check.outputs.needs_rerun == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh workflow run ingest.yml \
-            --repo "${{ github.repository }}" \
-            --ref master
-          echo "✅ Ingest re-triggered by watchdog at $(date -u)"
+          gh workflow run ingest.yml --repo "${{ github.repository }}" --ref master
+          echo "✅ Ingest re-triggered at $(date -u)"
 
-      - name: Notify if watchdog had to re-trigger
+      - name: Notify — ingest was re-triggered
         if: steps.check.outputs.needs_rerun == 'true'
         env:
-          BREVO_API_KEY:   ${{ secrets.BREVO_API_KEY }}
-          NOTIFY_EMAIL:    ${{ secrets.NOTIFY_EMAIL }}
-          NOTIFY_FROM:     ${{ secrets.NOTIFY_FROM_EMAIL }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          NOTIFY_EMAIL:  ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_FROM:   ${{ secrets.NOTIFY_FROM_EMAIL }}
         run: |
           python3 << 'PYEOF'
           import os, json, urllib.request, datetime
-
           api_key    = os.environ.get('BREVO_API_KEY', '')
           to_email   = os.environ.get('NOTIFY_EMAIL', '')
           from_email = os.environ.get('NOTIFY_FROM', '')
-
           if not api_key or not to_email or not from_email:
-              print('Email secrets not configured — skipping watchdog notification')
               exit(0)
-
           today   = datetime.date.today().isoformat()
           run_url = 'https://github.com/${{ github.repository }}/actions/workflows/ingest.yml'
-
-          html = f"""
-          <div style="font-family:Inter,system-ui,sans-serif;max-width:600px;margin:0 auto;background:#f9fafb;padding:24px;border-radius:12px">
-            <div style="background:#b45309;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:20px">
-              <div style="font-size:22px;font-weight:700">⚠️ Pipeline watchdog — re-déclenchement automatique</div>
-              <div style="font-size:14px;opacity:.85;margin-top:4px">{today} · Pharma AI &amp; Data Watch</div>
+          html = f"""<div style="font-family:Inter,system-ui,sans-serif;max-width:580px;margin:0 auto;background:#f9fafb;padding:24px;border-radius:12px">
+            <div style="background:#b45309;color:#fff;padding:18px 22px;border-radius:8px;margin-bottom:16px">
+              <div style="font-size:20px;font-weight:700">⚠️ Watchdog : ingest re-déclenché — {today}</div>
             </div>
-            <div style="background:#fff;padding:20px 24px;border-radius:8px;border:1px solid #e5e7eb">
-              <p style="color:#374151;margin-bottom:12px">
-                Le pipeline d'ingestion prévu à <strong>06h00 UTC</strong> n'avait pas tourné aujourd'hui.
-              </p>
-              <p style="color:#374151;margin-bottom:12px">
-                Le watchdog a <strong>déclenché automatiquement</strong> un nouveau run à 09h00 UTC.
-                Le site sera mis à jour dans les prochaines minutes.
-              </p>
-              <p style="color:#6b7280;font-size:13px">
-                Cause probable : GitHub Actions a ignoré le run schedulé (pic de charge ou repos peu actif).
-                Aucune action requise de ta part.
-              </p>
+            <div style="background:#fff;padding:18px 22px;border-radius:8px;border:1px solid #e5e7eb">
+              <p style="color:#374151">Le pipeline d'ingestion <strong>06h00 UTC</strong> n'avait pas tourné.<br>
+              Le watchdog l'a re-déclenché automatiquement à <strong>09h00 UTC</strong>.<br>
+              Le site sera mis à jour dans les prochaines minutes.</p>
+              <p style="color:#6b7280;font-size:13px;margin-top:8px">Aucune action requise.</p>
             </div>
-            <a href="{run_url}" style="display:inline-block;margin-top:16px;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600">
-              Voir les runs →
-            </a>
-          </div>
-          """
-
-          payload = {
-              'sender':      {'name': 'Pharma AI Watch', 'email': from_email},
-              'to':          [{'email': to_email}],
-              'subject':     f'⚠️ Watchdog: pipeline re-déclenché automatiquement — {today}',
-              'htmlContent': html,
-          }
-          req = urllib.request.Request(
-              'https://api.brevo.com/v3/smtp/email',
-              data    = json.dumps(payload).encode(),
-              headers = {'Content-Type': 'application/json', 'api-key': api_key},
-              method  = 'POST',
-          )
+            <a href="{run_url}" style="display:inline-block;margin-top:14px;background:#1d4ed8;color:#fff;padding:9px 18px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600">Voir les runs →</a>
+          </div>"""
+          payload = {'sender': {'name': 'Pharma AI Watch', 'email': from_email},
+                     'to': [{'email': to_email}],
+                     'subject': f'⚠️ Watchdog: ingest re-déclenché — {today}',
+                     'htmlContent': html}
+          req = urllib.request.Request('https://api.brevo.com/v3/smtp/email',
+              data=json.dumps(payload).encode(),
+              headers={'Content-Type': 'application/json', 'api-key': api_key}, method='POST')
           try:
               with urllib.request.urlopen(req, timeout=15) as r:
-                  print(f'✅ Watchdog alert sent to {to_email}')
+                  print(f'✅ Alert sent to {to_email}')
           except Exception as e:
-              print(f'Could not send watchdog email: {e}')
+              print(f'Email error: {e}')
+          PYEOF
+
+  # ── 2. Weekly briefing watchdog (Mondays only) ──────────────────────────────
+  guard-briefing:
+    name: Guard weekly briefing
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Check if briefing ran this Monday
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Only meaningful on Mondays — skip silently on other days
+          DOW=$(date -u +%u)   # 1=Mon … 7=Sun
+          if [ "$DOW" != "1" ]; then
+            echo "Not Monday (day=$DOW) — skipping briefing check."
+            echo "needs_rerun=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          RUNS=$(gh run list \
+            --repo "${{ github.repository }}" \
+            --workflow build-briefing.yml \
+            --status completed \
+            --limit 5 \
+            --json conclusion,createdAt \
+            --jq ".[] | select(.conclusion == \"success\" and (.createdAt | startswith(\"$TODAY\")))")
+          if [ -n "$RUNS" ]; then
+            echo "✅ Briefing ran successfully today ($TODAY)."
+            echo "needs_rerun=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "⚠️  No briefing run found for $TODAY — triggering re-run."
+            echo "needs_rerun=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Re-trigger briefing
+        if: steps.check.outputs.needs_rerun == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run build-briefing.yml --repo "${{ github.repository }}" --ref master
+          echo "✅ Briefing re-triggered at $(date -u)"
+
+      - name: Notify — briefing was re-triggered
+        if: steps.check.outputs.needs_rerun == 'true'
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          NOTIFY_EMAIL:  ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_FROM:   ${{ secrets.NOTIFY_FROM_EMAIL }}
+        run: |
+          python3 << 'PYEOF'
+          import os, json, urllib.request, datetime
+          api_key    = os.environ.get('BREVO_API_KEY', '')
+          to_email   = os.environ.get('NOTIFY_EMAIL', '')
+          from_email = os.environ.get('NOTIFY_FROM', '')
+          if not api_key or not to_email or not from_email:
+              exit(0)
+          today   = datetime.date.today().isoformat()
+          run_url = 'https://github.com/${{ github.repository }}/actions/workflows/build-briefing.yml'
+          html = f"""<div style="font-family:Inter,system-ui,sans-serif;max-width:580px;margin:0 auto;background:#f9fafb;padding:24px;border-radius:12px">
+            <div style="background:#b45309;color:#fff;padding:18px 22px;border-radius:8px;margin-bottom:16px">
+              <div style="font-size:20px;font-weight:700">⚠️ Watchdog : briefing re-déclenché — {today}</div>
+            </div>
+            <div style="background:#fff;padding:18px 22px;border-radius:8px;border:1px solid #e5e7eb">
+              <p style="color:#374151">Le briefing hebdomadaire <strong>07h30 UTC</strong> n'avait pas tourné ce lundi.<br>
+              Le watchdog l'a re-déclenché automatiquement à <strong>09h30 UTC</strong>.<br>
+              La nouvelle édition sera disponible dans les prochaines minutes.</p>
+              <p style="color:#6b7280;font-size:13px;margin-top:8px">Aucune action requise.</p>
+            </div>
+            <a href="{run_url}" style="display:inline-block;margin-top:14px;background:#1d4ed8;color:#fff;padding:9px 18px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600">Voir les runs →</a>
+          </div>"""
+          payload = {'sender': {'name': 'Pharma AI Watch', 'email': from_email},
+                     'to': [{'email': to_email}],
+                     'subject': f'⚠️ Watchdog: briefing re-déclenché — {today}',
+                     'htmlContent': html}
+          req = urllib.request.Request('https://api.brevo.com/v3/smtp/email',
+              data=json.dumps(payload).encode(),
+              headers={'Content-Type': 'application/json', 'api-key': api_key}, method='POST')
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  print(f'✅ Alert sent to {to_email}')
+          except Exception as e:
+              print(f'Email error: {e}')
           PYEOF
