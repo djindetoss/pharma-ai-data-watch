@@ -1,111 +1,50 @@
 [
   {
-    "id": "auto-695f513beba2",
-    "type": "paper",
-    "title": "Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types",
-    "excerpt": "1. Gut Microbes. 2026 Dec 31;18(1):2662690. doi: 10.1080/19490976.2026.2662690. Epub 2026 Apr 23. Gene-level gut microbiome signatures as predictive biomarkers for response to immune checkpoint inhibitors across multiple cancer types. Zhang F(1), Hu K(1), Sun C(2), Chen R(3), Ni G(4)(5)(6)(7), Liu X(8)(9), Wei L(10), Su R(1). Author information: (1)College of Intelligence and Computing, Tianjin University, Tianjin, China. (2)CSIRO Data61, Epping, NSW, Australia. (3)School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin, China. (4)Academy of Med",
-    "source": "Gut Microbes",
-    "date": "2026-12-31",
+    "id": "nws-a43716c7a285",
+    "type": "news",
+    "title": "Why we still need {admiral} in an age of AI",
+    "excerpt": "There is a version of the AI-in-pharma story that goes like this: LLMs are trained on vast amounts of R code, so they can write ADaM programs on demand. Packages like admiral {admiral} become optional — a style preference rather than a requi...\nContinue readi…",
+    "source": "R-bloggers.com",
+    "date": "2026-06-14",
     "tags": [
-      "Pharma AI",
-      "Drug discovery"
+      "EMA",
+      "LLM"
     ],
     "featured": false,
     "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42026803/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
+    "url": "https://www.r-bloggers.com/2026/06/why-we-still-need-admiral-in-an-age-of-ai/",
+    "badge": "Data",
+    "topic": "data-governance"
   },
   {
-    "id": "auto-ad1234355c43",
-    "type": "paper",
-    "title": "Glucocorticoids for Patients With Acute Decompensated Heart Failure: A Protocol for a Systematic Review With Meta-Analysis and Trial Sequential Analysis",
-    "excerpt": "This protocol outlines a systematic review with meta-analysis and trial sequential analysis to evaluate the efficacy and safety of glucocorticoids in treating patients with acute decompensated heart failure. The study aims to synthesize evidence from randomized controlled trials to determine whether glucocorticoid therapy provides clinical benefits in this patient population. Trial sequential analysis will be employed to assess the robustness of findings and determine whether sufficient evidence exists to draw definitive conclusions.",
-    "source": "Acta Anaesthesiol Scand",
-    "date": "2026-07-23",
+    "id": "nws-9f21cdd032f0",
+    "type": "ainews",
+    "title": "As anthropic suspends access to new models, india debates its AI future | techcrunch",
+    "excerpt": "As Anthropic suspends access to new models, India debates its AI future | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-06-14",
     "tags": [
-      "Acute decompensated heart failure",
-      "Glucocorticoids",
-      "Systematic review",
-      "Meta-analysis"
+      "Anthropic"
     ],
     "featured": false,
     "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42171507/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
+    "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+    "badge": "AI Lab"
   },
   {
-    "id": "auto-24885d9b77de",
-    "type": "paper",
-    "title": "Highly sensitive m6A electrochemical biosensor based on laser-induced graphene electrodes functionalized with DNA tetrahedron/gold-antibody nanoparticle",
-    "excerpt": "Researchers developed a highly sensitive electrochemical biosensor for detecting m6A (N6-methyladenosine) using laser-induced graphene electrodes functionalized with DNA tetrahedron structures and gold-antibody nanoparticles. This biosensor platform combines electrochemical detection with nanomaterial-based signal amplification to achieve enhanced sensitivity for m6A biomarker analysis. The approach represents an advanced analytical tool for epigenetic modification detection with potential applications in biomarker-driven diagnostics.",
-    "source": "Anal Chim Acta",
-    "date": "2026-07-15",
+    "id": "nws-cb3568a3265c",
+    "type": "ainews",
+    "title": "Meta reportedly moves to unwind $2b manus deal after beijing's demand | techcrunch",
+    "excerpt": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
+    "source": "TechCrunch",
+    "date": "2026-06-14",
     "tags": [
-      "Biosensor Technology",
-      "Electrochemical Detection",
-      "Epigenetic Biomarkers",
-      "Nanomaterial Functionalization"
+      "EMA"
     ],
     "featured": false,
     "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42108061/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-bf93918bb754",
-    "type": "paper",
-    "title": "Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations",
-    "excerpt": "1. Eur J Med Chem. 2026 Jul 5;311:118855. doi: 10.1016/j.ejmech.2026.118855. Epub 2026 Apr 9. Accurate and interpretable ADMET prediction: Integrating structural, geometric, and global molecular context representations. Qiu K(1), Li K(1), Qiao J(1), Wang D(2), Jin J(1), Yan Z(1), Wong KC(3), Wei L(4). Author information: (1)School of Software, Shandong University, Jinan, China. (2)New Laboratory of Pattern Recognition (NLPR), State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), Institute of Automation, Chinese Academy of Sciences, China; School of Artificial Intel",
-    "source": "Eur J Med Chem",
-    "date": "2026-07-05",
-    "tags": [
-      "Pharma AI",
-      "Drug discovery"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/41985263/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-ea8abb2ebaf3",
-    "type": "paper",
-    "title": "Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era",
-    "excerpt": "1. New Microbes New Infect. 2026 Apr 10;71:101751. doi: 10.1016/j.nmni.2026.101751. eCollection 2026 Jun. Artificial intelligence at the frontlines: Emerging infectious and parasitic diseases in the digital era. Nasr DS(1)(2), Alraee NB(3), Katbi SWA(3), Kouli NM(3), Asaad NI(3), Ismail MM(3), Khanday S(1). Author information: (1)Biomedical Sciences Department, Dubai Medical College for Girls, Dubai Medical University, Dubai, 19099, United Arab Emirates. (2)Medical Parasitology Department, Faculty of Medicine, Cairo University, Cairo, Egypt. (3)Students at Dubai Medical College for Gir",
-    "source": "New Microbes New Infect",
-    "date": "2026-06-25",
-    "tags": [
-      "Pharma AI",
-      "Drug discovery"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42027758/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-e74def0df0f6",
-    "type": "paper",
-    "title": "Direct Oral Anticoagulant Consumption and the Risk of Acute Interstitial Lung Diseases: A Case-Crossover Study Using Japanese Administrative Data",
-    "excerpt": "A case-crossover study using Japanese administrative data examined the association between direct oral anticoagulant (DOAC) consumption and acute interstitial lung disease risk. The study employed pharmacoepidemiological methods to evaluate whether DOAC exposure increases the likelihood of acute interstitial lung disease development in a Japanese patient population.",
-    "source": "Pharmacoepidemiol Drug Saf",
-    "date": "2026-06-24",
-    "tags": [
-      "Direct Oral Anticoagulants",
-      "Interstitial Lung Disease",
-      "Pharmacoepidemiology",
-      "Safety Signal"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42175652/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
+    "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
+    "badge": "AI Tech"
   },
   {
     "id": "nws-b81df8b5b179",
@@ -185,6 +124,179 @@
     "badge": "AI Tech"
   },
   {
+    "id": "nws-cd8c7d22d946",
+    "type": "news",
+    "title": "Anthropic pre-ipo market falls after US directive forces model shutdown",
+    "excerpt": "Anthropic says it disabled Fable 5 and Mythos 5 after a US government export-control directive, while pre-IPO-linked trading weakened.",
+    "source": "Bitcoinist",
+    "date": "2026-06-13",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/anthropic-pre-ipo-market-falls-after-us-directive-forces-model-shutdown/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a9392d153944",
+    "type": "news",
+    "title": "Evicore by evernorth rated #1 as prior authorization becomes a top health plan technology acquisition priority",
+    "excerpt": "eviCore by Evernorth Rated #1 as Prior Authorization Becomes a Top Health Plan Technology Acquisition Prioritymorningstar.com",
+    "source": "Morningstar.com",
+    "date": "2026-06-13",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.morningstar.com/news/accesswire/1176528msn/evicore-by-evernorth-rated-1-as-prior-authorization-becomes-a-top-health-plan-technology-acquisition-priority",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-7fbe6ce4d3cb",
+    "type": "news",
+    "title": "Eli lilly’s AI data push meets new obesity rivalry from pfizer",
+    "excerpt": "Eli Lilly (NYSE:LLY) has invested in Abridge, an AI-enabled clinical documentation company, marking a move into AI supported clinical research and real-world data capture.\nThe partnership is aimed at improving trial enrollment and real-world evidence generati…",
+    "source": "Simply Wall St",
+    "date": "2026-06-13",
+    "tags": [
+      "LLM",
+      "RWE",
+      "RWD"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-lly/eli-lilly/news/eli-lillys-ai-data-push-meets-new-obesity-rivalry-from-pfize",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-a8b93cd84219",
+    "type": "news",
+    "title": "This week’s awesome tech stories from around the web (through june 13)",
+    "excerpt": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology.\nThe post This Week’s Awesome Tech Stories From Around the Web (Through June 13) appeared first on SingularityHub.",
+    "source": "Singularity Hub",
+    "date": "2026-06-13",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://singularityhub.com/2026/06/13/this-weeks-awesome-tech-stories-from-around-the-web-through-june-13-2/#article",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-52f69ed1634e",
+    "type": "ainews",
+    "title": "Amazon security research reportedly led to the white house’s anthropic fable ban",
+    "excerpt": "According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. Accor…",
+    "source": "The Verge",
+    "date": "2026-06-13",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-39908d3ea933",
+    "type": "ainews",
+    "title": "Amazon CEO reportedly raised anthropic model concerns before government crackdown | techcrunch",
+    "excerpt": "Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.",
+    "source": "TechCrunch",
+    "date": "2026-06-13",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-5b78e7e16d01",
+    "type": "ainews",
+    "title": "Openai faces investigation from state attorneys general | techcrunch",
+    "excerpt": "It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data.",
+    "source": "TechCrunch",
+    "date": "2026-06-13",
+    "tags": [
+      "Health data",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-1cdbbfcd7cb4",
+    "type": "ainews",
+    "title": "World cup AI predictor now lets users ask daft what-ifs",
+    "excerpt": "Spoiler: It doesn't end well for Team Register",
+    "source": "Theregister.com",
+    "date": "2026-06-13",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/offbeat/2026/06/13/world-cup-ai-predictor-now-lets-users-ask-daft-what-ifs/5254853",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-c368b693a797",
+    "type": "ainews",
+    "title": "Anthropic cuts off fable 5 and mythos 5 access following government order",
+    "excerpt": "On Friday evening, the government ordered Anthropic to block access to Fable 5 and Mythos 5 for all foreign nations, both inside and outside the US, due to national security concerns. That order included employees of Anthropic. To meet those demands, the comp…",
+    "source": "The Verge",
+    "date": "2026-06-13",
+    "tags": [
+      "EMA",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-4ab18c8c5540",
+    "type": "ainews",
+    "title": "The fcc wants to kill burner phones",
+    "excerpt": "Plus: AI bug hunting fuels Microsoft’s biggest-ever Patch Tuesday, ShinyHunters ransomware gang exploits an Oracle zero-day, and more.",
+    "source": "Wired",
+    "date": "2026-06-13",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/security-news-this-week-the-fcc-wants-to-kill-burner-phones/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-ae8100dd200d",
+    "type": "ainews",
+    "title": "Kpmg pulls report on AI usage due to apparent hallucinations | techcrunch",
+    "excerpt": "KPMG pulls report on AI usage due to apparent hallucinations | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-06-13",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+    "badge": "AI Tech"
+  },
+  {
     "id": "auto-2ed965d34b34",
     "type": "ainews",
     "title": "Towards AI-augmented decision making in psychiatry",
@@ -244,22 +356,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://www.techradar.com/pro/holistic-ai-adoption-the-key-to-unlocking-enterprise-value",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-c2d6a312e9e2",
-    "type": "news",
-    "title": "Openai opens madrid office to enhance chatgpt expansion in europe",
-    "excerpt": "OpenAI's Madrid office could bolster Europe's AI landscape, fostering innovation and collaboration while raising decentralization concerns in crypto.\nThe post OpenAI opens Madrid office to enhance ChatGPT expansion in Europe appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-12",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/openai-madrid-office-europe-expansion/",
     "badge": "Regulatory",
     "topic": "regulatory"
   },
@@ -933,22 +1029,6 @@
     "topic": "regulatory"
   },
   {
-    "id": "nws-46be7bdfe5a0",
-    "type": "news",
-    "title": "Canada introduces legislation to ban social media for children under 16, regulate AI chatbots",
-    "excerpt": "Canada's legislation could reshape tech industry norms, prompting global shifts in digital safety standards and AI regulation compliance.\nThe post Canada introduces legislation to ban social media for children under 16, regulate AI chatbots appeared first on …",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/canada-social-media-ban-children-ai-chatbots/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
     "id": "nws-43b3c9acf3b6",
     "type": "news",
     "title": "It talk: \"ai-driven development: what's actually changing for engineers\", 24 june",
@@ -1272,55 +1352,6 @@
     "topic": "drug-discovery"
   },
   {
-    "id": "nws-e43d55838255",
-    "type": "news",
-    "title": "Anthropic faces backlash over stricter safeguards on claude model",
-    "excerpt": "Anthropic's incident highlights the delicate balance between AI safety and usability, risking trust and regulatory scrutiny in the AI sector.\nThe post Anthropic faces backlash over stricter safeguards on Claude model appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "LLM",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/anthropic-backlash-claude-safeguards/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-c65f3ec1f603",
-    "type": "news",
-    "title": "Nvidia hires bruce andrews as head of government affairs in d.c.",
-    "excerpt": "Nvidia's strategic hire of Bruce Andrews could enhance its influence in shaping favorable U.S. tech policies, impacting global AI market dynamics.\nThe post Nvidia hires Bruce Andrews as head of government affairs in D.C. appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/nvidia-hires-bruce-andrews-government-affairs/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9b184f4d94d3",
-    "type": "news",
-    "title": "Ex-andreessen horowitz partner criticizes firm for AI political infiltration",
-    "excerpt": "The critique highlights potential risks of concentrated political influence in AI and crypto sectors, possibly affecting regulatory outcomes.\nThe post Ex-Andreessen Horowitz partner criticizes firm for AI political infiltration appeared first on Crypto Briefi…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/a16z-partner-criticizes-ai-political-infiltration/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
     "id": "nws-e37201a73936",
     "type": "news",
     "title": "Canada’s AI strategy and universities: beyond literacy, students need to be fluent with AI",
@@ -1333,22 +1364,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://theconversation.com/canadas-ai-strategy-and-universities-beyond-literacy-students-need-to-be-fluent-with-ai-283450",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-4c06c9e9cf43",
-    "type": "news",
-    "title": "Former xai engineer sues company over wrongful termination after raising grok safety concerns",
-    "excerpt": "The lawsuit could intensify scrutiny on AI safety, impacting regulatory landscapes and potentially affecting SpaceX's IPO and reputation.\nThe post Former xAI engineer sues company over wrongful termination after raising Grok safety concerns appeared first on …",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/xai-engineer-sues-wrongful-termination-grok-safety/",
     "badge": "Regulatory",
     "topic": "regulatory"
   },
@@ -1557,22 +1572,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://punchng.com/icpc-says-fraudulent-nin-registration-attracts-seven-year-jail-term/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-21ebd27a143b",
-    "type": "news",
-    "title": "Anthropic apologizes for claude fable 5 censorship, promises fixes",
-    "excerpt": "Anthropic's transparency shift may lead to increased false positives, impacting user trust and influencing industry data handling standards.\nThe post Anthropic apologizes for Claude Fable 5 censorship, promises fixes appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-11",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/anthropic-claude-fable-5-censorship-apology/",
     "badge": "Data",
     "topic": "data-governance"
   },
@@ -2214,54 +2213,6 @@
     "topic": "drug-discovery"
   },
   {
-    "id": "nws-355fb19ef8e4",
-    "type": "news",
-    "title": "Anthropic urges US government to block dangerous AI model releases",
-    "excerpt": "Anthropic's call for AI regulation could centralize power among tech giants, stifling innovation and increasing compliance costs for smaller firms.\nThe post Anthropic urges US government to block dangerous AI model releases appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-10",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/anthropic-urges-blocking-dangerous-ai-models/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-3538b6fe2a3c",
-    "type": "news",
-    "title": "Anthropic CEO warns AI is getting too powerful—while releasing powerful AI",
-    "excerpt": "In a new essay, Dario Amodei called for binding safety rules for frontier models as his company heads toward an IPO.",
-    "source": "Decrypt",
-    "date": "2026-06-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://decrypt.co/370704/anthropic-ceo-ai-too-powerful-regulation-cant-wait",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-6342016dc2c5",
-    "type": "news",
-    "title": "Dario amodei calls for urgent AI policy overhaul in new essay",
-    "excerpt": "Amodei's call for AI policy reform highlights urgent economic, social, and ethical challenges, necessitating global cooperation and proactive measures.\nThe post Dario Amodei calls for urgent AI policy overhaul in new essay appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/amodei-ai-policy-overhaul-essay/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
     "id": "nws-178530e8de65",
     "type": "news",
     "title": "Veeam adds three agentic AI agents to the dataai command platform for privacy and AI governance",
@@ -2869,22 +2820,6 @@
     "topic": "drug-discovery"
   },
   {
-    "id": "nws-08974f6f4fa7",
-    "type": "news",
-    "title": "Ted cruz plans markup to address federal AI regulation with light-touch framework",
-    "excerpt": "Cruz's federal AI framework could streamline innovation by unifying regulations, reducing compliance costs, and fostering tech investment.\nThe post Ted Cruz plans markup to address federal AI regulation with light-touch framework appeared first on Crypto Brie…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-09",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/ted-cruz-federal-ai-regulation-markup/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
     "id": "nws-441c660d57bd",
     "type": "news",
     "title": "UN report warns AI could soon use 3% of world’s electricity and more water than we need to drink - amanda turnbull-mcrae",
@@ -2993,22 +2928,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://punchng.com/govt-pledges-fiscal-improvements-after-positive-imf-review/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-bfaa56bcffd0",
-    "type": "news",
-    "title": "Deepgram partners with fortanix and nvidia for secure voice AI deployment in regulated industries",
-    "excerpt": "Deepgram's secure voice AI deployment could revolutionize data-sensitive sectors by enabling advanced AI use without compromising privacy.\nThe post Deepgram partners with Fortanix and Nvidia for secure voice AI deployment in regulated industries appeared firs…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-09",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/deepgram-fortanix-nvidia-secure-voice-ai/",
     "badge": "Data",
     "topic": "data-governance"
   },
@@ -4026,22 +3945,6 @@
     "topic": "drug-discovery"
   },
   {
-    "id": "nws-2abb07718dc9",
-    "type": "news",
-    "title": "University of cambridge tests world-first ai-designed vaccine against coronaviruses",
-    "excerpt": "AI-designed vaccines could revolutionize pandemic preparedness, offering broad protection against future coronavirus outbreaks and spillovers.\nThe post University of Cambridge tests world-first AI-designed vaccine against coronaviruses appeared first on Crypt…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-07",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/cambridge-ai-designed-vaccine-coronavirus-trial/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
     "id": "nws-6c8797cbffe6",
     "type": "news",
     "title": "As big tech heads down under, some fear australia risks giving up control",
@@ -4154,21 +4057,6 @@
     "topic": "data-governance"
   },
   {
-    "id": "nws-48532871b97e",
-    "type": "seminar",
-    "title": "Trump considers US government equity stakes in AI companies, plans executive summit",
-    "excerpt": "Government equity in AI firms could reshape tech regulation, potentially skewing competition and influencing market dynamics and valuations.\nThe post Trump considers US government equity stakes in AI companies, plans executive summit appeared first on Crypto …",
-    "source": "Crypto Briefing",
-    "date": "2026-06-07",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/trump-us-government-stake-ai-companies/",
-    "badge": "Event"
-  },
-  {
     "id": "auto-ac4e969ee13c",
     "type": "paper",
     "title": "Theoretical impact of a mobile team dedicated to patients with Alzheimer's disease and related dementias on medication exposure in community-dwelling older patients (MEMORIAS study)",
@@ -4253,22 +4141,6 @@
     "badge": "Tech"
   },
   {
-    "id": "nws-e9e1126d2285",
-    "type": "news",
-    "title": "Reid hoffman to leave microsoft board to focus on AI drug discovery startup manas AI",
-    "excerpt": "Hoffman's shift from Microsoft's board to AI drug discovery highlights a growing trend of tech leaders prioritizing health innovation.\nThe post Reid Hoffman to leave Microsoft board to focus on AI drug discovery startup Manas AI appeared first on Crypto Brief…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-06",
-    "tags": [
-      "Drug discovery"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/reid-hoffman-leaves-microsoft-board-manas-ai/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
     "id": "nws-ce197bddb387",
     "type": "news",
     "title": "Researchers successfully trial ai-designed vaccine for the first time",
@@ -4300,38 +4172,6 @@
     "url": "https://uk.pcmag.com/ai/165394/researchers-successfully-trial-ai-designed-vaccine-for-the-first-time",
     "badge": "Pharma AI",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-1b6903845811",
-    "type": "news",
-    "title": "Gop senator urges US government to factor AI self-improvement risks into federal testing",
-    "excerpt": "Increased AI oversight could lead to higher compliance costs for developers, impacting innovation pace and creating regulatory gaps with crypto.\nThe post GOP senator urges US government to factor AI self-improvement risks into federal testing appeared first o…",
-    "source": "Crypto Briefing",
-    "date": "2026-06-06",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/gop-senator-ai-self-improvement-risks/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9a3a6047114f",
-    "type": "news",
-    "title": "House AI deal faces challenges as bipartisan support wanes",
-    "excerpt": "The lack of unified AI regulation may lead to a fragmented legal landscape, complicating compliance and stifling innovation across states.\nThe post House AI deal faces challenges as bipartisan support wanes appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-06",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/house-ai-deal-bipartisan-challenges/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   },
   {
     "id": "nws-5ccfbcf3fad9",
@@ -4445,38 +4285,6 @@
     "url": "https://www.insurancejournal.com/news/national/2026/06/05/872609.htm",
     "badge": "Regulatory",
     "topic": "regulatory"
-  },
-  {
-    "id": "nws-cd1c983a1caa",
-    "type": "news",
-    "title": "Securitize embeds AI as core infrastructure in data architecture",
-    "excerpt": "Securitize's AI-driven data architecture enhances compliance and governance, crucial for scaling operations and attracting public market scrutiny.\nThe post Securitize embeds AI as core infrastructure in data architecture appeared first on Crypto Briefing.",
-    "source": "Crypto Briefing",
-    "date": "2026-06-05",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/securitize-ai-data-infrastructure/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-2b4cc096aaee",
-    "type": "news",
-    "title": "Kalshi builds bloomberg terminal-style interface for prediction market power users",
-    "excerpt": "Kalshi's shift towards institutional-grade tools could redefine prediction markets, attracting larger trades and enhancing market efficiency.\nThe post Kalshi builds Bloomberg Terminal-style interface for prediction market power users appeared first on Crypto …",
-    "source": "Crypto Briefing",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://cryptobriefing.com/kalshi-bloomberg-terminal-prediction-markets/",
-    "badge": "Data",
-    "topic": "data-governance"
   },
   {
     "id": "nws-9ad2fe83c6df",
@@ -4823,5 +4631,101 @@
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0351214",
     "badge": "Data",
     "topic": "data-governance"
+  },
+  {
+    "id": "auto-6eac6d341c4b",
+    "type": "paper",
+    "title": "Relational biological structure improves fine-mapping of causal GWAS variants under weak signal",
+    "excerpt": "Linkage disequilibrium (LD) makes causal GWAS variants indistinguishable from correlated neighbours; resolving them is the fine-mapping problem, and the challenge is species-specific: humans face dense ancestry-imbalanced LD, yeast and Arabidopsis exceptionally long LD, and crop germplasm sparse and fragmented annotations that defeat human-biobank curation pipelines. Bayesian fine-mappers integrate annotations as flat per-variant priors, discarding the relational structure linking variants to tissue-specific eQTLs, pathways and protein-protein interactions. Hierarchical belief propagation (HBP",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Genomics",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.05.15.725513",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-5045fbdac9a4",
+    "type": "paper",
+    "title": "Hydrogen Peroxide induces resistance to DNA damage in a localization and p53 dependent manner",
+    "excerpt": "Organisms need to be able to adapt to a changing environment in order to survive. The adaptive response invoked by a low dose of a stressor resulting in resistance to high levels of that stressor is known as hormesis and can even lead to lifespan extension of organisms. The exact mechanisms underlying stress-induced hormesis are unknown, although multiple studies pose mitochondria-derived Reactive Oxygen Species (ROS, e.g. H2O2) as an important contributor. Here we used chemo-genetic H2O2 production as a model to study ROS-dependent adaptive responses in a localization-dependent manner. We fou",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Cell Biology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.05.13.724825",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-c39e70204de5",
+    "type": "paper",
+    "title": "Genome sequence of the medicinal plant Urtica dioica reveals the genetic basis of the flavonoid metabolism",
+    "excerpt": "BackgroundUrtica dioica, also known as stinging nettle, is a widespread plant that can indicate high nitrogen availability in the soil. It is probably best known for the pain caused by touching it. U. dioica is also recognized as a medicinal plant with reports claiming applicability against numerous diseases. ResultsA highly continuous genome sequence was constructed based on nanopore long read sequencing data. The total assembly size is 1.1 Gbp with an N50 of 40.7 Mbp. RNA-seq data and hints from other species were integrated to produce a high quality annotation of the protein encoding genes.",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Plant Biology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.05.15.725508",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-a8f7af75a8a8",
+    "type": "paper",
+    "title": "The Vagus Nerve conducts viable translocation of gut flora to the lungs that impacts interstitial lung disease severity in mice",
+    "excerpt": "Communication between gut microbiota and extraintestinal organs is increasingly recognized, yet elucidation of relevant translocation mechanism(s) remains enigmatic. Vagus neuroanatomy and reports of vagal protein transfer to extraintestinal organs suggest that this \"superhighway\" could translocate bacteria. Here we explore whether the vagus superhighway can translocate bacteria to extraintestinal organs. Gavage of green fluorescent protein-expressing Escherichia coli (GFP-E. coli) into germ-free (GF) or specific-pathogen free (SPF) C57BL/6 mice yielded high bacillary loads in the stomach and ",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Microbiology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.05.15.725489",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-e396f610e824",
+    "type": "paper",
+    "title": "An Integrated Cell Culture - Nanopore Sequencing (ICC-NanoporeSeq) method for the simultaneous detection and quantification of multiple infectious enterovirus types",
+    "excerpt": "Enteroviruses (EVs) are ubiquitous contaminants of surface waters, where they can remain infectious for long periods of time. Most methods used for EV monitoring are unable to distinguish between infectious and non-infectious particles or between EV types. Because different types exhibit both distinct environmental persistence and health implications, there is a need for type-resolved infectivity measurements. Here we developed Integrated Cell Culture-Nanopore Sequencing (ICC-NanoporeSeq), a method combining short-term cell culture amplification with Nanopore sequencing of the VP1 gene. The IC",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Microbiology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "2 min",
+    "url": "https://doi.org/10.64898/2026.05.15.725335",
+    "badge": "Preprint"
+  },
+  {
+    "id": "auto-4ef1dee86cc7",
+    "type": "paper",
+    "title": "Estimating the Presence and Abundance of Aedes Albopictus in Europe Using Neural Networks",
+    "excerpt": "Aedes albopictus is an invasive mosquito species transmitting dengue, chikungunya, Zika and other arboviruses. Its ongoing geographical expansion across Europe, driven by climate change, trade, human mobility and urbanisation, is increasing the risk of vector-borne disease transmission in previously unaffected regions. Accurate mapping of mosquito distribution and abundance is essential for timely and targeted vector control and public health preparedness. Here we present AIedes, a neural network framework that predicts both the presence and weekly abundance of Ae. albopictus across Europe usi",
+    "source": "bioRxiv",
+    "date": "2026-05-16",
+    "tags": [
+      "Ecology",
+      "bioRxiv"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://doi.org/10.64898/2026.05.14.722605",
+    "badge": "Preprint"
   }
 ]
