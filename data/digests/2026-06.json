@@ -1,28 +1,29 @@
 {
   "id": "2026-06",
-  "generatedAt": "2026-06-14T15:37:39.582Z",
-  "weekStart": "2026-06-07",
+  "generatedAt": "2026-06-15T13:23:31.251Z",
+  "weekStart": "2026-06-08",
   "signal": {
     "monthLabel": "June 2026",
-    "totalArticles": 309,
+    "totalArticles": 325,
     "categoryCounts": {
       "TECHNICAL": 13,
       "PHARMA": 69,
-      "EU DATA": 93,
+      "EU DATA": 94,
       "PHILOSOPHY": 2,
-      "REGULATORY": 74,
+      "REGULATORY": 76,
       "ACADEMIC": 3,
       "MEDICINE": 15,
-      "SCIENCE": 19,
+      "GEOPOLITICS": 3,
+      "INDUSTRY": 7,
+      "SCIENCE": 22,
+      "SECURITY": 3,
       "ECONOMY": 10,
-      "GEOPOLITICS": 1,
       "SOVEREIGNTY": 3,
       "ETHICS": 3,
-      "SECURITY": 2,
       "ENVIRONMENT": 2
     },
     "dominantCategory": "EU DATA",
-    "dominantCategoryCount": 93,
+    "dominantCategoryCount": 94,
     "topSources": [
       "Plos.org",
       "Nature.com",
@@ -30,9 +31,9 @@
     ],
     "paperCount": 19,
     "criticalCount": 22,
-    "importantCount": 92,
-    "text": "June 2026: 309 articles collected. Dominant topic: EU DATA (93 articles). Most active sources: Plos.org, Nature.com, Crypto Briefing. 19 peer-reviewed papers included.",
-    "generatedAt": "2026-06-14T15:37:39.582Z"
+    "importantCount": 94,
+    "text": "June 2026: 325 articles collected. Dominant topic: EU DATA (94 articles). Most active sources: Plos.org, Nature.com, Crypto Briefing. 19 peer-reviewed papers included.",
+    "generatedAt": "2026-06-15T13:23:31.251Z"
   },
   "articles": [
     {
@@ -665,6 +666,29 @@
       "lab": null
     },
     {
+      "id": "nws-1d6a40a3b75d",
+      "title": "Trump tried to block state AI regulations, but some states are forging ahead",
+      "titleFr": null,
+      "source": "Abcnews.com",
+      "url": "https://abcnews.com/US/wireStory/trump-block-state-ai-regulations-states-forging-ahead-133859386",
+      "publishedDate": "2026-06-14",
+      "type": "news",
+      "category": "REGULATORY",
+      "relevance": "IMPORTANT",
+      "summary": "Six months after President Donald Trump warned states not to regulate artificial intelligence, they are increasingly doing just that",
+      "regulatoryAngle": null,
+      "tags": [
+        "Regulatory",
+        "AI policy"
+      ],
+      "badge": "Regulatory",
+      "topic": "regulatory",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
       "id": "nws-b81df8b5b179",
       "title": "Openai says it's engaging 'constructively' with state ags about concerns",
       "titleFr": null,
@@ -678,6 +702,28 @@
       "regulatoryAngle": null,
       "tags": [
         "OpenAI"
+      ],
+      "badge": "Regulatory",
+      "topic": "regulatory",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-cd8c7d22d946",
+      "title": "Anthropic pre-ipo market falls after US directive forces model shutdown",
+      "titleFr": null,
+      "source": "Bitcoinist",
+      "url": "https://bitcoinist.com/anthropic-pre-ipo-market-falls-after-us-directive-forces-model-shutdown/",
+      "publishedDate": "2026-06-13",
+      "type": "news",
+      "category": "GEOPOLITICS",
+      "relevance": "IMPORTANT",
+      "summary": "Anthropic says it disabled Fable 5 and Mythos 5 after a US government export-control directive, while pre-IPO-linked trading weakened.",
+      "regulatoryAngle": null,
+      "tags": [
+        "Anthropic"
       ],
       "badge": "Regulatory",
       "topic": "regulatory",
@@ -2600,6 +2646,95 @@
       "lab": null
     },
     {
+      "id": "nws-a43716c7a285",
+      "title": "Why we still need {admiral} in an age of AI",
+      "titleFr": null,
+      "source": "R-bloggers.com",
+      "url": "https://www.r-bloggers.com/2026/06/why-we-still-need-admiral-in-an-age-of-ai/",
+      "publishedDate": "2026-06-14",
+      "type": "news",
+      "category": "REGULATORY",
+      "relevance": "WATCH",
+      "summary": "There is a version of the AI-in-pharma story that goes like this: LLMs are trained on vast amounts of R code, so they can write ADaM programs on demand. Packages like admiral {admiral} become optional — a style preference rather than a requi...\nContinue readi…",
+      "regulatoryAngle": null,
+      "tags": [
+        "EMA",
+        "LLM"
+      ],
+      "badge": "Data",
+      "topic": "data-governance",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-9f21cdd032f0",
+      "title": "As anthropic suspends access to new models, india debates its AI future | techcrunch",
+      "titleFr": null,
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+      "publishedDate": "2026-06-14",
+      "type": "ainews",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "As Anthropic suspends access to new models, India debates its AI future | TechCrunchtechcrunch.com",
+      "regulatoryAngle": null,
+      "tags": [
+        "Anthropic"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-cb3568a3265c",
+      "title": "Meta reportedly moves to unwind $2b manus deal after beijing's demand | techcrunch",
+      "titleFr": null,
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/",
+      "publishedDate": "2026-06-14",
+      "type": "ainews",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "Meta starts dismantling its $2 billion Manus acquisition after Beijing ordered the deal reversed.",
+      "regulatoryAngle": null,
+      "tags": [
+        "EMA"
+      ],
+      "badge": "AI Tech",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-3a79de7d7a98",
+      "title": "AI is code – and can't be prompted into being smarter",
+      "titleFr": null,
+      "source": "Theregister.com",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+      "publishedDate": "2026-06-14",
+      "type": "ainews",
+      "category": "SCIENCE",
+      "relevance": "WATCH",
+      "summary": "From Java tests to Shai-Hulud, bots keep proving they'll swallow anything you feed them",
+      "regulatoryAngle": null,
+      "tags": [
+        "AI news"
+      ],
+      "badge": "AI Tech",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
       "id": "nws-60b23d1dd928",
       "title": "Anthropic's safety warnings may have just backfired — the government has pulled the plug on its most powerful AI",
       "titleFr": null,
@@ -2680,6 +2815,230 @@
       "regulatoryAngle": null,
       "tags": [
         "AI agent"
+      ],
+      "badge": "AI Tech",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-a9392d153944",
+      "title": "Evicore by evernorth rated #1 as prior authorization becomes a top health plan technology acquisition priority",
+      "titleFr": null,
+      "source": "Morningstar.com",
+      "url": "https://www.morningstar.com/news/accesswire/1176528msn/evicore-by-evernorth-rated-1-as-prior-authorization-becomes-a-top-health-plan-technology-acquisition-priority",
+      "publishedDate": "2026-06-13",
+      "type": "news",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "eviCore by Evernorth Rated #1 as Prior Authorization Becomes a Top Health Plan Technology Acquisition Prioritymorningstar.com",
+      "regulatoryAngle": null,
+      "tags": [
+        "Pharma AI"
+      ],
+      "badge": "Data",
+      "topic": "data-governance",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-7fbe6ce4d3cb",
+      "title": "Eli lilly’s AI data push meets new obesity rivalry from pfizer",
+      "titleFr": null,
+      "source": "Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-lly/eli-lilly/news/eli-lillys-ai-data-push-meets-new-obesity-rivalry-from-pfize",
+      "publishedDate": "2026-06-13",
+      "type": "news",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "Eli Lilly (NYSE:LLY) has invested in Abridge, an AI-enabled clinical documentation company, marking a move into AI supported clinical research and real-world data capture.\nThe partnership is aimed at improving trial enrollment and real-world evidence generati…",
+      "regulatoryAngle": null,
+      "tags": [
+        "LLM",
+        "RWE",
+        "RWD"
+      ],
+      "badge": "Data",
+      "topic": "data-governance",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-a8b93cd84219",
+      "title": "This week’s awesome tech stories from around the web (through june 13)",
+      "titleFr": null,
+      "source": "Singularity Hub",
+      "url": "https://singularityhub.com/2026/06/13/this-weeks-awesome-tech-stories-from-around-the-web-through-june-13-2/#article",
+      "publishedDate": "2026-06-13",
+      "type": "news",
+      "category": "EU DATA",
+      "relevance": "WATCH",
+      "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology.\nThe post This Week’s Awesome Tech Stories From Around the Web (Through June 13) appeared first on SingularityHub.",
+      "regulatoryAngle": null,
+      "tags": [
+        "Pharma AI"
+      ],
+      "badge": "Data",
+      "topic": "data-governance",
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-52f69ed1634e",
+      "title": "Amazon security research reportedly led to the white house’s anthropic fable ban",
+      "titleFr": null,
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "GEOPOLITICS",
+      "relevance": "WATCH",
+      "summary": "According to the Wall Street Journal, the export control directive that led to Anthropic cutting off access to Fable 5 and Mythos 5 was triggered in part by cybersecurity research from Amazon and conversations between CEO Andy Jassy and the White House. Accor…",
+      "regulatoryAngle": null,
+      "tags": [
+        "Anthropic"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-39908d3ea933",
+      "title": "Amazon CEO reportedly raised anthropic model concerns before government crackdown | techcrunch",
+      "titleFr": null,
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.",
+      "regulatoryAngle": null,
+      "tags": [
+        "Anthropic"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-5b78e7e16d01",
+      "title": "Openai faces investigation from state attorneys general | techcrunch",
+      "titleFr": null,
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "It's not clear which states are involved, but they're asking about everything from OpenAI's ad policies to its handling of health data.",
+      "regulatoryAngle": null,
+      "tags": [
+        "Health data",
+        "OpenAI"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-1cdbbfcd7cb4",
+      "title": "World cup AI predictor now lets users ask daft what-ifs",
+      "titleFr": null,
+      "source": "Theregister.com",
+      "url": "https://www.theregister.com/offbeat/2026/06/13/world-cup-ai-predictor-now-lets-users-ask-daft-what-ifs/5254853",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "SCIENCE",
+      "relevance": "WATCH",
+      "summary": "Spoiler: It doesn't end well for Team Register",
+      "regulatoryAngle": null,
+      "tags": [
+        "AI news"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-c368b693a797",
+      "title": "Anthropic cuts off fable 5 and mythos 5 access following government order",
+      "titleFr": null,
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "INDUSTRY",
+      "relevance": "WATCH",
+      "summary": "On Friday evening, the government ordered Anthropic to block access to Fable 5 and Mythos 5 for all foreign nations, both inside and outside the US, due to national security concerns. That order included employees of Anthropic. To meet those demands, the comp…",
+      "regulatoryAngle": null,
+      "tags": [
+        "EMA",
+        "Anthropic"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-4ab18c8c5540",
+      "title": "The fcc wants to kill burner phones",
+      "titleFr": null,
+      "source": "Wired",
+      "url": "https://www.wired.com/story/security-news-this-week-the-fcc-wants-to-kill-burner-phones/",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "SECURITY",
+      "relevance": "WATCH",
+      "summary": "Plus: AI bug hunting fuels Microsoft’s biggest-ever Patch Tuesday, ShinyHunters ransomware gang exploits an Oracle zero-day, and more.",
+      "regulatoryAngle": null,
+      "tags": [
+        "AI news"
+      ],
+      "badge": "AI Lab",
+      "topic": null,
+      "authors": null,
+      "country": null,
+      "university": null,
+      "lab": null
+    },
+    {
+      "id": "nws-ae8100dd200d",
+      "title": "Kpmg pulls report on AI usage due to apparent hallucinations | techcrunch",
+      "titleFr": null,
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+      "publishedDate": "2026-06-13",
+      "type": "ainews",
+      "category": "SCIENCE",
+      "relevance": "WATCH",
+      "summary": "KPMG pulls report on AI usage due to apparent hallucinations | TechCrunchtechcrunch.com",
+      "regulatoryAngle": null,
+      "tags": [
+        "AI news"
       ],
       "badge": "AI Tech",
       "topic": null,
