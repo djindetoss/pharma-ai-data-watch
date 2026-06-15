@@ -73,7 +73,12 @@ def check_url(url):
     return 'ERR:UNKNOWN', url
 
 def is_ok(status):
-    return status in ('200', '201', '301', '302', '303', '307', '308')
+    """Accept any 2xx or 3xx response as OK."""
+    try:
+        s = int(status)
+        return 200 <= s < 400
+    except (ValueError, TypeError):
+        return False
 
 def is_bot_blocked(status, url):
     domain = urllib.parse.urlparse(url).netloc.lstrip('www.')

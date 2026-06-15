@@ -16,6 +16,7 @@ jobs:
 
       - name: Check all event links in events.json
         id: check
+        continue-on-error: true   # Prevents GitHub's "All jobs failed" email — we handle alerts via GitHub Issues
         run: |
           python3 << 'PYEOF'
           import json, urllib.request, urllib.error, ssl, time, os, sys
@@ -69,9 +70,10 @@ jobs:
               except Exception as e:
                   status = str(e)
 
-              ok = str(status) in ('200','301','302','303','307','308')
-              # 403 = bot-block but URL typically accessible in browser — skip
-              if not ok and str(status) != '403':
+              # Accept all 2xx and 3xx as OK; 403/401 = bot-block, accessible in browser
+              s = int(status) if str(status).isdigit() else 0
+              ok = (200 <= s < 400) or s in (401, 403)
+              if not ok:
                   broken.append(f"- [{ev_id}] **{title}**\n  Status: `{status}`\n  URL: {url}")
               time.sleep(0.3)
 
