@@ -1,5 +1,297 @@
 [
   {
+    "id": "auto-62c38f14a536",
+    "type": "paper",
+    "title": "A Medicinal Chemistry Perspective on Anticonvulsant Drug Design: Targets, Mechanisms, and Spiro Compounds",
+    "excerpt": "This review examines anticonvulsant drug design from a medicinal chemistry perspective, focusing on established drug targets, their mechanisms of action, and the role of spiro compounds as a structural class in anticonvulsant development. The analysis integrates current understanding of molecular targets with chemical design strategies to advance anticonvulsant therapeutics.",
+    "source": "Drug Dev Res",
+    "date": "2026-06-16",
+    "tags": [
+      "Anticonvulsants",
+      "Medicinal Chemistry",
+      "Drug Design",
+      "Spiro Compounds"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42299108/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-4dabfdd6b9ef",
+    "type": "ainews",
+    "title": "Critical Copilot vulnerability allowed hackers to seal 2FA code from users",
+    "excerpt": "SearchLeak exploit shows why the industry's approach to LLM security fails over and over.",
+    "source": "Ars Technica AI",
+    "date": "2026-06-16",
+    "tags": [
+      "AI",
+      "Biz & IT",
+      "Security",
+      "copilot"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
+    "badge": "Tech"
+  },
+  {
+    "id": "nws-b1290767a447",
+    "type": "news",
+    "title": "Verifiable audit trails for ai-enabled biological design tools",
+    "excerpt": "The authors propose a tamper-evident audit-trail framework using cryptographic signing to establish a trustworthy chain of custody that can be used with any artificial intelligence–enabled biological design tool.",
+    "source": "Rand.org",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.rand.org/pubs/perspectives/PEA4613-1.html",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-0a478e6413fc",
+    "type": "news",
+    "title": "Show hn: agentbridge – translate and govern calls between AI agent protocols",
+    "excerpt": "Neutral interop + governance layer for multi-agent systems. Any protocol in, any protocol out, with identity, budgets, and a tamper-evident audit trail. - shadowhunter-92/agentbridge",
+    "source": "Github.com",
+    "date": "2026-06-15",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://github.com/shadowhunter-92/agentbridge",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-c03f9226d51e",
+    "type": "news",
+    "title": "A generalizable hi-c foundation model for chromatin architecture, single-cell and multiomics analysis across species",
+    "excerpt": "HiCFoundation is a foundation model pretrained on a large corpus of Hi-C data for comprehensive 3D genome and epigenomics analysis.",
+    "source": "Nature.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41592-026-03097-8",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-8fd3cd0dee45",
+    "type": "news",
+    "title": "3d multi-omics tumour atlases: from technology to biology and clinical translation",
+    "excerpt": "In this Review, Liu et al. describe the established and emerging tools for the generation of comprehensive 3D tumour atlases, the analysis of which has the potential to uncover novel biomarkers for risk stratification, early detection, preventive intervention…",
+    "source": "Nature.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41568-026-00940-0",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-bf400a15830e",
+    "type": "news",
+    "title": "Canadian health it market push connected care agenda",
+    "excerpt": "Canadian health IT buyers are prioritizing interoperability, data sovereignty, AI governance, cybersecurity, and workflow ROI.",
+    "source": "Ksimg.com",
+    "date": "2026-06-15",
+    "tags": [
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://ksimg.com/press-release/canadian-health-it-market-push-connected-care-agenda/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-6b053f3dd221",
+    "type": "news",
+    "title": "Data standardization key to health tech ecosystem, tefca's interoperability goals",
+    "excerpt": "Together, the CMS Health Tech Ecosystem initiative and TEFCA are creating a pathway from voluntary innovation to nationwide interoperability, but true success hinges on consistent data standards.",
+    "source": "Techtarget.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techtarget.com/searchhealthit/feature/Data-standardization-key-to-Health-Tech-Ecosystem-TEFCAs-interoperability-goals",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-37397b38c01b",
+    "type": "news",
+    "title": "Article: governing AI in the cloud: a practical guide for architects",
+    "excerpt": "In this article, the author outlines a practical approach to AI governance in the cloud, covering discovery of shadow AI, data classification at creation, IAM-based enforcement, policy-as-code, and operational controls. The article shows how organizations can…",
+    "source": "InfoQ.com",
+    "date": "2026-06-15",
+    "tags": [
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.infoq.com/articles/governing-ai-cloud-guide/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-52ca68a635be",
+    "type": "news",
+    "title": "Real-time lending: why modern digital infrastructure is the future of credit",
+    "excerpt": "The lending industry is shifting to real-time infrastructure to meet borrower demands for speed and data security. APIs and modern platforms enable quick access to financial data, enhancing risk management and customer experiences.",
+    "source": "Livemint",
+    "date": "2026-06-15",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.livemint.com/money/personal-finance/realtime-lending-why-modern-digital-infrastructure-is-the-future-of-credit-11781510282734.html",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-7eefb64f8c83",
+    "type": "news",
+    "title": "What is document AI?",
+    "excerpt": "* Document AI’s value is bigger than faster processing. It turns messy, high-volume documents like contracts, invoices, claims and forms into structured data that downstream systems can actually use.\r\n* Generative AI makes document AI more adaptable, but not …",
+    "source": "Databricks.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.databricks.com/blog/what-is-document-ai",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-f8e8dde1a274",
+    "type": "news",
+    "title": "Ascentage pharma presents multiple clinical updates at eha2026 congress",
+    "excerpt": "Poster presentations from ongoing clinical trials of two core assets, olverembatinib and lisaftoclax, highlight global innovation capabilities in hematologic malignancie",
+    "source": "Associated Press",
+    "date": "2026-06-15",
+    "tags": [
+      "EMA",
+      "Clinical trials"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://apnews.com/press-release/globenewswire-mobile/press-release-e0053ed1f78ac887a91a7920f335561d",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-57ef6e077b8c",
+    "type": "news",
+    "title": "Adiposity and cancer: epidemiology, mechanisms and future perspectives",
+    "excerpt": "This Review discusses epidemiological trends for adiposity and cancer and summarizes mechanisms linking obesity to cancer development.",
+    "source": "Nature.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s42255-026-01529-5",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-2ad71f32cfa9",
+    "type": "news",
+    "title": "Decoding common and rare noncoding variant effects across cellular and developmental contexts",
+    "excerpt": "This study contributes a resource of predicted effects of noncoding variants on chromatin accessibility and a method to identify noncoding variants with extreme regulatory effects, with application to disease variant discovery.",
+    "source": "Nature.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02619-6",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-487d89eb0a40",
+    "type": "news",
+    "title": "Plasma proteomic signatures of cellular aging predict human disease",
+    "excerpt": "The biological age of individual cell types can be evaluated using plasma proteomics, revealing diverse aging profiles across more than 40 cell types and links between the accelerated aging of specific cell types and disease.",
+    "source": "Nature.com",
+    "date": "2026-06-15",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41591-026-04446-y",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-15f195e49fd1",
+    "type": "ainews",
+    "title": "Meta tapped a pentagon supplier to prototype face recognition for its glasses",
+    "excerpt": "Rank One, whose board includes a former CIA deputy director and a former FBI science chief, supplied face recognition to Meta for internal development of its smart glasses app.",
+    "source": "Wired",
+    "date": "2026-06-15",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-dab97fb78859",
+    "type": "ainews",
+    "title": "The AI layoff wave is becoming a powder keg | techcrunch",
+    "excerpt": "What makes this combustible: at the very moment that tens of thousands of workers are being shown the door, a small cohort of AI insiders is becoming wealthy on a scale that's hard to comprehend.",
+    "source": "TechCrunch",
+    "date": "2026-06-15",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-8c3086d61a26",
+    "type": "news",
+    "title": "FDA Approves New Indication for Tzield (teplizumab) for Certain Pediatric Patients with Recently Diagnosed Stage 3 Type 1 Diabetes",
+    "excerpt": "On June 12, 2026, the U.S. Food and Drug Administration granted accelerated approval to Tzield (teplizumab) for a new indication, to delay the decline of insulin production in pediatric patients ages 8 through 17 years who have been recently diagnosed with Stage 3 type 1 diabetes (T1D).",
+    "source": "FDA",
+    "date": "2026-06-15",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
     "id": "nws-a43716c7a285",
     "type": "news",
     "title": "Why we still need {admiral} in an age of AI",
@@ -77,6 +369,119 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-aa6eaa4f204e",
+    "type": "news",
+    "title": "U.s. order cutting access to anthropic's AI models sparks criticism",
+    "excerpt": "The U.S. government's order for Anthropic to withdraw its most powerful artificial intelligence models has sparked a wave of criticism from both advocates and opponents of AI regulation. On Friday evening, the San Francisco-based company announced that the U.…",
+    "source": "Japan Today",
+    "date": "2026-06-14",
+    "tags": [
+      "Regulatory",
+      "Anthropic",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://japantoday.com/category/tech/us-order-cutting-access-to-anthropic%27s-ai-models-sparks-criticism",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-8e840f611453",
+    "type": "news",
+    "title": "Just months after trump warned states not to regulate AI, republican and democratic lawmakers are doing it anyway",
+    "excerpt": "A mix of Republican- and Democratic-led states have passed such laws this year, including Colorado, Connecticut, Idaho, Iowa, Nebraska and Oregon.",
+    "source": "Fortune",
+    "date": "2026-06-14",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://fortune.com/2026/06/14/trump-federal-vs-state-ai-regulation-ai-republicans-democrats/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a9187b00b2f0",
+    "type": "news",
+    "title": "No, everyone is not using AI for everything",
+    "excerpt": "People are consuming AI like they eat meat: some are embracing it, some are limiting their use of it, and some are avoiding it altogether.",
+    "source": "Gabrielweinberg.com",
+    "date": "2026-06-14",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-63ed61183a47",
+    "type": "news",
+    "title": "Some congressional lawmakers have attempted to push back against AI data centers — but they haven’t gotten far",
+    "excerpt": "Lawmakers have introduced legislation to restrict and investigate data centers as more Americans have voiced their opposition to them.",
+    "source": "The Daily Caller",
+    "date": "2026-06-14",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://dailycaller.com/2026/06/14/lawmakers-data-centers-americans-ai/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-ffb39fd36cdd",
+    "type": "news",
+    "title": "Expansion of ai-enabled imaging in routine clinical practice: implications for preventive care",
+    "excerpt": "The opportunity is not to replicate SimonMed—but to selectively adopt its technological strengths within Canada’s system constraints.\nThe post Expansion of AI-enabled imaging in routine clinical practice: Implications for preventive care appeared first on Dig…",
+    "source": "Digital Journal",
+    "date": "2026-06-14",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.digitaljournal.com/article/expansion-of-ai-enabled-imaging-in-routine-clinical-practice-implications-for-preventive-care/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-c45283b57769",
+    "type": "ainews",
+    "title": "China may have accessed mythos",
+    "excerpt": "According to a new report from Semafor, the White House's decision to impose export restrictions on Anthropic's Mythos was driven in part by fears that it had been accessed by a group linked to China. If the Chinese government actually had access to Mythos 5 …",
+    "source": "The Verge",
+    "date": "2026-06-14",
+    "tags": [
+      "EMA",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-12db130618d0",
+    "type": "ainews",
+    "title": "As AI companies race to go public, who else is along for the ride? | techcrunch",
+    "excerpt": "As AI companies race to go public, who else is along for the ride? | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-06-14",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
+    "badge": "AI Lab"
   },
   {
     "id": "nws-b81df8b5b179",
@@ -327,6 +732,22 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-ce08e595ff17",
+    "type": "news",
+    "title": "How to build a virtual cell and biology scaling laws",
+    "excerpt": "Markov Biosciences, a startup in San Francisco, is betting that virtual cells will soon have their GPT moment.",
+    "source": "Nikomc.com",
+    "date": "2026-06-13",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://letter.nikomc.com/p/virtual-cells",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
   },
   {
     "id": "auto-2ed965d34b34",
@@ -963,6 +1384,25 @@
     "readTime": "1 min",
     "url": "https://venturebeat.com/orchestration/google-researchers-introduce-faithful-uncertainty-allowing-llms-to-offer-best-guesses-instead-of-hallucinations",
     "badge": "AI Tech"
+  },
+  {
+    "id": "auto-07e66dd2b8d7",
+    "type": "paper",
+    "title": "Jianpi Qingre Tongluo prescription (Huangqin Qingre Chubi capsule) protects the self-perception of patients with gouty arthritis through neutrophil to lymphocyte ratio: A nested case-control study",
+    "excerpt": "A nested case-control study examined Jianpi Qingre Tongluo prescription (Huangqin Qingre Chubi capsule), a traditional Chinese medicine formulation, and found it may improve self-reported outcomes in gouty arthritis patients through modulation of the neutrophil-to-lymphocyte ratio, an inflammatory biomarker. The research was conducted at a Chinese medicine hospital with institutional support for rheumatologic disease research.",
+    "source": "Medicine (Baltimore)",
+    "date": "2026-06-12",
+    "tags": [
+      "Traditional Chinese Medicine",
+      "Gouty arthritis",
+      "Inflammatory biomarkers",
+      "Clinical outcomes"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42299571/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
   },
   {
     "id": "nws-49cb2adbbbb0",
@@ -4368,396 +4808,5 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42249357/",
     "badge": "PubMed",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-e684a4932dfc",
-    "type": "paper",
-    "title": "Quantitative Estimation of Clinical Intrasubject Variability of a Pharmacokinetic Parameter",
-    "excerpt": "This study presents methods for quantitatively measuring the natural variation in pharmacokinetic parameters that occurs within individual subjects during clinical studies. The research addresses a critical need in drug development by providing standardized approaches to estimate intrasubject variability, which is essential for understanding drug exposure consistency and informing dosing strategies in clinical practice.",
-    "source": "AAPS J",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharmacokinetics",
-      "Intrasubject Variability",
-      "Clinical Study Design",
-      "Drug Development"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42249247/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-85a9605461e6",
-    "type": "paper",
-    "title": "Infographic: Study design for ELARA, an open-label, phase 3b trial of aflibercept 8 mg in previously treated patients with neovascular age-related macular degeneration or diabetic macular edema",
-    "excerpt": "ELARA is an open-label, phase 3b clinical trial evaluating aflibercept 8 mg in patients with neovascular age-related macular degeneration or diabetic macular edema who have received prior treatment. The trial design and methodology are presented in an infographic format to illustrate the study approach for this patient population.",
-    "source": "Eye (Lond)",
-    "date": "2026-06-05",
-    "tags": [
-      "Phase 3b",
-      "Aflibercept",
-      "Age-Related Macular Degeneration",
-      "Diabetic Macular Edema"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42249143/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-d131304e4089",
-    "type": "news",
-    "title": "Astrazeneca CEO says AI is reshaping drug development — and helping boost the odds of success",
-    "excerpt": "AstraZeneca CEO Pascal Soriot said AI is helping the company develop medicines faster and make smarter decisions throughout the research process.",
-    "source": "CNBC",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.cnbc.com/2026/06/05/astrazeneca-ceo-says-ai-is-reshaping-drug-development-and-helping-boost-the-odds-of-success.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-685d513cac36",
-    "type": "news",
-    "title": "A multiscale, bayesian inference approach to augment mechanistic models of cell signaling with machine-learning predictions of binding affinity",
-    "excerpt": "Author summary Computational models of cell signaling have provided mechanistic insights into complex biological systems, including in physiological and disease settings. Accurate and predictive modeling critically depends on the precise estimation of model p…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014321",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-1a304e715378",
-    "type": "news",
-    "title": "Heuristic multi-site optimization for protein sequence design using masked protein language models",
-    "excerpt": "Author summary To address the challenge of efficiently discovering functional new proteins in protein engineering due to the vast sequence space, and to overcome the limitations of traditional evolutionary algorithms that rely on blind random mutagenesis, res…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014365",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-4f9d951d4a2f",
-    "type": "news",
-    "title": "Congress kicks the tin-can man down the road as AI behemoth reveals chilling warning sign",
-    "excerpt": "On AI regulation, Congress is doing what Congress does best: kicking the can down the road.",
-    "source": "The Daily Caller",
-    "date": "2026-06-05",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://dailycaller.com/2026/06/05/anthropic-ai-warning-global-autonomous-congress-regulations-states-rights/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-f104f832468c",
-    "type": "news",
-    "title": "This week in AI: production viability",
-    "excerpt": "On this week’s episode, host and the founder of AI advisory firm Intelligence Briefing Andreas Welsch brought together Maya Mikhailov, cofounder and CEO of Savvi AI, and Doug Shannon, generative AI and intelligent automation leader, to cover a handful of inte…",
-    "source": "Oreilly.com",
-    "date": "2026-06-05",
-    "tags": [
-      "Generative AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.oreilly.com/radar/this-week-in-ai-production-viability/#BlogPosting",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-d481aa50b86e",
-    "type": "news",
-    "title": "Von der leyen’s AI envoy pick triggers conflict-of-interest backlash weeks after siemens helped gut the AI act",
-    "excerpt": "The European Commission has appointed Jim Hagemann Snabe, chairman of Siemens’ supervisory board, as its special envoy for industrial artificial intelligence. He will advise Commission President Ursula von der Leyen and tech sovereignty chief Henna Virkkunen …",
-    "source": "The Next Web",
-    "date": "2026-06-05",
-    "tags": [
-      "EMA",
-      "EU AI Act"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/von-der-leyens-ai-envoy-pick-triggers-conflict-of-interest-backlash-weeks-after-siemens-helped-gut-the-ai-act/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-165a05349128",
-    "type": "news",
-    "title": "Trump AI order targets frontier model prerelease review",
-    "excerpt": "The White House's voluntary AI executive order creates a prerelease review process for frontier models, raising questions about release timelines, vendor trust and enterprise procurement.",
-    "source": "Techtarget.com",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techtarget.com/searchenterpriseai/news/366644013/Trump-AI-order-targets-frontier-model-prerelease-review",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-b9ed1e71b543",
-    "type": "news",
-    "title": "Anthropic warns AI could soon build itself without human involvement—and urges a global pause on development",
-    "excerpt": "The AI lab valued at $965 billion is urging a pause on AI development, just as it heads toward an IPO.",
-    "source": "Fortune",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://fortune.com/2026/06/05/anthropic-ai-pause-development-recursive-self-improvement/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-4970492efd7b",
-    "type": "news",
-    "title": "AI could soon use more water than humanity drinks, UN report warns",
-    "excerpt": "One argument often used to quell concerns about the rising energy and resource demand of data centers is that artificial intelligence (AI) models will need less in the future as they improve and become more efficient.",
-    "source": "ScienceAlert",
-    "date": "2026-06-05",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.sciencealert.com/ai-could-soon-use-more-water-than-humanity-drinks-un-report-warns",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9490da042c73",
-    "type": "news",
-    "title": "AI update, june 5, 2026: AI news and views from the past week",
-    "excerpt": "Catch up on select AI news and developments since Friday, May 29. Stay in the know. Read the full article at MarketingProfs",
-    "source": "MarketingProfs.com",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.marketingprofs.com/opinions/2026/54909/ai-update-june-5-2026-ai-news-and-views-from-the-past-week",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-2383e7ec08c0",
-    "type": "news",
-    "title": "Can unions power the AI economy? afl-cio’s liz shuler thinks so",
-    "excerpt": "Also: All the news and watercooler chat from Fortune.",
-    "source": "Fortune",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://fortune.com/2026/06/05/afl-cio-liz-shuler-ai/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-3d1f04998d45",
-    "type": "news",
-    "title": "Construction of a public health emergency information system framework: a case study of zhuhai city, china",
-    "excerpt": "Background A public health emergency information system serves as a critical tool for collecting and analyzing data from sudden public health events, thereby providing a scientific basis for governmental decision-making. However, research on the systematic co…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0350917",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-de5db47fa292",
-    "type": "news",
-    "title": "Scientist with huntington's gene dedicates life to curing fatal disease he'll one day develop",
-    "excerpt": "Jeff Carroll, a scientist who carries the mutant gene for Huntington's disease, is now part of a global initiative to advance treatment for neurodegenerative diseases.",
-    "source": "CBC News",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.cbc.ca/radio/asithappens/scientist-with-huntington-s-gene-dedicates-life-to-curing-fatal-disease-he-ll-one-day-develop-9.7225211",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-d20482688f9b",
-    "type": "news",
-    "title": "Nhs chiefs warn a 'catastrophic' cyber attack is now a bigger threat than another pandemic",
-    "excerpt": "Sir Jim Mackey, chief executive of NHS England, told a board meeting on Thursday that the risk had grown 'dramatically' in the past few weeks alone.",
-    "source": "Dailymail.com",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.dailymail.com/news/article-15876533/NHS-chiefs-warn-catastrophic-cyber-attack-bigger-threat-pandemic.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-291ecdb616f3",
-    "type": "news",
-    "title": "The FDA is moving forward with a needless investigation of a medication that more than 7.5 million americans have used",
-    "excerpt": "“The Trump administration is bulldozing the overwhelming body of medical research and evidence to try to make it harder for everyone, everywhere to get an abortion,“ Alexis McGill Johnson of Planned Parenthood told Jezebel in a statement.",
-    "source": "Jezebel",
-    "date": "2026-06-05",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.jezebel.com/the-fda-is-moving-forward-with-its-needless-investigation-into-the-abortion-pill",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-f095342d25e0",
-    "type": "news",
-    "title": "Clinical characteristics and management strategies in adult foreign-body airway obstruction: a retrospective cohort study",
-    "excerpt": "Airway foreign-body aspiration in adults is uncommon but can be life-threatening.Flexible bronchoscopy is the standard first-line therapy,but critically ill patients may need extracorporeal life support.This study aims to characterize the diagnosis,management…",
-    "source": "Plos.org",
-    "date": "2026-06-05",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0351214",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-6eac6d341c4b",
-    "type": "paper",
-    "title": "Relational biological structure improves fine-mapping of causal GWAS variants under weak signal",
-    "excerpt": "Linkage disequilibrium (LD) makes causal GWAS variants indistinguishable from correlated neighbours; resolving them is the fine-mapping problem, and the challenge is species-specific: humans face dense ancestry-imbalanced LD, yeast and Arabidopsis exceptionally long LD, and crop germplasm sparse and fragmented annotations that defeat human-biobank curation pipelines. Bayesian fine-mappers integrate annotations as flat per-variant priors, discarding the relational structure linking variants to tissue-specific eQTLs, pathways and protein-protein interactions. Hierarchical belief propagation (HBP",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Genomics",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.05.15.725513",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-5045fbdac9a4",
-    "type": "paper",
-    "title": "Hydrogen Peroxide induces resistance to DNA damage in a localization and p53 dependent manner",
-    "excerpt": "Organisms need to be able to adapt to a changing environment in order to survive. The adaptive response invoked by a low dose of a stressor resulting in resistance to high levels of that stressor is known as hormesis and can even lead to lifespan extension of organisms. The exact mechanisms underlying stress-induced hormesis are unknown, although multiple studies pose mitochondria-derived Reactive Oxygen Species (ROS, e.g. H2O2) as an important contributor. Here we used chemo-genetic H2O2 production as a model to study ROS-dependent adaptive responses in a localization-dependent manner. We fou",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Cell Biology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.05.13.724825",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-c39e70204de5",
-    "type": "paper",
-    "title": "Genome sequence of the medicinal plant Urtica dioica reveals the genetic basis of the flavonoid metabolism",
-    "excerpt": "BackgroundUrtica dioica, also known as stinging nettle, is a widespread plant that can indicate high nitrogen availability in the soil. It is probably best known for the pain caused by touching it. U. dioica is also recognized as a medicinal plant with reports claiming applicability against numerous diseases. ResultsA highly continuous genome sequence was constructed based on nanopore long read sequencing data. The total assembly size is 1.1 Gbp with an N50 of 40.7 Mbp. RNA-seq data and hints from other species were integrated to produce a high quality annotation of the protein encoding genes.",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Plant Biology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.05.15.725508",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-a8f7af75a8a8",
-    "type": "paper",
-    "title": "The Vagus Nerve conducts viable translocation of gut flora to the lungs that impacts interstitial lung disease severity in mice",
-    "excerpt": "Communication between gut microbiota and extraintestinal organs is increasingly recognized, yet elucidation of relevant translocation mechanism(s) remains enigmatic. Vagus neuroanatomy and reports of vagal protein transfer to extraintestinal organs suggest that this \"superhighway\" could translocate bacteria. Here we explore whether the vagus superhighway can translocate bacteria to extraintestinal organs. Gavage of green fluorescent protein-expressing Escherichia coli (GFP-E. coli) into germ-free (GF) or specific-pathogen free (SPF) C57BL/6 mice yielded high bacillary loads in the stomach and ",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Microbiology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.05.15.725489",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-e396f610e824",
-    "type": "paper",
-    "title": "An Integrated Cell Culture - Nanopore Sequencing (ICC-NanoporeSeq) method for the simultaneous detection and quantification of multiple infectious enterovirus types",
-    "excerpt": "Enteroviruses (EVs) are ubiquitous contaminants of surface waters, where they can remain infectious for long periods of time. Most methods used for EV monitoring are unable to distinguish between infectious and non-infectious particles or between EV types. Because different types exhibit both distinct environmental persistence and health implications, there is a need for type-resolved infectivity measurements. Here we developed Integrated Cell Culture-Nanopore Sequencing (ICC-NanoporeSeq), a method combining short-term cell culture amplification with Nanopore sequencing of the VP1 gene. The IC",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Microbiology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "2 min",
-    "url": "https://doi.org/10.64898/2026.05.15.725335",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-4ef1dee86cc7",
-    "type": "paper",
-    "title": "Estimating the Presence and Abundance of Aedes Albopictus in Europe Using Neural Networks",
-    "excerpt": "Aedes albopictus is an invasive mosquito species transmitting dengue, chikungunya, Zika and other arboviruses. Its ongoing geographical expansion across Europe, driven by climate change, trade, human mobility and urbanisation, is increasing the risk of vector-borne disease transmission in previously unaffected regions. Accurate mapping of mosquito distribution and abundance is essential for timely and targeted vector control and public health preparedness. Here we present AIedes, a neural network framework that predicts both the presence and weekly abundance of Ae. albopictus across Europe usi",
-    "source": "bioRxiv",
-    "date": "2026-05-16",
-    "tags": [
-      "Ecology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.05.14.722605",
-    "badge": "Preprint"
   }
 ]
