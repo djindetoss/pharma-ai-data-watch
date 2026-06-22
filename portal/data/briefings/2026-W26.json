@@ -1,0 +1,1103 @@
+{
+  "id": "2026-W26",
+  "weekLabel": "Week 26 — June 22, 2026",
+  "weekStart": "2026-06-22",
+  "weekEnd": "2026-06-22",
+  "generatedAt": "2026-06-22T13:11:41.596Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "Frontier LLMs Outperform Specialist Clinical AI Tools Across Medical Benchmarks",
+    "standfirst": "General-purpose large language models now exceed purpose-built clinical AI systems in medical knowledge, clinician alignment, and diagnostic reasoning—forcing a strategic rethink of pharma R&D investment in specialized tools.",
+    "body": "This week's independent benchmark evaluation demonstrates that frontier LLMs (GPT-4 class and beyond) achieve superior performance on medical knowledge tasks and clinician-alignment metrics compared to systems marketed specifically for healthcare. For regulatory scientists and clinical development teams, this signals a fundamental shift: the assumption that specialist tools always outperform generalist models no longer holds. R&D organizations must reassess their AI tooling strategy—investing in prompt engineering, fine-tuning frameworks, and governance guardrails for frontier models may now yield better returns than maintaining separate clinical AI stacks. This also carries implications for EMA and FDA submissions: if your AI validation relied on specialist tools, competitive parity and regulatory precedent may soon require validation against frontier models as well.",
+    "sourceIndices": [
+      5
+    ],
+    "sources": [
+      {
+        "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+        "source": "Nature.com",
+        "url": "https://www.nature.com/articles/s41591-026-04431-5",
+        "date": "2026-06-12",
+        "type": "ainews"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "Frontier LLMs Outperform Specialist Clinical AI Tools on Medical Benchmarks",
+          "body": "Independent evaluation shows general-purpose large language models exceed specialized clinical AI systems in medical knowledge, clinician alignment, and reasoning tasks. For pharma R&D, this validates investment in frontier model infrastructure over narrow-purpose tools and raises questions about clinical trial AI validation assumptions moving forward.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04431-5",
+              "date": "2026-06-12",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "Foundation Model for 3D Genome and Epigenomics Analysis Across Species",
+          "body": "HiCFoundation, a pretrained foundation model on large Hi-C corpus, enables comprehensive 3D genome and multiomics analysis. Drug discovery teams leveraging this for chromatin architecture prediction will accelerate target identification and mechanism-of-action validation in early-stage screening.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "A generalizable hi-c foundation model for chromatin architecture, single-cell and multiomics analysis across species",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03097-8",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Trump Administration Restricts Anthropic AI Access Over Security Concerns",
+          "body": "U.S. restrictions on Anthropic's latest models force global distribution shutdown, raising questions about frontier model access for European pharma and CRO workflows. Regulatory strategy must now account for geopolitical fragmentation of AI capability—expect EMA guidance on third-country model dependencies.",
+          "sourceIndices": [
+            35
+          ],
+          "sources": [
+            {
+              "title": "US curbs anthropic AI access, raising global concerns",
+              "source": "DW (English)",
+              "url": "https://www.dw.com/en/trumps-anthropic-ban-sets-a-risky-precedent-for-ai/a-77577694",
+              "date": "2026-06-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Subquadratic AI Startup Claims Breakthrough in LLM Computational Bottleneck",
+          "body": "Miami-based Subquadratic emerged from stealth claiming resolution of mathematical constraints limiting LLM inference efficiency. If validated, this architecture advance could reduce computational cost for large-scale clinical NLP pipelines (EHR mining, pharmacovigilance signal detection) by orders of magnitude.",
+          "sourceIndices": [
+            40
+          ],
+          "sources": [
+            {
+              "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+              "date": "2026-06-19",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "O'Reilly Advances AI Agent Design Framework for High-Stakes Contract Execution",
+          "body": "Contract-bound AI agents designed for deterministic, auditable execution offer a pathway for regulatory-grade autonomous systems. Pharma applications in clinical operations, manufacturing compliance, and pharmacovigilance triage require exactly this profile—responsible automation with fail-safe constraints.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "Dispatches from o'reilly: from capabilities to responsibilities​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+              "source": "Stackoverflow.blog",
+              "url": "https://stackoverflow.blog/2026/06/19/dispatches-from-o-reilly-from-capabilities-to-responsibilities/",
+              "date": "2026-06-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "France Accelerates European AI Sovereignty with NVIDIA Infrastructure",
+          "body": "France's strategic initiative to build local AI factories and open frontier models strengthens Europe's digital autonomy. For EMA-regulated companies, this reduces dependence on U.S. AI infrastructure and creates opportunity for compliant, European-rooted model development aligned with GDPR and emerging EU AI Act.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "France advances europe’s AI future with nvidia technologies",
+              "source": "Nvidia.com",
+              "url": "https://blogs.nvidia.com/blog/france-advances-europes-ai-future/",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "White House Issues Real-Time AI Rules; Anthropic Models Face Vague Restrictions",
+          "body": "Anthropic still cannot distribute Claude Mythos and Fable 5 after violating unclear Trump administration guidelines, reflecting chaotic frontier model governance. Pharma organizations must assume regulatory unpredictability—maintain model-agnostic architectures and document all AI system deployments for audit readiness.",
+          "sourceIndices": [
+            53
+          ],
+          "sources": [
+            {
+              "title": "The white house is making up its rules for AI in real time",
+              "source": "Wired",
+              "url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Decoder Podcast Explores Decision Framework for Dangerous AI Systems",
+          "body": "Episode featuring Hayden Field examines who holds authority over frontier model risk classification and deployment restrictions. For regulated industries, clarity on these governance questions is foundational—expect EMA/ICH guidance requiring explicit risk-benefit frameworks for AI in clinical development.",
+          "sourceIndices": [
+            55
+          ],
+          "sources": [
+            {
+              "title": "Who decides when AI is too dangerous?",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Nature Machine Intelligence: AI-Augmented Psychiatry Decision Support Systems",
+          "body": "Published guidance on integrating AI into psychiatric heterogeneous care and unstructured clinical reasoning. This model—AI as interpretable decision augmentation rather than autonomous triage—offers template for pharma clinical development in complex disease areas requiring qualitative clinical judgment.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Towards AI-augmented decision making in psychiatry",
+              "source": "Nature Machine Intelligence",
+              "url": "https://www.nature.com/articles/s42256-026-01256-2",
+              "date": "2026-06-12",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "AI Policy Global Landscape Accelerates; Europe, U.S., Asia Diverge on Control",
+          "body": "Geopolitical fragmentation of AI governance (U.S. export controls, European transparency mandates, state-level regulations) forces multinational pharma into multi-jurisdictional compliance strategies. Plan for AI system validation across regulatory zones—one model, multiple approval pathways.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "The week that changed AI: inside trump’s anthropic crackdown, and how a phone call from amazon CEO andy jassy triggered the chaos",
+              "source": "Fortune",
+              "url": "https://fortune.com/2026/06/18/inside-trump-anthropic-mythos-crackdown-ai-regulation-amazon-andy-jassy-phone-call/",
+              "date": "2026-06-19",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA Approves First Generic Influenza Single-Dose Treatment Baloxavir",
+          "body": "Generic approval of Xofluza (baloxavir marboxil) tablets marks milestone in antiviral accessibility and manufacturing precedent for nucleoside analogs. Regulatory scientists tracking pharmacokinetic waiver opportunities and bioequivalence pathways for complex antivirals should reference this approval dossier for expedited pathways.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Single-Dose Generic Treatment for Influenza",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-single-dose-generic-treatment-influenza",
+              "date": "2026-06-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Broadens OTC Naloxone Nasal Spray Access for Opioid Overdose",
+          "body": "Approval of Rextovy (4 mg naloxone nasal spray) as OTC reflects expanded harm-reduction regulatory philosophy. For safety teams managing post-approval risk mitigation, this signals FDA's willingness to reclassify critical emergency medicines—document unmet need and real-world effectiveness data early in development.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "FDA Broadens Access to Over-the-Counter Naloxone Nasal Spray for Opioid Overdose",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-broadens-access-over-counter-naloxone-nasal-spray-opioid-overdose",
+              "date": "2026-06-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Clears First Over-the-Counter Continuous Glucose Monitor for Children",
+          "body": "Dexcom Stelo CGM OTC clearance for pediatric use represents significant regulatory shift toward consumer-grade medical devices in diabetes management. Clinical development teams should anticipate similar de-prescription trends and prepare post-approval surveillance programs for real-world pediatric usability and safety data.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "FDA Clears First Over-the-Counter Continuous Glucose Monitor for Children",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor-children",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU and U.S. AI Governance Diverge; States Forge Independent Regulations",
+          "body": "Six U.S. states advance AI regulations despite Trump administration pressure; EU pursues AI Act transparency mandates. Pharma companies deploying AI in clinical operations must now maintain state-level and EU compliance profiles—expect ICH to issue AI validation guidance harmonizing these divergent regimes by 2027.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "Some states are forging ahead with AI regulations",
+              "source": "Insurance Journal",
+              "url": "https://www.insurancejournal.com/news/national/2026/06/18/874239.htm",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI in Marketing Requires Legal Compliance and Data Sovereignty Framework",
+          "body": "New guidance on AI disclosure laws and regulatory risk in marketing reshapes CMO accountability. For pharma, this extends to digital promotion and clinical trial recruitment—document AI-assisted promotional content, establish traceability for patient-facing messaging, and audit third-party AI vendor contracts.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "AI in marketing: your guide to legal compliance, data sovereignty, and regulatory risk management",
+              "source": "Trinityp3.com",
+              "url": "https://www.trinityp3.com/marketing-technology/ai-in-marketing/",
+              "date": "2026-06-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Europe Pushes Digital Sovereignty; Retailers Seek Transparency Rule Exemptions",
+          "body": "EU retailers request carve-outs from AI transparency rules for generated content; Europe simultaneously invests in domestic AI alternatives. Pharma should align with European strategic autonomy narrative—leverage compliance investment as competitive moat and supply-chain advantage in EU tenders.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "Retailers want ai-generated ads exempt from EU transparency rules",
+              "source": "The Next Web",
+              "url": "https://thenextweb.com/news/retailers-want-ai-generated-ads-exempt-from-eu-transparency-rules/",
+              "date": "2026-06-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Transparent AI Governance Now Critical for Enterprise Adoption and Trust",
+          "body": "Black-box AI systems risk slowing organizational adoption; enterprises demand explainability, governance, and accountability. Clinical trial operations, manufacturing quality, and pharmacovigilance all require audit trails—design AI workflows for interpretability from inception, not post-hoc retrofit.",
+          "sourceIndices": [
+            49
+          ],
+          "sources": [
+            {
+              "title": "Why transparent AI matters for enterprise trust",
+              "source": "TechRadar",
+              "url": "https://www.techradar.com/pro/why-transparent-ai-matters-for-enterprise-trust",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Multi-LLM Consensus Engine Detects AI Hallucination with EU AI Act Compliance",
+          "body": "Open-source tool using 11 LLM providers in semantic consensus with HSP fail-closed gates and audit-grade EU AI Act compliance offers template for pharma validation. This pattern—multiple models in agreement, human-in-the-loop gates, documented audit trail—mirrors regulatory expectations for high-stakes clinical decision support.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Show hn: i built an 11-llm consensus engine to detect AI hallucination",
+              "source": "Github.com",
+              "url": "https://github.com/jaquelinejaque/quorum-saas-starter",
+              "date": "2026-06-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Roundtable on Rare Disease: Patient-Centered Regulatory Engagement Model",
+          "body": "FDA leadership held direct discussions with 15 rare disease advocates, signaling patient-centric regulatory modernization. Clinical development teams should proactively engage rare disease communities early—this approach de-risks late-stage interactions and aligns trials with real-world unmet need priorities.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "Lessons learned from our roundtable with rare disease advocates",
+              "source": "FDA.gov",
+              "url": "https://www.fda.gov/news-events/fda-voices/lessons-learned-our-roundtable-rare-disease-advocates",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "CYGNVS Launches AI Incident Command Center for Corporate AI Crisis Management",
+          "body": "New platform helps organizations manage operational crises from their own AI systems. Pharma must establish similar internal AI safety infrastructure—document AI system failures, near-misses, and remediation timelines for regulatory inspection readiness and post-market surveillance robustness.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Cygnvs launches command center for crises caused by a company’s own AI",
+              "source": "SiliconANGLE News",
+              "url": "https://siliconangle.com/2026/06/17/cygnvs-launches-command-center-crises-caused-companys-ai/",
+              "date": "2026-06-17",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Pre-Market Clinical Investigation Approval Pathways for EU Medical Devices",
+          "body": "Scoping review examines early feasibility study implementation and approval routes for complex medical device trials under EU regulations. For combination product and device developers, this resource clarifies pathway selection and timing—critical for expedited clinical investigation authorization.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "Pre-market clinical investigation approval pathways and the role of early feasibility studies for medical devices: a scoping review to guide EU policy",
+              "source": "Expert Rev Med Devices",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42324971/",
+              "date": "2026-06-22",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Mass Spectrometry-Driven Bioanalytical Innovation Accelerates Drug Discovery",
+          "body": "Review advances in MS-based bioanalytical methods supporting complex therapeutic modalities (antibodies, cell therapy, biologics). Bioanalytical teams should prioritize MS method development for early screening—validates exposure-response relationships and reduces late-stage failures in PK-driven programs.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "Accelerating drug discovery with mass spectrometry-driven bioanalytical innovations and beyond",
+              "source": "Bioanalysis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42324885/",
+              "date": "2026-06-21",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Patient-Centered Conceptual Model Advances Migraine Outcome Assessment",
+          "body": "Migraine Clinical Outcome Assessment System provides validated patient-centered framework for migraine experience measurement. Drug developers targeting migraine should anchor efficacy endpoints to this model—ensures regulatory acceptance and real-world relevance in Phase II/III trial design.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "A patient-centered conceptual model and measurement framework for migraine experience developed by the Migraine Clinical Outcome Assessment System",
+              "source": "Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42324784/",
+              "date": "2026-06-21",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "CHIP-AML22: Complex Pediatric Acute Myeloid Leukemia Trial with Adaptive Randomization",
+          "body": "Multi-center consortium trial evaluating treatment strategies in de novo pediatric AML with targeted therapy randomization (quizartinib). Oncology teams tracking pediatric trial complexity and adaptive design feasibility should reference this NOPHO model for stratified enrollment and biomarker-driven allocation.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "CHIP-AML22: a complex clinical trial in de novo pediatric AML patients, including a gemtuzumab ozogamicin randomization and targeted therapy with quizartinib in eligible subgroups, within the NOPHO-DB-SHIP consortium",
+              "source": "Trials",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42321916/",
+              "date": "2026-06-20",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AAV Gene Therapy Regulatory Insights from Early Meeting Experience",
+          "body": "Article synthesizes lessons from early regulatory meetings with FDA/EMA on adeno-associated virus gene therapy development. Gene therapy teams planning regulatory strategy should extract IND guidance on CMC comparability, biodistribution, immune response monitoring, and long-term follow-up design.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "Adeno-Associated Virus Gene Therapy Translation: Lessons from Early Regulatory Meetings",
+              "source": "Hum Gene Ther",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42321968/",
+              "date": "2026-06-19",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Structure-Aware Graph Neural Networks Generate MHC-II Epitope Predictions",
+          "body": "EpiMII tool uses graph neural networks to predict and generate MHC-II epitopes for vaccine and immunotherapy design. Immunology teams accelerate T-cell epitope discovery and personalized neoantigen selection—reduces wet-lab validation burden and de-risks immunogenicity assays.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "EpiMII: Structure-Aware Graph Neural Networks for MHC-II Epitope Generation",
+              "source": "Research (Wash D C)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42306778/",
+              "date": "2026-06-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Microneedle Drug Delivery Advances for Hypertrophic Scar Treatment",
+          "body": "Review of microneedle design for transdermal/intradermal delivery of drugs, proteins, and cells targeting scar tissue. Dermatology and regenerative medicine teams should evaluate microneedle platforms for improved bioavailability and localized efficacy—particularly relevant for biologics with poor systemic absorption.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Advances in microneedle design for the delivery of drugs, proteins, and cells in the treatment of hypertrophic scars",
+              "source": "Burns Trauma",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42305783/",
+              "date": "2026-06-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Protein-Ligand Binding Affinity Prediction with PBCNet2.0 for Probe Discovery",
+          "body": "PBCNet2.0 predicts relative affinity changes from ligand modifications, enabling structure-based lead optimization. Medicinal chemistry teams use this for rapid SAR modeling and probe design—reduces iterative synthesis cycles and prioritizes candidates with optimal binding thermodynamics.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41589-026-02241-x",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Polypharmacology and Multi-Target Strategies in Drug-Resistant Tuberculosis",
+          "body": "Review examines polypharmacology approaches to overcome MDR-TB resistance mechanisms. TB drug developers should adopt multi-target design strategies—single-target approaches face rapid resistance emergence; combination of mechanistic pathways delays and reduces resistance risk.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Polypharmacology in multi-drug-resistant tuberculosis: current scenario and future promise",
+              "source": "RSC Med Chem",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42318372/",
+              "date": "2026-06-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Comparative Parkinson's Disease Subtyping: Clinical, Pathological, and Data-Driven Approaches",
+          "body": "10-year longitudinal study compares disease progression milestones across clinical subtypes, pathological classification, and computational clustering. CNS teams designing Parkinson's trials should stratify by subtype approach and enroll for biomarker-driven subgroup analysis—heterogeneity is the rule, not exception.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
+              "source": "NPJ Parkinsons Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
+              "date": "2026-06-12",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "FDA Approves Tzield New Indication for Pediatric Type 1 Diabetes Stage 3",
+          "body": "Accelerated approval of teplizumab for newly diagnosed pediatric patients reflects FDA's confidence in early immunomodulation strategy. Clinical teams planning diabetes trials should adopt early intervention paradigm and design biomarker-enriched cohorts—regulatory precedent now favors disease-modifying approaches in new-diagnosis windows.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves New Indication for Tzield (teplizumab) for Certain Pediatric Patients with Recently Diagnosed Stage 3 Type 1 Diabetes",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Whole Cross-Sectional Ultrasound Tomography Enables 3D Tissue Imaging",
+          "body": "Custom 512-element circular receiver array with rotating single-element transmitter generates real-time 3D ultrasound cross-sections. Diagnostic imaging teams should evaluate for soft-tissue lesion characterization and intervention guidance—offers portable alternative to MRI/CT with superior temporal resolution.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Whole cross-sectional human ultrasound tomography",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41551-026-01660-4",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Autonomous Medical AI Agents Navigate EHR Systems for Patient Care Workflows",
+          "body": "Large language model agents operating in sandboxed EHR systems autonomously conduct patient histories, order tests, and interpret results. Clinical trial and post-approval teams should begin EHR integration pilots—AI agents can automate routine documentation and safety signal screening, reducing administrative burden.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Towards autonomous medical artificial intelligence agents",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10675-5",
+              "date": "2026-06-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "3D Multi-Omics Tumor Atlases Enable Precision Oncology Clinical Translation",
+          "body": "Review describes tools for generating comprehensive 3D tumor atlases with single-cell resolution and multiomics profiling. Oncology teams can now link spatial heterogeneity to treatment resistance—design basket trials around tumor microenvironment subtypes and stratify efficacy endpoints by spatial biology.",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "3d multi-omics tumour atlases: from technology to biology and clinical translation",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41568-026-00940-0",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Artificial Intelligence Fundamentals: Pattern Recognition Across Medical and Commercial Domains",
+          "body": "Comprehensive overview of AI's breadth—from medical imaging and fraud detection to clinical decision support. Clinical development teams should recognize that AI capability spans diagnostics, risk prediction, and personalized medicine—standardize AI architecture across these applications for operational efficiency.",
+          "sourceIndices": [
+            50
+          ],
+          "sources": [
+            {
+              "title": "What is artificial intelligence (AI)?",
+              "source": "Databricks.com",
+              "url": "https://www.databricks.com/blog/what-is-artificial-intelligence",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Pakistan Genome Resource Catalogs 173,303 Exomes with High Familial Relatedness",
+          "body": "Biobank compilation establishes comprehensive human genetic variation catalog with familial structure. Regulatory scientists should monitor for emerging variant prevalence data that may inform pharmacogenomic labeling updates and population-specific efficacy predictions in global regulatory submissions.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "Analysis of 173,303 exomes and genomes in the pakistan genome resource",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10667-5",
+              "date": "2026-06-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Noncoding Variant Effects on Chromatin Accessibility Decoded Across Cell Types",
+          "body": "Resource and method identify noncoding variants with extreme regulatory effects across developmental and cellular contexts. Precision medicine teams can now link patient genomic variants to cell-type-specific gene regulation—informs target selection and patient stratification in pharmacogenomics trials.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Decoding common and rare noncoding variant effects across cellular and developmental contexts",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02619-6",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Plasma Proteomic Signatures Predict Biological Age and Disease Risk",
+          "body": "Biomarker resource reveals diverse aging profiles across 40+ cell types and links cellular aging to disease prediction. Clinical teams should integrate proteomic age measures into patient risk stratification and endpoint selection—objective measure of biological age improves trial homogeneity and safety surveillance.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Plasma proteomic signatures of cellular aging predict human disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04446-y",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "APOL1 Kidney Disease Risk Prediction via Proteomics Enables Early Intervention",
+          "body": "Proteomic signature identifies kidney disease risk in APOL1 carriers before clinical manifestation. Nephrology teams can now implement biomarker-driven early intervention strategies—positions new drugs as preventive in at-risk populations and supports regulatory differentiation.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "Proteomic prediction of apol1-associated kidney disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02650-7",
+              "date": "2026-06-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Adiposity-Cancer Epidemiology and Mechanistic Pathways Reveal Drug Target Opportunities",
+          "body": "Comprehensive review of obesity-cancer links and mechanistic drivers—inflammation, growth factor signaling, metabolic dysregulation. Oncology drug developers should screen obesity-related pathways for new therapeutic opportunities; obesity stratification in trial design improves efficacy detection and population relevance.",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "Adiposity and cancer: epidemiology, mechanisms and future perspectives",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s42255-026-01529-5",
+              "date": "2026-06-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Unexplored Antitumor Benefits of Viral Infection in Cancer Immunotherapy",
+          "body": "Study shifts oncoviral research from cancer causation to immune activation potential. Immunotherapy teams should investigate viral infection history as biomarker for response prediction and combination opportunity—may identify patient subsets with superior durability.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Beyond oncogenesis: the unexplored benefits of viruses in cancer immunity",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41568-026-00948-6",
+              "date": "2026-06-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Medicinal Chemistry Framework for Anticonvulsant Drug Design and Optimization",
+          "body": "Review of established targets, mechanisms, and spiro-compound chemistry in anticonvulsant development. CNS drug developers should reference mechanism-based target selection and chemical scaffolding—accelerates lead optimization and reduces late-stage attrition from off-target effects.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "A Medicinal Chemistry Perspective on Anticonvulsant Drug Design: Targets, Mechanisms, and Spiro Compounds",
+              "source": "Drug Dev Res",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42299108/",
+              "date": "2026-06-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "OX40/OX40L Axis Safety Reconsideration in Atopic Dermatitis Immunotherapy",
+          "body": "Questions emerge regarding Kaposi's sarcoma risk with OX40/OX40L axis activation in dermatology. Safety teams should tighten monitoring protocols for immunotherapeutic pathways with durable activation—perform pharmacovigilance signal analysis and consider subgroup restrictions in labeled population.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Is Kaposi's sarcoma the end of the OX40/OX40L axis in atopic dermatitis?",
+              "source": "Front Immunol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42311687/",
+              "date": "2026-06-18",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Dual-Target CAR-T Design Optimizes PD-L1 and CLDN18.2 for Gastric Cancer",
+          "body": "Systematic optimization identifies bicistronic dual-target, double-CD3ζ CAR-T architecture with enhanced antitumor activity. Cell therapy teams should adopt systematic design iteration—rational CAR-T architecture selection reduces manufacturing complexity and improves clinical potency.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Systematic optimization of PD-L1 and CLDN18.2 CAR-T designs identifies a bicistronic dual-target, double-CD3ζ architecture with enhanced antitumor activity in gastric cancer",
+              "source": "Front Immunol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42311665/",
+              "date": "2026-06-18",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Daily Science Briefing: Elementary Particles, Brain-Computer Interfaces, GLP-1 Effects",
+          "body": "News digest includes BCI home-use adoption for paralysis patients and GLP-1 obesity drugs' apparent testosterone/sperm enhancement effects. Clinical teams should monitor emerging pharmacodynamic observations from labeled uses—may reveal off-label therapeutic opportunities and population subgroup safety signals.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Daily briefing: how many elementary particles are there?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-01939-1",
+              "date": "2026-06-16",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week crystallized a fundamental inversion in AI strategy for regulated pharma: frontier LLMs now outperform specialist clinical tools, geopolitical fragmentation is forcing multi-jurisdictional AI governance (EU transparency mandates, U.S. export controls, state-level regulations), and autonomous AI agents are maturing toward EHR-integrated workflows. The implication is stark—AI tooling decisions made in 2024 on specialist platforms require urgent reassessment; regulatory science teams must now plan for model-agnostic architectures, assume changing regulatory landscapes, and prioritize interpretability and audit trails over performance optimization alone. Governance readiness, not capability chasing, is now the competitive edge.",
+  "allSources": [
+    {
+      "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04431-5",
+      "date": "2026-06-12",
+      "type": "ainews"
+    },
+    {
+      "title": "A generalizable hi-c foundation model for chromatin architecture, single-cell and multiomics analysis across species",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03097-8",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "US curbs anthropic AI access, raising global concerns",
+      "source": "DW (English)",
+      "url": "https://www.dw.com/en/trumps-anthropic-ban-sets-a-risky-precedent-for-ai/a-77577694",
+      "date": "2026-06-19",
+      "type": "news"
+    },
+    {
+      "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+      "date": "2026-06-19",
+      "type": "ainews"
+    },
+    {
+      "title": "Dispatches from o'reilly: from capabilities to responsibilities​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+      "source": "Stackoverflow.blog",
+      "url": "https://stackoverflow.blog/2026/06/19/dispatches-from-o-reilly-from-capabilities-to-responsibilities/",
+      "date": "2026-06-19",
+      "type": "news"
+    },
+    {
+      "title": "France advances europe’s AI future with nvidia technologies",
+      "source": "Nvidia.com",
+      "url": "https://blogs.nvidia.com/blog/france-advances-europes-ai-future/",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "The white house is making up its rules for AI in real time",
+      "source": "Wired",
+      "url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Who decides when AI is too dangerous?",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Towards AI-augmented decision making in psychiatry",
+      "source": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/articles/s42256-026-01256-2",
+      "date": "2026-06-12",
+      "type": "ainews"
+    },
+    {
+      "title": "The week that changed AI: inside trump’s anthropic crackdown, and how a phone call from amazon CEO andy jassy triggered the chaos",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/06/18/inside-trump-anthropic-mythos-crackdown-ai-regulation-amazon-andy-jassy-phone-call/",
+      "date": "2026-06-19",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Single-Dose Generic Treatment for Influenza",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-single-dose-generic-treatment-influenza",
+      "date": "2026-06-17",
+      "type": "news"
+    },
+    {
+      "title": "FDA Broadens Access to Over-the-Counter Naloxone Nasal Spray for Opioid Overdose",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-broadens-access-over-counter-naloxone-nasal-spray-opioid-overdose",
+      "date": "2026-06-16",
+      "type": "news"
+    },
+    {
+      "title": "FDA Clears First Over-the-Counter Continuous Glucose Monitor for Children",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor-children",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Some states are forging ahead with AI regulations",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/06/18/874239.htm",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "AI in marketing: your guide to legal compliance, data sovereignty, and regulatory risk management",
+      "source": "Trinityp3.com",
+      "url": "https://www.trinityp3.com/marketing-technology/ai-in-marketing/",
+      "date": "2026-06-21",
+      "type": "news"
+    },
+    {
+      "title": "Retailers want ai-generated ads exempt from EU transparency rules",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/retailers-want-ai-generated-ads-exempt-from-eu-transparency-rules/",
+      "date": "2026-06-19",
+      "type": "news"
+    },
+    {
+      "title": "Why transparent AI matters for enterprise trust",
+      "source": "TechRadar",
+      "url": "https://www.techradar.com/pro/why-transparent-ai-matters-for-enterprise-trust",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Show hn: i built an 11-llm consensus engine to detect AI hallucination",
+      "source": "Github.com",
+      "url": "https://github.com/jaquelinejaque/quorum-saas-starter",
+      "date": "2026-06-19",
+      "type": "news"
+    },
+    {
+      "title": "Lessons learned from our roundtable with rare disease advocates",
+      "source": "FDA.gov",
+      "url": "https://www.fda.gov/news-events/fda-voices/lessons-learned-our-roundtable-rare-disease-advocates",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Cygnvs launches command center for crises caused by a company’s own AI",
+      "source": "SiliconANGLE News",
+      "url": "https://siliconangle.com/2026/06/17/cygnvs-launches-command-center-crises-caused-companys-ai/",
+      "date": "2026-06-17",
+      "type": "news"
+    },
+    {
+      "title": "Pre-market clinical investigation approval pathways and the role of early feasibility studies for medical devices: a scoping review to guide EU policy",
+      "source": "Expert Rev Med Devices",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42324971/",
+      "date": "2026-06-22",
+      "type": "paper"
+    },
+    {
+      "title": "Accelerating drug discovery with mass spectrometry-driven bioanalytical innovations and beyond",
+      "source": "Bioanalysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42324885/",
+      "date": "2026-06-21",
+      "type": "paper"
+    },
+    {
+      "title": "A patient-centered conceptual model and measurement framework for migraine experience developed by the Migraine Clinical Outcome Assessment System",
+      "source": "Headache",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42324784/",
+      "date": "2026-06-21",
+      "type": "paper"
+    },
+    {
+      "title": "CHIP-AML22: a complex clinical trial in de novo pediatric AML patients, including a gemtuzumab ozogamicin randomization and targeted therapy with quizartinib in eligible subgroups, within the NOPHO-DB-SHIP consortium",
+      "source": "Trials",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42321916/",
+      "date": "2026-06-20",
+      "type": "paper"
+    },
+    {
+      "title": "Adeno-Associated Virus Gene Therapy Translation: Lessons from Early Regulatory Meetings",
+      "source": "Hum Gene Ther",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42321968/",
+      "date": "2026-06-19",
+      "type": "paper"
+    },
+    {
+      "title": "EpiMII: Structure-Aware Graph Neural Networks for MHC-II Epitope Generation",
+      "source": "Research (Wash D C)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42306778/",
+      "date": "2026-06-17",
+      "type": "paper"
+    },
+    {
+      "title": "Advances in microneedle design for the delivery of drugs, proteins, and cells in the treatment of hypertrophic scars",
+      "source": "Burns Trauma",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42305783/",
+      "date": "2026-06-17",
+      "type": "paper"
+    },
+    {
+      "title": "Atomic-level protein–ligand recognition with pbcnet2.0 for probe discovery",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41589-026-02241-x",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Polypharmacology in multi-drug-resistant tuberculosis: current scenario and future promise",
+      "source": "RSC Med Chem",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42318372/",
+      "date": "2026-06-17",
+      "type": "paper"
+    },
+    {
+      "title": "Comparative analysis of progression milestones across Parkinson's disease clinical, pathological, and data-driven subtypes: a 10-year follow-up",
+      "source": "NPJ Parkinsons Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42286020/",
+      "date": "2026-06-12",
+      "type": "paper"
+    },
+    {
+      "title": "FDA Approves New Indication for Tzield (teplizumab) for Certain Pediatric Patients with Recently Diagnosed Stage 3 Type 1 Diabetes",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "Whole cross-sectional human ultrasound tomography",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41551-026-01660-4",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Towards autonomous medical artificial intelligence agents",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10675-5",
+      "date": "2026-06-17",
+      "type": "news"
+    },
+    {
+      "title": "3d multi-omics tumour atlases: from technology to biology and clinical translation",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41568-026-00940-0",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "What is artificial intelligence (AI)?",
+      "source": "Databricks.com",
+      "url": "https://www.databricks.com/blog/what-is-artificial-intelligence",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "Analysis of 173,303 exomes and genomes in the pakistan genome resource",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10667-5",
+      "date": "2026-06-17",
+      "type": "news"
+    },
+    {
+      "title": "Decoding common and rare noncoding variant effects across cellular and developmental contexts",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02619-6",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "Plasma proteomic signatures of cellular aging predict human disease",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04446-y",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "Proteomic prediction of apol1-associated kidney disease",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02650-7",
+      "date": "2026-06-12",
+      "type": "news"
+    },
+    {
+      "title": "Adiposity and cancer: epidemiology, mechanisms and future perspectives",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s42255-026-01529-5",
+      "date": "2026-06-15",
+      "type": "news"
+    },
+    {
+      "title": "Beyond oncogenesis: the unexplored benefits of viruses in cancer immunity",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41568-026-00948-6",
+      "date": "2026-06-18",
+      "type": "news"
+    },
+    {
+      "title": "A Medicinal Chemistry Perspective on Anticonvulsant Drug Design: Targets, Mechanisms, and Spiro Compounds",
+      "source": "Drug Dev Res",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42299108/",
+      "date": "2026-06-16",
+      "type": "paper"
+    },
+    {
+      "title": "Is Kaposi's sarcoma the end of the OX40/OX40L axis in atopic dermatitis?",
+      "source": "Front Immunol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42311687/",
+      "date": "2026-06-18",
+      "type": "paper"
+    },
+    {
+      "title": "Systematic optimization of PD-L1 and CLDN18.2 CAR-T designs identifies a bicistronic dual-target, double-CD3ζ architecture with enhanced antitumor activity in gastric cancer",
+      "source": "Front Immunol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42311665/",
+      "date": "2026-06-18",
+      "type": "paper"
+    },
+    {
+      "title": "Daily briefing: how many elementary particles are there?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-01939-1",
+      "date": "2026-06-16",
+      "type": "news"
+    }
+  ]
+}
