@@ -1,5 +1,43 @@
 [
   {
+    "id": "auto-7c07ead1e2c9",
+    "type": "news",
+    "title": "STAT+: Sword Health contracted to provide AI-supported physical therapy for an entire country",
+    "excerpt": "Portugal's National Health Service signed a deal with digital health company Sword for its AI-assisted virtual physical therapy care.",
+    "source": "STAT News",
+    "date": "2026-06-29",
+    "tags": [
+      "Health tech",
+      "Artificial intelligence",
+      "health tech",
+      "STAT+"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/06/29/sword-health-portugal-deal-ai-supported-physical-therapy/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-8558b635b9c6",
+    "type": "news",
+    "title": "STAT+: AI scientist company Edison Scientific tapped by team behind Metsera to create new biotechs",
+    "excerpt": "Edison Scientific and investment firm Population Health Partners are teaming up to leverage AI agents in drug discovery and development.",
+    "source": "STAT News",
+    "date": "2026-06-29",
+    "tags": [
+      "Biotech",
+      "Exclusive",
+      "Artificial intelligence",
+      "biotechnology"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/06/29/edison-scientific-population-health-partners-deal-to-create-new-biotechs/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
     "id": "auto-8012484e2547",
     "type": "paper",
     "title": "Mental Health Treatment Among Adults: United States, 2024",
@@ -15,6 +53,120 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42364316/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-39dfd170f83e",
+    "type": "news",
+    "title": "Ripienaar/free-for-dev: a list of saas, paas and iaas offerings that have free tiers of interest to devops and infradev",
+    "excerpt": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev - ripienaar/free-for-dev",
+    "source": "Github.com",
+    "date": "2026-06-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://github.com/ripienaar/free-for-dev#major-cloud-providers",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-447c19a1890a",
+    "type": "news",
+    "title": "Bridging labs and markets: how the new indo-swiss partnership is reshaping global health technology - prevention is better than cure",
+    "excerpt": "Spread the Message               NEW DELHI / ZURICH — In a major push to convert high-level scientific research into real-world medical solutions, India and Switzerland have significantly expanded their bilateral innovation partnership this month. Building on…",
+    "source": "Healthandfamily.in",
+    "date": "2026-06-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://healthandfamily.in/bridging-labs-and-markets-how-the-new-indo-swiss-partnership-is-reshaping-global-health-technology/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-69883a57b62c",
+    "type": "news",
+    "title": "Sui launches seal mpc framework to secure autonomous AI agent transactions",
+    "excerpt": "Sui Launches Seal MPC Framework to Secure Autonomous AI Agent Transactions: a fresh look at Sui Seal MPC AI agents, market context, key risks, and what tra",
+    "source": "Bitcoinist",
+    "date": "2026-06-28",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/sui-launches-seal-mpc-framework-to-secure-autonomous-ai-agent-transactions/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-2aff6895973f",
+    "type": "news",
+    "title": "Ripple secures preliminary luxembourg approval to prepare mica-compliant xrp and rlusd operations",
+    "excerpt": "Ripple Secures Preliminary Luxembourg Approval to Prepare MiCA-Compliant XRP and RLUSD Operations: a fresh look at Ripple MiCA Luxembourg CASP, market cont",
+    "source": "Bitcoinist",
+    "date": "2026-06-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/ripple-secures-preliminary-luxembourg-approval-to-prepare-mica-compliant-xrp/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-3559b4a0ce3b",
+    "type": "news",
+    "title": "Sol strategies stock jumps 22% as corporate solana treasury model gains attention",
+    "excerpt": "Sol Strategies Stock Jumps 22% as Corporate Solana Treasury Model Gains Attention: a fresh look at Sol Strategies STKE Solana treasury, market context, key",
+    "source": "Bitcoinist",
+    "date": "2026-06-28",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/sol-strategies-stock-jumps-22-as-corporate-solana-treasury-model-gains-attention/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-e952906b0f70",
+    "type": "ainews",
+    "title": "Indian payments chief thinks AI will be heavily involved in next era of digital payment growth",
+    "excerpt": "Dilip Asbe said that newer UPI apps could be more competitive with a viable commercial model",
+    "source": "TechCrunch",
+    "date": "2026-06-28",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/27/indian-payments-chief-thinks-ai-will-be-heavily-involved-in-next-era-of-digital-payment-growth/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-3ca97f84c63a",
+    "type": "paper",
+    "title": "Specialist Inpatient Detoxification from Gabapentinoids: Clinical and Demographic Characteristics and Predictors of Outcome",
+    "excerpt": "This study examines clinical and demographic characteristics of patients undergoing specialist inpatient detoxification from gabapentinoids and identifies predictors of treatment outcome. Conducted at an NHS addictions service in Greater Manchester, the research provides insights into patient profiles and factors associated with successful detoxification from these medications. The findings may inform clinical practice and patient selection for inpatient gabapentinoid withdrawal management programs.",
+    "source": "J Psychoactive Drugs",
+    "date": "2026-06-28",
+    "tags": [
+      "Gabapentinoids",
+      "Detoxification",
+      "Inpatient Treatment",
+      "Addiction Medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42366702/",
     "badge": "PubMed",
     "topic": "drug-discovery"
   },
@@ -252,6 +404,227 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-81c05af28cfe",
+    "type": "news",
+    "title": "Machine learning is enabling a new era for precision medicine and pharmacogenomics",
+    "excerpt": "Machine learning has unlocked significant value across the entire healthcare delivery lifecycle.",
+    "source": "Forbes",
+    "date": "2026-06-27",
+    "tags": [
+      "Machine learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.forbes.com/sites/saibala/2026/06/27/machine-learning-is-enabling-a-new-era-for-precision-medicine-and-pharmacogenomics/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-0ca986cf3553",
+    "type": "news",
+    "title": "Telehealth for mental health is now mainstream, but AI note-taking tools show major quality gaps",
+    "excerpt": "Mental health telehealth is booming in 2026, but AI scribes used in virtual visits show quality gaps versus human notes. No regulatory standards exist yet. Here's what patients should know.",
+    "source": "Medical Daily",
+    "date": "2026-06-27",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medicaldaily.com/telehealth-mental-health-ai-scribe-quality-gaps-2026-475819",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-ec3656695616",
+    "type": "news",
+    "title": "Silicon valley backed trump to kill AI regulation, now the industry is begging for rules",
+    "excerpt": "The AI industry that donated heavily to elect Donald Trump on the promise he would leave the technology alone is now asking for formal regulation, Politico reported on Friday. Executives at frontier AI companies told the outlet they view the administration’s …",
+    "source": "The Next Web",
+    "date": "2026-06-27",
+    "tags": [
+      "Regulatory",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/silicon-valley-ai-regulation-trump-biden-irony-framework/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-da4f6d41e76b",
+    "type": "news",
+    "title": "Galaxy watch health data is shaping samsung’s future clinical research",
+    "excerpt": "Galaxy Watch health data is becoming one of Samsung’s most valuable assets in advancing clinical research and digital healthcare. As wearable technology evolves beyond fitness tracking, Samsung is using health insights collected from Galaxy Watch devices to s…",
+    "source": "Successful-blog.com",
+    "date": "2026-06-27",
+    "tags": [
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.successful-blog.com/1/galaxy-watch-health-data/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-f42c2e081204",
+    "type": "news",
+    "title": "Ripple partners with sbi holdings for japan rlusd stablecoin launch after jfsa green light",
+    "excerpt": "Ripple Partners With SBI Holdings for Japan RLUSD Stablecoin Launch After JFSA Green Light: a fresh look at Ripple RLUSD Japan, market context, key risks,",
+    "source": "Bitcoinist",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/ripple-partners-with-sbi-holdings-for-japan-rlusd-stablecoin-launch-after-jfsa/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-9cc7018314e5",
+    "type": "news",
+    "title": "Elon musk’s x money rolls out with cross river bank rails, but ripple link needs careful framing",
+    "excerpt": "Elon Musk’s X Money Rolls Out With Cross River Bank Rails, But Ripple Link Needs Careful Framing: a fresh look at X Money Cross River Bank Ripple, market c",
+    "source": "Bitcoinist",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/elon-musk-s-x-money-rolls-out-with-cross-river-bank-rails-but-ripple-link-needs/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-077f3b47eb26",
+    "type": "news",
+    "title": "Xrp prepares for july bounce-back as price history points to positive third quarter seasonality",
+    "excerpt": "XRP Prepares for July Bounce-Back as Price History Points to Positive Third Quarter Seasonality: a fresh look at XRP July seasonality, market context, key",
+    "source": "newsBTC",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.newsbtc.com/news/xrp-prepares-for-july-bounce-back-as-price-history-points-to-positive-third/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-a7d436031dfa",
+    "type": "news",
+    "title": "Chainlink powering tradfi future? dtcc appchain and project pangea put link middleware in focus",
+    "excerpt": "Chainlink Powering TradFi Future? DTCC AppChain and Project Pangea Put LINK Middleware in Focus: a fresh look at Chainlink DTCC Project Pangea, market cont",
+    "source": "Bitcoinist",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/chainlink-powering-tradfi-future-dtcc-appchain-and-project-pangea-put-link/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-6222abc84ca1",
+    "type": "news",
+    "title": "Cardano whales intensify accumulation near multi-month lows as futures interest grows",
+    "excerpt": "Cardano Whales Intensify Accumulation Near Multi-Month Lows as Futures Interest Grows: a fresh look at Cardano whale accumulation, market context, key risk",
+    "source": "Bitcoinist",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://bitcoinist.com/cardano-whales-intensify-accumulation-near-multi-month-lows-as-futures-interest/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-80e98a2863ff",
+    "type": "news",
+    "title": "Solana sol reclaims $72, but fading on-chain metrics signal weakening dex momentum",
+    "excerpt": "Solana SOL Reclaims $72, But Fading On-Chain Metrics Signal Weakening DEX Momentum: a fresh look at Solana on-chain metrics, market context, key risks, and",
+    "source": "newsBTC",
+    "date": "2026-06-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.newsbtc.com/news/solana-sol-reclaims-72-but-fading-on-chain-metrics-signal-weakening-dex-momentum/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-ab24e3be6fc2",
+    "type": "ainews",
+    "title": "Softbank’s CEO isn’t the only one with questions about elon musk's orbital data center hype | techcrunch",
+    "excerpt": "SoftBank’s CEO isn’t the only one with questions about Elon Musk's orbital data center hype | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-06-27",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-307bfc45e28b",
+    "type": "ainews",
+    "title": "Apple vision pro exec is reportedly leaving for openai",
+    "excerpt": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
+    "source": "TechCrunch",
+    "date": "2026-06-27",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-67f7fa5d1b27",
+    "type": "ainews",
+    "title": "Why is apple asking me to pay more for big tech’s AI obsession?",
+    "excerpt": "Tim Cook recently said price increases were \"unavoidable\" and described the company's pricing as \"unsustainable.\" The 16-inch MacBook Pro saw its price go up by $300. The 11-inch iPad Air went from $599 to $749. Even the HomePod Mini got a $30 bump to $129. C…",
+    "source": "The Verge",
+    "date": "2026-06-27",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-8b8f9d0918de",
+    "type": "ainews",
+    "title": "Security news this week: lastpass users had their data stolen—again",
+    "excerpt": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+    "source": "Wired",
+    "date": "2026-06-27",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+    "badge": "AI Lab"
   },
   {
     "id": "nws-5ae9e3aaf749",
@@ -4510,380 +4883,5 @@
     "url": "https://siliconangle.com/2026/06/20/agentic-ais-challenge-getting-agents-act-like-team-not-crowd/",
     "badge": "Data",
     "topic": "data-governance"
-  },
-  {
-    "id": "nws-8364ca0cc202",
-    "type": "news",
-    "title": "How to leverage sms for marketing to increase return visits | technical guides",
-    "excerpt": "This guide details how venue operators can use SMS for marketing to increase return visits by capturing verified first-party phone data through Guest WiFi and…",
-    "source": "Purple.ai",
-    "date": "2026-06-20",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.purple.ai/en-gb/guides/sms-for-marketing",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-4bcd92eb9e78",
-    "type": "news",
-    "title": "Nature communications: declining phosphatidylcholine drives mitochondrial aging — and restoring it reversed the decline in worms within 2 days",
-    "excerpt": "Leibniz Institute / Nature Communications April 2026: phosphatidylcholine decline triggers mitochondrial fragmentation during aging. Restoring it reversed aging in worms in 2 days.",
-    "source": "Medical Daily",
-    "date": "2026-06-20",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.medicaldaily.com/phosphatidylcholine-mitochondrial-aging-reverse-menopause-nature-communications-2026-475734",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-af08cad5eb0b",
-    "type": "ainews",
-    "title": "In the weights is your new ai-centric vanity search | techcrunch",
-    "excerpt": "In the Weights is your new AI-centric vanity search | TechCrunchtechcrunch.com",
-    "source": "TechCrunch",
-    "date": "2026-06-20",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-2c1e718513ec",
-    "type": "ainews",
-    "title": "Nobel laureate john jumper is leaving deepmind for rival anthropic | techcrunch",
-    "excerpt": "Nobel laureate John Jumper is leaving DeepMind for rival Anthropic | TechCrunchtechcrunch.com",
-    "source": "TechCrunch",
-    "date": "2026-06-20",
-    "tags": [
-      "Anthropic",
-      "DeepMind"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-d42e17779ae0",
-    "type": "ainews",
-    "title": "Read this before you vibe-code another app",
-    "excerpt": "Bob Starr was delighted with his vibe-coded website. \"Boomberg\" showed how much US tax money is going to tech companies, and Starr launched it online immediately after making it. It wasn't until months after the site went live that he realized there was a pro…",
-    "source": "The Verge",
-    "date": "2026-06-20",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-32a0763e2d0d",
-    "type": "ainews",
-    "title": "Why amazon hates 'human-in-the-loop' AI governance",
-    "excerpt": "VP Eric Brandwine explains people aren't all that great, actually",
-    "source": "Theregister.com",
-    "date": "2026-06-20",
-    "tags": [
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/security/2026/06/20/why-amazon-hates-human-in-the-loop-ai-governance/5258639",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-e033a605ad4a",
-    "type": "news",
-    "title": "US curbs anthropic AI access, raising global concerns",
-    "excerpt": "The Trump administration has restricted foreign access to Anthropic's latest AI models over security fears, forcing a global shutdown. Could the row hurt the Claude-maker's IPO plans and set a far-reaching precedent? Silicon Valley executives and global polic…",
-    "source": "DW (English)",
-    "date": "2026-06-19",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.dw.com/en/trumps-anthropic-ban-sets-a-risky-precedent-for-ai/a-77577694",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-80f2ead7f270",
-    "type": "news",
-    "title": "Tech industry defector in ny-12 gets boost from new super pac",
-    "excerpt": "Guardrails Alliance has already raised $5 million and yesterday launched its first ad buys for New York state Rep. Alex Bores, who is running to replace longtime Rep. Jerry Nadler.\nThe post Tech Industry Defector in NY-12 Gets Boost From New Super PAC appeare…",
-    "source": "The American Prospect",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://prospect.org/2026/06/19/tech-industry-ny-12-artificial-intelligence-super-pac-alex-bores/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-bb072b54f249",
-    "type": "news",
-    "title": "Keysight’s chief technologist on the path to 6g",
-    "excerpt": "Balaji Raghothaman, Keysight’s chief technologist for 6G, discusses what it takes for the telecoms industry to move to 6G, from supporting AI workloads to integrating with satellites connectivity and driving enterprise use cases",
-    "source": "ComputerWeekly.com",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.computerweekly.com/news/366644835/Keysights-chief-technologist-on-the-path-to-6G",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-a815505e4a8c",
-    "type": "news",
-    "title": "The week that changed AI: inside trump’s anthropic crackdown, and how a phone call from amazon CEO andy jassy triggered the chaos",
-    "excerpt": "The fight over Anthropic’s Mythos model is rewriting the rules of AI regulation, with consequences for the trillion dollar startup, the AI industry, and global security.",
-    "source": "Fortune",
-    "date": "2026-06-19",
-    "tags": [
-      "Regulatory",
-      "Anthropic",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://fortune.com/2026/06/18/inside-trump-anthropic-mythos-crackdown-ai-regulation-amazon-andy-jassy-phone-call/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-aa1dc93468ba",
-    "type": "news",
-    "title": "How a new york primary wound up at the center of the AI storm",
-    "excerpt": "Politics\n \n \n / \n June 19, 2026\n \r\n\n \nHow a New York Primary Wound Up at the Center of the AI Storm \r\n\n\n\nAlex Bores is engulfed in a brutal (and super-expensive) battle over how technology will change work, life, and society.\r\n\n\n\r\n\n \n \n John Nichols \r\n\n \n \n S…",
-    "source": "Thenation.com",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.thenation.com/?post_type=article&p=601758",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-748b4c150409",
-    "type": "news",
-    "title": "A brain-computer interface has, for the first time, restored fluent everyday speech to a person who had lost it — a man with als who had not spoken aloud in years until a small implant from the braingate clinical trial began translating his attempts to speak directly into computer-synthesised words, in a result researchers reported in june 2026",
-    "excerpt": "Casey Harrell can now talk for twelve hours at a stretch. Two years ago, he could not talk at all. The ALS he was diagnosed with several years earlier had progressively destroyed the motor neurons controlling the muscles of his face and throat, leaving him wi…",
-    "source": "Space Daily",
-    "date": "2026-06-19",
-    "tags": [
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://spacedaily.com/d-a-brain-computer-interface-has-for-the-first-time-restored-fluent-everyday-speech-to-a-person-who-had-lost-it-a-man-with-als-who-had-not-spoken-aloud-in-years-until-a-small-implant-from-th/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-ecf4c75b4931",
-    "type": "news",
-    "title": "Healthcare AI has left the lab. now comes the hard part.",
-    "excerpt": "Artificial intelligence in healthcare has evolved past a simple test-and-learn exercise. AI tools are now embedded into clinical scheduling, drug dispensing, patient communications and diagnostic decision-making across the industry, according to an analysis a…",
-    "source": "pymnts.com",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.pymnts.com/healthcare/2026/healthcare-ai-has-left-lab-now-comes-hard-part/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-5b054cb5185b",
-    "type": "news",
-    "title": "The week in maternal-pediatric health tech (june 18) — the drought reaches week five: FDA pediatric label wave",
-    "excerpt": "Venture capital has now sat out five straight weeks in maternal-pediatric health. The FDA has not. On June 12 the agency cleared the first disease-modifying drug for newly diagnosed pediatric type 1 diabetes and the first over-the-counter glucose monitor clea…",
-    "source": "Pedshealthdispatch.com",
-    "date": "2026-06-19",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pedshealthdispatch.com/newsletter/2026-06-18-roundup/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-0ad8a5d1d230",
-    "type": "news",
-    "title": "Explore midjourney medical for ai-powered health scanning",
-    "excerpt": "Explore Midjourney Medical for AI-powered health scanningthedailyvibecode.vercel.app",
-    "source": "Vercel.app",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thedailyvibecode.vercel.app/news/signal/1408",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-653ff2ebd675",
-    "type": "paper",
-    "title": "Adeno-Associated Virus Gene Therapy Translation: Lessons from Early Regulatory Meetings",
-    "excerpt": "This article examines key insights from early regulatory meetings on adeno-associated virus (AAV) gene therapy development, drawing on experiences from the Therapeutic Development Branch and collaborating institutions to inform best practices for translation of AAV-based therapeutic approaches.",
-    "source": "Hum Gene Ther",
-    "date": "2026-06-19",
-    "tags": [
-      "Gene Therapy",
-      "Adeno-Associated Virus (AAV)",
-      "Regulatory Affairs",
-      "Drug Development"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42321968/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-a97e6c8ae1b7",
-    "type": "ainews",
-    "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
-    "excerpt": "Miami-based AI startup Subquadratic came out of stealth mode last month with a huge claim. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. The details were thin, and many people were unconvinced. But Subquadratic has started to bring the receipts, sharing the&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-06-19",
-    "tags": [
-      "Artificial intelligence"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
-    "badge": "Research"
-  },
-  {
-    "id": "nws-f741c631d3f2",
-    "type": "news",
-    "title": "Improving the accuracy and generalizability of molecular property regression models with a substructure-substitution-rule-informed framework",
-    "excerpt": "Chem. Sci., 2026, Accepted ManuscriptDOI: 10.1039/D6SC01813K, Edge Article Open Access &nbsp This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.Xiaoyu Fan, Lin Guo, Ruizhen Jia, Yang Tian, Zhihao Yang, Weihao Li, …",
-    "source": "Royal Society of Chemistry",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubs.rsc.org/en/content/articlelanding/2026/sc/d6sc01813k",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-2a9dd05cf054",
-    "type": "news",
-    "title": "Nobel laureate john jumper leaves google deepmind for anthropic",
-    "excerpt": "John Jumper, a prominent research scientist and Nobel Prize winner, has announced his departure from Google DeepMind to join the AI startup Anthropic. Jumper is widely recognized for his pioneering work on AlphaFold, an artificial intelligence system capable …",
-    "source": "4sysops.com",
-    "date": "2026-06-19",
-    "tags": [
-      "AlphaFold",
-      "Anthropic",
-      "DeepMind"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://4sysops.com/archives/nobel-laureate-john-jumper-leaves-google-deepmind-for-anthropic/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-7a2a9d6faeac",
-    "type": "news",
-    "title": "U.s. orders anthropic to disable claude fable 5, mythos 5 over security concerns",
-    "excerpt": "\"Our understanding is that the government believes it has become aware of a method of bypassing, or 'jailbreaking' Fable 5\" to identify minor software vulnerabilities in the model.\"\nThe post U.S. Orders Anthropic to Disable Claude Fable 5, Mythos 5 Over Secur…",
-    "source": "Legalinsurrection.com",
-    "date": "2026-06-19",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://legalinsurrection.com/2026/06/u-s-orders-anthropic-to-disable-claude-fable-5-mythos-5-over-security-concerns/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-836c678a8697",
-    "type": "news",
-    "title": "AI governance for marketing: why cmos own it now — the aideate blog",
-    "excerpt": "New AI disclosure laws are reshaping marketing. Learn why AI governance now sits with CMOs, and how to build compliance into your workflow.",
-    "source": "Aideatesolutions.com",
-    "date": "2026-06-19",
-    "tags": [
-      "Regulatory",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://aideatesolutions.com/blog/ai-governance-marketing-cmo",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-878cc30b8488",
-    "type": "news",
-    "title": "Can europe build its own AI heavyweights to rival the US?",
-    "excerpt": "With AI dominated by US firms, Europe is pushing for more independence. New partnerships, investments and startups aim to boost the continent's digital sovereignty, but challenges around funding and regulation remain.",
-    "source": "DW (English)",
-    "date": "2026-06-19",
-    "tags": [
-      "EMA",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.dw.com/en/can-europe-build-its-own-ai-heavyweights-to-rival-the-us/a-77629735",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-94704e835e1a",
-    "type": "news",
-    "title": "AI update, june 19, 2026: AI news and views from the past week",
-    "excerpt": "Catch up on select AI news and developments since Friday, June 12. Stay in the know. Read the full article at MarketingProfs",
-    "source": "MarketingProfs.com",
-    "date": "2026-06-19",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
