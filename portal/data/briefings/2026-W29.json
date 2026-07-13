@@ -1,0 +1,1073 @@
+{
+  "id": "2026-W29",
+  "weekLabel": "Week 29 — July 13, 2026",
+  "weekStart": "2026-07-13",
+  "weekEnd": "2026-07-13",
+  "generatedAt": "2026-07-13T10:38:41.755Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "EU AI Act Enforcement Begins August 2: Pharma Must Prepare Now",
+    "standfirst": "Europe's AI regulation transitions from paper to enforcement on August 2, 2026—pharma companies face immediate compliance obligations for AI systems in drug development, manufacturing, and clinical decision-making.",
+    "body": "The European Commission gains statutory power to fine AI system makers for non-compliance with the AI Act, marking the end of a grace period and the start of real regulatory teeth. For pharmaceutical firms, this means documented risk assessments, transparency requirements, and traceability obligations for any AI tool used in regulated processes—from lead optimization to pharmacovigilance. Non-compliance carries financial penalties and reputational risk; compliance requires cross-functional governance: regulatory, IT, and R&D must align on data lineage, model validation, and human oversight protocols before the deadline. Organizations currently operating AI systems in drug discovery or manufacturing without documented governance frameworks face enforcement action within weeks.",
+    "sourceIndices": [
+      44
+    ],
+    "sources": [
+      {
+        "title": "On 2 august 2026, europe’s grace period on its landmark AI law ends and the commission gains the power to fine the makers of the most powerful models — for how they trained them and for what those systems do in the world",
+        "source": "Space Daily",
+        "url": "https://spacedaily.com/m-europe-ai-act-commission-fines-august-2026/",
+        "date": "2026-07-11",
+        "type": "news"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "Anthropic Maps Claude's Internal Reasoning Through Mechanistic Interpretability",
+          "body": "Anthropic has developed techniques to visualize how Claude processes information internally, revealing structured 'thought spaces' where the model reasons through concepts before generating responses. This breakthrough in mechanistic interpretability matters for pharma because it enables validation of AI reasoning in clinical decision-support and diagnostic tools—you can now audit how an AI arrives at recommendations rather than treating it as a black box. Regulatory bodies like EMA and FDA will likely demand similar transparency for AI systems involved in patient safety decisions.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+              "date": "2026-07-09",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "OpenAI Secures US Clearance for GPT-5.6 Broad Commercial Release",
+          "body": "The U.S. Department of Commerce has approved OpenAI's rollout of GPT-5.6, signaling regulatory acceptance of advanced foundation models in commercial deployment. For pharmaceutical organizations, this opens pathways to integrate cutting-edge LLMs into drug discovery workflows, scientific writing, and regulatory intelligence—but only with documented governance aligned to both US and EU frameworks. The approval suggests that foundation model deployment is now a regulatory-accepted pathway, provided companies implement appropriate risk management and audit trails.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Openai secures u.s. regulatory green light for gpt-5.6 rollout, axios report says",
+              "source": "CNBC",
+              "url": "https://www.cnbc.com/2026/07/08/openai-gets-us-regulatory-approval-for-gpt-5point6-rollout-axios-report.html",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI Agents Require Governance Architecture: Reasoning Separation and Continuous Evaluation",
+          "body": "Enterprise AI agents operating autonomously in security, data analysis, and decision-support roles now demand embedded governance—not bolted-on oversight. This applies directly to pharma: autonomous agents used in compound screening, lab scheduling, or adverse event triage must have segregated reasoning modules, continuous performance evaluation, and role-specific telemetry. Organizations deploying AI agents without these guardrails expose themselves to undetectable drift in model behavior and regulatory non-compliance.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "The future of governing AI agents",
+              "source": "Elastic.co",
+              "url": "https://www.elastic.co/blog/the-future-of-governing-ai-agents",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Claude and Frontier Models Transform Scientific Workflow: Selecting the Right Tool",
+          "body": "General-purpose AI science assistants (Claude Science, similar tools) promise dramatic speedup in literature review, experimental design, and data analysis, but selection requires careful matching to lab workflows. For pharma R&D teams, this means evaluating whether a given tool handles proprietary data safely, integrates with existing LIMS/ELN platforms, and produces auditable outputs for regulatory submission. The wrong choice wastes time; the right choice accelerates early-stage discovery by weeks.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Which ‘ai scientist’ suits your lab? a guide for the perplexed",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-02091-6",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "EU AI Act Enforcement Begins August 2: Immediate Compliance Obligations Activate",
+          "body": "The EU's AI Act transitions from a grace period into an enforcement regime on August 2, 2026, granting the European Commission power to fine makers of high-risk AI systems. Pharmaceutical companies deploying AI in clinical trials, manufacturing quality control, or pharmacovigilance must now demonstrate documented risk assessments, data governance, and human oversight. This is not optional: non-compliance triggers fines and potential product authorization delays.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "On 2 august 2026, europe’s grace period on its landmark AI law ends and the commission gains the power to fine the makers of the most powerful models — for how they trained them and for what those systems do in the world",
+              "source": "Space Daily",
+              "url": "https://spacedaily.com/m-europe-ai-act-commission-fines-august-2026/",
+              "date": "2026-07-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Modernizes Drug Manufacturing Registration: Distributed Manufacturing Now Streamlined",
+          "body": "The FDA has proposed a new rule creating a simplified registration pathway for distributed manufacturing establishments, enabling modular drug production across multiple contract manufacturers. This regulatory shift impacts pharma supply chains and requires updates to quality management systems, pharmacovigilance networks, and batch traceability. Companies operating under traditional centralized manufacturing must evaluate whether distributed models offer cost or resilience benefits—and if so, prepare enhanced compliance documentation.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "FDA Proposes Rule to Modernize Drug Manufacturing Registration",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-proposes-rule-modernize-drug-manufacturing-registration",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Real-World Evidence Now Guides Regulatory Approvals and Trial Emulation",
+          "body": "Real-world evidence (RWE) has shifted from post-market surveillance into a pre-approval and concurrent evidence source, with regulatory bodies using RWE to emulate traditional trials and accelerate approvals. For clinical development teams, this means planning RWE capture during trial execution, not after—integrating EHR data, wearables, and digital biomarkers into trial protocols. RWE strategies must align with ICH and EMA guidance on data quality, bias, and analytical rigor.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "When the real world becomes the trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04484-6",
+              "date": "2026-07-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Greece Advances National AI Governance Framework Aligned to EU Standards",
+          "body": "Greece's parliament has begun debate on a national AI act implementing the EU AI Act at member-state level, establishing precedent for national regulatory bodies to enforce AI standards in healthcare and pharma. Organizations operating across multiple European jurisdictions must anticipate similar national frameworks in other member states, each adding compliance layers. Early engagement with national regulatory authorities reduces friction during AI system submissions.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "Greece unveils national AI act framework: what changes for citizens, businesses and government",
+              "source": "Protothema.gr",
+              "url": "https://en.protothema.gr/2026/07/11/greece-unveils-national-ai-act-framework-what-changes-for-citizens-businesses-and-government/",
+              "date": "2026-07-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Canada Rewrites AI Privacy Regulation: Bill C-36 Sets New Data Governance Baseline",
+          "body": "Canada's Bill C-36 introduces AI-specific privacy obligations, requiring organizations to disclose how personal data trains AI systems and implement safeguards against algorithmic bias. For pharma companies operating in Canada or accessing Canadian health data for RWD/RWE studies, this creates new documentation and consent requirements. The precedent signals that privacy regulators globally are moving faster than traditional AI governance frameworks.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Op-ed: canada rewrites the rules on AI privacy with bill c-36, and this is just the start",
+              "source": "Digital Journal",
+              "url": "https://www.digitaljournal.com/article/op-ed-canada-rewrites-the-rules-on-ai-privacy-with-bill-c-36-and-this-is-just-the-start/",
+              "date": "2026-07-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Trustworthy AI in Healthcare Demands Confidence Calibration and Clinical Validation",
+          "body": "AI systems answering medical questions with unwarranted confidence pose safety and liability risks—a confidently wrong diagnosis is more dangerous than explicit uncertainty. Pharma and clinical development teams deploying AI decision-support tools must validate not only accuracy but also confidence calibration: the AI must know what it doesn't know. Regulatory submissions must include evidence of calibration testing across patient populations and edge cases.",
+          "sourceIndices": [
+            45
+          ],
+          "sources": [
+            {
+              "title": "Talk python to me: #554: trustworthy AI in healthcare and longevity",
+              "source": "Talkpython.fm",
+              "url": "https://talkpython.fm/episodes/show/554/trustworthy-ai-in-healthcare-and-longevity",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI Training Data Fair Use Remains Legally Unsettled Across Jurisdictions",
+          "body": "U.S. courts remain divided on whether training AI models on copyrighted material constitutes fair use, with Judge William Alsup's June 2025 ruling creating uncertainty for pharma companies building proprietary AI tools on licensed scientific literature. Until settled, organizations should secure explicit licenses for training data or limit training to open-access and institution-owned content. European organizations face similar ambiguity under copyright directives.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Courts split over AI training fair use rulings [let's data science]",
+              "source": "Letsdatascience.com",
+              "url": "https://letsdatascience.com/news/courts-split-over-ai-training-fair-use-rulings-334de057",
+              "date": "2026-07-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU Red Tape Reduction Campaign Moves Slowly: Business Still Frustrated",
+          "body": "Despite an EU-wide simplification initiative spanning 20 months, regulated industries report minimal relief from administrative burden. For pharma, this suggests that EMA guidance updates and streamlined pathways remain slow to roll out—investment in internal regulatory intelligence and government affairs remains essential. Organizations cannot rely on near-term deregulation and must plan compliance budgets accordingly.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Europe torched its own rulebook to please business, and business is still unhappy",
+              "source": "The Next Web",
+              "url": "https://thenextweb.com/news/eu-red-tape-bonfire-industry-unhappy-digital-omnibus/",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI Deepfake Labeling Standards Emerging: Music, Media, and Health Content Affected",
+          "body": "Streaming platforms and content distributors are adopting AI-generated content labels to combat deepfakes and misinformation. This trend will eventually extend to health communications: pharma marketing materials, educational videos, and patient information documents may require disclosure if AI-assisted in creation. Anticipate similar labeling requirements in clinical and regulatory submissions within 12–18 months.",
+          "sourceIndices": [
+            48
+          ],
+          "sources": [
+            {
+              "title": "AI labels could be coming to music streaming platforms soon",
+              "source": "Gizmodo.com",
+              "url": "https://gizmodo.com/ai-labels-could-be-coming-to-music-streaming-platforms-soon-2000784216",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Algorithmic Bias in Digital Systems Risks Excluding Vulnerable Populations",
+          "body": "As financial and health systems shift to digital-only operations, algorithmic bias in decision systems (lending, access, triage) disproportionately excludes vulnerable groups. Pharma clinical trial recruitment and patient outreach systems must audit for similar bias—if your AI-driven trial recruitment favors certain demographics, you risk skewed efficacy data and regulatory challenges. Equity audits are now standard practice in health tech governance.",
+          "sourceIndices": [
+            49
+          ],
+          "sources": [
+            {
+              "title": "Digital banking creates a new kind of financial exclusion",
+              "source": "Lse.ac.uk",
+              "url": "https://blogs.lse.ac.uk/businessreview/2026/07/10/digital-banking-creates-a-new-kind-of-financial-exclusion/",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Organoid-AI Platforms Now Govern Compound Prioritization and Program Progression Decisions",
+          "body": "Organoid models integrated with AI analytics have become decision-gating systems in early-stage drug discovery, directly influencing which compounds advance and which are deprioritized. This integration is powerful but currently lacks standardized governance frameworks—AI systems are influencing multi-million-dollar program decisions without documented validation or bias audits. R&D organizations must implement integrated governance spanning organoid culture protocols, AI model validation, and independent scientific review before relying on organoid-AI outputs for go/no-go decisions.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "Organoid-AI platforms need integrated governance in drug discovery",
+              "source": "Drug Discov Today",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42401253/",
+              "date": "2026-07-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Machine Learning PAT Tool Enables Real-Time Moisture Monitoring in Lyophilized Biopharmaceuticals",
+          "body": "Researchers have developed an ML-based process analytical technology (PAT) tool using near-infrared spectroscopy to monitor residual moisture in freeze-dried drug products in real time, replacing offline analytical methods. For manufacturing teams, this offers tighter process control, reduced batch variability, and faster release testing—enabling faster supply chain response. Implementation requires validation per ICH Q14 guidance and GMP data integrity protocols.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "Machine Learning-Based PAT Tool for Real-Time Residual Moisture Monitoring in Lyophilized Biopharmaceuticals Using NIR Spectroscopy",
+              "source": "Biotechnol Bioeng",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42437520/",
+              "date": "2026-07-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Few-Shot Toxicity Prediction Framework Cuts Data Requirements for ADMET Assessment",
+          "body": "A new deep learning framework (3Br-MGD) predicts toxicity with high accuracy using minimal training data, addressing a bottleneck in ADMET screening where limited toxicology data often exists early in discovery. This enables earlier, more confident go/no-go decisions on lead series and accelerates progression to development. Teams should evaluate this approach for proprietary compound datasets to unlock faster lead optimization cycles.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "3br-mgd: few-shot toxicity prediction with a three-branch deep encoder and meta-learning framework",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-60814-1",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Multi-Omics Implementation Faces Clinical Translation Barriers: Regulatory Clarity Needed",
+          "body": "A comprehensive analysis of multi-omics clinical implementation identifies barriers spanning pre-analytics (sample handling), bioinformatics (data integration), regulatory guidance (what constitutes valid biomarker evidence), and clinical utility (actionability in patient care). For drug developers using multi-omics biomarkers in trials or companion diagnostics, this means aligning with EMA/FDA expectations early—lack of clarity delays submissions. Engage regulatory early on data handling, analysis pipelines, and clinical utility claims.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "Mapping the path to clinical implementation of multi-omics",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02663-2",
+              "date": "2026-07-07",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI Enhances Outcome Measurement in Oncology Trials: Image Analysis and Biomarker Integration",
+          "body": "AI systems analyzing imaging (CT, MRI) and pathology slides improve consistency and speed in oncology trial endpoint assessment, reducing inter-reader variability and enabling real-time outcome monitoring. This matters for efficacy claims and safety monitoring: more precise endpoints strengthen regulatory submissions. Teams should evaluate AI-enabled endpoint assessment for ongoing and future oncology programs, with validation data prepared for regulatory submission.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "Enhancing Outcome Measurement in Oncology Clinical Trials Through Artificial Intelligence: A Scoping Review",
+              "source": "JCO Clin Cancer Inform",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42430670/",
+              "date": "2026-07-11",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Calcium Signaling Pathway Links Psychiatric and Cardiovascular Disease Genetics",
+          "body": "A genetic analysis reveals shared molecular mechanisms between psychiatric and cardiovascular disease through calcium signaling, suggesting repurposing opportunities for compounds targeting this pathway. Discovery teams working on psychiatric or cardiovascular indications should screen their lead series for activity in the complementary disease area—a single mechanism might unlock dual-indication development and expanded market access.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "Calcium signaling pathway implicates a shared genetic basis between psychiatric and cardiovascular diseases",
+              "source": "Transl Psychiatry",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42436150/",
+              "date": "2026-07-11",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Targeted Protein Degradation: Bridging Chemistry to Clinical Translation",
+          "body": "Targeted protein degradation (TPD) technologies—PROTACs, molecular glue degraders—are maturing from chemical discovery into clinical candidates, but translation requires overcoming selectivity, PK/PD, and manufacturability challenges. For medicinal chemistry teams evaluating TPD scaffolds, early engagement with process chemistry and formulation specialists is essential. Regulatory expectations for TPD compounds are still evolving; EMA/FDA feedback on mechanism of action and biomarker validation is critical.",
+          "sourceIndices": [
+            31
+          ],
+          "sources": [
+            {
+              "title": "Targeted protein degradation: bridging chemical biology and clinical translation",
+              "source": "Acta Pharmacol Sin",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42414544/",
+              "date": "2026-07-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "3D Motor Neuron Organoids Model Complex CNS Pathophysiology for Drug Testing",
+          "body": "Human 3D organoid models derived from motor neuron disease patient cells replicate disease pathophysiology unachievable in 2D cultures, enabling mechanism-driven compound screening and patient-stratified testing. For rare neurodegenerative disease programs, organoid-based screening can accelerate lead identification and de-risk development. Integration with high-throughput imaging and ML phenotyping further accelerates discovery.",
+          "sourceIndices": [
+            34
+          ],
+          "sources": [
+            {
+              "title": "Using human 3d organoid models to gain mechanistic insight in motor neuron diseases",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41583-026-01057-x",
+              "date": "2026-07-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Digital Biomarkers and Wearables Expand Outcome Measurement Beyond Traditional Lab Parameters",
+          "body": "Microbiome signatures, biological aging clocks, imaging-derived phenotypes, and wearable-captured activity metrics are emerging as digital biomarkers for efficacy and safety monitoring in clinical trials. Teams designing Phase 2b and Phase 3 protocols should consider integrating these markers to improve outcome precision and enable real-time safety monitoring. Regulatory acceptance of novel biomarkers requires pre-submission alignment with FDA/EMA on analytical validation and clinical utility.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Biological aging clocks in health and disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04495-3",
+              "date": "2026-07-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Antibody-Oligonucleotide Conjugates Enable Intracellular Delivery for Genetic Diseases",
+          "body": "Antibody-oligonucleotide conjugates combine antibody targeting with oligonucleotide therapeutics (ASOs, siRNA), enabling delivery to intracellular targets previously inaccessible to traditional small molecules. This modality addresses genetic diseases where intracellular RNA editing or splicing modulation is required. Teams exploring this space should engage medicinal chemistry and manufacturing early to address conjugate stability, PK/PD, and scale-up challenges.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "Antibody-oligonucleotide conjugates: design principles, intracellular delivery, and translational opportunities",
+              "source": "J Hematol Oncol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42410454/",
+              "date": "2026-07-06",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "NeuroVFM Generalizes Across Routine Hospital Scans: Clinician-Ready Neuroimaging AI",
+          "body": "NeuroVFM, trained on real-world hospital MRI and CT scans rather than research datasets, learns generalizable representations that improve diagnostic accuracy, report generation, and triage across diverse imaging equipment and protocols. This matters for clinical trial sites: AI systems trained on routine clinical data transfer better to new sites than research-trained models. Trial programs should evaluate whether NeuroVFM or similar hospital-trained models can accelerate imaging assessments and reduce site burden.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "Health system learning enables generalist neuroimaging models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04497-1",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Phase 1/2 Stem Cell Therapy for Parkinson's Shows Safety and Preliminary Efficacy",
+          "body": "A phase 1/2 trial of off-the-shelf human embryonic stem cell-derived dopaminergic progenitor cells for Parkinson's disease demonstrated a favorable 12-month safety profile with no graft-related adverse events and early signs of symptomatic improvement. This validates a cell therapy approach previously considered too risky. For teams evaluating similar cell/gene therapies, this trial design (open-label with long-term follow-up) provides a regulatory precedent for phase 1/2 safety and exploratory efficacy assessment.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Human embryonic stem cell-derived dopaminergic cells for parkinson’s disease: a phase 1/2 open-label trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04525-0",
+              "date": "2026-07-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Imaging-Derived Phenotypes Link Genotype to Complex Trait Architecture",
+          "body": "Combining imaging-derived phenotypes (IDPs—quantitative measurements from MRI, CT, ultrasound) with genetic data enables large-scale genome-wide association studies revealing genotype–phenotype relationships for complex diseases. For biomarker-driven trials, this approach enables patient stratification based on imaging signatures and genetic risk—improving cohort enrichment. Establish imaging biomarker co-development strategies early in program planning to leverage emerging IDP methodologies.",
+          "sourceIndices": [
+            35
+          ],
+          "sources": [
+            {
+              "title": "Genetic analysis of imaging-derived phenotypes",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41576-026-00989-5",
+              "date": "2026-07-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Network-Based ML Identifies Systemic Lupus Erythematosus Biomarkers from Multi-Omics Data",
+          "body": "Researchers applied network-based machine learning to multi-omics datasets, identifying novel biomarkers and disease mechanisms in systemic lupus erythematosus (SLE). This approach integrates protein, metabolite, and genetic data into pathway networks—revealing targets that single-omic approaches miss. For autoimmune and rare disease programs, network-based biomarker discovery can improve patient stratification and mechanism understanding.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "Network-based machine learning to identify biomarkers for systemic lupus erythematosus",
+              "source": "BMC Biol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42415123/",
+              "date": "2026-07-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "BCG Immunotherapy Modulates CNS Immunity and Alters Alzheimer's Biomarkers in Clinical Trials",
+          "body": "Two open-label phase 1/2 trials demonstrate that BCG immunotherapy reprograms central nervous system immunity and produces measurable changes in Alzheimer's disease biomarkers (amyloid, tau). This off-label use of a century-old vaccine suggests untapped immunotherapeutic mechanisms relevant to neuroinflammation. Biomarker-driven programs should consider similar immune-modulation approaches and plan biomarker assessments to detect mechanism-of-action signals early.",
+          "sourceIndices": [
+            42
+          ],
+          "sources": [
+            {
+              "title": "Bacillus Calmette-Guérin (BCG) immunotherapy reprograms CNS immunity and alters Alzheimer's biomarkers: results from two open-label clinical trials",
+              "source": "Commun Med (Lond)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42393277/",
+              "date": "2026-07-02",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Oral Microbiome Modulation Improves Gestational Diabetes Outcomes: Mechanistic and Clinical Evidence",
+          "body": "A human trial combined with animal models demonstrates that oral microbiome changes during gestational diabetes correlate with gum inflammation and blood glucose control—and targeted microbiome interventions improve glycemic outcomes. This microbiome-metabolism link opens opportunities for probiotic or targeted antimicrobial approaches in metabolic disease. Teams developing microbiome-targeted therapies should prioritize oral and gut sampling to characterize mechanistic biomarkers.",
+          "sourceIndices": [
+            39
+          ],
+          "sources": [
+            {
+              "title": "Oral microbiome modulation mitigates hyperglycemia exacerbation in gestational diabetes mellitus",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-74917-w",
+              "date": "2026-07-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Diet-Microbiota Synergy Unlocks Immunotherapy Efficacy in Obesity-Associated Cancer",
+          "body": "Diet-induced changes in gut microbial metabolism enhance immunotherapy response in obesity-associated cancers by amplifying anti-tumor immunity. This mechanistic finding suggests that baseline microbiota composition and dietary counseling are optimization variables in checkpoint inhibitor trials. Oncology programs should consider microbiota profiling and dietary intervention arms to improve immunotherapy response rates.",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "Diet–microbiome synergy underlies obesity-associated immunotherapy efficacy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10750-x",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Epigenomic Classification of AML Reveals Non-Genetic Disease Heterogeneity and Therapeutic Targets",
+          "body": "An ATAC-seq-based approach classifies acute myeloid leukemia into 16 epigenomic subgroups, revealing that chromatin remodeling and non-genetic mechanisms drive disease heterogeneity independent of mutations. This epigenomic stratification could improve patient selection for targeted therapies and predict resistance mechanisms. Hematology programs should consider epigenomic profiling as a companion diagnostic to enable precision dosing and combination strategies.",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "Chromatin landscape and epigenetic heterogeneity of acute myeloid leukaemia",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10703-4",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Global Breast Cancer Survival Benchmark Data Drive Progress Toward WHO Targets",
+          "body": "WHO Global Breast Cancer Initiative has published 2017–2021 survival benchmarks across 194 member states, providing a baseline for measuring progress toward survival improvement targets. For companies developing breast cancer therapeutics, these data reveal regional variation in outcomes—opportunities for programs addressing access, early detection, or treatment disparities. Regulatory submissions should reference regional benchmark data to position new therapies in context of global unmet need.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Global breast cancer survival estimates in 2017–2021 to advance the WHO global breast cancer initiative",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04531-2",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Oncology Must Systematically Track Long-Term Toxicity and Hidden Side Effects",
+          "body": "As modern cancer drugs extend survival, late-emerging toxicities (cardiac, renal, secondary malignancies) become significant drivers of quality of life and durability of benefit. Current pharmacovigilance systems detect acute toxicity but often miss late, cumulative effects. Oncology programs should design extended follow-up cohorts with prospective toxicity monitoring and establish biomarker strategies to predict and mitigate long-term harm.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "Oncology must confront hidden side effects",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04554-9",
+              "date": "2026-07-08",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Global Genomic Data Governance Determines Whether Equity Advances or Biases Entrench",
+          "body": "As genomics infrastructure expands globally, governance decisions made now will determine whether genetic databases reflect diverse populations or lock in algorithmic bias for decades. For pharma programs using genomic data for patient stratification, variant interpretation, or population genetics, ensuring that training datasets include diverse ancestries is not optional—it's a regulatory and ethical imperative. Partner with institutions and consortia committing to equitable data collection.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "A call to action for an equitable global genomic system",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02667-y",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Bispecific Antibody First-in-Human Trial: Safety and Efficacy in HIV-1 and Without HIV-1",
+          "body": "A phase 1 trial of a bispecific broadly neutralizing antibody (10e8.4/iMAB) demonstrated safety and antiviral activity in both HIV-positive and HIV-negative participants, validating a dual-pathway approach to viral neutralization. This trial design (stratified enrollment with and without disease) provides a precedent for evaluating bifunctional therapeutics early. Future bispecific programs should consider similar design to rapidly de-risk mechanism and dosing.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Bispecific 10e8.4/imab broadly neutralizing antibody in people with or without hiv-1: a partially randomized phase 1 trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04472-w",
+              "date": "2026-07-07",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Fibronectin-Driven Signaling in Marfan Syndrome Reveals Aortic Disease Mechanism and Therapeutic Target",
+          "body": "Researchers identified a fibronectin-dependent signaling pathway (αvβ3–PI3K–PIP3–PDK1–ILK) driving aortic pathology in Marfan syndrome, and demonstrated that pathway inhibition prevents and reverses disease in vivo. This mechanistic insight enables rational drug design targeting extracellular matrix signaling in rare connective tissue disorders. Rare disease programs should prioritize structural biology and pathway mapping to enable mechanism-driven therapeutic development.",
+          "sourceIndices": [
+            36
+          ],
+          "sources": [
+            {
+              "title": "Fibronectin-induced overactivation of αvβ3-pi3k-pip3-pdk1-ilk signaling drives aortic disease in marfan syndrome",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-74707-4",
+              "date": "2026-07-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Digital and AI Models Span Pharma Development and Manufacturing: Regulatory Framework Needed",
+          "body": "An industry survey reveals that digital and AI-enabled models are now embedded across pharmaceutical development (formulation optimization, process simulation, supply chain planning) and manufacturing (real-time PAT, predictive maintenance, batch release). However, regulatory guidance on validation and GMP compliance remains fragmented. Organizations deploying these models must document algorithmic validation, data provenance, and change control—establishing internal governance frameworks ahead of formal EMA/FDA guidance.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Digital and AI-enabled models in pharmaceutical development and manufacturing: a regulatory-focused industry survey",
+              "source": "Int J Pharm",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42435921/",
+              "date": "2026-07-11",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Plant Viruses and Nanotechnology Converge in AI-Driven Biotechnology Innovation",
+          "body": "Plant viruses are being engineered as nanoparticle scaffolds for drug delivery and vaccine platforms, with AI/ML optimizing virus design, loading capacity, and immunogenicity. This converging field (virology, nanotechnology, AI) enables rational design of viral vectors and particle therapeutics. Programs exploring virus-like particle (VLP) platforms should integrate AI-guided structure prediction and machine learning-based immunogenicity modeling to accelerate lead selection.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Application of plant viruses in biotechnology with relation to artificial intelligence, machine learning, and nanotechnology",
+              "source": "Npj Viruses",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42426299/",
+              "date": "2026-07-10",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Biological Aging Clocks Predict Disease Burden and Healthspan Independent of Chronological Age",
+          "body": "Biological aging clocks—multi-omic algorithms that predict cellular and physiological age—are emerging as predictive biomarkers for age-related disease burden and response to aging interventions. For geriatric, neurodegenerative, and chronic disease programs, aging clocks offer a novel endpoint and patient stratification tool. Early integration of aging biomarkers into trial designs can accelerate proof-of-concept and enable earlier regulatory feedback.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Biological aging clocks in health and disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04495-3",
+              "date": "2026-07-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Short-Course Versus Long-Course Antimicrobial Treatment in Pediatric Bone-Joint Infections: Evidence Synthesis",
+          "body": "A systematic review and meta-analysis of pediatric acute osteomyelitis and septic arthritis shows that short-course (2–3 weeks) parenteral antibiotics followed by oral therapy are non-inferior to long-course regimens, reducing treatment burden and adverse effects. For antimicrobial development programs, this evidence supports designing pediatric studies with shorter treatment durations—improving compliance and safety profiles. Regulatory submissions should reference this pediatric evidence.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Short- versus long-course of antimicrobial treatment in pediatric population with acute osteoarticular infections: a systematic review and meta-analysis",
+              "source": "Eur J Pediatr",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42420646/",
+              "date": "2026-07-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Stimuli-Responsive Metal-Organic Frameworks Enable On-Demand Oral Antimicrobial Delivery",
+          "body": "Researchers engineered metal-organic frameworks (MOFs) responsive to pH and enzymes in the oral cavity, enabling triggered release of antibacterial agents. This smart material approach reduces systemic exposure and side effects while maintaining local efficacy. For oral disease programs (periodontitis, caries), MOF-based delivery offers a novel formulation strategy. Preclinical and translational work should evaluate safety and manufacturing scalability.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Smart/stimuli-responsive metal-organic frameworks for on-demand antibacterial therapy in the oral cavity",
+              "source": "Dent Mater",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42420084/",
+              "date": "2026-07-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Formulation Innovation: Sparfloxacin-Loaded SLN Microneedles Target Biofilm-Infected Wounds",
+          "body": "Researchers integrated solid lipid nanoparticles containing the antibiotic sparfloxacin into transdermal microneedle arrays, enabling targeted delivery to biofilm-infected wounds while bypassing systemic antibiotic exposure. This integrated formulation-device approach is particularly valuable for wound healing and chronic infection indications. Teams developing topical antibiotics should explore nanoparticle + microneedle combinations to improve efficacy and reduce systemic toxicity.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "Formulation development and optimization of sparfloxacin-loaded solid lipid nanoparticles integrated with microneedles for the treatment of biofilm-infected wounds",
+              "source": "Eur J Pharm Biopharm",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42437591/",
+              "date": "2026-07-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "In Vitro Nasal Mucosa Model Enables Preclinical Testing of Ciliary Function and Mucosal Transport",
+          "body": "Researchers developed a physiologically relevant in vitro nasal mucosa model using the CI-pNaEC cell line, enabling assessment of drug effects on ciliation, mucus secretion, and mucosal clearance—mechanisms often missed in standard cell culture. For intranasal and respiratory drug programs, this model system enables early-stage de-risking of effects on mucociliary clearance and local tolerability. Adoption of this model can strengthen regulatory submissions by providing mechanistic mucosal safety data.",
+          "sourceIndices": [
+            37
+          ],
+          "sources": [
+            {
+              "title": "Ciliation and mucus secretion in an in vitro model of nasal mucosa based on CI-pNaEC cell line for preclinical drug testing",
+              "source": "Eur J Pharm Biopharm",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42401318/",
+              "date": "2026-07-04",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week marks a regulatory inflection point: the EU AI Act enforcement deadline (August 2) is no longer theoretical—it is 3 weeks away, and pharma organizations without documented AI governance frameworks face immediate compliance risk. Simultaneously, frontier AI capabilities (mechanistic interpretability, advanced LLMs) are accelerating drug discovery and clinical decision-making, while real-world evidence and organoid-AI platforms are reshaping how efficacy and safety are assessed. The overarching challenge is governance velocity: building trustworthy, auditable AI systems faster than regulatory enforcement timelines compress. Senior leaders should prioritize cross-functional AI governance task forces immediately, establish data lineage and model validation protocols, and engage EMA/FDA early on novel biomarker and endpoint strategies. Compliance is not optional; it is competitive advantage in a regulated market.",
+  "allSources": [
+    {
+      "title": "On 2 august 2026, europe’s grace period on its landmark AI law ends and the commission gains the power to fine the makers of the most powerful models — for how they trained them and for what those systems do in the world",
+      "source": "Space Daily",
+      "url": "https://spacedaily.com/m-europe-ai-act-commission-fines-august-2026/",
+      "date": "2026-07-11",
+      "type": "news"
+    },
+    {
+      "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "date": "2026-07-09",
+      "type": "ainews"
+    },
+    {
+      "title": "Openai secures u.s. regulatory green light for gpt-5.6 rollout, axios report says",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/08/openai-gets-us-regulatory-approval-for-gpt-5point6-rollout-axios-report.html",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "The future of governing AI agents",
+      "source": "Elastic.co",
+      "url": "https://www.elastic.co/blog/the-future-of-governing-ai-agents",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "Which ‘ai scientist’ suits your lab? a guide for the perplexed",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-02091-6",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "FDA Proposes Rule to Modernize Drug Manufacturing Registration",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-proposes-rule-modernize-drug-manufacturing-registration",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "When the real world becomes the trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04484-6",
+      "date": "2026-07-09",
+      "type": "news"
+    },
+    {
+      "title": "Greece unveils national AI act framework: what changes for citizens, businesses and government",
+      "source": "Protothema.gr",
+      "url": "https://en.protothema.gr/2026/07/11/greece-unveils-national-ai-act-framework-what-changes-for-citizens-businesses-and-government/",
+      "date": "2026-07-11",
+      "type": "news"
+    },
+    {
+      "title": "Op-ed: canada rewrites the rules on AI privacy with bill c-36, and this is just the start",
+      "source": "Digital Journal",
+      "url": "https://www.digitaljournal.com/article/op-ed-canada-rewrites-the-rules-on-ai-privacy-with-bill-c-36-and-this-is-just-the-start/",
+      "date": "2026-07-12",
+      "type": "news"
+    },
+    {
+      "title": "Talk python to me: #554: trustworthy AI in healthcare and longevity",
+      "source": "Talkpython.fm",
+      "url": "https://talkpython.fm/episodes/show/554/trustworthy-ai-in-healthcare-and-longevity",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Courts split over AI training fair use rulings [let's data science]",
+      "source": "Letsdatascience.com",
+      "url": "https://letsdatascience.com/news/courts-split-over-ai-training-fair-use-rulings-334de057",
+      "date": "2026-07-09",
+      "type": "news"
+    },
+    {
+      "title": "Europe torched its own rulebook to please business, and business is still unhappy",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/eu-red-tape-bonfire-industry-unhappy-digital-omnibus/",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "AI labels could be coming to music streaming platforms soon",
+      "source": "Gizmodo.com",
+      "url": "https://gizmodo.com/ai-labels-could-be-coming-to-music-streaming-platforms-soon-2000784216",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Digital banking creates a new kind of financial exclusion",
+      "source": "Lse.ac.uk",
+      "url": "https://blogs.lse.ac.uk/businessreview/2026/07/10/digital-banking-creates-a-new-kind-of-financial-exclusion/",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Organoid-AI platforms need integrated governance in drug discovery",
+      "source": "Drug Discov Today",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42401253/",
+      "date": "2026-07-04",
+      "type": "paper"
+    },
+    {
+      "title": "Machine Learning-Based PAT Tool for Real-Time Residual Moisture Monitoring in Lyophilized Biopharmaceuticals Using NIR Spectroscopy",
+      "source": "Biotechnol Bioeng",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437520/",
+      "date": "2026-07-12",
+      "type": "paper"
+    },
+    {
+      "title": "3br-mgd: few-shot toxicity prediction with a three-branch deep encoder and meta-learning framework",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-60814-1",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "Mapping the path to clinical implementation of multi-omics",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02663-2",
+      "date": "2026-07-07",
+      "type": "news"
+    },
+    {
+      "title": "Enhancing Outcome Measurement in Oncology Clinical Trials Through Artificial Intelligence: A Scoping Review",
+      "source": "JCO Clin Cancer Inform",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42430670/",
+      "date": "2026-07-11",
+      "type": "paper"
+    },
+    {
+      "title": "Calcium signaling pathway implicates a shared genetic basis between psychiatric and cardiovascular diseases",
+      "source": "Transl Psychiatry",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42436150/",
+      "date": "2026-07-11",
+      "type": "paper"
+    },
+    {
+      "title": "Targeted protein degradation: bridging chemical biology and clinical translation",
+      "source": "Acta Pharmacol Sin",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42414544/",
+      "date": "2026-07-07",
+      "type": "paper"
+    },
+    {
+      "title": "Using human 3d organoid models to gain mechanistic insight in motor neuron diseases",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41583-026-01057-x",
+      "date": "2026-07-06",
+      "type": "news"
+    },
+    {
+      "title": "Biological aging clocks in health and disease",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04495-3",
+      "date": "2026-07-09",
+      "type": "news"
+    },
+    {
+      "title": "Antibody-oligonucleotide conjugates: design principles, intracellular delivery, and translational opportunities",
+      "source": "J Hematol Oncol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42410454/",
+      "date": "2026-07-06",
+      "type": "paper"
+    },
+    {
+      "title": "Health system learning enables generalist neuroimaging models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04497-1",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Human embryonic stem cell-derived dopaminergic cells for parkinson’s disease: a phase 1/2 open-label trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04525-0",
+      "date": "2026-07-09",
+      "type": "news"
+    },
+    {
+      "title": "Genetic analysis of imaging-derived phenotypes",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41576-026-00989-5",
+      "date": "2026-07-06",
+      "type": "news"
+    },
+    {
+      "title": "Network-based machine learning to identify biomarkers for systemic lupus erythematosus",
+      "source": "BMC Biol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42415123/",
+      "date": "2026-07-07",
+      "type": "paper"
+    },
+    {
+      "title": "Bacillus Calmette-Guérin (BCG) immunotherapy reprograms CNS immunity and alters Alzheimer's biomarkers: results from two open-label clinical trials",
+      "source": "Commun Med (Lond)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42393277/",
+      "date": "2026-07-02",
+      "type": "paper"
+    },
+    {
+      "title": "Oral microbiome modulation mitigates hyperglycemia exacerbation in gestational diabetes mellitus",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-74917-w",
+      "date": "2026-07-03",
+      "type": "news"
+    },
+    {
+      "title": "Diet–microbiome synergy underlies obesity-associated immunotherapy efficacy",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10750-x",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "Chromatin landscape and epigenetic heterogeneity of acute myeloid leukaemia",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10703-4",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "Global breast cancer survival estimates in 2017–2021 to advance the WHO global breast cancer initiative",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04531-2",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "Oncology must confront hidden side effects",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04554-9",
+      "date": "2026-07-08",
+      "type": "news"
+    },
+    {
+      "title": "A call to action for an equitable global genomic system",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02667-y",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Bispecific 10e8.4/imab broadly neutralizing antibody in people with or without hiv-1: a partially randomized phase 1 trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04472-w",
+      "date": "2026-07-07",
+      "type": "news"
+    },
+    {
+      "title": "Fibronectin-induced overactivation of αvβ3-pi3k-pip3-pdk1-ilk signaling drives aortic disease in marfan syndrome",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-74707-4",
+      "date": "2026-07-06",
+      "type": "news"
+    },
+    {
+      "title": "Digital and AI-enabled models in pharmaceutical development and manufacturing: a regulatory-focused industry survey",
+      "source": "Int J Pharm",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42435921/",
+      "date": "2026-07-11",
+      "type": "paper"
+    },
+    {
+      "title": "Application of plant viruses in biotechnology with relation to artificial intelligence, machine learning, and nanotechnology",
+      "source": "Npj Viruses",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42426299/",
+      "date": "2026-07-10",
+      "type": "paper"
+    },
+    {
+      "title": "Short- versus long-course of antimicrobial treatment in pediatric population with acute osteoarticular infections: a systematic review and meta-analysis",
+      "source": "Eur J Pediatr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420646/",
+      "date": "2026-07-08",
+      "type": "paper"
+    },
+    {
+      "title": "Smart/stimuli-responsive metal-organic frameworks for on-demand antibacterial therapy in the oral cavity",
+      "source": "Dent Mater",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420084/",
+      "date": "2026-07-08",
+      "type": "paper"
+    },
+    {
+      "title": "Formulation development and optimization of sparfloxacin-loaded solid lipid nanoparticles integrated with microneedles for the treatment of biofilm-infected wounds",
+      "source": "Eur J Pharm Biopharm",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42437591/",
+      "date": "2026-07-12",
+      "type": "paper"
+    },
+    {
+      "title": "Ciliation and mucus secretion in an in vitro model of nasal mucosa based on CI-pNaEC cell line for preclinical drug testing",
+      "source": "Eur J Pharm Biopharm",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42401318/",
+      "date": "2026-07-04",
+      "type": "paper"
+    }
+  ]
+}
