@@ -1,0 +1,896 @@
+{
+  "id": "2026-W30",
+  "weekLabel": "Week 30 — July 20, 2026",
+  "weekStart": "2026-07-20",
+  "weekEnd": "2026-07-20",
+  "generatedAt": "2026-07-20T10:25:13.709Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "FDA Approves First Oral PCSK9 Inhibitor, Reshaping Cholesterol Management Pathways",
+    "standfirst": "Lipfendra (enlicitide) marks a regulatory breakthrough in cardiovascular therapeutics, signalling EMA alignment on oral small-molecule LDL-lowering agents and accelerating real-world adoption across European health systems.",
+    "body": "The FDA's approval of enlicitide as the first oral PCSK9 inhibitor represents a pivotal shift away from parenteral biologics in dyslipidaemia management. For regulatory teams, this decision provides a precedent for expedited review of mechanism-of-action variants and oral reformulations of established target classes. EMA submissions will likely reference this approval pathway, reducing timeline uncertainty for similar candidates in European pipelines. Clinical teams should prepare for rapid uptake in primary and secondary prevention programmes, requiring pharmacovigilance protocols for oral tolerability and drug–drug interaction monitoring across ageing populations.",
+    "sourceIndices": [
+      6
+    ],
+    "sources": [
+      {
+        "title": "FDA Approves First Oral PCSK9 Inhibitor to Lower LDL Cholesterol in Adults with High Cholesterol",
+        "source": "FDA",
+        "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+        "date": "2026-07-17",
+        "type": "news"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "UK Emerges as Global AI Safety Research Hub Beyond Silicon Valley",
+          "body": "The United Kingdom is consolidating institutional and policy infrastructure for AI safety research, creating a counterweight to US-dominated AI labs. For pharma regulatory affairs, this signals emerging European governance frameworks anchored in safety-first principles rather than deployment speed. Expect EMA guidance documents to increasingly reference UK-led safety methodologies in AI validation standards.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "A global capital for AI safety is emerging — and it's not in silicon valley",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-01389-9",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "OpenAI Launches GPT-Red: LLM Adversary for Cybersecurity Hardening",
+          "body": "GPT-Red is a red-teaming LLM designed to identify vulnerabilities in OpenAI's own models before deployment. Pharmaceutical organisations using large language models for clinical data analysis should adopt analogous adversarial-testing protocols to validate security posture before regulatory submissions. This establishes a new standard for pre-deployment AI robustness verification.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+              "date": "2026-07-15",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "AWS Launches Kiro and Amazon Quick for Production Agentic AI Workflows",
+          "body": "Amazon's first regional agentic AI event in Malaysia demonstrated transition from proof-of-concept AI agents to production-grade automation platforms. Drug discovery and manufacturing teams exploring autonomous lab systems should evaluate enterprise-grade agentic frameworks now entering market maturity. This accelerates timelines for AI-driven synthesis and formulation optimisation.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "I attended the kiro and amazon quick fiesta event in malaysia",
+              "source": "Classmethod.jp",
+              "url": "https://dev.classmethod.jp/articles/Kiro_and_Amazon_Quick_Fiesta_event_in_Malaysia/",
+              "date": "2026-07-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Anthropic Advocates Faster State-Level AI Regulation Despite Moving Goalposts",
+          "body": "Anthropic's policy leadership acknowledges that pioneering AI transparency laws in California and New York may already be outpaced by model evolution. Regulatory affairs professionals should anticipate that AI governance frameworks will require annual reassessment cycles. This creates opportunity for pharma to shape iterative EU AI Act implementation rather than awaiting final-form rules.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "Here’s why anthropic is pushing states to regulate AI faster",
+              "source": "Wired",
+              "url": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "China Imposes AI Companion Agent Restrictions: Personalisation Controls Tighten",
+          "body": "ByteDance and Alibaba were forced to disable personalised AI agents following new China AI companion law (effective 15 July 2026). This regulatory precedent in Asia signals growing state control over model customisation. Pharma companies deploying conversational AI for patient education must prepare for region-specific personalisation restrictions in future EU legislation.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "'like my lover'...",
+              "source": "Tech Times",
+              "url": "https://www.techtimes.com/articles/320525/20260715/china-ai-companion-law-takes-effect-doubao-qwen-shut-down-millions-lose-chat-data.htm",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Tech Industry Leaders Warn Enterprises Against Uncontrolled AI Data Sharing",
+          "body": "Microsoft and Palantir executives publicly cautioned enterprises that AI labs are quietly extracting proprietary data through training partnerships. Clinical data governance teams should implement data-use agreements with explicit prohibitions on model retraining without consent. This reinforces the separation of commercial AI platforms from sensitive pharmaceutical and clinical datasets.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "Big tech’s top executives warn enterprises are giving away too much to AI labs",
+              "source": "Fortune",
+              "url": "https://fortune.com/2026/07/16/microsoft-ceo-satya-nadella-warns-enterprises-that-ai-labs-are-stealing-their-know-how/",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA Approves First Oral PCSK9 Inhibitor to Lower LDL Cholesterol in Adults",
+          "body": "Lipfendra (enlicitide) represents the first oral PCSK9 inhibitor approved by FDA, offering a non-injectable alternative to existing GLP-1 and PCSK9 biologics. This approval signals FDA willingness to expedite small-molecule mechanism variants of established biologics, potentially reducing time-to-decision for similar repositioning candidates. EMA submissions for oral analogues of biologic targets should reference this precedent in justification of accelerated review pathways.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Oral PCSK9 Inhibitor to Lower LDL Cholesterol in Adults with High Cholesterol",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+              "date": "2026-07-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Issues Emergency Use Authorization for Equine Screwworm Prevention Agent",
+          "body": "The FDA granted Emergency Use Authorization for ivermectin oral solution for short-term screwworm prevention in horses, demonstrating rapid-response regulatory pathways for animal health threats. This establishes procedural precedent for zoonotic disease interventions. Veterinary pharmaceutical teams should document EUA eligibility criteria for future livestock-health emergencies.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "FDA Issues Emergency Use Authorization for Drug for Short-Term Prevention of New World Screwworm in Horses",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-short-term-prevention-new-world-screwworm-horses",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Greece Implements EU AI Act National Framework: Parliamentary Debate Underway",
+          "body": "Greece's parliament is debating a national bill operationalising the EU AI Act, with Digital Governance Minister Dimitris Papastergiou leading implementation discussions. This signals imminent transposition across member states. Regulatory affairs teams should monitor Greece as a bellwether for EMA guidance on AI-enabled clinical trial systems and pharmacovigilance tools.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "Greece unveils national AI act framework: what changes for citizens, businesses and government",
+              "source": "Protothema.gr",
+              "url": "https://en.protothema.gr/2026/07/11/greece-unveils-national-ai-act-framework-what-changes-for-citizens-businesses-and-government/",
+              "date": "2026-07-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Proposes Streamlined Registration Pathway for Distributed Manufacturing Establishments",
+          "body": "FDA's proposed rule modernises drug manufacturing registration to accommodate distributed and decentralised production networks. This signals regulatory openness to supply-chain resilience strategies beyond traditional centralised GMP sites. Pharma should prepare Quality Overall Summaries addressing distributed manufacturing validation and real-time quality monitoring across geographically dispersed operations.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "FDA Proposes Rule to Modernize Drug Manufacturing Registration",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-proposes-rule-modernize-drug-manufacturing-registration",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "MHRA Delivers Record Performance in 2025–26: Global Regulatory Influence Expands",
+          "body": "The UK's Medicines and Healthcare products Regulatory Agency published its annual report highlighting record operational performance and strengthened international engagement. Post-Brexit, MHRA is positioning as an independent regulatory arbiter, likely to diverge from EMA on select AI validation standards. Sponsors should anticipate dual-pathway submissions (EMA + MHRA) for breakthrough AI-enabled diagnostics.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "Mhra delivers record performance as 2025-26 annual report and accounts confirms growing global influence",
+              "source": "Www.gov.uk",
+              "url": "https://www.gov.uk/government/news/mhra-delivers-record-performance-as-2025-26-annual-report-and-accounts-confirms-growing-global-influence",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "US States Rapidly Enact AI Laws; Enforcement Gaps Risk Hollow Regulation",
+          "body": "State-level AI legislation is proliferating across the USA, but enforcement infrastructure remains underfunded and fragmented. For multinational pharma, this creates regulatory arbitrage risk: AI systems compliant in California may face liability exposure in less-regulated states. Establish centralised AI governance policy aligned with strictest state frameworks.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Enforcing all those new state-level AI laws is unlikely and thus opens the door to foul results",
+              "source": "Forbes",
+              "url": "https://www.forbes.com/sites/lanceeliot/2026/07/17/enforcing-all-those-new-state-level-ai-laws-is-unlikely-and-thus-opens-the-door-to-foul-results/",
+              "date": "2026-07-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Rabobank and Expert.ai Expand Seven-Year Partnership: Automation Model Maturity Accelerates",
+          "body": "Banking sector's renewal of long-term AI automation partnerships signals industry-wide confidence in production-grade intelligent systems. Clinical operations and regulatory intelligence teams should explore analogous enterprise-AI partnerships for real-world data processing, PSUR automation, and adverse event signal detection.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "Rabobank and expert.ai renew seven-year AI partnership to transform banking automation and customer experience",
+              "source": "Successful-blog.com",
+              "url": "https://www.successful-blog.com/1/rabobank-expert-ai-partnership/",
+              "date": "2026-07-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Congress Debates AI Regulation Across Medicare Claims, Childhood Screen Time, and Agriculture",
+          "body": "Proposed US bills target AI governance in Medicare claim denials, childhood AI education, and agricultural equipment standards. Healthcare-focused AI regulation is advancing rapidly in parallel with EU AI Act implementation. Compliance teams should prepare for Medicare Advantage AI scrutiny affecting real-world evidence collection and patient outcome studies.",
+          "sourceIndices": [
+            45
+          ],
+          "sources": [
+            {
+              "title": "Tech bills of the week: screen time standards for kids; teaching elementary school students about AI; modernizing agriculture and more",
+              "source": "Nextgov",
+              "url": "https://www.nextgov.com/policy/2026/07/tech-bills-week-screen-time-standards-kids-teaching-elementary-school-students-about-ai-modernizing-agriculture-and-more/414858/",
+              "date": "2026-07-17",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Australia Establishes AI Governance Framework; Data Centre Expansion Faces Scrutiny",
+          "body": "Australia is constructing national AI regulation aligned with global standards while monitoring data centre expansion for energy and security risks. This reflects tension between AI infrastructure investment and governance maturity. Pharma CROs operating in APAC should anticipate Australian Therapeutic Goods Administration guidance on AI-enabled clinical trials by Q4 2026.",
+          "sourceIndices": [
+            55
+          ],
+          "sources": [
+            {
+              "title": "Australia wants to ‘manage’ AI. what will that look like?",
+              "source": "The Conversation Africa",
+              "url": "https://theconversation.com/australia-wants-to-manage-ai-what-will-that-look-like-287496",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Federal Reserve Advocates Tailored AI Supervision to Support Financial Inclusion and Banking Innovation",
+          "body": "Fed leadership argues AI supervision should not stifle bank innovation, framing AI as a financial inclusion tool. This regulatory philosophy—balancing innovation with safety—mirrors the EU AI Act's risk-based approach. Pharma treasury and pharmacovigilance teams can reference Fed precedent when proposing AI-enabled financial reporting and drug safety systems to EMA.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "Fed’s bowman says tailored AI supervision drives financial inclusion",
+              "source": "pymnts.com",
+              "url": "https://www.pymnts.com/news/artificial-intelligence/2026/feds-bowman-says-tailored-ai-supervision-drives-financial-inclusion/",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Exosomes Dual Role in Cancer Drug Resistance: Precision Therapeutic Opportunities Emerge",
+          "body": "A comprehensive review examines exosomes' contribution to therapy failure while identifying them as viable precision medicine targets. Drug discovery teams targeting chemotherapy resistance should prioritise exosome-mediated mechanisms in lead optimisation. This mechanistic understanding accelerates development of resistance-reverting combination therapies.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Exosomes in cancer drug resistance: dual roles in therapy failure and emerging precision therapeutics",
+              "source": "Cancer Cell Int",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42472816/",
+              "date": "2026-07-20",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Gabapentinoid Treatment Linked to Fracture Risk in Elderly: Real-World Safety Signal Confirmed",
+          "body": "A multinational population-based study documents significant fracture risk association with gabapentinoid therapy in older adults. Safety pharmacovigilance teams should incorporate bone health monitoring into PSUR protocols for gabapentinoid formulations. This finding may trigger label updates and restricted distribution strategies in European markets.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "Risk of fracture with gabapentinoid treatment in older adults: a multinational population-based study",
+              "source": "Lancet Healthy Longev",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42462752/",
+              "date": "2026-07-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Duvakitug Shows Efficacy in Crohn's Disease: Phase 2b Trial Validates IBD Mechanism",
+          "body": "The RELIEVE UCCD trial demonstrates duvakitug's safety and efficacy in ulcerative colitis, advancing a novel IBD therapeutic candidate. Clinical development teams should prepare Phase 3 protocols incorporating biomarker-driven patient stratification and real-time safety monitoring. Early EMA pre-submission meetings are advisable to confirm Phase 3 endpoint alignment.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Efficacy and safety of duvakitug in patients with Crohn's disease (RELIEVE UCCD): a phase 2b, randomised, placebo-controlled trial",
+              "source": "Lancet Gastroenterol Hepatol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42462749/",
+              "date": "2026-07-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI and Protein Design: 20-Year Bibliometric Analysis Reveals Emerging Research Frontiers",
+          "body": "A bibliometric survey of AI–protein design research identifies key emerging areas: AlphaFold-inspired structure prediction, de novo protein design, and machine-learned ADMET properties. Drug discovery organisations should allocate resources to AlphaFold3-based target validation and lead optimisation. Competitive advantage accrues to teams integrating structure prediction with generative chemistry platforms.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Artificial Intelligence and Protein Design: A retrospective study on 20-year emerging trends and core research areas from bibliometric perspectives",
+              "source": "Probiotics Antimicrob Proteins",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42470596/",
+              "date": "2026-07-18",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "SGLT2 Inhibitors Combined with GLP-1 Agonists: Synergistic Cardiometabolic Benefit Confirmed",
+          "body": "A clinical review optimises combination use of SGLT2 inhibitors and GLP-1 receptor agonists for cardiometabolic disease management. Drug discovery should prioritise dual-target mechanisms and fixed-dose combinations capturing synergistic cardiovascular and renal protection. Real-world evidence protocols will support rapid uptake and label extensions.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Combination cardiometabolic therapy in type 2 diabetes: optimizing SGLT2 inhibitor and GLP‑1 receptor agonist use",
+              "source": "Curr Atheroscler Rep",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42470502/",
+              "date": "2026-07-18",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Non-Pharmacological Breast Cancer Pain Interventions: Network Meta-Analysis Guides Treatment Optimisation",
+          "body": "A network meta-analysis evaluates non-pharmacological pain management strategies in breast cancer patients, informing multimodal treatment algorithms. Clinical teams can use this evidence to design adjunctive, non-opioid pain management protocols reducing polypharmacy and adverse events. Regulatory submissions should reference these comparative effectiveness data.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Non-Pharmacological Interventions for Postoperative Pain in Breast Cancer Patients: A Network Meta-analysis",
+              "source": "Pain Manag Nurs",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42469038/",
+              "date": "2026-07-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Metformin Repurposing for Pain Treatment: Systematic Review Protocol Established",
+          "body": "A protocol describes planned systematic review of metformin's analgesic properties, exploring off-label therapeutic applications. Discovery teams should monitor emerging neuropathic pain and inflammatory pain indications. Early-stage efficacy data may justify investigator-initiated trials and EMA scientific advice requests for novel indication development.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Safety and efficacy of metformin for the treatment of pain: protocol for a systematic review",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42468965/",
+              "date": "2026-07-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Benznidazole versus Nifurtimox in Chronic Chagas Disease: BENBRASIL Trial Protocol Published",
+          "body": "A multicentre Phase II randomised trial compares first-line antiparasitic agents in Chagas disease. Rare disease development teams should note this protocol's rigorous double-blind design and prospective cohort integration. Success here may accelerate EU rare disease innovation incentives and EMA Priority Review designation.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "A multicentre randomised, double-blind, double-dummy phase II clinical trial of benznidazole versus nifurtimox in adults with chronic Chagas disease in Brazil, alongside a prospective cohort: the BENBRASIL trial protocol",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42468958/",
+              "date": "2026-07-17",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Gut Bacterium Claudin-4 Interaction: Colorectal Cancer Mechanism Solved, Therapeutic Targets Identified",
+          "body": "Researchers identified how bacterial toxins bind claudin-4 to trigger colorectal cancer pathogenesis, revealing actionable mechanistic insights. Drug discovery teams should prioritise claudin-4 antagonists and bacterial–host interaction modulators. This mechanism supports development of both preventive (microbiome-targeting) and therapeutic (receptor-blocking) strategies.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Scientists finally solved how a common gut bacterium triggers colon cancer",
+              "source": "Science Daily",
+              "url": "https://www.sciencedaily.com/releases/2026/07/260713084910.htm",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Precision Therapeutics for Wound Healing: Molecular Signalling Networks and Advanced Drug Design",
+          "body": "A comprehensive review maps molecular targets and signalling networks driving wound healing, enabling precision therapeutic design. Regenerative medicine teams should prioritise targets controlling inflammatory resolution and angiogenesis. Integration with advanced drug design (peptides, cell-penetrating agents) accelerates clinical translation.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Precision therapeutics for wound healing: Molecular targets, signalling networks, and advanced drug design strategies",
+              "source": "Adv Protein Chem Struct Biol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42448415/",
+              "date": "2026-07-15",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "STARD-AI Diagnostic Accuracy Reporting Guideline: Author Correction Finalises Evidence Standard",
+          "body": "Nature Medicine published corrected STARD-AI guidance for diagnostic accuracy studies using artificial intelligence, establishing the definitive reporting standard. Clinical trial teams designing AI-enabled diagnostic endpoints must adopt STARD-AI framework for EMA submissions. This guideline ensures transparent, reproducible AI performance evaluation and reduces regulatory rejection risk.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "Author correction: the stard-ai reporting guideline for diagnostic accuracy studies using artificial intelligence",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04570-9",
+              "date": "2026-07-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "NeuroVFM Generalises Across Health Systems: MRI-Trained Models Improve Neuroimaging Diagnosis",
+          "body": "NeuroVFM, trained on routine health system MRI and CT scans, learns generalisable neuroimaging representations improving diagnosis, report generation, and triage. Clinical teams should evaluate foundation models trained on diverse real-world imaging populations rather than curated datasets. This approach reduces deployment bias and accelerates regulatory approval for neuroimaging AI tools.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "Health system learning enables generalist neuroimaging models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04497-1",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Bayesian Framework Integrates Longitudinal EHR and Genetic Data: Disease Discovery Accelerated",
+          "body": "A Bayesian generative framework combines longitudinal electronic health records with genetic data to identify latent disease signatures and novel biomarkers. Clinical research teams can leverage this approach for patient stratification and endpoint selection in rare disease trials. Real-world data integration enables smaller, faster Phase 2 studies with higher probability of regulatory success.",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "A bayesian framework for longitudinal EHR and genetic discovery",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10780-5",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Advances in Psychological Science: Data, AI, and Modelling Innovations Published",
+          "body": "New content in Advances in Methods and Practices in Psychological Science covers data governance, AI applications, and data modelling for behavioural research. Clinical teams conducting mental health and neurology trials should adopt these methodological standards for longitudinal patient-reported outcome analysis. Cross-disciplinary data governance ensures regulatory alignment.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "New content from advances in methods and practices in psychological science",
+              "source": "Psychologicalscience.org",
+              "url": "https://www.psychologicalscience.org/news/releases/new-content-from-advances-in-methods-and-practices-in-psychological-science-2026-jul-16.html#article",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "ENCODE4 Project Releases Encyclopedia of 92M Enhancer–Gene Regulatory Interactions",
+          "body": "ENCODE4 published a comprehensive atlas of human enhancer–gene regulatory interactions, providing unprecedented genomic resource for target validation. Drug discovery teams can leverage this encyclopedia for mechanistic hypothesis generation and lead selection. Regulatory submissions citing ENCODE4 data strengthen scientific rationale for novel targets.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "An encyclopedia of human enhancer–gene regulatory interactions",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10781-4",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Gut Resistome Profiling Unlocks Antimicrobial Resistance Biology and Clinical Risk Assessment",
+          "body": "A Nature review examines gut resistome profiling methods and their application to understanding antimicrobial resistance biology and clinical risk stratification. Antibiotic development and infectious disease teams should integrate resistome analysis into pharmacovigilance and real-world evidence programmes. This advances personalised antimicrobial stewardship.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Profiling the gut resistome to unlock antimicrobial resistance biology and inform clinical risk",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-75659-5",
+              "date": "2026-07-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Dietary Intervention Equally Effective Across BMI Genetic Risk Extremes: GENEROOS Trial Results",
+          "body": "The GENEROOS randomised controlled trial shows dietary intervention efficacy independent of polygenic BMI predisposition, challenging genetic determinism. Real-world evidence teams should incorporate polygenic scores into stratified outcome analyses without overweighting genetic risk. This supports development of equity-focused cardiometabolic intervention programmes.",
+          "sourceIndices": [
+            31
+          ],
+          "sources": [
+            {
+              "title": "Dietary intervention and bmi reduction in individuals at the extremes of genetic predisposition to higher bmi: a randomized controlled trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-75224-0",
+              "date": "2026-07-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Polygenic Risk Interactions with Environmental Context Drive Targeted Clinical Intervention Design",
+          "body": "Research demonstrates pervasive interactions between polygenic scores and environmental exposures across seven diseases, introducing proportion-needed-to-benefit metrics. Clinical teams should design precision prevention trials targeting high-risk gene–environment interaction subgroups. This maximises intervention efficiency and regulatory approval probability in stratified populations.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Pervasive interactions between exposures and polygenic risk can inform more effective clinical and behavioral interventions",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02674-z",
+              "date": "2026-07-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Global Genomic System Governance Determines Health Equity Outcomes: Call to Action Issued",
+          "body": "Nature commentary warns that expanding genomic infrastructure without equitable governance risks entrenching biased data into future clinical applications. Data governance committees should establish bias auditing protocols and diverse participant recruitment targets. This proactive approach aligns with EMA guidance on equitable clinical trial design and real-world data collection.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "A call to action for an equitable global genomic system",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02667-y",
+              "date": "2026-07-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "W3C Establishes AI Agent Memory Interoperability Community Group: Standards Development Underway",
+          "body": "The W3C launched an AI Agent Memory Interoperability Community Group to define standards for cross-platform AI agent data exchange. Pharma digital health and pharmacy automation teams should engage with interoperability standards development to ensure EU AI Act compliance. Early participation shapes standards favouring healthcare AI governance.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Charter — AI agent memory interoperability community group (v1.0)",
+              "source": "W3.org",
+              "url": "https://www.w3.org/community/ai-agent-memory-interop/2026/07/16/charter-ai-agent-memory-interoperability-community-group-v1-0/",
+              "date": "2026-07-16",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week consolidates two convergent themes: (1) regulatory fragmentation accelerating across jurisdictions (US states, EU, Australia, China), demanding centralised compliance governance; and (2) AI safety and validation standards maturing globally, with UK emerging as governance hub and STARD-AI establishing diagnostic AI reporting baselines. Senior pharma leaders should position their organisations now for dual regulatory pathways (EMA + emerging regional frameworks) and invest in robust AI validation infrastructure before submissions commence.",
+  "allSources": [
+    {
+      "title": "FDA Approves First Oral PCSK9 Inhibitor to Lower LDL Cholesterol in Adults with High Cholesterol",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+      "date": "2026-07-17",
+      "type": "news"
+    },
+    {
+      "title": "A global capital for AI safety is emerging — and it's not in silicon valley",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-01389-9",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+      "date": "2026-07-15",
+      "type": "ainews"
+    },
+    {
+      "title": "I attended the kiro and amazon quick fiesta event in malaysia",
+      "source": "Classmethod.jp",
+      "url": "https://dev.classmethod.jp/articles/Kiro_and_Amazon_Quick_Fiesta_event_in_Malaysia/",
+      "date": "2026-07-17",
+      "type": "news"
+    },
+    {
+      "title": "Here’s why anthropic is pushing states to regulate AI faster",
+      "source": "Wired",
+      "url": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "'like my lover'...",
+      "source": "Tech Times",
+      "url": "https://www.techtimes.com/articles/320525/20260715/china-ai-companion-law-takes-effect-doubao-qwen-shut-down-millions-lose-chat-data.htm",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Big tech’s top executives warn enterprises are giving away too much to AI labs",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/07/16/microsoft-ceo-satya-nadella-warns-enterprises-that-ai-labs-are-stealing-their-know-how/",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "FDA Issues Emergency Use Authorization for Drug for Short-Term Prevention of New World Screwworm in Horses",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-short-term-prevention-new-world-screwworm-horses",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Greece unveils national AI act framework: what changes for citizens, businesses and government",
+      "source": "Protothema.gr",
+      "url": "https://en.protothema.gr/2026/07/11/greece-unveils-national-ai-act-framework-what-changes-for-citizens-businesses-and-government/",
+      "date": "2026-07-11",
+      "type": "news"
+    },
+    {
+      "title": "FDA Proposes Rule to Modernize Drug Manufacturing Registration",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-proposes-rule-modernize-drug-manufacturing-registration",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Mhra delivers record performance as 2025-26 annual report and accounts confirms growing global influence",
+      "source": "Www.gov.uk",
+      "url": "https://www.gov.uk/government/news/mhra-delivers-record-performance-as-2025-26-annual-report-and-accounts-confirms-growing-global-influence",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "Enforcing all those new state-level AI laws is unlikely and thus opens the door to foul results",
+      "source": "Forbes",
+      "url": "https://www.forbes.com/sites/lanceeliot/2026/07/17/enforcing-all-those-new-state-level-ai-laws-is-unlikely-and-thus-opens-the-door-to-foul-results/",
+      "date": "2026-07-17",
+      "type": "news"
+    },
+    {
+      "title": "Rabobank and expert.ai renew seven-year AI partnership to transform banking automation and customer experience",
+      "source": "Successful-blog.com",
+      "url": "https://www.successful-blog.com/1/rabobank-expert-ai-partnership/",
+      "date": "2026-07-17",
+      "type": "news"
+    },
+    {
+      "title": "Tech bills of the week: screen time standards for kids; teaching elementary school students about AI; modernizing agriculture and more",
+      "source": "Nextgov",
+      "url": "https://www.nextgov.com/policy/2026/07/tech-bills-week-screen-time-standards-kids-teaching-elementary-school-students-about-ai-modernizing-agriculture-and-more/414858/",
+      "date": "2026-07-17",
+      "type": "news"
+    },
+    {
+      "title": "Australia wants to ‘manage’ AI. what will that look like?",
+      "source": "The Conversation Africa",
+      "url": "https://theconversation.com/australia-wants-to-manage-ai-what-will-that-look-like-287496",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Fed’s bowman says tailored AI supervision drives financial inclusion",
+      "source": "pymnts.com",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/feds-bowman-says-tailored-ai-supervision-drives-financial-inclusion/",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Exosomes in cancer drug resistance: dual roles in therapy failure and emerging precision therapeutics",
+      "source": "Cancer Cell Int",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42472816/",
+      "date": "2026-07-20",
+      "type": "paper"
+    },
+    {
+      "title": "Risk of fracture with gabapentinoid treatment in older adults: a multinational population-based study",
+      "source": "Lancet Healthy Longev",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42462752/",
+      "date": "2026-07-16",
+      "type": "paper"
+    },
+    {
+      "title": "Efficacy and safety of duvakitug in patients with Crohn's disease (RELIEVE UCCD): a phase 2b, randomised, placebo-controlled trial",
+      "source": "Lancet Gastroenterol Hepatol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42462749/",
+      "date": "2026-07-16",
+      "type": "paper"
+    },
+    {
+      "title": "Artificial Intelligence and Protein Design: A retrospective study on 20-year emerging trends and core research areas from bibliometric perspectives",
+      "source": "Probiotics Antimicrob Proteins",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470596/",
+      "date": "2026-07-18",
+      "type": "paper"
+    },
+    {
+      "title": "Combination cardiometabolic therapy in type 2 diabetes: optimizing SGLT2 inhibitor and GLP‑1 receptor agonist use",
+      "source": "Curr Atheroscler Rep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470502/",
+      "date": "2026-07-18",
+      "type": "paper"
+    },
+    {
+      "title": "Non-Pharmacological Interventions for Postoperative Pain in Breast Cancer Patients: A Network Meta-analysis",
+      "source": "Pain Manag Nurs",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42469038/",
+      "date": "2026-07-17",
+      "type": "paper"
+    },
+    {
+      "title": "Safety and efficacy of metformin for the treatment of pain: protocol for a systematic review",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42468965/",
+      "date": "2026-07-17",
+      "type": "paper"
+    },
+    {
+      "title": "A multicentre randomised, double-blind, double-dummy phase II clinical trial of benznidazole versus nifurtimox in adults with chronic Chagas disease in Brazil, alongside a prospective cohort: the BENBRASIL trial protocol",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42468958/",
+      "date": "2026-07-17",
+      "type": "paper"
+    },
+    {
+      "title": "Scientists finally solved how a common gut bacterium triggers colon cancer",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/07/260713084910.htm",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "Precision therapeutics for wound healing: Molecular targets, signalling networks, and advanced drug design strategies",
+      "source": "Adv Protein Chem Struct Biol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42448415/",
+      "date": "2026-07-15",
+      "type": "paper"
+    },
+    {
+      "title": "Author correction: the stard-ai reporting guideline for diagnostic accuracy studies using artificial intelligence",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04570-9",
+      "date": "2026-07-13",
+      "type": "news"
+    },
+    {
+      "title": "Health system learning enables generalist neuroimaging models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04497-1",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "A bayesian framework for longitudinal EHR and genetic discovery",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10780-5",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "New content from advances in methods and practices in psychological science",
+      "source": "Psychologicalscience.org",
+      "url": "https://www.psychologicalscience.org/news/releases/new-content-from-advances-in-methods-and-practices-in-psychological-science-2026-jul-16.html#article",
+      "date": "2026-07-16",
+      "type": "news"
+    },
+    {
+      "title": "An encyclopedia of human enhancer–gene regulatory interactions",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10781-4",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Profiling the gut resistome to unlock antimicrobial resistance biology and inform clinical risk",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-75659-5",
+      "date": "2026-07-15",
+      "type": "news"
+    },
+    {
+      "title": "Dietary intervention and bmi reduction in individuals at the extremes of genetic predisposition to higher bmi: a randomized controlled trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-75224-0",
+      "date": "2026-07-13",
+      "type": "news"
+    },
+    {
+      "title": "Pervasive interactions between exposures and polygenic risk can inform more effective clinical and behavioral interventions",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02674-z",
+      "date": "2026-07-13",
+      "type": "news"
+    },
+    {
+      "title": "A call to action for an equitable global genomic system",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02667-y",
+      "date": "2026-07-10",
+      "type": "news"
+    },
+    {
+      "title": "Charter — AI agent memory interoperability community group (v1.0)",
+      "source": "W3.org",
+      "url": "https://www.w3.org/community/ai-agent-memory-interop/2026/07/16/charter-ai-agent-memory-interoperability-community-group-v1-0/",
+      "date": "2026-07-16",
+      "type": "news"
+    }
+  ]
+}
