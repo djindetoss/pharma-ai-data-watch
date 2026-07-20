@@ -1,5 +1,43 @@
 [
   {
+    "id": "auto-5e7857efbfb9",
+    "type": "paper",
+    "title": "Exosomes in cancer drug resistance: dual roles in therapy failure and emerging precision therapeutics",
+    "excerpt": "This review examines the dual roles of exosomes in cancer drug resistance, exploring how these extracellular vesicles contribute to therapy failure while simultaneously presenting opportunities for precision therapeutic development. The article discusses mechanistic pathways through which exosomes mediate treatment resistance and highlights emerging strategies to leverage exosome biology for improved cancer therapeutic outcomes.",
+    "source": "Cancer Cell Int",
+    "date": "2026-07-20",
+    "tags": [
+      "Exosomes",
+      "Drug Resistance",
+      "Cancer Therapeutics",
+      "Precision Medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42472816/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-72dfd257ada8",
+    "type": "news",
+    "title": "STAT+: Telemedicine company touted by Novo Nordisk stressed profits over patient safety, ex-workers say",
+    "excerpt": "LifeMD, a popular telehealth company, has been accused by former employees of pressing clinicians to mete out prescriptions more rapidly without sufficient screening and follow-up.",
+    "source": "STAT News",
+    "date": "2026-07-20",
+    "tags": [
+      "A STAT Investigation",
+      "Health tech",
+      "Eli Lilly",
+      "Novo Nordisk"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/07/20/lifemd-weight-loss-drugs-novo-nordisk-telemedicine/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
     "id": "nws-50f3962ab693",
     "type": "news",
     "title": "How nature could inspire ai’s next breakthrough",
@@ -153,6 +191,99 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42470502/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-5fda3ba13071",
+    "type": "news",
+    "title": "Nps onboarding redesign, ai-powered pension advisory platform, nps swasthya—pfrda chair encourages ‘responsible’ AI use",
+    "excerpt": "PFRDA Chairman S Ramann outlined an AI roadmap to redesign the National Pension Scheme's onboarding process. He also encouraged ‘responsible’ AI use for a pension advisory platform powered by the technology.",
+    "source": "Livemint",
+    "date": "2026-07-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.livemint.com/money/personal-finance/nps-onboarding-redesign-ai-pension-advisory-platform-nps-swasthya-pfrda-chairman-s-ramann-encourages-responsible-ai-use-11784390387588.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-b3332632d0c0",
+    "type": "news",
+    "title": "The 2p pill that could slash your risk of arthritis by a quarter",
+    "excerpt": "Metformin has been used since the 1950s to treat diabetes , but a new study of 350,000 Britons, shows it reduces the risk of knee and hip osteoarthritis - wear and tear of the joints - by 24 per cent.",
+    "source": "Dailymail.com",
+    "date": "2026-07-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.dailymail.com/health/article-15987917/The-2p-pill-slash-risk-arthritis-quarter.html",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-1c59e257d736",
+    "type": "news",
+    "title": "How close are we to quicker endometriosis tests? a women's health expert explains",
+    "excerpt": "The movement is good news, but more complicated than headlines suggest.",
+    "source": "mindbodygreen.com",
+    "date": "2026-07-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.mindbodygreen.com/articles/gynecologist-explains-what-to-know-about-new-uk-endometriosis-tests",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-80ddfeeeb7a4",
+    "type": "ainews",
+    "title": "Kimi: threat or menace? | techcrunch",
+    "excerpt": "Chinese company Moonshot AI released a new version of its Kimi model this week, prompting concern about \"full AI communism.\"",
+    "source": "TechCrunch",
+    "date": "2026-07-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-323caf18265b",
+    "type": "ainews",
+    "title": "Your period tracker is (probably) spying on you",
+    "excerpt": "Plus: Russian cyberspies turn to infrastructure hacking, DHS repeatedly fails to realize it’d been hacked, a breach exposes an AI music generator’s scraping ways, and more.",
+    "source": "Wired",
+    "date": "2026-07-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-b4a1dee594aa",
+    "type": "ainews",
+    "title": "Prompt injection attacks are thwarting AI hacking agents",
+    "excerpt": "“Context bombing” tricks malicious AI agents into shutting down before they can do harm.",
+    "source": "Wired",
+    "date": "2026-07-18",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+    "badge": "AI Tech"
   },
   {
     "id": "nws-a54fff2e8cce",
@@ -1653,6 +1784,21 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-a571a566f6c6",
+    "type": "ainews",
+    "title": "Moonshot's upcoming kimi 3 is expected to close the gap with anthropic's opus 4.8 | techcrunch",
+    "excerpt": "The FT reports Kimi K3 will be the largest open AI model from China, with a parameter count between 2 trillion and 3 trillion.",
+    "source": "TechCrunch",
+    "date": "2026-07-16",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+    "badge": "AI Lab"
   },
   {
     "id": "auto-acafbdad1342",
@@ -4721,151 +4867,5 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-33cb29d0b7da",
-    "type": "ainews",
-    "title": "Hugging face's CEO on why companies are done renting their AI | techcrunch",
-    "excerpt": "Watch as Hugging Face CEO Clem Delangue joins Equity to talk open source vs closed source, and why he's worried about the possibility that a handful of big companies could end up controlling everything.",
-    "source": "TechCrunch",
-    "date": "2026-07-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-a6d1d30da39d",
-    "type": "ainews",
-    "title": "Openai's atlas browser doesn't make it to its first birthday",
-    "excerpt": "Standalone experiment killed after less than 12 months as model maker redirects agentic ambitions towards workplace productivity",
-    "source": "Theregister.com",
-    "date": "2026-07-10",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/07/10/openais-atlas-browser-doesnt-make-it-to-its-first-birthday/5269818",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-340e44d2c63e",
-    "type": "ainews",
-    "title": "A new experiential gallery just might change your mind about AI art",
-    "excerpt": "Billed as the “world’s first museum of AI arts,” Dataland uses wearables and troves of material from the Amazon to merge nature, biometrics, and art.",
-    "source": "Wired",
-    "date": "2026-07-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/a-new-experiential-gallery-just-might-change-your-mind-about-ai-art/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-050ba019615a",
-    "type": "news",
-    "title": "Daily briefing: preprints are chock-full of authors’ private info",
-    "excerpt": "Passwords, to-do lists and even derogatory comments litter arXiv preprints. Plus, two huge planets that are lighter than candy floss and which ‘AI scientist’ might suit your lab.",
-    "source": "Nature.com",
-    "date": "2026-07-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-02198-w",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-337724c8525a",
-    "type": "news",
-    "title": "STAT+: The quest to save Grace — and clear the way for rare disease patients everywhere",
-    "excerpt": "How a father’s quest may shape the future of rare disease gene therapy.",
-    "source": "STAT News",
-    "date": "2026-07-09",
-    "tags": [
-      "Biotech",
-      "Health",
-      "Special Report",
-      "biotechnology"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/07/09/matt-wilsey-grace-science-rare-disease-drug-development-ngly1/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-042f0b2d0235",
-    "type": "news",
-    "title": "Alchemab lands £25m from british business bank in record life sciences bet",
-    "excerpt": "Cambridge biotech Alchemab Therapeutics has extended its Series A round with a £25 million ($34 million) investment from the British Business Bank, which the company says is the state-owned lender’s largest backing of a life sciences company to date. The mone…",
-    "source": "The Next Web",
-    "date": "2026-07-09",
-    "tags": [
-      "EMA",
-      "Biotech"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/alchemab-british-business-bank-investment/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-6f81dbd817ec",
-    "type": "news",
-    "title": "Biological aging clocks in health and disease",
-    "excerpt": "This review outlines the state of the art of biological clocks and how they could help understand pathobiology, reduce the burden of disease and extend healthspan.",
-    "source": "Nature.com",
-    "date": "2026-07-09",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41591-026-04495-3",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-5d960f32fe79",
-    "type": "news",
-    "title": "Courts split over AI training fair use rulings [let's data science]",
-    "excerpt": "U.S. courts remain split on whether training AI models on copyrighted material is fair use, after **Judge William Alsup** ruled in June 2025 that training on purchased, digitized books was fair use while **Judge Vince Chhabria** reached the opposite conclusio…",
-    "source": "Letsdatascience.com",
-    "date": "2026-07-09",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://letsdatascience.com/news/courts-split-over-ai-training-fair-use-rulings-334de057",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-6edc12aa8465",
-    "type": "news",
-    "title": "Colorado’s admt comment window closes with no industry voice arguing for agent governance",
-    "excerpt": "Colorado’s recent pre-rulemaking comment period for the ADMT Act (SB 26-189) was defined by a conspicuous void. Between June 15 and July 13, 2026, stakeholders had a rare window to shape the regulatory future of automated decision-making. Yet, across the subm…",
-    "source": "Forkast.news",
-    "date": "2026-07-09",
-    "tags": [
-      "EMA",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/colorados-admt-comment-window-closes-with-no-industry-voice-arguing-for-agent-governance/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
