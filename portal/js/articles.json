@@ -1,5 +1,38 @@
 [
   {
+    "id": "nws-a43cd096a11a",
+    "type": "ainews",
+    "title": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others | techcrunch",
+    "excerpt": "A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+    "source": "TechCrunch",
+    "date": "2026-07-26",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-381c0186a6a6",
+    "type": "ainews",
+    "title": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
+    "excerpt": "\"The first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!\"",
+    "source": "TechCrunch AI",
+    "date": "2026-07-26",
+    "tags": [
+      "AI",
+      "Security",
+      "Clem Delangue",
+      "Hugging Face"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+    "badge": "Tech"
+  },
+  {
     "id": "nws-44acfabefb57",
     "type": "news",
     "title": "AI goes rogue - should we be worried?",
@@ -29,6 +62,119 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-ad3ee43f51f2",
+    "type": "news",
+    "title": "AI platforms accelerating uganda's digital transformation - the observer media ltd",
+    "excerpt": "From farmers using mobile applications to monitor weather patterns and market prices to entrepreneurs generating content with artificial intelligence (AI)-powered tools and health workers using intelligent systems to improve disease diagnosis, AI is increasin…",
+    "source": "The Observer",
+    "date": "2026-07-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://observer.ug/technology/ai-platforms-accelerating-ugandas-digital-transformation/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-91c2e115dbc4",
+    "type": "news",
+    "title": "Openai quietly signs letter from nvidia, microsoft, and meta warning about dangers of 'premature restrictions' on open-weight AI models — as the white house accuses china of stealing from anthropic",
+    "excerpt": "With China's open-weight AI models continuing to improve, US companies want to see a free market for all.",
+    "source": "TechRadar",
+    "date": "2026-07-25",
+    "tags": [
+      "EMA",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techradar.com/ai-platforms-assistants/openai-quietly-signs-letter-from-nvidia-microsoft-and-meta-warning-about-dangers-of-premature-restrictions-on-open-weight-ai-models-as-the-white-house-accuses-china-of-stealing-from-anthropic",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-471d6e7c48a1",
+    "type": "news",
+    "title": "What is fine tuning AI models and when should you actually do it?",
+    "excerpt": "Learn when fine-tuning makes AI more reliable, specialized, and useful for real business workflows.",
+    "source": "Smartdatacollective.com",
+    "date": "2026-07-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.smartdatacollective.com/what-is-fine-tuning-ai-models-and-when-should-you-actually-do-it/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-f3969d7a1161",
+    "type": "news",
+    "title": "Coffee may help shield the liver from fat, scarring, and cancer",
+    "excerpt": "A major long-term study linked coffee consumption with lower risks of cirrhosis, liver cancer, and death from liver disease. Coffee drinkers also showed healthier liver scans and blood protein patterns, with less fat, inflammation, and scarring. Benefits appe…",
+    "source": "Science Daily",
+    "date": "2026-07-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencedaily.com/releases/2026/07/260719035955.htm",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-c832ba2ef1dd",
+    "type": "news",
+    "title": "This common vitamin may lower glaucoma risk in high-risk adults",
+    "excerpt": "This everyday vitamin may do more for your eyes than you realized.",
+    "source": "mindbodygreen.com",
+    "date": "2026-07-25",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.mindbodygreen.com/articles/this-common-vitamin-may-lower-glaucoma-risk",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-accbcda419c5",
+    "type": "ainews",
+    "title": "How AI drove shopify back to clean code",
+    "excerpt": "Turns out, agents just want the same things as humans: easily-readable code, explicit contracts, and helpful feedback",
+    "source": "Theregister.com",
+    "date": "2026-07-25",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/devops/2026/07/25/how-ai-drove-shopify-back-to-clean-code/5277901",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-fb71af4bb4c8",
+    "type": "ainews",
+    "title": "The openai models that hacked hugging face were ‘active on the internet’ for days",
+    "excerpt": "Plus: Russian hackers are trying to steal US nuclear scientists’ emails, the State Department bans known scammers from entering the United States, and more.",
+    "source": "Wired",
+    "date": "2026-07-25",
+    "tags": [
+      "EMA",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
     "badge": "AI Lab"
   },
   {
@@ -4679,146 +4825,5 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-d9b5d61a3164",
-    "type": "ainews",
-    "title": "Vertu wants executives to pay $6,880 for an AI agent — here's how it actually performs | techcrunch",
-    "excerpt": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
-    "source": "TechCrunch",
-    "date": "2026-07-17",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-db730cf1ff39",
-    "type": "ainews",
-    "title": "A $10k bounty aims to make sony’s playstation 5 a computer again",
-    "excerpt": "Nice PlayStation you got. Bet it could probably run Linux too.",
-    "source": "Wired",
-    "date": "2026-07-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/a-10k-bounty-aims-to-make-the-ps5-a-computer-again/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-29e789ead9ba",
-    "type": "ainews",
-    "title": "The risk of weather data sabotage is rising",
-    "excerpt": "Every morning, airline dispatchers, grid operators, and farmers around the world make decisions based on the same thing: a weather forecast. While these forecasts are something that most people glance at for two seconds, weather predictions influence major st…",
-    "source": "MIT Technology Review",
-    "date": "2026-07-17",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/07/17/1140622/weather-data-sabotage/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-c01f742e22e7",
-    "type": "news",
-    "title": "Daily briefing: crispr gets an ai-designed upgrade",
-    "excerpt": "Synthetic CRISPR proteins edit the genome more efficiently than their natural counterparts. Plus, a rocky exoplanet with an atmosphere and the mathematical wonderland of footballs.",
-    "source": "Nature.com",
-    "date": "2026-07-17",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-02272-3",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-52d5617be66e",
-    "type": "news",
-    "title": "Responsible AI: governance, principles, and practical guide",
-    "excerpt": "* Responsible AI, a framework for designing, developing, and deploying artificial intelligence systems ethically, has shifted from a compliance afterthought into a core governance discipline spanning accountability, fairness, transparency, privacy, and human …",
-    "source": "Databricks.com",
-    "date": "2026-07-17",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.databricks.com/blog/responsible-ai",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-b53f081b7812",
-    "type": "news",
-    "title": "India bets ₹10,000 crore on a leap from generic drugs to biologics",
-    "excerpt": "Biopharma SHAKTI aims to build the research, clinical-trial and manufacturing ecosystem India needs to move from low-cost generic copies to high-value biological medicines.",
-    "source": "Livemint",
-    "date": "2026-07-16",
-    "tags": [
-      "Biotech"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.livemint.com/industry/india-biopharma-shakti-rs-10000-crore-generic-drugs-biologics-11784174014120.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-0847f8bf7206",
-    "type": "news",
-    "title": "The mole in the model - you've hired an adversary | origin",
-    "excerpt": "A backdoor in an open-weight model survives fine-tuning and fires on a hidden trigger, so where you run it does not matter. Defense lives on the endpoint.",
-    "source": "Originhq.com",
-    "date": "2026-07-16",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.originhq.com/research/the-mole-in-the-model",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-21f9b5279233",
-    "type": "news",
-    "title": "Scientists finally solved how a common gut bacterium triggers colon cancer",
-    "excerpt": "Researchers solved a long-standing mystery behind how a bacterial toxin associated with colorectal cancer damages the colon. The toxin first binds to a receptor called claudin-4, giving it access to attack the cells&apos; protective barrier. After identifying…",
-    "source": "Science Daily",
-    "date": "2026-07-16",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.sciencedaily.com/releases/2026/07/260713084910.htm",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-c050296f2d6f",
-    "type": "news",
-    "title": "Charter — AI agent memory interoperability community group (v1.0)",
-    "excerpt": "Group: AI Agent Memory Interoperability Community GroupGroup home: https://www.w3.org/community/ai-agent-memory-interop/Short name: ai-agent-memory-interopStatus: v1.0 — AdoptedAdopted: 2026-06-19 (call for consensus circulated 2026-06-05; carried absent sust…",
-    "source": "W3.org",
-    "date": "2026-07-16",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.w3.org/community/ai-agent-memory-interop/2026/07/16/charter-ai-agent-memory-interoperability-community-group-v1-0/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
