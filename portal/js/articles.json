@@ -1,5 +1,114 @@
 [
   {
+    "id": "auto-4669234fe6ba",
+    "type": "paper",
+    "title": "Bayesian Workflow for Minimal PBPK Models: Case Study of Dapagliflozin",
+    "excerpt": "This study presents a Bayesian workflow for developing minimal physiologically-based pharmacokinetic (PBPK) models, using dapagliflozin as a case example. The approach integrates data from clinical trials and population studies to support model-informed drug development. The methodology demonstrates how Bayesian methods can optimize PBPK model construction while minimizing complexity.",
+    "source": "CPT Pharmacometrics Syst Pharmacol",
+    "date": "2026-08-03",
+    "tags": [
+      "PBPK modeling",
+      "Bayesian methods",
+      "Dapagliflozin",
+      "Model-informed drug development"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42543489/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-1e8d3032d8c3",
+    "type": "paper",
+    "title": "Autonomous intranasal delivery systems for central nervous system therapeutics",
+    "excerpt": "This article reviews autonomous intranasal delivery systems designed to transport therapeutics to the central nervous system. The work, published in Experimental & Molecular Medicine, represents research from the National University of Singapore's synthetic biology programs focused on translating delivery innovations toward clinical applications.",
+    "source": "Exp Mol Med",
+    "date": "2026-08-03",
+    "tags": [
+      "Drug Delivery",
+      "Intranasal Administration",
+      "CNS Therapeutics",
+      "Synthetic Biology"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42543397/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-221346ac9085",
+    "type": "ainews",
+    "title": "Here’s why AI agents lie and cheat to reach their goals",
+    "excerpt": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage—they were just looking for answers&#8230;",
+    "source": "MIT Technology Review",
+    "date": "2026-08-03",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "MIT Technology Review Explains",
+      "Summary"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+    "badge": "Research"
+  },
+  {
+    "id": "nws-47d9de145a61",
+    "type": "news",
+    "title": "EU AI act: creators get no grace period for labeling AI content",
+    "excerpt": "Article 50 of the AI Regulation took effect today. Anyone who publishes deepfakes or AI-generated texts for professional purposes or to generate revenue must clearly label them as such, whether on YouTube or on their own blog. The transition period, which las…",
+    "source": "Notebookcheck.net",
+    "date": "2026-08-02",
+    "tags": [
+      "EU AI Act",
+      "Regulatory",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.notebookcheck.net/EU-AI-Act-creators-get-no-grace-period-for-labeling-AI-content.1358267.0.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-4b68da789218",
+    "type": "news",
+    "title": "Snapchat will no longer recommend ai-generated videos on spotlight",
+    "excerpt": "TL;DRSnap stops recommending wholly AI-generated videos on Spotlight, joining LinkedIn and YouTube in a wider crackdown on AI slop\nSnapchat will no longer recommend wholly AI-generated videos on its Spotlight feed. The change, effective thi",
+    "source": "The Next Web",
+    "date": "2026-08-02",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://thenextweb.com/news/snapchat-spotlight-bans-ai-generated-videos-recommendations",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-96ec955757c1",
+    "type": "paper",
+    "title": "Cannabis use disorder in patients prescribed medical cannabis-Should we consider prescription cannabis use disorder as a new diagnostic condition?",
+    "excerpt": "This article examines whether cannabis use disorder occurring in patients prescribed medical cannabis should be recognized as a distinct diagnostic condition. The authors, specialists in addiction medicine from the University of Sydney, raise the question of whether prescription cannabis use disorder warrants separate classification in clinical practice and diagnostic frameworks.",
+    "source": "Addiction",
+    "date": "2026-08-02",
+    "tags": [
+      "Cannabis Use Disorder",
+      "Medical Cannabis",
+      "Diagnostic Criteria",
+      "Addiction Medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42543176/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-59df243c15e2",
     "type": "paper",
     "title": "Frequency of therapeutic drug monitoring in inpatient precision depression care and duration of hospitalization",
@@ -50,6 +159,146 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-38e12bb26013",
+    "type": "news",
+    "title": "New EU rules on AI deepfakes and chatbots",
+    "excerpt": "New EU rules on artificial intelligence come into force from today which mean that deepfakes and other AI-generated content must be labelled.",
+    "source": "RTE",
+    "date": "2026-08-01",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.rte.ie/news/ireland/2026/0802/1586132-ai-deepfakes/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-9fb2c12fd2e3",
+    "type": "news",
+    "title": "Show hn: openlongevity – longevity × AI – open, verifiable, for everyone",
+    "excerpt": "Longevity technology should not be reserved for the wealthy. Open Longevity(开源延寿) takes Bryan Johnson’s longevity plan as a starting blueprint. - edison7009/OpenLongevity",
+    "source": "Github.com",
+    "date": "2026-08-01",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://github.com/edison7009/OpenLongevity",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-630d102c672d",
+    "type": "news",
+    "title": "EU gets new powers over powerful AI from sunday",
+    "excerpt": "The European Union will from Sunday have the power to enforce landmark artificial intelligence rules and hit any companies breaking the law with fines.",
+    "source": "Thelocal.com",
+    "date": "2026-08-01",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.thelocal.com/20260801/eu-gets-new-powers-over-powerful-ai-from-sunday",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-b0d6a014d3f9",
+    "type": "news",
+    "title": "Climate change weekly # 586— wind trash is a problem on and offshore",
+    "excerpt": "Waste, a problem endemic to industrial wind and solar facilities, is piling up or being scattered all over. In this essay I will leave aside discussions of the waste created in the mining, refining, manufacturing, and construction processes in the production …",
+    "source": "Wattsupwiththat.com",
+    "date": "2026-08-01",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://wattsupwiththat.com/2026/08/01/climate-change-weekly-586-wind-trash-is-a-problem-on-and-offshore/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-53ed436cb442",
+    "type": "ainews",
+    "title": "Sam altman is still making the case for parenting via chatgpt | techcrunch",
+    "excerpt": "Sam Altman is still making the case for parenting via ChatGPT | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-08-01",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-98fc443fa576",
+    "type": "ainews",
+    "title": "7 states’ water systems hit by cyberattacks likely tied to iran",
+    "excerpt": "Plus: The FBI eyes AI-powered tech to detect future crimes, Russia charges Telegram’s founder, xAI sues to stop a state’s “nudification” ban, and the Democrats learn a lesson about getting scammed.",
+    "source": "Wired",
+    "date": "2026-08-01",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-f4f40f47ec3f",
+    "type": "ainews",
+    "title": "Nobody knows if openai’s and anthropic’s AI hacking sprees are illegal",
+    "excerpt": "Both major AI labs’ models broke containment, escaped onto the internet, and hacked other companies. If a human had done that, the law would likely be against them. But a bot?",
+    "source": "Wired",
+    "date": "2026-08-01",
+    "tags": [
+      "OpenAI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-106ad409fb8d",
+    "type": "ainews",
+    "title": "Uber is building an autonomous vehicle empire, and here's every company it's using to do it | techcrunch",
+    "excerpt": "Uber has partnered with — and in some cases made direct investments in — about 30 autonomous vehicle companies over the past two years. Here's the list and the latest on the partnerships.",
+    "source": "TechCrunch",
+    "date": "2026-08-01",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-cd81b3e90d48",
+    "type": "ainews",
+    "title": "A deep dive into nvidia's vera cpu and the olympus cores that power it",
+    "excerpt": "88 custom cores, 176 funky threads, 1.5 TB of laptop RAM, and 1.8 TB/s of NVLink connectivity — this isn't your typical datacenter chip",
+    "source": "Theregister.com",
+    "date": "2026-08-01",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/systems/2026/08/01/nvidias-vera-cpu-and-the-olympus-cores-that-power-it-deep-dive/5282056",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-83005506ed06",
@@ -721,6 +970,25 @@
     "readTime": "1 min",
     "url": "https://www.wired.com/story/this-ai-assistants-whole-pitch-is-making-up-for-your-boyfriends-incompetence/",
     "badge": "AI Tech"
+  },
+  {
+    "id": "auto-2f8c076a64e7",
+    "type": "paper",
+    "title": "Nanosonosensitizers in antibacterial sonodynamic therapy: mechanism exploration, activity enhancement strategies, and current status of antibacterial applications",
+    "excerpt": "This review examines nanosonosensitizers used in antibacterial sonodynamic therapy, including their underlying mechanisms of action, strategies to enhance antimicrobial activity, and documented applications in antibacterial treatment. Sonodynamic therapy uses ultrasound to activate nanoparticles that generate reactive oxygen species and other bactericidal effects. The article synthesizes current evidence on this emerging therapeutic approach for bacterial infections.",
+    "source": "Ultrason Sonochem",
+    "date": "2026-07-31",
+    "tags": [
+      "Sonodynamic therapy",
+      "Nanoparticles",
+      "Antibacterial agents",
+      "Mechanism of action"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42543050/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
   },
   {
     "id": "auto-df34ed215123",
@@ -4586,266 +4854,5 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
     "badge": "Tech"
-  },
-  {
-    "id": "auto-b9480a06f49c",
-    "type": "ainews",
-    "title": "‘AI communism’, rogue models, and the why Kimi K3 spooked Wall Street",
-    "excerpt": "Chinese AI lab Moonshot&#8217;s&#160;open model Kimi went viral this week&#160;for reasons that had less to do with the model itself and more to do with&#160;how the U.S. AI industry reacted to it. Meanwhile, an unreleased OpenAI model wandered outside its test environment and ended up connected to a real&#160;security breach at Hugging Face&#160;— a reminder [&#8230;]",
-    "source": "TechCrunch AI",
-    "date": "2026-07-24",
-    "tags": [
-      "AI",
-      "Transportation",
-      "Startups",
-      "Equity podcast"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-75e11e424e8c",
-    "type": "ainews",
-    "title": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
-    "excerpt": "ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.",
-    "source": "TechCrunch AI",
-    "date": "2026-07-24",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "voice mode",
-      "In Brief"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-f0fafadae816",
-    "type": "news",
-    "title": "Model organisms",
-    "excerpt": "[New Entry by Michael Dietrich and Nedah Nemati on July 24, 2026.]\n Model organisms are a widely used component of contemporary biology and biomedicine. Although the term \"model organism\" gained formal recognition with the National Institutes of Health (NIH) …",
-    "source": "Stanford.edu",
-    "date": "2026-07-24",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://plato.stanford.edu/entries/model-organisms/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-708c53b57f59",
-    "type": "news",
-    "title": "Engineered enzymes can repair decades of molecular aging damage",
-    "excerpt": "Revel Pharmaceuticals engineered an enzyme that removes carboxymethyllysine — a sugar-derived chemical modification of the amino acid lysine — from proteins and restores the residue to normal lysine. It was tested on donated human lens, skin, and arterial tis…",
-    "source": "Next Big Future",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nextbigfuture.com/2026/07/engineered-enzymes-can-repair-decades-of-molecular-aging-damage.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-f808bacb1e9c",
-    "type": "news",
-    "title": "The tech-broification of american science has officially begun",
-    "excerpt": "The Trump administration unveiled the first \"Genesis Mission\" grants on Thursday, directing $5 billion toward hundreds of AI-driven science projects in an effort the White House has described as \"comparable in urgency and ambition to the Manhattan Project.\" A…",
-    "source": "The Verge",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-05ff9b7dba4a",
-    "type": "news",
-    "title": "Integrated computational analysis identifies fabp4, ptgs2, and hpgd as key molecular targets linking pet microplastic exposure to metabolic dysfunction-associated steatotic liver disease",
-    "excerpt": "Background Metabolic dysfunction-associated steatotic liver disease (MASLD) affects 25–38% of the global population, yet the contribution of environmental polyethylene terephthalate (PET) microplastics to its pathogenesis remains unclear. PET microplastics ac…",
-    "source": "Plos.org",
-    "date": "2026-07-24",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0354607",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-e72c7970ceef",
-    "type": "news",
-    "title": "Plga - encapsulated harmine derivative h-2-168: a promising therapeutic agent for mitigating liver damage in hepatic hydatid disease",
-    "excerpt": "Author summary Echinococcosis is a severe chronic zoonotic parasitic disease caused by infection with Echinococcus granulosus (E. granulosus), with the liver being the most commonly affected organ. Clinically, hepatic echinococcosis is commonly cystic. The tr…",
-    "source": "Plos.org",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0014483",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-4cdf44930e36",
-    "type": "news",
-    "title": "Walid mehanna on carrying the world’s oldest pharma giant into the a.i. era",
-    "excerpt": "Merck KGaA’s chief data and A.I. officer Walid Mehanna explains how governance, employee trust and startup agility are shaping enterprise adoption.",
-    "source": "Observer",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://observer.com/2026/07/merck-germany-chief-ai-officer-walid-mehanna/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-102a9cbeb391",
-    "type": "news",
-    "title": "Wave hackathon 2026 advances practical AI innovation through global collaboration",
-    "excerpt": "Bringing together engineers, researchers, founders, and AI practitioners from around the world, Wave Hackathon 2026 provided a platform to transform innovative ideas into practical solutions for real-world challenges.\nThe post Wave Hackathon 2026 advances pra…",
-    "source": "Digital Journal",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.digitaljournal.com/article/wave-hackathon-2026-advances-practical-ai-innovation-through-global-collaboration/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-fe1625ece3b1",
-    "type": "news",
-    "title": "Attribution in the age of AI",
-    "excerpt": "Attribution has always been a cornerstone of working with other people’s creativity and knowledge. As Creative Commons reminds us, practicing attribution serves many important functions, from providing verifiable evidence of a claim, to paying respect to the …",
-    "source": "Creativecommons.org",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://creativecommons.org/2026/07/24/attribution-in-the-age-of-ai/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-6c513d3d4ac4",
-    "type": "news",
-    "title": "Confidential computing and the new regulatory focus on data in use",
-    "excerpt": "Most organizations already understand encryption at rest and encryption in transit. These controls are mature, widely deployed, and often explicitly referenced in security frameworks. However, runtime is different: when an application processes sensitive info…",
-    "source": "Ubuntu.com",
-    "date": "2026-07-24",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://ubuntu.com/blog/confidential-computing-and-the-new-regulatory-focus-on-data-in-use",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-7c081ba417c0",
-    "type": "news",
-    "title": "China has cracked down on AI companions. what can we learn from this?",
-    "excerpt": "Since November 2022, generative artificial intelligence (AI) has been rewriting billions of emails, student assignments, reports, and break-up text messages. Alongside these mundane uses, we’ve seen a proliferation of chatbots as AI “companions”. Users can de…",
-    "source": "Khabarhub.com",
-    "date": "2026-07-24",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://english.khabarhub.com/2026/24/560098/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-6424d40e9b16",
-    "type": "news",
-    "title": "Google is signing the EU AI act code of practice on transparency of ai-generated content.",
-    "excerpt": "Signing the code reinforces our commitment to transparency and responsible AI development in Europe.",
-    "source": "Blog.google",
-    "date": "2026-07-24",
-    "tags": [
-      "EU AI Act"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://blog.google/company-news/outreach-and-initiatives/public-policy/eu-ai-act-transparency-code-of-practice/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-616f71d7432e",
-    "type": "news",
-    "title": "The regulatory unlock that's reshaping AI infrastructure",
-    "excerpt": "Strict regulations are forcing a massive shift from traditional clouds to sovereign, localized networks.",
-    "source": "TechRadar",
-    "date": "2026-07-24",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techradar.com/pro/the-regulatory-unlock-thats-reshaping-ai-infrastructure",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9bf3fb15cae9",
-    "type": "news",
-    "title": "Use of digital health in task-sharing for prevention and management of non-communicable diseases in africa: a scoping review",
-    "excerpt": "Task-sharing with non-physician health workers (NPHWs), supported by digital health, has emerged as a critical strategy to address workforce shortage and improve the delivery of health services. The use of digital health shows promise in supporting task-shari…",
-    "source": "Plos.org",
-    "date": "2026-07-24",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006746",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-5383606f4e53",
-    "type": "news",
-    "title": "Darpa selects nrx pharmaceuticals defense subsidiary for contract negotiations on fda-authorized sparc-tms clinical trial advancing mental health care",
-    "excerpt": "Potential DARPA Award, FDA-Authorized Phase 2/3 Trial, Breakthrough Therapy NRX-101, and Robotic-Enabled TMS Platform Highlight Expanding Opportunities for NRx Pharmaceuticals, Inc. (N A S D A Q: NRXP)\nMIAMI - July 22, 2026 - PRLog -- DARPA Selects NRx Defens…",
-    "source": "TheStreet",
-    "date": "2026-07-24",
-    "tags": [
-      "FDA",
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://prconnect.thestreet.com/article/DARPA-Selects-NRx-Pharmaceuticals-Defense-Subsidiary-for-Contract-Negotiations-on-FDA-Authorized-SPARC-TMS-Clinical-Trial-Advancing-Mental-Health-Care/6a6133c6bf5388000232dce2",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
   }
 ]
