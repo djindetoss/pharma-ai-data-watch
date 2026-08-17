@@ -1,0 +1,1156 @@
+{
+  "id": "2026-W34",
+  "weekLabel": "Week 34 — August 17, 2026",
+  "weekStart": "2026-08-17",
+  "weekEnd": "2026-08-17",
+  "generatedAt": "2026-08-17T08:06:53.952Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "PROTAC Milestone: FDA Approves Vepdegestrant for ESR1-Mutated Breast Cancer",
+    "standfirst": "Vepdegestrant (ARV-471) becomes the first PROTAC therapeutic approved by the FDA, signalling regulatory acceptance of this novel degradation mechanism and opening a new class of targeted oncology treatments.",
+    "body": "This approval represents a watershed moment for targeted protein degradation technology, validating PROTAC biology as a clinically viable approach beyond theoretical promise. For regulatory scientists, this sets precedent for how degrader chemistry will be evaluated in future IND and NDA submissions—expect increased clarity on potency, selectivity, and off-target degradation benchmarks. Drug discovery teams should anticipate FDA guidance evolution on PROTAC-specific CMC and pharmacology requirements within 12–18 months, fundamentally reshaping how estrogen receptor-driven cancers are approached across the industry.",
+    "sourceIndices": [
+      5
+    ],
+    "sources": [
+      {
+        "title": "The PROTAC milestone: FDA approval of vepdegestrant (ARV-471) for ESR1-mutated breast cancer",
+        "source": "Drug Discov Today",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42603649/",
+        "date": "2026-08-15",
+        "type": "paper"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "OpenAI Leadership Exodus Accelerates; Key Executives Depart",
+          "body": "Brad Lightcap, Fidji Simo, and other senior figures have stepped down from OpenAI in 2026, signalling organisational instability at the frontier AI labs. For pharma strategists evaluating LLM partnerships and API dependencies, executive turnover at core model builders raises questions about continuity of support, API stability, and long-term product roadmaps for integration into clinical data systems.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "12 executives who left openai in 2026",
+              "source": "Business Insider",
+              "url": "https://www.businessinsider.com/executives-who-left-openai-in-2026-8#article",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Blame Graphs Track Cascading AI Agent Decision Failures",
+          "body": "Amazon OpenSearch now enables blame graph construction for multi-agent systems, allowing traceability when collaborative AI decisions fail. In regulated pharma contexts—where pharmacovigilance systems and clinical decision support increasingly rely on AI agents—this development directly addresses auditability requirements for post-market surveillance and regulatory inspection readiness.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Trace cascading decision failures with a blame graph on amazon opensearch service",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/big-data/trace-cascading-decision-failures-with-a-blame-graph-on-amazon-opensearch-service/",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AGI Safety Paradox: Frontier Labs Build Safeguards While Scaling Risk",
+          "body": "OpenAI, Anthropic, and DeepMind concurrently develop more capable models and safety mechanisms, raising governance questions about the influence frontier labs exert over their own risk frameworks. Pharma regulatory teams must recognise that foundation models underpinning clinical AI systems are governed by commercial entities with competing incentives; internal governance audits should explicitly assess third-party model governance.",
+          "sourceIndices": [
+            42
+          ],
+          "sources": [
+            {
+              "title": "Agi safety paradox: AI firms warn of danger, then offer models to manage it",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/technology/artificial-intelligence/agi-safety-paradox-ai-firms-warn-danger-offer-models-manage-it-126081401290_1.html",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Strands Agents and LeRobot Enable Unified Training and Deployment Pipeline",
+          "body": "Hugging Face integrates agent recording, training, and deployment into a single workflow, reducing friction for researchers deploying agentic systems. For biomedical informatics teams building clinical documentation or trial management agents, this technical simplification accelerates proof-of-concept work and reduces engineering overhead.",
+          "sourceIndices": [
+            48
+          ],
+          "sources": [
+            {
+              "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+              "source": "Hugging Face Blog",
+              "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+              "date": "2026-08-13",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "AI Hallucinations Persist Despite Scale; Factual Grounding Remains Unsolved",
+          "body": "Generative AI models continue producing plausible-sounding but false outputs at scale, a fundamental constraint not yet remedied by larger training or parameter counts. Pharma organisations deploying LLMs for literature summarisation, regulatory document generation, or adverse event coding must implement mandatory human verification workflows; hallucination risk cannot be engineered away at current model capability levels.",
+          "sourceIndices": [
+            50
+          ],
+          "sources": [
+            {
+              "title": "What are AI hallucinations?",
+              "source": "Databricks.com",
+              "url": "https://www.databricks.com/blog/ai-hallucinations",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Scaling AI Agents Requires Trustworthy Data as Foundation",
+          "body": "Business leaders adopting agentic AI are discovering that agent reliability depends critically on training data quality and freshness. In clinical and regulatory contexts, this underscores the need for robust data governance pipelines before deploying agents for case processing, pharmacovigilance triage, or regulatory submission drafting.",
+          "sourceIndices": [
+            55
+          ],
+          "sources": [
+            {
+              "title": "Scaling AI agents with trustworthy data",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+              "date": "2026-08-12",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "Agentic AI Moves from Documentation to Execution in Health IT",
+          "body": "Abridge's acquisition of Altrina signals the shift from AI-assisted documentation to autonomous clinical task execution, with MHRA guidance on Ambient Voice now addressing regulatory pathways. European regulators are beginning to formalise expectations for agentic medical devices; regulatory scientists should monitor MHRA and EMA guidance closely for surveillance, validation, and post-market monitoring requirements.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Health it: when AI starts acting | signify research",
+              "source": "Signifyresearch.net",
+              "url": "https://www.signifyresearch.net/insights/health-it-when-ai-starts-acting/",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "Nordic AI-Health Initiative Builds Cross-Border Infrastructure on Longitudinal Data",
+          "body": "A multi-nation Nordic platform integrates large-scale longitudinal and multimodal health datasets for AI research, establishing technical and governance foundations for distributed health AI. For European regulatory scientists, this model demonstrates how EHDS principles translate into operational infrastructure; expect similar initiatives to accelerate cross-border RWD utilisation under Darwin EU frameworks.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "An ai-health infrastructure for the nordic region: technical foundations, data assets, and a roadmap for deployment",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04575-4",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Issues Emergency Use Authorization for Screwworm Prevention in Multiple Species",
+          "body": "CLiK Extra (dicyclanil topical suspension) receives EUA for wound spray application across livestock species—sheep, cattle, goats, and swine. This dual-species approval (following sarolaner/moxidectin/pyrantel EUA for dogs) demonstrates FDA's adaptive pathways for emerging zoonotic threats; regulatory scientists should monitor how EUA precedents inform expedited review criteria for veterinary antimicrobials and public health emergency therapeutics.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "FDA Issues Emergency Use Authorization for Drug to Prevent New World Screwworm in Multiple Species, Including Sheep, Cattle, Goats, and Swine",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-prevent-new-world-screwworm-multiple-species-including",
+              "date": "2026-08-07",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Grants Emergency Use Authorization for Canine Screwworm Treatment",
+          "body": "Simparica TRIO (sarolaner, moxidectin, pyrantel) receives EUA for treating New World Screwworm in dogs, reflecting rapid regulatory response to emerging parasitic threats. This approval pathway illustrates how EUA mechanisms can compress timelines for companion animal therapeutics addressing novel infectious agents.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "FDA Issues Emergency Use Authorization for Drug to Treat New World Screwworm in Dogs and Puppies",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-treat-new-world-screwworm-dogs-and-puppies",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Natural Language Processing Advances Electronic Health Record Analysis for Psychosis",
+          "body": "Systematic review shows NLP applications improving EHR data extraction and clinical phenotyping in psychosis studies, validating computational text analysis for real-world evidence generation. Regulatory scientists planning RWD dossiers should assess NLP-validated EHR extraction as a credible alternative to manual abstraction, with appropriate sensitivity/specificity validation.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "Natural language processing application in electronic health records studies for psychosis: a systematic review",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41746-026-03125-z.pdf",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Datavault AI Acquires Cybercatch; Quantum-Resistant Cyber Mitigation Integrated",
+          "body": "Datavault's acquisition of Cybercatch adds AI-driven quantum-resistant cyber risk tools to its data science platform, addressing future-proofing of regulatory data infrastructure. As pharmaceutical organisations digitise submissions (e-CTD, eCopy) and cloud-host clinical data, quantum-resistant cryptography becomes a risk management imperative for 10+ year data retention periods.",
+          "sourceIndices": [
+            39
+          ],
+          "sources": [
+            {
+              "title": "Datavault AI will acquire cybercatch in an all-cash transaction",
+              "source": "Financial Post",
+              "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU AI Act Article 6 Risk Framework Becomes Enforcement Baseline",
+          "body": "EU AI Act's Article 6 risk classification system is now the core regulatory requirement, with market access contingent on risk-appropriate conformity assessments. Pharma organisations deploying AI in clinical decision support, trial recruitment, or adverse event detection must map their AI systems to EU risk tiers and document conformity; non-compliance risks product liability and market suspension.",
+          "sourceIndices": [
+            40
+          ],
+          "sources": [
+            {
+              "title": "Mark my words",
+              "source": "Hackerfactor.com",
+              "url": "https://hackerfactor.com/blog/index.php?/archives/1101-Mark-My-Words.html",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Opencomplai Automates EU AI Act Compliance in CI/CD Pipelines",
+          "body": "Open-source regulatory engine enables automated EU AI Act risk assessment integration directly into software development workflows. Pharmaceutical IT teams can adopt this tool to embed compliance checks early in AI system development, reducing downstream audit burden and accelerating time-to-deployment for regulated AI applications.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Show hn: opencomplai – open-source EU AI act compliance checks in ci/cd",
+              "source": "Github.com",
+              "url": "https://github.com/opencomplai/opencomplai",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Fragmented Global AI Regulation Emerges as Strategic Competitive Advantage",
+          "body": "Diverging regulatory approaches across EU, US, UK, and Asia create winners and losers; organisations with strong internal governance adapt faster than competitors. Pharma companies with mature AI governance frameworks (risk stratification, post-market surveillance, bias monitoring) can navigate jurisdictional variation more smoothly; regulatory readiness becomes differentiator.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "Why fragmented AI regulation makes governance a competitive advantage",
+              "source": "TechRadar",
+              "url": "https://www.techradar.com/pro/why-fragmented-ai-regulation-makes-governance-a-competitive-advantage",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Data Readiness Emerges as Critical Success Factor for Middle East AI Scaling",
+          "body": "UAE and Saudi Arabian organisations are discovering that AI adoption fails without robust data architecture, standardisation, and governance—not deployment speed. For multinational pharma expanding into Gulf markets, this signals that regulatory and data infrastructure investments precede AI system launches; RWD programmes must mature before clinical AI deployment.",
+          "sourceIndices": [
+            45
+          ],
+          "sources": [
+            {
+              "title": "Middle east AI scaling: five mistakes organisations must avoid",
+              "source": "ComputerWeekly.com",
+              "url": "https://www.computerweekly.com/news/366648895/Middle-East-AI-scaling-Five-mistakes-organisations-must-avoid",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI Governance Operationalised Through Process, Standards, and Guardrails",
+          "body": "Effective AI governance moves beyond policy documents to embed processes, standards, and risk controls within development and deployment workflows. Regulatory and quality teams should establish cross-functional AI governance committees that approve models pre-deployment, monitor post-market performance, and escalate safety signals—translating governance intent into operational reality.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "What is AI governance and how to operationalize it?",
+              "source": "Etherionconsulting.com",
+              "url": "https://www.etherionconsulting.com/blog/what-is-ai-governance-and-how-to-operationalize-it/",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Clone-by-Clone Spatial Proteomics Guides Luminal Breast Cancer Therapy",
+          "body": "Integrating spatial proteomics with patient-derived tumoroids enables clone-specific therapeutic selection in luminal breast cancer, moving beyond population-level treatment paradigms. This approach demonstrates how AI-driven spatial analysis of tumour microenvironments can inform personalised dosing and drug selection, opening pathways for N-of-1 clinical trial designs.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Clone-by-Clone Therapy Guidance in Luminal Breast Cancer via Spatial Proteomics and Patient-Derived Tumoroid",
+              "source": "Mol Cell Proteomics",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42586237/",
+              "date": "2026-08-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI Transforms Clinical Management of Thyroid Nodule Atypia Classification",
+          "body": "Artificial intelligence improves diagnostic stratification of AUS (atypia of undetermined significance) thyroid nodules, reducing unnecessary procedures and clarifying clinical decision-making. For clinical development teams designing thyroid oncology trials, AI-enabled phenotyping can enrich cohort selection and reduce heterogeneity in early-phase studies.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Artificial intelligence-driven transformation in the management of atypia of undetermined significance (AUS) thyroid nodules",
+              "source": "Crit Rev Oncol Hematol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42595195/",
+              "date": "2026-08-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI in Drug Discovery: Evidence for Clinically Relevant Impact Remains Limited",
+          "body": "Comprehensive Nature review concludes that despite high interest, AI applications in drug discovery have delivered limited clinically validated outcomes to date. Pharma R&D leaders should demand rigorous impact metrics (time-to-IND, preclinical-to-clinic success rates) when evaluating AI tool adoption; vendor claims must be benchmarked against historical timelines and competitor data.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "AI in drug discovery — what it is, where we stand and the path forward",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41573-026-01496-2",
+              "date": "2026-08-15",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "TAB Trial Evaluates Tirzepatide as Adjunct to Buprenorphine for OUD",
+          "body": "Novel trial design combines GLP-1 agonist with opioid agonist therapy, addressing weight management and metabolic complications in medication-assisted treatment. This polypharmacology approach reflects emerging recognition that opioid use disorder treatment requires simultaneous metabolic intervention; implications for future OUD trial protocols are substantial.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "Evaluation of tirzepatide as an adjunct to buprenorphine for the treatment of opioid use disorder (TAB) trial: study design and rationale",
+              "source": "Contemp Clin Trials",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42600923/",
+              "date": "2026-08-14",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Geographic Disparities Plague 3,720 Ovarian Cancer Trials; Transparency Lacking",
+          "body": "Comprehensive analysis reveals uneven trial distribution, design heterogeneity, and poor transparency across global ovarian cancer research. Sponsors planning registration trials should address geographic site selection bias prospectively; regulators increasingly scrutinise whether trial populations reflect patient diversity in target markets.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "Geographic Disparities, Trial Characteristics, and Transparency of 3,720 Ovarian Cancer Clinical Trials",
+              "source": "J Cancer Policy",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42600890/",
+              "date": "2026-08-14",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Nanotech Integration with CAR-T Immunotherapy Opens New Delivery Paradigm",
+          "body": "Review examines nanotechnology-enhanced CAR-T cell approaches, improving targeting, persistence, and manufacturing efficiency of cell therapies. For advanced therapy R&D teams, nano-CAR-T platforms represent a manufacturing and efficacy lever; early engagement with regulators on CMC expectations for nanoparticle-cell conjugates is essential.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "Nano meets CAR-T: A new era in cancer immunotherapy",
+              "source": "Biochim Biophys Acta Rev Cancer",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42600858/",
+              "date": "2026-08-14",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Digital Organism Framework Integrates Multiscale Biology Foundation Models",
+          "body": "Researchers propose AI-driven 'digital organisms'—integrated systems of foundation models spanning molecular to organism-level biology—enabling rapid iteration and hypothesis generation in silico. For computational drug discovery teams, this vision motivates investment in modular, composable AI architectures that simulate biology rather than simple property prediction.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "How to build an ai-driven digital organism",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04595-0",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Quantitative Dose Optimization for Gene Therapy Aligns with Project Optimus",
+          "body": "Methods for early-phase gene therapy dose optimisation now explicitly address FDA's Project Optimus initiative, formalising dose-finding in rare-disease settings. Gene therapy sponsors should adopt model-based dose escalation designs; regulatory alignment is improving and may accelerate trial timelines.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Quantitative Dose Optimization for Gene Therapy Trials: Implications for Project Optimus and Early-Phase Design",
+              "source": "Pharm Stat",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42575726/",
+              "date": "2026-08-11",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Real-World Antibiotic Use Patterns in Saudi Arabia Reveal RWE Utility",
+          "body": "Claims data analysis of antibiotic utilisation in private insurance populations demonstrates feasibility of RWE generation in emerging markets. Sponsors expanding clinical programmes into Middle East/North Africa should invest in claims data partnerships early; RWE can support regulatory submissions and post-market surveillance.",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "Real-world evidence on antibiotic use among privately insured beneficiaries in Saudi Arabia: a retrospective analysis of claims data",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42580838/",
+              "date": "2026-08-11",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Multimodal AI Integration of Genomics and EHR Data Advances Precision Medicine",
+          "body": "Review highlights AI methods combining genetic and clinical phenotype data, enabling discovery of novel disease subtypes and treatment biomarkers. For biomarker-driven trial design, this integration approach informs patient stratification strategies and companion diagnostic development aligned with precision oncology paradigms.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Ai-based multimodal integration of genomics and electronic health records",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41576-026-00992-w",
+              "date": "2026-08-10",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "AI-Based Image Analysis Transforms Stem Cell-Derived Model Screening",
+          "body": "AI image analysis applied to stem cell models accelerates phenotypic drug screening and mechanism-of-action studies, reducing manual microscopy burden. For toxicology and efficacy screening programmes using iPSC-derived platforms, AI-enabled high-throughput imaging can compress preclinical timelines by 30–50%.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "From pixels to patterns: the AI revolution in stem cell-derived models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03202-x",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Phenomapping Individualises Sacubitril-Valsartan Response in HFpEF",
+          "body": "Machine learning-derived phenomapping tool predicts responders to sacubitril-valsartan in heart failure with preserved ejection fraction, enabling precision patient selection. This represents a clinically actionable AI-derived biomarker; trial sponsors should explore whether phenomapping can enrich future HFpEF cohorts and improve primary endpoint success rates.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41746-026-03138-8.pdf",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Type 2 Diabetes Prevention Refocused on Prediabetes Remission, Not Dysglycemia",
+          "body": "Clinical consensus now emphasises prevention interventions targeting prediabetes reversal rather than delaying progression to established diabetes. For diabetes prevention trial design, this paradigm shift influences primary endpoint selection, trial duration, and patient stratification; early intervention in at-risk populations becomes regulatory priority.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Type 2 diabetes prevention across the life course",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04550-z",
+              "date": "2026-08-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "GLP-1 Receptor Agonist Use Linked to Bowel Obstruction/Ileus Risk",
+          "body": "Nationwide database study documents association between GLP-1 RA use and gastrointestinal obstruction events, adding to emerging safety signal literature. Regulatory scientists should anticipate pharmacovigilance updates and label revisions; risk minimisation materials for GLP-1 RAs will likely emphasise GI complication monitoring.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "Bowel Obstruction/Ileus Associated With the Use of Glucagon-Like Peptide-1 Receptor Agonists: A Nationwide Database Study",
+              "source": "Diabetes Obes Metab",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42572004/",
+              "date": "2026-08-09",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Stimuli-Responsive Hydrogels Target Liver Disease; Translational Path Clarifies",
+          "body": "Smart hydrogels engineered to release therapeutics in response to liver-specific triggers (pH, enzyme activity) show translational promise for hepatic disorders. For hepatology drug development programmes, this technology platform offers a manufacturing and targeting lever; early-stage efficacy data should inform IND strategy.",
+          "sourceIndices": [
+            31
+          ],
+          "sources": [
+            {
+              "title": "Advances in stimuli-responsive hydrogels for liver disease therapy: mechanisms, applications, and translational perspectives",
+              "source": "Drug Deliv Transl Res",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42570970/",
+              "date": "2026-08-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Aminolevulinic Acid Photodynamic Therapy Offers Alternative for Genital Paget Disease",
+          "body": "Case series validates aminolevulinic acid PDT as treatment option for extramammary Paget disease in geriatric patients, reducing morbidity versus surgical alternatives. This niche indication exemplifies how repurposed therapeutic modalities can address unmet needs in rare cutaneous oncology.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Aminolevulinic Acid Photodynamic Therapy for Extensive Genital Extramammary Paget Disease in Older Patients: A Retrospective Clinical Case Series",
+              "source": "Photodiagnosis Photodyn Ther",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42570749/",
+              "date": "2026-08-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "G(i)-Biased CB1 Agonists Enable Next-Generation Analgesic Development",
+          "body": "Rational design of biased CB1 agonists prioritises analgesia while minimising abuse potential and psychiatric side effects—a major advance for pain management. Sponsors developing next-generation cannabinoid therapeutics should adopt biased signalling as a core design principle; regulatory expectations are evolving toward functional selectivity.",
+          "sourceIndices": [
+            33
+          ],
+          "sources": [
+            {
+              "title": "Rational Design of G(i)-biased CB1 Agonists for the Next Generation of Analgesic Drug",
+              "source": "Neurosci Bull",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42568023/",
+              "date": "2026-08-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Augmented Oncology Trial Design Reshapes Patient Recruitment and Enrichment",
+          "body": "AI technologies optimise oncology trial site selection, patient phenotyping, and real-time cohort monitoring, improving recruitment velocity and endpoint capture. Sponsors planning Phase II/III oncology trials should evaluate AI-augmentation for eligibility screening and safety monitoring to reduce screen-failure rates and accelerate enrollment.",
+          "sourceIndices": [
+            35
+          ],
+          "sources": [
+            {
+              "title": "AI-based augmentation of oncology clinical trials",
+              "source": "Nat Rev Clin Oncol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42567955/",
+              "date": "2026-08-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Causal Graph Neural Networks Bring Mechanistic Inference to Healthcare AI",
+          "body": "Graph neural networks embedding causal reasoning enable healthcare AI systems to infer treatment effects and mechanism-of-action rather than correlation-only prediction. This methodological advance improves clinical interpretability and supports regulatory scrutiny of AI decision logic in clinical decision support systems.",
+          "sourceIndices": [
+            36
+          ],
+          "sources": [
+            {
+              "title": "Causal graph neural networks for healthcare",
+              "source": "Nat Biomed Eng",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42567948/",
+              "date": "2026-08-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Cell Surface Display Elements Designed via AI-Guided Synthetic Biology",
+          "body": "Systematic AI-guided approach designs novel cell surface display elements for therapeutic cell engineering applications. For CAR-T, TCR-engineered T cell, and allogeneic cell therapy programmes, this design platform accelerates lead identification and optimisation in early discovery.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Discovery and design of potent cell surface display elements",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41587-026-03144-x",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "SNP Causal Effect Correlations Vary by Functional Annotation; Selection Inferred",
+          "body": "Novel method detects and characterises correlation of causal effect sizes across proximal SNPs, with variation explained by functional annotations and evidence of stabilising selection. For pharmacogenomics researchers building GWAS-derived treatment biomarkers, this work highlights importance of functional annotation in variant interpretation and effect size stability.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Correlations between causal effect sizes of proximal snps vary with functional annotations and implicate stabilizing selection",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02712-w",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Cross-Region Neuron Co-Firing Supports Distributed Working Memory in Humans",
+          "body": "Study demonstrates bilateral corticolimbic neuron synchronisation modulated by working memory, revealing neurophysiological substrate for distributed cognitive function. For neurological clinical trial design (cognition endpoints, neurodegeneration markers), this mechanistic work informs biomarker strategy.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Cross-region neuron co-firing mediated by ripple oscillations supports distributed working memory representations",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41593-026-02403-z",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "LINE-1 Transposable Elements Drive Lung Adenocarcinoma Evolution",
+          "body": "Research clarifies the role of LINE-1 retroelements in driving genomic instability and heterogeneity within lung adenocarcinoma, informing molecular subtyping and treatment resistance mechanisms. Oncology genomics programmes should integrate transposable element analysis into tumour profiling and biomarker discovery workflows.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "Author correction: uncovering the role of line-1 in the evolution of lung adenocarcinoma",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10947-0",
+              "date": "2026-08-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Environmental Treaties Must Integrate Mental Health and Climate Resilience",
+          "body": "Global environmental policy frameworks overlooked psychological impacts of climate, biodiversity loss, and pollution; mental health integration is now essential. For pharma organisations assessing real-world data collection in climate-vulnerable regions, mental health outcomes should be included in RWE frameworks; environmental stressors are confounders in disease natural history studies.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Why environmental treaties must also address mental health",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-02450-3",
+              "date": "2026-08-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Data Governance Emerging as Competitive Advantage in AI-Driven Marketplace",
+          "body": "Organisations prioritising trust, transparency, and data accountability outcompete peers lacking governance maturity; evidence-based data stewardship is now a market differentiator. For pharma CIOs and regulatory teams, investment in data governance infrastructure (metadata standards, access controls, audit trails) directly supports AI deployment speed and regulatory confidence.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "Transparency, trust and AI: why data governance is the next competitive advantage",
+              "source": "Digital Journal",
+              "url": "https://www.digitaljournal.com/article/transparency-trust-and-ai-why-data-governance-is-the-next-competitive-advantage/",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Driven Cybersecurity Requires Quantum-Resistant Cryptography Planning",
+          "body": "Datavault's acquisition of Cybercatch and emphasis on quantum-resistant encryption reflects industry recognition that current cryptographic standards are vulnerable to future quantum computing. Pharma organisations managing regulatory submissions (e-CTD) and long-term clinical data archives should begin quantum-readiness assessments now; cryptographic agility becomes operational necessity.",
+          "sourceIndices": [
+            37
+          ],
+          "sources": [
+            {
+              "title": "Datavault AI appoints ip industry pioneer dean becker as chief licensing officer",
+              "source": "Associated Press",
+              "url": "https://apnews.com/press-release/access-newswire/press-release-942f4e50fae4efb97b99ea81fa4409fd",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "National Rural Health Association and Viz.ai Partner to Close Healthcare AI Divide",
+          "body": "Cross-sector collaboration deploying educational webinars and toolkits to support AI implementation in rural hospitals, addressing geographic disparities in advanced diagnostic access. For multinational sponsors conducting global clinical trials, this initiative signals increasing regional focus on equitable AI access; trial site selection should account for local AI infrastructure maturity.",
+          "sourceIndices": [
+            59
+          ],
+          "sources": [
+            {
+              "title": "How a cross-sector collab seeks to bridge rural healthcare's AI divide",
+              "source": "Techtarget.com",
+              "url": "https://www.techtarget.com/healthtechanalytics/feature/How-a-cross-sector-collab-seeks-to-bridge-rural-healthcares-AI-divide",
+              "date": "2026-08-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Systemic Menopausal Hormone Therapy Utilisation Patterns in Danish Women Analysed",
+          "body": "Nationwide drug utilisation study mapping HRT prescribing and usage trends provides RWE benchmark for hormonal therapy effectiveness and safety in real-world populations. Sponsors of menopausal health products should conduct similar utilisation analyses to inform Label claims and post-market surveillance strategy.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "Systemic menopausal hormone therapy treatment patterns in Danish women-A nationwide drug utilization study",
+              "source": "Br J Clin Pharmacol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42575876/",
+              "date": "2026-08-10",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "High-Dose Vitamin B and Passiflora Trial Explores Neural Connectivity and Oxidative Stress",
+          "body": "Randomised, placebo-controlled trial protocol evaluates multimodal supplementation effects on neuroimaging biomarkers and metabolic measures in healthy adults. For dietary supplement and nutraceutical development, this trial design demonstrates how mechanistic biomarkers (functional connectivity, oxidative markers) can support evidence-based product claims.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Protocol for a randomised, double-blind, placebo-controlled clinical trial on the effects of high-dose vitamin B multivitamin supplementation with and without Passiflora incarnata on neural connectivity and oxidative metabolism in healthy adults",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42595368/",
+              "date": "2026-08-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "WHO/HAI Core List Used to Assess Medicine Availability and Affordability in Albania",
+          "body": "Cross-sectional survey benchmarking essential medicine access, pricing, and affordability in a European middle-income country provides RWE model for access programmes. Sponsors planning market access strategies in Central/Eastern Europe should utilise similar frameworks to identify pricing and distribution barriers early.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Access to essential medicines in Albania: a cross-sectional survey of availability, prices and affordability using the WHO/Health Action International (HAI) Global Core List",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42595360/",
+              "date": "2026-08-13",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week's briefing underscores three imperatives for European pharma leaders: (1) regulatory paradigms are consolidating around AI governance frameworks (EU AI Act Article 6, MHRA agentic AI guidance) faster than industry operational readiness—compliance cannot be deferred; (2) frontier AI labs are in flux (OpenAI exodus, safeguard paradoxes), raising structural questions about the stability of third-party LLM dependencies in regulated systems; (3) the PROTAC approval sets a new standard for mechanism-based drug class validation, signalling FDA's willingness to establish precedent for emerging modalities—early regulatory engagement on novel mechanisms now yields tangible pathway clarity. Begin 2026 Q4 planning with AI governance maturity audits, quantum-readiness assessments, and mechanism-of-action biomarker strategies.",
+  "allSources": [
+    {
+      "title": "The PROTAC milestone: FDA approval of vepdegestrant (ARV-471) for ESR1-mutated breast cancer",
+      "source": "Drug Discov Today",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42603649/",
+      "date": "2026-08-15",
+      "type": "paper"
+    },
+    {
+      "title": "12 executives who left openai in 2026",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/executives-who-left-openai-in-2026-8#article",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Trace cascading decision failures with a blame graph on amazon opensearch service",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/big-data/trace-cascading-decision-failures-with-a-blame-graph-on-amazon-opensearch-service/",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Agi safety paradox: AI firms warn of danger, then offer models to manage it",
+      "source": "Business Standard",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/agi-safety-paradox-ai-firms-warn-danger-offer-models-manage-it-126081401290_1.html",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "date": "2026-08-13",
+      "type": "ainews"
+    },
+    {
+      "title": "What are AI hallucinations?",
+      "source": "Databricks.com",
+      "url": "https://www.databricks.com/blog/ai-hallucinations",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Scaling AI agents with trustworthy data",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+      "date": "2026-08-12",
+      "type": "ainews"
+    },
+    {
+      "title": "Health it: when AI starts acting | signify research",
+      "source": "Signifyresearch.net",
+      "url": "https://www.signifyresearch.net/insights/health-it-when-ai-starts-acting/",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "An ai-health infrastructure for the nordic region: technical foundations, data assets, and a roadmap for deployment",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04575-4",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "FDA Issues Emergency Use Authorization for Drug to Prevent New World Screwworm in Multiple Species, Including Sheep, Cattle, Goats, and Swine",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-prevent-new-world-screwworm-multiple-species-including",
+      "date": "2026-08-07",
+      "type": "news"
+    },
+    {
+      "title": "FDA Issues Emergency Use Authorization for Drug to Treat New World Screwworm in Dogs and Puppies",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-treat-new-world-screwworm-dogs-and-puppies",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Natural language processing application in electronic health records studies for psychosis: a systematic review",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41746-026-03125-z.pdf",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Datavault AI will acquire cybercatch in an all-cash transaction",
+      "source": "Financial Post",
+      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/datavault-ai-will-acquire-cybercatch-in-an-all-cash-transaction",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Mark my words",
+      "source": "Hackerfactor.com",
+      "url": "https://hackerfactor.com/blog/index.php?/archives/1101-Mark-My-Words.html",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Show hn: opencomplai – open-source EU AI act compliance checks in ci/cd",
+      "source": "Github.com",
+      "url": "https://github.com/opencomplai/opencomplai",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Why fragmented AI regulation makes governance a competitive advantage",
+      "source": "TechRadar",
+      "url": "https://www.techradar.com/pro/why-fragmented-ai-regulation-makes-governance-a-competitive-advantage",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Middle east AI scaling: five mistakes organisations must avoid",
+      "source": "ComputerWeekly.com",
+      "url": "https://www.computerweekly.com/news/366648895/Middle-East-AI-scaling-Five-mistakes-organisations-must-avoid",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "What is AI governance and how to operationalize it?",
+      "source": "Etherionconsulting.com",
+      "url": "https://www.etherionconsulting.com/blog/what-is-ai-governance-and-how-to-operationalize-it/",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Clone-by-Clone Therapy Guidance in Luminal Breast Cancer via Spatial Proteomics and Patient-Derived Tumoroid",
+      "source": "Mol Cell Proteomics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42586237/",
+      "date": "2026-08-12",
+      "type": "paper"
+    },
+    {
+      "title": "Artificial intelligence-driven transformation in the management of atypia of undetermined significance (AUS) thyroid nodules",
+      "source": "Crit Rev Oncol Hematol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595195/",
+      "date": "2026-08-13",
+      "type": "paper"
+    },
+    {
+      "title": "AI in drug discovery — what it is, where we stand and the path forward",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41573-026-01496-2",
+      "date": "2026-08-15",
+      "type": "news"
+    },
+    {
+      "title": "Evaluation of tirzepatide as an adjunct to buprenorphine for the treatment of opioid use disorder (TAB) trial: study design and rationale",
+      "source": "Contemp Clin Trials",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600923/",
+      "date": "2026-08-14",
+      "type": "paper"
+    },
+    {
+      "title": "Geographic Disparities, Trial Characteristics, and Transparency of 3,720 Ovarian Cancer Clinical Trials",
+      "source": "J Cancer Policy",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600890/",
+      "date": "2026-08-14",
+      "type": "paper"
+    },
+    {
+      "title": "Nano meets CAR-T: A new era in cancer immunotherapy",
+      "source": "Biochim Biophys Acta Rev Cancer",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42600858/",
+      "date": "2026-08-14",
+      "type": "paper"
+    },
+    {
+      "title": "How to build an ai-driven digital organism",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04595-0",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Quantitative Dose Optimization for Gene Therapy Trials: Implications for Project Optimus and Early-Phase Design",
+      "source": "Pharm Stat",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42575726/",
+      "date": "2026-08-11",
+      "type": "paper"
+    },
+    {
+      "title": "Real-world evidence on antibiotic use among privately insured beneficiaries in Saudi Arabia: a retrospective analysis of claims data",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42580838/",
+      "date": "2026-08-11",
+      "type": "paper"
+    },
+    {
+      "title": "Ai-based multimodal integration of genomics and electronic health records",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41576-026-00992-w",
+      "date": "2026-08-10",
+      "type": "news"
+    },
+    {
+      "title": "From pixels to patterns: the AI revolution in stem cell-derived models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03202-x",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Phenomapping-derived tool to individualize the effect of sacubitril-valsartan in heart failure with preserved ejection fraction",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41746-026-03138-8.pdf",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Type 2 diabetes prevention across the life course",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04550-z",
+      "date": "2026-08-10",
+      "type": "news"
+    },
+    {
+      "title": "Bowel Obstruction/Ileus Associated With the Use of Glucagon-Like Peptide-1 Receptor Agonists: A Nationwide Database Study",
+      "source": "Diabetes Obes Metab",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42572004/",
+      "date": "2026-08-09",
+      "type": "paper"
+    },
+    {
+      "title": "Advances in stimuli-responsive hydrogels for liver disease therapy: mechanisms, applications, and translational perspectives",
+      "source": "Drug Deliv Transl Res",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42570970/",
+      "date": "2026-08-08",
+      "type": "paper"
+    },
+    {
+      "title": "Aminolevulinic Acid Photodynamic Therapy for Extensive Genital Extramammary Paget Disease in Older Patients: A Retrospective Clinical Case Series",
+      "source": "Photodiagnosis Photodyn Ther",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42570749/",
+      "date": "2026-08-08",
+      "type": "paper"
+    },
+    {
+      "title": "Rational Design of G(i)-biased CB1 Agonists for the Next Generation of Analgesic Drug",
+      "source": "Neurosci Bull",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42568023/",
+      "date": "2026-08-07",
+      "type": "paper"
+    },
+    {
+      "title": "AI-based augmentation of oncology clinical trials",
+      "source": "Nat Rev Clin Oncol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42567955/",
+      "date": "2026-08-07",
+      "type": "paper"
+    },
+    {
+      "title": "Causal graph neural networks for healthcare",
+      "source": "Nat Biomed Eng",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42567948/",
+      "date": "2026-08-07",
+      "type": "paper"
+    },
+    {
+      "title": "Discovery and design of potent cell surface display elements",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41587-026-03144-x",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Correlations between causal effect sizes of proximal snps vary with functional annotations and implicate stabilizing selection",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02712-w",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Cross-region neuron co-firing mediated by ripple oscillations supports distributed working memory representations",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41593-026-02403-z",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Author correction: uncovering the role of line-1 in the evolution of lung adenocarcinoma",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10947-0",
+      "date": "2026-08-11",
+      "type": "news"
+    },
+    {
+      "title": "Why environmental treaties must also address mental health",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-02450-3",
+      "date": "2026-08-10",
+      "type": "news"
+    },
+    {
+      "title": "Transparency, trust and AI: why data governance is the next competitive advantage",
+      "source": "Digital Journal",
+      "url": "https://www.digitaljournal.com/article/transparency-trust-and-ai-why-data-governance-is-the-next-competitive-advantage/",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Datavault AI appoints ip industry pioneer dean becker as chief licensing officer",
+      "source": "Associated Press",
+      "url": "https://apnews.com/press-release/access-newswire/press-release-942f4e50fae4efb97b99ea81fa4409fd",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "How a cross-sector collab seeks to bridge rural healthcare's AI divide",
+      "source": "Techtarget.com",
+      "url": "https://www.techtarget.com/healthtechanalytics/feature/How-a-cross-sector-collab-seeks-to-bridge-rural-healthcares-AI-divide",
+      "date": "2026-08-12",
+      "type": "news"
+    },
+    {
+      "title": "Systemic menopausal hormone therapy treatment patterns in Danish women-A nationwide drug utilization study",
+      "source": "Br J Clin Pharmacol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42575876/",
+      "date": "2026-08-10",
+      "type": "paper"
+    },
+    {
+      "title": "Protocol for a randomised, double-blind, placebo-controlled clinical trial on the effects of high-dose vitamin B multivitamin supplementation with and without Passiflora incarnata on neural connectivity and oxidative metabolism in healthy adults",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595368/",
+      "date": "2026-08-13",
+      "type": "paper"
+    },
+    {
+      "title": "Access to essential medicines in Albania: a cross-sectional survey of availability, prices and affordability using the WHO/Health Action International (HAI) Global Core List",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595360/",
+      "date": "2026-08-13",
+      "type": "paper"
+    }
+  ]
+}
