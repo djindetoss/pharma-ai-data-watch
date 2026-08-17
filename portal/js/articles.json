@@ -69,6 +69,53 @@
     "badge": "Tech"
   },
   {
+    "id": "nws-bdf266bc5d50",
+    "type": "news",
+    "title": "AI in drug discovery — what it is, where we stand and the path forward",
+    "excerpt": "Applications of artificial intelligence (AI) in drug discovery have attracted high interest in recent years, but evidence for clinically relevant impact so far is limited. This Perspective discusses potential reasons, including an insufficient focus on clinic…",
+    "source": "Nature.com",
+    "date": "2026-08-15",
+    "tags": [
+      "Drug discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41573-026-01496-2",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-447c79c5c7dd",
+    "type": "ainews",
+    "title": "Anthropic shares more details about how claude’s new watermarks will work | techcrunch",
+    "excerpt": "How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?",
+    "source": "TechCrunch",
+    "date": "2026-08-15",
+    "tags": [
+      "LLM",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-65b31f5229f5",
+    "type": "ainews",
+    "title": "Amazon can use your twitch content to train its ai—unless you opt out",
+    "excerpt": "When Twitch announced that streamers could opt out, thousands of users questioned why their content was being used to train AI models in the first place.",
+    "source": "Wired",
+    "date": "2026-08-15",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
+    "badge": "AI Lab"
+  },
+  {
     "id": "nws-43c8c8260cd4",
     "type": "news",
     "title": "Datavault AI appoints ip industry pioneer dean becker as chief licensing officer",
@@ -623,6 +670,21 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/offbeat/2026/08/14/russian-missile-uses-nvidia-ai-chip-to-help-target-ukraine/5287976",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-af2af46d5d3a",
+    "type": "ainews",
+    "title": "Rogue AI aren’t science fiction anymore",
+    "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI safety, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started It all started…",
+    "source": "The Verge",
+    "date": "2026-08-14",
+    "tags": [
+      "AI safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
+    "badge": "AI Lab"
   },
   {
     "id": "nws-743ff85c3b48",
@@ -4799,75 +4861,5 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-1d4b851f5daf",
-    "type": "ainews",
-    "title": "Openai didn’t notice its AI agents using a message board to plan their hacking spree",
-    "excerpt": "At the Black Hat security conference, the AI giant revealed new details about how its agents went rogue, hacked several other companies—and did it all right under the company’s nose.",
-    "source": "Wired",
-    "date": "2026-08-06",
-    "tags": [
-      "AI agent",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/openai-didnt-notice-its-ai-agents-using-a-message-board-to-plan-their-hacking-spree/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-e2ff9aedaf4a",
-    "type": "paper",
-    "title": "Evaluation of patient centred digital adherence technology for tuberculosis treatment outcomes: pragmatic randomised controlled trial",
-    "excerpt": "A pragmatic randomised controlled trial evaluated patient-centred digital adherence technology for improving tuberculosis treatment outcomes. The study, published in BMJ in August 2026, assessed the effectiveness of digital tools designed to support patient adherence to tuberculosis therapy in real-world clinical settings.",
-    "source": "BMJ",
-    "date": "2026-08-06",
-    "tags": [
-      "Tuberculosis",
-      "Digital Health",
-      "Patient Adherence",
-      "Randomised Controlled Trial"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42562413/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-7d2a96b7ed34",
-    "type": "paper",
-    "title": "Artificial Intelligence and Antimicrobial Stewardship: From Clinical Decision Support to Public Health Action",
-    "excerpt": "This article examines the application of artificial intelligence in antimicrobial stewardship, covering its role in clinical decision support systems and broader public health interventions. The work addresses how AI-driven approaches can improve prescribing practices and support stewardship programs across clinical and population health settings. The paper represents a multidisciplinary perspective from infectious disease specialists and public health experts across global regions.",
-    "source": "J Glob Antimicrob Resist",
-    "date": "2026-08-06",
-    "tags": [
-      "Artificial Intelligence",
-      "Antimicrobial Stewardship",
-      "Clinical Decision Support",
-      "Public Health"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42562315/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-a1695d63b958",
-    "type": "news",
-    "title": "FDA Approves New Engineered Viral Immunotherapy for Patients with Treatment-Resistant Advanced Melanoma",
-    "excerpt": "The U.S. Food and Drug Administration today granted accelerated approval to Tudriqev (vusolimogene oderparepvec-wtpg), a genetically modified oncolytic viral therapy for the treatment of advanced, refractory melanoma.",
-    "source": "FDA",
-    "date": "2026-08-06",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-new-engineered-viral-immunotherapy-patients-treatment-resistant-advanced-melanoma",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
