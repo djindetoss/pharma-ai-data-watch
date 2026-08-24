@@ -1,0 +1,1034 @@
+{
+  "id": "2026-W35",
+  "weekLabel": "Week 35 — August 24, 2026",
+  "weekStart": "2026-08-24",
+  "weekEnd": "2026-08-24",
+  "generatedAt": "2026-08-24T08:10:44.659Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "FDA Approves First PROTAC Therapeutic for ESR1-Mutated Breast Cancer",
+    "standfirst": "Vepdegestrant (ARV-471) marks the first FDA approval of a PROTAC degrader for oncology, validating a novel modality that could reshape targeted cancer treatment and open new pathways for precision medicine in solid tumours.",
+    "body": "PROTACs (proteolysis-targeting chimaeras) represent a fundamentally different approach to drug action: rather than blocking protein function, they recruit target proteins for degradation. This approval signals regulatory confidence in the modality's safety and efficacy profile, with direct implications for trial design, pharmacovigilance strategies, and CMC considerations for future PROTAC submissions. For development teams, this creates precedent for expedited pathways and clarifies EMA/FDA expectations around degrader kinetics, cellular selectivity, and off-target degradation assessments. The mechanism also offers therapeutic advantages in hormone-driven cancers where resistance mutations (like ESR1) previously limited endocrine therapies.",
+    "sourceIndices": [
+      36
+    ],
+    "sources": [
+      {
+        "title": "The PROTAC milestone: FDA approval of vepdegestrant (ARV-471) for ESR1-mutated breast cancer",
+        "source": "Drug Discov Today",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42603649/",
+        "date": "2026-08-15",
+        "type": "paper"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "Agentic AI systems pose emerging security risks across healthcare workflows",
+          "body": "Nature's comprehensive review examines how LLM deployment in clinical settings creates novel attack surfaces—from prompt injection and model poisoning during development through to inference-time manipulation and data exfiltration. For pharma and regulatory professionals, this means pharmacovigilance systems, eClinical platforms, and RWE analytics powered by LLMs now require security architectures beyond traditional software controls: adversarial testing, continuous monitoring for jailbreak attempts, and explicit governance of model update cycles.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Safety and security of large language models in healthcare",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10687-1",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Anthropic implements AI-generated text watermarking across translation and summarization",
+          "body": "Anthropic's watermarking technology now persists through transformative operations (translations, edits, summaries), significantly exceeding competitors' capabilities. For regulatory documentation and clinical trial materials—where distinguishing human-authored from AI-assisted content may become a compliance requirement—this transparency mechanism establishes infrastructure that could become a de facto audit standard for GenAI-assisted regulatory submissions.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Why anthropic’s AI watermark is going further than its rivals — for now",
+              "source": "Business Insider",
+              "url": "https://www.businessinsider.com/why-anthropic-claude-text-ai-watermark-rivals-eu-law-2026-8#article",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Agentic AI agents require structured specification frameworks for enterprise deployment",
+          "body": "Modern analyst frameworks propose five specification approaches (Agentic Requirements Stack, Autonomy Boundary Canvas, Tool Contract Specification) for defining agent behaviour boundaries and tool access. Development teams using autonomous systems for trial data processing, ADME prediction orchestration, or regulatory intelligence triage need explicit contracts defining agent decision authority, rollback mechanisms, and human approval gates—critical for audit trails and regulatory oversight.",
+          "sourceIndices": [
+            49
+          ],
+          "sources": [
+            {
+              "title": "The business analyst's guide to agentic AI requirements",
+              "source": "Modernanalyst.com",
+              "url": "https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/7213/The-Business-Analysts-Guide-to-Agentic-AI-Requirements.aspx",
+              "date": "2026-08-23",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI agent firewall tools scan for exfiltration and prompt injection vulnerabilities",
+          "body": "Open-source platforms like Pipelock v3.4.0 now monitor HTTP, MCP, and WebSocket traffic from AI agents, detecting SSRF attacks and generating signed audit receipts. For CROs and sponsors deploying agents in clinical data systems, this represents the emerging security stack: agents require perimeter monitoring, not just internal guardrails, with cryptographic proof of action provenance.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "Pipelock v3.4.0",
+              "source": "Kitploit.com",
+              "url": "https://kitploit.com/en/posts/github-luckypipewrench-pipelock-v340",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Agentic data platforms automate Bronze-to-Gold ELT pipelines within hours",
+          "body": "AWS's Agentic Data Operations Platform (ADOP) delegates data transformation workflows to specialized AI agents, dramatically reducing engineering effort for RWD harmonization and OMOP standardization. For data governance teams managing Darwin EU or EMA registries, this accelerates the path from raw claims data to analysis-ready datasets—but introduces new compliance questions around agent-driven data lineage and transformation provenance.",
+          "sourceIndices": [
+            55
+          ],
+          "sources": [
+            {
+              "title": "Agentic data operations platform (adop): data engineering into hours",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours/",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Governed agent-to-tool access models mature without infrastructure consolidation",
+          "body": "Amazon Bedrock's AgentCore Gateway enforces a four-scope maturity model (Connect→Control→Certify→Comply) for auditable agent access to enterprise systems without forcing centralization. Clinical trials and pharmacovigilance platforms can now grant agents granular permissions to EHR APIs, LIMS, and statistical platforms while maintaining federated control and audit compliance.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "Govern AI agent tool access with amazon bedrock agentcore gateway",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI labs acquire pre-2022 training data to circumvent model contamination",
+          "body": "Frontier labs are now purchasing older book collections and avoiding internet-derived training data to prevent 'AI slop' contamination—a sign that training data curation has become a competitive and compliance priority. For pharma, this suggests future frontier models trained on curated, non-internet-derived datasets may offer higher quality for domain-specific tasks like ADMET prediction or pharmacovigilance signal detection.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "The house doesn’t publish its tells via @sejournal, @pedrodias",
+              "source": "Theinference.io",
+              "url": "https://theinference.io/p/the-house-doesnt-publish-its-tells",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Cybersecurity considerations for LLM-enabled medical devices require dynamic governance",
+          "body": "Frontier LLMs in clinical deployment are now viewed as continuous security systems requiring adaptive threat detection, not static software. Organizations deploying GenAI in diagnostic support, clinical trial matching, or pharmacovigilance need real-time monitoring frameworks analogous to medical device cybersecurity guidance—with versioned model release schedules and adversarial robustness testing.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Agentic AI and cybersecurity, the story so far",
+              "source": "Nature Machine Intelligence",
+              "url": "https://www.nature.com/articles/s42256-026-01301-0",
+              "date": "2026-08-18",
+              "type": "ainews"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA issues discussion paper on GenAI-enabled medical device regulatory approach",
+          "body": "The FDA has launched a formal public feedback period on how to regulate generative AI integrated into medical devices—addressing validation, algorithm change protocols, and real-world performance monitoring. Developers of AI/ML-driven diagnostic, monitoring, or therapeutic devices should expect new guidance within 12–18 months; this window provides opportunity to shape requirements around training data documentation, model versioning, and continuous learning safeguards.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "FDA Seeks Public Feedback to Inform Regulatory Approach for Generative AI-Enabled Medical Devices",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices",
+              "date": "2026-08-18",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA approves first standalone robotic blood-draw device without hands-on operator",
+          "body": "The Aletta device authorization marks regulatory acceptance of fully autonomous phlebotomy—eliminating operator-dependent variability and enabling remote or home-based specimen collection. For clinical trial sponsors and CROs, this opens pathways for decentralized trials with standardized biospecimen acquisition; RoI improves particularly in rare disease or geographically dispersed populations.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "FDA Authorizes First-Of-Its-Kind Robotic Blood Draw Device",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-authorizes-first-its-kind-robotic-blood-draw-device",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA grants accelerated approval for first GSD Type Ia gene therapy in children",
+          "body": "Genglycos (pariglasgene brecaparvovec-opnr) becomes the first approved treatment for glycogen storage disease Type Ia, setting precedent for rare monogenic disorder therapies in paediatric populations. For regulatory scientists, this approval demonstrates FDA's confidence in accelerated pathways for gene therapies with clear biomarker-driven efficacy endpoints and long-term follow-up protocols appropriate to pediatric pharmacovigilance.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Therapy for Patients aged 8 years and older with Glycogen Storage Disease Type Ia",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-therapy-patients-aged-8-years-and-older-glycogen-storage-disease-type-ia",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Nordic AI-Health Initiative builds cross-border health data infrastructure",
+          "body": "Scandinavia's coordinated platform leverages multimodal longitudinal health datasets for AI model training while respecting GDPR and national data governance frameworks. This model—combining real-world evidence standardization, federated analytics, and transparent algorithm governance—offers a blueprint for EMA-harmonized RWE ecosystems across EU member states.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "An ai-health infrastructure for the nordic region: technical foundations, data assets, and a roadmap for deployment",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04575-4",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "New Jersey Fair Price Protection Act bans autonomous pricing without agent liability",
+          "body": "The FPPA (effective 2026) imposes product liability on developers of autonomous pricing agents, even without explicit 'agent' naming—a watershed shift in AI governance. Pharma companies deploying dynamic pricing algorithms, supply chain optimization, or patient access programs must now conduct algorithmic impact assessments and retain liability insurance for autonomous decision systems.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "Three states banned agent pricing without naming agents",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/three-states-banned-agent-pricing-without-naming-agents/",
+              "date": "2026-08-22",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FTC enforcement actions on AI focus on marketing claims, not agent autonomy",
+          "body": "Of 13 FTC actions under Operation AI Comply, all target deceptive marketing—not agentic behavior per se. This regulatory gap suggests that autonomous system governance will shift from consumer protection to pharmaceutical and medical device frameworks; expect EMA/FDA guidance on algorithm governance and agent decision authority within pharma-specific contexts.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "The ftc has policed 13 AI cases. none target agent behavior.",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/the-ftc-has-policed-13-ai-cases-none-target-agent-behavior/",
+              "date": "2026-08-22",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Global AI ethical principles evolve: Korean framework updated after five years",
+          "body": "Korea's revised AI ethics guidance reflects hardened concerns about algorithmic harm and dual-use risks. Pharma organizations operating in Asia-Pacific markets should anticipate convergent regional requirements: explainability mandates for clinical AI, bias auditing for diagnostic algorithms, and transparent governance of agent-driven clinical decisions.",
+          "sourceIndices": [
+            59
+          ],
+          "sources": [
+            {
+              "title": "Supplementing korean artificial intelligence ethical principles: a five-year update",
+              "source": "Plos.org",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0356766",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU tech regulation and AI governance informed by corporate lobbying before Ireland presidency",
+          "body": "Leaked correspondence reveals major tech firms influencing EU AI Act interpretation during Ireland's presidency. Regulatory professionals should monitor ongoing EMA guidance revisions on GenAI-enabled clinical software; lobbying activity suggests ongoing alignment discussions between regulators and industry on safe harbor criteria and compliance timelines.",
+          "sourceIndices": [
+            53
+          ],
+          "sources": [
+            {
+              "title": "Details of taoiseach’s correspondence with tech giant apple withheld on security grounds",
+              "source": "The Irish Times",
+              "url": "https://www.irishtimes.com/politics/2026/08/21/details-of-taoiseachs-correspondence-with-tech-giant-apple-withheld-on-security-grounds/",
+              "date": "2026-08-21",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Skeptical science and marine ecosystem data inform environmental risk assessment",
+          "body": "Open-access research on climate-driven ecosystem collapse informs environmental pharmacovigilance and safety data where water-quality or ecosystem degradation affects drug safety monitoring. For sponsors of trials in coastal regions or dependent on marine-derived APIs, this signals emerging ESG pressures on environmental impact assessment.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "Skeptical science new research for week #34 2026",
+              "source": "Skepticalscience.com",
+              "url": "https://skepticalscience.com/new_research_2026_34.html",
+              "date": "2026-08-20",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI governance frameworks require alignment across regulatory and enterprise policy",
+          "body": "Coordinated regulatory action (FDA, EMA, national authorities) on AI-enabled devices and autonomous systems demands enterprise compliance architectures spanning legal, quality, and digital governance. Development teams must now treat algorithm governance as a regulatory obligation parallel to GMP—with validation dossiers, traceability, and change control protocols.",
+          "sourceIndices": [
+            50
+          ],
+          "sources": [
+            {
+              "title": "Aigars mahinovs: optimistic take on AI",
+              "source": "Aigarius.com",
+              "url": "http://aigarius.com/blog/2026/08/22/optimistic-take-on-ai/",
+              "date": "2026-08-22",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "AI-enhanced virtual screening identifies ClC-3 modulator for cervical cancer",
+          "body": "Researchers deployed AI-accelerated molecular docking to target ClC-3 chloride channels, identifying novel leads with rapid hit-to-lead progression. This workflow exemplifies modern drug discovery: AI-ranked virtual libraries collapse screening timelines from months to weeks, enabling parallel structure-activity relationship (SAR) exploration and reducing reliance on high-throughput screening infrastructure.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "AI-enhanced virtual screening identifies a potent small-molecule modulator of ClC-3 for cervical cancer drug discovery",
+              "source": "Front Bioinform",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42630437/",
+              "date": "2026-08-23",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "RNA language models predict small-molecule binding sites on therapeutic RNA",
+          "body": "GRASSP integrates transformer-based RNA encoders with graph neural networks to map ligand binding topology, advancing small-molecule-RNA interaction design. For antisense and siRNA programs, this capability opens rational design of RNA-targeting therapeutics without iterative biochemical screening—accelerating lead optimization in an emerging modality space.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "GRASSP: RNA Language Model-Enhanced Graph Attention with Adaptive Gating for RNA-Small Molecule Binding Site Prediction",
+              "source": "Bioinformatics",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42633564/",
+              "date": "2026-08-22",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Organ-on-chip integration with AI creates next-generation drug development platform",
+          "body": "Combining microphysiological systems with machine learning transforms lead optimization: AI models trained on organ-chip readouts (barrier function, metabolite flux, cytokine secretion) predict ADMET and toxicity with human-relevant phenotypes. This reduces animal studies, shortens IND-enabling data packages, and improves clinical translation—directly supporting regulatory expectations for human-centric evidence.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "The synergy of artificial intelligence and organ-on-a-chip: building a next-generation intelligent engine for drug development",
+              "source": "Int J Pharm",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42632580/",
+              "date": "2026-08-22",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Direct molecular editing of complex structures enables rapid scaffold optimization",
+          "body": "Novel methods for in situ modification of complex molecules bypass multistep synthesis, enabling rapid exploration of structure–property relationships. Drug discovery teams can now iterate scaffold designs faster, reducing preclinical synthesis burden and enabling earlier lead candidate selection for IND activities.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Direct Molecular Editing of Complex Molecules for Drug Discovery",
+              "source": "Angew Chem Int Ed Engl",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42633684/",
+              "date": "2026-08-23",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Proteogenomics reveals genetic drivers of protein abundance and disease susceptibility",
+          "body": "Integrated genomic-proteomic analysis uncovers how genetic variants influence disease-relevant protein levels, identifying novel therapeutic targets and patient stratification biomarkers. For precision medicine programs and biomarker-driven trial design, this framework accelerates target validation and companion diagnostic development.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Proteogenomics in human populations",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41576-026-00998-4",
+              "date": "2026-08-20",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "PROTAC therapeutic vepdegestrant wins FDA approval for ESR1-mutated breast cancer",
+          "body": "ARV-471's approval establishes PROTAC degraders as a validated modality, shifting oncology from enzyme inhibition toward protein degradation. Development teams can now design degrader programs with regulatory clarity on pharmacokinetics, off-target degradation profiling, and resistance mechanisms—opening new therapeutic windows in hormone-driven and mutation-driven cancers.",
+          "sourceIndices": [
+            36
+          ],
+          "sources": [
+            {
+              "title": "The PROTAC milestone: FDA approval of vepdegestrant (ARV-471) for ESR1-mutated breast cancer",
+              "source": "Drug Discov Today",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42603649/",
+              "date": "2026-08-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI agents orchestrate precision medicine workflows and biomarker-driven patient matching",
+          "body": "Autonomous AI systems now coordinate target discovery, biomarker identification, and patient stratification for personalized oncology trials. This 'agentic' workflow reduces human coordination overhead in complex adaptive trial designs and enables real-time cohort rebalancing based on emerging safety or efficacy signals.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "Artificial intelligence agents and agentic artificial intelligence applied to precision medicine",
+              "source": "Drug Discov Today",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42617946/",
+              "date": "2026-08-19",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI predicts neoadjuvant chemotherapy response in gastric cancer with meta-analytic strength",
+          "body": "A systematic review and meta-analysis confirms that ML-based treatment response prediction achieves clinically meaningful accuracy in gastric cancer, validating AI as a clinical decision support tool. For oncology sponsors, this establishes evidence for incorporating predictive algorithms into adaptive trial protocols and treatment selection logic.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Artificial intelligence-driven prediction of neoadjuvant chemotherapy response in adult patients with gastric cancer: a systematic review and meta-analysis",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42624598/",
+              "date": "2026-08-19",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Patient experience data transforms clinical trial design and outcome measurement",
+          "body": "Real-world patient-reported data now informs endpoint selection, recruitment strategy, and trial conduct planning. Integrating PRO data, patient burden assessments, and adherence metrics at the protocol design stage improves retention, reduces dropouts, and strengthens regulatory submissions with patient-centric evidence.",
+          "sourceIndices": [
+            34
+          ],
+          "sources": [
+            {
+              "title": "Patient experience data as a methodological and strategic innovation in clinical trial design",
+              "source": "Drug Discov Today",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42612719/",
+              "date": "2026-08-18",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Light-based therapies (photodynamic and photothermal) show promise for cancer treatment",
+          "body": "Photodynamic and photothermal therapies exploit light-sensitive compounds to induce localized tumor destruction, offering precise, non-systemic approaches to oncology. This review clarifies mechanisms and clinical translation pathways, supporting development of light-activated prodrugs and combination strategies with systemic therapeutics.",
+          "sourceIndices": [
+            31
+          ],
+          "sources": [
+            {
+              "title": "Light-Induced Cancer Therapy",
+              "source": "Chimia (Aarau)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42633631/",
+              "date": "2026-08-19",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "Moderna's personalized cancer vaccine prevents melanoma recurrence in trial",
+          "body": "Phase 2b data shows that personalized mRNA cancer vaccines reduce melanoma recurrence risk, validating patient-specific immunotherapy approaches. For sponsors developing similar personalized medicine platforms, this trial demonstrates the feasibility of rapid manufacturing, biomarker-driven patient selection, and adaptive trial designs—offering a blueprint for next-generation cancer immunotherapy programs.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Moderna cancer vaccine stops melanoma returning: what’s next for personalized treatments?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-02612-3",
+              "date": "2026-08-20",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-guided liver malignancy diagnosis (LiON) validated in multicenter trial",
+          "body": "A contrast-enhanced CT AI system integrating multiphase imaging and clinical data achieves diagnostic accuracy approaching radiologist performance across multiple centers. For imaging-based diagnostic trials and pharmacovigilance (e.g., detecting AI-era drug-induced liver injury), this demonstrates the clinical utility and generalizability of AI diagnostic support systems.",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "Large-scale ai-guided liver malignancy diagnosis: multicenter study and a single-arm trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04589-y",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "hiPSC-derived cardiomyocytes show safety and early efficacy in heart failure",
+          "body": "An early-stage randomized trial of intramyocardial hiPSC-cardiomyocyte injection demonstrates feasibility and preliminary efficacy signals in advanced ischemic heart failure. This trial design—combining regenerative medicine, cell therapy manufacturing, and functional cardiac imaging—establishes pathways for scaling hiPSC-based therapies through GMP manufacturing and expanded clinical programs.",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "Intramyocardial injection of allogeneic human induced pluripotent stem cell-derived cardiomyocytes in advanced ischemic heart failure: an early-stage randomized trial",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04605-1",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-driven image analysis accelerates stem cell-derived model characterization",
+          "body": "Machine learning-based phenotyping of stem cell-derived tissues (organoids, cardiomyocytes, neural networks) reduces manual microscopy burden and quantifies morphological endpoints with high throughput. This capability accelerates preclinical differentiation protocols, quality control for cell therapy manufacturing, and predictive modeling of drug effects on complex tissue systems.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "From pixels to patterns: the AI revolution in stem cell-derived models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03202-x",
+              "date": "2026-08-14",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Real-world analysis of Japanese neuroendocrine tumors using JMDC claims database",
+          "body": "A nationwide RWE study leverages Japan's Medical Data Center claims data to characterize NET epidemiology, treatment patterns, and outcomes. For sponsors planning RWE studies in Asia-Pacific, this demonstrates the feasibility of large-scale claims-based analyses within stringent Japanese data governance frameworks and establishes precedent for PMDA data submissions.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Nationwide real-world analysis of neuroendocrine tumors in japan using the jmdc claims database",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-67292-5.pdf",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Kernel-based nonparametric inference modernizes causal effect estimation in genomics",
+          "body": "Advanced statistical methods now enable robust estimation of causal genetic effects without parametric assumptions, improving power in polygenic trait discovery. For biomarker and genomic medicine programs, this framework strengthens genotype-phenotype mapping and supports personalized medicine algorithms grounded in causal genomic inference.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Kernel-based nonparametric inference: a modern framework for robust statistical learning",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-66456-7.pdf",
+              "date": "2026-08-19",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Causal SNP effect correlations vary by functional annotation and implicate stabilizing selection",
+          "body": "A genome-wide analysis reveals that causal effect sizes of proximal SNPs correlate differently depending on functional annotation (regulatory, coding, intronic)—informing target prioritization in drug discovery. For precision medicine teams building polygenic risk scores or biomarker panels, this enables functional stratification of genetic variants and improves signal detection.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "Correlations between causal effect sizes of proximal snps vary with functional annotations and implicate stabilizing selection",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02712-w",
+              "date": "2026-08-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Nationwide Iranian prescribing analysis reveals inappropriate medication patterns in elderly",
+          "body": "A claims-based audit of Iran's health insurance data identifies systematic polypharmacy and potentially inappropriate drug use in older adults, highlighting data standardization challenges and pharmacovigilance gaps. For sponsors seeking to strengthen RWD governance in emerging markets, this study exemplifies how standardized claims analysis can drive regulatory and clinical practice improvements.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "Potentially inappropriate prescribing in Iranian elderly population: a nationwide claims-based analysis",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42624577/",
+              "date": "2026-08-19",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Essential medicines availability and affordability disparities documented across Albania",
+          "body": "A WHO/HAI survey of Albanian pharmacies quantifies access barriers using standardized pricing and availability metrics. For organizations planning manufacturing, distribution, or patient access programs in Eastern Europe, this data informs realistic market dynamics and regulatory negotiation strategies.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "Access to essential medicines in Albania: a cross-sectional survey of availability, prices and affordability using the WHO/Health Action International (HAI) Global Core List",
+              "source": "BMJ Open",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42595360/",
+              "date": "2026-08-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Kernel-based covariate similarity enables seamless Phase I-II cancer trial designs",
+          "body": "Statistical methods leveraging kernel-based similarity metrics allow flexible early-phase trial designs that adapt cohort assignment based on baseline characteristics—aligning with FDA Project Optimus goals. For oncology sponsors, this enables more efficient patient allocation, shorter timelines to MTD/RDE, and reduced trial burden.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Seamless Phase I-II Cancer Clinical Trials Using Kernel-Based Covariate Similarity",
+              "source": "Pharm Stat",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42629327/",
+              "date": "2026-08-22",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "lncRNA biomarker discovery requires controlling for abundance, composition, and temporal artefacts",
+          "body": "Robust methodology for confound-aware long non-coding RNA studies separates true disease associations from technical biases in RNA-seq data. For biomarker development programs using lncRNA targets (antisense, RNA therapeutics), this framework ensures discovery validity and strengthens regulatory dossiers with controlled, reproducible biomarker qualification.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Confound-aware lncRNA genomics: Separating biology from abundance, composition, and temporal artefacts",
+              "source": "Biotechnol Adv",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42633884/",
+              "date": "2026-08-23",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Decentralized clinical trials shift oncology from site-centered to patient-centered models",
+          "body": "A comprehensive review of decentralized oncology trial designs addresses recruitment, remote monitoring, specimen collection, and patient safety infrastructure. For sponsors planning DCTs in oncology, this establishes best practices for maintaining trial integrity while improving accessibility, particularly for geographically isolated or mobility-limited populations.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "From Site-Centered to Patient-Centered: Promises and Challenges of Decentralized Clinical Trials in Oncology",
+              "source": "Crit Rev Oncol Hematol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42632492/",
+              "date": "2026-08-22",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Modified Delphi consensus establishes optimal intravitreal treatment pathway for diabetic macular edema",
+          "body": "UK ophthalmology experts defined evidence-based treatment algorithms for center-involving DME using structured consensus methodology. For pharmaceutical sponsors and HTA bodies, this demonstrates how Delphi approaches create clinically grounded, regionally adaptable treatment pathways that inform reimbursement strategies.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "Modified Delphi expert consensus on the optimal intravitreal treatment pathway for centre involving diabetic macular oedema patients within the National Health Service",
+              "source": "BMJ Open Ophthalmol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42624620/",
+              "date": "2026-08-20",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Advanced nanoformulations deliver rifampicin-berberine co-nanocrystals for intracellular tuberculosis",
+          "body": "Nanohydrogel and liposomal delivery of dual-drug combinations enhance macrophage targeting and intracellular TB drug bioavailability. For infectious disease programs, this formulation strategy demonstrates how nanotechnology and biopharmaceutical engineering overcome intracellular drug penetration barriers—relevant to CDMOs and CMC regulatory strategies.",
+          "sourceIndices": [
+            33
+          ],
+          "sources": [
+            {
+              "title": "Towards macrophage-oriented Antituberculosis therapy: nanohydrogel and liposomal delivery of rifampicin-berberine Co-nanocrystals for enhanced intracellular Antituberculosis activity",
+              "source": "Eur J Pharm Biopharm",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42612927/",
+              "date": "2026-08-18",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week consolidates two critical inflection points: regulatory acceptance of novel modalities (PROTAC degraders, autonomous medical devices) and advancing governance frameworks for agentic AI in healthcare. Pharma professionals must simultaneously prepare for new therapeutic mechanisms entering clinical development while embedding algorithmic governance—including audit trails, tool access controls, and agent decision boundaries—into standard operating procedures for trial conduct, pharmacovigilance, and data analysis. The regulatory landscape is hardening around algorithmic liability and transparency, making proactive compliance investments in AI governance immediate operational priorities.",
+  "allSources": [
+    {
+      "title": "The PROTAC milestone: FDA approval of vepdegestrant (ARV-471) for ESR1-mutated breast cancer",
+      "source": "Drug Discov Today",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42603649/",
+      "date": "2026-08-15",
+      "type": "paper"
+    },
+    {
+      "title": "Safety and security of large language models in healthcare",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10687-1",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "Why anthropic’s AI watermark is going further than its rivals — for now",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/why-anthropic-claude-text-ai-watermark-rivals-eu-law-2026-8#article",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "The business analyst's guide to agentic AI requirements",
+      "source": "Modernanalyst.com",
+      "url": "https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/7213/The-Business-Analysts-Guide-to-Agentic-AI-Requirements.aspx",
+      "date": "2026-08-23",
+      "type": "news"
+    },
+    {
+      "title": "Pipelock v3.4.0",
+      "source": "Kitploit.com",
+      "url": "https://kitploit.com/en/posts/github-luckypipewrench-pipelock-v340",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "Agentic data operations platform (adop): data engineering into hours",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours/",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "Govern AI agent tool access with amazon bedrock agentcore gateway",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "The house doesn’t publish its tells via @sejournal, @pedrodias",
+      "source": "Theinference.io",
+      "url": "https://theinference.io/p/the-house-doesnt-publish-its-tells",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "Agentic AI and cybersecurity, the story so far",
+      "source": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/articles/s42256-026-01301-0",
+      "date": "2026-08-18",
+      "type": "ainews"
+    },
+    {
+      "title": "FDA Seeks Public Feedback to Inform Regulatory Approach for Generative AI-Enabled Medical Devices",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices",
+      "date": "2026-08-18",
+      "type": "news"
+    },
+    {
+      "title": "FDA Authorizes First-Of-Its-Kind Robotic Blood Draw Device",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-authorizes-first-its-kind-robotic-blood-draw-device",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Therapy for Patients aged 8 years and older with Glycogen Storage Disease Type Ia",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-therapy-patients-aged-8-years-and-older-glycogen-storage-disease-type-ia",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "An ai-health infrastructure for the nordic region: technical foundations, data assets, and a roadmap for deployment",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04575-4",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Three states banned agent pricing without naming agents",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/three-states-banned-agent-pricing-without-naming-agents/",
+      "date": "2026-08-22",
+      "type": "news"
+    },
+    {
+      "title": "The ftc has policed 13 AI cases. none target agent behavior.",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/the-ftc-has-policed-13-ai-cases-none-target-agent-behavior/",
+      "date": "2026-08-22",
+      "type": "news"
+    },
+    {
+      "title": "Supplementing korean artificial intelligence ethical principles: a five-year update",
+      "source": "Plos.org",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0356766",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "Details of taoiseach’s correspondence with tech giant apple withheld on security grounds",
+      "source": "The Irish Times",
+      "url": "https://www.irishtimes.com/politics/2026/08/21/details-of-taoiseachs-correspondence-with-tech-giant-apple-withheld-on-security-grounds/",
+      "date": "2026-08-21",
+      "type": "news"
+    },
+    {
+      "title": "Skeptical science new research for week #34 2026",
+      "source": "Skepticalscience.com",
+      "url": "https://skepticalscience.com/new_research_2026_34.html",
+      "date": "2026-08-20",
+      "type": "news"
+    },
+    {
+      "title": "Aigars mahinovs: optimistic take on AI",
+      "source": "Aigarius.com",
+      "url": "http://aigarius.com/blog/2026/08/22/optimistic-take-on-ai/",
+      "date": "2026-08-22",
+      "type": "news"
+    },
+    {
+      "title": "AI-enhanced virtual screening identifies a potent small-molecule modulator of ClC-3 for cervical cancer drug discovery",
+      "source": "Front Bioinform",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42630437/",
+      "date": "2026-08-23",
+      "type": "paper"
+    },
+    {
+      "title": "GRASSP: RNA Language Model-Enhanced Graph Attention with Adaptive Gating for RNA-Small Molecule Binding Site Prediction",
+      "source": "Bioinformatics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42633564/",
+      "date": "2026-08-22",
+      "type": "paper"
+    },
+    {
+      "title": "The synergy of artificial intelligence and organ-on-a-chip: building a next-generation intelligent engine for drug development",
+      "source": "Int J Pharm",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42632580/",
+      "date": "2026-08-22",
+      "type": "paper"
+    },
+    {
+      "title": "Direct Molecular Editing of Complex Molecules for Drug Discovery",
+      "source": "Angew Chem Int Ed Engl",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42633684/",
+      "date": "2026-08-23",
+      "type": "paper"
+    },
+    {
+      "title": "Proteogenomics in human populations",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41576-026-00998-4",
+      "date": "2026-08-20",
+      "type": "news"
+    },
+    {
+      "title": "Artificial intelligence agents and agentic artificial intelligence applied to precision medicine",
+      "source": "Drug Discov Today",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42617946/",
+      "date": "2026-08-19",
+      "type": "paper"
+    },
+    {
+      "title": "Artificial intelligence-driven prediction of neoadjuvant chemotherapy response in adult patients with gastric cancer: a systematic review and meta-analysis",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624598/",
+      "date": "2026-08-19",
+      "type": "paper"
+    },
+    {
+      "title": "Patient experience data as a methodological and strategic innovation in clinical trial design",
+      "source": "Drug Discov Today",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612719/",
+      "date": "2026-08-18",
+      "type": "paper"
+    },
+    {
+      "title": "Light-Induced Cancer Therapy",
+      "source": "Chimia (Aarau)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42633631/",
+      "date": "2026-08-19",
+      "type": "paper"
+    },
+    {
+      "title": "Moderna cancer vaccine stops melanoma returning: what’s next for personalized treatments?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-02612-3",
+      "date": "2026-08-20",
+      "type": "news"
+    },
+    {
+      "title": "Large-scale ai-guided liver malignancy diagnosis: multicenter study and a single-arm trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04589-y",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "Intramyocardial injection of allogeneic human induced pluripotent stem cell-derived cardiomyocytes in advanced ischemic heart failure: an early-stage randomized trial",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04605-1",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "From pixels to patterns: the AI revolution in stem cell-derived models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03202-x",
+      "date": "2026-08-14",
+      "type": "news"
+    },
+    {
+      "title": "Nationwide real-world analysis of neuroendocrine tumors in japan using the jmdc claims database",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-67292-5.pdf",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "Kernel-based nonparametric inference: a modern framework for robust statistical learning",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-66456-7.pdf",
+      "date": "2026-08-19",
+      "type": "news"
+    },
+    {
+      "title": "Correlations between causal effect sizes of proximal snps vary with functional annotations and implicate stabilizing selection",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02712-w",
+      "date": "2026-08-13",
+      "type": "news"
+    },
+    {
+      "title": "Potentially inappropriate prescribing in Iranian elderly population: a nationwide claims-based analysis",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624577/",
+      "date": "2026-08-19",
+      "type": "paper"
+    },
+    {
+      "title": "Access to essential medicines in Albania: a cross-sectional survey of availability, prices and affordability using the WHO/Health Action International (HAI) Global Core List",
+      "source": "BMJ Open",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595360/",
+      "date": "2026-08-13",
+      "type": "paper"
+    },
+    {
+      "title": "Seamless Phase I-II Cancer Clinical Trials Using Kernel-Based Covariate Similarity",
+      "source": "Pharm Stat",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42629327/",
+      "date": "2026-08-22",
+      "type": "paper"
+    },
+    {
+      "title": "Confound-aware lncRNA genomics: Separating biology from abundance, composition, and temporal artefacts",
+      "source": "Biotechnol Adv",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42633884/",
+      "date": "2026-08-23",
+      "type": "paper"
+    },
+    {
+      "title": "From Site-Centered to Patient-Centered: Promises and Challenges of Decentralized Clinical Trials in Oncology",
+      "source": "Crit Rev Oncol Hematol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42632492/",
+      "date": "2026-08-22",
+      "type": "paper"
+    },
+    {
+      "title": "Modified Delphi expert consensus on the optimal intravitreal treatment pathway for centre involving diabetic macular oedema patients within the National Health Service",
+      "source": "BMJ Open Ophthalmol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624620/",
+      "date": "2026-08-20",
+      "type": "paper"
+    },
+    {
+      "title": "Towards macrophage-oriented Antituberculosis therapy: nanohydrogel and liposomal delivery of rifampicin-berberine Co-nanocrystals for enhanced intracellular Antituberculosis activity",
+      "source": "Eur J Pharm Biopharm",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612927/",
+      "date": "2026-08-18",
+      "type": "paper"
+    }
+  ]
+}
