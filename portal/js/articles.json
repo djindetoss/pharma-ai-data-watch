@@ -1,5 +1,200 @@
 [
   {
+    "id": "nws-70a94580a2ed",
+    "type": "news",
+    "title": "Novo nordisk expands its AI push with aws, but can it accelerate drug discovery?",
+    "excerpt": "Novo Nordisk A/S (NYSE:NVO) has entered a strategic partnership with Amazon Web Services to accelerate drug discovery and modernize its operations through artificial intelligence and cloud technology. The agreement establishes AWS as Novo Nordisk's preferred …",
+    "source": "Biztoc.com",
+    "date": "2026-08-24",
+    "tags": [
+      "Drug discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://biztoc.com/x/281886aef7321d40",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-952348d4b3fe",
+    "type": "news",
+    "title": "Andreessen horowitz is investing billions into a bleak future",
+    "excerpt": "The firm’s investment portfolio is full of companies that have exploited legal loopholes, created disturbing products, and broken the law.",
+    "source": "Modelrepublic.org",
+    "date": "2026-08-24",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.modelrepublic.org/articles/a16z-portfolio",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-51d8ae4e6bcb",
+    "type": "paper",
+    "title": "2-Year Patient-Centered and Clinical Outcomes of Sirolimus- Versus Paclitaxel-Coated Balloon Angioplasty in Femoropopliteal Artery Disease",
+    "excerpt": "This 2-year comparative study evaluates patient-reported and clinical outcomes following coated balloon angioplasty for femoropopliteal artery disease, comparing sirolimus-coated balloons with paclitaxel-coated balloons. The analysis includes both functional endpoints and quality-of-life measures in patients undergoing this peripheral arterial intervention.",
+    "source": "JACC Cardiovasc Interv",
+    "date": "2026-08-24",
+    "tags": [
+      "Peripheral Arterial Disease",
+      "Coated Balloon Angioplasty",
+      "Clinical Outcomes",
+      "Comparative Study"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42637297/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-06da931cf505",
+    "type": "paper",
+    "title": "Nanomedicine for pancreatitis therapy: mechanism-guided design and translational challenges",
+    "excerpt": "Nanomedicine approaches designed based on pancreatitis disease mechanisms show promise for therapeutic intervention, though significant translational challenges remain in advancing these technologies from laboratory development to clinical application.",
+    "source": "Int J Pharm",
+    "date": "2026-08-24",
+    "tags": [
+      "Nanomedicine",
+      "Pancreatitis",
+      "Drug Delivery",
+      "Translational Research"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42637060/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-baf5dd895029",
+    "type": "paper",
+    "title": "Breathing Life into Data: A Critical Review of Artificial Intelligence and Computational Modelling in COPD Precision Management",
+    "excerpt": "This critical review examines the application of artificial intelligence and computational modelling approaches in precision management of chronic obstructive pulmonary disease (COPD). The analysis evaluates how these computational technologies can be leveraged to optimize individualized treatment strategies and patient outcomes in COPD care.",
+    "source": "Respir Med",
+    "date": "2026-08-24",
+    "tags": [
+      "COPD",
+      "Artificial Intelligence",
+      "Computational Modelling",
+      "Precision Medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42636988/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-5d0bfd37efd5",
+    "type": "news",
+    "title": "FDA plans to regulate generative AI",
+    "excerpt": "New clues to RFK Jr.'s vaccine plans, a bottleneck for nurse practitioners, and more health news from Morning Rounds",
+    "source": "STAT News",
+    "date": "2026-08-24",
+    "tags": [
+      "Health",
+      "Morning Rounds",
+      "health care"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/08/24/health-news-fda-plans-to-regulate-generative-ai/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-0dbdca545ce0",
+    "type": "news",
+    "title": "STAT+: FDA digital health leader promises generative AI regulatory guidance is coming",
+    "excerpt": "FDA expects to issue guidance on policies regarding generative AI devices, according to Rick Abramson, the agency’s head of digital health policy.",
+    "source": "STAT News",
+    "date": "2026-08-24",
+    "tags": [
+      "Exclusive",
+      "Health tech",
+      "Artificial intelligence",
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-97614477a912",
+    "type": "ainews",
+    "title": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
+    "excerpt": "General Intuition, the startup building a foundation model that trains generalized AI agents how to move through space and time, is in talks to raise at a $6 billion pre-money valuation from new investors including Valor Ventures, Point72 Ventures, and Seven Seven Six.",
+    "source": "TechCrunch AI",
+    "date": "2026-08-24",
+    "tags": [
+      "AI",
+      "Fundraising",
+      "Venture",
+      "Exclusive"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-25d39522dc75",
+    "type": "ainews",
+    "title": "OpenAI is building AI agents for everything. Will everyone use them?",
+    "excerpt": "Inside the frontier lab’s push to bring AI agents from software engineers to the masses.",
+    "source": "TechCrunch AI",
+    "date": "2026-08-24",
+    "tags": [
+      "AI",
+      "Exclusive",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-b09e26ca9fd0",
+    "type": "ainews",
+    "title": "How to encourage smarter AI use in the classroom",
+    "excerpt": "This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox, sign up here. Chatbots took many schools by surprise upon their release a few years ago. Suddenly, students carried an app in their phones that could magically answer almost any&#8230;",
+    "source": "MIT Technology Review",
+    "date": "2026-08-24",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "artificial intelligence"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
+    "badge": "Research"
+  },
+  {
+    "id": "auto-3d1f34a6b2ee",
+    "type": "ainews",
+    "title": "Kids outlearn AI—and we still don’t know why",
+    "excerpt": "People have been talking to each other for at least 100,000 years, as best we can tell. And in all that time, there has been only one thing in the world that could learn a human language to perfect fluency: a human child.&#160; Now there are two.&#160; Four short years after the release of ChatGPT,&#8230;",
+    "source": "MIT Technology Review",
+    "date": "2026-08-24",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "Features and Investigations"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
+    "badge": "Research"
+  },
+  {
     "id": "auto-33301ea22473",
     "type": "paper",
     "title": "AI-enhanced virtual screening identifies a potent small-molecule modulator of ClC-3 for cervical cancer drug discovery",
@@ -87,6 +282,68 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-badd9a988784",
+    "type": "news",
+    "title": "Healthcare AI sandbox points to the next regulatory test: autonomous medicine",
+    "excerpt": "AI technology will only earn public trust if it is introduced through transparent evidence, robust oversight and clear accountability. Israel’s regulatory sandbox is therefore an important test case. \nThe post Healthcare AI sandbox points to the next regulato…",
+    "source": "Digital Journal",
+    "date": "2026-08-23",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.digitaljournal.com/article/healthcare-ai-sandbox-points-to-the-next-regulatory-test-autonomous-medicine/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-5ad64ac684f1",
+    "type": "news",
+    "title": "Why germany will soon be worse than mississippi",
+    "excerpt": "This macroeconomic documentary argues that Germany is experiencing a structural, irreversible deindustrialization due to a combination of self-imposed policy failures, high energy costs, and bureaucratic paralysis. The creator posits that Germany is essential…",
+    "source": "Freerepublic.com",
+    "date": "2026-08-23",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://freerepublic.com/focus/f-chat/4392830/posts",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-badce9233977",
+    "type": "ainews",
+    "title": "Is it legal to train AI models on copyrighted books? it’s complicated | techcrunch",
+    "excerpt": "Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods. That seems illegal, right?",
+    "source": "TechCrunch",
+    "date": "2026-08-23",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-bab230b853cb",
+    "type": "ainews",
+    "title": "Who's behind the new ‘stealth model’ ox alpha? | techcrunch",
+    "excerpt": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation.",
+    "source": "TechCrunch",
+    "date": "2026-08-23",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-85bf4fa67681",
@@ -4618,267 +4875,5 @@
     "url": "https://www.vitaminrush.com/396702/precision-nutrition-may-enhance-effectiveness-of-glp-1-drugs/",
     "badge": "Clinical AI",
     "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-e3e456117ee0",
-    "type": "news",
-    "title": "Fg charges mdas on compulsory data localisation",
-    "excerpt": "“Tightens rules on citizens’ personal data collection By Prince Osuagwu Nigeria has officially agreed that data is the new face of the country’s economic rennaissance after President, Bola Tinubu admitted that data is the new oil. The new development sees gov…",
-    "source": "Vanguard",
-    "date": "2026-08-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.vanguardngr.com/2026/08/fg-charges-mdas-on-compulsory-data-localisation/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-f42bff18db33",
-    "type": "news",
-    "title": "Pixel watch 5’s biggest new safety feature is also coming to pixel watch 4",
-    "excerpt": "Google has confirmed that Pixel Watch 5’s Breathing Emergency Detection is also coming to the Pixel Watch 4.",
-    "source": "Android Authority",
-    "date": "2026-08-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.androidauthority.com/pixel-watch-breathing-emergency-feature-availability-3698020/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-044fa4e917be",
-    "type": "news",
-    "title": "When will AI take my job?",
-    "excerpt": "Explore projected AI-driven unemployment across 725 U.S. occupations from 2025 to 2039.",
-    "source": "Whenwillaitakemyjob.ai",
-    "date": "2026-08-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://whenwillaitakemyjob.ai",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-b5d4bb874e29",
-    "type": "news",
-    "title": "Unemployment was the strongest single predictor of death and dementia in women Who went through early menopause",
-    "excerpt": "A study of 19,912 UK Biobank women with early menopause found unfavorable social conditions tied to a 75% higher death risk over about 11 years.",
-    "source": "Medical Daily",
-    "date": "2026-08-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.medicaldaily.com/early-menopause-social-determinants-mortality-dementia-study-477230",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-112357bdd20c",
-    "type": "news",
-    "title": "Correlations between causal effect sizes of proximal snps vary with functional annotations and implicate stabilizing selection",
-    "excerpt": "This study generates a method to detect correlation of causal complex trait effect sizes between proximal SNPs, finding variation by functional annotation and support for stabilizing selection, whereby proximal SNPs in positive linkage disequilibrium have eff…",
-    "source": "Nature.com",
-    "date": "2026-08-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41588-026-02712-w",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-e815c7c820f8",
-    "type": "ainews",
-    "title": "Cisco thinks mythos means instant death for unsupported networking kit",
-    "excerpt": "CEO says buyers are moving fast and shuffling budgets to replace old boxen",
-    "source": "Theregister.com",
-    "date": "2026-08-13",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/networks/2026/08/13/cisco-thinks-mythos-means-instant-death-for-unsupported-networking-kit/5287204",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-b096eded7ef8",
-    "type": "paper",
-    "title": "Protocol for a randomised, double-blind, placebo-controlled clinical trial on the effects of high-dose vitamin B multivitamin supplementation with and without Passiflora incarnata on neural connectivity and oxidative metabolism in healthy adults",
-    "excerpt": "This randomised, double-blind, placebo-controlled trial protocol evaluates the effects of high-dose vitamin B multivitamin supplementation, alone and in combination with Passiflora incarnata, on neural connectivity and oxidative metabolism in healthy adults. The study compares multiple treatment arms using validated measures of brain function and metabolic markers to assess whether these supplements influence neurological outcomes in the target population.",
-    "source": "BMJ Open",
-    "date": "2026-08-13",
-    "tags": [
-      "Clinical Trial Protocol",
-      "Vitamin B Supplementation",
-      "Neural Imaging",
-      "Metabolic Biomarkers"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42595368/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-110994d72306",
-    "type": "paper",
-    "title": "Access to essential medicines in Albania: a cross-sectional survey of availability, prices and affordability using the WHO/Health Action International (HAI) Global Core List",
-    "excerpt": "This cross-sectional survey assessed the availability, prices, and affordability of essential medicines in Albania using the WHO/Health Action International Global Core List as the reference standard. The study evaluated whether key medications were accessible and affordable to the Albanian population across pharmacy settings. Findings from this research provide data on medicine access gaps that can inform policy decisions for pharmaceutical regulation and healthcare planning in Albania.",
-    "source": "BMJ Open",
-    "date": "2026-08-13",
-    "tags": [
-      "Medicine Access",
-      "Albania",
-      "Drug Pricing",
-      "Affordability"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42595360/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-376134ac3635",
-    "type": "paper",
-    "title": "Artificial intelligence-driven transformation in the management of atypia of undetermined significance (AUS) thyroid nodules",
-    "excerpt": "Artificial intelligence is being applied to improve the clinical management of atypia of undetermined significance (AUS) thyroid nodules, a challenging diagnostic category. This AI-driven approach aims to transform decision-making in thyroid nodule classification and treatment planning. The review examines how artificial intelligence technologies are reshaping clinical workflows for patients with this indeterminate thyroid pathology.",
-    "source": "Crit Rev Oncol Hematol",
-    "date": "2026-08-13",
-    "tags": [
-      "Artificial Intelligence",
-      "Thyroid Nodules",
-      "AUS (Atypia of Undetermined Significance)",
-      "Diagnostic Tools"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42595195/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-f5702801d0f4",
-    "type": "paper",
-    "title": "Walnut (Juglans regia L.) as a Promising Antidiabetic Agent: Mechanistic, Preclinical, and Clinical Evidence",
-    "excerpt": "Walnut (Juglans regia L.) demonstrates potential as an antidiabetic agent based on mechanistic, preclinical, and clinical evidence, offering a possible therapeutic approach to address diabetes mellitus—a chronic metabolic disorder that remains a major global healthcare challenge despite existing treatment options. Current therapeutic strategies struggle to achieve sustained glycaemic control and prevent long-term complications, suggesting a need for novel interventions such as those offered by walnut supplementation.",
-    "source": "Drug Res (Stuttg)",
-    "date": "2026-08-13",
-    "tags": [
-      "Natural Products",
-      "Diabetes Management",
-      "Antidiabetic Agents",
-      "Clinical Evidence"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42594938/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-176350053a36",
-    "type": "paper",
-    "title": "Exploring treatment challenges in Whipple's disease: two case reports and review of the literature",
-    "excerpt": "This case report and literature review examines treatment challenges encountered in Whipple's disease, a rare infectious condition caused by Tropheryma whipplei. The analysis of two clinical cases alongside current evidence provides insights into diagnostic and therapeutic complexities that clinicians may encounter when managing this disease.",
-    "source": "Acta Clin Belg",
-    "date": "2026-08-13",
-    "tags": [
-      "Whipple's disease",
-      "Case reports",
-      "Treatment challenges",
-      "Rare disease"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42594858/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-a14be32cb10a",
-    "type": "news",
-    "title": "FDA Issues Emergency Use Authorization for Drug to Treat New World Screwworm in Dogs and Puppies",
-    "excerpt": "The U.S. Food and Drug Administration today issued an Emergency Use Authorization (EUA) for Simparica TRIO (sarolaner, moxidectin, and pyrantel chewable tablets) for the treatment of New World screwworm (NWS) infestations (myiasis) in dogs and puppies.",
-    "source": "FDA",
-    "date": "2026-08-13",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drug-treat-new-world-screwworm-dogs-and-puppies",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-a39423908de7",
-    "type": "news",
-    "title": "STAT+: Neurocrine Biosciences and the delicate balance of benefit and risk",
-    "excerpt": "When it comes to rare disease treatments, patients often confront a difficult risk-benefit calculus. Such is the case with a therapy from Neurocrine Biosciences.",
-    "source": "STAT News",
-    "date": "2026-08-13",
-    "tags": [
-      "Adam's Biotech Scorecard",
-      "Adam's Take",
-      "Biotech",
-      "biotechnology"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/08/13/neurocrine-biosciences-vykat-prader-willi-2/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-f5fe8fb06b00",
-    "type": "news",
-    "title": "STAT+: What patients actually think about ‘minimally invasive’ brain implants",
-    "excerpt": "A new study polled people with treatment-resistant depression about what matters to them when it comes to brain implants for mental health.",
-    "source": "STAT News",
-    "date": "2026-08-13",
-    "tags": [
-      "Health tech",
-      "Mental Health",
-      "patients",
-      "research"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/08/13/patient-perspectives-on-brain-implants-for-depression/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-a894d6a4673a",
-    "type": "ainews",
-    "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
-    "excerpt": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
-    "source": "TechCrunch AI",
-    "date": "2026-08-13",
-    "tags": [
-      "AI",
-      "Anthropic",
-      "ChatGPT",
-      "Claude"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-    "badge": "Tech"
   }
 ]
