@@ -1,5 +1,78 @@
 [
   {
+    "id": "auto-f3e85c1b3fd2",
+    "type": "paper",
+    "title": "Clinical Implementation of Pharmacogenetics-Based Machine Learning Clinical Decision Support Systems: A Scoping Review",
+    "excerpt": "This scoping review examines the clinical implementation of machine learning-based decision support systems that integrate pharmacogenetic data to guide medication selection and dosing. The study synthesizes evidence on how these systems are deployed in clinical practice to improve drug therapy outcomes by incorporating individual genetic factors. The review provides an overview of current approaches, barriers, and evidence supporting the real-world use of pharmacogenetics-informed machine learning tools in clinical settings.",
+    "source": "Appl Clin Inform",
+    "date": "2026-08-31",
+    "tags": [
+      "Pharmacogenetics",
+      "Machine Learning",
+      "Clinical Decision Support Systems",
+      "Implementation Science"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669295/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-72bb348466f1",
+    "type": "news",
+    "title": "STAT+: Can a pregnancy hormone steer a cardiovascular treatment?",
+    "excerpt": "Caution and survival in radiopharmaceuticals, mRNA skepticism, and more biotech news from The Readout",
+    "source": "STAT News",
+    "date": "2026-08-31",
+    "tags": [
+      "Biotech",
+      "Business",
+      "Pharma",
+      "The Readout"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/08/31/biotech-news-can-a-pregnancy-hormone-steer-a-cardiovascular-treatment/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-bce054d454ff",
+    "type": "news",
+    "title": "STAT+: Cadre of radiopharmaceuticals experts pushes the bounds in cancer therapy",
+    "excerpt": "Researchers believe radiopharmaceuticals have great promise as cancer treatments. But are they using them too timidly?",
+    "source": "STAT News",
+    "date": "2026-08-31",
+    "tags": [
+      "Biotech",
+      "biotechnology",
+      "Cancer",
+      "Pharmaceuticals"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/08/31/radiopharmaceuticals-dosing-pushing-bounds-cancer-treatment/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-4e578a60675f",
+    "type": "news",
+    "title": "Watermarks-remover v0.5.0",
+    "excerpt": "Strip multi-vendor AI provenance marks: Unicode text hygiene, statistical rewrite hooks, and C2PA/metadata from PNG/JPEG/SVG/PDF/DOCX/HTML/MD",
+    "source": "Kitploit.com",
+    "date": "2026-08-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://kitploit.com/en/posts/github-guillaumemeyer-watermarks-remover-v050",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
     "id": "nws-45e434c7c6ad",
     "type": "news",
     "title": "FDA seeks public input on regulating generative AI medical devices as healthcare enters a new era",
@@ -49,6 +122,69 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42668383/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-160a511db123",
+    "type": "news",
+    "title": "\"we're not doing 30 bets a year\": vijay pande on betting small after running $4 billion at a16z | techcrunch",
+    "excerpt": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expe…",
+    "source": "TechCrunch",
+    "date": "2026-08-29",
+    "tags": [
+      "Clinical trials",
+      "Biotech"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-bf408acb4970",
+    "type": "news",
+    "title": "Inside the modern day noah's ark built by a billionaire's son: sue reid visits the world's biggest wildlife sanctuary that has saved 150,000 animals from terrible suffering",
+    "excerpt": "The young cheetah lies unconscious on the operating table as the world's finest vets battle to mend her shattered back leg.",
+    "source": "Dailymail.com",
+    "date": "2026-08-29",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.dailymail.com/news/article-16089795/Noah-Ark-billionaire-Rihanna-SUE-REID-wildlife-sanctuary.html",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-a07c3116b1cc",
+    "type": "ainews",
+    "title": "Sony music, warner sue anthropic, alleging a \"brazen campaign\" of intellectual property theft | techcrunch",
+    "excerpt": "Sony Music, Warner sue Anthropic, alleging a \"brazen campaign\" of intellectual property theft | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-08-29",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-202512972a82",
+    "type": "ainews",
+    "title": "Sony music and warner chappell are suing anthropic",
+    "excerpt": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,0…",
+    "source": "The Verge",
+    "date": "2026-08-29",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+    "badge": "AI Lab"
   },
   {
     "id": "auto-3220ef60d513",
@@ -4737,138 +4873,5 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/ai-and-ml/2026/08/21/ai-companies-are-burning-books-advocates-complain-to-ftc/5291299",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-0b9f407261af",
-    "type": "news",
-    "title": "Daily briefing: personalized mrna vaccine shows promise for cancer",
-    "excerpt": "Good news from a trial of a vaccine against melanoma. Plus, the US NSF is set to issue its lowest number of new grants in forty years, and the living layer that protects and produces desert soils.",
-    "source": "Nature.com",
-    "date": "2026-08-21",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-02638-7",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-dbdfd7356a45",
-    "type": "news",
-    "title": "Proteogenomics in human populations",
-    "excerpt": "Proteogenomics integrates genomic and proteomic data to reveal how genetic variation influences protein abundance and contributes to human disease. In this Review, the authors focus on protein quantitative trait loci (pQTL), highlighting advances in pQTL mapp…",
-    "source": "Nature.com",
-    "date": "2026-08-20",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41576-026-00998-4",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-359e3ffe2c0c",
-    "type": "news",
-    "title": "Researcher, heal thyself: meet the scientists studying their own diseases",
-    "excerpt": "Studying a condition after being diagnosed with it can be rewarding but also presents some ethical and psychological challenges.",
-    "source": "Nature.com",
-    "date": "2026-08-20",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-02455-y",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-73cab53d8901",
-    "type": "news",
-    "title": "Skeptical science new research for week #34 2026",
-    "excerpt": "Open access notables\n\nMarine Heatwaves Overwhelm the Buffering Benefits of Marine Protected Areas: Two Decades of Collapse in a Mediterranean Gorgonian, Zentner et al., Global Change Biology\n\nMarine heatwaves (MHWs) are driving mass mortalities of coastal fou…",
-    "source": "Skepticalscience.com",
-    "date": "2026-08-20",
-    "tags": [
-      "AI benchmark"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://skepticalscience.com/new_research_2026_34.html",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-7ad32640c5ad",
-    "type": "news",
-    "title": "Moderna cancer vaccine stops melanoma returning: what’s next for personalized treatments?",
-    "excerpt": "Promising trial results suggest cancer vaccines work and could be used to target other tumours.",
-    "source": "Nature.com",
-    "date": "2026-08-20",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-02612-3",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-dbe33fa1cc33",
-    "type": "ainews",
-    "title": "Meta glasses are a workplace menace",
-    "excerpt": "In August, Toru Hinkle was stocking shelves at their job at Target when they noticed two customers and asked if they needed any help. The men requested a price check on an item - but even after Hinkle told them the item was $20, the customers asked for the pr…",
-    "source": "The Verge",
-    "date": "2026-08-20",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/report/982414/meta-glasses-work-surveillance-labor-security",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-b9bfac925182",
-    "type": "paper",
-    "title": "Modified Delphi expert consensus on the optimal intravitreal treatment pathway for centre involving diabetic macular oedema patients within the National Health Service",
-    "excerpt": "A modified Delphi consensus study of UK National Health Service ophthalmology experts established optimal intravitreal treatment pathways for centre-involving diabetic macular oedema. The study engaged multiple specialists to develop evidence-based consensus recommendations for managing this sight-threatening complication within the NHS healthcare setting.",
-    "source": "BMJ Open Ophthalmol",
-    "date": "2026-08-20",
-    "tags": [
-      "Diabetic Macular Oedema",
-      "Intravitreal Treatment",
-      "Expert Consensus",
-      "NHS Guidelines"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42624620/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-2d4dcc50dd1f",
-    "type": "news",
-    "title": "STAT+: FDA approves Ultragenyx gene therapy",
-    "excerpt": "Regeneron wins ultra-rare disease drug approval, a validating win for mRNA research, and more biotech news from The Readout",
-    "source": "STAT News",
-    "date": "2026-08-20",
-    "tags": [
-      "Biotech",
-      "Business",
-      "Pharma",
-      "The Readout"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/08/20/biotech-news-fda-approves-utlragenyx-gene-therapy/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
