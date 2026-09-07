@@ -1,0 +1,972 @@
+{
+  "id": "2026-W37",
+  "weekLabel": "Week 37 — September 7, 2026",
+  "weekStart": "2026-09-07",
+  "weekEnd": "2026-09-07",
+  "generatedAt": "2026-09-07T13:37:04.459Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "EU Designates ChatGPT Search Engine, Reshaping AI Platform Accountability",
+    "standfirst": "The European Commission's classification of ChatGPT as a Very Large Online Search Engine under the Digital Services Act fundamentally shifts liability frameworks for AI developers and will force material changes to how pharmaceutical and life sciences organizations evaluate third-party AI tool compliance.",
+    "body": "This designation exposes OpenAI to fines up to 6% of global revenue while establishing precedent that AI systems operating in regulated environments cannot claim platform immunity. For pharma regulatory and clinical teams, this means audit protocols for AI-assisted drug discovery, clinical decision support, and pharmacovigilance must now assume vendor accountability under EU law rather than relying on generic software liability clauses. The ruling signals that regulators view generative AI not as a neutral infrastructure layer but as a directly accountable service provider—a posture that will cascade into ICH guidance, EMA compliance frameworks, and internal R&D governance within 18–24 months. Organizations should immediately map AI tool usage against DSA requirements and begin vendor compliance audits.",
+    "sourceIndices": [
+      45
+    ],
+    "sources": [
+      {
+        "title": "The EU has regulated chatgpt as a search engine. calling it a platform would have handed openai a liability shield.",
+        "source": "The Next Web",
+        "url": "https://thenextweb.com/news/eu-chatgpt-vlose-designation-safe-harbour-gap",
+        "date": "2026-09-04",
+        "type": "news"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "EU CRA Article 14 Mandates 24-Hour Vulnerability Disclosure for AI Agents",
+          "body": "Beginning September 11, 2026, all AI agent products deployed in EU markets face mandatory reporting of actively exploited vulnerabilities within 24 hours, establishing first binding disclosure timeline for agentic systems. This creates immediate operational burden for pharma organizations using AI agents in clinical support, supply chain optimization, or regulatory intelligence workflows. Your AI governance framework must now include vulnerability scanning and escalation protocols aligned to CRA timelines or face regulatory exposure.",
+          "sourceIndices": [
+            49
+          ],
+          "sources": [
+            {
+              "title": "EU cra article 14 hits sep 11 — every AI agent product now has a 24-hour disclosure clock",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/eu-cra-article-14-hits-sep-11-every-ai-agent-product-now-has-a-24-hour-disclosure-clock/",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "ServiceNow Partnership Expands Commercial AI Agent Infrastructure at Scale",
+          "body": "Experian's deployment of AI-driven virtual assistants through ServiceNow integration signals enterprise-grade agent tooling now entering production across regulated sectors. This architectural pattern—managed agent runtime platforms powering business processes—will reshape how pharma organizations deploy clinical decision support and pharmacovigilance automation. Your enterprise AI strategy must evaluate whether legacy RPA approaches remain viable against purpose-built agent frameworks.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Experian expands into AI agents with servicenow partnership",
+              "source": "SiliconANGLE News",
+              "url": "https://siliconangle.com/2026/09/04/experian-expands-into-ai-agents-with-servicenow-partnership/",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Driven Development Lifecycle Patterns Accelerate Engineering Velocity",
+          "body": "Amazon Bedrock's AI-DLC reference implementations demonstrate how agentic systems can bridge concept-to-code cycles, reducing iteration time for translational research and regulatory evidence generation. Early adopters in computational chemistry and biostatistics are reporting 30–40% faster model validation cycles. This acceleration is moving from research proof-of-concept to production engineering; your R&D infrastructure roadmap should evaluate AI-native development patterns now.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "Ai-driven development lifecycle using amazon bedrock agentcore",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/machine-learning/ai-driven-development-lifecycle-using-amazon-bedrock-agentcore/",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Self-Hosted AI Agent Control Planes Enable Vulnerability Containment",
+          "body": "Prismor v1.44.0 and similar runtime governance solutions now allow pharma organizations to intercept agentic tool calls before execution, blocking prompt injection attacks and credential leakage before they propagate. This local-first architecture is particularly relevant for GxP environments and clinical trial data workflows. Deploying control-plane-enforced approval loops can satisfy emerging compliance expectations without external vendor dependency.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "Prismor v1.44.0",
+              "source": "Kitploit.com",
+              "url": "https://kitploit.com/en/posts/github-prismorsec-prismor-v1440",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Cryptographic Evidence Layers Establish Auditability for AI Agent Decisions",
+          "body": "IAGA-Sentinel v2.1.0 and similar tools now enable Ed25519-signed, replay-verifiable evidence chains for all AI agent actions, creating tamper-proof records of decision rationales. For pharmacovigilance, clinical trial recruitment, and regulatory intelligence workflows, cryptographically signed receipts will satisfy emerging audit expectations and facilitate post-hoc investigation of adverse events or regulatory queries. Integrating evidence layers into agent infrastructure is no longer optional for GxP-adjacent applications.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "Iaga-sentinel v2.1.0",
+              "source": "Kitploit.com",
+              "url": "https://kitploit.com/en/posts/github-iaga-team-iaga-sentinel-v210",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Regulatory Perimeter for AI Builders Shifts from Model to Platform Accountability",
+          "body": "The EU's expansion of regulatory scope from foundational model safety to platform-level user accountability means that organizations deploying third-party AI systems now inherit vendor compliance burden. Pharma R&D teams using cloud-hosted LLMs for literature mining, hypothesis generation, or trial design must now audit vendor compliance posture against DSA, CRA, and AI Act requirements. This fundamentally changes procurement and third-party governance workflows.",
+          "sourceIndices": [
+            39
+          ],
+          "sources": [
+            {
+              "title": "Chatgpt is now under the eu’s strictest digital rulebook – and agents using it inherit the burden",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/chatgpt-is-now-under-the-eus-strictest-digital-rulebook-and-agents-using-it-inherit-the-burden/",
+              "date": "2026-09-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "OpenAI LiteLLM Gateway Deployments Enable Model Portability Across Clouds",
+          "body": "Amazon's guidance on deploying customer-operated LiteLLM gateways on ECS/Fargate with OpenAI model routing demonstrates multi-cloud AI infrastructure patterns that reduce vendor lock-in. For organizations managing hybrid regulatory environments (US FDA + EMA), this approach enables transparent model substitution and audit trails across deployment regions. This reduces procurement risk for long-term AI infrastructure investments.",
+          "sourceIndices": [
+            55
+          ],
+          "sources": [
+            {
+              "title": "Set up openai chatgpt codex with litellm on amazon ecs and amazon bedrock",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/machine-learning/set-up-openai-chatgpt-codex-with-litellm-on-amazon-ecs-and-amazon-bedrock/",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "G20 Endorsement of Deregulatory AI Principles Signals Fragmented Governance Ahead",
+          "body": "The Carolina Principles' multilateral backing creates competing regulatory jurisdictions: EU-style prescriptive rules versus US-led principles-based deregulation. Pharma organizations must now navigate three incompatible governance models simultaneously, each with different expectations for transparency, audit, and accountability. Strategic planning for global AI deployment must assume regulatory arbitrage and plan compliance costs for multiple regimes.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "G20 endorses US deregulatory AI framework in carolina principles — first multilateral pushback against ai-specific rules",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/g20-endorses-us-deregulatory-ai-framework-in-carolina-principles-first-multilateral-pushback-against-ai-specific-rules/",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Token Spend Management and Parallel Agent Infrastructure Define 2030 Engineering",
+          "body": "Meryem Arik's QconAI predictions highlight that managing cost-per-inference and deploying redundant agent instances will define competitive advantage in agentic systems. Pharma organizations running high-throughput screening simulations, molecular dynamics computations, or continuous clinical trial recruitment optimization must budget for token economics and assume multi-agent failover patterns. Cost optimization and resilience are now co-requisites of enterprise AI architecture.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Presentation: a few predicted talks from qconai 2030",
+              "source": "InfoQ.com",
+              "url": "https://www.infoq.com/presentations/ai-predictions-2030/",
+              "date": "2026-09-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Digital Twins as New Organizing Logic for Data-Rich Pharmaceutical Operations",
+          "body": "AI-powered digital twins represent organizational paradigm shift beyond incremental digital transformation, establishing synthetic replicas of manufacturing, clinical workflows, and regulatory intelligence processes. Pharma organizations can now model drug development lifecycle, supply chain disruptions, and trial recruitment dynamics at scale before capital deployment. This shift from retrospective analytics to forward simulation requires rethinking data governance, validation, and accountability frameworks.",
+          "sourceIndices": [
+            42
+          ],
+          "sources": [
+            {
+              "title": "Digital twins as a new foundation of competitive advantage",
+              "source": "Lse.ac.uk",
+              "url": "https://blogs.lse.ac.uk/businessreview/2026/09/04/digital-twins-as-a-new-foundation-of-competitive-advantage/",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA Approves Zanvastro for Alexander Disease, Rare Pediatric Indication",
+          "body": "FDA authorization of zilganersen injection marks first approved disease-modifying therapy for Alexander disease, a rare neurodegeneration affecting pediatric and adult patients. This approval pathway demonstrates FDA's willingness to accelerate rare disease therapeutics through targeted expedited review. Your rare disease development strategy should reference this precedent for accelerated timelines and adaptive trial design.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Drug to Treat Alexander Disease",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Grants Accelerated Approval to Novel Breast Cancer Treatment",
+          "body": "Expanded treatment options for advanced breast cancer underscore FDA's continued commitment to expedited pathways for oncology indications, reflecting real-world efficacy data integration. Accelerated approval mechanisms now routinely bypass traditional Phase III enrollment bottlenecks through biomarker-driven patient enrichment. Your oncology development programs should evaluate biomarker-driven approval pathways and post-market surveillance obligations early in Phase II planning.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "FDA Grants Accelerated Approval to a New Breast Cancer Treatment",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-breast-cancer-treatment",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Approves Mimrylo for Polycythemia Vera, Rare Blood Disorder Treatment",
+          "body": "Rusfertide approval represents targeted innovation in rare hematologic disorders, addressing unmet need in JAK inhibitor-refractory patients. This approvals signals FDA priority for mechanistically distinct approaches to refractory rare diseases. Rare disease programs should emphasize mechanistic differentiation and patient stratification in IND applications.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Drug of Its Kind for Polycythemia Vera, a Rare Blood Disorder",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
+              "date": "2026-08-28",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Requests Input on Botanical Drug Development Pathways",
+          "body": "The FDA's RFI on botanical drug product advancement signals policy evolution toward structured guidance for natural product development, historically a compliance gray zone. This public consultation will likely produce updated CMC, manufacturing, and efficacy assessment frameworks within 12–18 months. Organizations pursuing botanical or plant-derived therapeutics should monitor FDA website for guidance draft and submit pre-competitive feedback.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "FDA Seeks Public Input to Advance Development of Botanical Drug Products",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-advance-development-botanical-drug-products",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Next-Generation Sequencing Workshop Advances Biologics Adventitious Agent Detection",
+          "body": "FDA's September 23 workshop convenes subject matter experts to evaluate NGS readiness for detecting adventitious agents in biologic manufacturing, addressing long-standing analytical limitations. NGS integration into release testing and stability protocols could reduce testing timelines and improve safety margins for cell/gene therapies. Your biologics manufacturing strategy should anticipate NGS validation requirements in the 2027–2028 timeline.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "FDA scientific public workshop: next-generation sequencing for adventitious agent detection in biologics - 09/23/2026",
+              "source": "FDA.gov",
+              "url": "https://www.fda.gov/news-events/office-therapeutic-products-otp-events-meetings-and-workshops/fda-scientific-public-workshop-next-generation-sequencing-adventitious-agent-detection-biologics",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "California Legislature Advances No Robo Bosses Act to Governor's Desk",
+          "body": "SB 947 mandates transparency and human oversight in AI employment decisions, establishing state-level algorithmic accountability separate from federal AI policy frameworks. While focused on labor, this precedent signals regulatory expectation for human-in-the-loop AI oversight in regulated decision-making, including clinical trial recruitment, site selection, and pharmacovigilance. Pharma organizations should assume similar human-oversight requirements will migrate into healthcare AI guidance within 18 months.",
+          "sourceIndices": [
+            40
+          ],
+          "sources": [
+            {
+              "title": "California’s ‘no robo bosses act’ heads to newsom’s desk",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/californias-no-robo-bosses-act-heads-to-newsoms-desk/",
+              "date": "2026-09-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU AI Office Signals Q4 Enforcement Crackdown with 40 New Staff Hires",
+          "body": "The EU AI Office's operational transition from foundational setup to active enforcement with dedicated compliance staff indicates imminent, systematic audits of AI systems operating in regulated markets. Pharma organizations deploying AI for clinical decision support, pharmacovigilance, or trial recruitment must assume mandatory compliance audits beginning Q4 2026. Conduct internal AI inventory audits and impact assessments immediately.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "EU AI office hiring 40 enforcement staff signals q4 crackdown",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/eu-ai-office-hiring-40-enforcement-staff-signals-q4-crackdown/",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Three Incompatible AI Governance Models Now Have Multilateral Endorsement",
+          "body": "EU prescriptive regulation, US principles-based deregulation, and emerging hybrid models (China, G20) now coexist without unified coordination, forcing organizations to maintain parallel compliance strategies. Pharma organizations cannot optimize for single regulatory jurisdiction; multi-regime compliance cost is permanent infrastructure expense. Global strategy must explicitly budget for regulatory arbitrage and governance fragmentation.",
+          "sourceIndices": [
+            48
+          ],
+          "sources": [
+            {
+              "title": "Three incompatible AI governance models now have multilateral endorsement – and none covers agents",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/three-incompatible-ai-governance-models-now-have-multilateral-endorsement-and-none-covers-agents/",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Human Oversight of AI Decisions May Provide False Comfort Without Procedural Rigor",
+          "body": "Latest survey findings suggest organizations overestimate effectiveness of human-in-the-loop oversight when procedures lack explicit decision criteria, training, and escalation protocols. For high-stakes applications (trial recruitment, safety monitoring, regulatory intelligence), human oversight requires documented SOP, audit trails, and validation that human reviewers actually modify AI recommendations. Implement rigorous HITL procedural governance alongside tool deployment.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "Checking, checking: is human oversight of AI becoming a false comfort?",
+              "source": "Digital Journal",
+              "url": "https://www.digitaljournal.com/article/checking-checking-is-human-oversight-of-ai-becoming-a-false-comfort/",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Emergency Use Authorization Expanded for Screwworm Prevention in Companion Animals",
+          "body": "FDA's EUA issuance for nitenpyram tablets demonstrates adaptive authorization mechanisms for emerging veterinary health threats, establishing precedent for rapid deployment outside traditional approval pathways. This pattern—emergency authorization for orphan indications—may extend to neglected infectious diseases and niche therapeutic areas in humans. Organizations developing treatments for emerging threats should familiarize themselves with EUA expedited requirements.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "FDA Issues Emergency Use Authorization for Drugs to Prevent and Treat New World Screwworm in Dogs and Cats",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drugs-prevent-and-treat-new-world-screwworm-dogs-and-cats",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "AI-Enhanced Virtual Screening Accelerates Large Library Ligand Discovery",
+          "body": "Computational screening of massive chemical libraries at scale using AI-guided adaptive methods dramatically reduces experimental validation cycles for lead identification. This approach is particularly valuable for high-throughput screening against underexplored protein targets (kinases, GPCRs, transporters). Your hit-to-lead optimization should prioritize AI-ranked virtual library screening before committing to synthetic chemistry campaigns.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Ai-enhanced adaptive virtual screening of large libraries for ligand discovery",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41587-026-03217-x.pdf",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Programmable Alkene Skeleton Construction Enables Stereoisomeric Drug Scaffold Diversity",
+          "body": "Switchable radical and organometallic synthetic strategies now enable regio- and stereoselective assembly of complex alkene scaffolds, addressing long-standing synthetic bottlenecks in medicinal chemistry. This method expands accessible chemical space for optimization of drug candidates with constrained geometric requirements. Chemistry teams should evaluate programmable synthesis methods for lead optimization against targets requiring specific stereochemistry.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Programmable alkene skeleton construction via switchable radical and organometallic sorting",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41557-026-02242-2.pdf",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Benchmarking Biomedical Foundation Models Establishes Rigorous Evaluation Standards",
+          "body": "Foundation models are proliferating across biological domains (genomics, proteomics, chemical biology), yet comprehensive evaluation methodologies remain underdeveloped. Rigorous benchmarking frameworks now enable comparative assessment of model performance across molecule design, protein prediction, and bioactivity estimation tasks. Establish internal benchmarking protocols before committing to foundation model integration in discovery pipelines.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Benchmarking biomedical foundation models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03182-y",
+              "date": "2026-09-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Nanotherapeutic Strategies Address MASLD Through Targeted Delivery Optimization",
+          "body": "Metabolic-associated fatty liver disease nanotherapeutics demonstrate how targeted delivery systems can overcome ADMET barriers in metabolic diseases, achieving tissue-specific efficacy with reduced systemic exposure. This approach is particularly relevant for non-alcoholic fatty liver disease programs struggling with drug solubility and hepatocyte penetration. Evaluate nanoparticle formulation early in lead optimization for metabolic disorder indications.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "Nanotherapeutic Strategies for MASLD: From Pathological Mechanisms to Targeted Delivery Systems",
+              "source": "Int J Nanomedicine",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42703427/",
+              "date": "2026-09-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Nanoparticle-Based Delivery Systems Enable Dual Antibacterial and Immunomodulatory Action",
+          "body": "Periodontitis-focused nanoparticle strategies demonstrate integration of antimicrobial and immune-modulating payloads in single delivery platform, addressing polymicrobial infection and dysregulated inflammation simultaneously. This multi-modal approach is translatable to other chronic inflammatory/infectious diseases (skin, GI, respiratory). Consider dual-mechanism nanoparticle design for indications with both microbial and immune components.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "Nanoparticle-Based Drug Delivery Systems for Periodontitis: Antibacterial, Immunomodulatory, and Regenerative Strategies",
+              "source": "Int J Nanomedicine",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42701777/",
+              "date": "2026-09-06",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Dose Fluctuation Strategies Mitigate Resistance Evolution in Cancer Therapy",
+          "body": "Intentional dose variations emerge as third dimension of cancer treatment optimization, beyond dose magnitude and scheduling. Modeling suggests dynamic dosing can delay resistance development while maintaining tumor control, potentially extending therapeutic window. Oncology programs should explore adaptive dosing protocols in Phase II and incorporate resistance evolution modeling into clinical trial design.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Varying Cancer Drug Doses to Balance Tumor Control and Resistance Evolution",
+              "source": "Cancer Res",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42682083/",
+              "date": "2026-09-02",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Guided Precision Ocular Therapeutics Engineer Disease-Specific Delivery",
+          "body": "AI-driven engineering of ocular therapeutics leverages machine learning for tissue-specific targeting and formulation optimization, addressing blood-ocular barrier penetration and sustained intraocular release. Eye diseases represent high-value indication space with unmet ophthalmic delivery needs. Evaluate AI-guided formulation screening for ocular indications early in development.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Artificial intelligence-guided engineering of precision ocular therapeutics",
+              "source": "Curr Opin Ophthalmol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42687624/",
+              "date": "2026-09-03",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI and High-Performance Computing Integrate Virtual Screening, Deep Learning, and ADMET Modelling",
+          "body": "Comprehensive review of AI/HPC drug discovery methods—virtual screening, deep learning, molecular dynamics, ADMET prediction, experimental validation—establishes current best-practice integration patterns. This end-to-end computational pipeline is now standard for first-principles molecular design. Ensure your discovery platform integrates all four computational stages and maintains feedback loops from experimental validation to model refinement.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Artificial intelligence and ultra-high performance computing methods and experiments for drug discovery: virtual screening, deep learning, molecular dynamics simulations, ADMET modelling, and experimental validation",
+              "source": "Mol Biomed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42686980/",
+              "date": "2026-09-03",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "DeepPurpose Deep Learning Enables Rapid Drug Repurposing for Oncology Targets",
+          "body": "Deep learning-based repurposing against VEGFR2 in hepatocellular carcinoma demonstrates how transfer learning and pre-trained models accelerate identification of novel indications for existing drugs. Repurposing pipelines are particularly cost-effective for orphan oncology indications with limited baseline trial infrastructure. Establish systematic repurposing screening for existing portfolio compounds against underexplored cancer histologies.",
+          "sourceIndices": [
+            37
+          ],
+          "sources": [
+            {
+              "title": "DeepPurpose based deep learning approach for drug repurposing targeting VEGFR2 in hepatocellular carcinoma",
+              "source": "In Silico Pharmacol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42254291/",
+              "date": "2026-08-28",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Systems and Methods Enhance R&D Productivity Through Agentic-Era Decision-Making",
+          "body": "Despite AI integration in discovery, new drug approvals have paradoxically declined, suggesting systemic inefficiencies in translating computational advances to clinical candidates. Article emphasizes need for systems-level productivity optimization—workflow integration, team collaboration, decision-making governance—alongside individual tool adoption. Audit discovery workflows for decision bottlenecks and organizational friction that computational AI cannot resolve alone.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Expanding Quantitative Medicines' Reach: Systems and Methods to Enhance R&D Productivity and Decision-Making in the Agentic-Era",
+              "source": "Clin Transl Sci",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42698299/",
+              "date": "2026-09-05",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "Vara Wins First CE Mark for AI Mammography Triage Without Radiologist Review",
+          "body": "MX Healthcare's Vara receives world-first regulatory clearance for autonomous AI breast screening case closure, eliminating mandatory radiologist review step. This precedent-setting CE mark demonstrates regulator acceptance of AI-only decision pathways for defined clinical contexts, fundamentally reshaping workload expectations and liability frameworks for diagnostic AI. Your clinical AI governance must now evaluate autonomous versus human-in-loop decision requirements by clinical context rather than assuming human review is universally mandated.",
+          "sourceIndices": [
+            50
+          ],
+          "sources": [
+            {
+              "title": "Vara wins world’s first ce mark for AI that clears mammograms alone",
+              "source": "The Next Web",
+              "url": "https://thenextweb.com/news/vara-ce-certification-autonomous-ai-breast-cancer-screening",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Therapeutic Landscape and Biomarker Advances Shape MASH Treatment Strategies",
+          "body": "Current review of metabolic dysfunction-associated steatohepatitis therapeutics and emerging biomarkers establishes framework for precision MASH medicine. Biomarker-driven patient stratification and stage-specific interventions are now standard approach to MASH program design. Incorporate fibrosis stage biomarkers and metabolic phenotyping into early clinical trial recruitment to enable patient enrichment.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "Current therapeutic landscape and future treatment perspectives of mash",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10672-8",
+              "date": "2026-09-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Bridging Precision Agriculture and Human Medicine Through Comparative Genetics",
+          "body": "Comparative genetic studies of humans and farmed animals generate insights applicable to complex disease pathophysiology, animal models, and therapeutic target identification. This cross-species genomic framework enables identification of disease mechanisms not apparent in isolated human cohorts. Drug discovery programs should evaluate animal model selection through comparative genetics lens to improve translational fidelity.",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "Bridging precision agriculture and human medicine through comparative genetics",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41576-026-01000-x.pdf",
+              "date": "2026-08-28",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Isthmin-2 Emerges as First-Trimester Predictor of Pregnancy Complications",
+          "body": "Proteomics exploration of pregnancy cohorts identifies ISM2 as biomarker for preeclampsia and fetal growth restriction risk, linking molecular mechanisms to clinical outcomes. Early pregnancy biomarkers enable risk stratification and preventive intervention before complications manifest. Obstetric drug development programs should evaluate ISM2 and related proteomics signatures for patient enrichment in preeclampsia prevention trials.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Isthmin-2 is a first-trimester predictor of preeclampsia and fetal growth restriction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04573-6.pdf",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Telomere Attrition Functions as Powerful Tumor-Suppressor Mechanism",
+          "body": "Review of telomere biology data demonstrates telomere shortening limits neoplastic potential across diverse human cancer types, establishing cellular replicative senescence as fundamental cancer barrier. This protective mechanism suggests therapeutic strategies should avoid telomerase reactivation in oncology contexts. Preclinical program design should incorporate telomere dynamics modeling for agents with replicative potential.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "How telomere attrition protects against cancer",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41576-026-01001-w",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Spatial-ATAC-Hi-C Enables Simultaneous Chromatin Accessibility and Organization Profiling",
+          "body": "Spatial chromatin profiling method enables high-resolution mapping of epigenetic architecture and 3D chromatin organization in intact tissues, demonstrated in brain and glioblastoma. This approach bridges bulk epigenomics and single-cell methods, generating tissue-context-specific regulatory insights. Translational programs targeting epigenetic dysregulation should leverage spatial chromatin data for target prioritization.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Spatial chromatin architecture and accessibility co-profiling of mammalian tissues",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41592-026-03217-4.pdf",
+              "date": "2026-09-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "3D Epigenome of Developing Cortex Reveals Cell-Type-Specific Regulatory Elements",
+          "body": "Integrative 3D epigenomic profiling of glial cell types identifies cell-type-specific regulatory elements and chromatin interactions governing neurodevelopment. This maps epigenetic landscape underlying brain development and identifies regulatory nodes for neurological disease intervention. Neurology programs should reference epigenomic data to prioritize targets with glial-specific regulatory activity.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "3d epigenome of glial cell types in developing human cortex",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10987-6",
+              "date": "2026-09-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Molecular Mechanisms and Pathogenesis of MASH Establish Disease Model Framework",
+          "body": "State-of-the-art review of MASH molecular and cellular mechanisms—spanning hepatocyte lipotoxicity, inflammation, fibrosis, and HCC transition—establishes mechanistic framework for rational therapeutic targeting. Comprehensive mechanism mapping enables multi-target drug design and patient stratification by mechanistic phenotype. MASH programs should establish baseline mechanistic understanding before patient enrollment.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Molecular mechanisms and pathogenesis of mash",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-10529-0",
+              "date": "2026-09-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Prolonged Sitting Duration Independently Elevates Cancer Mortality Risk",
+          "body": "Epidemiological data demonstrate that uninterrupted sitting intervals—independent of total daily sitting time—carry significantly higher cancer death risk, suggesting distinct pathophysiologic mechanisms for sedentary behavior exposure. This identifies patient lifestyle stratification factor relevant to oncology trial enrollment and post-treatment survivorship outcomes. Incorporate sedentary behavior assessment into trial protocols as potential outcome predictor.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Each extra hour of prolonged sitting linked to 9% higher cancer death risk",
+              "source": "Science Daily",
+              "url": "https://www.sciencedaily.com/releases/2026/09/260901070548.htm",
+              "date": "2026-09-03",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "The regulatory perimeter for AI in pharma has shifted irreversibly: compliance is no longer optional tool governance but mandatory platform accountability. The EU's ChatGPT designation, CRA enforcement clock, and AI Office staffing surge signal that regulators now treat AI systems as directly accountable actors, not neutral infrastructure. Simultaneously, frontier AI development is fragmenting along competing jurisdictional lines—EU prescriptive rules, US principles-based deregulation, and emerging hybrid models—forcing global organizations to maintain parallel compliance regimes. For R&D and regulatory teams, this week's convergence around accountability and enforcement means immediate action on three fronts: (1) audit all deployed AI systems against DSA/CRA/AI Act requirements, (2) establish human-oversight SOPs grounded in documented decision criteria rather than performative review, and (3) plan for 18–24 month migration of organizational AI governance from local R&D decision-making to enterprise compliance infrastructure. The competitive advantage now flows to organizations that align AI development velocity with regulatory drift rather than those betting that compliance can be bolted on later.",
+  "allSources": [
+    {
+      "title": "The EU has regulated chatgpt as a search engine. calling it a platform would have handed openai a liability shield.",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/eu-chatgpt-vlose-designation-safe-harbour-gap",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "EU cra article 14 hits sep 11 — every AI agent product now has a 24-hour disclosure clock",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/eu-cra-article-14-hits-sep-11-every-ai-agent-product-now-has-a-24-hour-disclosure-clock/",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "Experian expands into AI agents with servicenow partnership",
+      "source": "SiliconANGLE News",
+      "url": "https://siliconangle.com/2026/09/04/experian-expands-into-ai-agents-with-servicenow-partnership/",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "Ai-driven development lifecycle using amazon bedrock agentcore",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/machine-learning/ai-driven-development-lifecycle-using-amazon-bedrock-agentcore/",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Prismor v1.44.0",
+      "source": "Kitploit.com",
+      "url": "https://kitploit.com/en/posts/github-prismorsec-prismor-v1440",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Iaga-sentinel v2.1.0",
+      "source": "Kitploit.com",
+      "url": "https://kitploit.com/en/posts/github-iaga-team-iaga-sentinel-v210",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Chatgpt is now under the eu’s strictest digital rulebook – and agents using it inherit the burden",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/chatgpt-is-now-under-the-eus-strictest-digital-rulebook-and-agents-using-it-inherit-the-burden/",
+      "date": "2026-09-05",
+      "type": "news"
+    },
+    {
+      "title": "Set up openai chatgpt codex with litellm on amazon ecs and amazon bedrock",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/machine-learning/set-up-openai-chatgpt-codex-with-litellm-on-amazon-ecs-and-amazon-bedrock/",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "G20 endorses US deregulatory AI framework in carolina principles — first multilateral pushback against ai-specific rules",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/g20-endorses-us-deregulatory-ai-framework-in-carolina-principles-first-multilateral-pushback-against-ai-specific-rules/",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "Presentation: a few predicted talks from qconai 2030",
+      "source": "InfoQ.com",
+      "url": "https://www.infoq.com/presentations/ai-predictions-2030/",
+      "date": "2026-09-05",
+      "type": "news"
+    },
+    {
+      "title": "Digital twins as a new foundation of competitive advantage",
+      "source": "Lse.ac.uk",
+      "url": "https://blogs.lse.ac.uk/businessreview/2026/09/04/digital-twins-as-a-new-foundation-of-competitive-advantage/",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Drug to Treat Alexander Disease",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "FDA Grants Accelerated Approval to a New Breast Cancer Treatment",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-breast-cancer-treatment",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Drug of Its Kind for Polycythemia Vera, a Rare Blood Disorder",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
+      "date": "2026-08-28",
+      "type": "news"
+    },
+    {
+      "title": "FDA Seeks Public Input to Advance Development of Botanical Drug Products",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-advance-development-botanical-drug-products",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "FDA scientific public workshop: next-generation sequencing for adventitious agent detection in biologics - 09/23/2026",
+      "source": "FDA.gov",
+      "url": "https://www.fda.gov/news-events/office-therapeutic-products-otp-events-meetings-and-workshops/fda-scientific-public-workshop-next-generation-sequencing-adventitious-agent-detection-biologics",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "California’s ‘no robo bosses act’ heads to newsom’s desk",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/californias-no-robo-bosses-act-heads-to-newsoms-desk/",
+      "date": "2026-09-05",
+      "type": "news"
+    },
+    {
+      "title": "EU AI office hiring 40 enforcement staff signals q4 crackdown",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/eu-ai-office-hiring-40-enforcement-staff-signals-q4-crackdown/",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Three incompatible AI governance models now have multilateral endorsement – and none covers agents",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/three-incompatible-ai-governance-models-now-have-multilateral-endorsement-and-none-covers-agents/",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "Checking, checking: is human oversight of AI becoming a false comfort?",
+      "source": "Digital Journal",
+      "url": "https://www.digitaljournal.com/article/checking-checking-is-human-oversight-of-ai-becoming-a-false-comfort/",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "FDA Issues Emergency Use Authorization for Drugs to Prevent and Treat New World Screwworm in Dogs and Cats",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-drugs-prevent-and-treat-new-world-screwworm-dogs-and-cats",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Ai-enhanced adaptive virtual screening of large libraries for ligand discovery",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41587-026-03217-x.pdf",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "Programmable alkene skeleton construction via switchable radical and organometallic sorting",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41557-026-02242-2.pdf",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "Benchmarking biomedical foundation models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03182-y",
+      "date": "2026-09-04",
+      "type": "news"
+    },
+    {
+      "title": "Nanotherapeutic Strategies for MASLD: From Pathological Mechanisms to Targeted Delivery Systems",
+      "source": "Int J Nanomedicine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42703427/",
+      "date": "2026-09-07",
+      "type": "paper"
+    },
+    {
+      "title": "Nanoparticle-Based Drug Delivery Systems for Periodontitis: Antibacterial, Immunomodulatory, and Regenerative Strategies",
+      "source": "Int J Nanomedicine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42701777/",
+      "date": "2026-09-06",
+      "type": "paper"
+    },
+    {
+      "title": "Varying Cancer Drug Doses to Balance Tumor Control and Resistance Evolution",
+      "source": "Cancer Res",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42682083/",
+      "date": "2026-09-02",
+      "type": "paper"
+    },
+    {
+      "title": "Artificial intelligence-guided engineering of precision ocular therapeutics",
+      "source": "Curr Opin Ophthalmol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42687624/",
+      "date": "2026-09-03",
+      "type": "paper"
+    },
+    {
+      "title": "Artificial intelligence and ultra-high performance computing methods and experiments for drug discovery: virtual screening, deep learning, molecular dynamics simulations, ADMET modelling, and experimental validation",
+      "source": "Mol Biomed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42686980/",
+      "date": "2026-09-03",
+      "type": "paper"
+    },
+    {
+      "title": "DeepPurpose based deep learning approach for drug repurposing targeting VEGFR2 in hepatocellular carcinoma",
+      "source": "In Silico Pharmacol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42254291/",
+      "date": "2026-08-28",
+      "type": "paper"
+    },
+    {
+      "title": "Expanding Quantitative Medicines' Reach: Systems and Methods to Enhance R&D Productivity and Decision-Making in the Agentic-Era",
+      "source": "Clin Transl Sci",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42698299/",
+      "date": "2026-09-05",
+      "type": "paper"
+    },
+    {
+      "title": "Vara wins world’s first ce mark for AI that clears mammograms alone",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/vara-ce-certification-autonomous-ai-breast-cancer-screening",
+      "date": "2026-09-03",
+      "type": "news"
+    },
+    {
+      "title": "Current therapeutic landscape and future treatment perspectives of mash",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10672-8",
+      "date": "2026-09-02",
+      "type": "news"
+    },
+    {
+      "title": "Bridging precision agriculture and human medicine through comparative genetics",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41576-026-01000-x.pdf",
+      "date": "2026-08-28",
+      "type": "news"
+    },
+    {
+      "title": "Isthmin-2 is a first-trimester predictor of preeclampsia and fetal growth restriction",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04573-6.pdf",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "How telomere attrition protects against cancer",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41576-026-01001-w",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "Spatial chromatin architecture and accessibility co-profiling of mammalian tissues",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41592-026-03217-4.pdf",
+      "date": "2026-09-01",
+      "type": "news"
+    },
+    {
+      "title": "3d epigenome of glial cell types in developing human cortex",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10987-6",
+      "date": "2026-09-02",
+      "type": "news"
+    },
+    {
+      "title": "Molecular mechanisms and pathogenesis of mash",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-10529-0",
+      "date": "2026-09-02",
+      "type": "news"
+    },
+    {
+      "title": "Each extra hour of prolonged sitting linked to 9% higher cancer death risk",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260901070548.htm",
+      "date": "2026-09-03",
+      "type": "news"
+    }
+  ]
+}
