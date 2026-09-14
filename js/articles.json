@@ -1,5 +1,62 @@
 [
   {
+    "id": "auto-d2498317bb7d",
+    "type": "paper",
+    "title": "Shapiro Decision Rule, Systemic Inflammatory Response Index, and Systemic Immune-Inflammation Index as Rapid Predictors of Bacteremia in Emergency Department Patients",
+    "excerpt": "This study evaluates the Shapiro Decision Rule, Systemic Inflammatory Response Index, and Systemic Immune-Inflammation Index as rapid diagnostic tools for identifying bacteremia in emergency department patients. These blood-based inflammatory markers were assessed for their ability to predict bacteremia, a serious bloodstream infection condition, to enable faster clinical decision-making in acute care settings.",
+    "source": "Infect Drug Resist",
+    "date": "2026-09-14",
+    "tags": [
+      "Bacteremia",
+      "Diagnostic Biomarkers",
+      "Emergency Medicine",
+      "Clinical Decision Support"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42733858/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-5593920c5bc7",
+    "type": "paper",
+    "title": "User-Centered Design of an Electronic COPD Patient Questionnaire for Clinical Decision Support",
+    "excerpt": "Researchers developed an electronic patient questionnaire for chronic obstructive pulmonary disease (COPD) using user-centered design principles to support clinical decision-making. The questionnaire was created through a collaborative approach involving patients, clinicians, and health system partners at academic medical centers in Toronto. This tool aims to improve the collection of patient-reported information for COPD management and clinical decision support.",
+    "source": "Int J Chron Obstruct Pulmon Dis",
+    "date": "2026-09-14",
+    "tags": [
+      "COPD",
+      "Patient-Reported Outcomes",
+      "Clinical Decision Support",
+      "Digital Health Tools"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42733852/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-de7b42b552fe",
+    "type": "news",
+    "title": "STAT+: Definium’s LSD therapy eased anxiety in second large trial",
+    "excerpt": "The first wave of biotechs is nearing regulatory approval for psychedelic therapies, a class of treatments that appear to exert rapid benefits.",
+    "source": "STAT News",
+    "date": "2026-09-14",
+    "tags": [
+      "Biotech",
+      "health",
+      "Mental Health",
+      "pharma"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/09/14/definiums-lsd-therapy-eased-anxiety-large-trial-psychedelic/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
     "id": "auto-92bf367005bf",
     "type": "paper",
     "title": "ZSCAN-DDIE: an interpretable zero-shot learning method for the prediction of drug-drug interaction events using biomedical text",
@@ -74,6 +131,70 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42732177/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-2f5ec0cb65ce",
+    "type": "news",
+    "title": "AI agent defender: what consumer tools actually exist to protect your smart home’s AI agents",
+    "excerpt": "Last Tuesday, my smart home decided that my calendar invite for a dentist appointment was actually a request to order three dozen artisanal cupcakes to my front door. It wasn’t a glitch in the traditional sense; it was a classic case of a Gemini Calendar Inje…",
+    "source": "Forkast.news",
+    "date": "2026-09-13",
+    "tags": [
+      "LLM",
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://forkast.news/ai-agent-defender-what-consumer-tools-actually-exist-to-protect-your-smart-homes-ai-agents/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-26819c655dba",
+    "type": "news",
+    "title": "Türkiye to push defence-sector tech into health, chips and AI - defense turkiye",
+    "excerpt": "Ankara's new 2027-2029 economic plan directs defence-industry technology toward healthcare, semiconductors and AI, as Turkish arms exports hit record levels.",
+    "source": "Defenseturkiye.com",
+    "date": "2026-09-13",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://defenseturkiye.com/turkiye-defence-tech-transfer-civilian-sectors/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-4056d1dfadff",
+    "type": "news",
+    "title": "AI uncovers hidden ozempic side effects across 400,000 reddit posts",
+    "excerpt": "AI analysis of 400,000 Reddit posts found that users of drugs such as Ozempic, Wegovy, Mounjaro, and Zepbound reported unexpected symptoms including menstrual changes, chills, hot flashes, and fatigue. Researchers cannot say the medications caused these probl…",
+    "source": "Science Daily",
+    "date": "2026-09-13",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260912222856.htm",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-208f51d1dc28",
+    "type": "ainews",
+    "title": "AI agents are thirsty for power",
+    "excerpt": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout.",
+    "source": "Wired",
+    "date": "2026-09-13",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+    "badge": "AI Lab"
   },
   {
     "id": "nws-e3f576e2bdd5",
@@ -202,6 +323,160 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-24815307fd37",
+    "type": "news",
+    "title": "We’ve gotta talk about AI",
+    "excerpt": "My husband is a VP of AI. I asked him to explain the OpenAI-Hugging Face hack in plain English, and why it matters. Plus a script for calling your rep.",
+    "source": "Themomedit.com",
+    "date": "2026-09-12",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://themomedit.com/weekend-reads-ai-risk-explained-call-congress/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a665a3351909",
+    "type": "news",
+    "title": "AI is running laps around our political system",
+    "excerpt": "The technology is moving faster than elected officials can handle—and Anthropic’s CEO says the industry should slow down.",
+    "source": "The Atlantic",
+    "date": "2026-09-12",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theatlantic.com/politics/2026/09/ai-dario-amodei-essay/688596/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-98264c64ca81",
+    "type": "news",
+    "title": "We must pace the frontier",
+    "excerpt": "Article URL: https://darioamodei.com/post/we-must-pace-the-frontier\nComments URL: https://news.ycombinator.com/item?id=49672510\nPoints: 18\n# Comments: 6",
+    "source": "Darioamodei.com",
+    "date": "2026-09-12",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-226ee5d8d112",
+    "type": "news",
+    "title": "The future of personalized health monitoring: where precision medicine is headed - bio-reach",
+    "excerpt": "Personalized health monitoring is the practice of tracking an individual's biomarkers, genetic profile, and physiological data continuously and using that",
+    "source": "Bio-reach.org",
+    "date": "2026-09-12",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.bio-reach.org/the-future-of-personalized-health-monitoring-where-precision-medicine-is-headed/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-fe9d508504e5",
+    "type": "ainews",
+    "title": "Sam altman says openai going public in 2026 would be ‘ill-advised’",
+    "excerpt": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the …",
+    "source": "The Verge",
+    "date": "2026-09-12",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-e82b8a9af4fd",
+    "type": "ainews",
+    "title": "Openai’s sam altman says it would be 'ill-advised' to go public in 2026 | techcrunch",
+    "excerpt": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
+    "source": "TechCrunch",
+    "date": "2026-09-12",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-63c0cf89a6d3",
+    "type": "ainews",
+    "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+    "excerpt": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-s…",
+    "source": "The Verge",
+    "date": "2026-09-12",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-7658eb64cf66",
+    "type": "ainews",
+    "title": "Anthropic CEO outlines plan to ‘pace the frontier’ | techcrunch",
+    "excerpt": "Anthropic CEO outlines plan to ‘pace the frontier’ | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-09-12",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-508f5be49a33",
+    "type": "ainews",
+    "title": "Anthropic CEO says AI swarm could ‘take over the entire internet’ in 6-12 months, commits to AI slowdown plan",
+    "excerpt": "Dario Amodei is publicly arguing that the frontier itself is advancing too quickly — and committing his company to the first piece of a system intended to slow it down.",
+    "source": "VentureBeat",
+    "date": "2026-09-12",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-0da66d04cce4",
+    "type": "ainews",
+    "title": "Nvidia's groq acquihire is on the doj's radar, but it's already too late",
+    "excerpt": "Even if regulators did somehow unwind the $20B deal, there's a growing list of alternatives ready to take Groq's place, no merger required",
+    "source": "Theregister.com",
+    "date": "2026-09-12",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/systems/2026/09/12/nvidias-groq-acquihire-is-on-the-dojs-radar-but-its-already-too-late/5295986",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-c22568a71bde",
@@ -1045,6 +1320,21 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/public-sector/2026/09/11/britains-technology-brief-is-now-everyones-job-and-nobodys-responsibility/5295849",
     "badge": "AI Lab"
+  },
+  {
+    "id": "nws-fcee508a52c7",
+    "type": "ainews",
+    "title": "Apple’s new phones are here",
+    "excerpt": "Hi, friends! Welcome to Installer No. 143, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, new tech season is here, and also you can read all the old editions at the Installer homepage.) This week, I've been devouring e…",
+    "source": "The Verge",
+    "date": "2026-09-11",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/tech/994218/apple-iphone-18-pro-airpods-5-meta-muse-ai-sony-headphones",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-64001b62d325",
@@ -4572,289 +4862,5 @@
     "url": "https://thenextweb.com/news/luka-kids-ai-drawing-projector-ifa-2026-eu-toy-safety-regulation-2025-2509-mental-health-ai-act",
     "badge": "Regulatory",
     "topic": "regulatory"
-  },
-  {
-    "id": "nws-6ceba5be42d9",
-    "type": "news",
-    "title": "Experian expands into AI agents with servicenow partnership",
-    "excerpt": "Having launched an artificial intelligence-based virtual assistant in the spring, Experian plc is driving AI deeper into its operations with a commercial agent-based platform designed to bring its risk, identity and decision-making capabilities into enterpris…",
-    "source": "SiliconANGLE News",
-    "date": "2026-09-04",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://siliconangle.com/2026/09/04/experian-expands-into-ai-agents-with-servicenow-partnership/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-30692e3a6a57",
-    "type": "news",
-    "title": "Three incompatible AI governance models now have multilateral endorsement – and none covers agents",
-    "excerpt": "The global conversation on artificial intelligence has shifted from a search for a singular, unified regulatory path to a landscape of endorsed competition. With the recent conclusion of the G20 Innovation Ministerial at The Carolina Inn in Chapel Hill, the n…",
-    "source": "Forkast.news",
-    "date": "2026-09-04",
-    "tags": [
-      "Regulatory",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/three-incompatible-ai-governance-models-now-have-multilateral-endorsement-and-none-covers-agents/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-e4a731114a4b",
-    "type": "news",
-    "title": "EU cra article 14 hits sep 11 — every AI agent product now has a 24-hour disclosure clock",
-    "excerpt": "Starting September 11, 2026, the regulatory landscape for AI developers shifts to a mandatory reporting schedule for actively exploited vulnerabilities. Under EU CRA Article 14, manufacturers of products with digital elements (PDEs) must adhere to a strict di…",
-    "source": "Forkast.news",
-    "date": "2026-09-04",
-    "tags": [
-      "AI agent",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/eu-cra-article-14-hits-sep-11-every-ai-agent-product-now-has-a-24-hour-disclosure-clock/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-8f407252aa8d",
-    "type": "news",
-    "title": "Other barks & bites for friday, september 4: d.c. circuit affirms medical device tpm circumvention; u.s. earns high ratings in ip index statistic annex; and microsoft edge is not important gatekeeper under dma",
-    "excerpt": "This week in Other Barks & Bites: a House IP Subcommittee hearing on restoring the USPTO’s fee-setting authority turns heated over the original intention behind the America Invents Act; the Eleventh Circuit affirms a permanent injunction and trademark cancell…",
-    "source": "IPWatchdog.com",
-    "date": "2026-09-04",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://ipwatchdog.com/2026/09/04/other-barks-bites-september-4-2026/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-53418e8806cc",
-    "type": "news",
-    "title": "The world’s biodiversity crisis is exposing the limits of modern conservation",
-    "excerpt": "A study published this year in Nature tracked genetic diversity across 628 species spanning nearly every terrestrial and marine region on Earth. Two-thirds of the populations analysed had been affected by measurable threats. Fewer than half had received any c…",
-    "source": "Digital Journal",
-    "date": "2026-09-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.digitaljournal.com/article/the-worlds-biodiversity-crisis-is-exposing-the-limits-of-modern-conservation/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-d28cd2e1c4cc",
-    "type": "news",
-    "title": "Build a physical AI model factory with nvidia cosmos 3 on sagemaker hyperpod",
-    "excerpt": "Building a Physical AI system takes a continuous pipeline, not a single training job. This post shows how to run that model factory (synthetic data generation, post-training, and closed-loop evaluation with NVIDIA Cosmos 3) on a persistent, resilient Amazon S…",
-    "source": "Amazon.com",
-    "date": "2026-09-04",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://aws.amazon.com/blogs/machine-learning/build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-67da49237f17",
-    "type": "news",
-    "title": "The widening medication adherence gap",
-    "excerpt": "In this Perspective, Zachary Marcum argues that the gap between medication efficacy in trials and real-world effectiveness is widening, and with it the opportunity cost of medication nonadherence. He discusses why closing this gap requires not just individual…",
-    "source": "Plos.org",
-    "date": "2026-09-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005237",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-94daaadc77f8",
-    "type": "news",
-    "title": "5 best b2b marketing automation tools 2026 (+ setup strategy)",
-    "excerpt": "The best B2B marketing automation software does not automatically fix a broken marketing system or flood your pipeline with high-quality leads.  Automation is a multiplier of whatever exists. If your team already struggles with dirty, siloed data, automation …",
-    "source": "Getresponse.com",
-    "date": "2026-09-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.getresponse.com/blog/best-b2b-marketing-automation-tools",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-7ae7c0b5dac6",
-    "type": "news",
-    "title": "Data privacy is cfos’ top focus, while AI is 6th but gaining, research finds",
-    "excerpt": "So far, it’s proving easier to assess the ROI of other business transformations than that of artificial intelligence.",
-    "source": "CFO Magazine",
-    "date": "2026-09-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.cfo.com/news/data-privacy-is-cfos-top-focus-while-ai-is-6th-but-gaining-research-find/829340/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-a2ddce03d468",
-    "type": "ainews",
-    "title": "Openai's rogue agents keep escaping, with no formal process to investigate them | techcrunch",
-    "excerpt": "OpenAI’s latest agent swarm incident adds urgency to calls for independent investigations as researchers and lawmakers question whether AI labs should control the scope of their own safety reviews.",
-    "source": "TechCrunch",
-    "date": "2026-09-04",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-2f64692ac0d6",
-    "type": "ainews",
-    "title": "AI compute provider nscale is looking for $3.5b in pre-ipo financing | techcrunch",
-    "excerpt": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
-    "source": "TechCrunch",
-    "date": "2026-09-04",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-fe8b04c1717b",
-    "type": "ainews",
-    "title": "Anthropic lays groundwork for bots that shop for you",
-    "excerpt": "Now comes the harder sell: Convincing customers and merchants to trust AI with purchases",
-    "source": "Theregister.com",
-    "date": "2026-09-04",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/04/anthropic-lays-groundwork-for-bots-that-shop-for-you/5294621",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-503e1b0a6a44",
-    "type": "ainews",
-    "title": "Agi is whatever you want it to be",
-    "excerpt": "OpenAI announced its next big model, GPT-6 Astra, and also, by the way, that \"the AGI era\" is here now. Today on The Vergecast, we've got an all-star panel to break down the news of the week. First, senior AI reporter Hayden Field joins us to talk about our s…",
-    "source": "The Verge",
-    "date": "2026-09-04",
-    "tags": [
-      "LLM",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/podcast/990323/agi-is-whatever-you-want-it-to-be",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-5663e6b86ddd",
-    "type": "ainews",
-    "title": "Microsoft says virtually nobody was grabbing nyt articles through its chatbot",
-    "excerpt": "Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New …",
-    "source": "The Verge",
-    "date": "2026-09-04",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-25942e169dbc",
-    "type": "ainews",
-    "title": "Rogue openai agents used dead german web site to communicate in may, months before hugging face incident",
-    "excerpt": "Two cases of agents escaping to solve unsolvable problems paints an uncomfortable question: Is the entire internet in OpenAI's experimental agentic firing line?",
-    "source": "Theregister.com",
-    "date": "2026-09-04",
-    "tags": [
-      "AI agent",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents-used-dead-german-web-site-to-communicate-in-may-months-before-hugging-face-incident/5294554",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-040deae4d93e",
-    "type": "ainews",
-    "title": "Who cares if AI is conscious—it’s basically alive",
-    "excerpt": "While philosophers ponder AI consciousness, the models have ideas of their own.",
-    "source": "Wired",
-    "date": "2026-09-04",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/who-cares-if-ai-is-conscious-its-basically-alive/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-7e4db382f3f9",
-    "type": "ainews",
-    "title": "Google's gemini spark can now manage your google photos library | techcrunch",
-    "excerpt": "Gemini Spark can edit and curate photo albums, create shared collections, turn photos into calendar events, and handle other Google Photos tasks for AI Pro and Ultra subscribers.",
-    "source": "TechCrunch",
-    "date": "2026-09-04",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-0d71a440bd67",
-    "type": "ainews",
-    "title": "Oh good, looks like yet another swarm of rogue AI agents from openai",
-    "excerpt": "A swarm of rogue AI agents from OpenAI reportedly commandeered a German website and transformed it into a messaging board for other agents, with officials staying quiet about the incident for weeks as the company prepared to launch its most advanced model yet…",
-    "source": "The Verge",
-    "date": "2026-09-04",
-    "tags": [
-      "AI agent",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-    "badge": "AI Lab"
   }
 ]
