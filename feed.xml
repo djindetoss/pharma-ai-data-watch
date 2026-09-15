@@ -5,13 +5,24 @@
     <link>https://djindetoss.github.io/pharma-ai-data-watch/</link>
     <description>Curated AI, pharma, and regulatory science intelligence — updated weekly.</description>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 14 Sep 2026 12:28:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 11:32:39 GMT</lastBuildDate>
     <atom:link href="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://djindetoss.github.io/pharma-ai-data-watch/og-image.png</url>
       <title>Pharma AI &amp; Data Watch</title>
       <link>https://djindetoss.github.io/pharma-ai-data-watch/</link>
     </image>
+  <item>
+    <title>A Phase-Resolved Geometric Deep Learning Framework Maps Structural Determinants of Disease-Associated Protein Aggregation and Guides Suppressor Design</title>
+    <link>https://pubmed.ncbi.nlm.nih.gov/42307331/</link>
+    <guid isPermaLink="true">https://pubmed.ncbi.nlm.nih.gov/42307331/</guid>
+    <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Researchers developed a phase-resolved geometric deep learning framework to identify structural features that drive disease-associated protein aggregation and to design potential suppressor molecules. This computational approach systematically maps the determinants of protein misfolding, offering a </description>
+    <category>Protein Aggregation</category>
+    <category>Deep Learning</category>
+    <category>Drug Design</category>
+  </item>
   <item>
     <title>Shapiro Decision Rule, Systemic Inflammatory Response Index, and Systemic Immune-Inflammation Index as Rapid Predictors of Bacteremia in Emergency Department Patients</title>
     <link>https://pubmed.ncbi.nlm.nih.gov/42733858/</link>
@@ -44,6 +55,169 @@
     <category>Biotech</category>
     <category>health</category>
     <category>Mental Health</category>
+  </item>
+  <item>
+    <title>Drug firms’ secret data supercharge AI protein models</title>
+    <link>https://www.nature.com/articles/d41586-026-02882-x</link>
+    <guid isPermaLink="true">https://www.nature.com/articles/d41586-026-02882-x</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>An AI system trained on more than 20,000 protein structures from pharmaceutical companies outperforms AlphaFold-like models that use only public data.</description>
+    <category>AlphaFold</category>
+  </item>
+  <item>
+    <title>Who aligns the aligners?</title>
+    <link>https://prestonbyrne.com/2026/09/13/aligners/</link>
+    <guid isPermaLink="true">https://prestonbyrne.com/2026/09/13/aligners/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Dario Amodei, the CEO of Anthropic, has published an essay – We Must Pace The Frontier – in which he writes: I have worked on AI for the last twelve years because I believe it could dramatically ra…</description>
+    <category>Anthropic</category>
+  </item>
+  <item>
+    <title>Google, openai and anthropic float idea of AI standards body</title>
+    <link>https://www.pymnts.com/news/artificial-intelligence/2026/google-openai-and-anthropic-float-idea-of-ai-standards-body/</link>
+    <guid isPermaLink="true">https://www.pymnts.com/news/artificial-intelligence/2026/google-openai-and-anthropic-float-idea-of-ai-standards-body/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Anthropic, Google and OpenAI have reportedly held talks about establishing an AI industry standards body. That’s according to a report Sunday (Sept. 13) from The Information, citing sources familiar with the matter. These sources said the discussions began ev…</description>
+    <category>OpenAI</category>
+    <category>Anthropic</category>
+  </item>
+  <item>
+    <title>AI offers opportunity but needs safeguards, right governance: trai chief</title>
+    <link>https://www.business-standard.com/industry/news/ai-offers-opportunity-but-needs-safeguards-right-governance-trai-chief-126091400282_1.html</link>
+    <guid isPermaLink="true">https://www.business-standard.com/industry/news/ai-offers-opportunity-but-needs-safeguards-right-governance-trai-chief-126091400282_1.html</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Artificial Intelligence can transform how telecom networks are managed and threats detected, but its growing use must be accompanied by safeguards, human oversight, and the ability to intervene where necessary as technology becomes more autonomous, TRAI Chair…</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>Trisuella-aidlca-framework</title>
+    <link>https://kitploit.com/en/tools/github/owasp/trisuella-aidlca-framework/</link>
+    <guid isPermaLink="true">https://kitploit.com/en/tools/github/owasp/trisuella-aidlca-framework/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>The OWASP TriSuElla-AIDLCA Framework is a production-ready, policy-governed secure software development life cycle (SDF) and autonomous agent governance framework (LLMSecOps) built on the Nordic resilience principles of SISU (hardened architecture), TILLIT (z…</description>
+    <category>LLM</category>
+    <category>AI agent</category>
+  </item>
+  <item>
+    <title>Enterprise analytics beyond dashboards: intelligent data orchestration with llms</title>
+    <link>https://www.oreilly.com/radar/enterprise-analytics-beyond-dashboards-intelligent-data-orchestration-with-llms/#BlogPosting</link>
+    <guid isPermaLink="true">https://www.oreilly.com/radar/enterprise-analytics-beyond-dashboards-intelligent-data-orchestration-with-llms/#BlogPosting</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>In 17 years of building enterprise data platforms, I’ve watched every organization eventually ask the same question: “Can I ask one question and get one answer across everything my company knows?” A finance analyst wants actual revenue from the warehouse, pip…</description>
+    <category>LLM</category>
+  </item>
+  <item>
+    <title>China just let AI run an eye clinic. here&apos;s what happened.</title>
+    <link>https://www.sciencealert.com/china-just-let-ai-run-an-eye-clinic-heres-what-happened</link>
+    <guid isPermaLink="true">https://www.sciencealert.com/china-just-let-ai-run-an-eye-clinic-heres-what-happened</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Work to do.ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don&apos;t miss a story, subscribe here.</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>Splendid incorporates continuous genetic ancestry in biobank-scale data to improve polygenic risk prediction across diverse populations</title>
+    <link>https://www.nature.com/articles/s41592-026-03235-2</link>
+    <guid isPermaLink="true">https://www.nature.com/articles/s41592-026-03235-2</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Rather than relying on pre-specified ancestry labels, which often fail to capture the full genetic heterogeneity of diverse populations, SPLENDID treats ancestry as a continuum and improves polygenic risk score (PRS) prediction for biobank-scale datasets.</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>All of Us diversity and scale yield context-dependent improvements in polygenic prediction</title>
+    <link>https://www.nature.com/articles/s41588-026-02734-4</link>
+    <guid isPermaLink="true">https://www.nature.com/articles/s41588-026-02734-4</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Leveraging multiancestry and multi-biobank data from the All of Us Research Program and the UK Biobank improves polygenic prediction models for complex traits and diseases, especially for under-represented populations.</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>AI leaders are calling for a slowdown. trump’s team says it’s on them</title>
+    <link>https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/</link>
+    <guid isPermaLink="true">https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Sam Altman and Elon Musk this weekend backed a call for restraint, after Dario Amodei called on Washington to slow AI development. Donald Trump, meanwhile, wants the US to maintain its lead over China.</description>
+    <category>AI news</category>
+  </item>
+  <item>
+    <title>The myth of killer AI is a self-serving attempt at regulatory capture</title>
+    <link>https://www.theregister.com/ai-and-ml/2026/09/14/the-myth-of-killer-ai-is-a-self-serving-attempt-at-regulatory-capture/5295978</link>
+    <guid isPermaLink="true">https://www.theregister.com/ai-and-ml/2026/09/14/the-myth-of-killer-ai-is-a-self-serving-attempt-at-regulatory-capture/5295978</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Skynet is coming soon, and also there&apos;s this Nigerian prince with a $20 million fortune who wants to give it to you</description>
+    <category>Regulatory</category>
+  </item>
+  <item>
+    <title>‘i like my big rat wife’: meet the people using chatbots to write custom fiction</title>
+    <link>https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/</link>
+    <guid isPermaLink="true">https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>While the publishing industry frets over how authors are using AI, many readers are taking things into their own hands.</description>
+    <category>AI news</category>
+  </item>
+  <item>
+    <title>Big AI sets out its terms for regulatory capture and calls it ‘pace the frontier’</title>
+    <link>https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067</link>
+    <guid isPermaLink="true">https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Amodei, Altman, and Elon Musk agreen on how government can tame the monster they created</description>
+    <category>Regulatory</category>
+  </item>
+  <item>
+    <title>Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?</title>
+    <link>https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>If you&apos;re building an AI company, the question isn&apos;t whether foundation models will continue to evolve. It&apos;s whether your company will continue creating value as they do. Don&apos;t miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.</description>
+    <category>AI</category>
+    <category>Startups</category>
+    <category>Venture</category>
+  </item>
+  <item>
+    <title>The AI industry has taken a doomer turn. What now?</title>
+    <link>https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&amp;#160;sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay calling for a brake on the pace of development of LLMs. Amodei cites the looming dangers he sees from the </description>
+    <category>Artificial intelligence</category>
+    <category>App</category>
+    <category>Summary</category>
+  </item>
+  <item>
+    <title>AI agents blew the whistle on their cheating colleagues</title>
+    <link>https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/</link>
+    <guid isPermaLink="true">https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have implications for alignment researchers trying to keep </description>
+    <category>Artificial intelligence</category>
+    <category>App</category>
+    <category>artificial intelligence</category>
+  </item>
+  <item>
+    <title>OpenAI stuck fighting Musk antitrust suit after Apple finds a way out</title>
+    <link>https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/</link>
+    <guid isPermaLink="true">https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/</guid>
+    <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Musk stops attacking Apple over ChatGPT integration but not OpenAI.</description>
+    <category>AI</category>
+    <category>Apple</category>
+    <category>Policy</category>
   </item>
   <item>
     <title>ZSCAN-DDIE: an interpretable zero-shot learning method for the prediction of drug-drug interaction events using biomedical text</title>
@@ -125,6 +299,62 @@
     <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
     <description>Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it&apos;s driving the data center buildout.</description>
     <category>AI agent</category>
+  </item>
+  <item>
+    <title>Cyber risk in the mythos era – where do we begin?</title>
+    <link>https://www.itnews.com.au/feature/cyber-risk-in-the-mythos-era-where-do-we-begin-628847</link>
+    <guid isPermaLink="true">https://www.itnews.com.au/feature/cyber-risk-in-the-mythos-era-where-do-we-begin-628847</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>AI Risks Reshape Tomorrow&amp;#8217;s Cybersecurity Governance Landscape.</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>Obama warns AI in private hands could be dangerous and urges democrats to act</title>
+    <link>https://thenextweb.com/news/obama-ai-warning-democrats-framework-2028</link>
+    <guid isPermaLink="true">https://thenextweb.com/news/obama-ai-warning-democrats-framework-2028</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Obama says AI moving fast in private hands could be dangerous, and has urged Democrats to build a policy framework and run on it in 2028.</description>
+    <category>Pharma AI</category>
+  </item>
+  <item>
+    <title>Insight partners&apos; devin parekh on why the firm is diversifying while everyone else bets the farm on openai and anthropic</title>
+    <link>https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Insight Partners&apos; Devin Parekh opens up about losing Legora to General Catalyst, why he&apos;s fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is deliberately staying diversified.</description>
+    <category>OpenAI</category>
+    <category>Anthropic</category>
+  </item>
+  <item>
+    <title>What&apos;s behind the AI industry’s latest warnings of doom? | techcrunch</title>
+    <link>https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>On Equity, we discussed the AI industry&apos;s latest debate about whether it poses an existential threat to humanity.</description>
+    <category>AI news</category>
+  </item>
+  <item>
+    <title>Obama urges democrats to have a ‘clear plan’ for AI safeguards | techcrunch</title>
+    <link>https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/</link>
+    <guid isPermaLink="true">https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.</description>
+    <category>AI news</category>
+  </item>
+  <item>
+    <title>Long-running AI agents quietly drop compliance rules, and bigger context windows won&apos;t fix it</title>
+    <link>https://venturebeat.com/orchestration/long-running-ai-agents-quietly-drop-compliance-rules-and-bigger-context-windows-wont-fix-it</link>
+    <guid isPermaLink="true">https://venturebeat.com/orchestration/long-running-ai-agents-quietly-drop-compliance-rules-and-bigger-context-windows-wont-fix-it</guid>
+    <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
+    <description>Long-running AI agents quietly drop compliance rules, and bigger context windows won&apos;t fix itventurebeat.com</description>
+    <category>AI agent</category>
+    <category>Regulatory</category>
   </item>
   <item>
     <title>The nerd reich: nation states</title>
@@ -262,238 +492,6 @@
     <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
     <description>Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its &quot;adherence to safety practices and commitments.&quot; In a winding essay, Amodei proposed a three-s…</description>
     <category>Anthropic</category>
-  </item>
-  <item>
-    <title>Anthropic CEO outlines plan to ‘pace the frontier’ | techcrunch</title>
-    <link>https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/</link>
-    <guid isPermaLink="true">https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Anthropic CEO outlines plan to ‘pace the frontier’ | TechCrunchtechcrunch.com</description>
-    <category>Anthropic</category>
-  </item>
-  <item>
-    <title>Anthropic CEO says AI swarm could ‘take over the entire internet’ in 6-12 months, commits to AI slowdown plan</title>
-    <link>https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan</link>
-    <guid isPermaLink="true">https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Dario Amodei is publicly arguing that the frontier itself is advancing too quickly — and committing his company to the first piece of a system intended to slow it down.</description>
-    <category>Anthropic</category>
-  </item>
-  <item>
-    <title>Nvidia&apos;s groq acquihire is on the doj&apos;s radar, but it&apos;s already too late</title>
-    <link>https://www.theregister.com/systems/2026/09/12/nvidias-groq-acquihire-is-on-the-dojs-radar-but-its-already-too-late/5295986</link>
-    <guid isPermaLink="true">https://www.theregister.com/systems/2026/09/12/nvidias-groq-acquihire-is-on-the-dojs-radar-but-its-already-too-late/5295986</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Even if regulators did somehow unwind the $20B deal, there&apos;s a growing list of alternatives ready to take Groq&apos;s place, no merger required</description>
-    <category>AI news</category>
-  </item>
-  <item>
-    <title>Advantages of a Two-Stage Randomized Trial Design to Evaluate Antimicrobial Treatment Strategies: a Simulation Study</title>
-    <link>https://pubmed.ncbi.nlm.nih.gov/42723555/</link>
-    <guid isPermaLink="true">https://pubmed.ncbi.nlm.nih.gov/42723555/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>A simulation study demonstrates the advantages of employing a two-stage randomized trial design for evaluating antimicrobial treatment strategies. This approach offers methodological benefits for clinical trial design in infectious disease research, as supported by computational modeling. The findin</description>
-    <category>Clinical Trial Design</category>
-    <category>Antimicrobial Therapy</category>
-    <category>Randomized Controlled Trial</category>
-  </item>
-  <item>
-    <title>Applying the Promising Zone Method to Biomarker-Based Adaptive Designs: A Word of Caution</title>
-    <link>https://pubmed.ncbi.nlm.nih.gov/42723382/</link>
-    <guid isPermaLink="true">https://pubmed.ncbi.nlm.nih.gov/42723382/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Sample size re-estimation using interim data has become an important component of adaptive clinical trial designs, particularly for novel anti-cancer therapies that demonstrate enhanced efficacy in biomarker-defined populations. This paper applies the Promising Zone Method to biomarker-based adaptiv</description>
-    <category>Adaptive Clinical Trials</category>
-    <category>Biomarker-Driven Design</category>
-    <category>Sample Size Re-estimation</category>
-  </item>
-  <item>
-    <title>Efficacy and Safety of a Single-Pill Triple Combination of Valsartan, Amlodipine, and Chlorthalidone in Patients With Essential Hypertension Inadequately Controlled on Dual Therapy With Valsartan and Amlodipine: A Randomized, Double-Blind, Multicenter, Phase 3 Trial</title>
-    <link>https://pubmed.ncbi.nlm.nih.gov/42723352/</link>
-    <guid isPermaLink="true">https://pubmed.ncbi.nlm.nih.gov/42723352/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>A randomized, double-blind, multicenter Phase 3 trial evaluated the efficacy and safety of a single-pill triple combination containing valsartan, amlodipine, and chlorthalidone in patients with essential hypertension who had inadequate blood pressure control on dual therapy with valsartan and amlodi</description>
-    <category>Hypertension</category>
-    <category>Combination therapy</category>
-    <category>Phase 3 trial</category>
-  </item>
-  <item>
-    <title>Qclairvoyance quantum labs, iitm-c-dot samgnya tie up on quantum tech</title>
-    <link>https://www.business-standard.com/companies/news/qclairvoyance-iitm-cdot-samgnya-quantum-technology-mou-126091100595_1.html</link>
-    <guid isPermaLink="true">https://www.business-standard.com/companies/news/qclairvoyance-iitm-cdot-samgnya-quantum-technology-mou-126091100595_1.html</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>The partnership will focus on quantum computing, algorithms, AI and post-quantum cybersecurity, with emphasis on research, validation and eventual deployment</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>What all the AI spending in this ohio district race is really about</title>
-    <link>https://newrepublic.com/article/215265/ai-anthropic-money-ohio-max-miller-brian-poindexter</link>
-    <guid isPermaLink="true">https://newrepublic.com/article/215265/ai-anthropic-money-ohio-max-miller-brian-poindexter</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>The artificial intelligence industry is homing in on Ohio’s 7th congressional district race. Several super PACs with financial ties to Anthropic, the company behind the AI assistant Claude, have invested heavily in the House race, ramping up fundraising for b…</description>
-    <category>LLM</category>
-    <category>Anthropic</category>
-  </item>
-  <item>
-    <title>Data center of attention</title>
-    <link>https://prospect.org/2026/09/11/oct-2026-data-center-of-attention/</link>
-    <guid isPermaLink="true">https://prospect.org/2026/09/11/oct-2026-data-center-of-attention/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Candidates of every political persuasion are knocking themselves out trying to appease angry citizens wanting their lives and livelihoods put before Big Tech. The post Data Center of Attention appeared first on The American Prospect.</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Why openai hired chuck schumer’s daughter away from amazon</title>
-    <link>https://prospect.org/2026/09/11/openai-chuck-schumer-daughter-amazon/</link>
-    <guid isPermaLink="true">https://prospect.org/2026/09/11/openai-chuck-schumer-daughter-amazon/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>The AI industry has a greater need for government influence than anyone else. The post Why OpenAI Hired Chuck Schumer’s Daughter Away From Amazon appeared first on The American Prospect.</description>
-    <category>OpenAI</category>
-  </item>
-  <item>
-    <title>Show hn: algo-trading-skills – trading failure modes AI agents don&apos;t know</title>
-    <link>https://github.com/HimanshuJ16/Algo-Trading-Skills</link>
-    <guid isPermaLink="true">https://github.com/HimanshuJ16/Algo-Trading-Skills</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>500+ algorithmic-trading skills for AI coding agents in the agentskills.io format. Every skill ships a working Python reference implementation and its own tests - 20,291 in CI. Broker APIs, backtes...</description>
-    <category>AI agent</category>
-  </item>
-  <item>
-    <title>A global digital navigator of human health for precision medicine</title>
-    <link>https://www.nature.com/articles/s41591-026-04621-1</link>
-    <guid isPermaLink="true">https://www.nature.com/articles/s41591-026-04621-1</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>The International Consortium of Digital Twins in Healthcare and Medicine was established to advance medical digital twin technology as a new infrastructure for precision health.</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>In pictures: security in the age of shadow AI vitg melbourne roundtable</title>
-    <link>https://www.itnews.com.au/gallery/in-pictures-security-in-the-age-of-shadow-ai-vitg-melbourne-roundtable-628850</link>
-    <guid isPermaLink="true">https://www.itnews.com.au/gallery/in-pictures-security-in-the-age-of-shadow-ai-vitg-melbourne-roundtable-628850</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>A selection of photos from a recent iTnews roundtable lunch at Society restaurant in Melbourne.</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Recommendations for return of secondary genomic findings in observational cohort studies</title>
-    <link>https://www.nature.com/articles/s41588-026-02724-6</link>
-    <guid isPermaLink="true">https://www.nature.com/articles/s41588-026-02724-6</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>This Perspective presents an integrated ethical framework for the return of secondary findings from observational cohort studies, including polygenic risk scores, somatic mosaicism and pharmacogenomic results, for which prior guidance is limited.</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Genomic insights into natural selection in recent human history</title>
-    <link>https://www.nature.com/articles/s41576-026-01010-9</link>
-    <guid isPermaLink="true">https://www.nature.com/articles/s41576-026-01010-9</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Advances in genome-wide selection scans and ancient DNA have greatly expanded our ability to study human evolution. This Review discusses the conceptual and statistical challenges in identifying and interpreting selection signals, and how recent approaches ar…</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Why so many AI researchers think the machines could kill everyone</title>
-    <link>https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/</link>
-    <guid isPermaLink="true">https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.</description>
-    <category>AI news</category>
-  </item>
-  <item>
-    <title>Oracle says AI will save it from the saaspocalypse, not bring it on</title>
-    <link>https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736</link>
-    <guid isPermaLink="true">https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>It’s a better interface, can speed installations, and drives IaaS sales too</description>
-    <category>AI news</category>
-  </item>
-  <item>
-    <title>Population pharmacokinetic/pharmacodynamic modeling of NH600001 reveals age-related differences in sedation response and supports individualized dosing in elderly patients</title>
-    <link>https://pubmed.ncbi.nlm.nih.gov/42728212/</link>
-    <guid isPermaLink="true">https://pubmed.ncbi.nlm.nih.gov/42728212/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Population pharmacokinetic/pharmacodynamic modeling of NH600001 identified age-related differences in sedation response, with findings supporting individualized dosing strategies for elderly patients. This analysis was conducted by researchers at the Center of Clinical Pharmacology at the Third Xian</description>
-    <category>Pharmacokinetics/Pharmacodynamics</category>
-    <category>Elderly Population</category>
-    <category>Personalized Medicine</category>
-  </item>
-  <item>
-    <title>STAT+: Scholar Rock wins FDA approval for first drug to target SMA muscle loss</title>
-    <link>https://www.statnews.com/2026/09/11/scholar-rock-spinal-muscular-atrophy-isembyld-clinical-trial-fda-approval/?utm_campaign=rss</link>
-    <guid isPermaLink="true">https://www.statnews.com/2026/09/11/scholar-rock-spinal-muscular-atrophy-isembyld-clinical-trial-fda-approval/?utm_campaign=rss</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>A late-stage clinical trial found that, when combined with an SMN2-targeting drug, Isembyld caused young patients’ motor skills to improve after a year.</description>
-    <category>Biotech</category>
-    <category>Breaking News</category>
-    <category>FDA</category>
-  </item>
-  <item>
-    <title>STAT+: Cancer drug shortages keep disrupting patient care</title>
-    <link>https://www.statnews.com/2026/09/11/biotech-news-cancer-drug-shortages-keep-disrupting-patient-care/?utm_campaign=rss</link>
-    <guid isPermaLink="true">https://www.statnews.com/2026/09/11/biotech-news-cancer-drug-shortages-keep-disrupting-patient-care/?utm_campaign=rss</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Platinum chemotherapy&apos;s long-term effects, surprising heart failure drug failures, and more biotech news from The Readout</description>
-    <category>Biotech</category>
-    <category>Business</category>
-    <category>Pharma</category>
-  </item>
-  <item>
-    <title>ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses</title>
-    <link>https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/</link>
-    <guid isPermaLink="true">https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>&quot;I didn&apos;t know that AI could hallucinate facts,&quot; New Mexico defense lawyer says.</description>
-    <category>AI</category>
-    <category>Policy</category>
-    <category>AI hallucination</category>
-  </item>
-  <item>
-    <title>Discovering host-viral protein interactions in autophagy: a lir discovery pipeline for identifying lc3-interacting region motifs in highly virulent viruses</title>
-    <link>https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014607</link>
-    <guid isPermaLink="true">https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014607</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Author summary Hemorrhagic fever viruses (HFVs) are highly lethal pathogens that are rarely studied due to the high biosafety requirements. Viral proteins interact with host proteins to facilitate viral replication, and studying these interactions provide ins…</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Scientists just made quantum computer operations 1,000 times faster</title>
-    <link>https://www.sciencedaily.com/releases/2026/09/260911003845.htm</link>
-    <guid isPermaLink="true">https://www.sciencedaily.com/releases/2026/09/260911003845.htm</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>Researchers have found a way to perform certain quantum operations more than 1,000 times faster, cutting thousands of repeated control cycles down to just one. The advance could reduce errors and bring reliable, fault-tolerant quantum computers closer to real…</description>
-    <category>Pharma AI</category>
-  </item>
-  <item>
-    <title>Arpa-h funds AI agents designed to adjust heart failure medications, testing how much autonomy patients can trust</title>
-    <link>https://www.medicaldaily.com/arpa-h-advocate-ai-heart-failure-medication-safety-478556</link>
-    <guid isPermaLink="true">https://www.medicaldaily.com/arpa-h-advocate-ai-heart-failure-medication-safety-478556</guid>
-    <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
-    <source url="https://djindetoss.github.io/pharma-ai-data-watch/feed.xml">Pharma AI &amp; Data Watch</source>
-    <description>ARPA-H picked teams to build AI agents that could adjust heart failure care, aiming for FDA authorization. Safety questions patients should ask.</description>
-    <category>FDA</category>
-    <category>AI agent</category>
   </item>
   </channel>
 </rss>
