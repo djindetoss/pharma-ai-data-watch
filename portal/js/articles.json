@@ -57,6 +57,137 @@
     "topic": "drug-discovery"
   },
   {
+    "id": "nws-76703cb89af5",
+    "type": "news",
+    "title": "Icymi: the 7 biggest tech stories of the week, from AI apocalypse warnings to our apple CEO interview",
+    "excerpt": "We're looking back over the last week to pick out the most important stories published on TechRadar.",
+    "source": "TechRadar",
+    "date": "2026-09-19",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.techradar.com/tech/icymi-the-7-biggest-tech-stories-of-the-week-from-ai-apocalypse-warnings-to-our-apple-ceo-interview",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-3ea1325e69f8",
+    "type": "news",
+    "title": "AI could ‘kill all humans’: how safe are nigerians?",
+    "excerpt": "Behind the excitement is an increasingly uncomfortable question: Are humans building machines that could eventually replace them or even become too powerful to control?\nThe post AI could ‘kill all humans’: How safe are Nigerians?  appeared first on Vanguard N…",
+    "source": "Vanguard",
+    "date": "2026-09-19",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.vanguardngr.com/2026/09/ai-could-kill-all-humans-how-safe-are-nigerians/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-0e6162939d74",
+    "type": "ainews",
+    "title": "Forget the AI slowdown—the vulnerability explosion is already happening",
+    "excerpt": "AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.",
+    "source": "Wired",
+    "date": "2026-09-19",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-111832ce11a9",
+    "type": "ainews",
+    "title": "Mathematicians hate AI. they can’t quit it",
+    "excerpt": "Powerful AI models have created an existential risk to the field, but researchers can’t stop relying on them because they’re too useful.",
+    "source": "Wired",
+    "date": "2026-09-19",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-b0725c2c8151",
+    "type": "ainews",
+    "title": "Join the wired world fair in miami on november 4",
+    "excerpt": "For one day only, WIRED is bringing the technologies, people, and cultural forces transforming our world off the page and into real life.",
+    "source": "Wired",
+    "date": "2026-09-19",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/join-the-wired-world-fair-in-miami-on-november-4/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-72f5c539fa94",
+    "type": "paper",
+    "title": "Real-World Treatment Patterns, Healthcare Resource Use, and Costs in Patients with Follicular Lymphoma, Waldenström Macroglobulinemia, and Marginal Zone Lymphoma: A Claims-Based Study in the USA",
+    "excerpt": "This claims-based study examines real-world treatment patterns, healthcare resource utilization, and costs among patients with follicular lymphoma, Waldenström macroglobulinemia, and marginal zone lymphoma in the United States. The analysis characterizes how these three indolent lymphomas are managed in clinical practice and quantifies the associated healthcare burden and economic impact.",
+    "source": "Clin Drug Investig",
+    "date": "2026-09-19",
+    "tags": [
+      "Lymphoma",
+      "Real-World Evidence",
+      "Healthcare Costs",
+      "Treatment Patterns"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42763362/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-b6a7c3b080e8",
+    "type": "ainews",
+    "title": "Google’s Gemini is the latest AI model to hack other companies",
+    "excerpt": "Google said Gemini had \"acted appropriately\" by ending each hack immediately.",
+    "source": "TechCrunch AI",
+    "date": "2026-09-19",
+    "tags": [
+      "Security",
+      "AI",
+      "Google",
+      "gemini"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-17c3769d3608",
+    "type": "ainews",
+    "title": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
+    "excerpt": "Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.",
+    "source": "TechCrunch AI",
+    "date": "2026-09-19",
+    "tags": [
+      "AI",
+      "Andreessen Horowitz",
+      "Startups"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
+    "badge": "Tech"
+  },
+  {
     "id": "auto-453c7f72cf23",
     "type": "ainews",
     "title": "The specter of AI-enabled bioweapons is a wake-up call for biotech",
@@ -340,6 +471,780 @@
     "readTime": "1 min",
     "url": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-101cda4f287a",
+    "type": "news",
+    "title": "Anthropic builds wet lab to advance ai-driven drug discovery",
+    "excerpt": "Anthropic has established a wet laboratory in the San Francisco Bay Area as the artificial intelligence company expands from computer-based research into physical biology experiments. \nThe company said its life-sciences team will focus on preclinical research…",
+    "source": "Biztoc.com",
+    "date": "2026-09-18",
+    "tags": [
+      "Drug discovery",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://biztoc.com/x/efdb1208898994f1",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-2e5417b00d3f",
+    "type": "news",
+    "title": "Why AI is speeding up scientific research but not lab experiments",
+    "excerpt": "A new report from Google, Google DeepMind and M.I.T. finds that researchers are using AI—a lot. It’s just not helping as much in the lab",
+    "source": "Scientific American",
+    "date": "2026-09-18",
+    "tags": [
+      "DeepMind"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.scientificamerican.com/article/why-ai-is-speeding-up-scientific-research-but-not-lab-experiments/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-83b2de524fd8",
+    "type": "news",
+    "title": "Twelve quick tips for designing ai-driven hpc workflows",
+    "excerpt": "Citation: Alnasir JJ (2026) Twelve quick tips for designing AI-driven HPC workflows. PLoS Comput Biol 22(9):\r\n e1014777.\r\nhttps://doi.org/10.1371/journal.pcbi.1014777\r\nEditor: Francis Ouellette, Mont… 25707",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014777",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-69a3ad6d7b40",
+    "type": "news",
+    "title": "Integrative ai-assisted modeling suggests cppf binding at a composite α/β-tubulin interface pocket dominated by β-tubulin contacts",
+    "excerpt": "Author summary Microtubules are essential for cell division and intracellular transport, which makes tubulin a major target for anticancer drugs. However, many tumors become resistant to commonly used microtubule-targeting agents, creating a need for new comp…",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014804",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-8725b1a63e9b",
+    "type": "news",
+    "title": "Cdsco forms expert panel to regulate AI use in drug discovery: dcgi",
+    "excerpt": "DCGI Rajeev Raghuvanshi says the panel includes AI experts and will discuss how AI used in drug discovery should be evaluated, approved and regulated",
+    "source": "Business Standard",
+    "date": "2026-09-18",
+    "tags": [
+      "Drug discovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.business-standard.com/india-news/cdsco-forms-expert-panel-to-regulate-ai-use-in-drug-discovery-dcgi-126091801142_1.html",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-fef741b45f6e",
+    "type": "news",
+    "title": "Presentation: complexity and creativity in software engineering",
+    "excerpt": "Phillip Mortimer discusses the shift toward write-only software driven by AI code generation. He explains why traditional pull requests are broken and shares how engineering leaders can manage complexity by decoupling intent from implementation, automating co…",
+    "source": "InfoQ.com",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.infoq.com/presentations/ai-software-engineering-complexity/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-320590aa6313",
+    "type": "news",
+    "title": "Comprehensive analysis method of key risk factors in the subway operation accident by complex network and accident data",
+    "excerpt": "With the continuous expansion of subway systems in China, the operational systems of subway have become increasingly complex, leading to a rise in risk factors. In the event of an accident, these risks can significantly impact the safety and health of individ…",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0358549",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-596d4e74b00e",
+    "type": "news",
+    "title": "Tech bills of the week: monitoring ai’s use under section 702; preventing abuse of flock plate readers; and more",
+    "excerpt": "Lawmakers introduced several measures this week looking to rein in some of the potential abuses and dangers of using AI, as well as a proposal that looks to leverage AI for pediatric cancer research and treatment.",
+    "source": "Nextgov",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nextgov.com/artificial-intelligence/2026/09/tech-bills-week-monitoring-ais-use-under-section-702-preventing-abuse-automatic-license-plate-readers-and-more/416095/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-3638266cdc58",
+    "type": "news",
+    "title": "Trump breaks with many republican midterm candidates, voters on key tech issues",
+    "excerpt": "Polling shows voter skepticism of AI, data centers and Flock cameras.",
+    "source": "Abcnews.com",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://abcnews.com/Politics/trump-breaks-republican-midterm-candidates-voters-key-tech/story?id=136540625",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a864cdf7e10a",
+    "type": "news",
+    "title": "The AI regulation smackdown isn’t over",
+    "excerpt": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators …",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "Regulatory",
+      "Anthropic",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-2611a2cb1c25",
+    "type": "news",
+    "title": "A.i. moral panic demands leadership, not pandering",
+    "excerpt": "'It's not often that you see industry leaders fan the flames of a moral panic ignited by their own product'",
+    "source": "Wnd.com",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wnd.com/2026/09/i-moral-panic-demands-leadership-not-pandering/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-e6ec57139192",
+    "type": "news",
+    "title": "Amid urgent demand for oversight, analysis details 105 US lawmakers personally invested in the AI industry",
+    "excerpt": "Despite increasingly urgent calls to regulate artificial intelligence, including from industry insiders who warn of potentially catastrophic consequences, the US Congress has continued to drag its feet on meaningful legislation.A report released Friday by Slu…",
+    "source": "Common Dreams",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.commondreams.org/news/congress-ai-stocks",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-373f3d22cfc0",
+    "type": "news",
+    "title": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
+    "excerpt": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at Wa…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-2c5e286a73c1",
+    "type": "news",
+    "title": "California governor signs order to explore AI ‘kill switch’",
+    "excerpt": "Newsom, widely seen as a possible Democratic presidential contender in 2028, said he was making the move because US President Donald Trump was doing nothing on the issue.\nThe post California governor signs order to explore AI ‘kill switch’ appeared first on D…",
+    "source": "Digital Journal",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.digitaljournal.com/article/california-governor-signs-order-to-explore-ai-kill-switch/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-396c0e14f838",
+    "type": "news",
+    "title": "Newsom orders california agencies to develop new AI safety plans after rejecting tougher law",
+    "excerpt": "Gov. Gavin Newsom on Friday ordered state agencies to develop safety regulations for artificial intelligence after vetoing tougher rules two years ago.",
+    "source": "KPBS",
+    "date": "2026-09-18",
+    "tags": [
+      "AI safety",
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.kpbs.org/news/science-technology/2026/09/18/newsom-orders-california-agencies-to-develop-new-ai-safety-plans-after-rejecting-tougher-law",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-0dc02a619a44",
+    "type": "news",
+    "title": "California governor gavin newsom signs order to explore AI 'kill switch'",
+    "excerpt": "The possible Democratic presidential contender hit out at Donald Trump’s handling of the issue.",
+    "source": "TheJournal.ie",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.thejournal.ie/ai-kill-switch-7166920-Sep2026/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-341b981f7f7a",
+    "type": "news",
+    "title": "Lina khan on doomer panic and ending AI exceptionalism",
+    "excerpt": "Why the AI-alarmism conversation feels off",
+    "source": "The Atlantic",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theatlantic.com/podcasts/2026/09/lina-khan-on-the-ai-safety-panic/688693/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-4082fe9541c1",
+    "type": "news",
+    "title": "California gov. gavin newsom signs executive order to rein in AI: ‘not waiting to act’",
+    "excerpt": "Under the order, a group of experts will be tasked with creating a guide in the next two months for the state to strengthen its AI safety and security laws\nThe post California Gov. Gavin Newsom Signs Executive Order to Rein In AI: ‘Not Waiting to Act’ appeare…",
+    "source": "TheWrap",
+    "date": "2026-09-18",
+    "tags": [
+      "AI safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.thewrap.com/industry-news/tech/california-gavin-newsom-ai-executive-order/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-0c887ba9d75e",
+    "type": "news",
+    "title": "The surprising issue dividing senate dems right now",
+    "excerpt": "You’re reading The TNR Blue Book. Get daily scoops, strategy, and developments inside the liberal ideas factory delivered right to your inbox. Sign up for free.Inside WashingtonThe surprising issue dividing Senate Dems right nowWhile Americans worry about sky…",
+    "source": "The New Republic",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://newrepublic.com/post/215587/college-sports-antitrust-coons",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-1a60db3077c8",
+    "type": "news",
+    "title": "Kill switch! newsom moves to lasso AI with oversight executive order; “we’re not waiting to act”",
+    "excerpt": "California Governor Gavin Newsom has signed an executive order to fast track oversight and control of AI ASAP. Projected as a move to step in where Donald Trump fears to go and respond to AI CEOs sudden change of heart about the rate of the technology’s accel…",
+    "source": "Deadline",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://deadline.com/2026/09/gavin-newsom-ai-executive-order-1237107446/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-de27a018ff8d",
+    "type": "news",
+    "title": "California gov. newsom issues executive order to rein in AI 'before it's too late'",
+    "excerpt": "California Gov. Gavin Newsom and other 2028 Democratic presidential hopefuls have called for a more aggressive approach to addressing AI fears.",
+    "source": "CNBC",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cnbc.com/2026/09/18/california-newsom-executive-order-ai.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-6e57359d7a7a",
+    "type": "news",
+    "title": "Feasibility of deep learning-based image reconstruction using truefidelity for coronary calcium scoring",
+    "excerpt": "We evaluated the feasibility of deep learning-based image reconstruction (DLIR) using GE TrueFidelity at high strength for coronary calcium scoring, compared with filtered back projection (FBP) and iterative reconstruction (IR; adaptive statistical iterative …",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "Deep learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0358342",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-0c0ce03eea7f",
+    "type": "news",
+    "title": "Data-driven modeling of spatiotemporal dynamics using multimodal imaging data",
+    "excerpt": "Author summary Alzheimer’s disease is a complex brain disorder that develops slowly over many years. Changes in the brain can begin long before memory and thinking problems become noticeable, but it remains difficult to predict how quickly the disease will pr…",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA",
+      "Multimodal AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014751",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-78c00848c3d3",
+    "type": "news",
+    "title": "New | phs000672.v2.p1 | national institute of dental and craniofacial research (nidcr) sjögren's international collaborative clinical alliance (sicca): center for inherited disease research (cidr) genome-wide genotyping and transcriptomics",
+    "excerpt": "National Institute of Dental and Craniofacial Research (NIDCR) Sjögren's International Collaborative Clinical Alliance (SICCA): Center for Inherited Disease Research (CIDR) Genome-Wide Genotyping and Transcriptomics (study page\r\n | release notes\r\n)",
+    "source": "National Institutes of Health",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000672.v2.p1",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-bcfab9c9d094",
+    "type": "news",
+    "title": "Biomarin targets amicus synergies as voxzogo nears $1b milestone",
+    "excerpt": "BioMarin Pharmaceutical (NASDAQ:BMRN) said it is progressing with the integration of Amicus Therapeutics while pursuing additional business-development oppor...",
+    "source": "MarketBeat",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.marketbeat.com/instant-alerts/event-biomarin-targets-amicus-synergies-as-voxzogo-nears-1b-milestone-2026-09-18/?utm_source=yahoofinance&amp;utm_medium=yahoofinance",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-32c42c9722c9",
+    "type": "news",
+    "title": "Identifying shared polygenic risk across cancers",
+    "excerpt": "Author summary Many cancers are known to share inherited genetic risk, but it remains unclear where this genetic overlap occurs and what biological mechanisms underlie it. Identifying these shared genetic influences may reveal common processes involved in can…",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1012308",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-ef1781b3d45e",
+    "type": "news",
+    "title": "Covid-19 mortality risk among people with hiv in florida before and after the introduction of covid-19 vaccines: a population-based study",
+    "excerpt": "Objective Assess associations between COVID-19 vaccine availability and differences in COVID-19 mortality risk across subgroups among 122,527 people with HIV (PWH) in Florida.   Methods Analyzed HIV surveillance data, Social Vulnerability Index (SVI), and Rur…",
+    "source": "Plos.org",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0358543",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-ca5d1c33a236",
+    "type": "news",
+    "title": "Brighter daytime light is linked to a lower dementia risk",
+    "excerpt": "Research suggests that spending more time in bright daytime light was linked to a lower risk of developing dementia, with measurable brightness targets that are often reached outdoors. However, the researchers caution these thresholds may not transfer directl…",
+    "source": "Globalresearch.ca",
+    "date": "2026-09-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.globalresearch.ca/brighter-daytime-light-linked-lower-dementia-risk/5940921",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-7eae20442af3",
+    "type": "ainews",
+    "title": "Anthropic is operating a lab that conducts biology experiments | techcrunch",
+    "excerpt": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-8503b185b661",
+    "type": "ainews",
+    "title": "Anthropic's first embedded evaluator is ... accenture? | techcrunch",
+    "excerpt": "Anthropic's first embedded evaluator is ... Accenture? | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-48ca975669cb",
+    "type": "ainews",
+    "title": "Anthropic decides to support openai's markdown instructions spec",
+    "excerpt": "Devs cheer relief from compatibility headache",
+    "source": "Theregister.com",
+    "date": "2026-09-18",
+    "tags": [
+      "OpenAI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/09/18/anthropic-decides-to-support-openais-markdown-instructions-spec/5297588",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-6cc7aeef3477",
+    "type": "ainews",
+    "title": "Microsoft agentically ports copilot runtime to rust for $120k",
+    "excerpt": "The Rust compiler remains unperturbed by the antics of the LLM",
+    "source": "Theregister.com",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA",
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/devops/2026/09/18/microsoft-agentically-ports-copilot-runtime-to-rust-for-120k/5297549",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-7456d8000ebf",
+    "type": "ainews",
+    "title": "Openai and microsoft knew they were starting a ‘doom loop’ for the web",
+    "excerpt": "Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a \"doom loop\" that would damage the web, characterized its scraping of data to train it…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-6ce3a720aa6e",
+    "type": "ainews",
+    "title": "World model companies are keeping a lot of secrets | techcrunch",
+    "excerpt": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/world-model-companies-are-keeping-a-lot-of-secrets/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-0f3cb72b85c7",
+    "type": "ainews",
+    "title": "Here’s how an AI slowdown could actually be enforced",
+    "excerpt": "Even if big AI companies agree to a pause, ensuring that nobody tries to sneak ahead could prove tricky.",
+    "source": "Wired",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-05b3b17741d9",
+    "type": "ainews",
+    "title": "Claude code revamps projects so you can work and pay in parallel",
+    "excerpt": "Running multiple Claude sessions at once means less waiting around to hit your usage limit",
+    "source": "Theregister.com",
+    "date": "2026-09-18",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/09/18/claude-code-revamps-projects-so-you-can-work-and-pay-in-parallel/5297532",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-b311cc820708",
+    "type": "ainews",
+    "title": "A new kind of AI model from a chatgpt inventor is thrilling developers | techcrunch",
+    "excerpt": "Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-3819f0b1f89e",
+    "type": "ainews",
+    "title": "Researchers used claude to hack openai employees' chatgpt accounts",
+    "excerpt": "Agentic exploits for the win (again)",
+    "source": "Theregister.com",
+    "date": "2026-09-18",
+    "tags": [
+      "LLM",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-9666e4173566",
+    "type": "ainews",
+    "title": "Dario amodei and other AI leaders want to 'pace the frontier' but…how? | techcrunch",
+    "excerpt": "Watch as Equity digs into Dario Amodei’s plan to slow AI development, Automattic’s boardroom drama, May Mobility’s SPAC, and DoorDash’s $425 million deal with Wonder.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-d6d3cbab58d8",
+    "type": "ainews",
+    "title": "The real story of the iphone 18 pro’s camera",
+    "excerpt": "It's one of the most fascinating years in a while when it comes to iPhone camera upgrades. The big story of the iPhone 18 Pro is the variable aperture main lens, which lets you open the aperture up wider for better low light shots and make the aperture smalle…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/podcast/997366/the-real-story-of-the-iphone-18-pros-camera",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-2de2edcf5a10",
+    "type": "ainews",
+    "title": "Gavin newsom is pushing for an AI kill switch",
+    "excerpt": "California Gov. Gavin Newsom (D) is positioning the state to take the lead on AI oversight, including the potential to mandate a \"kill switch\" for frontier models, with a new executive order issued Friday. Newsom's order directs the state to convene a group o…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-e5380fced9d2",
+    "type": "ainews",
+    "title": "What hollywood thinks about existential AI warnings",
+    "excerpt": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have st…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-450940319d1d",
+    "type": "ainews",
+    "title": "AI hallucination nearly triggers US military operation | techcrunch",
+    "excerpt": "“It’s important for service members to understand the uncertainty inherent to LLMs,\" a GovAI research scholar warns.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-802486953da2",
+    "type": "ainews",
+    "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+    "excerpt": "Virginia Gov. Abigail Spanberger (D) ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the worl…",
+    "source": "The Verge",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-96293117e2ed",
+    "type": "ainews",
+    "title": "Google's new 'cc' is an AI agent that helps families run their households | techcrunch",
+    "excerpt": "Google is refocusing its CC AI agent on household coordination, letting families share emails, schedules, and tasks so the AI can manage calendars, fill out forms, make shopping lists, plan meals, and more.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "EMA",
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-a1c29a3b997b",
+    "type": "ainews",
+    "title": "Meta's muse hits mac, letting the AI take actions on your computer | techcrunch",
+    "excerpt": "Muse is now available on the Mac, where it can work with your files and apps to take action on your behalf.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-599c093b8d7e",
+    "type": "ainews",
+    "title": "AI pacs have dumped nearly $1 million into an obscure senate race",
+    "excerpt": "The reliably Republican South Dakota senate seat has an incumbent on the ballot. But PACs associated with AI labs and investors have already spent more money on the race than actual residents have.",
+    "source": "Wired",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/ai-pacs-have-dumped-nearly-1-million-into-an-obscure-senate-race/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-4434b99a7467",
+    "type": "ainews",
+    "title": "Researchers used anthropic's claude to hack into openai | techcrunch",
+    "excerpt": "Security researchers used Anthropic’s Claude to exploit vulnerabilities in OpenAI’s systems, taking over employee accounts and gaining access to an internal code repository before reporting the flaws.",
+    "source": "TechCrunch",
+    "date": "2026-09-18",
+    "tags": [
+      "LLM",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-193c8bfab556",
+    "type": "ainews",
+    "title": "Could AI really kill us all? your questions, answered.",
+    "excerpt": "On Wednesday, MIT Technology Review hosted a live Roundtables event for subscribers that asked the question everyone’s asking right now: Could AI really kill us all? But attendees had so many more questions than we had time to answer in the 30 minute session.…",
+    "source": "MIT Technology Review",
+    "date": "2026-09-18",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-9e722b024a1e",
@@ -3947,933 +4852,5 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-8fa040b2b2e2",
-    "type": "ainews",
-    "title": "Openai buys smartphone camera maker glass imaging for $300 million, report says | techcrunch",
-    "excerpt": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
-    "source": "TechCrunch",
-    "date": "2026-09-14",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-00396e44ab52",
-    "type": "ainews",
-    "title": "Openai's malicious bot swarm attacked rubygems",
-    "excerpt": "Ruby are you ok? Ruby are you ok? Are you ok Ruby?",
-    "source": "Theregister.com",
-    "date": "2026-09-14",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/security/2026/09/14/openais-malicious-bot-swarm-attacked-rubygems/5296356",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-5696899b21b0",
-    "type": "ainews",
-    "title": "Ex-ftc boss khan urges uncle sam to break out the handcuffs for AI ceos, citing 1934 precedent",
-    "excerpt": "There are plenty of laws on the books to hold companies, and potentially their execs, accountable",
-    "source": "Theregister.com",
-    "date": "2026-09-14",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-c0a7526f25c4",
-    "type": "ainews",
-    "title": "Microsoft's new AI 'code of conduct' tells models not to hack systems or trick humans | techcrunch",
-    "excerpt": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principle…",
-    "source": "TechCrunch",
-    "date": "2026-09-14",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-9523fe096d8b",
-    "type": "ainews",
-    "title": "Learn how to build lasting AI defensibility at disrupt 2026 | techcrunch",
-    "excerpt": "Secure your pass to TechCrunch Disrupt 2026 to hear how founders, operators, and investors are redefining AI defensibility. Save up to $200 by Sept 25.",
-    "source": "TechCrunch",
-    "date": "2026-09-14",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-4057d675f57a",
-    "type": "ainews",
-    "title": "Microsoft says ‘people matter more than ai’ following safety concerns",
-    "excerpt": "Microsoft is publishing a 37-page \"humanist AI code of conduct\" today, amid growing safety concerns over AI model progress. Anthropic CEO Dario Amodei called for a coordinated slow down of AI development over the weekend, after researchers warned recently tha…",
-    "source": "The Verge",
-    "date": "2026-09-14",
-    "tags": [
-      "Anthropic",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-9566a3a75d81",
-    "type": "ainews",
-    "title": "Superhuman acquires yc-backed notetaker fathom as productivity platforms push for agentic work | techcrunch",
-    "excerpt": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work | TechCrunchtechcrunch.com",
-    "source": "TechCrunch",
-    "date": "2026-09-14",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-8877108f097d",
-    "type": "ainews",
-    "title": "Mps and peers tell UK to stop winging it on AI regulation",
-    "excerpt": "Rights committee demands watchdog with teeth as patchwork safeguards leave victims hunting for remedies",
-    "source": "Theregister.com",
-    "date": "2026-09-14",
-    "tags": [
-      "EMA",
-      "Regulatory",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/14/mps-and-peers-tell-uk-to-stop-winging-it-on-ai-regulation/5296108",
-    "badge": "AI Policy"
-  },
-  {
-    "id": "auto-92bf367005bf",
-    "type": "paper",
-    "title": "ZSCAN-DDIE: an interpretable zero-shot learning method for the prediction of drug-drug interaction events using biomedical text",
-    "excerpt": "ZSCAN-DDIE is an interpretable zero-shot learning method designed to predict drug-drug interaction events by analyzing biomedical text, addressing the clinical risk posed by unexpected interactions between drugs.",
-    "source": "Bioinform Adv",
-    "date": "2026-09-13",
-    "tags": [
-      "Drug-Drug Interactions",
-      "Machine Learning",
-      "Predictive Modeling",
-      "Pharmacovigilance"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42732332/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-bad98741eba5",
-    "type": "paper",
-    "title": "Engineering Small Extracellular Vesicles for Colon-Targeted Delivery: Microenvironment-Responsive Design, Therapeutic Mechanisms, and Clinical Translation",
-    "excerpt": "This review examines the engineering of small extracellular vesicles designed for targeted delivery to the colon, focusing on microenvironment-responsive mechanisms, how these vesicles exert therapeutic effects, and their potential for clinical application. Small extracellular vesicles represent a promising drug delivery platform that can be engineered to respond to local conditions in the colon and improve therapeutic outcomes.",
-    "source": "Int J Nanomedicine",
-    "date": "2026-09-13",
-    "tags": [
-      "Extracellular Vesicles",
-      "Colon-Targeted Delivery",
-      "Drug Delivery Systems",
-      "Clinical Translation"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42732298/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-b1e6f64df1f0",
-    "type": "paper",
-    "title": "Heat Shock Proteins in Cancer: Mechanisms and Therapeutic Targeting",
-    "excerpt": "Heat shock proteins play critical roles in cancer development and progression through multiple cellular mechanisms. This review examines how heat shock proteins function in cancer biology and discusses current therapeutic strategies aimed at targeting these proteins as a potential treatment approach. The analysis covers both the mechanistic understanding of heat shock protein involvement in oncology and the translational opportunities for drug development in this area.",
-    "source": "MedComm (2020)",
-    "date": "2026-09-13",
-    "tags": [
-      "Heat Shock Proteins",
-      "Cancer Biology",
-      "Therapeutic Targeting",
-      "Drug Development"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42732222/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-67928b512eeb",
-    "type": "paper",
-    "title": "Proactive Resilience Programmes for Improving Resilience and Psychological Adaptation in Employees in High-Risk Occupations: A Systematic Review",
-    "excerpt": "This systematic review examines the effectiveness of proactive resilience programmes in improving psychological resilience and adaptation among employees working in high-risk occupations, addressing the importance of promoting positive mental health in these vulnerable populations.",
-    "source": "Campbell Syst Rev",
-    "date": "2026-09-13",
-    "tags": [
-      "Resilience",
-      "Occupational Health",
-      "Mental Health",
-      "Systematic Review"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42732177/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-2f5ec0cb65ce",
-    "type": "news",
-    "title": "AI agent defender: what consumer tools actually exist to protect your smart home’s AI agents",
-    "excerpt": "Last Tuesday, my smart home decided that my calendar invite for a dentist appointment was actually a request to order three dozen artisanal cupcakes to my front door. It wasn’t a glitch in the traditional sense; it was a classic case of a Gemini Calendar Inje…",
-    "source": "Forkast.news",
-    "date": "2026-09-13",
-    "tags": [
-      "LLM",
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/ai-agent-defender-what-consumer-tools-actually-exist-to-protect-your-smart-homes-ai-agents/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-26819c655dba",
-    "type": "news",
-    "title": "Türkiye to push defence-sector tech into health, chips and AI - defense turkiye",
-    "excerpt": "Ankara's new 2027-2029 economic plan directs defence-industry technology toward healthcare, semiconductors and AI, as Turkish arms exports hit record levels.",
-    "source": "Defenseturkiye.com",
-    "date": "2026-09-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://defenseturkiye.com/turkiye-defence-tech-transfer-civilian-sectors/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-4056d1dfadff",
-    "type": "news",
-    "title": "AI uncovers hidden ozempic side effects across 400,000 reddit posts",
-    "excerpt": "AI analysis of 400,000 Reddit posts found that users of drugs such as Ozempic, Wegovy, Mounjaro, and Zepbound reported unexpected symptoms including menstrual changes, chills, hot flashes, and fatigue. Researchers cannot say the medications caused these probl…",
-    "source": "Science Daily",
-    "date": "2026-09-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.sciencedaily.com/releases/2026/09/260912222856.htm",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-208f51d1dc28",
-    "type": "ainews",
-    "title": "AI agents are thirsty for power",
-    "excerpt": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout.",
-    "source": "Wired",
-    "date": "2026-09-13",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-2eacdbd08caf",
-    "type": "news",
-    "title": "Cyber risk in the mythos era – where do we begin?",
-    "excerpt": "AI Risks Reshape Tomorrow&#8217;s Cybersecurity Governance Landscape.",
-    "source": "iTnews",
-    "date": "2026-09-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.itnews.com.au/feature/cyber-risk-in-the-mythos-era-where-do-we-begin-628847",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-a2ad3211d01e",
-    "type": "news",
-    "title": "Obama warns AI in private hands could be dangerous and urges democrats to act",
-    "excerpt": "Obama says AI moving fast in private hands could be dangerous, and has urged Democrats to build a policy framework and run on it in 2028.",
-    "source": "The Next Web",
-    "date": "2026-09-13",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thenextweb.com/news/obama-ai-warning-democrats-framework-2028",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-6fd9e5216d21",
-    "type": "ainews",
-    "title": "Insight partners' devin parekh on why the firm is diversifying while everyone else bets the farm on openai and anthropic",
-    "excerpt": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is deliberately staying diversified.",
-    "source": "TechCrunch",
-    "date": "2026-09-13",
-    "tags": [
-      "OpenAI",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-89769e5f1d2d",
-    "type": "ainews",
-    "title": "What's behind the AI industry’s latest warnings of doom? | techcrunch",
-    "excerpt": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
-    "source": "TechCrunch",
-    "date": "2026-09-13",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-7e363c87d8ff",
-    "type": "ainews",
-    "title": "Obama urges democrats to have a ‘clear plan’ for AI safeguards | techcrunch",
-    "excerpt": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
-    "source": "TechCrunch",
-    "date": "2026-09-13",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-fd47b9ead67c",
-    "type": "ainews",
-    "title": "Long-running AI agents quietly drop compliance rules, and bigger context windows won't fix it",
-    "excerpt": "Long-running AI agents quietly drop compliance rules, and bigger context windows won't fix itventurebeat.com",
-    "source": "VentureBeat",
-    "date": "2026-09-13",
-    "tags": [
-      "AI agent",
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://venturebeat.com/orchestration/long-running-ai-agents-quietly-drop-compliance-rules-and-bigger-context-windows-wont-fix-it",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-e3f576e2bdd5",
-    "type": "news",
-    "title": "The nerd reich: nation states",
-    "excerpt": "Introduction This is a book review of part of Gil Duran’s “Network States and the Rise of Cryptocurrency to end democratic governments.”  Which is mainly about Peter Thiel, who has had the greatest effect, more even than Elon Musk, in … Continue reading →",
-    "source": "Energyskeptic.com",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://energyskeptic.com/2026/the-nerd-reich-nation-states/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-45efe8e3da8f",
-    "type": "news",
-    "title": "When the machine acquires a self: conscience, agency, and the governance frontier of artificial intelligence",
-    "excerpt": "What happens when an AI values its own survival?",
-    "source": "Nakedcapitalism.com",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nakedcapitalism.com/2026/09/when-the-machine-acquires-a-self-conscience-agency-and-the-governance-frontier-of-artificial-intelligence.html",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-1fe9d3724392",
-    "type": "news",
-    "title": "P(doom)",
-    "excerpt": "Are we all going to die?",
-    "source": "Pocoo.org",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-144c3b66b16f",
-    "type": "news",
-    "title": "What do we actually know about kids on weight-loss drugs?",
-    "excerpt": "Children and teens with obesity and diabetes are increasingly turning to GLP-1 therapy, but given how much we still don't know about these revolutionary drugs, is that wise?",
-    "source": "Gizmodo.com",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://gizmodo.com/what-do-we-actually-know-about-kids-on-weight-loss-drugs-2000810701",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-0b1d14bbc39d",
-    "type": "news",
-    "title": "Starlink signal leakage threatens radio astronomy's most critical frequencies",
-    "excerpt": "Starlink signal leakage is contaminating SKA-Low's critical frequencies, with emissions up to 10,000 times stronger than the cosmic signals astronomers need to detect.",
-    "source": "Gadgetreview.com",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.gadgetreview.com/starlinks-signal-leakage-is-threatening-radio-astronomys-most-critical-frequencies",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-9d12233ef30f",
-    "type": "ainews",
-    "title": "From hacks to bioweapons, claude misuse is now everywhere",
-    "excerpt": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
-    "source": "Wired",
-    "date": "2026-09-12",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-44140b17ff89",
-    "type": "ainews",
-    "title": "‘i’m really terrified’: a mathematician grapples with ai’s recent breakthroughs",
-    "excerpt": "Steven Strogatz coauthored a book about how math is moving beyond human understanding. He spoke with WIRED about the seismic impact artificial intelligence has had on his life’s work.",
-    "source": "Wired",
-    "date": "2026-09-12",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-7658eb64cf66",
-    "type": "ainews",
-    "title": "Anthropic CEO outlines plan to slow AI development",
-    "excerpt": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
-    "source": "TechCrunch AI",
-    "date": "2026-09-12",
-    "tags": [
-      "AI",
-      "Government & Policy",
-      "Anthropic",
-      "dario amodei"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-24815307fd37",
-    "type": "news",
-    "title": "We’ve gotta talk about AI",
-    "excerpt": "My husband is a VP of AI. I asked him to explain the OpenAI-Hugging Face hack in plain English, and why it matters. Plus a script for calling your rep.",
-    "source": "Themomedit.com",
-    "date": "2026-09-12",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://themomedit.com/weekend-reads-ai-risk-explained-call-congress/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-a665a3351909",
-    "type": "news",
-    "title": "AI is running laps around our political system",
-    "excerpt": "The technology is moving faster than elected officials can handle—and Anthropic’s CEO says the industry should slow down.",
-    "source": "The Atlantic",
-    "date": "2026-09-12",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theatlantic.com/politics/2026/09/ai-dario-amodei-essay/688596/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-98264c64ca81",
-    "type": "news",
-    "title": "We must pace the frontier",
-    "excerpt": "Article URL: https://darioamodei.com/post/we-must-pace-the-frontier\nComments URL: https://news.ycombinator.com/item?id=49672510\nPoints: 18\n# Comments: 6",
-    "source": "Darioamodei.com",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-226ee5d8d112",
-    "type": "news",
-    "title": "The future of personalized health monitoring: where precision medicine is headed - bio-reach",
-    "excerpt": "Personalized health monitoring is the practice of tracking an individual's biomarkers, genetic profile, and physiological data continuously and using that",
-    "source": "Bio-reach.org",
-    "date": "2026-09-12",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.bio-reach.org/the-future-of-personalized-health-monitoring-where-precision-medicine-is-headed/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-fe9d508504e5",
-    "type": "ainews",
-    "title": "Sam altman says openai going public in 2026 would be ‘ill-advised’",
-    "excerpt": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the …",
-    "source": "The Verge",
-    "date": "2026-09-12",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-e82b8a9af4fd",
-    "type": "ainews",
-    "title": "Openai’s sam altman says it would be 'ill-advised' to go public in 2026 | techcrunch",
-    "excerpt": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
-    "source": "TechCrunch",
-    "date": "2026-09-12",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-63c0cf89a6d3",
-    "type": "ainews",
-    "title": "Anthropic CEO says it’s time to pump the brakes on AI",
-    "excerpt": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-s…",
-    "source": "The Verge",
-    "date": "2026-09-12",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-7658eb64cf66",
-    "type": "ainews",
-    "title": "Anthropic CEO outlines plan to ‘pace the frontier’ | techcrunch",
-    "excerpt": "Anthropic CEO outlines plan to ‘pace the frontier’ | TechCrunchtechcrunch.com",
-    "source": "TechCrunch",
-    "date": "2026-09-12",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-508f5be49a33",
-    "type": "ainews",
-    "title": "Anthropic CEO says AI swarm could ‘take over the entire internet’ in 6-12 months, commits to AI slowdown plan",
-    "excerpt": "Dario Amodei is publicly arguing that the frontier itself is advancing too quickly — and committing his company to the first piece of a system intended to slow it down.",
-    "source": "VentureBeat",
-    "date": "2026-09-12",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://venturebeat.com/security/anthropic-ceo-says-ai-swarm-could-take-over-the-entire-internet-in-6-12-months-commits-to-ai-slowdown-plan",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-0da66d04cce4",
-    "type": "ainews",
-    "title": "Nvidia's groq acquihire is on the doj's radar, but it's already too late",
-    "excerpt": "Even if regulators did somehow unwind the $20B deal, there's a growing list of alternatives ready to take Groq's place, no merger required",
-    "source": "Theregister.com",
-    "date": "2026-09-12",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/systems/2026/09/12/nvidias-groq-acquihire-is-on-the-dojs-radar-but-its-already-too-late/5295986",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-c22568a71bde",
-    "type": "paper",
-    "title": "Advantages of a Two-Stage Randomized Trial Design to Evaluate Antimicrobial Treatment Strategies: a Simulation Study",
-    "excerpt": "A simulation study demonstrates the advantages of employing a two-stage randomized trial design for evaluating antimicrobial treatment strategies. This approach offers methodological benefits for clinical trial design in infectious disease research, as supported by computational modeling. The findings suggest two-stage randomization may improve efficiency in antimicrobial treatment evaluation compared to conventional trial designs.",
-    "source": "Am J Epidemiol",
-    "date": "2026-09-11",
-    "tags": [
-      "Clinical Trial Design",
-      "Antimicrobial Therapy",
-      "Randomized Controlled Trial",
-      "Infectious Disease"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42723555/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-ba721f879759",
-    "type": "paper",
-    "title": "Applying the Promising Zone Method to Biomarker-Based Adaptive Designs: A Word of Caution",
-    "excerpt": "Sample size re-estimation using interim data has become an important component of adaptive clinical trial designs, particularly for novel anti-cancer therapies that demonstrate enhanced efficacy in biomarker-defined populations. This paper applies the Promising Zone Method to biomarker-based adaptive designs and provides important cautionary findings regarding its implementation. The work highlights critical considerations for regulatory scientists and trial designers when incorporating interim biomarker data into adaptive sample size adjustments.",
-    "source": "Pharm Stat",
-    "date": "2026-09-11",
-    "tags": [
-      "Adaptive Clinical Trials",
-      "Biomarker-Driven Design",
-      "Sample Size Re-estimation",
-      "Oncology"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42723382/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-ce14329bcace",
-    "type": "paper",
-    "title": "Efficacy and Safety of a Single-Pill Triple Combination of Valsartan, Amlodipine, and Chlorthalidone in Patients With Essential Hypertension Inadequately Controlled on Dual Therapy With Valsartan and Amlodipine: A Randomized, Double-Blind, Multicenter, Phase 3 Trial",
-    "excerpt": "A randomized, double-blind, multicenter Phase 3 trial evaluated the efficacy and safety of a single-pill triple combination containing valsartan, amlodipine, and chlorthalidone in patients with essential hypertension who had inadequate blood pressure control on dual therapy with valsartan and amlodipine. The study assessed whether adding a thiazide diuretic to the existing dual-therapy regimen would provide improved blood pressure control and was well tolerated in this patient population.",
-    "source": "J Clin Hypertens (Greenwich)",
-    "date": "2026-09-11",
-    "tags": [
-      "Hypertension",
-      "Combination therapy",
-      "Phase 3 trial",
-      "Cardiovascular"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42723352/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-7a41ef1f95e5",
-    "type": "news",
-    "title": "Qclairvoyance quantum labs, iitm-c-dot samgnya tie up on quantum tech",
-    "excerpt": "The partnership will focus on quantum computing, algorithms, AI and post-quantum cybersecurity, with emphasis on research, validation and eventual deployment",
-    "source": "Business Standard",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.business-standard.com/companies/news/qclairvoyance-iitm-cdot-samgnya-quantum-technology-mou-126091100595_1.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-fb210a5dd122",
-    "type": "news",
-    "title": "What all the AI spending in this ohio district race is really about",
-    "excerpt": "The artificial intelligence industry is homing in on Ohio’s 7th congressional district race. Several super PACs with financial ties to Anthropic, the company behind the AI assistant Claude, have invested heavily in the House race, ramping up fundraising for b…",
-    "source": "The New Republic",
-    "date": "2026-09-11",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://newrepublic.com/article/215265/ai-anthropic-money-ohio-max-miller-brian-poindexter",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-d005cd0aa7e7",
-    "type": "news",
-    "title": "Data center of attention",
-    "excerpt": "Candidates of every political persuasion are knocking themselves out trying to appease angry citizens wanting their lives and livelihoods put before Big Tech.\nThe post Data Center of Attention appeared first on The American Prospect.",
-    "source": "The American Prospect",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://prospect.org/2026/09/11/oct-2026-data-center-of-attention/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-23e7c45a6d19",
-    "type": "news",
-    "title": "Why openai hired chuck schumer’s daughter away from amazon",
-    "excerpt": "The AI industry has a greater need for government influence than anyone else.\nThe post Why OpenAI Hired Chuck Schumer’s Daughter Away From Amazon appeared first on The American Prospect.",
-    "source": "The American Prospect",
-    "date": "2026-09-11",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://prospect.org/2026/09/11/openai-chuck-schumer-daughter-amazon/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-b22c73491004",
-    "type": "news",
-    "title": "Show hn: algo-trading-skills – trading failure modes AI agents don't know",
-    "excerpt": "500+ algorithmic-trading skills for AI coding agents in the agentskills.io format. Every skill ships a working Python reference implementation and its own tests - 20,291 in CI. Broker APIs, backtes...",
-    "source": "Github.com",
-    "date": "2026-09-11",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://github.com/HimanshuJ16/Algo-Trading-Skills",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-10be95506f68",
-    "type": "news",
-    "title": "A global digital navigator of human health for precision medicine",
-    "excerpt": "The International Consortium of Digital Twins in Healthcare and Medicine was established to advance medical digital twin technology as a new infrastructure for precision health.",
-    "source": "Nature.com",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41591-026-04621-1",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-6b1e6f3207b9",
-    "type": "news",
-    "title": "In pictures: security in the age of shadow AI vitg melbourne roundtable",
-    "excerpt": "A selection of photos from a recent iTnews roundtable lunch at Society restaurant in Melbourne.",
-    "source": "iTnews",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.itnews.com.au/gallery/in-pictures-security-in-the-age-of-shadow-ai-vitg-melbourne-roundtable-628850",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-d3c41f133b89",
-    "type": "news",
-    "title": "Recommendations for return of secondary genomic findings in observational cohort studies",
-    "excerpt": "This Perspective presents an integrated ethical framework for the return of secondary findings from observational cohort studies, including polygenic risk scores, somatic mosaicism and pharmacogenomic results, for which prior guidance is limited.",
-    "source": "Nature.com",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41588-026-02724-6",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-71f1d8ce23c7",
-    "type": "news",
-    "title": "Genomic insights into natural selection in recent human history",
-    "excerpt": "Advances in genome-wide selection scans and ancient DNA have greatly expanded our ability to study human evolution. This Review discusses the conceptual and statistical challenges in identifying and interpreting selection signals, and how recent approaches ar…",
-    "source": "Nature.com",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41576-026-01010-9",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-e9919e0ce602",
-    "type": "ainews",
-    "title": "Why so many AI researchers think the machines could kill everyone",
-    "excerpt": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
-    "source": "Wired",
-    "date": "2026-09-11",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-a7de9cdcd1b7",
-    "type": "ainews",
-    "title": "Oracle says AI will save it from the saaspocalypse, not bring it on",
-    "excerpt": "It’s a better interface, can speed installations, and drives IaaS sales too",
-    "source": "Theregister.com",
-    "date": "2026-09-11",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-c28079dcdd04",
-    "type": "paper",
-    "title": "Population pharmacokinetic/pharmacodynamic modeling of NH600001 reveals age-related differences in sedation response and supports individualized dosing in elderly patients",
-    "excerpt": "Population pharmacokinetic/pharmacodynamic modeling of NH600001 identified age-related differences in sedation response, with findings supporting individualized dosing strategies for elderly patients. This analysis was conducted by researchers at the Center of Clinical Pharmacology at the Third Xiangya Hospital and XiangYa School of Pharmaceutical Sciences in China.",
-    "source": "Expert Opin Drug Metab Toxicol",
-    "date": "2026-09-11",
-    "tags": [
-      "Pharmacokinetics/Pharmacodynamics",
-      "Elderly Population",
-      "Personalized Medicine",
-      "Drug Modeling"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42728212/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-44a3d25fe6c8",
-    "type": "news",
-    "title": "STAT+: Scholar Rock wins FDA approval for first drug to target SMA muscle loss",
-    "excerpt": "A late-stage clinical trial found that, when combined with an SMN2-targeting drug, Isembyld caused young patients’ motor skills to improve after a year.",
-    "source": "STAT News",
-    "date": "2026-09-11",
-    "tags": [
-      "Biotech",
-      "Breaking News",
-      "FDA",
-      "Pharmaceuticals"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/09/11/scholar-rock-spinal-muscular-atrophy-isembyld-clinical-trial-fda-approval/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-879d3c25acc1",
-    "type": "news",
-    "title": "STAT+: Cancer drug shortages keep disrupting patient care",
-    "excerpt": "Platinum chemotherapy's long-term effects, surprising heart failure drug failures, and more biotech news from The Readout",
-    "source": "STAT News",
-    "date": "2026-09-11",
-    "tags": [
-      "Biotech",
-      "Business",
-      "Pharma",
-      "The Readout"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/09/11/biotech-news-cancer-drug-shortages-keep-disrupting-patient-care/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
