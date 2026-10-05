@@ -1,0 +1,850 @@
+{
+  "id": "2026-W41",
+  "weekLabel": "Week 41 — October 5, 2026",
+  "weekStart": "2026-10-05",
+  "weekEnd": "2026-10-05",
+  "generatedAt": "2026-10-05T16:17:47.544Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "Regional climate risk assessment from climate models using probabilistic machine",
+    "standfirst": "Nature Machine Intelligence reports on what may be the most significant AI development this week in the pharma and regulatory space.",
+    "body": "Nature Machine Intelligence, Published online: 28 September 2026; doi:10.1038/s42256-026-01308-7 A generative AI framework called GenFocal is introduced for climate downscaling, producing realistic fine-scale weather from coarse projections and improving regional risk estimates of compound extremes such as heatwaves and tropical cyclones.",
+    "sourceIndices": [
+      0
+    ],
+    "sources": [
+      {
+        "title": "Regional climate risk assessment from climate models using probabilistic machine learning",
+        "source": "Nature Machine Intelligence",
+        "url": "https://www.nature.com/articles/s42256-026-01308-7",
+        "date": "2026-09-28",
+        "type": "ainews"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "Regional climate risk assessment from climate models using probabilistic machi…",
+          "body": "Nature Machine Intelligence, Published online: 28 September 2026; doi:10.1038/s42256-026-01308-7 A generative AI framework called GenFocal is introduced for climate downscaling, producing realistic fine-scale weather from coarse projections and…",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Regional climate risk assessment from climate models using probabilistic machine learning",
+              "source": "Nature Machine Intelligence",
+              "url": "https://www.nature.com/articles/s42256-026-01308-7",
+              "date": "2026-09-28",
+              "type": "ainews"
+            }
+          ]
+        },
+        {
+          "headline": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI s…",
+          "body": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When should you use swarms? When you are in a hurry:…How does swarm…",
+          "sourceIndices": [
+            35
+          ],
+          "sources": [
+            {
+              "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+              "source": "Import AI",
+              "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+              "date": "2026-10-05",
+              "type": "ainews"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA Approves First Heart Valve Designed to Grow with Children",
+          "body": "The U.S. Food and Drug Administration today approved the Autus Size-Adjustable Valve, a surgically implanted pulmonary heart valve for pediatric patients with congenital pulmonary valve disease.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Heart Valve Designed to Grow with Children",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+              "date": "2026-10-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Launches Nationwide Effort to Expand Scientific Expertise and Consumer Voi…",
+          "body": "The U.S. Food and Drug Administration today announced a broad, nationwide recruitment effort to expand the range of qualified voices and perspectives on its advisory committees— the independent bodies that inform some of the most consequential…",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "FDA Launches Nationwide Effort to Expand Scientific Expertise and Consumer Voices to Advisory Committees",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-nationwide-effort-expand-scientific-expertise-and-consumer-voices-advisory-committees",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Tr…",
+          "body": "The U.S. Attorney’s Office for the Middle District of Florida and the Criminal Division of the U.S. Department of Justice today announced federal charges against Swapnadip Roy, 33, and Vicky Ramancha, 37, both Indian nationals.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Approves First Treatment for MCT8 Deficiency",
+          "body": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the blood that causes symptoms, such as rapid heart rate, increased blood…",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Treatment for MCT8 Deficiency",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
+              "date": "2026-09-28",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA intends to evaluate changes to the PMTA regulatory framework",
+          "body": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit filed in the U.S. District Court for the Northern District of Texas…",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
+              "date": "2026-09-28",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "State of the industry: integration of 3Rs principles and new approach methodol…",
+          "body": "1. Front Med (Lausanne). 2026 Aug 26;13:1887169. doi: 10.3389/fmed.2026.1887169. eCollection 2026. State of the industry: integration of 3Rs principles and new approach methodologies in non-clinical product development through fit-for-purpose.…",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "State of the industry: integration of 3Rs principles and new approach methodologies in non-clinical product development through fit-for-purpose",
+              "source": "Front Med (Lausanne)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42719207/",
+              "date": "2026-10-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Industry experts call for india-specific AI safety rules, not US model",
+          "body": "India should build its own artificial intelligence (AI) safety framework suited to its languages, scale, and application-led AI ecosystem rather than replicate a voluntary pact signed by US President Donald Trump and top technology firms last week,…",
+          "sourceIndices": [
+            36
+          ],
+          "sources": [
+            {
+              "title": "Industry experts call for india-specific AI safety rules, not US model",
+              "source": "Business Standard",
+              "url": "https://www.business-standard.com/technology/artificial-intelligence/industry-experts-call-for-india-specific-ai-safety-rules-not-us-model-126100400346_1.html",
+              "date": "2026-10-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Fdr’s lesson for AI regulation",
+          "body": "Like the financial industry of the 1930s, the AI industry is currently largely unregulated, heightening fears that it could do widespread harm.",
+          "sourceIndices": [
+            37
+          ],
+          "sources": [
+            {
+              "title": "Fdr’s lesson for AI regulation",
+              "source": "Fortune",
+              "url": "https://fortune.com/2026/10/04/how-fdr-roosevelt-would-regulate-ai/",
+              "date": "2026-10-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Anthropic’s olah clashed with vatican over AI consciousness before encyclical …",
+          "body": "The divide between Silicon Valley and the Vatican reached a breaking point this past May. When Pope Leo XIV released the encyclical Magnifica Humanitas, the document established a definitive theological stance on artificial intelligence. Paragraph…",
+          "sourceIndices": [
+            38
+          ],
+          "sources": [
+            {
+              "title": "Anthropic’s olah clashed with vatican over AI consciousness before encyclical launch",
+              "source": "Forkast.news",
+              "url": "https://forkast.news/anthropics-olah-clashed-with-vatican-over-ai-consciousness-before-encyclical-launch/",
+              "date": "2026-10-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI and the digital economy rivalries poised to transform the world",
+          "body": "Book Title – AI and the Digital Economy Rivalries Poised to Transform the World Author – Maung Maung Myint Thein (RIT) Publishing House – AZ Publication Date",
+          "sourceIndices": [
+            39
+          ],
+          "sources": [
+            {
+              "title": "AI and the digital economy rivalries poised to transform the world",
+              "source": "Gnlm.com.mm",
+              "url": "https://www.gnlm.com.mm/ai-and-the-digital-economy-rivalries-poised-to-transform-the-world/",
+              "date": "2026-10-04",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Effects of Lanthanum Carbonate on Whole-Body Phosphorus and Calcium Balance in…",
+          "body": "This study examined how lanthanum carbonate affects phosphorus and calcium balance throughout the body in adults with chronic kidney disease who have normal phosphorus levels. The research was conducted at multiple academic medical centers and the…",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "Effects of Lanthanum Carbonate on Whole-Body Phosphorus and Calcium Balance in Adults With Chronic Kidney Disease and Normophosphatemia",
+              "source": "Kidney Med",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42831158/",
+              "date": "2026-10-05",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Atorvastatin Safety Reappraised: From Pharmacogenomic Mechanisms to Personaliz…",
+          "body": "This review examines atorvastatin safety through the lens of pharmacogenomic mechanisms to inform personalized risk management strategies. The analysis reappraises the safety profile of atorvastatin, which remains a cornerstone of lipid-lowering…",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "Atorvastatin Safety Reappraised: From Pharmacogenomic Mechanisms to Personalized Risk Management",
+              "source": "Cardiovasc Ther",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42827332/",
+              "date": "2026-10-03",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Daily briefing: can you name every female nobel laureate?",
+          "body": "Test yourself on your science Nobel knowledge. Plus, how butterfly markings mislead the eye and how to respond to hate speech without fuelling it further.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Daily briefing: can you name every female nobel laureate?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03164-2",
+              "date": "2026-10-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "SleepMambaNet: a lightweight multimodal framework for sleep staging and sleep …",
+          "body": "SleepMambaNet is a lightweight multimodal framework designed for automated sleep staging and screening of sleep disorders, validated across multiple clinical centers. The system integrates data from various physiological sources to support sleep…",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "SleepMambaNet: a lightweight multimodal framework for sleep staging and sleep disorder screening with multicenter validation",
+              "source": "Physiol Meas",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42817663/",
+              "date": "2026-10-01",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Advances in amidases and urethanases as depolymerization biocatalysts",
+          "body": "Increasingly diverse sequence repositories can be accessed through advanced bioinformatics tools. Complementary screening assays accelerate the identification and engineering of improved amidases and urethanases that act on highly stable bonds in…",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Advances in amidases and urethanases as depolymerization biocatalysts",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41589-026-02325-8",
+              "date": "2026-10-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Evaluating plasma ferritin and suPAR as treatable traits for critically ill pa…",
+          "body": "This exploratory analysis of the REMAP-CAP randomised clinical trial investigates plasma ferritin and suPAR as potential biomarkers (treatable traits) to identify critically ill COVID-19 patients who may benefit from anakinra treatment. The study…",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Evaluating plasma ferritin and suPAR as treatable traits for critically ill patients with COVID-19 treated with anakinra: an exploratory analysis of the immune modulation domain of the REMAP-CAP randomised clinical trial",
+              "source": "Crit Care",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42823695/",
+              "date": "2026-10-01",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Daily briefing: the sky as you’ve never seen it — the month’s best science ima…",
+          "body": "Coloured stripes across the sky and a crab caught in jellyfish tentacles are among this month’s sharpest science shots. Plus, a ‘speech clock’ could determine how fast you’re ageing and how invasive plant species are displacing farmers in Africa.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Daily briefing: the sky as you’ve never seen it — the month’s best science images",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03141-9",
+              "date": "2026-10-01",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Secret watermark labels proteins as ‘made by ai’",
+          "body": "An innovative safeguard could help to flag proteins devised by artificial-intelligence tools such as AlphaFold, but the digital marker can be erased.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Secret watermark labels proteins as ‘made by ai’",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03033-y",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Daily briefing: how to save corals from the el niño",
+          "body": "Scientists are trying to help coral reefs survive record ocean temperatures. Plus, the aftermath of a deadly attack on Ukraine’s National Academy of Sciences and whether it’s OK to dodge small talk.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "Daily briefing: how to save corals from the el niño",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03138-4",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI can widen science — but only if institutions stop rewarding the already mea…",
+          "body": "Funders, journals and universities must reward the creation of new scientific terrain, not just the efficient mining of old ground.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "AI can widen science — but only if institutions stop rewarding the already measurable",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-02961-z",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "5 scientific breakthroughs changing the future of human health - discoverwilds…",
+          "body": "We live in a time when science fiction is quietly becoming science fact. Diseases that were once considered death sentences are now being targeted with tools so precise they can edit a single letter in your DNA. Technologies that used to live only…",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "5 scientific breakthroughs changing the future of human health - discoverwildscience",
+              "source": "Discoverwildscience.com",
+              "url": "https://discoverwildscience.com/5-scientific-breakthroughs-changing-the-future-of-human-health-2-393834/",
+              "date": "2026-10-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Urine cell-free rna for bladder cancer detection and treatment response predic…",
+          "body": "Applied to samples from more than 600 patients and controls, urinary cell-free RNA profiling with uRARE-seq demonstrated high sensitivity in detecting bladder cancer, and correlated with treatment response.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "Urine cell-free rna for bladder cancer detection and treatment response prediction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04673-3",
+              "date": "2026-10-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Is exposomics the key to making personalized medicine a reality?",
+          "body": "Scientists say tailored disease treatments require a comprehensive assessment of a person’s lifelong environmental exposures.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Is exposomics the key to making personalized medicine a reality?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-02958-8",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Reproducibility in biomedical research",
+          "body": "Reproducibility is a foundational principle of trustworthy science, but reproducible research practices are not consistently implemented. This Review summarizes the current landscape including efforts to harmonize terminology and implementation,…",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "Reproducibility in biomedical research",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04667-1",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Single-allele nanoscale mapping of regulatory variants",
+          "body": "This study uses high-resolution, allele-specific chromatin architecture to identify causal gene-regulatory mechanisms in inflammatory diseases and uncovers a mechanism by which a neo-CTCF site promotes autoimmunity.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Single-allele nanoscale mapping of regulatory variants",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02776-8",
+              "date": "2026-10-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Gpcr antagonism via rewiring of receptor trafficking and degradation",
+          "body": "A strategy for functional G-protein-coupled receptor (GPCR) antagonism through bispecific antibody-mediated endocytosis and lysosomal degradation is reported.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "Gpcr antagonism via rewiring of receptor trafficking and degradation",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-11088-0",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Population-scale immune multiome atlas reveals regulatory disease mechanisms",
+          "body": "Population-scale simultaneous profiling of chromatin accessibility and gene expression across immune cells reveals regulatory architectures that&nbsp;connect genetic variants to disease.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Population-scale immune multiome atlas reveals regulatory disease mechanisms",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-11078-2",
+              "date": "2026-09-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "A multimodal model of aqueous humor small rna and clinical features shows limi…",
+          "body": "Scientific Reports - A multimodal model of aqueous humor small RNA and clinical features shows limited discrimination between primary open-angle and pseudoexfoliative glaucoma",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "A multimodal model of aqueous humor small rna and clinical features shows limited discrimination between primary open-angle and pseudoexfoliative glaucoma",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-71391-8.pdf",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Comprehensive profiling of brain dynamics during anesthesia across phylogeny",
+          "body": "In this study, Luppi et al. systematically characterized and modeled more than 6,000 features of neural activity during anesthesia. They reveal a shared but reversible dynamical endpoint of anesthesia across six species, from human to worm.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Comprehensive profiling of brain dynamics during anesthesia across phylogeny",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41593-026-02460-4",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Ai-powered medical devices must be tested in real-world settings",
+          "body": "Tools that inform clinical decision-making require rigorous assessments equivalent to processes used to approve drugs and self-driving cars.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "Ai-powered medical devices must be tested in real-world settings",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03046-7",
+              "date": "2026-09-29",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "A human single-cell atlas identifies olr1+ scar-associated macrophages as a po…",
+          "body": "This study provides a single-cell RNA-sequencing atlas of 77 healthy and chronic liver disease livers and identifies a subpopulation of pro-inflammatory scar-associated macrophages enriched for OLR1 expression with therapeutic potential.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "A human single-cell atlas identifies olr1+ scar-associated macrophages as a potential therapeutic target for chronic liver disease",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02774-w",
+              "date": "2026-09-28",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Transparency makes modern regulatory science stronger — fda’s transparency roa…",
+          "body": "FDA is releasing this new FDA Transparency Roadmap — a forward-looking account of FY26 milestones achieved and FY27 priorities ahead.",
+          "sourceIndices": [
+            53
+          ],
+          "sources": [
+            {
+              "title": "Transparency makes modern regulatory science stronger — fda’s transparency roadmap",
+              "source": "FDA.gov",
+              "url": "https://www.fda.gov/news-events/fda-voices/transparency-makes-modern-regulatory-science-stronger-fdas-transparency-roadmap",
+              "date": "2026-10-02",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "60 sources analysed this week across regulatory, drug discovery, clinical AI, and data governance channels. Pipeline-generated summary — no AI editorial layer.",
+  "allSources": [
+    {
+      "title": "Regional climate risk assessment from climate models using probabilistic machine learning",
+      "source": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/articles/s42256-026-01308-7",
+      "date": "2026-09-28",
+      "type": "ainews"
+    },
+    {
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "source": "Import AI",
+      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "date": "2026-10-05",
+      "type": "ainews"
+    },
+    {
+      "title": "FDA Approves First Heart Valve Designed to Grow with Children",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-heart-valve-designed-grow-children",
+      "date": "2026-10-01",
+      "type": "news"
+    },
+    {
+      "title": "FDA Launches Nationwide Effort to Expand Scientific Expertise and Consumer Voices to Advisory Committees",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-nationwide-effort-expand-scientific-expertise-and-consumer-voices-advisory-committees",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Treatment for MCT8 Deficiency",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
+      "date": "2026-09-28",
+      "type": "news"
+    },
+    {
+      "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
+      "date": "2026-09-28",
+      "type": "news"
+    },
+    {
+      "title": "State of the industry: integration of 3Rs principles and new approach methodologies in non-clinical product development through fit-for-purpose",
+      "source": "Front Med (Lausanne)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42719207/",
+      "date": "2026-10-04",
+      "type": "paper"
+    },
+    {
+      "title": "Industry experts call for india-specific AI safety rules, not US model",
+      "source": "Business Standard",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/industry-experts-call-for-india-specific-ai-safety-rules-not-us-model-126100400346_1.html",
+      "date": "2026-10-04",
+      "type": "news"
+    },
+    {
+      "title": "Fdr’s lesson for AI regulation",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/10/04/how-fdr-roosevelt-would-regulate-ai/",
+      "date": "2026-10-04",
+      "type": "news"
+    },
+    {
+      "title": "Anthropic’s olah clashed with vatican over AI consciousness before encyclical launch",
+      "source": "Forkast.news",
+      "url": "https://forkast.news/anthropics-olah-clashed-with-vatican-over-ai-consciousness-before-encyclical-launch/",
+      "date": "2026-10-04",
+      "type": "news"
+    },
+    {
+      "title": "AI and the digital economy rivalries poised to transform the world",
+      "source": "Gnlm.com.mm",
+      "url": "https://www.gnlm.com.mm/ai-and-the-digital-economy-rivalries-poised-to-transform-the-world/",
+      "date": "2026-10-04",
+      "type": "news"
+    },
+    {
+      "title": "Effects of Lanthanum Carbonate on Whole-Body Phosphorus and Calcium Balance in Adults With Chronic Kidney Disease and Normophosphatemia",
+      "source": "Kidney Med",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42831158/",
+      "date": "2026-10-05",
+      "type": "paper"
+    },
+    {
+      "title": "Atorvastatin Safety Reappraised: From Pharmacogenomic Mechanisms to Personalized Risk Management",
+      "source": "Cardiovasc Ther",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42827332/",
+      "date": "2026-10-03",
+      "type": "paper"
+    },
+    {
+      "title": "Daily briefing: can you name every female nobel laureate?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03164-2",
+      "date": "2026-10-02",
+      "type": "news"
+    },
+    {
+      "title": "SleepMambaNet: a lightweight multimodal framework for sleep staging and sleep disorder screening with multicenter validation",
+      "source": "Physiol Meas",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42817663/",
+      "date": "2026-10-01",
+      "type": "paper"
+    },
+    {
+      "title": "Advances in amidases and urethanases as depolymerization biocatalysts",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41589-026-02325-8",
+      "date": "2026-10-01",
+      "type": "news"
+    },
+    {
+      "title": "Evaluating plasma ferritin and suPAR as treatable traits for critically ill patients with COVID-19 treated with anakinra: an exploratory analysis of the immune modulation domain of the REMAP-CAP randomised clinical trial",
+      "source": "Crit Care",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42823695/",
+      "date": "2026-10-01",
+      "type": "paper"
+    },
+    {
+      "title": "Daily briefing: the sky as you’ve never seen it — the month’s best science images",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03141-9",
+      "date": "2026-10-01",
+      "type": "news"
+    },
+    {
+      "title": "Secret watermark labels proteins as ‘made by ai’",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03033-y",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "Daily briefing: how to save corals from the el niño",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03138-4",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "AI can widen science — but only if institutions stop rewarding the already measurable",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-02961-z",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "5 scientific breakthroughs changing the future of human health - discoverwildscience",
+      "source": "Discoverwildscience.com",
+      "url": "https://discoverwildscience.com/5-scientific-breakthroughs-changing-the-future-of-human-health-2-393834/",
+      "date": "2026-10-03",
+      "type": "news"
+    },
+    {
+      "title": "Urine cell-free rna for bladder cancer detection and treatment response prediction",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04673-3",
+      "date": "2026-10-02",
+      "type": "news"
+    },
+    {
+      "title": "Is exposomics the key to making personalized medicine a reality?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-02958-8",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "Reproducibility in biomedical research",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04667-1",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "Single-allele nanoscale mapping of regulatory variants",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02776-8",
+      "date": "2026-10-02",
+      "type": "news"
+    },
+    {
+      "title": "Gpcr antagonism via rewiring of receptor trafficking and degradation",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-11088-0",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "Population-scale immune multiome atlas reveals regulatory disease mechanisms",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-11078-2",
+      "date": "2026-09-30",
+      "type": "news"
+    },
+    {
+      "title": "A multimodal model of aqueous humor small rna and clinical features shows limited discrimination between primary open-angle and pseudoexfoliative glaucoma",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-71391-8.pdf",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "Comprehensive profiling of brain dynamics during anesthesia across phylogeny",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41593-026-02460-4",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "Ai-powered medical devices must be tested in real-world settings",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03046-7",
+      "date": "2026-09-29",
+      "type": "news"
+    },
+    {
+      "title": "A human single-cell atlas identifies olr1+ scar-associated macrophages as a potential therapeutic target for chronic liver disease",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02774-w",
+      "date": "2026-09-28",
+      "type": "news"
+    },
+    {
+      "title": "Transparency makes modern regulatory science stronger — fda’s transparency roadmap",
+      "source": "FDA.gov",
+      "url": "https://www.fda.gov/news-events/fda-voices/transparency-makes-modern-regulatory-science-stronger-fdas-transparency-roadmap",
+      "date": "2026-10-02",
+      "type": "news"
+    }
+  ]
+}
