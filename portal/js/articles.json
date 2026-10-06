@@ -56,6 +56,25 @@
     "badge": "Tech"
   },
   {
+    "id": "auto-1ce52cc13137",
+    "type": "paper",
+    "title": "Quercetin in Myocardial Ischemia-Reperfusion Injury: Mechanistic Evidence, Cardioprotective Effects, and Translational Challenges",
+    "excerpt": "Myocardial ischemia-reperfusion injury remains a significant challenge in cardiovascular therapy, as blood flow restoration paradoxically causes additional tissue damage. This review examines quercetin's mechanistic cardioprotective effects against ischemia-reperfusion injury and addresses the translational barriers to clinical implementation.",
+    "source": "J Biochem Mol Toxicol",
+    "date": "2026-10-06",
+    "tags": [
+      "Cardioprotection",
+      "Ischemia-Reperfusion Injury",
+      "Quercetin",
+      "Translational Research"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42836789/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-f53fb49716d8",
     "type": "paper",
     "title": "Effects of Lanthanum Carbonate on Whole-Body Phosphorus and Calcium Balance in Adults With Chronic Kidney Disease and Normophosphatemia",
@@ -373,6 +392,242 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-d5cfb5048afa",
+    "type": "news",
+    "title": "Bioactivity-driven prediction of antibacterial synergy using machine learning models",
+    "excerpt": "Author summary Bacterial infections are increasingly hard to treat as resistance to antibiotics spreads faster than new drugs are developed. One strategy to fight back is combining two drugs together, since some pairs work better together than either does alo…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Machine learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014849",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-b48158e5ab87",
+    "type": "news",
+    "title": "Sen. adam schiff on AI regulation, free speech, and impeaching trump one more time",
+    "excerpt": "Today, I’m talking with Senator Adam Schiff, a Democrat from California. Sen. Schiff sits on a number of committees with oversight into tech and AI: intellectual property, antitrust, privacy and technology — it’s all there. I really wanted to ask him about ho…",
+    "source": "The Verge",
+    "date": "2026-10-05",
+    "tags": [
+      "Regulatory",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-93c9b98a2f21",
+    "type": "news",
+    "title": "Our approach to EU text provenance rules",
+    "excerpt": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+    "source": "Openai.com",
+    "date": "2026-10-05",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://openai.com/index/eu-text-provenance/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-81e6717c6b98",
+    "type": "news",
+    "title": "Sustainable hemocompatibility prediction of electrospun nanomaterials using sem-driven cnn ensemble learning aligned with iso 10993",
+    "excerpt": "Background Electrospun nanocomposite biomaterials are promising candidates for blood-contacting medical devices owing to their high surface area, tunable nanoscale morphology, and biomimetic replication of the native extracellular matrix. However, conventiona…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359594",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-4728754da750",
+    "type": "news",
+    "title": "Robust prediction of drug combination side effects in realistic settings",
+    "excerpt": "Author summary Understanding the risks of combining medications is a central problem in healthcare. Clinical trials rarely capture the full range of side effects, and many side effects are identified only after drugs reach the market, leaving many possible dr…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Clinical trials"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013619",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-da1af2452001",
+    "type": "news",
+    "title": "Cancer incidence in the ecuadorian amazon: a retrospective study (1990–2019)",
+    "excerpt": "Background There is a scarcity of cancer studies in the Amazon region. This study aimed to analyse trends in cancer incidence within the Ecuadorian Amazon between 1990 and 2019, identifying the most prevalent cancer types and assessing their provincial and te…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359707",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-61c2a1fff17f",
+    "type": "news",
+    "title": "Rigorous validation of graph-based network analysis reappraises biologically coherent adhd-associated transcriptomic modules in peripheral blood",
+    "excerpt": "Background Graph attention networks (GATs) are increasingly applied to transcriptomic data because they integrate gene-network structure while producing attention weights that are often interpreted as indicators of biological importance. However, whether atte…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359656",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-97ee1e6a8d34",
+    "type": "news",
+    "title": "Knowledge, attitudes, and prevention practices regarding human papillomavirus among health and social science female students in northwest ethiopia: a comparative cross-sectional study",
+    "excerpt": "Background University students are vital for Human Papilloma Virus (HPV) prevention, yet comparative data between academic disciplines remain limited. This study compared HPV knowledge, attitudes, and practices (KAP) among female health and Social Science stu…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359838",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-b4ed2313a86f",
+    "type": "news",
+    "title": "Assessment and decomposition of excessive red meat consumption among hypertensive adults: a wagstaff decomposition analysis",
+    "excerpt": "Introduction Red meat consumption is an important dietary factor in hypertension management, yet its distribution may vary across socioeconomic groups. This study examines wealth-related inequality in red meat consumption among hypertensive adults in Iran.   …",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359650",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-54e54b506193",
+    "type": "news",
+    "title": "Associating mycobacterium tuberculosis genomic variants with minimum inhibitory concentrations to delamanid and pretomanid",
+    "excerpt": "Emerging resistance to delamanid (DLM) and pretomanid (Pa) threatens drug-resistant tuberculosis (DR-TB) treatment outcomes. The lack of rapid molecular diagnostics, due to limited knowledge of resistance-conferring mutations, along with standardization chall…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359717",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-acd15af89d7b",
+    "type": "seminar",
+    "title": "Probabilistic health risk assessment of respirable dust exposure among stone carvers in thailand using average daily dose and monte carlo simulation",
+    "excerpt": "Respirable dust (RD) exposure represents a significant occupational health concern in stone processing settings, particularly among stone carvers who are at elevated risk due to high levels of dust generation. Prolonged exposure to RD is associated with serio…",
+    "source": "Plos.org",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359706",
+    "badge": "Event"
+  },
+  {
+    "id": "nws-4e1c2d3dedba",
+    "type": "ainews",
+    "title": "Openai launches visual ads that appear alongside image generation results | techcrunch",
+    "excerpt": "OpenAI said the new visual ads will show up after your image generation results appear in the U.S. only for now.",
+    "source": "TechCrunch",
+    "date": "2026-10-05",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-622d42420ad4",
+    "type": "ainews",
+    "title": "Researchers are tracking a chinese AI 'agent fleet' | techcrunch",
+    "excerpt": "Independent researchers discovered an agent swarm that seems to be running on Tencent's infrastructure and targeting Alibaba's map service, Amap.",
+    "source": "TechCrunch",
+    "date": "2026-10-05",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-d3ec75561d9b",
+    "type": "ainews",
+    "title": "The startup battlefield 200 judges who’ll decide the winner at disrupt 2026 | techcrunch",
+    "excerpt": "The final five Startup Battlefield judges who'll decide who wins the pitch competition at TechCrunch Disrupt 2026. Get your pass now to save up to $100.",
+    "source": "TechCrunch",
+    "date": "2026-10-05",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/meet-the-startup-battlefield-200-judges-wholl-decide-the-winner-at-techcrunch-disrupt-2026/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-a166b7265245",
+    "type": "ainews",
+    "title": "Bringing predictive analytics to the agentic AI era",
+    "excerpt": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from busine…",
+    "source": "MIT Technology Review",
+    "date": "2026-10-05",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-6471a7637d61",
@@ -4559,270 +4814,5 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42806610/",
     "badge": "PubMed",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-00b5c9cf3492",
-    "type": "paper",
-    "title": "Cannabis Use Disorder and Mortality Risk: A Matched Cohort Study from a Colorado Health System",
-    "excerpt": "This matched cohort study from a Colorado health system examines the association between cannabis use disorder and mortality risk. The research compares outcomes between patients with and without cannabis use disorder diagnoses to determine whether the condition is associated with increased mortality. The findings contribute to understanding the health impacts of cannabis use disorder in clinical populations.",
-    "source": "J Gen Intern Med",
-    "date": "2026-09-28",
-    "tags": [
-      "Cannabis Use Disorder",
-      "Mortality",
-      "Cohort Study",
-      "Public Health"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42806222/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-18579b4069b3",
-    "type": "news",
-    "title": "FDA Approves First Treatment for MCT8 Deficiency",
-    "excerpt": "The U.S. Food and Drug Administration today approved Emcitate (tiratricol) tablets for oral suspension to treat peripheral thyrotoxicosis (excess thyroid hormone levels in the blood that causes symptoms, such as rapid heart rate, increased blood pressure and adverse effects on metabolism) in patient",
-    "source": "FDA",
-    "date": "2026-09-28",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-mct8-deficiency",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-d111baeaced2",
-    "type": "news",
-    "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
-    "excerpt": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit filed in the U.S. District Court for the Northern District of Texas challenging the current regulatory framework.",
-    "source": "FDA",
-    "date": "2026-09-28",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-0c80d209a6b8",
-    "type": "ainews",
-    "title": "Google is killing off Gemini’s Gems in favor of ‘skills’",
-    "excerpt": "As all-in-one AI agents like Meta's Muse and Instinct take off, Google is opting to end a feature that built task-specific agents.",
-    "source": "TechCrunch AI",
-    "date": "2026-09-28",
-    "tags": [
-      "AI",
-      "Apps",
-      "gemini",
-      "Google"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-bd9271a6418d",
-    "type": "ainews",
-    "title": "OpenAI still doesn’t seem to have a handle on all of its rogue AI activity",
-    "excerpt": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming.",
-    "source": "TechCrunch AI",
-    "date": "2026-09-28",
-    "tags": [
-      "AI",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-d19a7dc33090",
-    "type": "ainews",
-    "title": "When can we say AI made a scientific discovery?",
-    "excerpt": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Last Wednesday, Anthropic announced that earlier this year it had launched a molecular biology lab, where Claude agents read and conjecture about hard biology problems and human scientists run experiments on what&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-09-28",
-    "tags": [
-      "Artificial intelligence",
-      "App",
-      "artificial intelligence",
-      "The Algorithm"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
-    "badge": "Research"
-  },
-  {
-    "id": "auto-35cd9b23afc7",
-    "type": "ainews",
-    "title": "Florida invokes extinction fears in legal bid to halt OpenAI development",
-    "excerpt": "State says LLMs threaten civilization as \"the greatest public nuisance ever created.\"",
-    "source": "Ars Technica AI",
-    "date": "2026-09-28",
-    "tags": [
-      "AI",
-      "Policy",
-      "altman",
-      "court"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-c0540090ad16",
-    "type": "news",
-    "title": "Amd makes a bet on world models for next level AI – spatial intelligen",
-    "excerpt": "AMD is making an $8 billion bet (0.8% of AMD valuation) to see if World Model where if we model all physics and chemistry and everything else we can accelerate the pace of major scientific discovery. Fei Fei and World Models are a leader in this area and need…",
-    "source": "Next Big Future",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nextbigfuture.com/2026/09/amd-makes-a-bet-on-world-models-for-next-level-ai-spatial-intelligen.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-9219ac62e495",
-    "type": "news",
-    "title": "Pfatg18 links v-atpase assembly to endocytic membrane dynamics in malaria parasites",
-    "excerpt": "Author summary Malaria parasites cause disease by multiplying inside human red blood cells, where they consume hemoglobin, the oxygen-carrying protein of the host cell. Hemoglobin is taken up in vesicles and delivered to a specialized digestive vacuole, where…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014608",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-2067047743d3",
-    "type": "news",
-    "title": "Hijacking of host pcna by circovirus replication-associated protein to recruit pold1 drives viral dna replication and is inhibited by r428",
-    "excerpt": "Author summary Circoviruses are major economic pathogens in the animal industry and pose a potential threat to humans. The widely used porcine circovirus type 2 (PCV2) vaccines cannot fully prevent virus spread, and no vaccines are currently available for oth…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014575",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-81b393b325b3",
-    "type": "news",
-    "title": "Attribution assignment for deep-generative sequence models enables interpretability analysis using positive-only data",
-    "excerpt": "Author summary We have developed a new way to look inside AI language models that create biological sequences such as antibodies, even when only examples of successful binders are available. Traditional design methods need both positive and negative examples,…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014805",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-53c76d693779",
-    "type": "news",
-    "title": "Dioscin attenuates d‑galactose‑induced retinal pigment epithelium senescence and epithelial–mesenchymal transition via the tgf‑β2/pi3k/akt/β‑catenin pathway",
-    "excerpt": "Purpose This study aimed to evaluate the protective effects of Dioscin in an age-related macular degeneration (AMD) -like model and to explore its potential therapeutic mechanisms.   Methods The therapeutic potential of Dioscin for AMD was investigated using …",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359423",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-24587e519205",
-    "type": "news",
-    "title": "Daily briefing: old hearts ‘de-age’ in younger people",
-    "excerpt": "Epigenetic 'clocks' suggest that transplanted organs adjust to the host's biological age. Plus, a new biography of Stephen Hawking and how sham societies are misleading star researchers.",
-    "source": "Nature.com",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-03089-w",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-4b2db146df4c",
-    "type": "news",
-    "title": "Turkey vs italy live: azzurri score first goals since mancini return in scintillating start",
-    "excerpt": "Italy established a commanding early lead in their second match since Roberto Mancini's return to move on course for their first points in League A.",
-    "source": "101 Great Goals",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.101greatgoals.com/football/internationals/turkey-vs-italy-live-bastoni-frattesi-kayode-goals-nations-league/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-3131943261c9",
-    "type": "news",
-    "title": "New remote dos attacks against graphql java",
-    "excerpt": "Executive Summary  Imperva Threat Research identified a series of remote denial‑of‑service vulnerabilities in GraphQL Java, one of the most widely used libraries for GraphQL in the Java ecosystem.  In this blog, we’ll deep dive into these vulnerabilities, ana…",
-    "source": "Imperva.com",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.imperva.com/blog/new-remote-dos-attacks-against-graphql-java/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-2f5ef0621565",
-    "type": "news",
-    "title": "Amd will acquire fei-fei li's world labs for $8.2 billion | techcrunch",
-    "excerpt": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
-    "source": "TechCrunch",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
