@@ -1,5 +1,61 @@
 [
   {
+    "id": "auto-86c0dd037c13",
+    "type": "paper",
+    "title": "Administering Antineoplastic Parenteral Cancer Therapy in the Patient's Home: Perspectives of Oncology Nurses-A Descriptive Qualitative Study",
+    "excerpt": "This descriptive qualitative study explores oncology nurses' perspectives on administering parenteral antineoplastic cancer therapy in home-based settings. The research, conducted by researchers from Uppsala University's Department of Women's and Children's Health and Department of Pharmacy, examined nurses' experiences and viewpoints regarding the delivery of chemotherapy agents to patients in their homes.",
+    "source": "Nurs Open",
+    "date": "2026-10-06",
+    "tags": [
+      "Home-based cancer care",
+      "Oncology nursing",
+      "Chemotherapy administration",
+      "Qualitative research"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42834869/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-bc230d956013",
+    "type": "paper",
+    "title": "Clinical Recovery in Tuberculosis is Associated With the Functional Remodelling of Ag85A-Specific Antibody Avidity and Phagocytic Activity",
+    "excerpt": "This study demonstrates that clinical recovery in tuberculosis patients is associated with functional changes in Ag85A-specific antibody avidity and enhanced phagocytic activity. The research shifts focus from traditional T-cell immunity studies to examine the role of antibody responses in TB disease resolution. These findings suggest that antibody-mediated immune mechanisms contribute meaningfully to clinical outcomes in tuberculosis infection.",
+    "source": "Scand J Immunol",
+    "date": "2026-10-06",
+    "tags": [
+      "Tuberculosis",
+      "Antibody Response",
+      "Immunology",
+      "Clinical Recovery"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42834560/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-307bfda48464",
+    "type": "ainews",
+    "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
+    "excerpt": "The reports of OpenAI agents harming 3rd party sites keep coming.",
+    "source": "Ars Technica AI",
+    "date": "2026-10-06",
+    "tags": [
+      "AI",
+      "Biz & IT",
+      "Security",
+      "AI agents"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
+    "badge": "Tech"
+  },
+  {
     "id": "auto-f53fb49716d8",
     "type": "paper",
     "title": "Effects of Lanthanum Carbonate on Whole-Body Phosphorus and Calcium Balance in Adults With Chronic Kidney Disease and Normophosphatemia",
@@ -70,6 +126,253 @@
     "readTime": "1 min",
     "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
     "badge": "Research"
+  },
+  {
+    "id": "nws-160cace768e5",
+    "type": "news",
+    "title": "A heritability-optimized method for functional prioritization of rare coding variants in complex traits",
+    "excerpt": "This study presents RovHer, a heritability-optimized scoring method for estimating the functional impact of rare variants, which is applied to the UK Biobank to demonstrate its ability to enrich for missense rare variants that maximally explain complex trait …",
+    "source": "Nature.com",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02766-w",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-a78e972ca944",
+    "type": "news",
+    "title": "Altman cynically says that “the world must accept potentially bad things in order to reap the benefits of ai”",
+    "excerpt": "The head of OpenAI stressed that people can reap many benefits from artificial intelligence, but this will not happen without “losses”\nThe post Altman cynically says that “the world must accept potentially bad things in order to reap the benefits of AI” appea…",
+    "source": "Protothema.gr",
+    "date": "2026-10-05",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://en.protothema.gr/2026/10/05/altman-cynically-says-that-the-world-must-accept-potentially-bad-things-in-order-to-reap-the-benefits-of-ai/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-d1a86a680956",
+    "type": "news",
+    "title": "What if the u.s. demanded this? the cloud provider conditions behind canada’s EU digital pivot",
+    "excerpt": "Given concerns about what the U.S. envisioned for “digital trade alignment,” consider the possibility that the package required Canada to keep its cloud market open to U.S. companies, gave them equivalent access to government procurement, and restricted the i…",
+    "source": "Michaelgeist.ca",
+    "date": "2026-10-05",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.michaelgeist.ca/2026/10/what-if-the-u-s-demanded-this-the-cloud-provider-conditions-behind-canadas-eu-digital-pivot/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-fc6bb3688a15",
+    "type": "news",
+    "title": "Is your contact center ready for europe's chatbot disclosure rules?",
+    "excerpt": "Europe delayed its high-risk AI rules. Chatbot disclosure took effect Aug. 2 anyway, and most complaint journeys still were not redesigned for it.\nContinue reading...",
+    "source": "CMSWire",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cmswire.com/customer-experience/is-your-contact-center-ready-for-europes-chatbot-disclosure-rules/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-f1af074967de",
+    "type": "news",
+    "title": "86.3%: kiu beats makerere to top inaugural surgical skills contest, unveils $60m health expansion",
+    "excerpt": "Kampala International University (KIU) medical students have beaten teams from Makerere and three other universities to win the first-ever Inter-University Surgical Skills Competition, scoring 86.3% overall. The contest, organised by the Uganda University Sur…",
+    "source": "Campusbee.ug",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://campusbee.ug/news/86-3-kiu-beats-makerere-to-top-inaugural-surgical-skills-contest-unveils-60m-health-expansion/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-360bf001ed1f",
+    "type": "news",
+    "title": "Anthropic brings in-country claude inference to india via amazon bedrock",
+    "excerpt": "Claude Opus 5, Sonnet 5 and Haiku 4.5 can now process requests within India, giving regulated institutions greater data residency and compliance assurances",
+    "source": "Business Standard",
+    "date": "2026-10-05",
+    "tags": [
+      "LLM",
+      "Regulatory",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.business-standard.com/technology/artificial-intelligence/anthropic-claude-india-inference-amazon-bedrock-data-residency-126100500356_1.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-a93d18a3f3fc",
+    "type": "news",
+    "title": "AI benefits warrant accepting some risks, says openai's sam altman",
+    "excerpt": "Altman's remarks come amid a growing debate within the AI industry over the pace of development ‌and the risks posed by increasingly ​capable systems",
+    "source": "Business Standard",
+    "date": "2026-10-05",
+    "tags": [
+      "EMA",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.business-standard.com/technology/artificial-intelligence/ai-benefits-warrant-accepting-some-risks-says-openai-s-sam-altman-126100500069_1.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-f4f396d25978",
+    "type": "news",
+    "title": "A common blood pressure drug could help treat adhd, animal studies suggest",
+    "excerpt": "(Dani Serrano/Moment RF/Getty Images)\r\n\nSo far, it's worked in rats and fish.ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
+    "source": "ScienceAlert",
+    "date": "2026-10-05",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencealert.com/a-common-blood-pressure-drug-could-help-treat-adhd-animal-studies-suggest",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-8219cfaf573d",
+    "type": "ainews",
+    "title": "Can safeworld convince people that gen AI robots won't hurt them? | techcrunch",
+    "excerpt": "Can Safeworld convince people that gen AI robots won't hurt them? | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-10-05",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/can-safeworld-convince-people-that-gen-ai-robots-wont-hurt-them/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-834a87739a69",
+    "type": "ainews",
+    "title": "Brighter isn't better and more is less. the AI slowdown is nigh, no matter who says what",
+    "excerpt": "Meta isn’t helping — or perhaps it is",
+    "source": "Theregister.com",
+    "date": "2026-10-05",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/05/brighter-isnt-better-and-more-is-less-the-ai-slowdown-is-nigh-no-matter-who-says-what/5300747",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-7a474ffcdd2c",
+    "type": "ainews",
+    "title": "People really hate AI, so why can’t they get enough?",
+    "excerpt": "Over the summer I talked to the CEO of Springboards, a startup building an LLM that’s designed to come up with a wider variety of responses than its mainstream rivals do. At the start of the call, he said something that’s been stuck in my head since: “We ofte…",
+    "source": "MIT Technology Review",
+    "date": "2026-10-05",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-f1a68806d9ec",
+    "type": "paper",
+    "title": "Considerations for the Integration of Clinical Trials and Real-World Data",
+    "excerpt": "This article presents considerations for integrating clinical trial data with real-world data to strengthen evidence generation for regulatory and clinical decision-making. The work addresses methodological and practical challenges in combining these data sources while maintaining scientific rigor and data quality standards.",
+    "source": "Clin Pharmacol Ther",
+    "date": "2026-10-05",
+    "tags": [
+      "Real-World Data",
+      "Clinical Trials",
+      "Data Integration",
+      "Regulatory Science"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42834704/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-ce788f79c971",
+    "type": "news",
+    "title": "FDA Seeks Public Input to Support Ibogaine Research",
+    "excerpt": "The U.S. Food and Drug Administration today announced a request for information (RFI) describing approaches the agency is considering for the design of early-phase clinical trials of ibogaine drug products and seeking public input on those approaches.",
+    "source": "FDA",
+    "date": "2026-10-05",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-549ccc4aeee7",
+    "type": "ainews",
+    "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+    "excerpt": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
+    "source": "TechCrunch AI",
+    "date": "2026-10-05",
+    "tags": [
+      "AI",
+      "Government & Policy",
+      "TC",
+      "eu"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-82cd9e3ab19b",
+    "type": "ainews",
+    "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+    "excerpt": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflection’s AI models on their own proprietary data.",
+    "source": "TechCrunch AI",
+    "date": "2026-10-05",
+    "tags": [
+      "AI",
+      "beam",
+      "nvidia",
+      "open source"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+    "badge": "Tech"
   },
   {
     "id": "auto-6471a7637d61",
@@ -183,6 +486,146 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
     "badge": "AI Lab"
+  },
+  {
+    "id": "nws-5fd5c650b97d",
+    "type": "news",
+    "title": "Openai's altman says AI benefits warrant accepting some risks",
+    "excerpt": "Oct 4 : OpenAI Chief Executive Sam Altman said the benefits of artificial intelligence justify accepting some risks and argued the technology should remain broadly accessible to the public\"We believe that the world should accept some bad things happening for …",
+    "source": "CNA",
+    "date": "2026-10-04",
+    "tags": [
+      "EMA",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.channelnewsasia.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-6431831",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-acc80a69d860",
+    "type": "news",
+    "title": "Bug bounty programs, facebook data centers, microsoft “community support”, more: researchbuzz AI update, october 4, 2026",
+    "excerpt": "AI PROBLEMS Tom’s Hardware: Google freezes open-source bug bounty program amid flood of invalid AI slop submissions — product flaw submissions halted until 2027 as maintainers drown in hallucinations. “Google has officially […]",
+    "source": "Researchbuzz.me",
+    "date": "2026-10-04",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://researchbuzz.me/2026/10/04/bug-bounty-programs-facebook-data-centers-microsoft-community-support-more-researchbuzz-ai-update-october-4-2026/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-9ab71769474a",
+    "type": "news",
+    "title": "What i learnt co-leading an AI safety bootcamp for legal and governance practit",
+    "excerpt": "AI safety has gone mainstream. More people than ever want to work on AI safety research, and there are real policy wins in the US, the UK and Europe.…",
+    "source": "Lesswrong.com",
+    "date": "2026-10-04",
+    "tags": [
+      "AI safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.lesswrong.com/posts/KtAug62dYRgAS8sqJ/what-i-learnt-co-leading-an-ai-safety-bootcamp-for-legal-and",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-26b0330ff5a0",
+    "type": "seminar",
+    "title": "Aifa outlines AI application strategy and product progress at first annual conference in las vegas",
+    "excerpt": "Company highlights its focus on AI applications in education, plans a year-round showcase at its Las Vegas venue, and reaffirms its disclosure practices LAS VEGAS, Oct. 04, 2026 (GLOBE NEWSWIRE) — All In FutureTech Alliance Inc. (Nasdaq: AIFA) (“AIFA” or the …",
+    "source": "Financial Post",
+    "date": "2026-10-04",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://financialpost.com/globe-newswire/aifa-outlines-ai-application-strategy-and-product-progress-at-first-annual-conference-in-las-vegas",
+    "badge": "Event"
+  },
+  {
+    "id": "nws-bbc50510cd13",
+    "type": "ainews",
+    "title": "Can ‘super intelligence’ and a non-binding safety pact solve ai’s image problem? | techcrunch",
+    "excerpt": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem? | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-10-04",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-cafdfc2c960e",
+    "type": "ainews",
+    "title": "Techcrunch mobility: reining in robotaxis | techcrunch",
+    "excerpt": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+    "source": "TechCrunch",
+    "date": "2026-10-04",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/04/techcrunch-mobility-reining-in-robotaxis/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-d5a8ffd2dd50",
+    "type": "ainews",
+    "title": "An AI couldn’t beat humans at starcraft, so it decided to cheat",
+    "excerpt": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-m…",
+    "source": "The Verge",
+    "date": "2026-10-04",
+    "tags": [
+      "LLM",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-8aaa4b741173",
+    "type": "ainews",
+    "title": "Trump unveils his new super intelligence force | techcrunch",
+    "excerpt": "This new task force is Trump's latest response to the debate over AI safety.",
+    "source": "TechCrunch",
+    "date": "2026-10-04",
+    "tags": [
+      "AI safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-5dd735603054",
+    "type": "ainews",
+    "title": "Fulcrum echo promises AI text in the style of any writer, so i tested it",
+    "excerpt": "I am just a copy of a copy of a copy, everything I say has come before",
+    "source": "Theregister.com",
+    "date": "2026-10-04",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/04/fulcrum-echo-promises-ai-text-in-the-style-of-any-writer-so-i-tested-it/5300944",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-8b26ce3bfe36",
@@ -4379,434 +4822,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-f065f7c1c0f0",
-    "type": "news",
-    "title": "From ambition to impact: the next era of government transformation.",
-    "excerpt": "Turning AI ambition into public sector outcomes.",
-    "source": "iTnews",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.itnews.com.au/feature/from-ambition-to-impact-the-next-era-of-government-transformation-629246",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-75c6346ca153",
-    "type": "news",
-    "title": "Why low testosterone and ptsd get confused and what veterans can do",
-    "excerpt": "A physician who treats veterans for hormone deficiency says low testosterone and PTSD share symptoms, raising an important question.",
-    "source": "Military.com",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://military.com/why-low-testosterone-and-ptsd-get-confused-in-veterans",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-02cd4c3af835",
-    "type": "news",
-    "title": "Six banks just wrote the agent commerce trust rules before regulators did",
-    "excerpt": "On September 22, 2026, a consortium of six global banks—ASB, Bank of America, Capital One, Commonwealth Bank of Australia, ING, and NatWest—released a document titled Building Trust in Agentic Commerce. The timing is not accidental. It is a direct response to…",
-    "source": "Forkast.news",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/six-banks-just-wrote-the-agent-commerce-trust-rules-before-regulators-did/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-67a672b724a6",
-    "type": "news",
-    "title": "From wrist to research: harnessing smartwatch data for equitable cardiovascular research",
-    "excerpt": "Cardiovascular disease is a leading cause of death, and progress in reducing mortality has stalled, calling for more research. In this Editorial, Manpreet Kaur discusses the opportunity for harnessing cardiovascular data from smartwatches, and the ethical and…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005260",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-7bb2eae88dc2",
-    "type": "news",
-    "title": "Epistasis and pleiotropy constrain the evolution of cross-reactive breadth in a broadly neutralizing influenza antibody",
-    "excerpt": "Broadly neutralizing flu antibodies able to recognize both influenza A and B viruses are exceptionally rare. This study shows that mutations which preserve or improve binding to one flu virus can weaken recognition of others, constraining antibody cross-react…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004021",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-b86eba61ef07",
-    "type": "news",
-    "title": "Food consumption patterns and nutrient adequacy across lifecycle stages in bangladesh",
-    "excerpt": "Objective The study aimed to estimate energy, macro, and micronutrient intakes and to compute the probability of adequacy (PA) of 11 selected micronutrient intakes by age, sex, and vulnerabilities.   Methods This study analyzed dietary data from two nationall…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359205",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-cccabec1b682",
-    "type": "news",
-    "title": "A study protocol evaluating the effectiveness of the older adult’s digital health literacy (oddheal) intervention",
-    "excerpt": "Digital health literacy (DHL) is recognised as a vital determinant of healthy ageing, directly influencing the ability of older adults to navigate an increasingly technology-driven healthcare landscape. Despite increasing internet penetration, overall DHL amo…",
-    "source": "Plos.org",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359396",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-9f95ac54a218",
-    "type": "seminar",
-    "title": "Europe’s read of the trump-xi summit",
-    "excerpt": "Decisions taken in Washington and Beijing increasingly shape European trade, technology, energy, and security.",
-    "source": "The Diplomat",
-    "date": "2026-09-28",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thediplomat.com/2026/09/europes-read-of-the-trump-xi-summit/",
-    "badge": "Event"
-  },
-  {
-    "id": "nws-220dea2c55f4",
-    "type": "ainews",
-    "title": "Openai reportedly ditches model over safety concerns | techcrunch",
-    "excerpt": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
-    "source": "TechCrunch",
-    "date": "2026-09-28",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-227c6ab55934",
-    "type": "ainews",
-    "title": "Amd is acquiring AI company world labs in a deal worth more than $8 billion",
-    "excerpt": "AMD announced today that it's acquiring World Labs, an AI research lab co-founded by the prominent researcher Dr. Fei-Fei Li, in an all-stock deal worth approximately $8.2 billion. World Labs launched in 2024 and was valued at $1 billion in a matter of months…",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-bf918244edec",
-    "type": "ainews",
-    "title": "Aws needs to embrace its place as the home depot of AI infrastructure",
-    "excerpt": "What's wrong with being a great wholesaler?",
-    "source": "Theregister.com",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/paas-and-iaas/2026/09/28/aws-needs-to-embrace-its-place-as-the-home-depot-of-ai-infrastructure/5299602",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-f3f7a5546da6",
-    "type": "ainews",
-    "title": "Openai gpt-6 astra really good at supply chain attacks, UK gov warns",
-    "excerpt": "During testing, the model showed it can violate security rules more often than its predecessors",
-    "source": "Theregister.com",
-    "date": "2026-09-28",
-    "tags": [
-      "LLM",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/28/openai-gpt-6-astra-really-good-at-supply-chain-attacks-uk-gov-warns/5299588",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-7627b64443e1",
-    "type": "ainews",
-    "title": "Openai’s AI agents need to catch up",
-    "excerpt": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead i…",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "AI agent",
-      "Generative AI",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-79c5767e260d",
-    "type": "ainews",
-    "title": "Nvidia launches new platform for reining in rogue AI agents | techcrunch",
-    "excerpt": "As the debate rages over whether the recent spate of rogue AI agents is a step toward AGI or a more conventional engineering problem, Nvidia is offering",
-    "source": "TechCrunch",
-    "date": "2026-09-28",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-7c7b6ea24fb9",
-    "type": "ainews",
-    "title": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
-    "excerpt": "In March, Janice Malone began getting calls about suspicious activity from her nonprofit organization, Vivian's Door. Vivian's Door, headquartered in Alabama, typically provided training, resources, and community to underserved and minority-owned businesses. …",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-325b82c35134",
-    "type": "ainews",
-    "title": "French dev aims to solve bots' blindness so they can understand guis",
-    "excerpt": "Because sometimes escaping your sandbox requires clicking a button",
-    "source": "Theregister.com",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/28/french-dev-aims-to-solve-bots-blindness-so-they-can-understand-guis/5299575",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-06e9f36bb849",
-    "type": "ainews",
-    "title": "Anthropic releases sonnet 5.5, which it calls a significantly cheaper, faster work partner | techcrunch",
-    "excerpt": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner | TechCrunchtechcrunch.com",
-    "source": "TechCrunch",
-    "date": "2026-09-28",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-bd9271a6418d",
-    "type": "ainews",
-    "title": "Openai still doesn't seem to have a handle on all of its rogue AI activity | techcrunch",
-    "excerpt": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming.",
-    "source": "TechCrunch",
-    "date": "2026-09-28",
-    "tags": [
-      "EU AI Act",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-523d5e9de5b0",
-    "type": "ainews",
-    "title": "Florida seeks a ban on chatgpt acting like a person",
-    "excerpt": "Florida Attorney General James Uthmeier is calling for a judge to block OpenAI from \"giving ChatGPT false human attributes,\" a few months after Florida sued the AI company over safety concerns. According to Uthmeier, users are lulled into a false sense of sec…",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "LLM",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-c7c2b097d78b",
-    "type": "ainews",
-    "title": "Microsoft's copilot super app comes with a meter attached",
-    "excerpt": "Redmond calls its pricing model an 'evolution' as advanced AI racks up usage charges",
-    "source": "Theregister.com",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/09/28/microsofts-copilot-super-app-comes-with-a-meter-attached/5299515",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-0ed30c8df6bf",
-    "type": "ainews",
-    "title": "The saaspocalypse that wasn’t, with atlassian CEO mike cannon-brookes",
-    "excerpt": "Today, I’m talking with Mike Cannon-Brookes, who is cofounder and CEO of Atlassian.  Atlassian is one of those companies that every other company runs on — it makes important platform tools like Jira and Trello that allow people to organize and manage big tea…",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-fa45a29570c3",
-    "type": "ainews",
-    "title": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
-    "excerpt": "Nvidia is launching a new safety platform designed to contain and monitor AI agents, a move that comes in response to a wave of rogue hacking incidents, as reported earlier by Reuters. In an announcement on Monday, Nvidia says its new Open Agent Safety Platfo…",
-    "source": "The Verge",
-    "date": "2026-09-28",
-    "tags": [
-      "AI agent",
-      "AI safety"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-75fe0cd7346e",
-    "type": "paper",
-    "title": "Advances in Injectable miRNA-Loaded Nanocomposite Hydrogel Systems for Cartilage Repair in KOA",
-    "excerpt": "Knee osteoarthritis (KOA) is a degenerative joint disease marked by irreversible cartilage damage, progressive tissue degeneration, and compromised joint function, for which conventional clinical treatments offer limited efficacy. This review examines advances in injectable nanocomposite hydrogel systems loaded with microRNA (miRNA) as an emerging approach to promote cartilage repair in KOA. These systems represent a potential therapeutic strategy to address the progressive degenerative nature of this common joint disease.",
-    "source": "Int J Nanomedicine",
-    "date": "2026-09-27",
-    "tags": [
-      "Knee Osteoarthritis",
-      "miRNA Therapeutics",
-      "Nanocomposite Hydrogels",
-      "Cartilage Repair"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42801095/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-d18131895040",
-    "type": "news",
-    "title": "Bill gates says getting countries to agree on AI regulations will be harder than cold war-era nuclear negotiations",
-    "excerpt": "Bill Gates called on the U.S. to lead in the global regulation of AI growth but warned agreeing on a global AI regulation could be “more difficult” than Cold War-era nuclear negotiations.",
-    "source": "NBC News",
-    "date": "2026-09-27",
-    "tags": [
-      "Regulatory",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nbcnews.com/news/us-news/bill-gates-global-artificial-intelligence-regulations-nuclear-rcna599646",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-42fe9a630732",
-    "type": "news",
-    "title": "Victor davis hanson: AI and the same old politicized hysteria",
-    "excerpt": "The midterm elections are six weeks away.  Suddenly, a debate has erupted over the existential dangers of artificial intelligence. Jacob Coxon, a little-known Silicon Valley researcher who worked at OpenAI and Anthropic, resigned and went public with a dire w…",
-    "source": "Daily Signal",
-    "date": "2026-09-27",
-    "tags": [
-      "OpenAI",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.dailysignal.com/2026/09/27/ai-same-old-politicized-hysteria/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-f8cd964878e4",
-    "type": "news",
-    "title": "Openai breach proves need for more data centres, major parties say",
-    "excerpt": "The major parties agree OpenAI's Medicare breach proves the need for Australia to secure \"a seat at the AI table\" by rolling out data centres nationally.",
-    "source": "ABC News (AU)",
-    "date": "2026-09-27",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.abc.net.au/news/2026-09-27/openai-medicare-breach-need-investment-data-centres-ai/107200652",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-1db2de0051b7",
-    "type": "news",
-    "title": "Google ranking factors, AI agents, linkedin seo & blog stats 2026 | highdegree* marketing – issue 37",
-    "excerpt": "Top Google ranking factors for 2026. How to build AI SEO agents. What makes LinkedIn posts rank. Google pays publishers for AI use. Why most blogs underperform.",
-    "source": "Serplabseo.com",
-    "date": "2026-09-27",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://serplabseo.com/google-ranking-factors-ai-agents-linkedin-seo-blog-stats-2026-highdegree-marketing-issue-37/",
     "badge": "Data",
     "topic": "data-governance"
   }
