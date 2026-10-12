@@ -1,5 +1,134 @@
 [
   {
+    "id": "auto-af44b9beb35b",
+    "type": "ainews",
+    "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+    "excerpt": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now New benchmark shows how AI models lack intuitive visual reasoning:…Humanity’s Sixth Sense highlights some shortcomings of current AI systems…AI startups Elorian and Scale AI have built [&#8230;]",
+    "source": "Import AI",
+    "date": "2026-10-12",
+    "tags": [
+      "Uncategorized"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+    "badge": "Research"
+  },
+  {
+    "id": "nws-2921c1ca4b04",
+    "type": "news",
+    "title": "Uae ranked top worldwide in AI integration across key sectors",
+    "excerpt": "The United Arab Emirates has ranked first worldwide in Artificial Intelligence integration, with 70.1 per cent of its working-age population using AI.",
+    "source": "Arnnewscentre.ae",
+    "date": "2026-10-11",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.arnnewscentre.ae/news/business/uae-ranked-top-worldwide-in-ai-integration-across-key-sectors/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-ad1be17559e0",
+    "type": "news",
+    "title": "African genomics research is growing: what countries are doing to connect genetic data and healthcare",
+    "excerpt": "National genetic projects are important but they must have local expertise, responsible data governance and sustained investment to improve healthcare.",
+    "source": "The Conversation Africa",
+    "date": "2026-10-11",
+    "tags": [
+      "Data governance"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://theconversation.com/african-genomics-research-is-growing-what-countries-are-doing-to-connect-genetic-data-and-healthcare-292717",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-801ed056073d",
+    "type": "news",
+    "title": "An adaptive federated deep learning approach for efficient ddos detection in iot edge networks",
+    "excerpt": "Scientific Reports - An adaptive federated deep learning approach for efficient DDoS detection in IoT edge networks",
+    "source": "Nature.com",
+    "date": "2026-10-11",
+    "tags": [
+      "Deep learning"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41598-026-70741-w.pdf",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-6b624d7c6c2e",
+    "type": "ainews",
+    "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody's ready",
+    "excerpt": "Meanwhile, AI agents move robotic arms, 'make OT device operator screens lie'",
+    "source": "Theregister.com",
+    "date": "2026-10-11",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-ea95eacbd85b",
+    "type": "ainews",
+    "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+    "excerpt": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're …",
+    "source": "The Verge",
+    "date": "2026-10-11",
+    "tags": [
+      "AI benchmark"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-a40f5e77222c",
+    "type": "paper",
+    "title": "Transforming the Landscape of Drug Innovation in AI Era: AlphaFold 3 and Beyond",
+    "excerpt": "This article examines how artificial intelligence tools, particularly AlphaFold 3, are transforming drug discovery and development processes. The work, authored by researchers from The Chinese University of Hong Kong and affiliated research centers, explores the emerging landscape of AI-enabled drug innovation and its implications for the pharmaceutical field.",
+    "source": "Exploration (Beijing)",
+    "date": "2026-10-11",
+    "tags": [
+      "Artificial Intelligence",
+      "Drug Discovery",
+      "AlphaFold",
+      "Computational Biology"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42861167/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-ba5db8106c64",
+    "type": "ainews",
+    "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+    "excerpt": "Voice AI often misses important points for its context layer, and causes the whole pipeline to break.",
+    "source": "TechCrunch AI",
+    "date": "2026-10-11",
+    "tags": [
+      "AI",
+      "otter",
+      "voice AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+    "badge": "Tech"
+  },
+  {
     "id": "auto-cf5de6151a45",
     "type": "ainews",
     "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
@@ -79,6 +208,100 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42859361/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-f90050f84f8a",
+    "type": "news",
+    "title": "Pvx-001: open-source covid-19 vaccine starts phase 1 trial",
+    "excerpt": "First participants safely dosed in Melbourne, Australia, on August 31, 2026, in the first-in-human trial of our broadly-protective COVID-19 vaccine candidate PVX-001.",
+    "source": "Popvax.com",
+    "date": "2026-10-10",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://chronicles.popvax.com/p/popvax-goes-clinical",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-08061ff2cdf6",
+    "type": "news",
+    "title": "Can AI ease the mental load of disaster recovery?",
+    "excerpt": "With guardrails, AI can triage disaster recovery information, tailor next steps, offer brief coping support, and route survivors to trusted human help.",
+    "source": "Psychology Today",
+    "date": "2026-10-10",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.psychologytoday.com/us/blog/combating-climate-dread/202610/can-ai-ease-the-mental-load-of-disaster-recovery",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-b468aa72b4d0",
+    "type": "news",
+    "title": "Outside groups have spent nearly $2 billion on campaigns this election cycle",
+    "excerpt": "The top 6 groups had spent more than $60 million each as of October 5.",
+    "source": "Opensecrets.org",
+    "date": "2026-10-10",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.opensecrets.org/news/2026/10/outside-spending-nears-2-billion-and-the-biggest-groups-pull-further-ahead",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-710a156efec5",
+    "type": "news",
+    "title": "The AI control gap: Who gets to say ‘it’s safe’?",
+    "excerpt": "We see a control gap between what artificial intelligence can do and what the evidence supports trusting it to do. A great demo doesn’t prove that a system will stay within the limits of an intended deployment’s goals. The question is: Who gets to decide when…",
+    "source": "SiliconANGLE News",
+    "date": "2026-10-10",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://siliconangle.com/2026/10/10/the-ai-control-gap-who-gets-to-say-its-safe/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-d05facb80f7a",
+    "type": "ainews",
+    "title": "Microsoft’s satya nadella says AI models need an ‘emergency brake’ | techcrunch",
+    "excerpt": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+    "source": "TechCrunch",
+    "date": "2026-10-10",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-a893947d303d",
+    "type": "ainews",
+    "title": "Here are the top AI agents that can live in your text messages | techcrunch",
+    "excerpt": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+    "source": "TechCrunch",
+    "date": "2026-10-10",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-b5ea55bf2fd4",
@@ -1925,6 +2148,37 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/cyber-crime/2026/10/08/crowdstrike-finds-possible-bank-hackers-cv-among-exposed-ai-logs/5301908",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-c9efa01bf043",
+    "type": "ainews",
+    "title": "Fired openai safety researchers dispute misconduct claims, warn of chilling effect | techcrunch",
+    "excerpt": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+    "source": "TechCrunch",
+    "date": "2026-10-08",
+    "tags": [
+      "AI safety",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-48f3042078ba",
+    "type": "ainews",
+    "title": "Building a safer path to autonomous industrial AI",
+    "excerpt": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. B…",
+    "source": "MIT Technology Review",
+    "date": "2026-10-08",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+    "badge": "AI Policy"
   },
   {
     "id": "auto-6211eb205b84",
@@ -4576,257 +4830,5 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-e08f8e4c161b",
-    "type": "ainews",
-    "title": "Tiktok rolls out an AI shopping assistant and one-click checkout | techcrunch",
-    "excerpt": "TikTok describes its new Shopping Assistant as a conversational AI agent designed to help users discover and purchase products.",
-    "source": "TechCrunch",
-    "date": "2026-10-05",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-8962e1c0271c",
-    "type": "ainews",
-    "title": "5 startups that caught vcs' attention at the latest pearx demo day | techcrunch",
-    "excerpt": "TechCrunch attended Pear’s latest demo day and discovered which startups generated the most buzz, from spatial models to chips for local AI.",
-    "source": "TechCrunch",
-    "date": "2026-10-05",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/05/5-startups-that-caught-vcs-attention-at-the-latest-pearx-demo-day/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-5253c2e75c44",
-    "type": "ainews",
-    "title": "Hackerrank's AI interviewer offers a glimpse into what job interviews could become | techcrunch",
-    "excerpt": "HackerRank’s AI interviewer has already conducted more than 500,000 interviews, with Snowflake, Snorkel, and Capgemini among its early testers.",
-    "source": "TechCrunch",
-    "date": "2026-10-05",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-d5b877552dd2",
-    "type": "ainews",
-    "title": "Altman-backed volantis reveals plan to vault the memory wall by baking photonics into AI accelerators",
-    "excerpt": "Who said you had to use wires to connect memory to compute?",
-    "source": "Theregister.com",
-    "date": "2026-10-05",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/systems/2026/10/05/altman-backed-volantis-reveals-plan-to-vault-the-memory-wall-by-baking-photonics-into-ai-accelerators/5300959",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-1ba99535ff8c",
-    "type": "ainews",
-    "title": "Connecting AI agents to enterprise knowledge",
-    "excerpt": "For all the data that AI systems continually amass and analyze, enterprise AI agents often suffer from a curious shortcoming: a lack of knowledge. More than data, knowledge is the understanding of what the data means in the context of individual organizations…",
-    "source": "MIT Technology Review",
-    "date": "2026-10-05",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-82cd9e3ab19b",
-    "type": "ainews",
-    "title": "Reflection debuts beam, a open-weight AI model to rival chinese models at lower compute cost | techcrunch",
-    "excerpt": "Nvidia-backed Reflection AI unveils Beam, its first open-weight model, which it says rivals GLM-5.2 on reasoning with far less inference compute. Weights are due this month.",
-    "source": "TechCrunch",
-    "date": "2026-10-05",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-6471a7637d61",
-    "type": "paper",
-    "title": "State of the industry: integration of 3Rs principles and new approach methodologies in non-clinical product development through fit-for-purpose",
-    "excerpt": "1. Front Med (Lausanne). 2026 Aug 26;13:1887169. doi: 10.3389/fmed.2026.1887169. eCollection 2026. State of the industry: integration of 3Rs principles and new approach methodologies in non-clinical product development through fit-for-purpose. Poppenborg SM(1), Webster DA(1), Carlsson B(1). Author information: (1)SSI Strategy, Morristown, NJ, United States. Regulators, such as the FDA and EMA, are increasingly signaling expectations for broader and earlier adoption of New Approach Methodologies (NAMs) to reduce, refine, and, where justified, replace animal studies (3Rs principle)-part",
-    "source": "Front Med (Lausanne)",
-    "date": "2026-10-04",
-    "tags": [
-      "Pharma AI",
-      "Drug discovery"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42719207/",
-    "badge": "PubMed",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-26b56f61ca74",
-    "type": "news",
-    "title": "Industry experts call for india-specific AI safety rules, not US model",
-    "excerpt": "India should build its own artificial intelligence (AI) safety framework suited to its languages, scale, and application-led AI ecosystem rather than replicate a voluntary pact signed by US President Donald Trump and top technology firms last week, industry e…",
-    "source": "Business Standard",
-    "date": "2026-10-04",
-    "tags": [
-      "AI safety"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.business-standard.com/technology/artificial-intelligence/industry-experts-call-for-india-specific-ai-safety-rules-not-us-model-126100400346_1.html",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-723f28d9e706",
-    "type": "news",
-    "title": "Fdr’s lesson for AI regulation",
-    "excerpt": "Like the financial industry of the 1930s, the AI industry is currently largely unregulated, heightening fears that it could do widespread harm.",
-    "source": "Fortune",
-    "date": "2026-10-04",
-    "tags": [
-      "Regulatory",
-      "AI policy"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://fortune.com/2026/10/04/how-fdr-roosevelt-would-regulate-ai/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-c528a44bf393",
-    "type": "news",
-    "title": "Anthropic’s olah clashed with vatican over AI consciousness before encyclical launch",
-    "excerpt": "The divide between Silicon Valley and the Vatican reached a breaking point this past May. When Pope Leo XIV released the encyclical Magnifica Humanitas, the document established a definitive theological stance on artificial intelligence. Paragraph 99 of the 4…",
-    "source": "Forkast.news",
-    "date": "2026-10-04",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/anthropics-olah-clashed-with-vatican-over-ai-consciousness-before-encyclical-launch/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-77d67bcb0e88",
-    "type": "news",
-    "title": "AI and the digital economy rivalries poised to transform the world",
-    "excerpt": "Book Title – AI and the Digital Economy Rivalries Poised to Transform the World Author – Maung Maung Myint Thein (RIT) Publishing House – AZ Publication Date",
-    "source": "Gnlm.com.mm",
-    "date": "2026-10-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.gnlm.com.mm/ai-and-the-digital-economy-rivalries-poised-to-transform-the-world/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-eabfa8c8aa8b",
-    "type": "news",
-    "title": "What your eyes could reveal about your heart health and disease risk",
-    "excerpt": "The retina, the light-sensitive tissue at the back of the eye, contains several specialised layers of cells",
-    "source": "Business Standard",
-    "date": "2026-10-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.business-standard.com/health/what-your-eyes-could-reveal-about-your-heart-health-and-disease-risk-126100400182_1.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-a5a880c6829c",
-    "type": "ainews",
-    "title": "Our minds aren’t equipped to handle AI",
-    "excerpt": "Norbert Wiener, godfather of cybernetics, once said, \"The thought of every age is reflected in its technique.\" For the past century, our thought has been reflected in our computers, including by those in the AI industry. Google's Demis Hassabis calls the brai…",
-    "source": "The Verge",
-    "date": "2026-10-04",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-5fd5c650b97d",
-    "type": "news",
-    "title": "Openai's altman says AI benefits warrant accepting some risks",
-    "excerpt": "Oct 4 : OpenAI Chief Executive Sam Altman said the benefits of artificial intelligence justify accepting some risks and argued the technology should remain broadly accessible to the public\"We believe that the world should accept some bad things happening for …",
-    "source": "CNA",
-    "date": "2026-10-04",
-    "tags": [
-      "EMA",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.channelnewsasia.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-6431831",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-acc80a69d860",
-    "type": "news",
-    "title": "Bug bounty programs, facebook data centers, microsoft “community support”, more: researchbuzz AI update, october 4, 2026",
-    "excerpt": "AI PROBLEMS Tom’s Hardware: Google freezes open-source bug bounty program amid flood of invalid AI slop submissions — product flaw submissions halted until 2027 as maintainers drown in hallucinations. “Google has officially […]",
-    "source": "Researchbuzz.me",
-    "date": "2026-10-04",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://researchbuzz.me/2026/10/04/bug-bounty-programs-facebook-data-centers-microsoft-community-support-more-researchbuzz-ai-update-october-4-2026/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-9ab71769474a",
-    "type": "news",
-    "title": "What i learnt co-leading an AI safety bootcamp for legal and governance practit",
-    "excerpt": "AI safety has gone mainstream. More people than ever want to work on AI safety research, and there are real policy wins in the US, the UK and Europe.…",
-    "source": "Lesswrong.com",
-    "date": "2026-10-04",
-    "tags": [
-      "AI safety"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.lesswrong.com/posts/KtAug62dYRgAS8sqJ/what-i-learnt-co-leading-an-ai-safety-bootcamp-for-legal-and",
-    "badge": "Regulatory",
-    "topic": "regulatory"
   }
 ]
