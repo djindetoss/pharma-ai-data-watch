@@ -1,5 +1,36 @@
 [
   {
+    "id": "auto-506646dbe51b",
+    "type": "ainews",
+    "title": "A visit to Samsung’s massive new semiconductor hub",
+    "excerpt": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate around the clock, and a fourth is coming online. Construction&#8230;",
+    "source": "MIT Technology Review",
+    "date": "2026-10-20",
+    "tags": [
+      "Artificial intelligence",
+      "App"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+    "badge": "Research"
+  },
+  {
+    "id": "auto-c2b366dc66aa",
+    "type": "ainews",
+    "title": "Physics-informed machine learning: a hybrid lens for fluid dynamics",
+    "excerpt": "Nature Machine Intelligence, Published online: 20 October 2026; doi:10.1038/s42256-026-01319-4 A neural network approach bridging Lagrangian and Eulerian perspectives transforms sparse observations into physically accurate, high-resolution maps of complex and chaotic fluid motions.",
+    "source": "Nature Machine Intelligence",
+    "date": "2026-10-20",
+    "tags": [
+      "Nature Machine Intelligence"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s42256-026-01319-4",
+    "badge": "Research"
+  },
+  {
     "id": "auto-dae51ad86e79",
     "type": "paper",
     "title": "Making trade-offs explicit: development and pilot of a Belgian MCDA framework for orphan drug appraisal",
@@ -54,6 +85,185 @@
     "readTime": "1 min",
     "url": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
     "badge": "Research"
+  },
+  {
+    "id": "nws-dd1daea116df",
+    "type": "news",
+    "title": "Northern ireland offers indian companies a gateway for global growth",
+    "excerpt": "Indian companies seeking a gateway to Great Britain and European markets should consider Northern Ireland as a strategic location for growth. With more than 1,500 international companies operating in",
+    "source": "Business Standard",
+    "date": "2026-10-19",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.business-standard.com/content/specials/northern-ireland-offers-indian-companies-a-gateway-for-global-growth-126101500345_1.html",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-2a4690fa0e9b",
+    "type": "news",
+    "title": "Finding signal in the noise",
+    "excerpt": "Nature Chemical Biology - Finding signal in the noise",
+    "source": "Nature.com",
+    "date": "2026-10-19",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41589-026-02360-5",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-09bdba1b79b4",
+    "type": "news",
+    "title": "The AI state of play: AI laws and game development",
+    "excerpt": "Game studios have a lot to navigate when it comes to AI use. Generative AI is increasingly becoming embedded in the game development process, and at the same time, the laws, regulations, and guidelines surrounding it are on the rise. Each landmark case brings…",
+    "source": "GamesIndustry.biz",
+    "date": "2026-10-19",
+    "tags": [
+      "Generative AI",
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.gamesindustry.biz/the-ai-state-of-play-ai-laws-and-game-development",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-753f549a79d7",
+    "type": "news",
+    "title": "From product roadmaps to quality records: building better medtech processes",
+    "excerpt": "The medical technology sector is a field of activity of scientific innovation, regulatory responsibility, and business performance. It takes more than a clinical idea that is turned into a working product to make a successful medical device. Organizations nee…",
+    "source": "The-digital-reader.com",
+    "date": "2026-10-19",
+    "tags": [
+      "Regulatory"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://the-digital-reader.com/from-product-roadmaps-to-quality-records-building-better-medtech-processes/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-4dd1a1774cbb",
+    "type": "ainews",
+    "title": "Ai’s epic cash call is matched only by its ability to strangle revenue streams",
+    "excerpt": "The first technology created with a self-disrupt button... But why oh why didn't they call Claude clone Fauxtoshop?",
+    "source": "Theregister.com",
+    "date": "2026-10-19",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/columnists/2026/10/19/ais-epic-cash-call-is-matched-only-by-its-ability-to-strangle-revenue-streams/5303493",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-d2bbffc6feae",
+    "type": "ainews",
+    "title": "No agenda, no rush, no leaving san francisco: benchmark’s partners on investing in a frenzied market | techcrunch",
+    "excerpt": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
+    "source": "TechCrunch",
+    "date": "2026-10-19",
+    "tags": [
+      "AI benchmark"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-c667a8d08eb1",
+    "type": "ainews",
+    "title": "AI inference is running into a memory bottleneck. huawei wants to tackle it with oceanstor m900",
+    "excerpt": "SPONSORED POST: The Context Memory Storage platform aims to improve the economics of large-scale AI inference",
+    "source": "Theregister.com",
+    "date": "2026-10-19",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/19/sponsored-ai-inference-is-running-into-a-memory-bottleneck-huawei-wants-to-tackle-it-with-oceanstor-m900/5303543",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "auto-154f8e2b8fa0",
+    "type": "news",
+    "title": "FDA Approves Immunotherapy That May Allow Certain Patients with Rectal Cancer to Avoid Chemotherapy, Radiation and Surgery",
+    "excerpt": "The U.S. Food and Drug Administration today granted accelerated approval for a new use of the immunotherapy Jemperli (dostarlimab-gxly) that may allow some patients with locally advanced rectal cancer to avoid common treatments that can have a lasting impact on their daily life.",
+    "source": "FDA",
+    "date": "2026-10-19",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-c83c0fb0a3c4",
+    "type": "news",
+    "title": "STAT+: China moves to restrict foreign biotech acquisitions",
+    "excerpt": "China is proposing new restrictions on foreign acquisitions of critical biopharma technologies, as the country seeks to retain control over its burgeoning drug development industry.",
+    "source": "STAT News",
+    "date": "2026-10-19",
+    "tags": [
+      "Biotech",
+      "Business",
+      "Pharma",
+      "The Readout"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/10/19/biotech-news-china-moves-to-restrict-foreign-biotech-acquisitons/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-0cffae2fd0c5",
+    "type": "ainews",
+    "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+    "excerpt": "Microsoft wants enterprises to closely watch the agents that employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+    "source": "TechCrunch AI",
+    "date": "2026-10-19",
+    "tags": [
+      "AI",
+      "Enterprise",
+      "Microsoft"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-039a84854fb8",
+    "type": "ainews",
+    "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+    "excerpt": "OpenCode is an open source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for help kept refusing to look at the malicious code.",
+    "source": "TechCrunch AI",
+    "date": "2026-10-19",
+    "tags": [
+      "AI",
+      "AI coding agents",
+      "hackers"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+    "badge": "Tech"
   },
   {
     "id": "nws-631c78f18e27",
@@ -134,6 +344,69 @@
     "readTime": "1 min",
     "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
     "badge": "AI Tech"
+  },
+  {
+    "id": "nws-ba3cea0d3174",
+    "type": "news",
+    "title": "Retraction of sids paper based on vaers analysis five years after publication",
+    "excerpt": "Few individuals can relate as personally as I do to the experience of having peer-reviewed research retracted after it revealed potential safety signals in the VAERS database. Neil Miller recently had his peer-reviewed published work “removed” from the journa…",
+    "source": "Activistpost.com",
+    "date": "2026-10-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://activistpost.com/retraction-of-sids-paper-based-on-vaers-analysis-five-years-after-publication/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-ff1d9d339078",
+    "type": "news",
+    "title": "Deepseek monetizes the agent retrieval layer at $0.75 per 1,000 calls. every competitor charges at least $5.",
+    "excerpt": "DeepSeek is selling search and fetch access to agents at $0.75 per 1,000 requests. Every established competitor charges at least $5. On October 17, the company launched its Search and Fetch APIs alongside the release of DeepSeek-V4.1-Flash-1017, a Pareto impr…",
+    "source": "Forkast.news",
+    "date": "2026-10-18",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://forkast.news/deepseek-monetizes-the-agent-retrieval-layer-at-0-75-per-1000-calls-every-competitor-charges-at-least-5/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-f13846c91a66",
+    "type": "news",
+    "title": "Show hn: an open-source curation of most useful chatgpt plugins",
+    "excerpt": "Article URL: https://github.com/Asdivyansh/Awesome-ChatGPT-Plugins\nComments URL: https://news.ycombinator.com/item?id=50141332\nPoints: 3\n# Comments: 0",
+    "source": "Github.com",
+    "date": "2026-10-18",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://github.com/Asdivyansh/Awesome-ChatGPT-Plugins",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-cef1d05c7525",
+    "type": "ainews",
+    "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’ | techcrunch",
+    "excerpt": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’ | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-10-18",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+    "badge": "AI Lab"
   },
   {
     "id": "auto-36fbac9a4f2b",
@@ -4567,280 +4840,6 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-78cde94f0401",
-    "type": "news",
-    "title": "STAT+: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
-    "excerpt": "Roche has inked a drug discovery deal with Chinese biotech Defand Therapeutics, focused on molecular glue medicines.",
-    "source": "STAT News",
-    "date": "2026-10-08",
-    "tags": [
-      "Biotech",
-      "Pharma",
-      "biotechnology",
-      "Cancer"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-48f3042078ba",
-    "type": "ainews",
-    "title": "Building a safer path to autonomous industrial AI",
-    "excerpt": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-10-08",
-    "tags": [
-      "Artificial intelligence",
-      "sponsored"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-    "badge": "Research"
-  },
-  {
-    "id": "nws-97bf6a682b62",
-    "type": "news",
-    "title": "AI ecosystems in the netherlands and the UK: life sciences",
-    "excerpt": "This research briefing identifies opportunities for UK–Netherlands collaboration on AI in life sciences and health, linking UK commercial scale and research depth with Dutch clinical integration, validation and European market pathways.",
-    "source": "Rand.org",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.rand.org/pubs/research_briefs/RBA4654-2.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-ba33c3b0cece",
-    "type": "news",
-    "title": "AI companies run virtual human drug trials, aim to improve success of human studies",
-    "excerpt": "AI firms say simulations are being used to identify which pharmaceutical programs are worth moving forward and to assess the value of acquisition targets. As AI tools get better at flagging clinical risks, they say unexpected trial failures may become less fr…",
-    "source": "Freerepublic.com",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://freerepublic.com/focus/f-chat/4398357/posts",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-ea758abc06ba",
-    "type": "news",
-    "title": "Mapping the functional dark proteome in cancer",
-    "excerpt": "The dark proteome encompasses previously undiscovered and uncharacterized protein molecules derived from alternative genomic loci or altered RNA translation. In this Perspective, Prensner et al. describe the current understanding of the dark proteome and set …",
-    "source": "Nature.com",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41568-026-00985-1",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-bc2278b76c36",
-    "type": "news",
-    "title": "'this is a shocking revelation': amazon accused of deploying 'orwellian' ai-powered union activity surveillance system at sites in canada, the UK, and around the world",
-    "excerpt": "Amazon used the Atlas union monitoring systems at sites around the world, including in the UK.",
-    "source": "TechRadar",
-    "date": "2026-10-08",
-    "tags": [
-      "RWE"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techradar.com/pro/this-is-a-shocking-revelation-amazon-accused-of-deploying-orwellian-ai-powered-union-activity-surveillance-system-at-sites-in-canada-the-uk-and-around-the-world",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-1bbe038c6bbd",
-    "type": "news",
-    "title": "Mapping AI ecosystems in the netherlands and the united kingdom",
-    "excerpt": "This report maps UK and Dutch AI ecosystems, identifying collaboration opportunities in health, agrifood and compute. The UK offers scale, frontier research and investment; the Netherlands offers specialisation and public-private coordination.",
-    "source": "Rand.org",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.rand.org/pubs/research_reports/RRA4654-1.html",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-4f50ed9fb430",
-    "type": "news",
-    "title": "Michael hudson: the AI crash is coming, and you will pay for it",
-    "excerpt": "Hudson and Desai discuss the probable AI crash in the context of US tech policy, historical bubbles, and the contrast with China's approach.",
-    "source": "Nakedcapitalism.com",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nakedcapitalism.com/2026/10/michael-hudson-the-ai-crash-is-coming-and-you-will-pay-for-it.html",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-3561d5491a54",
-    "type": "news",
-    "title": "Utah now allows AI to scan your face and prescribe acne medication",
-    "excerpt": "The program is limited in scope and can only prescribe medication for acne.",
-    "source": "CNET",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.cnet.com/tech/services-and-software/an-ai-doctor-in-utah-can-prescribe-medicine/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-80f986459302",
-    "type": "news",
-    "title": "Your money, shown at one place: what rbi’s new aa measures mean",
-    "excerpt": "The expanded consolidated account statement will include bank deposits, while account aggregator interoperability aims to make financial-data sharing simpler.",
-    "source": "Livemint",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.livemint.com/money/personal-finance/rbi-cas-bank-deposits-account-aggregator-interoperability-11791443029481.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-a6e2b96f9030",
-    "type": "news",
-    "title": "AI ecosystems in the netherlands and the UK: agrifood & agritech",
-    "excerpt": "This research briefing identifies opportunities for UK–Netherlands collaboration on AI in agrifood and agritech, combining UK research and digital innovation with Dutch strengths in deployment, scaling and food-system integration.",
-    "source": "Rand.org",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.rand.org/pubs/research_briefs/RBA4654-3.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-9c865dac7f7b",
-    "type": "news",
-    "title": "Veeva 、臨床試験の設定をわずか 1 日で実現する新たな AI エージェント「 study builder agent 」を発表",
-    "excerpt": "[Veeva Japan]\n[画像: https://prcdn.freetls.fastly.net/release_image/61700/61/61700-61-703400c30e6d0806c41061c559e21d64-3900x3900.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&amp...",
-    "source": "Prtimes.jp",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://prtimes.jp/main/html/rd/p/000000061.000061700.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-1e49ab5143b7",
-    "type": "news",
-    "title": "AI ecosystems in the netherlands and the UK: compute for AI",
-    "excerpt": "This research briefing identifies opportunities for UK–Netherlands collaboration on AI in life sciences and health, linking UK commercial scale and research depth with Dutch clinical integration, validation and European market pathways.",
-    "source": "Rand.org",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.rand.org/pubs/research_briefs/RBA4654-1.html",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-644f9071e5b6",
-    "type": "news",
-    "title": "Targeting cd28 on t lineage malignancies with chimeric antigen receptor t cells",
-    "excerpt": "CAR-T cell therapy is currently being evaluated in patients with T-cell acute lymphoblastic leukaemia (T-ALL), however target antigens are limited. Here the authors report that CD28 is highly expressed on primary T-ALL and describe the anti T-ALL activity of …",
-    "source": "Nature.com",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41467-026-78312-3",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-7c959797e5b8",
-    "type": "news",
-    "title": "Alzheimer’s disease target and drug discovery by leveraging multiomics and electronic health data",
-    "excerpt": "Hou et al. show a drug target compendium supported by human genetic and real-world patient data for Alzheimer’s disease and validate epoxide hydrolase 2 as a causal Alzheimer’s disease target using CRISPR interference and gene editing experiments in human mod…",
-    "source": "Nature.com",
-    "date": "2026-10-08",
-    "tags": [
-      "Drug discovery",
-      "Health data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41593-026-02472-0",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-9c52fff21ad0",
-    "type": "seminar",
-    "title": "The cftc is opening its first forum on agentic finance — six months after the industry already wrote its own",
-    "excerpt": "Six global banks published trust principles for autonomous financial agents the day after Chairman Selig outlined his tokenization vision. The CFTC's Frontier Forum arrives months behind the private sector's standard-setting.",
-    "source": "Forkast.news",
-    "date": "2026-10-08",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://forkast.news/the-cftc-is-opening-its-first-forum-on-agentic-finance-six-months-after-the-industry-already-wrote-its-own-2/",
-    "badge": "Event"
-  },
-  {
-    "id": "nws-0dd01cfc2636",
-    "type": "ainews",
-    "title": "Wired’s midterms races to watch",
-    "excerpt": "From data centers to Elon Musk funding to the AI lobby, the 2026 midterms are the most WIRED elections yet. These are the candidates we're following closely.",
-    "source": "Wired",
-    "date": "2026-10-08",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/wireds-midterms-races-to-watch/",
     "badge": "AI Lab"
   }
 ]
