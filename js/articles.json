@@ -1,5 +1,24 @@
 [
   {
+    "id": "auto-a62b246a01bd",
+    "type": "paper",
+    "title": "Sonodynamic Therapy in Periodontitis: From Mechanisms to Biomaterial-Based Innovations",
+    "excerpt": "Sonodynamic therapy represents an emerging therapeutic approach for periodontitis, a chronic inflammatory disease affecting dental tissues. This review examines the mechanistic basis of sonodynamic therapy and its application through biomaterial-based delivery systems for periodontal disease management. The integration of sonosensitizer agents with advanced biomaterials offers potential innovations in treating this prevalent oral condition.",
+    "source": "Int J Nanomedicine",
+    "date": "2026-11-01",
+    "tags": [
+      "Sonodynamic therapy",
+      "Periodontitis",
+      "Biomaterials",
+      "Dental therapeutics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42967178/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-c596f6913cad",
     "type": "paper",
     "title": "Model-informed precision dosing of vancomycin and amikacin in critically ill neonates: a pre- and post-intervention study",
@@ -72,6 +91,141 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42963943/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-0bcbd00768f4",
+    "type": "news",
+    "title": "Backbone of a beast – charting nvidia's rise to networking titan",
+    "excerpt": "How a $6.9B bet on Mellanox made Nvidia bigger than Cisco, and the world's most valuable company to boot",
+    "source": "Theregister.com",
+    "date": "2026-10-31",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-644fa68494c5",
+    "type": "news",
+    "title": "Human oversight, incident reporting mandatory: trai proposes strict AI rules for telecom companies",
+    "excerpt": "The Telecom Regulatory Authority of India has proposed an AI governance framework requiring telecom companies to adopt board-approved policies, classify AI systems by risk and report serious incidents. Operators would remain accountable for third-party AI too…",
+    "source": "Free Press Journal",
+    "date": "2026-10-31",
+    "tags": [
+      "EMA",
+      "Regulatory",
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.freepressjournal.in/business/human-oversight-incident-reporting-mandatory-trai-proposes-strict-ai-rules-for-telecom-companies",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-5b7f3856f663",
+    "type": "news",
+    "title": "This routine part of an eye exam might be able to predict alzheimer’s",
+    "excerpt": "Did you know your retina and brain developed from the same tissue?",
+    "source": "mindbodygreen.com",
+    "date": "2026-10-31",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.mindbodygreen.com/articles/does-your-eye-doctor-have-key-to-predicting-alzheimers-risk-about-the-study",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-a4246be53176",
+    "type": "news",
+    "title": "Generative AI and news report 2026: from standalone tools to information infrastructure | reuters institute for the study of journalism",
+    "excerpt": "The report is based on a survey in nine countries: Argentina, Australia, Denmark, Finland, France, Japan, Norway, the United Kingdom and the United States.",
+    "source": "Ox.ac.uk",
+    "date": "2026-10-31",
+    "tags": [
+      "Generative AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-44be6d9cd9ec",
+    "type": "ainews",
+    "title": "An AI agent injected drugs into a live mouse’s brain",
+    "excerpt": "A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs.",
+    "source": "Wired",
+    "date": "2026-10-31",
+    "tags": [
+      "AI agent",
+      "Biotech"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-2ec3abacf294",
+    "type": "ainews",
+    "title": "Meta’s muse could upend all kinds of businesses. it hasn’t yet",
+    "excerpt": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
+    "source": "Wired",
+    "date": "2026-10-31",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "auto-c5c40a3e8232",
+    "type": "paper",
+    "title": "TEAD as a druggable target in Hippo signaling: Structure-based discovery of small-molecule inhibitors",
+    "excerpt": "This article describes structure-based approaches to discover small-molecule inhibitors targeting TEAD, a key protein in the Hippo signaling pathway, which is a conserved cellular signaling mechanism involved in cell growth and proliferation control.",
+    "source": "Bull Cancer",
+    "date": "2026-10-31",
+    "tags": [
+      "Hippo pathway",
+      "TEAD inhibitors",
+      "Structure-based drug discovery",
+      "Small-molecule therapeutics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966706/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-8ec1bb371ef8",
+    "type": "paper",
+    "title": "Identifying phase separation modulators mediated by the SARS-CoV-2 nucleocapsid protein using a structure-based drug discovery approach",
+    "excerpt": "Researchers used structure-based drug discovery methods to identify modulators that affect phase separation mediated by the SARS-CoV-2 nucleocapsid protein. This approach may support the development of antiviral compounds targeting a key viral mechanism. The study combines structural analysis with drug discovery to characterize molecules capable of modulating this protein's phase separation behavior.",
+    "source": "J Adv Res",
+    "date": "2026-10-31",
+    "tags": [
+      "SARS-CoV-2",
+      "Drug Discovery",
+      "Nucleocapsid Protein",
+      "Phase Separation"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966466/",
     "badge": "PubMed",
     "topic": "drug-discovery"
   },
@@ -369,6 +523,434 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-391fe23d6040",
+    "type": "news",
+    "title": "Seventeen AI 100 alumni are currently in stealth mode. here’s what we think they’re building.",
+    "excerpt": "Stealth startups are hard to track by design. Most have no website, no product page, and no announced funding. The people building them are easier to read. Using CB Insights People data, we looked at a decade’s worth of AI …\nThe post Seventeen AI 100 alumni a…",
+    "source": "Cbinsights.com",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.cbinsights.com/research/seventeen-ai-100-alumni-stealth/",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-7e16a1fcb181",
+    "type": "news",
+    "title": "Genome mining, antibacterial activity, and metabolomic profiling reveal the biosynthetic potential of burkholderia glumae isolates from thailand with activity against clinically important bacterial pathogens",
+    "excerpt": "The increasing prevalence of antimicrobial resistance has underscored the need for novel antimicrobial agents. Members of the genus Burkholderia produce a diverse array of antimicrobial metabolites; however, the biosynthetic potential of Burkholderia glumae, …",
+    "source": "Plos.org",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0361711",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-963a648beab8",
+    "type": "news",
+    "title": "Managing amazon bedrock costs end to end: a playbook for finops and platform teams",
+    "excerpt": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Written for FinOps and platform eng…",
+    "source": "Amazon.com",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-5719528feb9c",
+    "type": "news",
+    "title": "Where better than universities?",
+    "excerpt": "The thorny ethical questions raised by AI demand exhaustive scrutiny, says Ifeoma Ajunwa—not to mention debate. She knows just the place.",
+    "source": "Harvard School of Engineering and Applied Sciences",
+    "date": "2026-10-30",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://news.harvard.edu/gazette/story/2026/10/where-better-than-universities/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-e00ab054ec4c",
+    "type": "news",
+    "title": "Ten simple rules for teaching practical AI to health data teams",
+    "excerpt": "Artificial intelligence (AI) has rapidly entered the healthcare discourse, often framed through the lens of frontier models, generative systems, and transformative potential. Yet for many healthcare data teams, the practical path from curiosity to capability …",
+    "source": "Plos.org",
+    "date": "2026-10-30",
+    "tags": [
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014915",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-b5b4d291b72f",
+    "type": "news",
+    "title": "Trai proposes mandatory AI policies, incident reporting for telcos",
+    "excerpt": "Trai’s draft AI governance guidelines seek board-approved AI policies, risk-based classification, human oversight and mandatory reporting of serious AI-related incidents, while holding telecom operators accountable for outcomes even when systems are sourced f…",
+    "source": "Livemint",
+    "date": "2026-10-30",
+    "tags": [
+      "AI policy"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.livemint.com/industry/telecom/trai-proposes-mandatory-ai-policies-incident-reporting-for-telcos-11793363777693.html",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-8ca8fc1d241e",
+    "type": "news",
+    "title": "Turning disconnected information data into better social service outcomes",
+    "excerpt": "Connected client records reduce duplicate intake and speed up service delivery.",
+    "source": "Smartdatacollective.com",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.smartdatacollective.com/turning-disconnected-information-data-better-social/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-d7f76182b391",
+    "type": "news",
+    "title": "9 hidden technology challenges that can slow down business growth",
+    "excerpt": "Discover the technology challenges entrepreneurs must address to improve operational efficiency, reduce costs and build a future-ready business.",
+    "source": "Entrepreneur",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.entrepreneur.com/building-a-business/9-hidden-technology-challenges-that-can-slow-down-business-growth",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-fee73a8eaf5e",
+    "type": "news",
+    "title": "What happens to my kyc data behind the approval screen?",
+    "excerpt": "Your passport photo and selfie split into separate files the second onboarding starts.",
+    "source": "Smartdatacollective.com",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.smartdatacollective.com/happens-my-kyc-data-behind-approval-screen/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-e573ce3f2206",
+    "type": "news",
+    "title": "Manage my health breach hit 99,416 patients, inquiry finds",
+    "excerpt": "Nearly 100,000 patients had records exposed, many through accounts they never knew they had. The Privacy Commissioner now says the health system was not ready for the digital one-stop shop the government is building.",
+    "source": "B2bnews.co.nz",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://b2bnews.co.nz/news/manage-my-health-breach-hit-99416-patients-inquiry-finds/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-c7610ee50757",
+    "type": "news",
+    "title": "Psychological flexibility in the work-caregiving interplay of employed family caregivers of people with dementia (daily-flex): protocol of an experience sampling study",
+    "excerpt": "Background Employed family caregivers of people with dementia face competing work and caregiving demands that can negatively affect well-being across both domains. The Work–Home Resources model proposes that demands and resources influence cross-domain functi…",
+    "source": "Plos.org",
+    "date": "2026-10-30",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0361760",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-f2cf10917054",
+    "type": "news",
+    "title": "Detection of potentially curable recurrence after colorectal cancer surgery in a real-world population",
+    "excerpt": "Introduction After curative surgery for colorectal cancer (CRC), patients undergo surveillance because of the risk of recurrence; however, only a subset develops recurrence amenable to further curative-intent treatment. The primary aim of follow‑up is to iden…",
+    "source": "Plos.org",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0361933",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-5555a46f5b4c",
+    "type": "news",
+    "title": "How the yri fellowship is showing students that AI can open new doors to scientific research, if they learn to use it wisely",
+    "excerpt": "Through the Young Researchers Institute Fellowship, students are learning how AI can expand access to scientific research, accelerate experimentation, and support discovery while developing the critical thinking and judgment needed to use it responsibly.",
+    "source": "Entrepreneur",
+    "date": "2026-10-30",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.entrepreneur.com/business-news/tech/how-the-yri-fellowship-is-showing-students-that-ai-can-open-new-doors-to-scientific-research-if-they-learn-to-use-it-wisely",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-60ba719a0574",
+    "type": "ainews",
+    "title": "Anthropic to receive high 'junk' rating from credit agencies following ipo",
+    "excerpt": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
+    "source": "TechCrunch",
+    "date": "2026-10-30",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-7ac37fbfa59f",
+    "type": "ainews",
+    "title": "A supply chain attack put malicious anthropic claude extensions on thousands of devices",
+    "excerpt": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines.",
+    "source": "Wired",
+    "date": "2026-10-30",
+    "tags": [
+      "LLM",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-bb88bfd803d0",
+    "type": "ainews",
+    "title": "Darkbloom, which allowed mac users to rent out their gpus for AI inference, warns of low payouts",
+    "excerpt": "Blame plunging prices on tokens",
+    "source": "Theregister.com",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/30/darkbloom-which-allowed-mac-users-to-rent-out-their-gpus-for-ai-inference-warns-of-low-payouts/5306782",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-25a528e218b1",
+    "type": "ainews",
+    "title": "The biggest names in AI are backing a new way to opt out of scraping",
+    "excerpt": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences acros…",
+    "source": "The Verge",
+    "date": "2026-10-30",
+    "tags": [
+      "OpenAI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-a1f01e3becb7",
+    "type": "ainews",
+    "title": "Anthropic: that claude code extension compromise… couldn't be us",
+    "excerpt": "Claudeshop fingers 'malicious actor' in targeted supply-chain attack on Cursor",
+    "source": "Theregister.com",
+    "date": "2026-10-30",
+    "tags": [
+      "LLM",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-5ec9437afb13",
+    "type": "ainews",
+    "title": "Silicon valley wants you to invest in miracles",
+    "excerpt": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose catastrophic or existential risks to humanity,\" or …",
+    "source": "The Verge",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-5cfbd02556ec",
+    "type": "ainews",
+    "title": "Sam altman sympathizes with mathematicians, but says openai’s math onslaught won’t stop",
+    "excerpt": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more…",
+    "source": "The Verge",
+    "date": "2026-10-30",
+    "tags": [
+      "EMA",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-34936df5c82f",
+    "type": "ainews",
+    "title": "The download: glp-1s and eating disorders, self-aware cities, and forever chemicals",
+    "excerpt": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Eating disorders are on the rise. GLP-1s could make things worse. GLP-1 weight-loss drugs are one of the biggest biotech …",
+    "source": "MIT Technology Review",
+    "date": "2026-10-30",
+    "tags": [
+      "Biotech"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-d32a73c82502",
+    "type": "ainews",
+    "title": "Salesforce’s m&a spree continues with a reported $375m deal for defense tech startup rune | techcrunch",
+    "excerpt": "Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-f1f6194d2036",
+    "type": "ainews",
+    "title": "Cracks are emerging in the AI spending boom | techcrunch",
+    "excerpt": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+    "source": "TechCrunch",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-a7904f9e100d",
+    "type": "ainews",
+    "title": "How a contractor’s claude agent got into the pentagon",
+    "excerpt": "This week on “Uncanny Valley,” we discuss the contractor who plugged their AI agent into a Pentagon system, Anthropic’s IPO filing, and the volunteers gearing up to counter ICE at the midterms.",
+    "source": "Wired",
+    "date": "2026-10-30",
+    "tags": [
+      "LLM",
+      "AI agent",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-c4dbacf8aa2b",
+    "type": "ainews",
+    "title": "Google’s satellite AI server transmits its first response to earth",
+    "excerpt": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post on Friday, Google says it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt …",
+    "source": "The Verge",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-0239bdd5d424",
+    "type": "ainews",
+    "title": "AI projects not paying off? keep at it, says uni productivity institute",
+    "excerpt": "All that up-front investment needs time to take effect, and speeding individual tasks won't necessarily boost the entire firm",
+    "source": "Theregister.com",
+    "date": "2026-10-30",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/30/ai-projects-not-paying-off-keep-at-it-says-uni-productivity-institute/5306581",
+    "badge": "AI Policy"
+  },
+  {
+    "id": "auto-bbdc1e306667",
+    "type": "paper",
+    "title": "Conquering the stronghold: Membrane-targeting anti-infective drug discovery",
+    "excerpt": "This review examines membrane-targeting approaches in anti-infective drug discovery, with a focus on strategies to overcome microbial barriers and improve therapeutic efficacy. The authors from Shandong University's Department of Medicinal Chemistry discuss how targeting bacterial or pathogenic membranes represents a promising avenue for developing novel anti-infective agents.",
+    "source": "Smart Mol",
+    "date": "2026-10-30",
+    "tags": [
+      "Anti-infective drugs",
+      "Membrane targeting",
+      "Drug discovery",
+      "Microbial resistance"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966965/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
   },
   {
     "id": "auto-554b5920828a",
@@ -4255,581 +4837,5 @@
     "url": "https://financialpost.com/globe-newswire/rakovina-therapeutics-and-variational-ai-advance-brain-penetrant-atr-program-toward-development-candidate-selection",
     "badge": "Pharma AI",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-85b1ba68a84c",
-    "type": "news",
-    "title": "Sovereign wealth funds' china and hong kong investments surge 190% after a bruising slump",
-    "excerpt": "Sovereign wealth funds are pouring billions of dollars back into China after a sharp investment slump.",
-    "source": "CNBC",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.cnbc.com/2026/10/22/sovereign-wealth-funds-china-hong-kong.html",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-4f57a902daea",
-    "type": "news",
-    "title": "Von der leyen’s coalition fractures over need for AI liability rules",
-    "excerpt": "The European Parliament held a heated debate over how to handle AI, with the center-right doubling down on simplification to boost European business.",
-    "source": "POLITICO.eu",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.politico.eu/article/ursula-von-der-leyen-coalition-fractures-over-need-for-ai-liability-rules/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-bfb51e6eac2f",
-    "type": "news",
-    "title": "People are taking an unapproved weight-loss drug. AI found something surprising",
-    "excerpt": "Researchers analyzing nearly 150,000 Reddit posts uncovered unexpected symptom reports linked by users to unapproved versions of retatrutide, including increased appetite, sleep disturbances, and elevated heart rates. The findings differ from clinical trial r…",
-    "source": "Science Daily",
-    "date": "2026-10-22",
-    "tags": [
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.sciencedaily.com/releases/2026/10/261020085018.htm",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-932913b0cc9a",
-    "type": "news",
-    "title": "Why syntagma didn’t become the champs-élysées, the liolios mix-up, who the sheikh will meet and what he will sign in athens, and what the lord said about the metro",
-    "excerpt": "Hello! Well, it turns out that we can’t even match Paris when it comes to chaos, however much the old and new SYRIZA leftists and their fellow travelers wanted it, predicted it and actively encouraged it, along with the usual self-important commentators. The …",
-    "source": "Protothema.gr",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://en.protothema.gr/2026/10/22/why-syntagma-didnt-become-the-champs-elysees-the-liolios-mix-up-who-the-sheikh-will-meet-and-what-he-will-sign-in-athens-and-what-the-lord-said-about-the-metro/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-e774000e217c",
-    "type": "news",
-    "title": "Cancer theranostics",
-    "excerpt": "Theranostics integrates diagnostic imaging with targeted therapy to enhance cancer treatment. In this Review, Sofias et al. discuss recent advances in radiotheranostic strategies, advances in nanotheranostic and microtheranostic platforms, and image-guided th…",
-    "source": "Nature.com",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41568-026-00983-3",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-b53465177eec",
-    "type": "news",
-    "title": "High false sign rates in transcriptome-wide association studies",
-    "excerpt": "This study finds that the direction of effect captured by transcriptome-wide association studies is often reversed relative to the true biological mechanism, suggesting that caution is needed when interpreting these studies and using the results for downstrea…",
-    "source": "Nature.com",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41588-026-02796-4",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-ddf7f86b51c1",
-    "type": "ainews",
-    "title": "Hugging face’s new AI biology model lets you chat with dna",
-    "excerpt": "The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
-    "source": "Wired",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-f0d35d040d9b",
-    "type": "ainews",
-    "title": "Vendors asking forward deployed engineers to make good on trillion-dollar AI bet",
-    "excerpt": "They might earn more than $200k but who do they work for? Tech buyers need to put some checks in place on FDEs",
-    "source": "Theregister.com",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/10/22/vendors-asking-forward-deployed-engineers-to-make-good-on-trillion-dollar-ai-bet/5304366",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-c24876b37e46",
-    "type": "ainews",
-    "title": "AI agents are ready to shop. some retailers are wary.",
-    "excerpt": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's mo…",
-    "source": "The Verge",
-    "date": "2026-10-22",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-1981b546f610",
-    "type": "ainews",
-    "title": "Meta’s ad sales are suffering now that europeans can pick less personalization",
-    "excerpt": "An earnings briefing on Wednesday revealed ad revenue has slowed since the European Union introduced the Less Personalized Ads models at the beginning of this year.",
-    "source": "Wired",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/metas-ad-sales-suffering-now-europeans-can-pick-less-personalization/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-633b64365941",
-    "type": "ainews",
-    "title": "1password lets AI agents use your passwords without seeing them",
-    "excerpt": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll sti…",
-    "source": "The Verge",
-    "date": "2026-10-22",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-4a199d5aaee1",
-    "type": "news",
-    "title": "FDA Launches New Program to Advance Neuroscience Medical Product Development",
-    "excerpt": "FDA announces the launch of the Neuroscience Advancement and Innovation Nexus (NAIN), a new agency program aligned with the Trump Administration’s efforts to accelerate medical innovation and deliver breakthrough treatments.",
-    "source": "FDA",
-    "date": "2026-10-22",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-a97e596b2014",
-    "type": "news",
-    "title": "STAT+: Detailed data confirm Moderna and Merck cancer vaccine met key endpoints in melanoma trial",
-    "excerpt": "A Moderna and Merck personalized mRNA cancer vaccine reduced the risk of disease recurrence in patients with melanoma by 42% compared to standard treatment.",
-    "source": "STAT News",
-    "date": "2026-10-22",
-    "tags": [
-      "Biotech",
-      "Breaking News",
-      "Cancer",
-      "ESMO"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.statnews.com/2026/10/22/esmo-moderna-merck-cancer-vaccine-intismeran-data-released/?utm_campaign=rss",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-9d72639f5e00",
-    "type": "ainews",
-    "title": "Uber puts all 30,000 employees on ChatGPT Work",
-    "excerpt": "The ride-share giant previously deployed a much smaller pilot for ChatGPT Work but is now taking the enterprise agent company-wide.",
-    "source": "TechCrunch AI",
-    "date": "2026-10-22",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "OpenAI",
-      "Uber"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-6aa970c38b49",
-    "type": "ainews",
-    "title": "Claude Duet app is Anthropic’s bet on agents",
-    "excerpt": "Claude Duet is available through waitlist for Pro and Max plan users.",
-    "source": "TechCrunch AI",
-    "date": "2026-10-22",
-    "tags": [
-      "AI",
-      "Apps",
-      "ai agent",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-1ae1845fd3ca",
-    "type": "news",
-    "title": "Ex-openai science chief kevin weil launches warp sciences with $215m for drug chemistry",
-    "excerpt": "Drug discovery chemistry startup Warp Sciences Inc. launched today with $215 million in new funding, six months after co-founder and Chief Executive Kevin Weil left his job running science initiatives at OpenAI Group PBC. Warp is building a chemistry contract…",
-    "source": "SiliconANGLE News",
-    "date": "2026-10-22",
-    "tags": [
-      "Drug discovery",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://siliconangle.com/2026/10/22/ex-openai-science-chief-kevin-weil-launches-warp-sciences-with-215m-for-drug-chemistry/",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-dd5ed5cd8d23",
-    "type": "news",
-    "title": "Reuters health news summary | international",
-    "excerpt": "Reuters Health News Summary | Internationaldevdiscourse.com",
-    "source": "Devdiscourse",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.devdiscourse.com/article/international/3996492-reuters-health-news-summary",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-2e8d1f63f835",
-    "type": "news",
-    "title": "Ten simple rules for responsible use of AI and llms in computational biology",
-    "excerpt": "Citation: Auslander N (2026) Ten simple rules for responsible use of AI and LLMs in computational biology. PLoS Comput Biol 22(10):\r\n e1014882.\r\nhttps://doi.org/10.1371/journal.pcbi.1014882\r\nEditor: … 29130",
-    "source": "Plos.org",
-    "date": "2026-10-22",
-    "tags": [
-      "LLM"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014882",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-ff67e4725a21",
-    "type": "news",
-    "title": "Claude did not invent scorpion antivenom",
-    "excerpt": "An investment research firm wanted to prove AI could revolutionize drug development. So they teamed up with Anthropic to see whether an unreleased version of Claude could make scorpion antivenom. It couldn't. It came up with some promising starting points, bu…",
-    "source": "The Verge",
-    "date": "2026-10-22",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-70575b182f97",
-    "type": "news",
-    "title": "FDA official believes genai-enabled tools will need to be assessed like a physician",
-    "excerpt": "Rick Abramson, a radiologist by training and the director of FDA's Digital Health Center of Excellence said, ‘We ended up putting out this idea that maybe these devices are starting to behave a little bit more like me as a physician than a heart valve or a de…",
-    "source": "MedCity News",
-    "date": "2026-10-22",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://medcitynews.com/2026/10/fda-official-believes-genai-enabled-tools-will-need-to-be-assessed-like-a-physician/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-29321188bbd0",
-    "type": "news",
-    "title": "Rhino propels federated AI into the enterprise tech stack",
-    "excerpt": "New capabilities of the Rhino Federated Computing Platform (Rhino FCP) connect securely to the systems inside the perimeter and make federated pipelines repeatable across every site. BOSTON, Oct. 22, 2026 (GLOBE NEWSWIRE) — At the Federate AI Summit, Rhino Fe…",
-    "source": "Financial Post",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/globe-newswire/rhino-propels-federated-ai-into-the-enterprise-tech-stack",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-13ad1bcdac19",
-    "type": "news",
-    "title": "Startup action state launches tools for verifying interactions between AI agents",
-    "excerpt": "Action State Group Inc. is launching a set of open-source tools designed to let businesses independently check records of what artificial intelligence agents did, addressing a trust problem as automated systems begin buying, selling and delegating work across…",
-    "source": "SiliconANGLE News",
-    "date": "2026-10-22",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://siliconangle.com/2026/10/22/startup-action-state-launches-tools-for-verifying-interactions-between-ai-agents/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-f874cb76c065",
-    "type": "news",
-    "title": "Why using AI saves doctors time but won’t fix physician burnout",
-    "excerpt": "AI can save physicians time, but time saved is not the same as burnout prevented. The fix is organizational.",
-    "source": "The Conversation Africa",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://theconversation.com/why-using-ai-saves-doctors-time-but-wont-fix-physician-burnout-291250",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-a493138f47d1",
-    "type": "news",
-    "title": "Feasibility of a machine learning model for predicting weight gain after kidney transplantation machine learning and weight gain after kidney transplantation",
-    "excerpt": "Background Excessive weight gain after kidney transplantation adversely affects patient and graft outcomes. Machine Learning has been increasingly used to improve risk prediction across a range of transplant-related outcomes, yet its application to post-trans…",
-    "source": "Plos.org",
-    "date": "2026-10-22",
-    "tags": [
-      "Machine learning"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0360501",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-6e39a7bac5e8",
-    "type": "news",
-    "title": "Thursday, october 22, 2026",
-    "excerpt": "KFF Health News is a national newsroom that produces in-depth journalism about health issues and is one of the core operating programs at KFF—an independent source of health policy research, polling, and journalism. Learn more about KFF. This article first ap…",
-    "source": "Kffhealthnews.org",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://kffhealthnews.org/morning-briefing/thursday-october-22-2026/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-34d0933cc6a4",
-    "type": "news",
-    "title": "Why data governance is becoming a board-level business priority",
-    "excerpt": "Data risk belongs on the board agenda, with clear ownership.",
-    "source": "Smartdatacollective.com",
-    "date": "2026-10-22",
-    "tags": [
-      "Data governance"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.smartdatacollective.com/why-data-governance-is-becoming-a-board-level-business-priority/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-7864ef700c19",
-    "type": "news",
-    "title": "Fortrea and omico collaboration to advance biomarker-led oncology drug development",
-    "excerpt": "Collaboration aims to improve trial planning and expand patient access to biomarker-matched studies in Australia Highlights Collaboration aims to accelerate precision oncology research in Australia Combines Fortrea’s experience in oncology clinical trials wit…",
-    "source": "Financial Post",
-    "date": "2026-10-22",
-    "tags": [
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://financialpost.com/globe-newswire/fortrea-and-omico-collaboration-to-advance-biomarker-led-oncology-drug-development",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-bd652c263410",
-    "type": "news",
-    "title": "The top data annotation companies are separated by proof of quality, not headcount",
-    "excerpt": "A buyer’s guide to the evidence behind annotation quality.",
-    "source": "Smartdatacollective.com",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.smartdatacollective.com/top-data-annotation-companies/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-66a28a8e079f",
-    "type": "news",
-    "title": "Carbothioamide functionalized paroxetine analogues as antiparasitic agents targeting the hypoxanthine-guanine-xanthine phosphoribosyltransferase enzyme: synthesis, characterization, biochemical, biophysical, and in silico studies",
-    "excerpt": "Hypoxanthine guanine xanthine phosphoribosyl transferase (HGXPRT) is one of the central enzymes of purine salvage pathway of protozoan parasites, including Plasmodium. These parasites are purine auxotrophs, and rely on purine salvage pathway for nucleic acid …",
-    "source": "Plos.org",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0359519",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-884bfba94c04",
-    "type": "news",
-    "title": "Patient experience in national digital health platforms: evidence from patient-generated feedback in saudi arabia",
-    "excerpt": "National digital health platforms are becoming fundamental components of modern healthcare delivery; however, patient experience is commonly assessed using overall ratings or sentiment analysis, providing limited understanding of the specific dimensions that …",
-    "source": "Plos.org",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0360416",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-591c7e211c95",
-    "type": "news",
-    "title": "Multi-omics analysis of high-grade serous ovarian cancers reveals heterogeneity and distinct immunological patterns based upon clinico-genomic status",
-    "excerpt": "Author summary High-grade serous ovarian cancer is the most common and aggressive form of ovarian cancer. Many tumors carry changes in BRCA1 or BRCA2, genes involved in DNA repair, but it remains unclear how these genetic differences relate to tumor organizat…",
-    "source": "Plos.org",
-    "date": "2026-10-22",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1012355",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-c4d494c29af9",
-    "type": "news",
-    "title": "Oura expands in abu dhabi with first local hires and women’s health research pilot",
-    "excerpt": "Smart ring maker Oura has hired its first UAE based employees and launched a 24 month Abu Dhabi pilot exploring whether wearable data can help predict",
-    "source": "Technotime.net",
-    "date": "2026-10-22",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technotime.net/17907",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-1437b0ebe886",
-    "type": "ainews",
-    "title": "Canva’s first AI image model plans designs before generating them",
-    "excerpt": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a design before generati…",
-    "source": "The Verge",
-    "date": "2026-10-22",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-c0f7c2e2712e",
-    "type": "ainews",
-    "title": "Human receives ai-designed virus for the first time",
-    "excerpt": "Not to kill the human, of course – to kill the antibiotic-resistant bacteria causing their infection",
-    "source": "Theregister.com",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/science/2026/10/22/human-receives-ai-designed-virus-for-the-first-time/5304874",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-3992fc4ed3eb",
-    "type": "ainews",
-    "title": "Sure, let’s smoosh spacex and tesla together, who cares",
-    "excerpt": "Oh sure, SpaceX's credit risk is pretty high because it's about to borrow another $40 billion to spend on Nvidia chips, but who cares about that? SpaceX and Tesla have formed special committees to discuss a merger! The degree to which you find this merger com…",
-    "source": "The Verge",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-65cab3853886",
-    "type": "ainews",
-    "title": "Php2shell puts dozens of UK government services out of service",
-    "excerpt": "Ministers report 32 unavailable and four partly disrupted, but no confirmed compromise",
-    "source": "Theregister.com",
-    "date": "2026-10-22",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840",
-    "badge": "AI Lab"
   }
 ]
