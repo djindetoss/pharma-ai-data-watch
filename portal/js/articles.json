@@ -1,5 +1,61 @@
 [
   {
+    "id": "auto-b0e1dd0f93bd",
+    "type": "paper",
+    "title": "Next-Generation Cancer Nanovaccines: Reprogramming the Tumor Microenvironment from Rational Design Toward Clinical Translation",
+    "excerpt": "Next-generation cancer nanovaccines aim to reprogram the tumor microenvironment through rational design principles to enable clinical translation. This approach represents an advancement in cancer immunotherapy that leverages nanotechnology to modify the immune landscape within tumors. The review synthesizes current knowledge on nanovaccine design strategies and their potential to transition from laboratory development to clinical application.",
+    "source": "Int J Nanomedicine",
+    "date": "2026-11-08",
+    "tags": [
+      "Cancer immunotherapy",
+      "Nanovaccines",
+      "Tumor microenvironment",
+      "Clinical translation"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999844/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-881be414a2e4",
+    "type": "paper",
+    "title": "CEACAM5-Targeted Therapies in Solid Tumors: Biological Barriers and Next-Generation Precision Strategies",
+    "excerpt": "This review examines carcinoembryonic antigen-related cell adhesion molecule 5 (CEACAM5)-targeted therapies for solid tumors, focusing on the biological barriers that limit treatment efficacy and discussing emerging precision strategies to overcome these challenges.",
+    "source": "Drug Des Devel Ther",
+    "date": "2026-11-08",
+    "tags": [
+      "CEACAM5",
+      "Targeted Therapy",
+      "Solid Tumors",
+      "Precision Medicine"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999607/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-53044e44b3aa",
+    "type": "ainews",
+    "title": "Apple is racing to make Siri more agentic",
+    "excerpt": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-08",
+    "tags": [
+      "AI",
+      "Apple",
+      "Apple Rumors",
+      "News"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+    "badge": "Tech"
+  },
+  {
     "id": "nws-b68a472c411c",
     "type": "news",
     "title": "5 financial impacts from the 'bluenami'",
@@ -126,6 +182,38 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42998789/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-439a1c0ae95a",
+    "type": "news",
+    "title": "Repatha linked to 20% lower heart attack rate than ezetimibe in 544,000-patient study",
+    "excerpt": "An Amgen-funded observational study found Repatha users had a lower heart attack rate than ezetimibe users, but differences between patients mean the results cannot prove causation.",
+    "source": "Medical Daily",
+    "date": "2026-11-07",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medicaldaily.com/repatha-ezetimibe-heart-attack-study-544000-patients-480947",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-8879475e62b3",
+    "type": "ainews",
+    "title": "Why a new report on Anthropic automating AI development is alarming researchers",
+    "excerpt": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-07",
+    "tags": [
+      "AI",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "badge": "Tech"
   },
   {
     "id": "nws-3b78672d47e1",
@@ -680,6 +768,58 @@
     "readTime": "1 min",
     "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
     "badge": "AI Tech"
+  },
+  {
+    "id": "auto-6813d62fd925",
+    "type": "ainews",
+    "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+    "excerpt": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-06",
+    "tags": [
+      "AI",
+      "Business",
+      "News",
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-938e42643530",
+    "type": "ainews",
+    "title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+    "excerpt": "An experiment in which AI models were asked to break into simulated networks showed the hacking skills of DeepSeek and GLM to be not far behind OpenAI’s most advanced cyber model, which isn’t public.",
+    "source": "Wired AI",
+    "date": "2026-11-06",
+    "tags": [
+      "Security",
+      "Security / Cyberattacks and Hacks",
+      "artificial intelligence",
+      "DeepSeek"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-c56bb8489036",
+    "type": "news",
+    "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+    "excerpt": "CVMP opinions on veterinary medicinal products&nbsp;Further to the re-examination of the opinion adopted by the Committee during its June 2026 meeting, the&nbsp;Committee adopted a…",
+    "source": "EMA",
+    "date": "2026-11-06",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+    "badge": "Regulatory",
+    "topic": "regulatory"
   },
   {
     "id": "auto-7ea93072ba3c",
@@ -1639,6 +1779,24 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42992686/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-46ecc313668e",
+    "type": "ainews",
+    "title": "Ads in Chatbots Have Arrived. Here’s What’s Working—and What’s Not",
+    "excerpt": "As Anthropic maintains its vow to keep ads out of Claude, the rest of the AI chatbot industry is racing to win over advertisers without antagonizing users.",
+    "source": "Wired AI",
+    "date": "2026-11-05",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "Model Behavior",
+      "artificial intelligence"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/ads-in-chatbots-have-arrived-heres-whats-working-and-whats-not/",
+    "badge": "Tech"
   },
   {
     "id": "auto-11c7c7f954c3",
@@ -4676,153 +4834,5 @@
     "url": "https://www.nature.com/articles/d41586-026-03556-4",
     "badge": "Pharma AI",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-554b5920828a",
-    "type": "paper",
-    "title": "Predicting the risk of chemotherapy-induced myelosuppression in clinical practice: an interpretable machine learning approach based on routine laboratory data",
-    "excerpt": "Researchers developed an interpretable machine learning model to predict chemotherapy-induced myelosuppression risk in clinical settings using routine laboratory data. The approach aims to provide clinicians with an accessible, data-driven tool for identifying patients at higher risk of this serious chemotherapy side effect.",
-    "source": "Front Oncol",
-    "date": "2026-10-29",
-    "tags": [
-      "Chemotherapy-Induced Myelosuppression",
-      "Machine Learning",
-      "Clinical Prediction",
-      "Laboratory Data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42952513/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-42caefdb6fd6",
-    "type": "ainews",
-    "title": "The Download: AI agent tracking and climate feedback loops",
-    "excerpt": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Opinion: We urgently need to monitor AI agents’ actions in real time —Madhulika Srikumar and Claire Leibowicz from the Partnership on AI, a nonprofit advancing best practices in AI governance. AI&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-10-29",
-    "tags": [
-      "The Download"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/10/29/1147830/the-download-monitoring-ai-agents-climate-feedback-loops/",
-    "badge": "Research"
-  },
-  {
-    "id": "auto-f863128399a5",
-    "type": "ainews",
-    "title": "We urgently need to monitor AI agents’ actions in real time",
-    "excerpt": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same time, another OpenAI agent accessed private files from an Australian government website. It’s a problem&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-10-29",
-    "tags": [
-      "Artificial intelligence",
-      "App",
-      "artificial intelligence",
-      "Opinion"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-    "badge": "Research"
-  },
-  {
-    "id": "nws-d39694e337ae",
-    "type": "news",
-    "title": "AI tried to buy the midterms — then the lobby learned everyone hates AI",
-    "excerpt": "Facing bipartisan backlash and a decaying reputation, AI super PACs are changing tactics. We tracked their election spending so far.\nThe post AI Tried to Buy the Midterms — Then the Lobby Learned Everyone Hates AI appeared first on The Intercept.",
-    "source": "The Intercept",
-    "date": "2026-10-29",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://theintercept.com/2026/10/29/midterms-election-money-ai-super-pac/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-ed8fef9a6a9e",
-    "type": "news",
-    "title": "AI boosts discovery but reviews still seal the deal",
-    "excerpt": "Consumer surveys show AI helps shoppers find gifts, but most check reviews, compare prices and review retailers' policies before buying.",
-    "source": "Modernretail.co",
-    "date": "2026-10-29",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.modernretail.co/ai-strategies/ai-boosts-discovery-but-reviews-still-seal-the-deal-new-research-shows/",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-f4d634c99caa",
-    "type": "news",
-    "title": "Crm migration guide: steps, data, and team alignment",
-    "excerpt": "CRM migration is the process of moving customer data — such as contacts, companies, deals, and activities — plus workflows and integrations from one CRM to another. A successful CRM migration starts with clear goals, scope, and success criteria before moving …",
-    "source": "Hubspot.com",
-    "date": "2026-10-29",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://blog.hubspot.com/sales/crm-migration-guide",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-fc53ad2262e0",
-    "type": "news",
-    "title": "Privacy-preserving federated learning (ppfl) testbed and curated dataset",
-    "excerpt": "Today, the NIST National Cybersecurity Center of Excellence (NCCoE) released the open-source Privacy-Preserving Federated Learning (PPFL) Testbed, along with a curated genomic dataset. The PPFL Testbed is a component of the NIST Privacy-Enhancing",
-    "source": "Nist.gov",
-    "date": "2026-10-29",
-    "tags": [
-      "Federated data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nist.gov/news-events/news/2026/10/privacy-preserving-federated-learning-ppfl-testbed-and-curated-dataset",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-e64385c095cd",
-    "type": "news",
-    "title": "How to make artificial intelligence more environmentally sustainable",
-    "excerpt": "IT is responsible for about 2 - 4% of all global emissions, and electricity use at Microsoft and Google has climbed because of AI, according to their own reports. Sustainability ought to be a top-level architectural concern. Some recommendations are: use pre-…",
-    "source": "InfoQ.com",
-    "date": "2026-10-29",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.infoq.com/news/2026/10/AI-environmentally-sustainable/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-8f9845f73675",
-    "type": "news",
-    "title": "Netcompany predicts AI savings potential of 90,000 ftes in the public sector, but professors dismiss the analysis as unrealistic",
-    "excerpt": "A new analysis by Netcompany indicates that AI has the potential to free up 90,000 full-time equivalents in the public sector by 2035. However, two prominent researchers in the field are now raising concerns about the underlying calculation model, which they …",
-    "source": "Ing.dk",
-    "date": "2026-10-29",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://ing.dk/artikel/netcompany-predicts-ai-savings-potential-90000-ftes-public-sector-professors-dismiss-analysis",
-    "badge": "Data",
-    "topic": "data-governance"
   }
 ]
