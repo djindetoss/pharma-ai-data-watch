@@ -107,6 +107,8 @@ jobs:
           cp portal/feed.xml /tmp/feed.xml
           cp portal/sitemap.xml /tmp/sitemap.xml 2>/dev/null || true
           cp portal/events.html /tmp/events.html
+          cp portal/index.html /tmp/index.html
+          cp portal/css/styles.css /tmp/styles.css
 
           git fetch origin gh-pages
           git checkout gh-pages
@@ -154,6 +156,18 @@ jobs:
             CHANGED=true
           fi
 
+          # Check index.html
+          if ! diff -q /tmp/index.html index.html > /dev/null 2>&1; then
+            cp /tmp/index.html index.html
+            CHANGED=true
+          fi
+
+          # Check styles.css
+          if ! diff -q /tmp/styles.css css/styles.css > /dev/null 2>&1; then
+            cp /tmp/styles.css css/styles.css
+            CHANGED=true
+          fi
+
           # Check app.js (will differ due to key injection)
           if ! git diff --quiet js/app.js; then
             CHANGED=true
@@ -161,7 +175,7 @@ jobs:
 
           if [ "$CHANGED" = "true" ]; then
             TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
-            git add js/articles.json js/pipeline_meta.json js/app.js feed.xml sitemap.xml events.html
+            git add js/articles.json js/pipeline_meta.json js/app.js feed.xml sitemap.xml events.html index.html css/styles.css
             git commit -m "chore: sync to gh-pages — $TIMESTAMP"
             # Pull with rebase to handle any concurrent pushes to gh-pages
             git pull --rebase origin gh-pages
