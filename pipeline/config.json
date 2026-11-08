@@ -64,7 +64,7 @@
     "enabled": true,
     "feeds": [
       {
-        "url": "https://www.ema.europa.eu/en/feeds/latest-news",
+        "url": "https://www.ema.europa.eu/en/news.xml",
         "name": "EMA",
         "type": "news",
         "badge": "Regulatory",
@@ -80,7 +80,7 @@
         "auto_approve": true
       },
       {
-        "url": "https://www.who.int/feeds/entity/mediacentre/news/en/rss.xml",
+        "url": "https://www.who.int/rss-feeds/news-english.xml",
         "name": "WHO",
         "type": "news",
         "badge": "Policy",
@@ -100,14 +100,6 @@
     "enabled": true,
     "_comment": "Curated feeds specifically for the Data tab: interoperability, FHIR, EHR, data standards, health data policy.",
     "feeds": [
-      {
-        "url": "https://www.healthcareitnews.com/rss.xml",
-        "name": "Healthcare IT News",
-        "type": "news",
-        "badge": "Data",
-        "topic": "data-governance",
-        "auto_approve": false
-      },
       {
         "url": "https://www.statnews.com/feed/",
         "name": "STAT News",
@@ -138,7 +130,7 @@
         "_keep": "AI safety/alignment analysis, capabilities deep-dives, AI in science, policy analysis"
       },
       {
-        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/rss.xml",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
         "name": "The Verge",
         "type": "ainews",
         "badge": "Tech",
@@ -159,7 +151,7 @@
         "_keep": "Enterprise LLM deployment, AI infrastructure, open-source model releases"
       },
       {
-        "url": "https://www.wired.com/feed/tag/artificial-intelligence/rss",
+        "url": "https://www.wired.com/feed/tag/ai/latest/rss",
         "name": "Wired AI",
         "type": "ainews",
         "badge": "Tech",
@@ -173,7 +165,7 @@
         "_keep": "Technical deep-dives, AI hardware/compute, AI law/copyright, benchmarks, security"
       },
       {
-        "url": "https://www.theregister.com/tag/machine_learning/headlines.atom",
+        "url": "https://www.theregister.com/software/ai_ml/headlines.atom",
         "name": "The Register AI",
         "type": "ainews",
         "badge": "Tech",
@@ -187,7 +179,7 @@
         "_keep": "New model releases (especially biomedical), open-source AI ecosystem, benchmarks/leaderboards"
       },
       {
-        "url": "https://jack-clark.net/feed/",
+        "url": "https://importai.substack.com/feed",
         "name": "Import AI",
         "type": "ainews",
         "badge": "Research",

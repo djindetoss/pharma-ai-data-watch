@@ -33,6 +33,7 @@ BOT_BLOCKED_DOMAINS = {
     'nature.com', 'science.org', 'cell.com', 'bmj.com', 'wiley.com',
     'springer.com', 'elsevier.com', 'tandfonline.com', 'sagepub.com',
     'journals.lww.com', 'karger.com', 'mdpi.com',
+    'pubmed.ncbi.nlm.nih.gov', 'miccai.org',
 }
 
 # Static links to SKIP (fonts, own site, CDN)

@@ -503,6 +503,10 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
             if not title:
                 continue
 
+            # Skip entries older than the lookback window (some feeds keep years of items)
+            if pub and not within_lookback(pub):
+                continue
+
             # Only reclassify to webinar/seminar for dedicated event sources
             detected_event = _detect_event_type(title, summary) if detect_events else None
             effective_type = detected_event if detected_event else article_type
