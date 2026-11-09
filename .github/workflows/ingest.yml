@@ -93,8 +93,6 @@ jobs:
           fi
 
       - name: Sync articles.json to gh-pages (live site)
-        env:
-          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         run: |
           set -euo pipefail
 
@@ -113,11 +111,8 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
 
-          # Always sync latest app.js from master and inject Brevo key
+          # Always sync latest app.js from master (never inject secrets into public files)
           git show origin/master:portal/js/app.js > js/app.js
-          if [ -n "${BREVO_API_KEY:-}" ]; then
-            sed -i "s|__BREVO_API_KEY__|${BREVO_API_KEY}|g" js/app.js
-          fi
 
           CHANGED=false
 
@@ -168,7 +163,7 @@ jobs:
             CHANGED=true
           fi
 
-          # Check app.js (will differ due to key injection)
+          # Check app.js
           if ! git diff --quiet js/app.js; then
             CHANGED=true
           fi
