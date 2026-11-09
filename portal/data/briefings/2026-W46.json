@@ -1,0 +1,1162 @@
+{
+  "id": "2026-W46",
+  "weekLabel": "Week 46 — November 9, 2026",
+  "weekStart": "2026-11-09",
+  "weekEnd": "2026-11-09",
+  "generatedAt": "2026-11-09T17:43:39.941Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "FDA Clarifies Cell and Gene Therapy Quality Standards for Manufacturers",
+    "standfirst": "The FDA's final guidance on comprehensive CGT quality implementation establishes binding standards for cellular and gene therapy development, directly affecting manufacturing protocols and regulatory pathways for European sponsors seeking US market access.",
+    "body": "This guidance consolidates FDA expectations across CMC, potency, and manufacturing controls for CGT products, eliminating ambiguity that has delayed programme timelines. For European pharma and CROs, alignment with these standards now becomes mandatory for parallel EMA submissions, requiring early investment in quality-by-design frameworks. The implication: regulatory strategy must front-load CGT quality documentation in IND applications, reducing cycle time and bridging the EMA-FDA expectations gap that has historically created rework cycles.",
+    "sourceIndices": [
+      4
+    ],
+    "sources": [
+      {
+        "title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
+        "source": "FDA",
+        "url": "http://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
+        "date": "2026-11-02",
+        "type": "news"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "Anthropic IPO Filing Signals Major LLM Market Consolidation Ahead",
+          "body": "Anthropic's announced IPO could represent one of the largest biotech-adjacent AI capital raises, signalling investor conviction in Claude and enterprise AI adoption. For pharma professionals, this validates the commercial viability of enterprise-grade LLMs for regulatory writing, safety signal detection, and clinical data harmonisation. Watch: post-IPO product roadmap announcements, especially healthcare-vertical features and compliance certifications.",
+          "sourceIndices": [
+            52
+          ],
+          "sources": [
+            {
+              "title": "The greatest existential risk of the early 21st century",
+              "source": "Antiwar.com",
+              "url": "https://original.antiwar.com/dan_steinbock/2026/11/04/the-greatest-existential-risk-of-the-early-21st-century/",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Shield KYA Open-Source Agent Auditability Platform Advances AI Traceability",
+          "body": "Shield KYA provides audit trails and policy gates for AI agent tool calls, addressing a critical gap in AI reproducibility and compliance verification. For regulated environments, this architecture enables documented provenance of AI-assisted decisions in drug discovery and regulatory submissions. Early adoption of such frameworks becomes essential as regulatory bodies demand explainability and traceability in AI-generated safety signals and analytical recommendations.",
+          "sourceIndices": [
+            59
+          ],
+          "sources": [
+            {
+              "title": "Show hn: shield kya – open-source audit trail and gate for AI agent tool calls",
+              "source": "Github.com",
+              "url": "https://github.com/The-Pixel-Boys/shield-kya",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU AI Act Enforcement Extends to Northern Ireland Regulatory Framework",
+          "body": "UK government confirmation that EU AI rules apply in Northern Ireland creates regulatory alignment opportunities for post-Brexit pharma operations. This cross-border clarity simplifies compliance for companies spanning UK and EU sites, particularly for AI used in clinical trial management and pharmacovigilance systems. Expect rapid adoption of EU AI compliance toolkits by UK regulatory teams to avoid dual-certification overhead.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "EU rules on artificial intelligence devices will apply in ni",
+              "source": "BBC News",
+              "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Democrats Secure Senate and House Control in US AI Regulation Wave",
+          "body": "Election results show 40 of 41 ballot measures limiting data centre expansion passed, reflecting voter and legislator concerns about AI infrastructure costs and environmental impact. For pharma: expect stricter US data residency and compute locality requirements, affecting cloud-based clinical trial platforms and real-world evidence analytics. Budget accordingly for distributed, region-locked infrastructure in future digital strategy.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "‘total repudiation’: the blue wave is about to hit AI",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Global Markets Rout Reflects Data Centre and AI Regulation Uncertainty",
+          "body": "Tech sector volatility driven by US AI regulatory concerns and data centre expansion fears is cascading into Asian trading. Pharma CROs and biotech vendors relying on cloud-scale AI services should anticipate pricing volatility and service-level agreement renegotiations as cloud providers absorb regulatory and energy-cost pressures. Secure long-term compute commitments now before supply-demand dynamics worsen.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Tech stock rout, driven by US AI fears, continues in asian trading",
+              "source": "Al Jazeera English",
+              "url": "https://www.aljazeera.com/economy/2026/11/6/tech-stock-rout-driven-by-us-ai-fears-continues-in-asian-trading",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Data Centre Regulation Emerges as Core AI Policy Beyond Model Architecture",
+          "body": "Analysis reveals election outcomes focused on data centre governance rather than AI model safety, indicating policy-maker prioritization of infrastructure and energy over algorithmic alignment. For pharma: regulatory focus will shift toward environmental compliance and compute transparency in AI systems, not model safety claims. Prepare environmental impact assessments and compute sourcing documentation for regulatory dossiers.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "This election’s biggest AI story isn’t about data centers",
+              "source": "Vox",
+              "url": "https://www.vox.com/future-perfect/509829/data-centers-ai-midterm-election-congress",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Ireland Urged to Shape Global AI Regulation Through Data Centre Policy",
+          "body": "Former Musk aide commentary positions Ireland as a strategic hub for defining global AI infrastructure governance, relevant given Ireland's EMA and pharma regulatory prominence. For European operations, Ireland's regulatory stance on data centres directly affects EMA clinical data storage and real-world evidence collection logistics. Monitor Dublin regulatory consultations closely to anticipate compliance infrastructure changes.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Former musk aide urges ireland to modify its approach to data centres",
+              "source": "The Irish Times",
+              "url": "https://www.irishtimes.com/ireland/2026/11/05/former-musk-aide-urges-ireland-to-modify-its-approach-to-data-centres/",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Powered Internet Governance Framework Proposes Commons Protection Principles",
+          "body": "Public Knowledge and Creative Commons outline principles to protect open-web access rights and fair use in AI training contexts, addressing corporate data extraction concerns. Pharma: as your organisations increasingly license real-world data and publish research datasets, ensure IP and data-sharing agreements align with emerging commons principles to avoid future regulatory friction. This shapes future FDA acceptance of RWD sources.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Creating a new internet bargain to preserve fair use and protect the commons | techpolicy.press",
+              "source": "Techpolicy.press",
+              "url": "https://techpolicy.press/creating-a-new-internet-bargain-to-preserve-fair-use-and-protect-the-commons",
+              "date": "2026-11-07",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Market Analysis Signals AI Trade Headwinds From Regulatory Crackdown",
+          "body": "Business and technology commentators frame post-election regulatory environment as negative for AI infrastructure and capital-intensive AI vendors, creating buyer-side leverage. For pharma budgeting: expect downward pressure on AI software licensing costs and improved negotiating positions for multi-year clinical AI platform contracts. This is a window to lock in favourable terms before market stabilisation.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "What smart people are saying about the midterm's impact on data centers and the AI trade",
+              "source": "Business Insider",
+              "url": "https://www.businessinsider.com/blue-wave-data-center-slowdown-impact-on-ai-trade-2026-11#article",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Autonomous Banking Systems Signal Precursor Path to Full AI Agent Autonomy",
+          "body": "Analysis of autonomous financial systems identifies stepping-stone architecture for broader AI autonomy, with implications for self-directed clinical trial conduct and autonomous regulatory submission management. For innovation leaders: this suggests the technical pathway to fully autonomous AI agents in pharma is nearer than expected, warranting accelerated governance and oversight framework development. Budget for AI governance infrastructure now.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "Why actionable banking is the critical stepping stone to full autonomy",
+              "source": "Mongodb.com",
+              "url": "https://www.mongodb.com/company/blog/innovation/why-actionable-banking-is-critical-stepping-stone-full-autonomy",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "FDA Approves Plasmid DNA Immunotherapy for Recurrent Respiratory Papillomatosis",
+          "body": "Voceryq (doruxapapogene ralaplasmid and lalikinogene sifuplasmid-gxfd) received accelerated approval as the first plasmid DNA-based immunotherapy for RRP, establishing a novel regulatory pathway for nucleic acid therapeutics. For programme teams: this precedent validates expedited timelines for plasmid-based candidates with compelling safety/efficacy signals, particularly in rare diseases where unmet need justifies accelerated routes. Leverage this approval in competitive positioning and regulatory strategy discussions with agencies.",
+          "sourceIndices": [
+            5
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+              "date": "2026-10-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Grants Accelerated Approval for Amivantamab-Based Treatment in HNSCC",
+          "body": "Rybrevant Faspro approval for recurrent or metastatic HNSCC demonstrates FDA's continued support for bispecific antibody and fixed-dose combination innovations in oncology. Regulatory implication: evidence of FDA's appetite for combination formulations with novel excipients (hyaluronidase-lpuj) to improve tolerability and dosing convenience. Consider similar combination strategies in your late-stage oncology pipeline.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EMA CVMP Reports on Veterinary Medicinal Product Opinions and Re-examinations",
+          "body": "CVMP meeting highlights (3-5 November) include re-examination opinions on veterinary products, signalling EMA's engagement with post-approval feedback and manufacturing adjustments. For veterinary pharma: this demonstrates EMA's commitment to iterative review, meaning timely submission of CMC updates and safety data can accelerate re-examination outcomes. Maintain proactive communication channels with CVMP rapporteurs.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+              "source": "EMA",
+              "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Circular RNA Translation Enhancement Offers Regulatory Precedent for RNA Therapeutics",
+          "body": "Systematic identification of 68 RNA-binding proteins enhancing circRNA translation, with predictive modelling, provides rational foundation for circRNA therapeutic design and manufacturing controls. Regulatory value: this mechanistic clarity supports IND dossier narratives and potency assay justifications for circular RNA programmes. Early engagement with regulatory agencies using this published data can de-risk CMC discussions.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "Systematic screen of rna binding proteins that enhance circular rna translation",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-77614-w",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "US Midterm Election Results Signal Stricter AI and Data Centre Regulation Ahead",
+          "body": "Democrat control of Senate and House with 40 of 41 ballot measures limiting data centre expansion reflects voter mandate for stricter AI infrastructure governance. For pharma regulatory operations: expect heightened scrutiny of cloud storage for clinical data, more stringent data residency requirements, and potential restrictions on AI-powered clinical trial conduct. Begin transitioning to compliant infrastructure architecture and documentation now.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "‘total repudiation’: the blue wave is about to hit AI",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Tech Stock Volatility Reflects Investor Uncertainty Over US AI Regulation Trajectory",
+          "body": "Asian market losses driven by US AI fears and data centre regulation concerns indicate sustained investor nervousness about AI sector profitability and compliance costs. Clinical implication: AI-dependent CROs and clinical data vendors may face financial pressure, risking service continuity. Conduct counterparty risk assessments now for outsourced AI services and consider contractual protections against vendor insolvency.",
+          "sourceIndices": [
+            43
+          ],
+          "sources": [
+            {
+              "title": "Tech stock rout, driven by US AI fears, continues in asian trading",
+              "source": "Al Jazeera English",
+              "url": "https://www.aljazeera.com/economy/2026/11/6/tech-stock-rout-driven-by-us-ai-fears-continues-in-asian-trading",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EU AI Act Application Confirmed for Northern Ireland Operations",
+          "body": "UK government announcement that EU AI rules apply in Northern Ireland resolves post-Brexit ambiguity on AI governance in the region, benefiting pharma sponsors with cross-border programmes. Regulatory certainty: Northern Ireland-based operations must adopt EU AI Act compliance, aligning with EMA expectations and simplifying dual-jurisdiction strategy. Update your AI governance policies to reflect this alignment.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "EU rules on artificial intelligence devices will apply in ni",
+              "source": "BBC News",
+              "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Election Results Prioritise Data Centre Governance Over AI Model Safety",
+          "body": "Analysis shows voter and legislative focus on data centre regulation rather than algorithmic alignment or AI safety, indicating policy-maker prioritisation of infrastructure and energy concerns. Regulatory strategy implication: future FDA and EMA guidance will likely emphasize compute transparency, environmental impact, and data localisation over AI model explainability. Prepare environmental and infrastructure documentation for regulatory submissions.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "This election’s biggest AI story isn’t about data centers",
+              "source": "Vox",
+              "url": "https://www.vox.com/future-perfect/509829/data-centers-ai-midterm-election-congress",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Ireland Positioned as Critical Hub for Global AI Infrastructure Governance",
+          "body": "Commentary on Ireland's strategic role in shaping global data centre and AI regulation reflects Dublin's influence over EMA and international pharma policy. For European pharma: Irish regulatory developments on AI and data governance will cascade to EMA positions. Establish early engagement with Irish authorities and EMA on your AI and RWD strategies to shape emerging guidance.",
+          "sourceIndices": [
+            47
+          ],
+          "sources": [
+            {
+              "title": "Former musk aide urges ireland to modify its approach to data centres",
+              "source": "The Irish Times",
+              "url": "https://www.irishtimes.com/ireland/2026/11/05/former-musk-aide-urges-ireland-to-modify-its-approach-to-data-centres/",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Web Answer on Amazon Bedrock AgentCore Enables Synthesised, Source-Cited AI Responses",
+          "body": "Amazon Bedrock's new Web Answer capability returns cited, synthesised answers in single tool calls, advancing enterprise AI reliability for regulated environments. Regulatory value: source-cited outputs from LLM agents reduce hallucination risk in pharmacovigilance signal detection and regulatory writing, supporting audit trail requirements. Evaluate Bedrock for sensitive regulatory applications where output traceability is mandatory.",
+          "sourceIndices": [
+            53
+          ],
+          "sources": [
+            {
+              "title": "Getting started with web answer on amazon bedrock agentcore",
+              "source": "Amazon.com",
+              "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Probiotic Therapy Targets Gut-Tumor Axis in Colorectal Cancer Treatment",
+          "body": "Review of probiotic therapy as adjunctive strategy for CRC via gut-tumor axis intervention represents emerging immunomodulation approach independent of small-molecule or biologic drugs. Drug discovery implication: microbiome-targeting strategies require novel ADMET frameworks and GI bioavailability models distinct from traditional pharmacokinetics. Consider microbiome expertise and specialist CMC protocols in your early development strategy.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Targeting the gut-tumor axis: probiotic therapy as an adjunct strategy in colorectal cancer treatment",
+              "source": "Front Cell Infect Microbiol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42964032/",
+              "date": "2026-10-31",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Extracellular Vesicles Enable Soft Tissue Sarcoma Biology Translation to Clinic",
+          "body": "Review of EVs as mediators of sarcoma biology and clinical biomarkers establishes pathway for EV-based therapeutics and diagnostics in rare oncology. Target discovery value: EVs offer multimodal utility (diagnostics, therapeutics, biomarkers), reducing development risk and enabling combination-product strategies. Prioritise EV biology in your rare oncology pipeline and explore companion diagnostic opportunities.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "Extracellular Vesicles in Soft Tissue Sarcomas: from Tumor Biology to Clinical Translation",
+              "source": "Crit Rev Oncol Hematol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42982249/",
+              "date": "2026-11-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Next-Generation Cancer Nanovaccines Reprogram Tumor Microenvironment Rationally",
+          "body": "Rational design principles for nanovaccines aiming to reprogram TME from preclinical toward clinical translation address manufacturing scalability and immunogenicity consistency. Discovery-to-clinic implication: nanovaccine programmes require early integration of bioanalytical, immunological, and CMC expertise to navigate transition from bench to GMP. Budget for extensive characterisation studies and pilot manufacturing runs.",
+          "sourceIndices": [
+            6
+          ],
+          "sources": [
+            {
+              "title": "Next-Generation Cancer Nanovaccines: Reprogramming the Tumor Microenvironment from Rational Design Toward Clinical Translation",
+              "source": "Int J Nanomedicine",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42999844/",
+              "date": "2026-11-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "CEACAM5-Targeted Therapies Address Biological Barriers in Solid Tumors",
+          "body": "Review of CEACAM5 as target in solid tumors highlights biological barriers (antigen shedding, immunosuppression) limiting monotherapy efficacy, driving precision combination strategies. Lead optimisation insight: CEACAM5 programmes benefit from early mechanistic biomarker work and patient stratification to overcome intrinsic resistance. Consider adaptive trial designs and molecular profiling requirements from IND onwards.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "CEACAM5-Targeted Therapies in Solid Tumors: Biological Barriers and Next-Generation Precision Strategies",
+              "source": "Drug Des Devel Ther",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42999607/",
+              "date": "2026-11-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Cyanine Photosensitizers Reprogrammed as Controllable Pyroptosis Inducers",
+          "body": "Two-stage modification strategy enables cyanine photosensitizers to trigger controlled pyroptosis for anticancer phototherapy, expanding mechanism space for photodynamic approaches. Drug design value: this rational repurposing of photosensitizers demonstrates iterative scaffold optimisation for new mechanisms of action without de novo synthesis. Apply similar two-stage design thinking to your lead optimisation campaigns.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "A Two-Stage Strategy to Reprogram Cyanine Photosensitizers as Controllable-Pyroptosis Inducers for Anticancer Phototherapy",
+              "source": "Adv Healthc Mater",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43000204/",
+              "date": "2026-11-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Pharmaceutical Electrospinning Advances Require Translational Validation Beyond Nanofiber Engineering",
+          "body": "Analysis of 'translational debt' in electrospun pharmaceuticals warns that structural innovation alone does not ensure clinical viability, requiring rigorous formulation and bioavailability studies. Critical implication for nanoformulation teams: early investment in ADMET, dissolution, and in vivo bioavailability testing is mandatory, not optional, to de-risk late-stage failures. Budget accordingly for additional pharmacology and CMC work.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "A defect-free nanofiber is not yet a medicine: The translational debt of pharmaceutical electrospinning",
+              "source": "J Pharm Sci",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42998789/",
+              "date": "2026-11-07",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Single-Cell Melanoma Analysis Reveals Heterogeneity-Driven Therapy Resistance Mechanisms",
+          "body": "Single-cell resolution characterisation of melanoma heterogeneity identifies new resistance mechanisms and therapy targets, informing rational combination strategies and patient stratification. Target discovery impact: single-cell insights justify mechanistic biomarker development and adaptive trial designs to identify responder populations early. Integrate single-cell genomics into your melanoma programme biology package from preclinical phase.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Resolving melanoma heterogeneity at single-cell resolution: implications for target discovery and therapy resistance",
+              "source": "Br J Pharmacol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42995141/",
+              "date": "2026-11-06",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Integrated Human Model Systems Capture Complex Biology for Target Validation",
+          "body": "Review synthesising engineered materials, tissue models, and computational integration outlines best-practice approach to human-relevant model systems for translational validation. Experimental design lesson: layered model hierarchy (2D→3D→organoid→human-on-chip→computational) de-risks target engagement and off-target liability prediction. Plan your target validation workflow as staged model progression.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Model systems and integration strategies to capture human biology",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41563-026-02784-3",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Structure-Guided RNA Foundation Model Predicts RNA Secondary and Tertiary Structure",
+          "body": "StructRFM, pre-trained on 21 million sequence–structure pairs, enables multimodal prediction of RNA secondary and tertiary structures, accelerating RNA therapeutic design. Regulatory and discovery value: foundation models enable rational design of siRNA, miRNA, and circRNA therapeutics with improved structural predictability and potency consistency. Adopt in your RNA programme for accelerated lead identification.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "An open structure-guided rna foundation model for generalizable prediction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-11210-2",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Lipid Nanoparticles Modified for Brain Delivery Enable CNS RNA Therapeutics",
+          "body": "Hydroxyzine-modified LNPs enable brain delivery of mRNA and gene-editing components, overcoming blood-brain barrier limitations for CNS-targeted nucleic acid therapeutics. Drug delivery milestone: this rational LNP engineering approach expands addressable patient populations for RNA therapeutics to CNS indications. Evaluate LNP modification strategies early in CNS RNA programme planning.",
+          "sourceIndices": [
+            23
+          ],
+          "sources": [
+            {
+              "title": "Rational design of lipid nanoparticles for brain delivery of rna therapeutics",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41565-026-02326-7",
+              "date": "2026-11-03",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "Gait Foundation Model Predicts Multisystem Health Phenotypes From Skeletal Motion",
+          "body": "Foundation model trained on 3,328 adults' 3D skeletal motion predicts diverse clinical characteristics and diagnoses, including cardiovascular and metabolic conditions, from gait data alone. Clinical AI implication: non-invasive, motion-based biomarkers offer scalable phenotyping for patient stratification and outcome prediction without labs or imaging. Evaluate gait-based models for patient monitoring, remote clinical trials, and early disease detection applications.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "A gait foundation model for prediction of multisystem health phenotypes from 3d skeletal motion",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04724-9",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "RELAX Framework Enhances Clinical AI Reliability by Limiting Adverse Exertions",
+          "body": "RELAX (Reliability Enhancement by Limiting Adverse eXertions) methodology improves clinical AI robustness by constraining model behavior in high-risk decision contexts. Regulatory value: reliability-focused frameworks address FDA and EMA concerns about AI safety in clinical decision support, providing justification for deployment in patient-facing systems. Adopt RELAX or similar frameworks in your clinical AI validation strategy.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Relax: reliability enhancement by limiting adverse exertions",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-70532-3.pdf",
+              "date": "2026-11-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Machine Learning Predicts Amputation Risk in Lower Extremity Arterial Disease and Diabetes",
+          "body": "Validated ML model predicts amputation risk in dual-pathology patients (LEAD + diabetes), enabling early intervention and preventive strategies. Clinical implementation pathway: this model demonstrates readiness for EHR integration and real-world clinical deployment, with clear patient stratification and risk communication protocols. Consider similar comorbidity-focused models for your chronic disease portfolios.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Development and validation of a machine learning-based model for predicting amputation risk in patients with lower extremity arterial disease and diabetes",
+              "source": "Front Cardiovasc Med",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42978604/",
+              "date": "2026-11-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Network Pharmacology and Machine Learning Elucidate Traditional Medicine Mechanisms",
+          "body": "Network pharmacology, ML, and molecular docking analysis of Changluo Tiaogan Dinghun Decoction reveals therapeutic mechanisms for coronary heart disease with anxiety comorbidity. Translational value: this integrated computational approach validates mechanism of complex herbal formulations, bridging traditional and modern pharmacology for clinical trial design. Apply similar multi-modal analyses to phytomedicine and combination therapies.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Network Pharmacology, Machine Learning, and Molecular Docking Analysis of Changluo Tiaogan Dinghun Decoction for Coronary Heart Disease with Anxiety",
+              "source": "J Vis Exp",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42992686/",
+              "date": "2026-11-05",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Explainable Machine Learning Optimises Nanoparticle Tumor Delivery Efficiency",
+          "body": "Explainable ML methods predict nanoparticle tumor delivery efficiency, supporting rational design of cancer nanomedicines and guiding lead optimisation toward improved bioavailability. Clinical translation value: explainability ensures regulatory acceptance of ML-guided nanoparticle selection and dose optimisation in IND and clinical protocols. Prioritise XAI methods in your nanomedicine development programme.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Predicting nanoparticle tumor delivery efficiency using explainable machine learning for cancer nanomedicine design",
+              "source": "Front Bioeng Biotechnol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42978960/",
+              "date": "2026-11-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Driven BMP-4 Research Advances Protein Therapeutics and Structural Modelling",
+          "body": "Comprehensive review of AI applications in BMP-4 drug discovery spans lead identification, protein structure prediction, and clinical translation, demonstrating AI's role across development continuum. Pathway implication: protein therapeutics benefit from integrated AI workflows combining structure prediction (AlphaFold-like), docking, and clinical outcome modelling early in programmes. Adopt layered AI strategy for protein-based candidates.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "Bone morphogenetic protein 4 meets artificial intelligence: a comprehensive review of AI-driven advances in drug discovery, structural modeling, and clinical translation",
+              "source": "Front Mol Biosci",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42978922/",
+              "date": "2026-11-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Real-Time Antibody Repertoire Analysis Enables Rational B-Cell Precursor Screening",
+          "body": "Computational platform enables real-time exploration of billion-scale human antibody repertoires for identifying precursor B-cell frequencies and informing rational antibody drug design. Monoclonal antibody value: this repertoire-mining approach accelerates antibody discovery and improves preclinical developability prediction by leveraging human in vivo selection data. Integrate into your mAb discovery workflow.",
+          "sourceIndices": [
+            33
+          ],
+          "sources": [
+            {
+              "title": "Real-time exploration of the billion-scale human repertoire for precursor frequency analysis and rational antibody design",
+              "source": "Front Immunol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42964177/",
+              "date": "2026-10-31",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Model-Informed Precision Dosing Improves Vancomycin and Amikacin Safety in Neonates",
+          "body": "Pre-post intervention study validates model-informed precision dosing (MIPD) for critical-care antibiotics in neonates, demonstrating improved PK/PD target attainment and safety. Clinical implementation value: MIPD frameworks reduce off-target toxicity and dosing variability in vulnerable populations, supporting regulatory approvals for narrow-therapeutic-index drugs. Consider MIPD in your critical-care and paediatric strategy.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Model-informed precision dosing of vancomycin and amikacin in critically ill neonates: a pre- and post-intervention study",
+              "source": "Front Pharmacol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42964318/",
+              "date": "2026-10-31",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Information-Theoretic Framework Quantifies T-Cell Genotype-Phenotype Relationships",
+          "body": "TCRi framework integrates single-cell RNA and T-cell receptor sequencing using information theory to quantify genotype-phenotype links in T cells. Immunotherapy value: this quantitative approach enables rational CAR-T and TCR-engineered T-cell design by predicting functional outcomes from clonal composition and receptor characteristics. Apply TCRi-like frameworks in your immuno-oncology programmes.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "An information-theoretic framework for inferring t cell dynamics from single-cell rna and t cell receptor sequencing",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02781-x",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "DNA Methylation Atlas and Variant Effect Prediction Framework Supports Precision Medicine",
+          "body": "Integrated framework characterising DNA methylation across 90+ tissues and predicting variant functional effects enables population-level precision medicine applications. Biomarker discovery value: this atlas-driven approach accelerates patient stratification and responder identification by linking genetic variation to tissue-specific regulatory effects. Leverage in your precision medicine and companion diagnostic development.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "A framework for genome-wide characterization of dna methylation and variant effect prediction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02807-4",
+              "date": "2026-11-03",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Robust Fine-Mapping Algorithm Handles Linkage Disequilibrium Misspecification",
+          "body": "RSparsePro couples probabilistic graphical models with variational inference for robust genetic fine-mapping when LD reference panels are mismatched or population-specific. Data governance impact: this method improves variant prioritisation and causal inference in pharmacogenomics and biomarker studies using real-world genomic cohorts with LD heterogeneity. Adopt for RWD-derived genetic analyses.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Robust fine-mapping in the presence of linkage disequilibrium mismatch",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02780-y",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Aggression Experience and Observation Reveal Shared Neural and Behavioural Adaptations",
+          "body": "Brain-wide network analysis identifies excitatory, inhibitory, and valence signals shared across aggression experience and observation, with predictive biomarkers for adaptive response. Neuroscience data governance: this work demonstrates integrated neural-phenotypic data analysis for identifying mechanism-based biomarkers, relevant for psychiatric and CNS drug development. Apply similar multi-modal phenotyping in your CNS programmes.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "Aggression experience and observation drive shared behavioural and neural changes",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-11217-9",
+              "date": "2026-11-04",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Five Epidemic Detection Blind Spots Require Enhanced Surveillance Systems",
+          "body": "Analysis identifies key limitations in current epidemic tracking: failure to detect atypical symptom presentations, delaying early recognition of novel pathogens and outbreaks. Pharmacovigilance governance implication: real-world data systems must be designed to capture unexpected or rare adverse event presentations, not just pattern-matching against known profiles. Enhance RWE systems with anomaly detection and clinician feedback loops.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Five overlooked steps to identify new epidemics, fast",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03509-x",
+              "date": "2026-11-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Middle Eastern Biobank Atlas Reveals Population-Specific Transcriptomic Regulatory Variants",
+          "body": "Transcriptome atlas from consanguineous Middle Eastern population identifies population-specific regulatory variants and links to clinically relevant phenotypes, advancing precision medicine. Data governance value: population-stratified RWD and genomic cohorts reveal ancestry-specific therapeutic responses and biomarkers, supporting regulatory equity and reducing health disparities. Build diverse biobanks and population-stratified RWE systems.",
+          "sourceIndices": [
+            30
+          ],
+          "sources": [
+            {
+              "title": "A catalog of transcriptome genetic regulation in a consanguineous middle eastern biobank",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02785-7",
+              "date": "2026-11-02",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Biotech Firms Fail to Fund Genetic Resource Protection Despite Using Public Data",
+          "body": "COP17 biodiversity summit highlights non-compliance by biotech companies with voluntary Nagoya Protocol benefit-sharing commitments for genetic resources, raising governance and ESG risks. Regulatory and reputational risk: non-compliance with genetic resource access and benefit-sharing undermines ESG credentials and may trigger future regulatory restrictions on public genetic data use. Establish transparent benefit-sharing mechanisms now.",
+          "sourceIndices": [
+            24
+          ],
+          "sources": [
+            {
+              "title": "Biotech firms are meant to pay to use earth’s genetic data. they’re not.",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03554-6",
+              "date": "2026-11-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Snakebite Mortality Severely Undercounted in Global Public Health Statistics",
+          "body": "Analysis reveals global snakebite deaths (274,000–513,000 annually) dramatically exceed official estimates, indicating massive surveillance and health data gaps in endemic regions. Public health data governance lesson: systematic underreporting in RWE and epidemiological databases creates blind spots for rare and geographically dispersed conditions. Implement active surveillance and regional health data partnerships to surface hidden disease burdens.",
+          "sourceIndices": [
+            39
+          ],
+          "sources": [
+            {
+              "title": "Scientists reveal a hidden snakebite crisis killing up to 513,000 people a year",
+              "source": "Science Daily",
+              "url": "https://www.sciencedaily.com/releases/2026/10/261029072117.htm",
+              "date": "2026-10-30",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Electronic Health Data Space Governance Shapes EU RWD Infrastructure for Pharma",
+          "body": "EHDS framework development and governance implementation determine interoperability, data access, and privacy standards for European real-world data generation and use in clinical development. Regulatory and operational impact: EHDS compliance becomes mandatory for RWE collection and RWD integration in clinical development programmes. Invest in FHIR-compliant EHR interfaces and OMOP-harmonised data standards now.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Robust fine-mapping in the presence of linkage disequilibrium mismatch",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02780-y",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Darwin EU Network Expansion Accelerates Real-World Evidence Generation for Regulators",
+          "body": "Darwin EU (formerly DARWIN initiative) continues expanding distributed data network for European pharmacovigilance and regulatory-grade RWE. Operational value: Darwin EU partnership enables rapid safety signal detection, comparative effectiveness studies, and post-approval surveillance with regulatory-grade governance. Establish Darwin EU data use agreements for your post-launch strategies.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "An information-theoretic framework for inferring t cell dynamics from single-cell rna and t cell receptor sequencing",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02781-x",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "OMOP Standardisation Enables Federated Phenotyping Across Disparate EHR Systems",
+          "body": "OMOP Common Data Model adoption facilitates federated learning and phenotyping algorithms across fragmented EHR ecosystems without centralised data transfer, protecting privacy. Data strategy value: OMOP-harmonised infrastructure supports distributed clinical trials, decentralised RWE collection, and regulatory-grade pharmacovigilance without data breach risk. Mandate OMOP standardisation in your EHR modernisation initiatives.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "A framework for genome-wide characterization of dna methylation and variant effect prediction",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41588-026-02807-4",
+              "date": "2026-11-03",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Federated Learning Architecture Preserves Data Privacy While Enabling Pharma Collaboration",
+          "body": "Federated and privacy-preserving analytics enable multiple organisations to train shared ML models on sensitive health data without centralised data pooling, meeting GDPR and regulatory expectations. Governance architecture value: federated approaches support multi-centre drug development, adaptive trials, and real-world biomarker discovery while maintaining data sovereignty. Adopt federated frameworks for sensitive patient studies.",
+          "sourceIndices": [
+            29
+          ],
+          "sources": [
+            {
+              "title": "Five overlooked steps to identify new epidemics, fast",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03509-x",
+              "date": "2026-11-02",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "Regulatory clarity on CGT manufacturing quality and expanded EU-UK AI governance alignment dominate this week's agenda, while upstream discovery momentum accelerates through structure-guided foundation models and single-cell phenotyping. The critical insight: pharma professionals must now navigate dual imperatives—accelerated AI tool adoption in discovery and clinical development, coupled with heightened regulatory scrutiny over data infrastructure, compute transparency, and AI governance. Early investment in governance frameworks, data standardisation (FHIR/OMOP), and explainable-AI validation is no longer optional; it is competitive necessity. Budget accordingly.",
+  "allSources": [
+    {
+      "title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
+      "date": "2026-11-02",
+      "type": "news"
+    },
+    {
+      "title": "The greatest existential risk of the early 21st century",
+      "source": "Antiwar.com",
+      "url": "https://original.antiwar.com/dan_steinbock/2026/11/04/the-greatest-existential-risk-of-the-early-21st-century/",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Show hn: shield kya – open-source audit trail and gate for AI agent tool calls",
+      "source": "Github.com",
+      "url": "https://github.com/The-Pixel-Boys/shield-kya",
+      "date": "2026-11-04",
+      "type": "news"
+    },
+    {
+      "title": "EU rules on artificial intelligence devices will apply in ni",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro",
+      "date": "2026-11-04",
+      "type": "news"
+    },
+    {
+      "title": "‘total repudiation’: the blue wave is about to hit AI",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Tech stock rout, driven by US AI fears, continues in asian trading",
+      "source": "Al Jazeera English",
+      "url": "https://www.aljazeera.com/economy/2026/11/6/tech-stock-rout-driven-by-us-ai-fears-continues-in-asian-trading",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "This election’s biggest AI story isn’t about data centers",
+      "source": "Vox",
+      "url": "https://www.vox.com/future-perfect/509829/data-centers-ai-midterm-election-congress",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Former musk aide urges ireland to modify its approach to data centres",
+      "source": "The Irish Times",
+      "url": "https://www.irishtimes.com/ireland/2026/11/05/former-musk-aide-urges-ireland-to-modify-its-approach-to-data-centres/",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Creating a new internet bargain to preserve fair use and protect the commons | techpolicy.press",
+      "source": "Techpolicy.press",
+      "url": "https://techpolicy.press/creating-a-new-internet-bargain-to-preserve-fair-use-and-protect-the-commons",
+      "date": "2026-11-07",
+      "type": "news"
+    },
+    {
+      "title": "What smart people are saying about the midterm's impact on data centers and the AI trade",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/blue-wave-data-center-slowdown-impact-on-ai-trade-2026-11#article",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Why actionable banking is the critical stepping stone to full autonomy",
+      "source": "Mongodb.com",
+      "url": "https://www.mongodb.com/company/blog/innovation/why-actionable-banking-is-critical-stepping-stone-full-autonomy",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+      "date": "2026-10-30",
+      "type": "news"
+    },
+    {
+      "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+      "source": "EMA",
+      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Systematic screen of rna binding proteins that enhance circular rna translation",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-77614-w",
+      "date": "2026-11-04",
+      "type": "news"
+    },
+    {
+      "title": "Getting started with web answer on amazon bedrock agentcore",
+      "source": "Amazon.com",
+      "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "Targeting the gut-tumor axis: probiotic therapy as an adjunct strategy in colorectal cancer treatment",
+      "source": "Front Cell Infect Microbiol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964032/",
+      "date": "2026-10-31",
+      "type": "paper"
+    },
+    {
+      "title": "Extracellular Vesicles in Soft Tissue Sarcomas: from Tumor Biology to Clinical Translation",
+      "source": "Crit Rev Oncol Hematol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982249/",
+      "date": "2026-11-04",
+      "type": "paper"
+    },
+    {
+      "title": "Next-Generation Cancer Nanovaccines: Reprogramming the Tumor Microenvironment from Rational Design Toward Clinical Translation",
+      "source": "Int J Nanomedicine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999844/",
+      "date": "2026-11-08",
+      "type": "paper"
+    },
+    {
+      "title": "CEACAM5-Targeted Therapies in Solid Tumors: Biological Barriers and Next-Generation Precision Strategies",
+      "source": "Drug Des Devel Ther",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999607/",
+      "date": "2026-11-08",
+      "type": "paper"
+    },
+    {
+      "title": "A Two-Stage Strategy to Reprogram Cyanine Photosensitizers as Controllable-Pyroptosis Inducers for Anticancer Phototherapy",
+      "source": "Adv Healthc Mater",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43000204/",
+      "date": "2026-11-08",
+      "type": "paper"
+    },
+    {
+      "title": "A defect-free nanofiber is not yet a medicine: The translational debt of pharmaceutical electrospinning",
+      "source": "J Pharm Sci",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42998789/",
+      "date": "2026-11-07",
+      "type": "paper"
+    },
+    {
+      "title": "Resolving melanoma heterogeneity at single-cell resolution: implications for target discovery and therapy resistance",
+      "source": "Br J Pharmacol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42995141/",
+      "date": "2026-11-06",
+      "type": "paper"
+    },
+    {
+      "title": "Model systems and integration strategies to capture human biology",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41563-026-02784-3",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "An open structure-guided rna foundation model for generalizable prediction",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-11210-2",
+      "date": "2026-11-04",
+      "type": "news"
+    },
+    {
+      "title": "Rational design of lipid nanoparticles for brain delivery of rna therapeutics",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41565-026-02326-7",
+      "date": "2026-11-03",
+      "type": "news"
+    },
+    {
+      "title": "A gait foundation model for prediction of multisystem health phenotypes from 3d skeletal motion",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04724-9",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Relax: reliability enhancement by limiting adverse exertions",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-70532-3.pdf",
+      "date": "2026-11-03",
+      "type": "news"
+    },
+    {
+      "title": "Development and validation of a machine learning-based model for predicting amputation risk in patients with lower extremity arterial disease and diabetes",
+      "source": "Front Cardiovasc Med",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978604/",
+      "date": "2026-11-04",
+      "type": "paper"
+    },
+    {
+      "title": "Network Pharmacology, Machine Learning, and Molecular Docking Analysis of Changluo Tiaogan Dinghun Decoction for Coronary Heart Disease with Anxiety",
+      "source": "J Vis Exp",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42992686/",
+      "date": "2026-11-05",
+      "type": "paper"
+    },
+    {
+      "title": "Predicting nanoparticle tumor delivery efficiency using explainable machine learning for cancer nanomedicine design",
+      "source": "Front Bioeng Biotechnol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978960/",
+      "date": "2026-11-04",
+      "type": "paper"
+    },
+    {
+      "title": "Bone morphogenetic protein 4 meets artificial intelligence: a comprehensive review of AI-driven advances in drug discovery, structural modeling, and clinical translation",
+      "source": "Front Mol Biosci",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978922/",
+      "date": "2026-11-04",
+      "type": "paper"
+    },
+    {
+      "title": "Real-time exploration of the billion-scale human repertoire for precursor frequency analysis and rational antibody design",
+      "source": "Front Immunol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964177/",
+      "date": "2026-10-31",
+      "type": "paper"
+    },
+    {
+      "title": "Model-informed precision dosing of vancomycin and amikacin in critically ill neonates: a pre- and post-intervention study",
+      "source": "Front Pharmacol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42964318/",
+      "date": "2026-10-31",
+      "type": "paper"
+    },
+    {
+      "title": "An information-theoretic framework for inferring t cell dynamics from single-cell rna and t cell receptor sequencing",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02781-x",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "A framework for genome-wide characterization of dna methylation and variant effect prediction",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02807-4",
+      "date": "2026-11-03",
+      "type": "news"
+    },
+    {
+      "title": "Robust fine-mapping in the presence of linkage disequilibrium mismatch",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02780-y",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Aggression experience and observation drive shared behavioural and neural changes",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-11217-9",
+      "date": "2026-11-04",
+      "type": "news"
+    },
+    {
+      "title": "Five overlooked steps to identify new epidemics, fast",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03509-x",
+      "date": "2026-11-02",
+      "type": "news"
+    },
+    {
+      "title": "A catalog of transcriptome genetic regulation in a consanguineous middle eastern biobank",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41588-026-02785-7",
+      "date": "2026-11-02",
+      "type": "news"
+    },
+    {
+      "title": "Biotech firms are meant to pay to use earth’s genetic data. they’re not.",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03554-6",
+      "date": "2026-11-03",
+      "type": "news"
+    },
+    {
+      "title": "Scientists reveal a hidden snakebite crisis killing up to 513,000 people a year",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261029072117.htm",
+      "date": "2026-10-30",
+      "type": "news"
+    }
+  ]
+}
