@@ -20,14 +20,6 @@ function _buildFuseIndex() {
 let currentPage       = 1;
 const PER_PAGE        = 20;
 
-/* ── Brevo (newsletter list) ─────────────────────────────────────────────────
-   Sign up free at https://brevo.com → API Keys → create key → paste below.
-   Create a contact list → note its numeric ID.
-   Free tier: 300 emails/day, unlimited contacts.
-   ──────────────────────────────────────────────────────────────────────────── */
-const BREVO_API_KEY = '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'; // injected by GitHub Actions from repository secret
-const BREVO_LIST_ID = 3;
-
 /* ── Topic filter definitions ── */
 const TOPIC_FILTERS = {
   regulatory: {
@@ -723,20 +715,6 @@ function initSubscribeModal() {
         subscriber_organisation: organisation,
         subscriber_interest:     interest,
       }).catch(err => console.warn('Admin notify failed:', err));
-
-      /* 3 — Add to Brevo contact list (non-blocking, fires once API key is set) */
-      if (BREVO_API_KEY !== 'YOUR_BREVO_API_KEY' && BREVO_LIST_ID > 0) {
-        fetch('https://api.brevo.com/v3/contacts', {
-          method:  'POST',
-          headers: { 'Content-Type': 'application/json', 'api-key': BREVO_API_KEY },
-          body: JSON.stringify({
-            email,
-            attributes: { FIRSTNAME: firstName, ORGANISATION: organisation, INTEREST: interest },
-            listIds:    [BREVO_LIST_ID],
-            updateEnabled: true,
-          }),
-        }).catch(() => {});
-      }
 
       /* Success screen */
       form.style.display = 'none';
