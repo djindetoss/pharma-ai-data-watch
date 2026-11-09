@@ -1,5 +1,23 @@
 [
   {
+    "id": "auto-86961a9937fd",
+    "type": "ainews",
+    "title": "Disney and Adobe are building generative AI tools together",
+    "excerpt": "The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing Disney with early access to its latest technologies for everything from Disney's theme parks and cruise line to [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-09",
+    "tags": [
+      "Adobe",
+      "AI",
+      "Creators",
+      "Disney"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+    "badge": "Tech"
+  },
+  {
     "id": "auto-b0e1dd0f93bd",
     "type": "paper",
     "title": "Next-Generation Cancer Nanovaccines: Reprogramming the Tumor Microenvironment from Rational Design Toward Clinical Translation",
@@ -54,6 +72,56 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-00426b748bdb",
+    "type": "news",
+    "title": "Ukri backs five research hubs developing health technologies with £52",
+    "excerpt": "UK Research and Innovation has backed five new national health technology hubs with over £52 million to accelerate early disease detection and community-based care.",
+    "source": "Scienmag.com",
+    "date": "2026-11-08",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://scienmag.com/ukri-backs-five-research-hubs-developing-health-technologies-with-52-million/",
+    "badge": "Clinical AI",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "nws-927c104d2440",
+    "type": "ainews",
+    "title": "World models will soon be inescapable. here’s what you need to know",
+    "excerpt": "Moving AI from text to 3D space, world models simulate real-world physics to teach robots and autonomous cars how to navigate reality.",
+    "source": "Wired",
+    "date": "2026-11-08",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-aa8d4a837c23",
+    "type": "paper",
+    "title": "A Two-Stage Strategy to Reprogram Cyanine Photosensitizers as Controllable-Pyroptosis Inducers for Anticancer Phototherapy",
+    "excerpt": "Researchers developed a two-stage strategy to modify cyanine photosensitizers so they can trigger controlled pyroptosis (a form of programmed cell death) for anticancer phototherapy applications. This reprogramming approach enables more precise control over the photosensitizers' ability to induce cell death in cancer cells. The work represents a novel application of existing photosensitizer compounds for improved anticancer treatment outcomes.",
+    "source": "Adv Healthc Mater",
+    "date": "2026-11-08",
+    "tags": [
+      "Phototherapy",
+      "Photosensitizers",
+      "Oncology",
+      "Drug Development"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43000204/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
   },
   {
     "id": "nws-b68a472c411c",
@@ -4769,70 +4837,5 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
     "badge": "AI Tech"
-  },
-  {
-    "id": "nws-0239bdd5d424",
-    "type": "ainews",
-    "title": "AI projects not paying off? keep at it, says uni productivity institute",
-    "excerpt": "All that up-front investment needs time to take effect, and speeding individual tasks won't necessarily boost the entire firm",
-    "source": "Theregister.com",
-    "date": "2026-10-30",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/10/30/ai-projects-not-paying-off-keep-at-it-says-uni-productivity-institute/5306581",
-    "badge": "AI Policy"
-  },
-  {
-    "id": "auto-bbdc1e306667",
-    "type": "paper",
-    "title": "Conquering the stronghold: Membrane-targeting anti-infective drug discovery",
-    "excerpt": "This review examines membrane-targeting approaches in anti-infective drug discovery, with a focus on strategies to overcome microbial barriers and improve therapeutic efficacy. The authors from Shandong University's Department of Medicinal Chemistry discuss how targeting bacterial or pathogenic membranes represents a promising avenue for developing novel anti-infective agents.",
-    "source": "Smart Mol",
-    "date": "2026-10-30",
-    "tags": [
-      "Anti-infective drugs",
-      "Membrane targeting",
-      "Drug discovery",
-      "Microbial resistance"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42966965/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "nws-cd3bd1b497c0",
-    "type": "ainews",
-    "title": "Prop 45 in california could be hiding a loophole for data centers",
-    "excerpt": "A high-stakes California ballot measure pitched as a fast track for \"essential\" infrastructure could wind up giving data center developers a loophole to evade public scrutiny, environmental advocates warn. Proposition 45 would shorten timelines for state-mand…",
-    "source": "The Verge",
-    "date": "2026-10-30",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/policy/1023877/prop-45-california-data-centers-energy",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-d841c8661f43",
-    "type": "news",
-    "title": "Daily briefing: how captain picard inspired today’s scientists",
-    "excerpt": "Researchers pay tribute to actor Patrick Stewart. Plus, what the US mid-term elections might mean for science and why ancient people never settled in the centre of the lush ‘Green Arabia’.",
-    "source": "Nature.com",
-    "date": "2026-10-30",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-03556-4",
-    "badge": "Pharma AI",
-    "topic": "drug-discovery"
   }
 ]
