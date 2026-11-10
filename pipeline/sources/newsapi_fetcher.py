@@ -13,6 +13,7 @@ API docs: https://newsapi.org/docs/endpoints/everything
 """
 
 import os
+import re
 import logging
 import hashlib
 from datetime import datetime, timedelta
@@ -425,7 +426,7 @@ SEARCH_QUERIES = [
         "type":         "ainews",
         "badge":        "AI Lab",
         "sources":      "techcrunch.com,theverge.com,wired.com,venturebeat.com,arstechnica.com,technologyreview.com,theregister.com",
-        "max_results":  20,
+        "max_results":  10,
     },
 
     # ── Query B: AI Frontier Technology ──────────────────────────────────────
@@ -440,7 +441,7 @@ SEARCH_QUERIES = [
         "type":         "ainews",
         "badge":        "AI Tech",
         "sources":      "techcrunch.com,theverge.com,wired.com,arstechnica.com,technologyreview.com,venturebeat.com,theregister.com,statnews.com",
-        "max_results":  20,
+        "max_results":  10,
     },
 
     # ── Query C: AI Policy & Global Governance ────────────────────────────────
@@ -456,7 +457,7 @@ SEARCH_QUERIES = [
         "type":         "ainews",
         "badge":        "AI Policy",
         "sources":      "techcrunch.com,wired.com,arstechnica.com,technologyreview.com,theregister.com,venturebeat.com",
-        "max_results":  15,
+        "max_results":  10,
     },
 ]
 
@@ -693,6 +694,44 @@ def _clean(text: str, max_len: int = 500) -> str:
     return text[:max_len]
 
 
+# ── Relevance gate ─────────────────────────────────────────────────────────────
+# NewsAPI matches query terms anywhere in the full text, so an article that only
+# mentions "Anthropic" or "AI regulation" in passing still comes back. Items are
+# auto-approved only when the title/description really carry the topic; the
+# rest go to drafts for review instead of straight onto the portal.
+
+_AI_RE = re.compile(
+    r"\b(ai|a\.i\.|artificial intelligence|machine[- ]learning|deep[- ]learning|llms?|"
+    r"large language models?|generative|genai|neural networks?|chatbots?|chatgpt|"
+    r"gpt-?\d[\w.]*|claude|gemini|llama|copilot|openai|anthropic|deepmind|mistral|"
+    r"agentic|ai agents?|algorithms?|algorithmic|foundation models?|predictive models?)\b",
+    re.I)
+_AI_CONTEXT_RE = re.compile(
+    r"\b(world models?|frontier|inference|benchmarks?|datacenters?|data cent(er|re)s?|"
+    r"nvidia|gpus?|chips?|robot\w*|autonomous|vibe coding|models?)\b", re.I)
+_HEALTH_RE = re.compile(
+    r"\b(pharma\w*|drugs?|medicin\w*|medical|clinical\w*|patients?|health\s?care|"
+    r"healthcare|health|hospitals?|diseases?|therap\w*|biotech\w*|fda|ema|trials?|"
+    r"genom\w*|proteins?|molecul\w*|vaccin\w*|cancer|oncology|diagnos\w*|ehds|"
+    r"biomarkers?|pharmacovigilance|life sciences?)\b", re.I)
+_DATA_RE = re.compile(
+    r"\b(fhir|hl7|omop|idmp|cdisc|meddra|real[- ]world (data|evidence)|rwe|rwd|ehrs?|"
+    r"electronic health records?)\b", re.I)
+
+
+def _is_relevant(article_type: str, portal_topic, title: str, excerpt: str) -> bool:
+    """True when the article is clearly on-topic for the query that found it."""
+    text = f"{title} {excerpt}"
+    if article_type == "ainews":
+        if _AI_RE.search(title):
+            return True
+        return (len(_AI_RE.findall(excerpt)) >= 2
+                or (bool(_AI_RE.search(excerpt)) and bool(_AI_CONTEXT_RE.search(title))))
+    if portal_topic == "data-governance":
+        return bool(_HEALTH_RE.search(text) or _DATA_RE.search(text))
+    return bool(_HEALTH_RE.search(text) and _AI_RE.search(text))
+
+
 def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
     """
     Run all search queries through NewsAPI and return a flat list
@@ -747,6 +786,7 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
             data     = resp.json()
             articles = data.get("articles", [])
             found    = 0
+            gated    = 0
 
             for art in articles:
                 title       = (art.get("title") or "").strip()
@@ -781,6 +821,10 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                     else article_type
                 )
 
+                relevant = is_event_query or _is_relevant(article_type, portal_topic, title, excerpt)
+                if not relevant:
+                    gated += 1
+
                 tags = _extract_tags(title + " " + excerpt, effective_type)
 
                 article = {
@@ -795,8 +839,8 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                     "readTime":     _estimate_read_time(excerpt),
                     "url":          url,
                     "badge":        badge,
-                    "_score":       3,
-                    "_auto_approve": True,
+                    "_score":       3 if relevant else 1,
+                    "_auto_approve": relevant,
                     "_source":      f"newsapi:{topic}",
                 }
                 if portal_topic:
@@ -804,7 +848,8 @@ def fetch_newsapi(config: dict, dry_run: bool = False) -> list:
                 all_articles.append(article)
                 found += 1
 
-            log.info(f"  → {found} articles from NewsAPI for {topic!r}")
+            log.info(f"  → {found} articles from NewsAPI for {topic!r}"
+                     + (f" ({gated} off-topic → drafts)" if gated else ""))
 
         except requests.RequestException as e:
             log.warning(f"  NewsAPI request failed for {topic!r}: {e}")
