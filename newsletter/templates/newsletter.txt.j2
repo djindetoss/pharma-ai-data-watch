@@ -1,0 +1,60 @@
+{%- macro item(it) -%}
+[{{ it.type }}] {{ it.title }}
+{{ it.source }} | {{ it.date | fmt_date }}
+{{ it.url }}
+
+{{ it.summary | wordwrap(76) }}
+
+Why it matters for NCAs: {{ it.why_it_matters | wordwrap(76) }}
+{% if it.tags %}Tags: {{ it.tags | join(", ") }}
+{% endif %}
+{%- endmacro -%}
+{% if mode == "draft" %}
+*** DRAFT - not yet published. {% if pr_url %}Review the pull request: {{ pr_url }}{% endif %} ***
+
+{% endif %}
+{{ cfg.title | upper }}
+Edition #{{ e.edition_number }} | {{ period }}
+View this edition online: {{ u.online }}
+==========================================================================
+
+{% if e.editorial %}
+{{ e.editorial.strip() | wordwrap(76) }}
+
+{% endif %}
+{% if e.highlight %}
+HIGHLIGHT OF THE PERIOD
+--------------------------------------------------------------------------
+{{ item(e.highlight) }}
+
+{% endif %}
+{% if e.scientific_articles %}
+SCIENTIFIC ARTICLES
+--------------------------------------------------------------------------
+{% for it in e.scientific_articles %}
+{{ item(it) }}
+{% if not loop.last %}
+. . .
+
+{% endif %}
+{% endfor %}
+
+{% endif %}
+{% if e.news %}
+NEWS & REGULATORY UPDATES
+--------------------------------------------------------------------------
+{% for it in e.news %}
+{{ item(it) }}
+{% if not loop.last %}
+. . .
+
+{% endif %}
+{% endfor %}
+
+{% endif %}
+==========================================================================
+{{ cfg.joint_action_line | wordwrap(76) }}
+{{ cfg.contact_line | wordwrap(76) }}
+Newsletter archive: {{ u.archive }}
+
+Disclaimer: {{ cfg.disclaimer | wordwrap(76) }}

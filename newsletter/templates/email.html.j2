@@ -1,0 +1,183 @@
+{#-
+  IncreaseNET AI Community newsletter – one template, three modes:
+    email : final e-mail (table layout, inline CSS, 600 px, no JS, no web fonts)
+    draft : same as email + DRAFT banner linking to the pull request
+    web   : same body, served on GitHub Pages (adds archive link + meta tags)
+  All colours come from config.yaml → colors. Light accents are decoration only.
+-#}
+{%- set FONT = "Arial, Helvetica, sans-serif" -%}
+{%- macro item_block(it, highlight=False) -%}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+  <tr>
+    <td style="padding:0 0 4px 0;font-family:{{ FONT }};font-size:11px;line-height:16px;font-weight:bold;letter-spacing:0.8px;text-transform:uppercase;color:{{ c.secondary }};">{{ it.type }}</td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 4px 0;font-family:{{ FONT }};font-size:{{ '19px' if highlight else '16px' }};line-height:{{ '25px' if highlight else '22px' }};font-weight:bold;">
+      <a href="{{ it.url }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;">{{ it.title }}</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">{{ it.source }} &middot; {{ it.date | fmt_date }}</td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">{{ it.summary }}</td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">
+      <strong style="color:{{ c.secondary }};">Why it matters for NCAs:</strong> {{ it.why_it_matters }}
+    </td>
+  </tr>
+  {% if it.tags %}
+  <tr>
+    <td style="padding:0;font-family:{{ FONT }};font-size:11px;line-height:20px;">
+      {% for t in it.tags %}<span style="display:inline-block;padding:1px 8px;margin:0 4px 4px 0;border:1px solid {{ c.primary }};color:{{ c.primary }};background-color:{{ c.background }};">{{ t }}</span>{% endfor %}
+    </td>
+  </tr>
+  {% endif %}
+</table>
+{%- endmacro -%}
+{%- macro section_title(label) -%}
+<tr>
+  <td class="px" style="padding:28px 32px 6px 32px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+      <tr><td style="font-family:{{ FONT }};font-size:18px;line-height:24px;font-weight:bold;color:{{ c.primary }};padding:0 0 6px 0;border-bottom:3px solid {{ c.accent2 }};">{{ label }}</td></tr>
+    </table>
+  </td>
+</tr>
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<title>{{ subject }}</title>
+{% if mode == "web" %}
+<meta name="description" content="IncreaseNET AI Community newsletter, edition #{{ e.edition_number }} – {{ period }}.">
+<link rel="canonical" href="{{ u.online }}">
+{% endif %}
+<!--[if mso]><style>table,td{font-family:Arial,Helvetica,sans-serif !important;}</style><![endif]-->
+<style>
+  body{margin:0;padding:0;}
+  a{color:{{ c.primary }};}
+  @media only screen and (max-width:620px){
+    .container{width:100% !important;}
+    .px{padding-left:18px !important;padding-right:18px !important;}
+    .logo{width:180px !important;height:auto !important;}
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:{{ c.surface }};">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{ e.highlight.title if e.highlight else cfg.title }} – edition #{{ e.edition_number }}, {{ period }}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;background-color:{{ c.surface }};">
+<tr><td align="center" style="padding:16px 8px;">
+
+  <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:600px;max-width:600px;">
+    {% if mode == "draft" %}
+    <tr>
+      <td style="padding:10px 16px;background-color:#FFF4CE;border:1px solid #8A6D00;font-family:{{ FONT }};font-size:13px;line-height:19px;color:#3D3000;text-align:center;">
+        <strong>DRAFT – not yet published.</strong>
+        {% if pr_url %}Review and edit it in the <a href="{{ pr_url }}" target="_blank" style="color:#3D3000;text-decoration:underline;">pull request</a>; merge to publish.{% else %}Edit the YAML draft, then publish.{% endif %}
+      </td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td align="center" style="padding:8px 0 10px 0;font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">
+        {% if mode == "web" %}
+        <a href="{{ u.archive }}" style="color:{{ c.primary }};text-decoration:underline;">All editions</a>
+        {% else %}
+        Display problems? <a href="{{ u.online }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;font-weight:bold;">View this edition online</a>
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+
+  <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:600px;max-width:600px;background-color:{{ c.background }};border:1px solid #DDE3EC;">
+    <!-- brand bar -->
+    <tr>
+      <td style="padding:0;font-size:0;line-height:0;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+          <tr>
+            <td width="40%" height="6" style="height:6px;background-color:{{ c.primary }};font-size:0;line-height:0;">&nbsp;</td>
+            <td width="20%" height="6" style="height:6px;background-color:{{ c.accent }};font-size:0;line-height:0;">&nbsp;</td>
+            <td width="20%" height="6" style="height:6px;background-color:{{ c.accent2 }};font-size:0;line-height:0;">&nbsp;</td>
+            <td width="20%" height="6" style="height:6px;background-color:{{ c.secondary }};font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!-- header -->
+    <tr>
+      <td class="px" style="padding:26px 32px 8px 32px;">
+        <img class="logo" src="{{ u.logo }}" width="220" height="48" alt="IncreaseNET" style="display:block;border:0;outline:none;text-decoration:none;width:220px;height:48px;">
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding:10px 32px 0 32px;font-family:{{ FONT }};font-size:24px;line-height:30px;font-weight:bold;color:{{ c.primary }};">
+        {{ cfg.title }}
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding:6px 32px 18px 32px;font-family:{{ FONT }};font-size:14px;line-height:20px;color:{{ c.muted }};border-bottom:1px solid #DDE3EC;">
+        Edition #{{ e.edition_number }} &middot; {{ period }}
+      </td>
+    </tr>
+    <!-- editorial -->
+    {% if e.editorial %}
+    <tr>
+      <td class="px" style="padding:20px 32px 0 32px;font-family:{{ FONT }};font-size:15px;line-height:23px;color:{{ c.text }};">
+        {% for para in e.editorial.strip().split("\n\n") %}<p style="margin:0 0 12px 0;">{{ para }}</p>{% endfor %}
+      </td>
+    </tr>
+    {% endif %}
+    <!-- highlight -->
+    {% if e.highlight %}
+    {{ section_title("Highlight of the period") }}
+    <tr>
+      <td class="px" style="padding:12px 32px 4px 32px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;background-color:{{ c.surface }};">
+          <tr>
+            <td width="5" style="width:5px;background-color:{{ c.accent }};font-size:0;line-height:0;">&nbsp;</td>
+            <td style="padding:16px 18px;">{{ item_block(e.highlight, highlight=True) }}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    {% endif %}
+    <!-- scientific articles -->
+    {% if e.scientific_articles %}
+    {{ section_title("Scientific articles") }}
+    {% for it in e.scientific_articles %}
+    <tr>
+      <td class="px" style="padding:16px 32px {{ '16px' if not loop.last else '4px' }} 32px;{% if not loop.last %}border-bottom:1px solid #E6EAF0;{% endif %}">{{ item_block(it) }}</td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+    <!-- news -->
+    {% if e.news %}
+    {{ section_title("News & regulatory updates") }}
+    {% for it in e.news %}
+    <tr>
+      <td class="px" style="padding:16px 32px {{ '16px' if not loop.last else '4px' }} 32px;{% if not loop.last %}border-bottom:1px solid #E6EAF0;{% endif %}">{{ item_block(it) }}</td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+    <!-- footer -->
+    <tr>
+      <td style="padding:28px 0 0 0;font-size:0;line-height:0;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="px" style="padding:22px 32px 24px 32px;background-color:{{ c.surface }};border-top:3px solid {{ c.primary }};font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">
+        <p style="margin:0 0 8px 0;color:{{ c.text }};"><strong>{{ cfg.joint_action_line }}</strong></p>
+        <p style="margin:0 0 8px 0;">{{ cfg.contact_line }}</p>
+        <p style="margin:0 0 8px 0;"><a href="{{ u.archive }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;">Newsletter archive</a> &middot; <a href="{{ u.online }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;">This edition online</a></p>
+        <p style="margin:0;"><em>Disclaimer:</em> {{ cfg.disclaimer }}</p>
+      </td>
+    </tr>
+  </table>
+
+</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ cfg.title }} – Archive</title>
+<meta name="description" content="All editions of the IncreaseNET AI Community newsletter.">
+<style>
+  :root { --primary: {{ c.primary }}; --secondary: {{ c.secondary }}; --accent: {{ c.accent }};
+          --accent2: {{ c.accent2 }}; --text: {{ c.text }}; --muted: {{ c.muted }};
+          --bg: {{ c.background }}; --surface: {{ c.surface }}; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface); color: var(--text);
+         font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  .bar { display: flex; height: 6px; }
+  .bar span:nth-child(1) { flex: 2; background: var(--primary); }
+  .bar span:nth-child(2) { flex: 1; background: var(--accent); }
+  .bar span:nth-child(3) { flex: 1; background: var(--accent2); }
+  .bar span:nth-child(4) { flex: 1; background: var(--secondary); }
+  .card { background: var(--bg); border: 1px solid #DDE3EC; }
+  header { padding: 24px 28px 16px; border-bottom: 1px solid #DDE3EC; }
+  header img { width: 220px; height: auto; display: block; }
+  h1 { color: var(--primary); font-size: 1.5rem; margin: 14px 0 4px; }
+  header p { color: var(--muted); margin: 0; }
+  ol { list-style: none; margin: 0; padding: 8px 28px 20px; }
+  li { padding: 16px 0; border-bottom: 1px solid #E6EAF0; }
+  li:last-child { border-bottom: 0; }
+  .num { font-size: .75rem; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; color: var(--secondary); }
+  li a { color: var(--primary); font-weight: bold; font-size: 1.1rem; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  footer { padding: 18px 28px; background: var(--surface); border-top: 3px solid var(--primary);
+           color: var(--muted); font-size: .8rem; }
+  footer a { color: var(--primary); }
+  .empty { padding: 24px 28px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="bar"><span></span><span></span><span></span><span></span></div>
+    <header>
+      <img src="../{{ cfg.logo_path }}" alt="IncreaseNET" width="220" height="48">
+      <h1>{{ cfg.title }}</h1>
+      <p>Archive of all editions – a short, curated selection of AI &amp; data news for European medicines regulators.</p>
+    </header>
+    {% if editions %}
+    <ol>
+      {% for ed in editions %}
+      <li>
+        <div class="num">Edition #{{ ed.number }}</div>
+        <a href="{{ ed.date }}.html">{{ ed.period_label }}</a>
+        <div class="meta">{{ ed.items }} items{% if ed.highlight %} · Highlight: {{ ed.highlight }}{% endif %}</div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p class="empty">No edition published yet.</p>
+    {% endif %}
+    <footer>
+      {{ cfg.joint_action_line }}<br>
+      {{ cfg.disclaimer }}<br>
+      <a href="{{ u.site }}/">Pharma AI &amp; Data Watch</a>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

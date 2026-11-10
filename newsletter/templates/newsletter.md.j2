@@ -1,0 +1,52 @@
+{%- macro item(it) -%}
+### [{{ it.title }}]({{ it.url }})
+*{{ it.type }} · {{ it.source }} · {{ it.date | fmt_date }}*
+
+{{ it.summary }}
+
+**Why it matters for NCAs:** {{ it.why_it_matters }}
+{% if it.tags %}
+
+{% for t in it.tags %}`{{ t }}` {% endfor %}
+
+{% endif %}
+{%- endmacro -%}
+![IncreaseNET]({{ u.logo }})
+
+# {{ cfg.title }}
+
+**Edition #{{ e.edition_number }}** · {{ period }} · [View online]({{ u.online }})
+
+{% if e.editorial %}
+{{ e.editorial.strip() }}
+
+{% endif %}
+{% if e.highlight %}
+## Highlight of the period
+
+{{ item(e.highlight) }}
+
+{% endif %}
+{% if e.scientific_articles %}
+## Scientific articles
+
+{% for it in e.scientific_articles %}
+{{ item(it) }}
+
+{% endfor %}
+{% endif %}
+{% if e.news %}
+## News & regulatory updates
+
+{% for it in e.news %}
+{{ item(it) }}
+
+{% endfor %}
+{% endif %}
+---
+
+{{ cfg.joint_action_line }}
+{{ cfg.contact_line }}
+[Newsletter archive]({{ u.archive }})
+
+*Disclaimer: {{ cfg.disclaimer }}*
