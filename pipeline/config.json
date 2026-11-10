@@ -144,13 +144,6 @@
         "_keep": "ALL peer-reviewed AI research — 100% signal, no filtering needed"
       },
       {
-        "url": "https://venturebeat.com/category/ai/feed/",
-        "name": "VentureBeat AI",
-        "type": "ainews",
-        "badge": "Tech",
-        "_keep": "Enterprise LLM deployment, AI infrastructure, open-source model releases"
-      },
-      {
         "url": "https://www.wired.com/feed/tag/ai/latest/rss",
         "name": "Wired AI",
         "type": "ainews",
@@ -177,13 +170,6 @@
         "type": "ainews",
         "badge": "Research",
         "_keep": "New model releases (especially biomedical), open-source AI ecosystem, benchmarks/leaderboards"
-      },
-      {
-        "url": "https://importai.substack.com/feed",
-        "name": "Import AI",
-        "type": "ainews",
-        "badge": "Research",
-        "_keep": "Weekly expert curation of AI research (Jack Clark, ex-OpenAI) — highest editorial signal"
       }
     ]
   },
