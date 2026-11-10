@@ -86,14 +86,79 @@
         "badge": "Policy",
         "topic": "regulatory",
         "auto_approve": false
+      },
+      {
+        "url": "https://www.ema.europa.eu/en/agendas-and-minutes.xml",
+        "name": "EMA – agendas & minutes",
+        "type": "news",
+        "badge": "Regulatory",
+        "topic": "regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://health.ec.europa.eu/node/2/rss_en",
+        "name": "European Commission – Health",
+        "type": "news",
+        "badge": "Policy",
+        "topic": "regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "name": "European Commission – Digital Strategy",
+        "type": "news",
+        "badge": "AI Policy",
+        "topic": "regulatory",
+        "auto_approve": false
+      },
+      {
+        "url": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency.atom",
+        "name": "MHRA",
+        "type": "news",
+        "badge": "Regulatory",
+        "topic": "regulatory",
+        "auto_approve": false
+      },
+      {
+        "url": "https://www.politico.eu/section/health-care/feed/",
+        "name": "POLITICO Europe – Health Care",
+        "type": "news",
+        "badge": "Policy",
+        "topic": "regulatory",
+        "auto_approve": true
+      },
+      {
+        "url": "https://ascpt.onlinelibrary.wiley.com/feed/21638306/most-recent",
+        "name": "CPT: Pharmacometrics & Systems Pharmacology",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "drug-discovery",
+        "auto_approve": true
+      },
+      {
+        "url": "https://connect.medrxiv.org/medrxiv_xml.php?subject=Health_Informatics",
+        "name": "medRxiv – Health Informatics",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "clinical-ai",
+        "auto_approve": false
       }
     ]
   },
 
   "event_sources": {
-    "enabled": false,
-    "_comment": "All tested RSS event feeds return 404. Events are sourced via 4 dedicated NewsAPI queries instead (webinars, conferences, AI governance events, health data events). Re-enable with valid RSS URLs if available.",
-    "feeds": []
+    "enabled": true,
+    "_comment": "EMA events feed (validated 2026-11-10). Items are classified as webinar/seminar and filtered for pharma/data/AI relevance.",
+    "feeds": [
+      {
+        "url": "https://www.ema.europa.eu/en/events.xml",
+        "name": "EMA – events",
+        "type": "seminar",
+        "badge": "Event",
+        "topic": "regulatory",
+        "auto_approve": true
+      }
+    ]
   },
 
   "data_sources": {
