@@ -1,0 +1,88 @@
+name: Newsletter – publish
+
+# Runs when a newsletter draft reaches the default branch (i.e. when you merge
+# the draft PR). Publishes every pending draft: edition number, site pages,
+# archive, GitHub Pages deployment, and the final e-mail.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "newsletter/drafts/*.yaml"
+  workflow_dispatch:
+
+concurrency:
+  group: newsletter-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: newsletter/requirements.txt
+
+      - run: pip install -r newsletter/requirements.txt
+
+      - name: Publish pending drafts
+        id: pub
+        # Fails (on purpose) if a draft still contains TODO / EDIT ME markers.
+        run: python -m newsletter publish --pending
+
+      - name: Commit published edition
+        if: steps.pub.outputs.published != ''
+        run: |
+          git config user.name  "Newsletter Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git add -A newsletter/ portal/newsletter/
+          git commit -q -m "newsletter: publish ${{ steps.pub.outputs.published }}"
+          for i in 1 2 3; do
+            git pull -q --rebase origin master && git push -q origin HEAD:master && break
+            sleep $((i * 5))
+          done
+
+      - name: Deploy to GitHub Pages
+        if: steps.pub.outputs.published != ''
+        run: bash .github/scripts/sync-newsletter-pages.sh
+
+      - name: Wait for GitHub Pages to serve the edition
+        if: steps.pub.outputs.published != ''
+        env:
+          BASE: https://djindetoss.github.io/pharma-ai-data-watch
+        run: |
+          for d in ${{ steps.pub.outputs.published }}; do
+            for i in $(seq 1 20); do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "$BASE/newsletter/$d.html" || true)
+              [ "$code" = "200" ] && echo "$d is live" && break
+              sleep 15
+            done
+          done
+
+      - name: E-mail the final edition
+        if: steps.pub.outputs.published != ''
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NEWSLETTER_TO: ${{ secrets.NEWSLETTER_TO }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
+        run: |
+          if [ -z "$SMTP_HOST" ] || [ -z "$NEWSLETTER_TO" ]; then
+            echo "::notice::SMTP secrets not configured – final e-mail skipped."
+            exit 0
+          fi
+          for d in ${{ steps.pub.outputs.published }}; do
+            python -m newsletter.send_email --edition "$d"
+          done

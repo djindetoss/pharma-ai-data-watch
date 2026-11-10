@@ -1,0 +1,172 @@
+name: Newsletter – draft
+
+# Generates a draft of the IncreaseNET AI Community newsletter, opens a pull
+# request and e-mails a [DRAFT] preview. Merging the PR publishes the edition
+# (see newsletter-publish.yml).
+#
+# GitHub cron cannot express "every two weeks": the job runs every Monday and
+# `python -m newsletter due` skips it unless schedule.frequency_days (config.yaml)
+# have elapsed since the last edition.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"          # Monday 08:00 UTC, after ingestion (06:00) and briefing (07:30)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Generate even if an edition is not due yet"
+        type: boolean
+        default: false
+      days:
+        description: "Window length in days (empty = config value)"
+        required: false
+        default: ""
+  pull_request:
+    paths:
+      - "newsletter/drafts/*.yaml"
+
+concurrency:
+  group: newsletter-draft-${{ github.event_name == 'pull_request' && github.head_ref || 'scheduled' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # git history of articles.json is part of the input
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: newsletter/requirements.txt
+
+      - run: pip install -r newsletter/requirements.txt
+
+      - name: Is an edition due?
+        id: due
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          if gh pr list --state open --json headRefName -q '.[].headRefName' | grep -q '^newsletter/draft-'; then
+            echo "A newsletter draft PR is already open – skipping."
+            echo "due=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if [ "$FORCE" = "true" ] || python -m newsletter due; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate draft
+        if: steps.due.outputs.due == 'true'
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DAYS: ${{ inputs.days }}
+        run: python -m newsletter draft ${DAYS:+--days "$DAYS"}
+
+      - name: Push branch and open pull request
+        if: steps.due.outputs.due == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT: ${{ steps.gen.outputs.draft_path }}
+          DATE: ${{ steps.gen.outputs.edition_date }}
+        run: |
+          BR="newsletter/draft-$DATE"
+          git config user.name  "Newsletter Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git checkout -b "$BR"
+          git add newsletter/drafts/
+          git commit -q -m "newsletter: draft for $DATE"
+          git push -q -f origin "$BR"
+
+          {
+            echo "Draft of the **IncreaseNET AI Community – Newsletter** for the period ending $DATE."
+            echo
+            echo "**How to review**"
+            echo "1. Edit \`$DRAFT\` (remove / reorder items, rewrite summaries, editorial)."
+            echo "   Each push re-renders the HTML / text previews in this PR."
+            echo "2. Merge this PR to publish: the edition is numbered, added to the archive,"
+            echo "   deployed to GitHub Pages and e-mailed to you."
+            echo
+            echo "<details><summary>Selection statistics</summary>"
+            echo
+            echo '```json'
+            python -c "import yaml,json;print(json.dumps(yaml.safe_load(open('$DRAFT'))['stats'],indent=2))"
+            echo '```'
+            echo "</details>"
+          } > /tmp/pr-body.md
+
+          if URL=$(gh pr create --base "${{ github.event.repository.default_branch }}" --head "$BR" \
+                     --title "Newsletter draft – $DATE" --body-file /tmp/pr-body.md 2>/tmp/pr-err); then
+            echo "url=$URL" >> "$GITHUB_OUTPUT"
+            echo "Opened $URL"
+          else
+            cat /tmp/pr-err
+            URL="https://github.com/${{ github.repository }}/compare/${{ github.event.repository.default_branch }}...$BR?expand=1"
+            echo "url=$URL" >> "$GITHUB_OUTPUT"
+            echo "::warning::Could not open the PR automatically (enable Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests'). Open it here: $URL"
+          fi
+
+      - name: Make sure the logo is on GitHub Pages
+        if: steps.due.outputs.due == 'true'
+        run: |
+          git checkout -q "${{ github.event.repository.default_branch }}"
+          bash .github/scripts/sync-newsletter-pages.sh
+
+      - name: E-mail the [DRAFT] preview
+        if: steps.due.outputs.due == 'true'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NEWSLETTER_TO: ${{ secrets.NEWSLETTER_TO }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
+          DATE: ${{ steps.gen.outputs.edition_date }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          git checkout -q "newsletter/draft-$DATE"
+          if [ -z "$SMTP_HOST" ] || [ -z "$NEWSLETTER_TO" ]; then
+            echo "::notice::SMTP secrets not configured – draft e-mail skipped."
+            exit 0
+          fi
+          python -m newsletter.send_email --draft "newsletter/drafts/$DATE.yaml" --pr-url "$PR_URL"
+
+  rerender:
+    # When you edit the draft YAML in the PR, regenerate the HTML/text previews.
+    if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'newsletter/draft-') && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: newsletter/requirements.txt
+      - run: pip install -r newsletter/requirements.txt
+      - name: Re-render drafts
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          for f in newsletter/drafts/*.yaml; do python -m newsletter render "$f" --pr-url "$PR_URL"; done
+          git config user.name  "Newsletter Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git add newsletter/drafts/
+          if git diff --cached --quiet; then echo "Previews up to date."; exit 0; fi
+          git commit -q -m "newsletter: re-render draft previews"
+          git push -q origin "HEAD:${{ github.head_ref }}"
