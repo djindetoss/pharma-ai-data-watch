@@ -38,3 +38,10 @@ def test_distinct_items_are_kept():
     items = [make_item(id="1", url="https://a.org/1", title="FDA guidance on AI in drug development"),
              make_item(id="2", url="https://a.org/2", title="EHDS implementing act on data quality labels")]
     assert deduplicate(items)[1] == 0
+
+
+def test_classify_scholarly_urls_as_papers():
+    from newsletter.collect import classify
+    assert classify({"type": "news", "url": "https://journals.plos.org/plosone/article?id=10.1371/x"}) == "Scientific article"
+    assert classify({"type": "news", "badge": "Regulatory", "url": "https://www.ema.europa.eu/en/news/x"}) == "Regulatory"
+    assert classify({"type": "ainews", "url": "https://www.theverge.com/x"}) == "News"

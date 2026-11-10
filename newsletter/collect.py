@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import subprocess
 from datetime import date, timedelta
 from pathlib import Path
@@ -43,10 +44,19 @@ def _history_versions(rel_path: str, since: date) -> list[list[dict]]:
     return versions
 
 
+# Papers reaching the pipeline through NewsAPI/RSS are typed "news"/"ainews";
+# a scholarly URL is a more reliable signal.
+SCHOLARLY_URL = re.compile(
+    r"doi\.org/|journals\.plos\.org|nature\.com/articles|medrxiv\.org|biorxiv\.org|arxiv\.org/abs|"
+    r"frontiersin\.org|sciencedirect\.com|link\.springer\.com|onlinelibrary\.wiley\.com|bmj\.com|"
+    r"thelancet\.com|jamanetwork\.com|mdpi\.com|pubmed\.ncbi|ncbi\.nlm\.nih\.gov/pmc|academic\.oup\.com",
+    re.I)
+
+
 def classify(item: dict) -> str:
     """Map pipeline types to newsletter categories."""
     t = item.get("type")
-    if t == "paper":
+    if t == "paper" or SCHOLARLY_URL.search(item.get("url") or ""):
         return "Scientific article"
     # badges set by the curated regulatory/policy RSS feeds (NewsAPI items may
     # carry topic=regulatory but are generic press, so topic is not used)
