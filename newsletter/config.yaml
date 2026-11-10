@@ -36,7 +36,8 @@ selection:
   papers:  {min: 5, max: 8}
   news:    {min: 3, max: 5}
   shortlist_size: 30            # items sent to the LLM after the keyword pre-filter
-  min_prefilter_score: 4.0      # 0-10 scale; below this an item is never kept
+  shortlist_floor: 2.5          # 0-10; minimum pre-filter score to reach the LLM
+  min_prefilter_score: 4.0      # 0-10; final threshold when running WITHOUT the LLM
   min_llm_score: 6              # 0-10; used when ANTHROPIC_API_KEY is set
   runners_up: 6                 # kept in the draft YAML so you can promote them
   title_similarity: 0.88        # dedup: SequenceMatcher ratio on normalised titles
@@ -153,7 +154,8 @@ prefilter:
   exclusions: ["crypto", "bitcoin", "stock", "shares", "earnings", "quarterly results",
                "smartphone", "iPhone", "gaming", "video game", "Fortnite", "celebrity",
                "dating app", "deal of the day", "black friday", "review: ", "hands-on",
-               "lawsuit", "layoffs", "IPO", "funding round", "raises $", "valuation"]
+               "lawsuit", "layoffs", "IPO", "funding round", "raises $", "valuation",
+               "freelance", "hire a", "hiring", "Show HN", "job opening", "webinar recording"]
   # Exclusions applied to the SOURCE name (generic tech press is rarely NCA-relevant
   # but is only penalised, not dropped, so a strong regulatory story can still pass).
   source_penalty:
