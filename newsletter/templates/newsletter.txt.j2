@@ -10,12 +10,12 @@ Why it matters for NCAs: {{ it.why_it_matters | wordwrap(76) }}
 {% endif %}
 {%- endmacro -%}
 {% if mode == "draft" %}
-*** DRAFT - not yet published. {% if pr_url %}Review the pull request: {{ pr_url }}{% endif %} ***
+*** DRAFT - not yet validated. {% if pr_url %}Review the pull request: {{ pr_url }}{% endif %} ***
 
 {% endif %}
 {{ cfg.title | upper }}
 Edition #{{ e.edition_number }} | {{ period }}
-View this edition online: {{ u.online }}
+Formatted version: open the attached HTML file ({{ attachment }}).
 ==========================================================================
 
 {% if e.editorial %}

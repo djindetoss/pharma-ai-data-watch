@@ -1,8 +1,8 @@
-name: Newsletter – publish
+name: Newsletter – validate & send
 
 # Runs when a newsletter draft reaches the default branch (i.e. when you merge
-# the draft PR). Publishes every pending draft: edition number, site pages,
-# archive, GitHub Pages deployment, and the final e-mail.
+# the draft PR): numbers and stores the edition, then e-mails the final version.
+# Nothing is deployed to GitHub Pages: e-mail is the only distribution channel.
 
 on:
   push:
@@ -35,38 +35,21 @@ jobs:
 
       - run: pip install -r newsletter/requirements.txt
 
-      - name: Publish pending drafts
+      - name: Validate pending drafts
         id: pub
         # Fails (on purpose) if a draft still contains TODO / EDIT ME markers.
         run: python -m newsletter publish --pending
 
-      - name: Commit published edition
+      - name: Commit validated edition
         if: steps.pub.outputs.published != ''
         run: |
           git config user.name  "Newsletter Bot"
           git config user.email "bot@pharma-ai-data-watch.eu"
-          git add -A newsletter/ portal/newsletter/
-          git commit -q -m "newsletter: publish ${{ steps.pub.outputs.published }}"
+          git add -A newsletter/
+          git commit -q -m "newsletter: validate ${{ steps.pub.outputs.published }}"
           for i in 1 2 3; do
             git pull -q --rebase origin master && git push -q origin HEAD:master && break
             sleep $((i * 5))
-          done
-
-      - name: Deploy to GitHub Pages
-        if: steps.pub.outputs.published != ''
-        run: bash .github/scripts/sync-newsletter-pages.sh
-
-      - name: Wait for GitHub Pages to serve the edition
-        if: steps.pub.outputs.published != ''
-        env:
-          BASE: https://djindetoss.github.io/pharma-ai-data-watch
-        run: |
-          for d in ${{ steps.pub.outputs.published }}; do
-            for i in $(seq 1 20); do
-              code=$(curl -s -o /dev/null -w '%{http_code}' "$BASE/newsletter/$d.html" || true)
-              [ "$code" = "200" ] && echo "$d is live" && break
-              sleep 15
-            done
           done
 
       - name: E-mail the final edition

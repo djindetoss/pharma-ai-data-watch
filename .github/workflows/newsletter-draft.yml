@@ -1,8 +1,9 @@
 name: Newsletter – draft
 
 # Generates a draft of the IncreaseNET AI Community newsletter, opens a pull
-# request and e-mails a [DRAFT] preview. Merging the PR publishes the edition
-# (see newsletter-publish.yml).
+# request and e-mails a [DRAFT] preview. Merging the PR validates the edition and
+# e-mails the final version (see newsletter-publish.yml). The newsletter is never
+# published on GitHub Pages: e-mail is the only distribution channel.
 #
 # GitHub cron cannot express "every two weeks": the job runs every Monday and
 # `python -m newsletter due` skips it unless schedule.frequency_days (config.yaml)
@@ -97,8 +98,8 @@ jobs:
             echo "**How to review**"
             echo "1. Edit \`$DRAFT\` (remove / reorder items, rewrite summaries, editorial)."
             echo "   Each push re-renders the HTML / text previews in this PR."
-            echo "2. Merge this PR to publish: the edition is numbered, added to the archive,"
-            echo "   deployed to GitHub Pages and e-mailed to you."
+            echo "2. Merge this PR to validate: the edition is numbered and the final version"
+            echo "   is e-mailed to you (no web page is published)."
             echo
             echo "<details><summary>Selection statistics</summary>"
             echo
@@ -119,12 +120,6 @@ jobs:
             echo "::warning::Could not open the PR automatically (enable Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests'). Open it here: $URL"
           fi
 
-      - name: Make sure the logo is on GitHub Pages
-        if: steps.due.outputs.due == 'true'
-        run: |
-          git checkout -q "${{ github.event.repository.default_branch }}"
-          bash .github/scripts/sync-newsletter-pages.sh
-
       - name: E-mail the [DRAFT] preview
         if: steps.due.outputs.due == 'true'
         env:
@@ -137,7 +132,6 @@ jobs:
           DATE: ${{ steps.gen.outputs.edition_date }}
           PR_URL: ${{ steps.pr.outputs.url }}
         run: |
-          git checkout -q "newsletter/draft-$DATE"
           if [ -z "$SMTP_HOST" ] || [ -z "$NEWSLETTER_TO" ]; then
             echo "::notice::SMTP secrets not configured – draft e-mail skipped."
             exit 0

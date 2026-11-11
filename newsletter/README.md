@@ -2,23 +2,25 @@
 
 A short, curated bi-weekly newsletter for the IncreaseNET AI community
 (~45 colleagues from 18 European NCAs). It reuses what the daily pipeline
-already collects (`portal/js/articles.json`) and does **not** change that
-pipeline. Quality over quantity: an edition is kept short rather than padded
-with average items.
+already collects (`portal/js/articles.json`). Quality over quantity: an edition
+is kept short rather than padded with average items.
+
+**Distribution is by e-mail only.** The newsletter is never published as a web
+page (no GitHub Pages, no online archive): you receive it by e-mail and forward
+it to the task group from your own mailbox.
 
 ```
 articles.json (+ git history) ─► dedup ─► keyword pre-filter ─► LLM score (optional)
    ─► quotas & threshold ─► LLM summaries (optional) ─► drafts/DATE.yaml  ◄── you edit
-   ─► render (e-mail HTML, web HTML, text, Markdown) ─► PR ─► merge = publish ─► e-mail
+   ─► render (e-mail HTML, text, Markdown) ─► PR ─► merge = validate ─► e-mail to you ─► you forward
 ```
 
 | Path | What it is |
 |---|---|
 | `config.yaml` | everything editorial: window, frequency, quotas, thresholds, keywords, colours |
 | `drafts/DATE.yaml` | the editable draft (plus rendered `.email.html`, `.txt`, `.md` previews) |
-| `editions/DATE.yaml`, `editions.json` | published editions and their numbers |
-| `../portal/newsletter/` | site pages: `DATE.html` (web), `email/DATE.html`, `.txt`, `.md`, `index.html` (archive) |
-| `../portal/assets/increasenet-logo.png` | logo, served at `https://djindetoss.github.io/pharma-ai-data-watch/assets/increasenet-logo.png` |
+| `editions/DATE.yaml`, `editions.json` | validated editions and their numbers (used to re-send an edition) |
+| `assets/increasenet-logo.png` | logo; the e-mail loads it from its raw URL in this repository (`config.yaml → logo_url`) |
 | `send_email.py` | SMTP sender (standard library only) |
 | `extract_palette.py` | extracts the brand colours from the logo |
 
@@ -31,7 +33,7 @@ pip install -r newsletter/requirements-dev.txt
 
 All commands run from the repository root.
 
-## 1. Generate, edit and publish an edition
+## 1. Generate, edit, validate and send an edition
 
 ### Generate a draft
 
@@ -68,18 +70,18 @@ python -m newsletter render newsletter/drafts/DATE.yaml
 
 The command lists any remaining `TODO` / `EDIT ME` markers.
 
-### Publish
+### Validate
 
 In the normal flow you **merge the draft pull request** and GitHub Actions
-publishes it. By hand:
+validates it and e-mails you the final version. By hand:
 
 ```bash
 python -m newsletter publish newsletter/drafts/DATE.yaml   # refuses if TODO markers remain (--force to override)
 ```
 
-Publishing assigns the next edition number, writes the site pages and the
-archive (`portal/newsletter/index.html`), records the edition in
-`editions.json` and deletes the draft files.
+Validation assigns the next edition number, stores the edition in
+`editions/DATE.yaml` + `editions.json` and deletes the draft files. No web
+page is produced.
 
 ### Send
 
@@ -97,7 +99,7 @@ Open the `.eml` file with Mail/Outlook to check the result without sending anyth
 |---|---|---|
 | `newsletter-draft.yml` | every Monday 08:00 UTC (+ manual) | if an edition is due: draft → branch `newsletter/draft-DATE` → pull request → `[DRAFT]` e-mail with the PR link |
 | `newsletter-draft.yml` (rerender job) | you push an edit to the draft YAML in the PR | re-renders the previews in the PR |
-| `newsletter-publish.yml` | a draft reaches `master` (= you merged the PR) | publish → commit → deploy to GitHub Pages → final e-mail |
+| `newsletter-publish.yml` | a draft reaches `master` (= you merged the PR) | validate (number) → commit → final e-mail to you |
 
 **Run it now**: Actions → *Newsletter – draft* → *Run workflow* (tick *force*).
 
@@ -190,14 +192,16 @@ So that it survives being forwarded from a private mailbox to Outlook:
   no web fonts) **and** a readable plain-text version;
 - the HTML edition also **attached** as `IncreaseNET-AI-Newsletter-YYYY-MM-DD.html`
   (open it, copy it into a new Outlook message, or forward it as is);
-- a **"View this edition online"** link at the top (fallback if rendering breaks);
-- the logo referenced by its absolute GitHub Pages URL (no base64, no CID images);
+- a line at the top pointing to the attached HTML file if the display is broken
+  (there is deliberately no online version);
+- the logo referenced by an absolute URL (raw file in this repository), with no base64 or CID
+  images, which Outlook often blocks or drops when forwarding;
 - constant subject: `IncreaseNET AI Community – Newsletter #N (period)`, with `[DRAFT] ` for previews.
 
 **Forwarding from Outlook**: open the received e-mail and use *Forward*. If
 the layout breaks, open the attached HTML file in a browser, select all, copy,
-and paste it into a new Outlook message. Or attach the file and point to the
-online link.
+and paste it into a new Outlook message, or simply forward the e-mail with the
+attachment.
 
 ## 5. Tests
 

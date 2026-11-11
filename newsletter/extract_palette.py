@@ -2,7 +2,7 @@
 """Extract the dominant colours of the IncreaseNET logo.
 
 Usage:
-    python newsletter/extract_palette.py [portal/assets/increasenet-logo.png] [--colors 12]
+    python newsletter/extract_palette.py [newsletter/assets/increasenet-logo.png] [--colors 12]
 
 Prints each cluster colour with its pixel share and its WCAG contrast ratio
 against white, so you can decide which colours may be used as text (≥ 4.5:1)
@@ -18,7 +18,7 @@ from pathlib import Path
 
 from PIL import Image
 
-DEFAULT_LOGO = Path(__file__).resolve().parent.parent / "portal" / "assets" / "increasenet-logo.png"
+DEFAULT_LOGO = Path(__file__).resolve().parent / "assets" / "increasenet-logo.png"
 
 
 def relative_luminance(rgb: tuple[int, int, int]) -> float:

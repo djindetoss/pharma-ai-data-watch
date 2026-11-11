@@ -1,8 +1,7 @@
 {#-
-  IncreaseNET AI Community newsletter – one template, three modes:
+  IncreaseNET AI Community newsletter – distributed by e-mail only (no web page).
     email : final e-mail (table layout, inline CSS, 600 px, no JS, no web fonts)
     draft : same as email + DRAFT banner linking to the pull request
-    web   : same body, served on GitHub Pages (adds archive link + meta tags)
   All colours come from config.yaml → colors. Light accents are decoration only.
 -#}
 {%- set FONT = "Arial, Helvetica, sans-serif" -%}
@@ -53,10 +52,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="x-apple-disable-message-reformatting">
 <title>{{ subject }}</title>
-{% if mode == "web" %}
-<meta name="description" content="IncreaseNET AI Community newsletter, edition #{{ e.edition_number }} – {{ period }}.">
-<link rel="canonical" href="{{ u.online }}">
-{% endif %}
 <!--[if mso]><style>table,td{font-family:Arial,Helvetica,sans-serif !important;}</style><![endif]-->
 <style>
   body{margin:0;padding:0;}
@@ -77,18 +72,14 @@
     {% if mode == "draft" %}
     <tr>
       <td style="padding:10px 16px;background-color:#FFF4CE;border:1px solid #8A6D00;font-family:{{ FONT }};font-size:13px;line-height:19px;color:#3D3000;text-align:center;">
-        <strong>DRAFT – not yet published.</strong>
-        {% if pr_url %}Review and edit it in the <a href="{{ pr_url }}" target="_blank" style="color:#3D3000;text-decoration:underline;">pull request</a>; merge to publish.{% else %}Edit the YAML draft, then publish.{% endif %}
+        <strong>DRAFT – not yet validated.</strong>
+        {% if pr_url %}Review and edit it in the <a href="{{ pr_url }}" target="_blank" style="color:#3D3000;text-decoration:underline;">pull request</a>; merge it to receive the final e-mail.{% else %}Edit the YAML draft, then validate it.{% endif %}
       </td>
     </tr>
     {% endif %}
     <tr>
       <td align="center" style="padding:8px 0 10px 0;font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">
-        {% if mode == "web" %}
-        <a href="{{ u.archive }}" style="color:{{ c.primary }};text-decoration:underline;">All editions</a>
-        {% else %}
-        Display problems? <a href="{{ u.online }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;font-weight:bold;">View this edition online</a>
-        {% endif %}
+        Display problems? Open the attached HTML file (<strong>{{ attachment }}</strong>) in your browser.
       </td>
     </tr>
   </table>

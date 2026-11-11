@@ -2,10 +2,12 @@
 
   python -m newsletter draft   [--end YYYY-MM-DD] [--days 14] [--no-llm]
   python -m newsletter render  newsletter/drafts/YYYY-MM-DD.yaml [--pr-url URL]
-  python -m newsletter publish newsletter/drafts/YYYY-MM-DD.yaml [--force]
+  python -m newsletter publish newsletter/drafts/YYYY-MM-DD.yaml [--force]   # validate + number
   python -m newsletter publish --pending          # every draft in newsletter/drafts/
   python -m newsletter due                        # exit 0 if an edition is due, 1 otherwise
-  python -m newsletter archive                    # rebuild portal/newsletter/index.html
+
+Nothing is published on the web: editions are distributed by e-mail only
+(python -m newsletter.send_email).
 """
 from __future__ import annotations
 
@@ -19,7 +21,7 @@ from pathlib import Path
 
 from . import load_config
 from .draft import build_draft, save_draft
-from .publish import load_index, pending_drafts, publish, write_archive
+from .publish import load_index, pending_drafts, publish
 from .render import find_todos, load_edition, relpath, render_draft_outputs
 
 
@@ -64,7 +66,7 @@ def cmd_publish(args, cfg) -> int:
         _gh_output(published="")
         return 0
     done = [publish(p, cfg, force=args.force)["edition_date"] for p in paths]
-    print("Published: " + ", ".join(done))
+    print("Validated: " + ", ".join(done))
     _gh_output(published=" ".join(done))
     return 0
 
@@ -97,19 +99,15 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("render", help="re-render a draft after editing")
     p.add_argument("path")
     p.add_argument("--pr-url")
-    p = sub.add_parser("publish", help="publish a reviewed draft")
+    p = sub.add_parser("publish", help="validate a reviewed draft (number it, store it; no web page)")
     p.add_argument("path", nargs="?")
     p.add_argument("--pending", action="store_true")
     p.add_argument("--force", action="store_true", help="publish even if TODO markers remain")
     sub.add_parser("due", help="is a new edition due?")
-    sub.add_parser("archive", help="rebuild the archive page")
     args = ap.parse_args(argv)
     cfg = load_config()
     if args.cmd == "publish" and not (args.pending or args.path):
         ap.error("publish needs a draft path or --pending")
-    if args.cmd == "archive":
-        print(relpath(write_archive(cfg)))
-        return 0
     return {"draft": cmd_draft, "render": cmd_render, "publish": cmd_publish, "due": cmd_due}[args.cmd](args, cfg)
 
 

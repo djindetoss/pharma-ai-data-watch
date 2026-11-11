@@ -12,7 +12,6 @@ REPO_ROOT = PKG_DIR.parent
 DRAFTS_DIR = PKG_DIR / "drafts"
 EDITIONS_DIR = PKG_DIR / "editions"
 EDITIONS_INDEX = PKG_DIR / "editions.json"
-SITE_DIR = REPO_ROOT / "portal" / "newsletter"
 
 
 def load_config(path: Path | None = None) -> dict:

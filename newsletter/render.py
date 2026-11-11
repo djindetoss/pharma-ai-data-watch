@@ -1,4 +1,4 @@
-"""Render a draft/edition YAML into e-mail HTML, web HTML, plain text and Markdown."""
+"""Render a draft/edition YAML into e-mail HTML, plain text and Markdown (e-mail only, no web page)."""
 from __future__ import annotations
 
 import re
@@ -40,6 +40,10 @@ def subject(edition: dict, cfg: dict, draft: bool = False) -> str:
     return f"[DRAFT] {s}" if draft else s
 
 
+def attachment_name(edition: dict) -> str:
+    return f"IncreaseNET-AI-Newsletter-{edition['edition_date']}.html"
+
+
 def find_todos(edition: dict) -> list[str]:
     """Return human-readable locations of remaining TODO / EDIT ME markers."""
     issues = []
@@ -54,13 +58,7 @@ def find_todos(edition: dict) -> list[str]:
 
 
 def urls(cfg: dict, edition: dict) -> dict:
-    base = cfg["site_base_url"].rstrip("/")
-    return {
-        "logo": f"{base}/{cfg['logo_path']}",
-        "online": f"{base}/newsletter/{edition['edition_date']}.html",
-        "archive": f"{base}/{cfg['archive_path']}",
-        "site": base,
-    }
+    return {"logo": cfg["logo_url"]}
 
 
 def _env() -> Environment:
@@ -77,11 +75,12 @@ def context(edition: dict, cfg: dict, mode: str, pr_url: str | None = None, logo
         u["logo"] = logo_url
     return {"e": edition, "cfg": cfg, "c": cfg["colors"], "u": u, "mode": mode,
             "pr_url": pr_url, "period": period_label(edition["period"]),
+            "attachment": attachment_name(edition),
             "subject": subject(edition, cfg, draft=(mode == "draft"))}
 
 
 def render_html(edition: dict, cfg: dict, mode: str = "email", **kw) -> str:
-    """mode: 'email' (final e-mail), 'draft' (e-mail with DRAFT banner), 'web' (site page)."""
+    """mode: 'email' (final e-mail) or 'draft' (e-mail with DRAFT banner)."""
     tpl = "email.html.j2"
     return _env().get_template(tpl).render(**context(edition, cfg, mode, **kw))
 
@@ -95,23 +94,14 @@ def render_text(edition: dict, cfg: dict, mode: str = "email", **kw) -> str:
 def render_markdown(edition: dict, cfg: dict) -> str:
     env = _env()
     env.autoescape = False
-    return env.get_template("newsletter.md.j2").render(**context(edition, cfg, "web"))
-
-
-def render_archive(editions: list[dict], cfg: dict) -> str:
-    base = cfg["site_base_url"].rstrip("/")
-    rows = sorted(editions, key=lambda x: x["date"], reverse=True)
-    for r in rows:
-        r["period_label"] = period_label(r["period"])
-    return _env().get_template("archive.html.j2").render(
-        editions=rows, cfg=cfg, c=cfg["colors"], u={"logo": f"{base}/{cfg['logo_path']}", "site": base})
+    return env.get_template("newsletter.md.j2").render(**context(edition, cfg, "email"))
 
 
 def render_draft_outputs(yaml_path: Path, cfg: dict, pr_url: str | None = None) -> dict[str, Path]:
     """Render a draft next to its YAML: .email.html, .preview.html (local logo), .txt, .md."""
     edition = load_edition(yaml_path)
     stem = yaml_path.with_suffix("")
-    local_logo = Path("..", "..", "portal", cfg["logo_path"]).as_posix()  # from newsletter/drafts/
+    local_logo = "../assets/increasenet-logo.png"  # relative to newsletter/drafts/
     out = {
         "email": stem.with_suffix(".email.html"),
         "preview": stem.with_suffix(".preview.html"),

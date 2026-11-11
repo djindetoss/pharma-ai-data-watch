@@ -6,9 +6,11 @@ Outlook:
   multipart/mixed
   ├── multipart/alternative
   │   ├── text/plain   (readable plain-text version)
-  │   └── text/html    (600 px table layout, inline CSS, "View online" link)
+  │   └── text/html    (600 px table layout, inline CSS)
   └── IncreaseNET-AI-Newsletter-YYYY-MM-DD.html   (attachment)
-Images are referenced by absolute GitHub Pages URLs only (no base64, no CID).
+The newsletter is NOT published on the web: the e-mail (and its attachment) is
+the only distribution channel. The logo is referenced by an absolute URL (raw
+file in the repository) – no base64, no CID image, which Outlook drops on forward.
 
 All settings come from environment variables – nothing is stored in the repo:
   SMTP_HOST, SMTP_PORT (465 = implicit TLS, otherwise STARTTLS),
@@ -36,13 +38,9 @@ if __package__ in (None, ""):          # allow `python newsletter/send_email.py`
     __package__ = "newsletter"
 
 from newsletter import EDITIONS_DIR, PKG_DIR, load_config  # noqa: E402
-from newsletter.render import load_edition, render_html, render_text, subject  # noqa: E402
+from newsletter.render import attachment_name, load_edition, render_html, render_text, subject  # noqa: E402
 
 REQUIRED = ("SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASSWORD", "NEWSLETTER_TO", "NEWSLETTER_FROM")
-
-
-def attachment_name(edition: dict) -> str:
-    return f"IncreaseNET-AI-Newsletter-{edition['edition_date']}.html"
 
 
 def build_message(edition: dict, cfg: dict, *, draft: bool, pr_url: str | None,
@@ -83,7 +81,7 @@ def send(msg: EmailMessage, env: dict) -> None:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     src = ap.add_mutually_exclusive_group(required=True)
-    src.add_argument("--edition", help="date of a published edition (newsletter/editions/DATE.yaml)")
+    src.add_argument("--edition", help="date of a validated edition (newsletter/editions/DATE.yaml)")
     src.add_argument("--draft", type=Path, help="path to a draft YAML (sent with a [DRAFT] prefix)")
     ap.add_argument("--pr-url", help="pull request URL shown in the draft banner")
     ap.add_argument("--dry-run", action="store_true", help="write a .eml file instead of sending")

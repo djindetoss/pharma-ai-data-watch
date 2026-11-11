@@ -8,9 +8,10 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 title: "IncreaseNET AI Community – Newsletter"
-site_base_url: "https://djindetoss.github.io/pharma-ai-data-watch"
-logo_path: "assets/increasenet-logo.png"      # relative to site_base_url
-archive_path: "newsletter/"                     # relative to site_base_url
+# The newsletter is distributed by e-mail only (no web page). The logo is the only
+# hosted file: served as a raw image from this repository (absolute URL, so it
+# survives forwarding to Outlook; no embedded/CID image).
+logo_url: "https://raw.githubusercontent.com/djindetoss/pharma-ai-data-watch/master/newsletter/assets/increasenet-logo.png"
 
 # ── Source data ──────────────────────────────────────────────────────────────
 source:
