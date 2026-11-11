@@ -13,6 +13,7 @@ import re
 import subprocess
 from datetime import date, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from . import REPO_ROOT
 
@@ -65,6 +66,11 @@ def classify(item: dict) -> str:
     return "News"
 
 
+def _host_excluded(url: str, domains: list[str]) -> bool:
+    host = (urlsplit(url).hostname or "").lower()
+    return any(host == d or host.endswith("." + d) for d in domains)
+
+
 def collect(cfg: dict, end: date, window_days: int | None = None) -> tuple[list[dict], dict]:
     """Return (items in window, stats)."""
     window_days = window_days or cfg["schedule"]["window_days"]
@@ -88,12 +94,16 @@ def collect(cfg: dict, end: date, window_days: int | None = None) -> tuple[list[
                 by_id.setdefault(it["id"], it)
 
     excluded_types = set(cfg["source"].get("exclude_types", []))
-    items = []
+    excluded_domains = [d.lower().lstrip(".") for d in cfg["source"].get("exclude_domains", [])]
+    items, n_domain = [], 0
     for it in by_id.values():
         d = it.get("date", "")
         if not (start.isoformat() < d <= end.isoformat()):
             continue
         if it.get("type") in excluded_types:
+            continue
+        if _host_excluded(it.get("url", ""), excluded_domains):
+            n_domain += 1
             continue
         it = dict(it)
         it["category"] = classify(it)
@@ -104,6 +114,7 @@ def collect(cfg: dict, end: date, window_days: int | None = None) -> tuple[list[
         "period_end": end.isoformat(),
         "versions_read": len(versions),
         "unique_items_seen": len(by_id),
+        "excluded_by_domain": n_domain,
         "collected": len(items),
     }
     log.info("Collected %d items in window %s → %s (%d file versions)",

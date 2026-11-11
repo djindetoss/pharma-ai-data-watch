@@ -18,6 +18,10 @@ source:
   articles_json: "portal/js/articles.json"     # produced by the daily pipeline
   use_git_history: true                         # union with older versions of the file
   exclude_types: ["seminar"]                    # events are not newsletter content
+  # Items published on these sites are left out: the readers (NCA staff) already
+  # follow EMA communications closely. Matches the host and its sub-domains.
+  # Third-party coverage of EMA topics is still eligible.
+  exclude_domains: ["ema.europa.eu"]
 
 # ── Schedule ─────────────────────────────────────────────────────────────────
 schedule:
@@ -203,7 +207,6 @@ prefilter:
                  "model drift", "IDMP", "SPOR", "registry", "registries"]
   # Bonus for authoritative sources (substring match on the source name).
   source_bonus:
-    "EMA": 2
     "FDA": 2
     "European Commission": 1.5
     "MHRA": 1.5
