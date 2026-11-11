@@ -9,7 +9,7 @@
 {{ it.comment.strip() | wordwrap(76) }}
 {% endif %}
 
-Why it matters for NCAs: {{ it.why_it_matters | wordwrap(76) }}
+{{ ("Why it matters for NCAs: " ~ it.why_it_matters) | wordwrap(76) }}
 {% if it.tags %}Tags: {{ it.tags | join(", ") }}
 {% endif %}
 {%- endmacro -%}
