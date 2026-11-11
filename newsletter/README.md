@@ -62,6 +62,26 @@ key, the selection uses the keyword score and the summaries are left as
 Preview locally: open `newsletter/drafts/DATE.preview.html` in a browser
 (same as the e-mail, but with the logo loaded from the repository).
 
+### Links
+
+Every link in the draft is opened when the draft is generated, and again each
+time you push an edit to the draft PR (`python -m newsletter check-links DRAFT`):
+
+- tracking and feed parameters are removed (`utm_*`, `?rss=1`, `?af=R`…), and
+  redirects (doi.org, http→https, feed proxies) are replaced by the final
+  address, so each link opens the page in one click;
+- sites that refuse robots but work in a browser (some publishers answer 403)
+  are kept as they are;
+- a dead link (404, 410, DNS error, timeout) removes the In-brief line, and marks
+  a featured item `link_check: BROKEN`; validation is refused until you fix the
+  URL or delete the item.
+
+Gmail ("google.com/url?q=…") and Outlook ("safelinks.protection.outlook.com")
+wrap every link in their own security redirect when the recipient clicks. This
+happens in the recipient's mailbox and cannot be turned off by the sender; the
+address in the e-mail itself is the direct one (hover or right-click → copy link
+to see it).
+
 ### Edit the draft
 
 Open `newsletter/drafts/DATE.yaml`:

@@ -13,7 +13,7 @@ from pathlib import Path
 
 import yaml
 
-from . import DRAFTS_DIR, EDITIONS_INDEX, llm
+from . import DRAFTS_DIR, EDITIONS_INDEX, links, llm
 from .brief import PAPERS_SECTION, group, select_briefs
 from .collect import collect
 from .dedup import deduplicate
@@ -28,6 +28,7 @@ WHY_PLACEHOLDER = "TODO: explain the concrete interest for an NCA."
 
 ITEM_FIELDS = ("id", "title", "url", "source", "date", "type", "tags", "summary",
                "comment", "why_it_matters", "score", "score_reason", "below_threshold")
+# (verify_edition may add "link_check" to an item whose link is broken)
 
 
 def next_edition_number() -> int:
@@ -126,7 +127,8 @@ def digest(highlight: dict | None, papers: list[dict], news: list[dict], briefs:
     return "\n".join(lines)
 
 
-def build_draft(cfg: dict, end: date, window_days: int | None = None, no_llm: bool = False) -> tuple[dict, dict]:
+def build_draft(cfg: dict, end: date, window_days: int | None = None, no_llm: bool = False,
+                check_links: bool = True) -> tuple[dict, dict]:
     items, stats = collect(cfg, end, window_days)
     items, n_dupes = deduplicate(items, cfg["selection"]["title_similarity"])
     stats["duplicates_removed"] = n_dupes
@@ -215,6 +217,8 @@ def build_draft(cfg: dict, end: date, window_days: int | None = None, no_llm: bo
         "runners_up": [_to_draft_item(it, use_llm) for it in runners],
         "stats": stats,
     }
+    if check_links:
+        stats["links"] = links.verify_edition(draft)
     return draft, stats
 
 
@@ -230,6 +234,8 @@ DRAFT_HEADER = """\
 #  - edit editorial / summary / comment / why_it_matters / tags as you like
 #  - in_brief: one line per item ("note"); delete, edit or move lines freely
 #  - items with "below_threshold: true" were added to reach the minimum: check them
+#  - every link was opened and replaced by its final address; "link_check: BROKEN"
+#    marks a dead link (validation is refused until it is fixed or the item removed)
 #  - "runners_up" and "stats" are never rendered
 #  - lines still containing "TODO" or "EDIT ME" are flagged when rendering
 # ─────────────────────────────────────────────────────────────────────────────

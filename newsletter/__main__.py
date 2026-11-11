@@ -4,6 +4,7 @@
   python -m newsletter render  newsletter/drafts/YYYY-MM-DD.yaml [--pr-url URL]
   python -m newsletter publish newsletter/drafts/YYYY-MM-DD.yaml [--force]   # validate + number
   python -m newsletter publish --pending          # every draft in newsletter/drafts/
+  python -m newsletter check-links newsletter/drafts/YYYY-MM-DD.yaml   # re-verify links, re-render
   python -m newsletter due                        # exit 0 if an edition is due, 1 otherwise
 
 Nothing is published on the web: editions are distributed by e-mail only
@@ -19,8 +20,10 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import load_config
-from .draft import build_draft, save_draft
+import yaml
+
+from . import links, load_config
+from .draft import DRAFT_HEADER, build_draft, save_draft
 from .publish import load_index, pending_drafts, publish
 from .render import find_todos, load_edition, relpath, render_draft_outputs
 
@@ -36,7 +39,7 @@ def _gh_output(**kv) -> None:
 
 def cmd_draft(args, cfg) -> int:
     end = date.fromisoformat(args.end) if args.end else date.today()
-    draft, stats = build_draft(cfg, end, args.days, no_llm=args.no_llm)
+    draft, stats = build_draft(cfg, end, args.days, no_llm=args.no_llm, check_links=not args.no_links)
     path = save_draft(draft)
     outputs = render_draft_outputs(path, cfg)
     print("\n" + "─" * 64)
@@ -56,6 +59,22 @@ def cmd_render(args, cfg) -> int:
     todos = find_todos(load_edition(Path(args.path)))
     if todos:
         print("\n⚠ Still to edit:\n  - " + "\n  - ".join(todos))
+    return 0
+
+
+def cmd_check_links(args, cfg) -> int:
+    path = Path(args.path)
+    edition = load_edition(path)
+    summary = links.verify_edition(edition)
+    edition.setdefault("stats", {})["links"] = summary
+    body = yaml.safe_dump(edition, sort_keys=False, allow_unicode=True, width=100)
+    path.write_text(DRAFT_HEADER.format(path=relpath(path)) + body, encoding="utf-8")
+    render_draft_outputs(path, cfg, pr_url=args.pr_url)
+    print(json.dumps(summary, indent=2))
+    broken = [it["title"] for it in ([edition.get("highlight")] if edition.get("highlight") else [])
+              + edition["scientific_articles"] + edition["news"] if it.get("link_check")]
+    for t in broken:
+        print(f"⚠ broken link: {t[:80]}")
     return 0
 
 
@@ -96,6 +115,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--end", help="last day of the period (default today)")
     p.add_argument("--days", type=int, help="window length (default config schedule.window_days)")
     p.add_argument("--no-llm", action="store_true", help="keyword pre-filter only")
+    p.add_argument("--no-links", action="store_true", help="skip link verification (offline)")
     p = sub.add_parser("render", help="re-render a draft after editing")
     p.add_argument("path")
     p.add_argument("--pr-url")
@@ -103,12 +123,16 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("path", nargs="?")
     p.add_argument("--pending", action="store_true")
     p.add_argument("--force", action="store_true", help="publish even if TODO markers remain")
+    p = sub.add_parser("check-links", help="re-verify every link of a draft and re-render it")
+    p.add_argument("path")
+    p.add_argument("--pr-url")
     sub.add_parser("due", help="is a new edition due?")
     args = ap.parse_args(argv)
     cfg = load_config()
     if args.cmd == "publish" and not (args.pending or args.path):
         ap.error("publish needs a draft path or --pending")
-    return {"draft": cmd_draft, "render": cmd_render, "publish": cmd_publish, "due": cmd_due}[args.cmd](args, cfg)
+    return {"draft": cmd_draft, "render": cmd_render, "publish": cmd_publish, "due": cmd_due,
+            "check-links": cmd_check_links}[args.cmd](args, cfg)
 
 
 if __name__ == "__main__":

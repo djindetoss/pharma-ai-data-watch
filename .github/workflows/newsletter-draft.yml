@@ -153,11 +153,13 @@ jobs:
           cache: pip
           cache-dependency-path: newsletter/requirements.txt
       - run: pip install -r newsletter/requirements.txt
-      - name: Re-render drafts
+      - name: Re-verify links and re-render drafts
+        # Links you add or change while editing are opened and replaced by their
+        # final address; dead ones are flagged (validation then refuses the draft).
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          for f in newsletter/drafts/*.yaml; do python -m newsletter render "$f" --pr-url "$PR_URL"; done
+          for f in newsletter/drafts/*.yaml; do python -m newsletter check-links "$f" --pr-url "$PR_URL"; done
           git config user.name  "Newsletter Bot"
           git config user.email "bot@pharma-ai-data-watch.eu"
           git add newsletter/drafts/

@@ -51,6 +51,8 @@ def find_todos(edition: dict) -> list[str]:
         issues.append("editorial")
     items = ([edition["highlight"]] if edition.get("highlight") else []) + edition["scientific_articles"] + edition["news"]
     for it in items:
+        if it.get("link_check"):
+            issues.append(f"broken link of '{it['title'][:60]}'")
         for field in ("summary", "comment", "why_it_matters"):
             if TODO_RE.search(str(it.get(field) or "")):
                 issues.append(f"{field} of '{it['title'][:60]}'")
