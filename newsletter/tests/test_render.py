@@ -62,7 +62,7 @@ def test_text_and_markdown(edition, cfg):
     txt = render_text(edition, cfg)
     assert "let's see if it holds up" in txt and "let's see if it holds up" in render_markdown(edition, cfg)
     assert "HIGHLIGHT OF THE PERIOD" in txt and "attached HTML file" in txt and "github.io" not in txt
-    assert "<" not in txt.replace("<in>", "")
+    assert "<" not in txt.replace("<in>", "").replace("<again>", "")
     md = render_markdown(edition, cfg)
     assert md.startswith("![IncreaseNET](https://") and "## Scientific articles" in md
 
@@ -86,3 +86,17 @@ def test_item_without_comment_renders(edition, cfg):
     html = render_html(edition, cfg, "email")
     assert html.count("let&#39;s see if it holds up") == 2  # highlight + paper only
 
+
+
+def test_featured_items_are_numbered_and_in_brief_rendered(edition, cfg):
+    html = render_html(edition, cfg, "email")
+    assert "#1</span>" in html and "#2</span>" in html and "#3</span>" in html
+    assert "In brief" in html and "A chatbot leaked data &lt;again&gt;." in html and "https://example.org/b1" in html
+    txt = render_text(edition, cfg)
+    assert "#3 [Regulatory] FDA pilots AI review assistant" in txt and "IN BRIEF" in txt and "(Heise)" in txt
+    assert "## In brief" in render_markdown(edition, cfg)
+
+
+def test_edition_without_in_brief_still_renders(edition, cfg):
+    del edition["in_brief"]
+    assert "In brief" not in render_html(edition, cfg, "email")

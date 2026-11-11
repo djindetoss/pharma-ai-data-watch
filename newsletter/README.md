@@ -1,9 +1,17 @@
 # IncreaseNET AI Community – Newsletter
 
-A short, curated bi-weekly newsletter for the IncreaseNET AI community
-(~45 colleagues from 18 European NCAs). It reuses what the daily pipeline
-already collects (`portal/js/articles.json`). Quality over quantity: an edition
-is kept short rather than padded with average items.
+A bi-weekly newsletter for the IncreaseNET AI community (~45 colleagues from
+18 European NCAs). It reuses what the daily pipeline already collects
+(`portal/js/articles.json`). Each edition has:
+
+1. **an introduction**: the main threads of the period, the highlight and what not
+   to miss (written by the LLM; a plain automatic version without an API key);
+2. **featured items, numbered #1, #2…**: a highlight, scientific articles and
+   news & regulatory updates, strictly on AI and data for medicines, each with
+   a summary, a short personal comment and a *Why it matters for NCAs* line;
+3. **In brief**: up to 40 one-line notes grouped by theme (more scientific
+   articles, medicines & health, regulation & law, research & methods, safety
+   & privacy, tools), deliberately broader than the featured scope.
 
 **Distribution is by e-mail only.** The newsletter is never published as a web
 page (no GitHub Pages, no online archive): you receive it by e-mail and forward
@@ -11,7 +19,8 @@ it to the task group from your own mailbox.
 
 ```
 articles.json (+ git history) ─► dedup ─► keyword pre-filter ─► LLM score (optional)
-   ─► quotas & threshold ─► LLM summaries (optional) ─► drafts/DATE.yaml  ◄── you edit
+   ─► quotas & threshold (top-up to the minimum) ─► LLM summaries + comments (optional)
+   ─► In-brief notes ─► introduction ─► drafts/DATE.yaml  ◄── you edit
    ─► render (e-mail HTML, text, Markdown) ─► PR ─► merge = validate ─► e-mail to you ─► you forward
 ```
 
@@ -61,7 +70,10 @@ Open `newsletter/drafts/DATE.yaml`:
 - **reorder**: move blocks (the order in the file is the order in the newsletter);
 - **promote** a runner-up: move its block from `runners_up` into `scientific_articles` or `news`;
 - **highlight**: replace the block, or set `highlight: null`;
-- edit `editorial`, `summary`, `comment`, `why_it_matters`, `tags` freely.
+- edit `editorial`, `summary`, `comment`, `why_it_matters`, `tags` freely;
+- `in_brief`: one `note` per line, grouped by `section`; delete, edit or move lines;
+- items marked `below_threshold: true` were added to reach the minimum quota
+  (`selection.fill_to_min`): keep or delete them.
 
 The `comment` is the editor's voice: one to three sentences, first person,
 conversational, adding what the summary does not say (what is surprising, a
@@ -123,7 +135,11 @@ All in `config.yaml`:
 |---|---|
 | `schedule.window_days` | period covered (default 14) |
 | `schedule.frequency_days` | the Monday cron only creates a draft if the last edition is at least this old (default 14). To change the weekday/hour, edit the `cron` line in `.github/workflows/newsletter-draft.yml` |
-| `selection.papers` / `selection.news` | `min` (target, a warning only) and `max` per section |
+| `selection.papers` / `selection.news` | `min` and `max` featured items per section |
+| `selection.fill_to_min`, `fill_floor` | top a thin period up to `min` with the best items below the threshold (never below `fill_floor`) |
+| `in_brief.sections` | In-brief sections and the keywords that route an item to each |
+| `in_brief.max_total`, `max_per_section`, `max_papers` | length of the In-brief part |
+| `source.exclude_domains` | sites left out entirely (default: `ema.europa.eu`, already followed by readers) |
 | `selection.min_llm_score` | final threshold (0–10) with the LLM |
 | `selection.min_prefilter_score` | final threshold (0–10) without the LLM |
 | `selection.shortlist_floor`, `shortlist_size` | what reaches the LLM |

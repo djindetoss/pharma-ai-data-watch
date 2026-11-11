@@ -30,14 +30,58 @@ schedule:
 
 # ── Selection ────────────────────────────────────────────────────────────────
 selection:
-  papers:  {min: 5, max: 8}
-  news:    {min: 3, max: 5}
-  shortlist_size: 30            # items sent to the LLM after the keyword pre-filter
+  # Featured items (summary + comment), strictly within the medicines scope.
+  papers:  {min: 4, max: 7}
+  news:    {min: 4, max: 6}
+  # When a period is thin, top up to `min` with the best shortlisted items below
+  # the threshold; they are marked `below_threshold: true` in the draft.
+  fill_to_min: true
+  fill_floor: 4.5               # 0-10; never top up with items scoring below this
+  shortlist_size: 40            # items sent to the LLM after the keyword pre-filter
   shortlist_floor: 2.5          # 0-10; minimum pre-filter score to reach the LLM
   min_prefilter_score: 5.5      # 0-10; final threshold when running WITHOUT the LLM
   min_llm_score: 6              # 0-10; used when ANTHROPIC_API_KEY is set
   runners_up: 6                 # kept in the draft YAML so you can promote them
   title_similarity: 0.88        # dedup: SequenceMatcher ratio on normalised titles
+
+# ── In brief ─────────────────────────────────────────────────────────────────
+# One-line notes grouped by theme, after the featured items. Broader than the
+# featured scope: AI news useful to medicines regulators. An item goes to the
+# section whose keywords it matches most (papers go to "More scientific
+# articles"); items matching none are left out.
+in_brief:
+  max_total: 40
+  max_per_section: 8
+  max_papers: 12                # "More scientific articles" may be longer
+  candidates: 70                # sent to the LLM, which may drop or move items
+  min_score: 2
+  extra_exclusions: ["price", "deal", "sale", "review", "rumour", "rumor", "acquires",
+                     "acquisition", "raise", "raises", "invest", "travel agent", "The Download:"]
+  sections:
+    "Medicines & health":
+      ["health", "healthcare", "patient", "patients", "clinical", "clinician", "hospital",
+       "medical", "disease", "diagnosis", "therapy", "therapeutic", "drug", "drugs",
+       "medicines", "pharma", "pharmaceutical", "vaccine", "cancer", "oncology",
+       "genomic", "genomics", "protein", "biomarker", "pharmacovigilance", "toxicity",
+       "toxicology", "biotech", "biology", "molecule", "molecular"]
+    "Regulation, policy & legal":
+      ["regulation", "regulator", "regulators", "regulatory", "law", "legislation",
+       "AI Act", "policy", "guidance", "guideline", "court", "copyright", "standard",
+       "standards", "oversight", "government", "European Commission", "Parliament",
+       "ban", "compliance", "governance", "framework", "agency", "authority"]
+    "Research & methods":
+      ["study", "research", "researchers", "scientists", "benchmark", "evaluation",
+       "reproducibility", "reproducible", "peer review", "scientific", "science",
+       "journal", "preprint", "hallucination", "hallucinations", "accuracy",
+       "validation", "explainability", "interpretability", "bias"]
+    "Safety, security & privacy":
+      ["security", "cybersecurity", "cyberattack", "cyber", "privacy", "data protection",
+       "GDPR", "safety", "deepfake", "deepfakes", "misuse", "attack", "leak", "breach",
+       "malware", "alignment", "misalignment", "jailbreak"]
+    "Tools & releases":
+      ["launches", "launch", "releases", "released", "release", "new model",
+       "open-source", "open source", "open-weight", "agent", "agents", "assistant",
+       "platform", "tool"]
 
 # ── LLM (optional) ───────────────────────────────────────────────────────────
 llm:
@@ -228,6 +272,11 @@ prefilter:
     "Wired": -1.5
     "Theregister.com": -1.5
     "Ars Technica": -1
+    "Amazon.com": -3
+    "Biztoc": -3
+    "pymnts": -3
+    "Financial Post": -2
+    "Entrepreneur": -3
 
 # Controlled tag vocabulary (LLM picks 1-3 of these; keyword fallback maps themes)
 tags:

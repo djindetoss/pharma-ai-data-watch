@@ -1,4 +1,5 @@
-from newsletter.draft import select
+from newsletter.brief import PAPERS_SECTION, brief_candidate, group
+from newsletter.draft import auto_intro, select
 from newsletter.scoring import count_hits, prefilter, score_item
 
 from .conftest import make_item
@@ -49,7 +50,8 @@ def test_prefilter_sorts_descending(cfg):
 def test_select_respects_threshold_and_quotas(cfg):
     items = [make_item(id=f"p{i}", category="Scientific article", prefilter_score=9 - i * 0.5) for i in range(12)]
     items += [make_item(id=f"n{i}", category="News", prefilter_score=8 - i) for i in range(8)]
-    papers, news, runners = select(items, cfg, use_llm=False)
+    no_fill = dict(cfg, selection=dict(cfg["selection"], fill_to_min=False))
+    papers, news, runners = select(items, no_fill, use_llm=False)
     thr = cfg["selection"]["min_prefilter_score"]
     assert len(papers) <= cfg["selection"]["papers"]["max"]
     assert len(news) <= cfg["selection"]["news"]["max"]
@@ -60,7 +62,7 @@ def test_select_respects_threshold_and_quotas(cfg):
 def test_select_uses_llm_score_when_available(cfg):
     items = [make_item(id="a", category="News", prefilter_score=9, llm_score=3),
              make_item(id="b", category="News", prefilter_score=3, llm_score=9)]
-    _, news, _ = select(items, cfg, use_llm=True)
+    _, news, _ = select(items, dict(cfg, selection=dict(cfg["selection"], fill_to_min=False)), use_llm=True)
     assert [i["id"] for i in news] == ["b"]
 
 
@@ -81,3 +83,37 @@ def test_hyphenated_compounds_match_keywords():
     assert count_hits(["artificial intelligence"], "Artificial intelligence-driven pharmacovigilance") == 1
     assert count_hits(["large language model"], "large language model-assisted ADR surveillance") == 1
     assert count_hits(["AI"], "AI-enabled review") == 1
+
+
+def test_fill_to_min_tops_up_and_flags(cfg):
+    items = [make_item(id="p0", category="Scientific article", prefilter_score=9.0)]
+    items += [make_item(id=f"p{i}", category="Scientific article", prefilter_score=5.0) for i in range(1, 6)]
+    items += [make_item(id="weak", category="Scientific article", prefilter_score=1.0)]
+    papers, _, _ = select(items, dict(cfg, selection=dict(cfg["selection"], fill_to_min=True)), use_llm=False)
+    assert len(papers) == cfg["selection"]["papers"]["min"]
+    assert not papers[0].get("below_threshold") and all(p.get("below_threshold") for p in papers[1:])
+    papers, _, _ = select(items, dict(cfg, selection=dict(cfg["selection"], fill_to_min=False)), use_llm=False)
+    assert len(papers) == 1
+
+
+def test_brief_candidate_sections(cfg):
+    sec = lambda **kw: (brief_candidate(make_item(**kw), cfg) or {}).get("brief_section")
+    assert sec(title="Hackers use AI malware in data breach at hospital network",
+               excerpt="cybersecurity attack") == "Safety, security & privacy"
+    assert sec(title="Deep learning predicts drug toxicity", excerpt="machine learning model",
+               category="Scientific article") == PAPERS_SECTION
+    assert sec(title="AI stock rally continues", excerpt="AI") is None          # exclusion
+    assert sec(title="New phone camera", excerpt="nothing about AI here") is None
+
+
+def test_group_caps_sections(cfg):
+    items = [make_item(id=f"s{i}", brief_section="Tools & releases") for i in range(20)]
+    groups = group(items, cfg)
+    assert len(groups) == 1 and len(groups[0]["items"]) == cfg["in_brief"]["max_per_section"]
+
+
+def test_auto_intro_is_clear(edition):
+    txt = auto_intro(3, "28 Oct – 10 Nov 2026", edition["highlight"], edition["scientific_articles"],
+                     edition["news"], edition["in_brief"])
+    assert "edition #3" in txt and "28 Oct – 10 Nov 2026" in txt and "1 one-line notes" in txt
+    assert "scientific articles" in txt and "In-brief" in txt and "EDIT ME" not in txt

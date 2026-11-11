@@ -31,5 +31,9 @@ def edition():
         "edition_date": "2026-11-10", "edition_number": 3,
         "period": {"start": "2026-10-28", "end": "2026-11-10"},
         "editorial": "Hello community.\n\nSecond paragraph.",
-        "highlight": it, "scientific_articles": [paper], "news": [news], "runners_up": [], "stats": {},
+        "highlight": it, "scientific_articles": [paper], "news": [news],
+        "in_brief": [{"section": "Safety, security & privacy",
+                      "items": [{"id": "b1", "note": "A chatbot leaked data <again>.", "title": "t",
+                                 "url": "https://example.org/b1", "source": "Heise", "date": "2026-11-06"}]}],
+        "runners_up": [], "stats": {},
     })

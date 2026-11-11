@@ -1,5 +1,5 @@
-{%- macro item(it) -%}
-[{{ it.type }}] {{ it.title }}
+{%- macro item(it, num) -%}
+#{{ num }} [{{ it.type }}] {{ it.title }}
 {{ it.source }} | {{ it.date | fmt_date }}
 {{ it.url }}
 
@@ -29,14 +29,15 @@ Formatted version: open the attached HTML file ({{ attachment }}).
 {% if e.highlight %}
 HIGHLIGHT OF THE PERIOD
 --------------------------------------------------------------------------
-{{ item(e.highlight) }}
+{{ item(e.highlight, 1) }}
 
 {% endif %}
+{% set base = 1 if e.highlight else 0 %}
 {% if e.scientific_articles %}
 SCIENTIFIC ARTICLES
 --------------------------------------------------------------------------
 {% for it in e.scientific_articles %}
-{{ item(it) }}
+{{ item(it, base + loop.index) }}
 {% if not loop.last %}
 . . .
 
@@ -48,12 +49,24 @@ SCIENTIFIC ARTICLES
 NEWS & REGULATORY UPDATES
 --------------------------------------------------------------------------
 {% for it in e.news %}
-{{ item(it) }}
+{{ item(it, base + e.scientific_articles|length + loop.index) }}
 {% if not loop.last %}
 . . .
 
 {% endif %}
 {% endfor %}
 
+{% endif %}
+{% if e.in_brief %}
+IN BRIEF
+--------------------------------------------------------------------------
+{% for g in e.in_brief %}
+{{ g.section }}:
+{% for b in g["items"] %}
+{{ ("- " ~ b.note ~ " (" ~ (b.source or "link") ~ ")") | wordwrap(76, wrapstring="\n  ") }}
+  {{ b.url }}
+{% endfor %}
+
+{% endfor %}
 {% endif %}
 ==========================================================================

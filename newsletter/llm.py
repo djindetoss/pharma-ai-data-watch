@@ -195,3 +195,79 @@ Return every id exactly once.
                         "comment": row["comment"].strip(),
                         "why_it_matters": row["why_it_matters"].strip(),
                         "tags": row["tags"][:3]} for row in data["items"]}
+
+
+def brief_schema(sections: list[str]) -> dict:
+    return {
+        "type": "object",
+        "properties": {
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "string"},
+                        "keep": {"type": "boolean"},
+                        "section": {"type": "string", "enum": sections},
+                        "note": {"type": "string"},
+                    },
+                    "required": ["id", "keep", "section", "note"],
+                    "additionalProperties": False,
+                },
+            }
+        },
+        "required": ["items"],
+        "additionalProperties": False,
+    }
+
+
+def write_briefs(items: list[dict], cfg: dict, sections: list[str]) -> dict[str, dict]:
+    """Return {id: {keep, section, note}} for the In-brief candidates."""
+    system = AUDIENCE + """
+These items are candidates for the "In brief" part of the newsletter: one line each,
+after the featured items. This part is deliberately broader than the featured scope:
+keep AI news that a medicines regulator would find useful or interesting to know
+(health and medicines AI, AI regulation and law, research practice and integrity,
+safety, security and privacy, notable new tools). Set "keep" to false for business
+and stock-market news, consumer gadgets, promotional content, job or funding posts,
+duplicates of another item, and anything too thin to say something useful about.
+
+For each item:
+- "section": the best section from the allowed list ("More scientific articles" only
+  for scientific papers and preprints).
+- "note": ONE sentence (max 30 words), in your own words, saying what happened or was
+  found. Do not copy the title or the excerpt; do not add facts that are not given.
+  A short wry aside in brackets is welcome when it fits, as in "(…whoa)" – sparingly.
+Return every id exactly once."""
+    data = _call(cfg, system, "Candidates:\n" + _payload(items, 500), brief_schema(sections))
+    return {row["id"]: {"keep": bool(row["keep"]), "section": row["section"], "note": row["note"].strip()}
+            for row in data["items"]}
+
+
+INTRO_SCHEMA = {
+    "type": "object",
+    "properties": {"editorial": {"type": "string"}},
+    "required": ["editorial"],
+    "additionalProperties": False,
+}
+
+
+def write_intro(digest: str, cfg: dict) -> str:
+    """Write the introductory paragraph(s) of the edition from its contents."""
+    system = AUDIENCE + """
+Write the introduction of this edition of the newsletter, in British English, from the
+list of its contents given below. 80 to 140 words, one or two short paragraphs
+(separate paragraphs with a blank line).
+
+It must be clear and useful first: say what the period was about – the two or three
+main threads that connect several items – and point to the highlight and to one or two
+items readers should not miss, including at least one scientific article. Mention the
+In-brief section in passing. Do not list every item.
+
+Voice: the editor talking to colleagues, first person, candid and conversational, with
+a light touch of dry humour if something in the period invites it (an unexpected
+silence on a usual topic, an ironic coincidence). No hype, no greetings formula beyond
+a short opening, no sign-off, no facts that are not in the list.
+""" + COMMENT_STYLE
+    data = _call(cfg, system, "Contents of this edition:\n" + digest, INTRO_SCHEMA)
+    return data["editorial"].strip()
