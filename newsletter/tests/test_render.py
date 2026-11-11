@@ -48,6 +48,7 @@ def test_email_html_is_valid_and_outlook_safe(edition, cfg):
     assert "github.io" not in html and "View this edition online" not in html
     assert "IncreaseNET-AI-Newsletter-2026-11-10.html" in html, "points to the attachment as fallback"
     assert "Why it matters for NCAs" in html and "Highlight of the period" in html
+    assert "let&#39;s see if it holds up" in html, "comment is rendered (and escaped)"
     assert "&lt;in&gt;" in html, "titles are HTML-escaped"
     assert cfg["colors"]["primary"] in html
 
@@ -59,6 +60,7 @@ def test_draft_mode_shows_banner_and_pr_link(edition, cfg):
 
 def test_text_and_markdown(edition, cfg):
     txt = render_text(edition, cfg)
+    assert "let's see if it holds up" in txt and "let's see if it holds up" in render_markdown(edition, cfg)
     assert "HIGHLIGHT OF THE PERIOD" in txt and "attached HTML file" in txt and "github.io" not in txt
     assert "<" not in txt.replace("<in>", "")
     md = render_markdown(edition, cfg)
@@ -75,5 +77,12 @@ def test_find_todos(edition):
     assert find_todos(edition) == []
     edition["news"][0]["summary"] = "TODO: write"
     edition["editorial"] = "[EDIT ME]"
-    assert len(find_todos(edition)) == 2
+    edition["scientific_articles"][0]["comment"] = "TODO: comment"
+    assert len(find_todos(edition)) == 3
+
+
+def test_item_without_comment_renders(edition, cfg):
+    del edition["news"][0]["comment"]
+    html = render_html(edition, cfg, "email")
+    assert html.count("let&#39;s see if it holds up") == 2  # highlight + paper only
 

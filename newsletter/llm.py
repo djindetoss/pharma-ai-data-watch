@@ -4,7 +4,8 @@ Two calls per edition:
   1. score_items  – rates every shortlisted item 0-10 for the community, with a
                     one-line justification;
   2. write_items  – for the retained items only, writes an original plain-
-                    language summary, a "Why it matters for NCAs" line and tags.
+                    language summary, a short editor's comment, a "Why it matters
+                    for NCAs" line and tags.
 
 Both use structured outputs (JSON schema) so the response is always parseable.
 If ANTHROPIC_API_KEY is absent, `available()` is False and the pipeline runs
@@ -46,6 +47,26 @@ topics, hospital/IT news, AI policy outside health, consumer tech, AI business n
 funding and job posts.
 """
 
+COMMENT_STYLE = """\
+COMMENT STYLE – the comment reads like a colleague talking to colleagues, not like a
+press release:
+- First person, conversational and candid ("I find…", "for our work…", "let's see…").
+  "We"/"our" means medicines regulators.
+- Add something the summary does not: what is surprising or new, a caveat
+  (reproducibility, who is behind it and their interest, what is still missing or
+  unclear), how it compares with what regulators already do, or a practical takeaway
+  for an assessor ("make up your own mind first, use AI as a second pair of eyes").
+- Be honest about uncertainty: say when the outcome is open or the evidence thin.
+- A light, dry touch of humour or irony is welcome when it fits, never at the expense
+  of accuracy or of the people involved.
+- Opinions must be recognisable as opinions; do not add facts that are not in the
+  excerpt. No hype, no marketing words, no repetition of the summary or of the
+  "why it matters" line.
+Example of the tone (invented item): "Twelve principles instead of our ten, but most
+of them map one-to-one onto what we already have. The interesting difference is that
+human oversight gets its own principle – worth a look before our next revision."
+"""
+
 SCORE_SCHEMA = {
     "type": "object",
     "properties": {
@@ -79,10 +100,11 @@ def write_schema(tags: list[str]) -> dict:
                     "properties": {
                         "id": {"type": "string"},
                         "summary": {"type": "string"},
+                        "comment": {"type": "string"},
                         "why_it_matters": {"type": "string"},
                         "tags": {"type": "array", "items": {"type": "string", "enum": tags}},
                     },
-                    "required": ["id", "summary", "why_it_matters", "tags"],
+                    "required": ["id", "summary", "comment", "why_it_matters", "tags"],
                     "additionalProperties": False,
                 },
             }
@@ -152,7 +174,7 @@ Give a one-sentence reason (max 25 words) for each score. Return every id exactl
 
 
 def write_items(items: list[dict], cfg: dict) -> dict[str, dict]:
-    """Return {id: {summary, why_it_matters, tags}} for the retained items."""
+    """Return {id: {summary, comment, why_it_matters, tags}} for the retained items."""
     tags = cfg["tags"]
     system = AUDIENCE + """
 For each item write, in British English:
@@ -160,12 +182,16 @@ For each item write, in British English:
   with no AI background understands. Say what was done or announced and the main
   result. Do NOT copy or closely paraphrase sentences from the excerpt, do not quote,
   and do not add facts that are not in the excerpt. Explain unavoidable jargon briefly.
+- "comment": the editor's short personal take, 1 to 3 sentences (max 60 words),
+  following the COMMENT STYLE below.
 - "why_it_matters": one sentence (max 35 words) on the concrete interest for a national
   competent authority (assessment practice, guidance to follow, reusable tool, data or
   validation lesson). Be specific, not generic; no hype.
 - "tags": 1 to 3 tags from the allowed list.
-Return every id exactly once."""
+Return every id exactly once.
+""" + COMMENT_STYLE
     data = _call(cfg, system, "Items:\n" + _payload(items, cfg["llm"]["max_excerpt_chars"]), write_schema(tags))
     return {row["id"]: {"summary": row["summary"].strip(),
+                        "comment": row["comment"].strip(),
                         "why_it_matters": row["why_it_matters"].strip(),
                         "tags": row["tags"][:3]} for row in data["items"]}

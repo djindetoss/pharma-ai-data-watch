@@ -25,10 +25,11 @@ EDITORIAL_PLACEHOLDER = (
     "a theme of the period, a call for contributions.]"
 )
 SUMMARY_PLACEHOLDER = "TODO: write a 2-3 sentence plain-language summary in our own words."
+COMMENT_PLACEHOLDER = "TODO: add a short personal comment (1-3 sentences): what is notable, a caveat, a takeaway."
 WHY_PLACEHOLDER = "TODO: explain the concrete interest for an NCA."
 
 ITEM_FIELDS = ("id", "title", "url", "source", "date", "type", "tags", "summary",
-               "why_it_matters", "score", "score_reason")
+               "comment", "why_it_matters", "score", "score_reason")
 
 
 def next_edition_number() -> int:
@@ -51,6 +52,7 @@ def _to_draft_item(it: dict, use_llm: bool) -> dict:
         "type": it["category"],
         "tags": it.get("tags_llm") or it.get("fallback_tags") or [],
         "summary": it.get("summary") or SUMMARY_PLACEHOLDER,
+        "comment": it.get("comment") or COMMENT_PLACEHOLDER,
         "why_it_matters": it.get("why_it_matters") or WHY_PLACEHOLDER,
         "score": round(_final_score(it, use_llm), 1),
         "score_reason": it.get("llm_reason") or f"keyword pre-filter (themes: {', '.join(it.get('themes', [])) or '–'})",
@@ -102,7 +104,8 @@ def build_draft(cfg: dict, end: date, window_days: int | None = None, no_llm: bo
         texts = llm.write_items(retained, cfg)
         for it in retained:
             t = texts.get(it["id"], {})
-            it["summary"], it["why_it_matters"], it["tags_llm"] = t.get("summary"), t.get("why_it_matters"), t.get("tags")
+            it["summary"], it["comment"] = t.get("summary"), t.get("comment")
+            it["why_it_matters"], it["tags_llm"] = t.get("why_it_matters"), t.get("tags")
 
     # Highlight = best retained item overall; it is shown once, in its own section.
     # Ties go to regulatory items (most directly actionable for NCAs).
@@ -144,7 +147,7 @@ DRAFT_HEADER = """\
 #  - reorder: move blocks; the order here is the order in the newsletter
 #  - promote a runner-up: move its block into scientific_articles or news
 #  - highlight: replace the block, or set it to null for no highlight
-#  - edit editorial / summary / why_it_matters / tags as you like
+#  - edit editorial / summary / comment / why_it_matters / tags as you like
 #  - "runners_up" and "stats" are never rendered
 #  - lines still containing "TODO" or "EDIT ME" are flagged when rendering
 # ─────────────────────────────────────────────────────────────────────────────

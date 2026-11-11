@@ -22,6 +22,7 @@ def edition():
     it = {"id": "a1", "title": "EMA publishes reflection paper on AI <in> the lifecycle",
           "url": "https://www.ema.europa.eu/en/news/x?a=1&b=2", "source": "EMA", "date": "2026-11-04",
           "type": "Regulatory", "tags": ["Guidelines & policy"], "summary": "A plain summary.",
+          "comment": "Interesting, but let's see if it holds up.",
           "why_it_matters": "Directly relevant to assessors.", "score": 9.0, "score_reason": "test"}
     paper = dict(it, id="p1", title="LLMs to draft SmPC sections", type="Scientific article",
                  source="medRxiv", url="https://doi.org/10.1101/2026.11.01.123456")

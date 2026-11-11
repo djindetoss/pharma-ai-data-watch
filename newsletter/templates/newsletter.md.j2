@@ -3,6 +3,10 @@
 *{{ it.type }} · {{ it.source }} · {{ it.date | fmt_date }}*
 
 {{ it.summary }}
+{% if it.comment %}
+
+{{ it.comment.strip() }}
+{% endif %}
 
 **Why it matters for NCAs:** {{ it.why_it_matters }}
 {% if it.tags %}

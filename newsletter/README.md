@@ -45,7 +45,8 @@ python -m newsletter draft --no-llm             # keyword pre-filter only
 
 With `ANTHROPIC_API_KEY` set, an LLM (model in `config.yaml → llm.model`) rates
 the shortlisted items 0–10 and writes, for the retained ones, an original
-plain-language summary, a *Why it matters for NCAs* line and tags. Without a
+plain-language summary, a short personal comment, a *Why it matters for NCAs*
+line and tags. Without a
 key, the selection uses the keyword score and the summaries are left as
 `TODO` placeholders for you to write: abstracts are never copied.
 
@@ -60,7 +61,13 @@ Open `newsletter/drafts/DATE.yaml`:
 - **reorder**: move blocks (the order in the file is the order in the newsletter);
 - **promote** a runner-up: move its block from `runners_up` into `scientific_articles` or `news`;
 - **highlight**: replace the block, or set `highlight: null`;
-- edit `editorial`, `summary`, `why_it_matters`, `tags` freely.
+- edit `editorial`, `summary`, `comment`, `why_it_matters`, `tags` freely.
+
+The `comment` is the editor's voice: one to three sentences, first person,
+conversational, adding what the summary does not say (what is surprising, a
+caveat, a practical takeaway for assessors), with a light touch of humour when it
+fits. The style guide given to the LLM is `COMMENT_STYLE` in `llm.py`; adjust it
+there if the tone drifts. Delete the field to show no comment for an item.
 
 `runners_up` and `stats` are never rendered. Then re-render only:
 

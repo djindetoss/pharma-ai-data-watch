@@ -21,6 +21,13 @@
   <tr>
     <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">{{ it.summary }}</td>
   </tr>
+  {% if it.comment %}
+  <tr>
+    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">
+      {% for para in it.comment.strip().split("\n\n") %}<p style="margin:0 0 {{ '0' if loop.last else '8px' }} 0;">{{ para }}</p>{% endfor %}
+    </td>
+  </tr>
+  {% endif %}
   <tr>
     <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">
       <strong style="color:{{ c.secondary }};">Why it matters for NCAs:</strong> {{ it.why_it_matters }}
