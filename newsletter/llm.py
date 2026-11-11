@@ -25,19 +25,25 @@ from 18 European National Competent Authorities (NCAs): regulatory assessors, da
 scientists, IT and regulatory-policy staff. Their AI expertise varies from beginner
 to expert. They want few items, each genuinely useful to a regulatory agency.
 
-Priority themes, in order:
-1. AI used in the regulatory assessment of medicines and medical devices (EMA, FDA,
-   HMA, MHRA, national agencies).
-2. Regulatory reflections, guidelines and position papers on AI (EMA reflection
-   paper, EU AI Act, EHDS, FDA guidance, ICH, good machine learning practice).
-3. Sharing and portability of AI solutions between organisations (MLOps,
-   containers, open source, interoperability, reproducibility).
-4. LLMs and generative AI applied to regulatory documents and processes (dossiers,
+Scope: ONLY artificial intelligence and data topics linked to the development,
+evaluation and supervision of MEDICINES (medicinal products), and relevant to the work
+of a medicines regulator. Within that scope, priority themes in order:
+1. AI used in the regulatory assessment of medicines (EMA, FDA, HMA, MHRA, national
+   agencies), or by regulators in their own processes.
+2. Regulatory reflections, guidelines and position papers on AI or data in the
+   medicines lifecycle (EMA reflection paper, EU AI Act as it applies to medicines,
+   EHDS, FDA guidance, ICH, good machine learning practice).
+3. Sharing and portability of AI solutions between medicines regulators or along the
+   medicines lifecycle (MLOps, containers, open source, interoperability).
+4. LLMs and generative AI applied to medicines documents and processes (dossiers,
    SmPC, PK/modelling, clinical trials, pharmacovigilance).
-5. Data governance, data quality, health data and model validation.
+5. Data governance, data quality, real-world data and model validation for medicines
+   development and regulatory decision-making.
 
-Generic consumer-tech news, AI business news, funding, and clinical ML papers with no
-regulatory, methodological or data-governance angle are of low value to this audience.
+Out of scope (score 0-3 whatever their quality): clinical prediction or diagnosis
+models with no link to medicines development or regulation, medical-device-only
+topics, hospital/IT news, AI policy outside health, consumer tech, AI business news,
+funding and job posts.
 """
 
 SCORE_SCHEMA = {
@@ -128,11 +134,11 @@ def score_items(items: list[dict], cfg: dict) -> dict[str, tuple[int, str]]:
     """Return {id: (score 0-10, reason)}."""
     system = AUDIENCE + """
 Rate each item from 0 to 10 for how useful it is to this community:
- 9-10  must-read for NCAs (new regulatory guidance/position on AI, AI used by a regulator,
-       major cross-agency initiative);
+ 9-10  must-read for NCAs (new regulatory guidance/position on AI or data for medicines,
+       AI used by a medicines regulator, major cross-agency initiative);
  7-8   clearly relevant to one priority theme, with concrete takeaways;
  5-6   relevant background, but indirect or narrow;
- 0-4   off-topic, promotional, generic tech/business news, or too thin to be useful.
+ 0-4   outside the medicines scope above, promotional, or too thin to be useful.
 Judge only from the title, source and excerpt given; do not assume facts not stated.
 Give a one-sentence reason (max 25 words) for each score. Return every id exactly once."""
     data = _call(cfg, system, "Items to rate:\n" + _payload(items, cfg["llm"]["max_excerpt_chars"]), SCORE_SCHEMA)

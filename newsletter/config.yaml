@@ -29,7 +29,7 @@ selection:
   news:    {min: 3, max: 5}
   shortlist_size: 30            # items sent to the LLM after the keyword pre-filter
   shortlist_floor: 2.5          # 0-10; minimum pre-filter score to reach the LLM
-  min_prefilter_score: 4.0      # 0-10; final threshold when running WITHOUT the LLM
+  min_prefilter_score: 5.5      # 0-10; final threshold when running WITHOUT the LLM
   min_llm_score: 6              # 0-10; used when ANTHROPIC_API_KEY is set
   runners_up: 6                 # kept in the draft YAML so you can promote them
   title_similarity: 0.88        # dedup: SequenceMatcher ratio on normalised titles
@@ -61,7 +61,7 @@ prefilter:
   title_multiplier: 2
   # Raw score → 0-10 scale: score10 = min(10, raw / normaliser * 10)
   normaliser: 14
-  # An item must mention at least one of these, otherwise it is dropped.
+  # An item must mention at least one of these (AI / data signal)…
   ai_gate:
     - "artificial intelligence"
     - "AI"
@@ -86,6 +86,65 @@ prefilter:
     - "real-world evidence"
     - "federated"
     - "DARWIN EU"
+    - "AI-powered"
+    - "AI-driven"
+    - "AI-based"
+    - "agentic"
+    - "multi-agent"
+    - "knowledge graph"
+    - "in silico"
+    - "model-informed"
+    - "MIDD"
+    - "pharmacometric"
+    - "pharmacometrics"
+    - "digital twin"
+    - "synthetic control"
+  # …AND at least one of these: the item must be about medicines (development,
+  # evaluation, supervision) or their regulators. Generic clinical ML, medical
+  # devices only, or AI policy outside health are therefore dropped.
+  medicines_gate:   # "medicine" (singular) is left out on purpose: it also means the medical field
+    - "medicines"
+    - "medicinal product"
+    - "medicinal products"
+    - "drug"
+    - "drugs"
+    - "drug development"
+    - "drug discovery"
+    - "pharmaceutical"
+    - "pharmaceuticals"
+    - "pharma"
+    - "biopharma"
+    - "biopharmaceutical"
+    - "therapeutics"
+    - "clinical trial"
+    - "clinical trials"
+    - "pharmacovigilance"
+    - "adverse drug reaction"
+    - "pharmacokinetic"
+    - "pharmacokinetics"
+    - "PBPK"
+    - "marketing authorisation"
+    - "marketing authorization"
+    - "SmPC"
+    - "EMA"
+    - "European Medicines Agency"
+    - "FDA"
+    - "HMA"
+    - "Heads of Medicines Agencies"
+    - "MHRA"
+    - "CHMP"
+    - "PRAC"
+    - "ICH"
+    - "national competent authority"
+    - "national competent authorities"
+    - "medicines agency"
+    - "medicines regulator"
+    - "medicines regulators"
+    - "regulatory science"
+    - "real-world evidence"
+    - "DARWIN EU"
+    - "EHDS"
+    - "European Health Data Space"
   themes:
     regulatory_assessment:
       label: "AI in regulatory assessment"
@@ -94,7 +153,7 @@ prefilter:
                  "Swissmedic", "Health Canada", "PMDA", "national competent authority",
                  "competent authorities", "NCA", "NCAs", "marketing authorisation",
                  "marketing authorization", "assessment", "assessor", "assessors",
-                 "medical device", "medical devices", "notified body", "CHMP", "PRAC",
+                 "CHMP", "PRAC",
                  "regulatory science", "submission", "review process"]
     regulatory_guidance:
       label: "AI policy & guidance"
@@ -123,6 +182,15 @@ prefilter:
                  "pharmacokinetic", "pharmacokinetics", "PK", "population PK", "PBPK",
                  "modelling", "modeling", "medical writing", "summarisation",
                  "summarization", "retrieval-augmented", "RAG", "information extraction"]
+    medicines_development:
+      label: "AI & modelling in medicines development"
+      weight: 2
+      keywords: ["drug development", "drug discovery", "lead optimization", "lead optimisation",
+                 "ADMET", "toxicity prediction", "in silico", "model-informed", "MIDD",
+                 "pharmacometric", "pharmacometrics", "PBPK", "dose selection", "dosing",
+                 "digital twin", "synthetic control", "external control arm", "biomarker",
+                 "target identification", "de novo design", "drug-drug interaction",
+                 "non-clinical", "preclinical", "translational"]
     data_governance_validation:
       label: "Data governance & model validation"
       weight: 2
@@ -169,7 +237,7 @@ tags:
   - "Pharmacovigilance"
   - "Clinical trials"
   - "PK / modelling"
-  - "Medical devices"
+  - "Drug development"
   - "Data governance"
   - "Data quality"
   - "Model validation"

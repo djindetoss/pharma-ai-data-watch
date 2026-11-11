@@ -62,3 +62,16 @@ def test_select_uses_llm_score_when_available(cfg):
              make_item(id="b", category="News", prefilter_score=3, llm_score=9)]
     _, news, _ = select(items, cfg, use_llm=True)
     assert [i["id"] for i in news] == ["b"]
+
+
+def test_clinical_ml_without_medicines_link_is_dropped(cfg):
+    it = make_item(title="Machine learning model predicts amputation risk in diabetes",
+                   excerpt="A deep learning model was validated. Published in Frontiers in Cardiovascular Medicine.",
+                   category="Scientific article")
+    assert score_item(it, cfg)["excluded_reason"] == "not about medicines"
+
+
+def test_ai_for_medicines_regulation_passes_both_gates(cfg):
+    it = make_item(title="LLM-assisted review of marketing authorisation dossiers at a medicines agency",
+                   excerpt="A large language model extracted pharmacokinetic data from clinical trial reports.")
+    assert score_item(it, cfg)["excluded_reason"] is None

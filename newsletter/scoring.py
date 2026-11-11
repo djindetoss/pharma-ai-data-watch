@@ -14,6 +14,7 @@ THEME_TAGS = {
     "regulatory_guidance": "Guidelines & policy",
     "portability_sharing": "Portability & MLOps",
     "genai_regulatory_docs": "LLM / GenAI",
+    "medicines_development": "Drug development",
     "data_governance_validation": "Data governance",
 }
 
@@ -43,6 +44,8 @@ def score_item(item: dict, cfg: dict) -> dict:
 
     if count_hits(p["ai_gate"], body) == 0:
         return {"prefilter_score": 0.0, "themes": [], "excluded_reason": "no AI/data signal"}
+    if p.get("medicines_gate") and count_hits(p["medicines_gate"], body) == 0:
+        return {"prefilter_score": 0.0, "themes": [], "excluded_reason": "not about medicines"}
 
     raw, themes = 0.0, []
     for key, theme in p["themes"].items():
@@ -67,7 +70,7 @@ def score_item(item: dict, cfg: dict) -> dict:
 def prefilter(items: list[dict], cfg: dict) -> tuple[list[dict], dict]:
     """Score all items; return those above `shortlist_floor` sorted desc, plus stats."""
     min_score = cfg["selection"]["shortlist_floor"]
-    kept, reasons = [], {"exclusion": 0, "no AI/data signal": 0, "below threshold": 0}
+    kept, reasons = [], {"exclusion": 0, "no AI/data signal": 0, "not about medicines": 0, "below threshold": 0}
     for it in items:
         s = score_item(it, cfg)
         it.update(s)
