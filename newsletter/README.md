@@ -124,7 +124,6 @@ All in `config.yaml`:
 | `prefilter.source_bonus` / `source_penalty` | trust adjustments by source name |
 | `tags` | controlled tag vocabulary |
 | `colors` | brand palette (see below) |
-| `contact_line`, `disclaimer`, `joint_action_line` | footer text (no e-mail addresses: the repo is public) |
 
 Tip: `python -m newsletter draft --no-llm` then read `stats` and `runners_up` in
 the YAML to see what each change does.

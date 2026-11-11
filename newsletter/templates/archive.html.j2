@@ -29,9 +29,6 @@
   .num { font-size: .75rem; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; color: var(--secondary); }
   li a { color: var(--primary); font-weight: bold; font-size: 1.1rem; }
   .meta { color: var(--muted); font-size: .9rem; }
-  footer { padding: 18px 28px; background: var(--surface); border-top: 3px solid var(--primary);
-           color: var(--muted); font-size: .8rem; }
-  footer a { color: var(--primary); }
   .empty { padding: 24px 28px; color: var(--muted); }
 </style>
 </head>
@@ -57,11 +54,6 @@
     {% else %}
     <p class="empty">No edition published yet.</p>
     {% endif %}
-    <footer>
-      {{ cfg.joint_action_line }}<br>
-      {{ cfg.disclaimer }}<br>
-      <a href="{{ u.site }}/">Pharma AI &amp; Data Watch</a>
-    </footer>
   </div>
 </div>
 </body>
