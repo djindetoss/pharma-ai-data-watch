@@ -132,6 +132,19 @@ the YAML to see what each change does.
 clusters with their WCAG contrast on white. The light blue and light green
 (≈ 2.3:1) are used for decoration only, never as text.
 
+### Upstream sources (daily pipeline)
+
+The newsletter can only select what `pipeline/` collects. Sources relevant to
+AI & data for medicines are configured in `pipeline/config.json`:
+
+- `pubmed.search_queries`: the first 7 queries target AI/data for medicines
+  regulation and carry `"auto_approve": true`. Always parenthesise `OR` groups
+  (`A AND (B OR C)`); `[tiab]` restricts to title/abstract.
+- `rss_sources.feeds`: broad medicines feeds (EMA what's new, FDA Drugs, medRxiv /
+  bioRxiv pharmacology, Clin Pharmacol Ther, Nat Rev Drug Discov, npj Digit Med)
+  use `"require_ai_or_data": true`. Only items containing a word from
+  `ai_or_data_gate` (whole-word match) are kept.
+
 ## 4. E-mail delivery: app password and GitHub secrets
 
 The repository is **public**: no address, password or key is ever written in the

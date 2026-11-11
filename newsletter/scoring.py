@@ -24,7 +24,7 @@ def _pattern(keyword: str) -> re.Pattern:
     # Short all-caps acronyms (AI, EMA, PK…) are matched case-sensitively to
     # avoid hits such as "said" → "ai" or "pk" inside URLs.
     flags = 0 if (keyword.isupper() and len(keyword) <= 5) else re.I
-    return re.compile(r"(?<![\w-])" + re.escape(keyword) + r"(?![\w-])", flags)
+    return re.compile(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", flags)
 
 
 def count_hits(keywords: list[str], text: str) -> int:

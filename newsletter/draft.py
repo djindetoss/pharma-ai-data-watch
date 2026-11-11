@@ -105,7 +105,8 @@ def build_draft(cfg: dict, end: date, window_days: int | None = None, no_llm: bo
             it["summary"], it["why_it_matters"], it["tags_llm"] = t.get("summary"), t.get("why_it_matters"), t.get("tags")
 
     # Highlight = best retained item overall; it is shown once, in its own section.
-    highlight = max(retained, key=lambda it: _final_score(it, use_llm)) if retained else None
+    # Ties go to regulatory items (most directly actionable for NCAs).
+    highlight = max(retained, key=lambda it: (_final_score(it, use_llm), it["category"] == "Regulatory")) if retained else None
     if highlight:
         papers = [it for it in papers if it is not highlight]
         news = [it for it in news if it is not highlight]

@@ -75,3 +75,9 @@ def test_ai_for_medicines_regulation_passes_both_gates(cfg):
     it = make_item(title="LLM-assisted review of marketing authorisation dossiers at a medicines agency",
                    excerpt="A large language model extracted pharmacokinetic data from clinical trial reports.")
     assert score_item(it, cfg)["excluded_reason"] is None
+
+
+def test_hyphenated_compounds_match_keywords():
+    assert count_hits(["artificial intelligence"], "Artificial intelligence-driven pharmacovigilance") == 1
+    assert count_hits(["large language model"], "large language model-assisted ADR surveillance") == 1
+    assert count_hits(["AI"], "AI-enabled review") == 1
