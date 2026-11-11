@@ -31,20 +31,24 @@
     "enabled": true,
     "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
     "search_queries": [
-      { "q": "artificial intelligence drug discovery OR drug design OR lead optimization",    "topic": "drug-discovery" },
-      { "q": "machine learning AlphaFold protein structure prediction pharmaceutical",         "topic": "drug-discovery" },
-      { "q": "deep learning ADMET toxicity prediction drug development",                       "topic": "drug-discovery" },
-      { "q": "machine learning regulatory EMA FDA approval pharmaceutical",                    "topic": "regulatory"     },
-      { "q": "AI regulatory science ICH reflection paper guideline",                           "topic": "regulatory"     },
-      { "q": "artificial intelligence clinical trial adaptive decentralised pharmacovigilance", "topic": "clinical-ai"    },
-      { "q": "natural language processing pharmacovigilance adverse event signal detection",    "topic": "clinical-ai"    },
-      { "q": "EHDS European Health Data Space secondary use health data governance regulation",  "topic": "data-governance" },
-      { "q": "IDMP SPOR FHIR OMOP data standard interoperability pharmaceutical regulatory",   "topic": "data-governance" },
-      { "q": "DARWIN EU real-world data network federated analysis pharmacoepidemiology EMA",   "topic": "data-governance" },
-      { "q": "real-world evidence data quality fit-for-purpose regulatory EMA FDA",            "topic": "data-governance" },
-      { "q": "federated learning privacy-preserving health data pseudonymisation pharmaceutical", "topic": "data-governance" },
-      { "q": "patient registry disease registry data governance rare disease EMA",              "topic": "data-governance" }
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND (\"regulatory science\"[tiab] OR \"regulatory decision*\"[tiab] OR \"regulatory approval*\"[tiab] OR \"regulatory submission*\"[tiab] OR \"regulatory review\"[tiab] OR \"medicines agenc*\"[tiab] OR \"European Medicines Agency\"[tiab] OR \"Food and Drug Administration\"[tiab] OR \"marketing authori*\"[tiab]) AND (drug*[tiab] OR medicine*[tiab] OR \"medicinal product*\"[tiab] OR pharmaceutical*[tiab])", "topic": "regulatory", "auto_approve": true },
+      { "q": "(\"AI Act\"[tiab] OR \"Artificial Intelligence Act\"[tiab] OR \"European Health Data Space\"[tiab] OR \"good machine learning practice\"[tiab]) AND (medicine*[tiab] OR drug*[tiab] OR health*[tiab] OR medical[tiab])", "topic": "regulatory", "auto_approve": true },
+      { "q": "(\"large language model*\"[tiab] OR \"generative artificial intelligence\"[tiab] OR \"generative AI\"[tiab] OR ChatGPT[tiab] OR GPT-4*[tiab]) AND (pharmacovigilance[tiab] OR \"clinical trial protocol*\"[tiab] OR \"drug label*\"[tiab] OR \"product information\"[tiab] OR \"regulatory document*\"[tiab] OR \"regulatory submission*\"[tiab] OR \"medical writing\"[tiab] OR \"summary of product characteristics\"[tiab])", "topic": "clinical-ai", "auto_approve": true },
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND pharmacovigilance[tiab]", "topic": "clinical-ai", "auto_approve": true },
+      { "q": "((\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) OR \"digital twin*\"[tiab]) AND (\"synthetic control*\"[tiab] OR \"external control*\"[tiab] OR \"trial emulation\"[tiab] OR \"in silico trial*\"[tiab] OR \"virtual control*\"[tiab]) AND (drug*[tiab] OR clinical[tiab] OR patient*[tiab])", "topic": "clinical-ai", "auto_approve": true },
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND (pharmacokinetic*[tiab] OR pharmacometric*[tiab] OR \"model-informed\"[tiab] OR PBPK[tiab] OR \"dose selection\"[tiab])", "topic": "drug-discovery", "auto_approve": true },
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND (\"real-world evidence\"[tiab] OR \"real-world data\"[tiab]) AND (regulatory[tiab] OR drug*[tiab] OR medicine*[tiab])", "topic": "data-governance", "auto_approve": true },
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND (\"drug discovery\"[tiab] OR \"drug design\"[tiab] OR \"lead optimi*\"[tiab])", "topic": "drug-discovery" },
+      { "q": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab] OR \"large language model*\"[tiab] OR \"natural language processing\"[tiab]) AND (ADMET[tiab] OR \"toxicity prediction\"[tiab] OR \"drug-induced\"[tiab])", "topic": "drug-discovery" },
+      { "q": "AlphaFold[tiab] AND (drug*[tiab] OR pharmaceutical*[tiab] OR \"structure-based\"[tiab])", "topic": "drug-discovery" },
+      { "q": "(IDMP[tiab] OR SPOR[tiab] OR FHIR[tiab] OR OMOP[tiab]) AND (pharmaceutical*[tiab] OR regulatory[tiab] OR drug*[tiab] OR medicine*[tiab])", "topic": "data-governance" },
+      { "q": "(\"DARWIN EU\"[tiab] OR \"federated analys*\"[tiab]) AND (drug*[tiab] OR medicine*[tiab] OR pharmacoepidemiolog*[tiab] OR \"real-world\"[tiab])", "topic": "data-governance" },
+      { "q": "\"federated learning\"[tiab] AND (drug*[tiab] OR pharmaceutical*[tiab] OR \"clinical trial*\"[tiab])", "topic": "data-governance" },
+      { "q": "(\"data quality\"[tiab] OR \"fit-for-purpose\"[tiab]) AND \"real-world\"[tiab] AND (regulatory[tiab] OR drug*[tiab])", "topic": "data-governance" },
+      { "q": "(\"patient registr*\"[tiab] OR \"disease registr*\"[tiab]) AND (\"data governance\"[tiab] OR \"data quality\"[tiab]) AND (regulatory[tiab] OR \"rare disease*\"[tiab])", "topic": "data-governance" }
     ],
+    "_queries_comment": "PubMed syntax: always parenthesise OR groups; [tiab] = title/abstract. The first 7 queries (AI & data for medicines regulation, newsletter priorities) are precise enough to auto_approve.",
+    "max_total_results": 60,
     "max_results_per_query": 10,
     "db": "pubmed"
   },
@@ -142,6 +146,70 @@
         "badge": "Research",
         "topic": "clinical-ai",
         "auto_approve": false
+      },
+      {
+        "_comment": "Feeds below (added 2026-11-11) are broad medicines sources: require_ai_or_data keeps only items with a real AI/data keyword (whole-word match).",
+        "url": "https://www.ema.europa.eu/en/whats-new.xml",
+        "name": "EMA – what's new",
+        "type": "news",
+        "badge": "Regulatory",
+        "topic": "regulatory",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drugs/rss.xml",
+        "name": "FDA – Drugs",
+        "type": "news",
+        "badge": "Regulatory",
+        "topic": "regulatory",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://connect.medrxiv.org/medrxiv_xml.php?subject=Pharmacology_and_Therapeutics",
+        "name": "medRxiv – Pharmacology & Therapeutics",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "clinical-ai",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=pharmacology_and_toxicology",
+        "name": "bioRxiv – Pharmacology & Toxicology",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "drug-discovery",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://ascpt.onlinelibrary.wiley.com/feed/15326535/most-recent",
+        "name": "Clinical Pharmacology & Therapeutics",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "clinical-ai",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://www.nature.com/nrd.rss",
+        "name": "Nature Reviews Drug Discovery",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "drug-discovery",
+        "auto_approve": true,
+        "require_ai_or_data": true
+      },
+      {
+        "url": "https://www.nature.com/npjdigitalmed.rss",
+        "name": "npj Digital Medicine",
+        "type": "paper",
+        "badge": "Research",
+        "topic": "clinical-ai",
+        "auto_approve": false,
+        "require_ai_or_data": true
       }
     ]
   },
@@ -238,6 +306,18 @@
       }
     ]
   },
+
+  "_ai_or_data_gate_comment": "Whole-word, case-insensitive (acronyms of <=5 capitals are case-sensitive). Used by feeds with require_ai_or_data=true.",
+  "ai_or_data_gate": [
+    "artificial intelligence", "AI", "machine learning", "deep learning", "neural network",
+    "large language model", "large language models", "LLM", "LLMs", "generative AI",
+    "foundation model", "natural language processing", "NLP", "AI-powered", "AI-driven",
+    "AI-based", "AI-enabled", "agentic", "in silico", "model-informed", "MIDD",
+    "pharmacometric", "pharmacometrics", "digital twin", "digital twins",
+    "real-world data", "real-world evidence", "RWD", "RWE", "data governance", "data quality",
+    "health data", "EHDS", "European Health Data Space", "DARWIN EU", "federated",
+    "interoperability", "FHIR", "OMOP", "IDMP", "SPOR", "data standard", "data standards"
+  ],
 
   "source_blacklist": [
     "Crypto Briefing", "CoinDesk", "Decrypt", "CoinTelegraph", "Bitcoin Magazine",
