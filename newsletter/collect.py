@@ -86,8 +86,12 @@ def collect(cfg: dict, end: date, window_days: int | None = None) -> tuple[list[
     # older than the oldest item still in the current file, i.e. items that
     # were trimmed for age. Newer items missing from the current file were
     # removed on purpose (off-topic clean-ups) and must not come back.
+    # The cut-off is taken on non-paper items: PubMed papers can carry older
+    # publication dates and would otherwise push it back by weeks.
     by_id: dict[str, dict] = {it["id"]: it for it in current}
-    oldest_current = min((it.get("date", "") for it in current), default="")
+    dated = [it.get("date", "") for it in current if it.get("type") != "paper"] or \
+            [it.get("date", "") for it in current]
+    oldest_current = min(dated, default="")
     for version in versions[1:]:
         for it in version:
             if it.get("date", "") < oldest_current:
