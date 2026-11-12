@@ -16,7 +16,10 @@
     </td>
   </tr>
   <tr>
-    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">{{ it.source }} &middot; {{ it.date | fmt_date }}</td>
+    <td style="padding:0 0 4px 0;font-family:{{ FONT }};font-size:12px;line-height:18px;color:{{ c.muted }};">{{ it.source }} &middot; {{ it.date | fmt_date }}</td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:12px;line-height:17px;color:{{ c.muted }};word-break:break-all;">{{ url_line(it.url) }}</td>
   </tr>
   <tr>
     <td style="padding:0 0 10px 0;font-family:{{ FONT }};font-size:14px;line-height:21px;color:{{ c.text }};">{{ it.summary }}</td>
@@ -41,6 +44,12 @@
   </tr>
   {% endif %}
 </table>
+{%- endmacro -%}
+{#- The full address is shown as text: some mailboxes (Gmail, Outlook Safe Links)
+    route clicks through their own redirect page; the visible address can always
+    be copied and opened directly. -#}
+{%- macro url_line(url) -%}
+<a href="{{ url }}" target="_blank" style="color:{{ c.muted }};text-decoration:none;">{{ url }}</a>
 {%- endmacro -%}
 {%- macro section_title(label) -%}
 <tr>
@@ -175,7 +184,7 @@
           {% for b in g["items"] %}
           <tr>
             <td width="14" valign="top" style="width:14px;padding:4px 0 4px 0;font-family:{{ FONT }};font-size:14px;line-height:20px;color:{{ c.primary }};">&#8226;</td>
-            <td valign="top" style="padding:4px 0 4px 0;font-family:{{ FONT }};font-size:14px;line-height:20px;color:{{ c.text }};">{{ b.note }} <a href="{{ b.url }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;white-space:nowrap;">{{ b.source or "link" }}</a></td>
+            <td valign="top" style="padding:4px 0 4px 0;font-family:{{ FONT }};font-size:14px;line-height:20px;color:{{ c.text }};">{{ b.note }} <a href="{{ b.url }}" target="_blank" style="color:{{ c.primary }};text-decoration:underline;white-space:nowrap;">{{ b.source or "link" }}</a><br><span style="font-size:12px;line-height:17px;color:{{ c.muted }};word-break:break-all;">{{ url_line(b.url) }}</span></td>
           </tr>
           {% endfor %}
         </table>

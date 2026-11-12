@@ -1,6 +1,7 @@
 {%- macro item(it, num) -%}
 ### #{{ num }} [{{ it.title }}]({{ it.url }})
-*{{ it.type }} · {{ it.source }} · {{ it.date | fmt_date }}*
+*{{ it.type }} · {{ it.source }} · {{ it.date | fmt_date }}*  
+<{{ it.url }}>
 
 {{ it.summary }}
 {% if it.comment %}
@@ -55,7 +56,7 @@
 ### {{ g.section }}
 
 {% for b in g["items"] %}
-- {{ b.note }} – [{{ b.source or "link" }}]({{ b.url }})
+- {{ b.note }} – {{ b.source or "link" }}: <{{ b.url }}>
 {% endfor %}
 
 {% endfor %}

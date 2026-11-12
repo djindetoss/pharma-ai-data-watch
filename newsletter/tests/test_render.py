@@ -100,3 +100,10 @@ def test_featured_items_are_numbered_and_in_brief_rendered(edition, cfg):
 def test_edition_without_in_brief_still_renders(edition, cfg):
     del edition["in_brief"]
     assert "In brief" not in render_html(edition, cfg, "email")
+
+
+def test_full_address_is_visible_for_every_link(edition, cfg):
+    import re
+    html = render_html(edition, cfg, "email")
+    for url in re.findall(r'href="([^"]+)"', html):
+        assert f">{url}</a>" in html, f"address not shown as text: {url}"

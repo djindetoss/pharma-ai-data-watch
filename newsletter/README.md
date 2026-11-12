@@ -80,7 +80,8 @@ Gmail ("google.com/url?q=…") and Outlook ("safelinks.protection.outlook.com")
 wrap every link in their own security redirect when the recipient clicks. This
 happens in the recipient's mailbox and cannot be turned off by the sender; the
 address in the e-mail itself is the direct one (hover or right-click → copy link
-to see it).
+to see it). That is why the e-mail also prints the full address under every
+link: it can always be copied and pasted into the browser.
 
 ### Edit the draft
 
