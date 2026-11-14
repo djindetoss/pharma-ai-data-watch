@@ -49,6 +49,202 @@
     "badge": "Research"
   },
   {
+    "id": "nws-46518f6ad77c",
+    "type": "news",
+    "title": "Digital health roundup: fda’s genai comment divide, agilent’s proscia bet, AI scribes’ device status",
+    "excerpt": "In this week's Digital Health Roundup, industry and patients split over the FDA's GenAI framework, the TGA finds AI scribe makers unaware they sell medical devices, Agilent pays $240m up front for Proscia, and Senseonics starts human testing of Freedom.",
+    "source": "Citeline.com",
+    "date": "2026-11-13",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://insights.citeline.com/medtech-insight/digital-technologies/digital-health-roundup-fdas-genai-comment-divide-agilents-proscia-bet-ai-scribes-device-status-EPMZDLUFZBC5VDHHV5MTEN552Y/",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "nws-3ed97e4f134d",
+    "type": "news",
+    "title": "Introducing gemini for healthcare",
+    "excerpt": "Today, we are announcing Gemini for healthcare. This purpose-built industry solution extends the universal Gemini agent, we introduced last month at Gemini at Work.",
+    "source": "Google News",
+    "date": "2026-11-13",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-18469747e998",
+    "type": "news",
+    "title": "Study of 750,000 pregnancies reveals a surprising twist about ozempic and wegovy",
+    "excerpt": "A study of more than 750,000 pregnancies found that early exposure to Ozempic, Wegovy, and similar drugs was not linked to increased pregnancy complications when used for weight loss, but was associated with a higher risk of premature birth when prescribed fo…",
+    "source": "Science Daily",
+    "date": "2026-11-13",
+    "tags": [
+      "EMA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261111005911.htm",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-a53a711397b3",
+    "type": "news",
+    "title": "Why bmi is not the best measure of health",
+    "excerpt": "A new study is the first to show real-world data on the benefits of combining BMI with other measures like waist circumference.",
+    "source": "Time",
+    "date": "2026-11-13",
+    "tags": [
+      "RWD"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://time.com/article/2026/11/13/why-bmi-is-not-the-most-accurate-measure-of-health/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-298cba254962",
+    "type": "news",
+    "title": "Cross-national study evaluates digital mental health policies across 40",
+    "excerpt": "A comparative content analysis of 113 policy documents across 40 countries found marked variations in digital mental health governance between different income groups.",
+    "source": "Scienmag.com",
+    "date": "2026-11-13",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://scienmag.com/cross-national-study-evaluates-digital-mental-health-policies-across-40-countries/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-129d541fada9",
+    "type": "news",
+    "title": "AI agent emily books, bills and refills for musc health",
+    "excerpt": "Patients call a hospital to move an appointment, refill a prescription or ask about a bill. At MUSC Health, those calls frustrated patients and strained staff. The Medical University of South Carolina’s health system now sends them first to Emily, an artifici…",
+    "source": "pymnts.com",
+    "date": "2026-11-13",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.pymnts.com/healthcare/2026/ai-agent-emily-books-bills-and-refills-for-musc-health/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-266bccc10e42",
+    "type": "paper",
+    "title": "Do Rule-Derived Labels Improve Prediction When Reported Labels Are Limited? A Two-Site Machine Learning Study",
+    "excerpt": "**Background.** Rule derived (weak) labels can enlarge a training set when reported labels are scarce. Their value depends on label quality, on how the extra records shift the training distribution, and on whether the comparison accounts for reported labels set aside for tuning or calibration. **Methods.** We ran an exploratory label-budget experiment on *Escherichia coli* urine cultures from two de-identified electronic health record datasets: Stanford ARMD and UT Southwestern ARMD-UTSW. The task was to predict reported non-susceptibility to cefepime, cefoxitin and ceftazidime (Stanford) and ",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-13",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367890v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-ee3b68c9dcbd",
+    "type": "paper",
+    "title": "BenchmarkHub: an open-source platform for reproducible evaluation of large language models in healthcare",
+    "excerpt": "Background: Large language models (LLMs) are solely judged by their scores on biomedical benchmarks, yet these scores are rarely reproducible since the prompts, inference settings and model builds are seldom reported. We developed BenchmarkHub, an open-source platform for auditable evaluation of language and vision-language models for biomedical research. Methods: BenchmarkHub is a Python web application (Django 5.2, SQLite) released under the MIT licence and available at https://github.com/juanjuanignacio/benchmarkhub. The application can be accessed through a browser interface, a set of comm",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-13",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367866v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-2da7e1a441f1",
+    "type": "paper",
+    "title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+    "excerpt": "ClinicalTrials.gov provides valuable information for vaccine research, but fragmented data structures and inconsistent vaccine naming complicate systematic cross-trial analysis. The Study-ExperimentAssay Common Data Model (SEA-CDM) provides a standardized structure for biomedical study data, while biomedical ontologies supply semantic relationships among concepts. We extracted 9,147 vaccinerelated study records from the Aggregate Analysis of ClinicalTrials.gov (AACT) database, mapped their records into SEA-CDM, and linked vaccine products and reported adverse events (AEs) to the Vaccine Ontolo",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-13",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-c231d25e54b9",
+    "type": "ainews",
+    "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+    "excerpt": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+    "source": "TechCrunch AI",
+    "date": "2026-11-13",
+    "tags": [
+      "AI",
+      "Commerce",
+      "AI agents",
+      "ChatGPT"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-951c84561943",
+    "type": "ainews",
+    "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+    "excerpt": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-13",
+    "tags": [
+      "AI",
+      "News",
+      "OpenAI",
+      "Tech"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "badge": "Tech"
+  },
+  {
+    "id": "auto-dd3fa5c59d32",
+    "type": "seminar",
+    "title": "European platform for regulatory science research meeting: October 2026, Online, European Medicines Agency, Amsterdam, the Netherlands, from 22 October 2026, 09:00 (CEST) to 22 October 2026, 17:00 (CEST)",
+    "excerpt": "European platform for regulatory science research meeting: October 2026, Online, European Medicines Agency, Amsterdam, the Netherlands, from 22 October 2026, 09:00 (CEST) to 22 October 2026, 17:00 (CEST)",
+    "source": "EMA – events",
+    "date": "2026-11-13",
+    "tags": [
+      "EMA – events"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ema.europa.eu/en/events/european-platform-regulatory-science-research-meeting-october-2026",
+    "badge": "Event",
+    "topic": "regulatory"
+  },
+  {
     "id": "auto-27b7872269bf",
     "type": "paper",
     "title": "Animal and Cell Models in Alzheimer's and Parkinson's Disease: Current Innovations Reviewed",
@@ -495,6 +691,143 @@
     "url": "https://www.ema.europa.eu/en/events/ema-annual-call-general-practitioner-organisations-representatives",
     "badge": "Event",
     "topic": "regulatory"
+  },
+  {
+    "id": "nws-711ab3c575a4",
+    "type": "news",
+    "title": "Antimicrobial resistance",
+    "excerpt": "Antimicrobial resistance (AMR)—the ability of a microorganism (bacteria, virus, fungi, parasite) to resist the effects of a drug—is a serious, complex and costly public health problem. Learn what FDA is doing to address AMR.",
+    "source": "FDA.gov",
+    "date": "2026-11-12",
+    "tags": [
+      "FDA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.fda.gov/emergency-preparedness-and-response/medical-countermeasure-mcm-issues/antimicrobial-resistance",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-b962c7f9314e",
+    "type": "ainews",
+    "title": "A third of US AI chatters are hot at bots, hurling insults at llms",
+    "excerpt": "Anthropic sets behavior standards to protect Claude from rough treatment",
+    "source": "Theregister.com",
+    "date": "2026-11-12",
+    "tags": [
+      "LLM",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/11/12/a-third-of-us-ai-chatters-are-hot-at-bots-hurling-insults-at-llms/5309506",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-73823819d236",
+    "type": "ainews",
+    "title": "Openai launches security products, tells orgs they’re doomed if they don’t use them",
+    "excerpt": "Meanwhile, a group of nonprofits sue AI giants and cite AI-driven cyberattacks",
+    "source": "Theregister.com",
+    "date": "2026-11-12",
+    "tags": [
+      "OpenAI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-f7effce2db92",
+    "type": "ainews",
+    "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands | techcrunch",
+    "excerpt": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
+    "source": "TechCrunch",
+    "date": "2026-11-12",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-baccdaa9b550",
+    "type": "ainews",
+    "title": "Jensen huang’s exit puts nvidia’s support for open source in question | techcrunch",
+    "excerpt": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a leadership transition.",
+    "source": "TechCrunch",
+    "date": "2026-11-12",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-deea79b353af",
+    "type": "ainews",
+    "title": "Hugging face CEO vows to keep fighting for open-source AI after jensen huang's exit | techcrunch",
+    "excerpt": "Hugging Face's CEO pledged to keep fighting for open-source AI after Huang's exit, raising questions about Nvidia's $12.9B acquisition.",
+    "source": "TechCrunch",
+    "date": "2026-11-12",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-32933935200c",
+    "type": "ainews",
+    "title": "AI chatbots are recommending fake retail websites, study finds",
+    "excerpt": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared exclusively with The Verge prompted ChatGPT, Gem…",
+    "source": "The Verge",
+    "date": "2026-11-12",
+    "tags": [
+      "LLM"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-0ff22abf6100",
+    "type": "ainews",
+    "title": "Five ways jensen huang’s ouster from nvidia could damage the AI industry | techcrunch",
+    "excerpt": "Nvidia's ousted CEO Jensen Huang's downfall isn’t just your run-of-the-mill salacious billionaire sex scandal. He was using his influence to push the AI industry in some very specific ways.",
+    "source": "TechCrunch",
+    "date": "2026-11-12",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-c28621f64a14",
+    "type": "ainews",
+    "title": "United airlines wants you to check in, not your chatbot",
+    "excerpt": "AI agents face restrictions over safety checks that require a human touch",
+    "source": "Theregister.com",
+    "date": "2026-11-12",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theregister.com/ai-and-ml/2026/11/12/united-airlines-wants-you-to-check-in-not-your-chatbot/5309373",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-4528e1d380c9",
@@ -3095,6 +3428,25 @@
     "topic": "clinical-ai"
   },
   {
+    "id": "auto-57ddcadfd04d",
+    "type": "paper",
+    "title": "Clinical Recognition, Safe Triage, and Pharmacovigilance Reporting Readiness for Suspected Serious Adverse Drug Reactions in Community Pharmacies: A Covert Simulated-Patient Study in Central Jordan",
+    "excerpt": "A covert simulated-patient study conducted in community pharmacies across Central Jordan assessed the ability of pharmacy staff to clinically recognize suspected serious adverse drug reactions, appropriately triage patients, and report cases through pharmacovigilance systems. The study evaluated readiness and practices for managing serious adverse events in a primary care pharmacy setting.",
+    "source": "J Clin Med",
+    "date": "2026-11-06",
+    "tags": [
+      "Pharmacovigilance",
+      "Adverse Drug Reactions",
+      "Community Pharmacy",
+      "Patient Safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43030794/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-7ea93072ba3c",
     "type": "news",
     "title": "STAT+: In China, a flood of controversial clinical trials slows to a trickle",
@@ -4537,371 +4889,5 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42998522/",
     "badge": "PubMed",
     "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-e39e192efd12",
-    "type": "news",
-    "title": "New guidance document MDCG 2026-6 on Guidance on clinical evidence for orphan IVDs",
-    "excerpt": "MDCG 2020-16 rev.5 - Guidance on Classification Rules for in vitro Diagnostic Medical Devices under Regulation (EU) 2017/746 (September 2026)",
-    "source": "European Commission – Health",
-    "date": "2026-11-03",
-    "tags": [
-      "Directorate-General for Health and Food Safety",
-      "Medical Devices - Sector",
-      "News announcement",
-      "medical device"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://health.ec.europa.eu/latest-updates/new-guidance-document-mdcg-2026-6-guidance-clinical-evidence-orphan-ivds-2026-11-03_en",
-    "badge": "Policy",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-51c3d9289a34",
-    "type": "news",
-    "title": "Minutes - 40th meeting of the Expert Group on Health Systems Performance Assessment (1 October 2026)",
-    "excerpt": "Minutes - 40th meeting of the Expert Group on Health Systems Performance Assessment (1 October 2026)",
-    "source": "European Commission – Health",
-    "date": "2026-11-03",
-    "tags": [
-      "Directorate-General for Health and Food Safety",
-      "Health systems performance assessment",
-      "News announcement",
-      "health care system"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://health.ec.europa.eu/latest-updates/minutes-40th-meeting-expert-group-health-systems-performance-assessment-1-october-2026-2026-11-03_en",
-    "badge": "Policy",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-8098ec13abbf",
-    "type": "paper",
-    "title": "Treatment Adherence and its Association with Demographic Characteristics and Clinical Factors Among Patients with Hypertension: A Cross-Sectional, Descriptive-Correlational Study",
-    "excerpt": "This cross-sectional, descriptive-correlational study examined the relationship between treatment adherence and demographic and clinical factors in hypertension patients. The research investigated how patient characteristics and clinical variables associate with medication adherence in this population. Findings from this analysis may inform strategies to improve treatment compliance among hypertensive patients.",
-    "source": "Vasc Health Risk Manag",
-    "date": "2026-11-02",
-    "tags": [
-      "Hypertension",
-      "Treatment Adherence",
-      "Cross-Sectional Study",
-      "Patient Demographics"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42968927/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-ae2418d0ea2f",
-    "type": "news",
-    "title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
-    "excerpt": "The U.S. Food and Drug Administration today issued final guidance for manufacturers of cellular and gene therapy (CGT) products to implement a comprehensive, science- and risk-based plan for making sure their products meet potency standards.",
-    "source": "FDA",
-    "date": "2026-11-02",
-    "tags": [
-      "FDA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "http://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-869219a7f133",
-    "type": "ainews",
-    "title": "OpenAI is finally merging ChatGPT’s chat and Work tabs",
-    "excerpt": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
-    "source": "TechCrunch AI",
-    "date": "2026-11-02",
-    "tags": [
-      "AI",
-      "Apps",
-      "ChatGPT",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-    "badge": "Tech"
-  },
-  {
-    "id": "nws-21fb8dc84ead",
-    "type": "news",
-    "title": "Mhra launches patient safety essay competition for medsafetyweek",
-    "excerpt": "The MHRA reminds patients, parents, carers and healthcare professionals to report suspected side effects through the Yellow Card scheme for MedSafetyWeek 2026.",
-    "source": "Www.gov.uk",
-    "date": "2026-11-02",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.gov.uk/government/news/mhra-launches-patient-safety-essay-competition-for-medsafetyweek",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-c9d343771e48",
-    "type": "news",
-    "title": "Five overlooked steps to identify new epidemics, fast",
-    "excerpt": "Current measures to track emerging epidemics have a key limitation: they don’t work if the disease causes unusual or unexpected symptoms.",
-    "source": "Nature.com",
-    "date": "2026-11-02",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/d41586-026-03509-x",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-943a2b78903e",
-    "type": "news",
-    "title": "A catalog of transcriptome genetic regulation in a consanguineous middle eastern biobank",
-    "excerpt": "This study reports an atlas of transcriptomic genetic effects from a Middle Eastern population biobank, revealing population-specific regulatory variants and links to clinically relevant traits.",
-    "source": "Nature.com",
-    "date": "2026-11-02",
-    "tags": [
-      "Regulatory"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41588-026-02785-7",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-e49f46b109f6",
-    "type": "ainews",
-    "title": "The agentic web is here",
-    "excerpt": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet des…",
-    "source": "MIT Technology Review",
-    "date": "2026-11-02",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "auto-0ad9e89a8ab0",
-    "type": "ainews",
-    "title": "Raising the quality of insights in agentic analytics",
-    "excerpt": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insights. But there is a problem: The quality of insights that agents currently generate&#8230;",
-    "source": "MIT Technology Review",
-    "date": "2026-11-02",
-    "tags": [
-      "Artificial intelligence",
-      "sponsored"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
-    "badge": "Research"
-  },
-  {
-    "id": "auto-d5a96409c72a",
-    "type": "ainews",
-    "title": "Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4",
-    "excerpt": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now LLMs are very bad at low-latency tasks:…Realtime-Bench says it’ll be a while till AI systems can play games or do online auctions for you…Researchers have built [&#8230;]",
-    "source": "Import AI",
-    "date": "2026-11-02",
-    "tags": [
-      "Uncategorized"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/",
-    "badge": "Research"
-  },
-  {
-    "id": "nws-f1c608c99114",
-    "type": "news",
-    "title": "Agents in production: build your first AI agent in r with {ellmer}",
-    "excerpt": "This is part one of a five-part series on putting AI agents into production with R.\nEach part builds on the same app, a clinical trial safety assistant. The parts are:\r\n\nFrom Chatbot to Agent (this post)\nPutting the Agent in a Shiny App\nCan You Tr...\r\n\n\n\nCont…",
-    "source": "R-bloggers.com",
-    "date": "2026-11-02",
-    "tags": [
-      "LLM",
-      "AI agent",
-      "Clinical trials"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.r-bloggers.com/2026/11/agents-in-production-build-your-first-ai-agent-in-r-with-ellmer/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-b281814e6d45",
-    "type": "news",
-    "title": "Show hn: deedglass – an agent said it updated 1 row; postgres changed 301",
-    "excerpt": "Check what your AI agents actually changed. AI agent safety for databases and health records: rules decide each tool call, a check compares what really changed with what the agent reported, and eac...",
-    "source": "Github.com",
-    "date": "2026-11-02",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://github.com/deedglass/deedglass",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-b34a9cef674c",
-    "type": "news",
-    "title": "Dana-farber’s lenane says data quality should fit the decision it supports",
-    "excerpt": "Naomi Lenane, CIO and senior vice president of information services at Dana-Farber Cancer Institute, discusses how much data quality a health system needs before acting on its data. Lenane explains why the answer depends on the decision, why data definitions …",
-    "source": "Healthsystemcio.com",
-    "date": "2026-11-02",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://healthsystemcio.com/2026/11/02/healthcare-data-quality-decisions/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "auto-e136365efd0e",
-    "type": "paper",
-    "title": "Sex-specific factors associated with pain and analgesic use in amateur football: a prospective cohort study",
-    "excerpt": "This prospective cohort study investigates sex-specific factors associated with pain and analgesic use among amateur football players. The research was conducted by researchers at Linköping University's Sport Without Injury Programme (SWIPE), examining how pain management patterns and underlying factors differ between male and female athletes in amateur football settings.",
-    "source": "J Sci Med Sport",
-    "date": "2026-10-28",
-    "tags": [
-      "Sports medicine",
-      "Sex differences",
-      "Pain management",
-      "Prospective cohort study"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43009366/",
-    "badge": "PubMed",
-    "topic": "drug-discovery"
-  },
-  {
-    "id": "auto-e7eea5ee0f9e",
-    "type": "paper",
-    "title": "Neuronal FICD shapes motivated behavior through modulation of dopamine receptor dynamics",
-    "excerpt": "Motivated behaviors rely on dopaminergic signaling, which in turn depends on the correct folding and trafficking of receptors through the endoplasmic reticulum (ER). Within the ER, the AMPylase enzyme FICD acts as a molecular rheostat through its modification of the chaperone BiP, dynamically tuning the organelle's responsiveness to folding perturbations and cellular stress. While the biochemistry of FICD is well-established, its role in complex animal behavior remains poorly understood. Here, we identify FICD as a conserved contributor to the generation of motivated behavior. In Drosophila, p",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Neuroscience",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.10.12.758510",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-db6b600cba00",
-    "type": "paper",
-    "title": "Do LLM Proposers Improve Budgeted Search for Ionizable Lipids?",
-    "excerpt": "Efficient lipid design under limited experimental budgets is a central challenge in computational chemistry and drug discovery. We introduce LEAF (Lipid Evolutionary Adaptive Framework), a matched-budget protocol for testing whether language-model proposers improve combinatorial molecular search relative to classical baselines. The study uses a 30,044-candidate ionizable-lipid space, a frozen Gaussian-process oracle fitted to experimental potency labels, and a separate active-learning surrogate. Four language models evaluated over eight seeds and three splits show no significant improvement ov",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Bioinformatics",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.10.06.756984",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-585df3d4182a",
-    "type": "paper",
-    "title": "BioMod: Biological Module Tokenization for Single-Cell Foundation Modeling",
-    "excerpt": "Single-cell foundation models typically represent cells as flat sequences of individual genes, requiring higher-order biological organization to be inferred implicitly from sparse expression profiles. Similar to the evolution from character-level to semantic tokenization in natural language processing,we hypothesize that cellular states can be more efficiently represented using biologically meaningful intermediate units. Here we present BioMod, a 50-million-parameter single-cell foundation model that introduces biological modules as representation units between genes and cells. BioMod construc",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Bioinformatics",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.10.12.758490",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-ab768e450d3d",
-    "type": "paper",
-    "title": "A foundation model for brain organoid network dynamics uncovers intrinsic computation and convergent disease phenotypes",
-    "excerpt": "Brain organoids develop self-organizing neural networks that can be used to model neurodevelopment and disease. Here we introduce PULSE, a foundation model developed using over 900 hours of high-density microelectrode array recordings of in vitro and ex vivo neural tissue. We show that this single model can address two open questions: how disease-associated variants alter network development, and how naive circuits encode information. PULSE revealed accelerated network maturation in held-out human 16p11.2-deletion organoids. It also revealed a change in network coordination shared with SHANK3 ",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Neuroscience",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.10.11.758231",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-4bfc6db9aace",
-    "type": "paper",
-    "title": "Oligodendrocyte stress response as a driver of vascular dementia",
-    "excerpt": "Vascular dementia (VaD) is a prevalent and devastating neurocognitive disorder characterized by profound white matter damage, yet the precise cellular mechanisms linking cerebrovascular stress to demyelination remain poorly understood. Here, we characterize the impact of a chronic cardiometabolic stress regimen combining a high-fat diet and hypertension (HF/HBP) on central nervous system structure and function. Adult HF/HBP mice exhibit progressive oligodendroglial cell loss and myelin thinning, followed by cognitive impairments, anxiety-like behavior, and memory deficits that recapitulate cli",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Neuroscience",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.10.12.758545",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-e93372231c83",
-    "type": "paper",
-    "title": "VPS34 regulation in pulmonary arterial vascular smooth muscle cells in pulmonary hypertension",
-    "excerpt": "Pulmonary arterial hypertension (PAH) is characterized by the hyperproliferative phenotype of pulmonary arterial smooth muscle cells (PAVSMCs) and extensive extracellular matrix (ECM) remodeling. Vacuolar protein sorting 34 (VPS34), a Class III Phosphatidylinositol-3 Kinase (PI3K), regulates cell proliferation, but its specific function in pulmonary vascular remodeling remains poorly understood. We aim to determine the role of VPS34 activation and regulation in PAVSMC proliferation, matrix deposition, and the progression of PAH. First, we found a marked decrease in the inhibitory phosphorylati",
-    "source": "bioRxiv",
-    "date": "2026-10-13",
-    "tags": [
-      "Cell Biology",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.09.28.752142",
-    "badge": "Preprint"
-  },
-  {
-    "id": "auto-f38ec6e31724",
-    "type": "paper",
-    "title": "Human-specific CCG-repeat insertion in the RBFOX1 promoter implicated in autism and speech enhances EGR1-responsive activity",
-    "excerpt": "Human-specific promoter innovations have been predicted to shape human-specific traits. Here, we investigated the RBFOX1 splice regulator gene, which is specifically upregulated in human and songbird speech/song brain areas. We found that the human RBFOX1 promoter associated with autism and language impairment harbors a human-specific CCG trinucleotide insertion creating a functional CCG-repeat motif. Comparative single-nucleus transcriptome analyses of primate brains indicate that the human promoter drives differential expression in cortical excitatory neurons. Reporter assays show that the h",
-    "source": "bioRxiv",
-    "date": "2026-10-12",
-    "tags": [
-      "Genomics",
-      "bioRxiv"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://doi.org/10.64898/2026.04.21.719679",
-    "badge": "Preprint"
   }
 ]
