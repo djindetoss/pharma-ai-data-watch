@@ -1,0 +1,72 @@
+{%- macro item(it, num) -%}
+#{{ num }} [{{ it.type }}] {{ it.title }}
+{{ it.source }} | {{ it.date | fmt_date }}
+{{ it.url }}
+
+{{ it.summary | wordwrap(76) }}
+{% if it.comment %}
+
+{{ it.comment.strip() | wordwrap(76) }}
+{% endif %}
+
+{{ ("Why it matters for NCAs: " ~ it.why_it_matters) | wordwrap(76) }}
+{% if it.tags %}Tags: {{ it.tags | join(", ") }}
+{% endif %}
+{%- endmacro -%}
+{% if mode == "draft" %}
+*** DRAFT - not yet validated. {% if pr_url %}Review the pull request: {{ pr_url }}{% endif %} ***
+
+{% endif %}
+{{ cfg.title | upper }}
+Edition #{{ e.edition_number }} | {{ period }}
+Formatted version: open the attached HTML file ({{ attachment }}).
+==========================================================================
+
+{% if e.editorial %}
+{{ e.editorial.strip() | wordwrap(76) }}
+
+{% endif %}
+{% if e.highlight %}
+HIGHLIGHT OF THE PERIOD
+--------------------------------------------------------------------------
+{{ item(e.highlight, 1) }}
+
+{% endif %}
+{% set base = 1 if e.highlight else 0 %}
+{% if e.scientific_articles %}
+SCIENTIFIC ARTICLES
+--------------------------------------------------------------------------
+{% for it in e.scientific_articles %}
+{{ item(it, base + loop.index) }}
+{% if not loop.last %}
+. . .
+
+{% endif %}
+{% endfor %}
+
+{% endif %}
+{% if e.news %}
+NEWS & REGULATORY UPDATES
+--------------------------------------------------------------------------
+{% for it in e.news %}
+{{ item(it, base + e.scientific_articles|length + loop.index) }}
+{% if not loop.last %}
+. . .
+
+{% endif %}
+{% endfor %}
+
+{% endif %}
+{% if e.in_brief %}
+IN BRIEF
+--------------------------------------------------------------------------
+{% for g in e.in_brief %}
+{{ g.section }}:
+{% for b in g["items"] %}
+{{ ("- " ~ b.note ~ " (" ~ (b.source or "link") ~ ")") | wordwrap(76, wrapstring="\n  ") }}
+  {{ b.url }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+==========================================================================
