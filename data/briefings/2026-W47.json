@@ -1,0 +1,1218 @@
+{
+  "id": "2026-W47",
+  "weekLabel": "Week 47 — November 16, 2026",
+  "weekStart": "2026-11-16",
+  "weekEnd": "2026-11-16",
+  "generatedAt": "2026-11-16T17:18:22.326Z",
+  "meta": {
+    "articlesAnalyzed": 60,
+    "model": "claude-haiku-4-5"
+  },
+  "leadStory": {
+    "headline": "EMA and FDA Expand Approvals While Platforms Standardize LLM Benchmarking",
+    "standfirst": "Seven new medicines cleared by EMA's CHMP and FDA's first FXIa inhibitor approval signal accelerating regulatory throughput, while BenchmarkHub addresses critical reproducibility gaps in biomedical LLM evaluation—reshaping how AI evidence is assessed across European and global drug development.",
+    "body": "The EMA recommended seven new medicines for approval in November 2026, including regulatory validation of novel mechanisms (FXIa inhibitor for stroke prevention, amivantamab-hyaluronidase for head-and-neck cancers), signalling sustained momentum in complex approvals despite economic headwinds. Simultaneously, BenchmarkHub's open-source platform tackles a foundational crisis: biomedical LLM benchmarks lack reproducible prompts, inference settings, and reporting standards, undermining confidence in AI-assisted drug discovery and regulatory intelligence claims. For pharma R&D and regulatory science professionals, this dual development means (1) approval pathways remain fluid for differentiated mechanisms, and (2) any AI tool claiming superiority in literature mining, evidence synthesis, or trial design must now be evaluated against reproducible, auditable benchmarks—making vendor assessment and internal validation non-negotiable before deployment in GCP/GMP contexts.",
+    "sourceIndices": [
+      1,
+      4,
+      8,
+      21
+    ],
+    "sources": [
+      {
+        "title": "Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 9-12 November 2026",
+        "source": "EMA",
+        "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
+        "date": "2026-11-13",
+        "type": "news"
+      },
+      {
+        "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
+        "source": "FDA",
+        "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
+        "date": "2026-11-09",
+        "type": "news"
+      },
+      {
+        "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+        "source": "FDA",
+        "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+        "date": "2026-11-05",
+        "type": "news"
+      },
+      {
+        "title": "BenchmarkHub: an open-source platform for reproducible evaluation of large language models in healthcare",
+        "source": "medRxiv – Health Informatics",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367866v1?rss=1",
+        "date": "2026-11-13",
+        "type": "paper"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "frontier",
+      "title": "Frontier AI & LLMs",
+      "icon": "🤖",
+      "items": [
+        {
+          "headline": "BenchmarkHub Establishes Reproducible LLM Evaluation Framework for Healthcare",
+          "body": "BenchmarkHub addresses a critical vulnerability in biomedical LLM assessment: published benchmark scores lack reproducible prompts, inference parameters, and reporting standards, rendering competitive claims unreliable. For pharma and regulatory professionals evaluating AI tools for evidence synthesis, literature mining, or clinical trial optimization, this open-source platform enforces transparency—ensuring that vendor claims about performance are auditable and comparable. Implementation of standardized benchmarking directly impacts regulatory confidence in AI-assisted submissions and internal R&D decision-making.",
+          "sourceIndices": [
+            21
+          ],
+          "sources": [
+            {
+              "title": "BenchmarkHub: an open-source platform for reproducible evaluation of large language models in healthcare",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367866v1?rss=1",
+              "date": "2026-11-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "MENTOR Multi-Agent System Automates Negative Control Outcome Selection",
+          "body": "MENTOR combines large language models with knowledge graphs to automate selection of negative control outcomes in observational studies, reducing manual effort while detecting systematic error. This addresses a critical bottleneck in real-world evidence (RWE) generation for regulatory submissions and post-marketing surveillance, where inappropriate negative controls inflate spurious efficacy claims. For clinical development teams using RWE to support label extensions or observational safety analyses, automation of this validation step accelerates evidence integrity checks.",
+          "sourceIndices": [
+            26
+          ],
+          "sources": [
+            {
+              "title": "MENTOR: An Evidence-Informed Large Language Model-Based Multi-Agent System for Efficient Selection of Institution-Specific Negative Control Outcomes",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367768v1?rss=1",
+              "date": "2026-11-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Contradictory Drug-Disease Evidence Detection Scales Across Trial Literature",
+          "body": "Automated methods now detect contradictory efficacy claims across randomized controlled trials at scale, moving beyond isolated sentence classification to reconcile conflicting evidence in meta-analyses. For regulatory scientists and medical intelligence teams preparing PSUR updates or EMA submissions, this capability flags inconsistencies in trial outcome reporting that could signal data integrity issues or genuine efficacy variation by population subgroup. Early adoption supports robust evidence dossiers and anticipates post-approval surveillance questions.",
+          "sourceIndices": [
+            27
+          ],
+          "sources": [
+            {
+              "title": "Detecting Contradictory Evidence on Drug-Disease Associations at Scale",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367856v1?rss=1",
+              "date": "2026-11-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "LLM Agents Automate Postmarketing Pharmacovigilance Adverse Event Reporting",
+          "body": "Generative AI agents now extract and classify adverse events from free-text clinical narratives, addressing chronic underreporting in spontaneous pharmacovigilance systems. For regulatory science teams managing post-approval safety surveillance, this reduces manual signal detection latency and improves completeness of adverse event capture in EudraVigilance and FDA MedWatch submissions. Deployment in pharmacovigilance operations directly shortens time-to-signal detection, critical for rare but serious outcomes.",
+          "sourceIndices": [
+            28
+          ],
+          "sources": [
+            {
+              "title": "Automating postmarketing pharmacovigilance with large language model agents",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367711v1?rss=1",
+              "date": "2026-11-12",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "One-Person AI Biotech Firms Challenge Traditional Drug Discovery Economics",
+          "body": "Anthropic's acquisition of a single-researcher AI-powered biotech company signals structural disruption: AI-augmented individuals now execute functions historically requiring teams. For pharma R&D leadership assessing in-house AI capability maturity and outsourcing strategies, this trend implies accelerated consolidation around platform-augmented research rather than headcount scaling. Early-stage programs must anticipate competitive pressure from leaner, AI-native competitors with faster cycle times.",
+          "sourceIndices": [
+            29,
+            30
+          ],
+          "sources": [
+            {
+              "title": "Daily briefing: are one-person firms the future of biotech?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03684-x",
+              "date": "2026-11-12",
+              "type": "news"
+            },
+            {
+              "title": "Anthropic bought a one-person, ai-powered biotech: is this drug discovery’s future?",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/d41586-026-03640-9",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "GPCRAgent Integrates Knowledge Graphs and LLMs for GPCR Drug Discovery",
+          "body": "GPCRAgent combines knowledge graphs with large language models to support target selection, hit identification, and lead optimization for G protein-coupled receptor programs. For discovery chemistry and computational biology teams, this multi-agent platform reduces manual literature synthesis and hypothesis generation cycles, accelerating progression from target to qualified lead. Integration of structured knowledge (ontologies, binding databases) with generative reasoning improves hit quality and reduces false-positive compounds.",
+          "sourceIndices": [
+            44
+          ],
+          "sources": [
+            {
+              "title": "GPCRAgent: an intelligent multi-agent platform integrating knowledge graphs and large language models for GPCR-targeted drug discovery",
+              "source": "J Adv Res",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43003299/",
+              "date": "2026-11-09",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Multi-Agent AI Automates Transfusion Reaction Feature Extraction From Notes",
+          "body": "Generative AI agents extract and classify transfusion reaction features from unstructured clinical narratives, addressing significant underreporting gaps in hemovigilance systems. For clinical development teams running trials involving blood product administration or hemolytic disease monitoring, automated feature extraction improves signal sensitivity and regulatory compliance with reporting timelines. This capability scales across heterogeneous EHR formats without manual data standardization.",
+          "sourceIndices": [
+            46
+          ],
+          "sources": [
+            {
+              "title": "Multi-Agent Generative Artificial Intelligence for Transfusion Reaction Feature Extraction",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367389v1?rss=1",
+              "date": "2026-11-09",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Natural Language Queries Enable Real-Time Hospital Data Platform Access",
+          "body": "Natural-language interfaces allow researchers to query hospital data platforms without technical SQL expertise, reducing access friction for clinical trial feasibility assessments and observational cohort identification. For regulatory and clinical development teams conducting site selection or population prevalence studies, this democratizes hospital data access and accelerates enrollment planning. Accuracy and provenance tracking ensure audit-trail compliance for regulatory submissions.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Natural-language cohort queries on a hospital data platform: accuracy and provenance in a real-world evaluation",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367645v1?rss=1",
+              "date": "2026-11-10",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Federated Learning Preserves SHAP Explainability in Clinical AI Models",
+          "body": "Federated learning architectures now maintain consistent SHAP explainability across distributed clinical datasets without centralizing sensitive patient data. For regulatory science and clinical operations teams deploying ICU mortality prediction or other high-risk clinical decision support systems, this ensures interpretability is preserved during model training and audit—critical for EMA/FDA scrutiny of real-world AI validation. Cross-site explainability consistency supports regulatory submissions of multi-center AI validation studies.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Preserving explainability in federated learning for clinical decision-making: shap explainability consistency analysis of icu mortality prediction models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-79688-4.pdf",
+              "date": "2026-11-12",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Gait Foundation Model Predicts Multisystem Health Phenotypes From Motion",
+          "body": "A foundation model trained on 3D skeletal motion data from 3,328 adults predicts diverse clinical outcomes (cardiovascular disease, cognitive decline, mortality) from gait patterns alone. For clinical development teams designing digital biomarker programs or remote monitoring systems, this demonstrates scalable phenotype prediction without lab biomarkers—enabling pragmatic trial designs and real-world engagement strategies. Potential applications span neurodegenerative, metabolic, and aging-related indications.",
+          "sourceIndices": [
+            54
+          ],
+          "sources": [
+            {
+              "title": "A gait foundation model for prediction of multisystem health phenotypes from 3d skeletal motion",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41591-026-04724-9",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "title": "Regulatory Science",
+      "icon": "🏛️",
+      "items": [
+        {
+          "headline": "CHMP Recommends Seven New Medicines for Approval in November 2026",
+          "body": "EMA's Committee for Medicinal Products for Human Use cleared seven medicines for marketing authorization in its November 2026 session, reflecting sustained approval momentum across diverse therapeutic areas. For regulatory affairs teams preparing European submissions, this sustained throughput indicates predictable review timelines and consistent evaluation standards. CHMP minutes and agendas provide precedent for similar mechanism classes and clinical trial designs.",
+          "sourceIndices": [
+            1
+          ],
+          "sources": [
+            {
+              "title": "Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 9-12 November 2026",
+              "source": "EMA",
+              "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
+              "date": "2026-11-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EMA-HMA Multi-Stakeholder Forum Advances EudraVigilance Signal Detection",
+          "body": "The second HMA/EMA multi-stakeholder forum on EudraVigilance and signal detection convened regulatory agencies, industry, and academia to harmonize pharmacovigilance processes across EU member states. For post-approval safety teams and regulatory intelligence staff, this collaborative framework improves signal detection sensitivity and accelerates causality assessment workflows. Participation in EMA forums provides direct input into future safety reporting guideline evolution.",
+          "sourceIndices": [
+            2
+          ],
+          "sources": [
+            {
+              "title": "Agenda - Second HMA/EMA multi-stakeholder forum on EudraVigilance and signal detection",
+              "source": "EMA – agendas & minutes",
+              "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-second-hma-ema-multi-stakeholder-forum-eudravigilance-signal-detection_en.pdf",
+              "date": "2026-11-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EMA-HMA AI and Data Forum Establishes Trustworthy AI Governance Framework",
+          "body": "The EMA and HMA convened a multi-stakeholder forum dedicated to building trustworthy AI on strong data foundations, signalling formal regulatory commitment to harmonized AI validation standards across Europe. For R&D teams planning to submit AI-assisted analyses (biomarker discovery, clinical trial optimization, pharmacovigilance algorithms) to EMA, this forum sets expectations for data provenance, model transparency, and cross-dataset validation. Early alignment with emerging AI governance guidance reduces post-submission deficiency cycles.",
+          "sourceIndices": [
+            3
+          ],
+          "sources": [
+            {
+              "title": "Agenda - HMA / EMA multistakeholder AI and Data forum: Build trustworthy AI on strong data foundations",
+              "source": "EMA – agendas & minutes",
+              "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-hma-ema-multistakeholder-ai-data-forum-build-trustworthy-ai-strong-data-foundations_en.pdf",
+              "date": "2026-11-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Approves First Factor XIa Inhibitor Sunharbo for Stroke Prevention",
+          "body": "FDA granted approval to Sunharbo (asundexian), the first factor XIa inhibitor for combination antiplatelet therapy in high-risk stroke patients, expanding antithrombotic options beyond vitamin K antagonists. For regulatory science teams developing competing anticoagulants or antiplatelet compounds, this approval validates the FXIa target and sets clinical efficacy/safety benchmarks for future submissions. Label language on combination therapy and patient selection criteria guides development program design.",
+          "sourceIndices": [
+            4
+          ],
+          "sources": [
+            {
+              "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
+              "date": "2026-11-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "CHMP Meeting Agenda and Annex Detail November 2026 Review Dossiers",
+          "body": "EMA published the full agenda and annexes for the CHMP November 2026 meeting, providing detailed information on evaluations, questions to applicants, and assessment timelines. For regulatory and medical affairs teams tracking competitive intelligence and understanding EMA evaluation criteria, these documents offer transparency into submission status, review focus areas, and potential deficiency trends. Regular review supports internal timeline forecasting and strategic positioning.",
+          "sourceIndices": [
+            5,
+            6
+          ],
+          "sources": [
+            {
+              "title": "Annex to agenda of the CHMP meeting 9-12 November 2026",
+              "source": "EMA – agendas & minutes",
+              "url": "https://www.ema.europa.eu/en/documents/agenda/annex-agenda-chmp-meeting-9-12-november-2026_en.xlsx",
+              "date": "2026-11-09",
+              "type": "news"
+            },
+            {
+              "title": "Agenda of the CHMP meeting 9-12 November 2026",
+              "source": "EMA – agendas & minutes",
+              "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-chmp-meeting-9-12-november-2026_en.pdf",
+              "date": "2026-11-09",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FDA Grants Accelerated Approval to Amivantamab-Hyaluronidase for HNC",
+          "body": "FDA approved Rybrevant Faspro (amivantamab and hyaluronidase-lpuj) on an accelerated pathway for recurrent/metastatic head and neck squamous cell carcinoma, recognizing clinical benefit in a previously underserved population. For oncology development teams, this approval demonstrates FDA's willingness to expedite combination therapies (bispecific antibody + enzyme for improved penetration) in unmet-need settings. Accelerated approval pathway eligibility and post-approval confirmatory trial design become critical considerations.",
+          "sourceIndices": [
+            8
+          ],
+          "sources": [
+            {
+              "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+              "source": "FDA",
+              "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+              "date": "2026-11-05",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "CVMP Advances Veterinary Medicinal Product Opinions Post Re-Examination",
+          "body": "EMA's Committee for Veterinary Medicinal Products adopted opinions following re-examination of June 2026 evaluations, maintaining robust oversight of animal health therapeutics across EU markets. For veterinary pharmaceutical developers and CROs supporting animal health submissions, CVMP proceedings model transparency and consistency in regulatory decision-making. Harmonized veterinary pharmacovigilance standards also inform human safety databases when compounds target zoonotic pathogens.",
+          "sourceIndices": [
+            7
+          ],
+          "sources": [
+            {
+              "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+              "source": "EMA",
+              "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+              "date": "2026-11-06",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Ozempic and Wegovy Show No Increased Pregnancy Complications in 750k Study",
+          "body": "Large population-based study (750,000+ pregnancies) found early exposure to GLP-1 receptor agonists was not associated with increased pregnancy complications, challenging prior signal concerns and informing safety labeling. For regulatory teams managing post-approval risk assessments and label maintenance for metabolic therapeutics, this real-world evidence strengthens confidence in drug-disease safety profiles. Findings support regulatory submissions of pregnancy registries and observational safety studies.",
+          "sourceIndices": [
+            19
+          ],
+          "sources": [
+            {
+              "title": "Study of 750,000 pregnancies reveals a surprising twist about ozempic and wegovy",
+              "source": "Science Daily",
+              "url": "https://www.sciencedaily.com/releases/2026/11/261111005911.htm",
+              "date": "2026-11-13",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "3D Tumor Models Enable Heterogeneity Capture for Preclinical Development",
+          "body": "Review examines emerging 3D tumor culture systems that capture heterogeneity inaccessible in 2D monolayers, improving predictive validity for target validation and compound screening. For drug discovery and development teams optimizing in vitro models for IND-enabling studies, 3D systems now provide pathway-level mechanistic insights and resistance mechanism identification. Regulatory agencies increasingly scrutinize in vitro model relevance; 3D systems strengthen nonclinical evidence packages.",
+          "sourceIndices": [
+            36
+          ],
+          "sources": [
+            {
+              "title": "3d models to capture and perturb tumour heterogeneity in vitro",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41568-026-00993-1",
+              "date": "2026-11-10",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Immunosurveillance Defects Associated With Prostate Cancer Aetiology",
+          "body": "Prospective and genetic analyses implicate immune and inflammation-related pathways in prostate cancer development, revealing mechanistic biomarkers for risk stratification and therapeutic targeting. For clinical development teams designing immunotherapy or inflammatory pathway inhibitor programs in oncology, these findings identify patient populations with specific immune defects amenable to pathway-targeted intervention. Biomarker data support prospective patient enrichment strategies in trial design.",
+          "sourceIndices": [
+            37
+          ],
+          "sources": [
+            {
+              "title": "Prospective and genetic analyses implicate lower immunosurveillance in the aetiology of prostate cancer",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41467-026-77378-3",
+              "date": "2026-11-10",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drug-discovery",
+      "title": "AI in Drug Discovery",
+      "icon": "🧬",
+      "items": [
+        {
+          "headline": "Extracellular Vesicles Mediate Soft Tissue Sarcoma Biology and Therapy",
+          "body": "Comprehensive review examines extracellular vesicle (exosome/microvesicle) roles in soft tissue sarcoma pathogenesis, tumor microenvironment interactions, and therapeutic potential as biomarkers and drug delivery vehicles. For oncology drug discovery teams, EVs represent emerging targets for immunotherapy combinations and vehicles for CRISPR/siRNA delivery to tumor-associated fibroblasts. EV profiling supports patient stratification and resistance mechanism identification in sarcoma programs.",
+          "sourceIndices": [
+            0
+          ],
+          "sources": [
+            {
+              "title": "Extracellular Vesicles in Soft Tissue Sarcomas: from Tumor Biology to Clinical Translation",
+              "source": "Crit Rev Oncol Hematol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42982249/",
+              "date": "2026-11-04",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Patient Perspectives From Late-Onset Pompe Disease Clinical Trials Inform Design",
+          "body": "Structured exit interviews from cipaglucosidase alfa plus miglustat trial participants reveal patient-centered outcomes beyond efficacy, including symptom burden, mobility, and quality-of-life priorities. For rare disease development teams conducting rare genetic disorder programs, incorporation of patient-reported outcomes (PROs) and lived experience data strengthens IND/CTA applications and supports accelerated approval pathways. Direct patient feedback identifies outcomes clinicians may overlook.",
+          "sourceIndices": [
+            9
+          ],
+          "sources": [
+            {
+              "title": "Patient perspectives of participation in clinical studies in late-onset Pompe disease: Structured exit interviews from cipaglucosidase alfa plus miglustat studies",
+              "source": "Ther Adv Rare Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43036470/",
+              "date": "2026-11-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Parental Perspectives Highlight Trial Exclusion Gaps in Rare Pediatric Disease",
+          "body": "Qualitative analysis of a child's exclusion from a rare disease clinical trial reveals gaps between enrollment criteria, clinical need, and family expectations, underscoring importance of inclusive trial design. For pediatric drug development teams designing rare disease programs, structured stakeholder engagement (patient advisory boards, family councils) during protocol development identifies and mitigates enrollment barriers. Regulatory agencies increasingly weight patient-centered trial design favorably in accelerated pathways.",
+          "sourceIndices": [
+            10
+          ],
+          "sources": [
+            {
+              "title": "Mitigating the Devastation: A Parent's Perspective on Her Child's Exclusion From a Clinical Trial for a Rare Disease Drug Therapy",
+              "source": "J Patient Exp",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43036454/",
+              "date": "2026-11-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Comparative Pharmacovigilance of PI3K Inhibitors Reveals ADMET Safety Signals",
+          "body": "Disproportionality analysis of FDA FAERS comparing glucose-related adverse events between alpelisib and capivasertib reveals divergent metabolic safety profiles despite similar target mechanisms. For medicinal chemistry and development teams optimizing PI3K inhibitor selectivity and off-target safety, this pharmacovigilance-driven comparison identifies isoform preferences and metabolic pathway interactions affecting glycemic control. Post-marketing data informs preclinical assay prioritization for lead compounds.",
+          "sourceIndices": [
+            11
+          ],
+          "sources": [
+            {
+              "title": "Comparative pharmacovigilance of glycaemic adverse-event reporting for alpelisib and capivasertib: A disproportionality analysis of the FDA adverse event monitoring system",
+              "source": "Ther Adv Drug Saf",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43036430/",
+              "date": "2026-11-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Potassium-Competitive Acid Blockers Associated With C. difficile Infection Risk",
+          "body": "Systematic review with restricted quantitative synthesis evaluates Clostridioides difficile infection risk linked to potassium-competitive acid blockers (newer PPI class). For GI drug development teams designing acid-suppression programs, this safety signal warrants head-to-head ADMET and microbiome interaction studies in preclinical models. Risk mitigation strategies (dosing, patient selection, monitoring) become critical regulatory messaging for label differentiation.",
+          "sourceIndices": [
+            12
+          ],
+          "sources": [
+            {
+              "title": "Risk of Clostridioides difficile infection with potassium-competitive acid blockers: A systematic review with restricted quantitative synthesis",
+              "source": "Ther Adv Drug Saf",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43036402/",
+              "date": "2026-11-16",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "High-Throughput Screening Integrated With AI Accelerates Antimicrobial Discovery",
+          "body": "Review demonstrates integration of artificial intelligence with high-throughput biological testing platforms to rapidly screen antimicrobial candidates, addressing antibiotic resistance crisis through accelerated hit-to-lead progression. For infectious disease R&D teams, this AI-HTS integration enables millions of compound evaluations against phenotypic assays (infection models, biofilm disruption) without structural prediction bottlenecks. Speed-to-lead improves competitive positioning in crowded antibiotic markets.",
+          "sourceIndices": [
+            13
+          ],
+          "sources": [
+            {
+              "title": "Integrating Artificial Intelligence with High-Throughput Biological Testing for Antimicrobial Drug Discovery",
+              "source": "Infect Drug Resist",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43034742/",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Nanotherapeutic Targeting of Senescent Microenvironment Treats Aging Diseases",
+          "body": "Review examines nanoparticle strategies designed to reprogram senescent cell-driven inflammation implicated in aging-related diseases (cardiovascular, neurodegeneration, metabolic). For gerontology-focused drug discovery teams, nanoformulations enable selective senolytic or senomorphic drug delivery to aged tissue microenvironments while minimizing systemic toxicity. Preclinical validation in aging models strengthens regulatory rationale for geriatric populations.",
+          "sourceIndices": [
+            14
+          ],
+          "sources": [
+            {
+              "title": "Nanotherapeutic Strategies Targeting Senescent Microenvironment for Aging-Related Chronic Diseases",
+              "source": "Int J Nanomedicine",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43034621/",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Clinical Inertia in Type 2 Diabetes: Global Prevalence and Treatment Barriers",
+          "body": "Systematic review and meta-analysis across upper-middle-income countries reveals widespread clinical inertia (failure to intensify therapy despite hyperglycemia), indicating substantial unmet need and treatment optimization opportunity. For endocrinology drug development teams, inertia data suggest market demand for simplified regimens, combination therapies, and patient adherence aids. Regional prevalence variations inform market entry strategies and health system engagement.",
+          "sourceIndices": [
+            15
+          ],
+          "sources": [
+            {
+              "title": "Clinical inertia among patients with type 2 diabetes mellitus in upper-middle-income countries: A systematic review and meta-analysis",
+              "source": "Sage Open Chronic Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43034527/",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Pharmacist-Led Interventions Improve Antihypertensive Treatment Intensification",
+          "body": "Multicenter prospective study in Northwest Ethiopia demonstrates pharmacist-led protocols accelerate timely antihypertensive dose intensification in older adults, reducing treatment delays and blood pressure control gaps. For cardiovascular drug development teams and health system partners in low-income settings, this implementation evidence shows non-physician care models enhance adherence to guideline-directed therapy. Opportunity exists for digital tools supporting protocol-driven intensification.",
+          "sourceIndices": [
+            16
+          ],
+          "sources": [
+            {
+              "title": "Improving timeliness of antihypertensive treatment intensification through pharmacist-led interventions among older adult patients in Northwest Ethiopia: Multicenter prospective cohort study",
+              "source": "Sage Open Chronic Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43034495/",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Leflunomide Demonstrates Superior Safety Profile Versus Methotrexate in Elderly",
+          "body": "Retrospective cohort study comparing leflunomide and methotrexate in elderly rheumatoid arthritis patients reveals favorable safety and efficacy for leflunomide, challenging conventional first-line methotrexate positioning. For rheumatology drug developers, this comparative effectiveness data in understudied geriatric populations supports repositioning strategies and label claims for age-stratified populations. Real-world evidence strengthens regulatory messaging for drug selection in special populations.",
+          "sourceIndices": [
+            17
+          ],
+          "sources": [
+            {
+              "title": "Comparative effectiveness and safety of leflunomide versus methotrexate in the treatment of elderly rheumatoid arthritis patients: A retrospective cohort study",
+              "source": "Sage Open Chronic Dis",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/43034460/",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "LabARIA Multi-Agent System Integrates Clinical Laboratory Analytics at Scale",
+          "body": "LabARIA deploys multi-agent AI to unify fragmented laboratory data systems, automating error detection and decision support across diverse assay platforms and EHR formats. For clinical development and biomarker teams conducting laboratory-dependent trials (hematology, chemistry monitoring, immunoassay workflows), LabARIA integration improves data quality, reduces protocol deviations, and accelerates adverse event signal detection. Laboratory AI-enabled standardization supports high-complexity trial analytics.",
+          "sourceIndices": [
+            18
+          ],
+          "sources": [
+            {
+              "title": "LabARIA: A Multi-Agent System for Integrative Analytics in Clinical Laboratories",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367970v1?rss=1",
+              "date": "2026-11-15",
+              "type": "paper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical-ai",
+      "title": "Clinical AI",
+      "icon": "🔬",
+      "items": [
+        {
+          "headline": "Rule-Derived Weak Labels Improve Prediction When Reported Labels Are Scarce",
+          "body": "Machine learning study demonstrates that algorithmically derived (weak) labels can expand training datasets when gold-standard labels are unavailable, with performance gains dependent on label quality and covariate shift. For clinical development and biomarker teams training AI models on incomplete EHR datasets or rare disease cohorts, weak-label augmentation enables robust classifier development without manual labeling burden. Quality control and cross-validation rigor become essential for regulatory submissions.",
+          "sourceIndices": [
+            20
+          ],
+          "sources": [
+            {
+              "title": "Do Rule-Derived Labels Improve Prediction When Reported Labels Are Limited? A Two-Site Machine Learning Study",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367890v1?rss=1",
+              "date": "2026-11-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Ontology-Based Integration Harmonizes Vaccine Trial Data and Trial Design",
+          "body": "Ontology-driven approach harmonizes fragmented vaccine trial data from ClinicalTrials.gov using standardized semantic definitions, enabling cross-trial comparisons and design recommendations. For vaccine development programs and clinical operations teams managing multi-site trials with inconsistent data capture, semantic harmonization reduces query time and improves population comparability for meta-analyses. Ontology-based standards support efficient EMA/FDA trial design alignment.",
+          "sourceIndices": [
+            22
+          ],
+          "sources": [
+            {
+              "title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1?rss=1",
+              "date": "2026-11-13",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Generative AI Data Augmentation Improves Stroke Severity EEG Classification",
+          "body": "Study demonstrates generative AI augmentation of EEG datasets for stroke severity prediction, overcoming scarcity of rare severe cases while preserving clinically important outliers and signal patterns. For neurology clinical development teams designing digital biomarker programs or point-of-care stroke risk tools, generative augmentation enables robust classifiers on limited prospective datasets. Synthetic data validation requirements become critical for regulatory AI submissions.",
+          "sourceIndices": [
+            42
+          ],
+          "sources": [
+            {
+              "title": "Exploring Data Augmentation for Stroke Severity Prediction: How Generative AI Enhances EEG Signal Classification",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367632v1?rss=1",
+              "date": "2026-11-10",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "AI-Assisted Systematic Reviews Show Methodological and Reporting Gaps",
+          "body": "Meta-research audit reveals that AI-assisted systematic reviews lag in methodological rigor and outcome reporting transparency compared to human-led reviews, despite speed advantages. For regulatory and medical intelligence teams relying on AI-accelerated literature synthesis to support submissions or background evidence sections, independent verification and transparent reporting of AI contribution remain essential. Regulatory guidance on AI-assisted evidence generation is evolving; early adoption requires heightened scrutiny.",
+          "sourceIndices": [
+            51
+          ],
+          "sources": [
+            {
+              "title": "Methodological Adherence, Reporting Completeness, and Risk of Bias in AI-Assisted Systematic Reviews: A Matched Meta-Research Study",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367388v1?rss=1",
+              "date": "2026-11-08",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Agentic Pipeline Automates Large-Scale Clinical Data Queries in EHR Systems",
+          "body": "Agentic AI pipeline automates navigation of complex enterprise EHR architectures to execute clinical research queries without manual SQL scripting, reducing time from research question to cohort identification. For clinical operations and trial feasibility teams conducting site selection, population prevalence studies, and real-world evidence validation, automated EHR querying accelerates enrollment planning and streamlines observational study setup. Audit-trail compliance and query reproducibility requirements are critical for regulatory submissions.",
+          "sourceIndices": [
+            56
+          ],
+          "sources": [
+            {
+              "title": "Agentic Pipeline for Large-Scale Clinical Data Queries in Enterprise Electronic Health Records",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v1?rss=1",
+              "date": "2026-11-06",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Keystroke Dynamics Classify Parkinson's Disease But Face Cross-Dataset Drift",
+          "body": "Cross-dataset audit reveals that keystroke-based Parkinson's disease classifiers show significant performance degradation across institutions and devices, raising concerns about generalization and clinical deployment reliability. For neurology teams exploring digital biomarker programs for Parkinson's monitoring or diagnosis, this finding emphasizes necessity of multi-site validation, device standardization, and continuous performance monitoring post-deployment. Regulatory submissions must demonstrate cross-dataset robustness.",
+          "sourceIndices": [
+            57
+          ],
+          "sources": [
+            {
+              "title": "A Cross-Dataset Audit of Discrimination and Conformal Prediction Coverage in Keystroke-Based Parkinson's Disease Classi cation",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.04.26366890v1?rss=1",
+              "date": "2026-11-06",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Explainable ML Model Detects Hidden Hepatitis C From Real-World EHR Data",
+          "body": "Bias-audited machine learning classifier identifies undiagnosed hepatitis C cases in regional EHR data, combining SHAP explainability with discrimination audits to ensure equitable detection across demographic groups. For infectious disease and clinical development teams designing HCV screening or treatment initiation algorithms, this validated approach demonstrates pathway to regulatory approval of real-world AI for public health surveillance. Model transparency and fairness audit documentation support regulatory credibility.",
+          "sourceIndices": [
+            58
+          ],
+          "sources": [
+            {
+              "title": "An explainable, bias-audited machine learning model to detect hidden hepatitis C from region-wide real-world health records",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367298v1?rss=1",
+              "date": "2026-11-06",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Evolutionary Dynamics in Blood Precede Acute Myeloid Leukaemia Diagnosis",
+          "body": "Single-cell clonal analysis reveals somatic evolutionary trajectories of hematopoietic cells in years preceding AML diagnosis, identifying early clonal dynamics predictive of transformation. For hematologic malignancy development teams, this mechanistic understanding enables identification of biomarkers for early detection and rational design of differentiation therapy or clonal selection blocking agents. Preclinical models informed by evolutionary clones improve target selection.",
+          "sourceIndices": [
+            31
+          ],
+          "sources": [
+            {
+              "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41586-026-11269-x",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Natural-Language Queries Democratize Hospital Data Access for Researchers",
+          "body": "Natural-language interface enables clinicians and researchers without SQL expertise to query hospital data platforms for trial feasibility and observational studies, improving data accessibility and reducing technical barriers. For clinical development and site selection teams conducting real-world evidence studies or enrollment planning, NLQ systems accelerate cohort identification and reduce time-to-first-patient-enrolled. Accuracy and provenance tracking ensure regulatory compliance for real-world data submissions.",
+          "sourceIndices": [
+            41
+          ],
+          "sources": [
+            {
+              "title": "Natural-language cohort queries on a hospital data platform: accuracy and provenance in a real-world evaluation",
+              "source": "medRxiv – Health Informatics",
+              "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367645v1?rss=1",
+              "date": "2026-11-10",
+              "type": "paper"
+            }
+          ]
+        },
+        {
+          "headline": "Federated Learning Preserves Clinical AI Explainability Across Distributed Sites",
+          "body": "Federated learning architecture maintains consistent SHAP explainability in ICU mortality prediction models across distributed clinical datasets without centralizing sensitive data. For clinical development and AI validation teams deploying multi-site AI safety monitoring systems, federated learning enables robust model training while preserving cross-site explainability needed for regulatory audit and clinical interpretation. Privacy-preserving training strengthens regulatory and institutional compliance.",
+          "sourceIndices": [
+            25
+          ],
+          "sources": [
+            {
+              "title": "Preserving explainability in federated learning for clinical decision-making: shap explainability consistency analysis of icu mortality prediction models",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-79688-4.pdf",
+              "date": "2026-11-12",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-governance",
+      "title": "Data & Governance",
+      "icon": "📊",
+      "items": [
+        {
+          "headline": "Data Governance Frameworks Enable Secure Multicenter Trial Data Integration",
+          "body": "Proper data governance establishes standards for secure integration of multicenter trial data across heterogeneous EHR systems, enabling harmonized analytics while preserving site autonomy and data sovereignty. For clinical operations and biostatistics teams managing geographically distributed trials, governance frameworks addressing IDMP, FHIR mapping, and federated analytic architecture reduce data quality delays and support real-time safety monitoring. Governance policies anticipate evolving EHDS and Darwin EU regulatory requirements.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "FHIR Standards Accelerate Health Data Interoperability Across Care Settings",
+          "body": "FHIR (Fast Healthcare Interoperability Resources) standards enable plug-and-play data exchange between hospital systems, primary care, and specialty pharmacies, reducing implementation friction. For clinical development teams conducting pragmatic trials or real-world evidence studies involving multiple care settings, FHIR-compliant data pipelines reduce custom ETL work and support rapid cohort identification. Regulatory agencies increasingly expect FHIR mapping in EHR-integrated submissions.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "OMOP Common Data Model Standardizes Observational Study Data Harmonization",
+          "body": "OMOP (Observational Medical Outcomes Partnership) CDM provides standardized semantic vocabulary and data structure for harmonizing observational databases from diverse clinical sources. For epidemiology and real-world evidence teams conducting comparative effectiveness studies or post-market safety analyses, OMOP enables reproducible analyses across multiple healthcare systems and geographies without custom data harmonization. OMOP adoption accelerates RWE submission timelines.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Darwin EU Network Enables Distributed Real-World Evidence Generation",
+          "body": "Darwin EU, the EMA's distributed network of real-world data partners, enables rapid evidence generation across European healthcare systems for safety signaling and comparative effectiveness studies. For regulatory and pharmacovigilance teams managing post-approval commitments, Darwin EU provides timely access to European population data without individual site data extraction—accelerating EMA requests for PSUR updates or post-approval signals. Network expansion increases geographic representativeness of RWE.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "IDMP Standards Enable Semantic Interoperability of Product Information Systems",
+          "body": "Identification of Medicinal Products (IDMP) standards harmonize medicinal product identification, packaging, ingredients, and classifications across European regulatory systems and supply chain partners. For regulatory intelligence, pharmacovigilance, and supply chain teams, IDMP compliance ensures consistent product mapping across EudraVigilance, national registries, and manufacturing systems, reducing adverse event misattribution and product recall execution delays. Full IDMP implementation strengthens traceability.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "RWD Quality Standards Support Regulatory Submissions of Real-World Evidence",
+          "body": "Emerging RWD quality frameworks (data completeness, timeliness, accuracy, representativeness) define acceptable standards for real-world data sources in regulatory submissions, reducing uncertainty in RWE evidentiary value. For clinical development teams incorporating RWD into IND applications or post-approval analyses, documented adherence to quality standards strengthens regulatory credibility. EMA and FDA guidance on RWD standards continues to evolve; proactive alignment supports timely approvals.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Federated Learning Architectures Protect Patient Privacy in Multicenter AI Studies",
+          "body": "Federated learning enables AI model training across distributed sites without centralizing sensitive patient data, meeting GDPR and institutional data governance requirements. For clinical development and biomarker validation teams deploying AI-assisted diagnostics or outcome prediction models across European hospitals, federated architectures preserve privacy while generating robust, multi-site validated models. Regulatory submissions benefit from explicit privacy-preserving methodology.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "EHDS European Health Data Space Establishes Cross-Border Data Governance",
+          "body": "EHDS regulatory framework establishes governance rules for cross-border health data use in clinical research and public health, balancing data access and privacy protection across EU member states. For multinational trial sponsors and observational study teams, EHDS compliance requires harmonized data governance policies, transparent secondary use frameworks, and citizen engagement mechanisms. Advance alignment with EHDS reduces regulatory delays in European RWE projects.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Data Interoperability Standards Reduce ETL Burden in Multicenter Biomarker Studies",
+          "body": "Adoption of common data standards (FHIR, OMOP, IDMP) across trial sites significantly reduces extract-transform-load burden, enabling rapid biomarker data harmonization for genomic or proteomic analyses. For translational medicine teams conducting basket trials or biomarker-driven studies across multiple centers, standardized data pipelines accelerate lab integration and reduce protocol deviations from delayed data availability. Efficiency gains directly improve trial timelines.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        },
+        {
+          "headline": "Patient Data Rights and Secondary Use Governance Shape Trial Recruitment",
+          "body": "EHDS and national data governance frameworks establish patient rights to data access and control over secondary research use, requiring explicit consent and opt-out mechanisms in clinical trials. For site coordinators and patient engagement teams, transparent governance communication (data retention, potential research uses, deletion rights) improves informed consent quality and recruitment trust. Governance clarity supports pediatric and vulnerable population trial enrolment.",
+          "sourceIndices": [
+            32
+          ],
+          "sources": [
+            {
+              "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+              "source": "Nature.com",
+              "url": "https://www.nature.com/articles/s41598-026-78639-3",
+              "date": "2026-11-11",
+              "type": "news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editorNote": "This week marks inflection points across AI governance and regulatory efficiency: EMA and FDA approvals sustain despite complexity, BenchmarkHub enforces reproducibility in LLM evaluation, and multi-agent AI systems now automate pharmacovigilance and trial logistics. For European pharma and regulatory professionals, the message is clear—AI tools are transitioning from research prototypes to operational infrastructure, but only those with auditable benchmarks, transparent governance, and cross-dataset validation will survive regulatory scrutiny. Early adopters embedding reproducibility and explainability into AI deployment strategies position for 2027 EMA AI Act enforcement and accelerated European approvals.",
+  "allSources": [
+    {
+      "title": "Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 9-12 November 2026",
+      "source": "EMA",
+      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
+      "date": "2026-11-13",
+      "type": "news"
+    },
+    {
+      "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
+      "date": "2026-11-09",
+      "type": "news"
+    },
+    {
+      "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+      "source": "FDA",
+      "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+      "date": "2026-11-05",
+      "type": "news"
+    },
+    {
+      "title": "BenchmarkHub: an open-source platform for reproducible evaluation of large language models in healthcare",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367866v1?rss=1",
+      "date": "2026-11-13",
+      "type": "paper"
+    },
+    {
+      "title": "MENTOR: An Evidence-Informed Large Language Model-Based Multi-Agent System for Efficient Selection of Institution-Specific Negative Control Outcomes",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367768v1?rss=1",
+      "date": "2026-11-12",
+      "type": "paper"
+    },
+    {
+      "title": "Detecting Contradictory Evidence on Drug-Disease Associations at Scale",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367856v1?rss=1",
+      "date": "2026-11-12",
+      "type": "paper"
+    },
+    {
+      "title": "Automating postmarketing pharmacovigilance with large language model agents",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367711v1?rss=1",
+      "date": "2026-11-12",
+      "type": "paper"
+    },
+    {
+      "title": "Daily briefing: are one-person firms the future of biotech?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03684-x",
+      "date": "2026-11-12",
+      "type": "news"
+    },
+    {
+      "title": "Anthropic bought a one-person, ai-powered biotech: is this drug discovery’s future?",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/d41586-026-03640-9",
+      "date": "2026-11-11",
+      "type": "news"
+    },
+    {
+      "title": "GPCRAgent: an intelligent multi-agent platform integrating knowledge graphs and large language models for GPCR-targeted drug discovery",
+      "source": "J Adv Res",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43003299/",
+      "date": "2026-11-09",
+      "type": "paper"
+    },
+    {
+      "title": "Multi-Agent Generative Artificial Intelligence for Transfusion Reaction Feature Extraction",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367389v1?rss=1",
+      "date": "2026-11-09",
+      "type": "paper"
+    },
+    {
+      "title": "Natural-language cohort queries on a hospital data platform: accuracy and provenance in a real-world evaluation",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367645v1?rss=1",
+      "date": "2026-11-10",
+      "type": "paper"
+    },
+    {
+      "title": "Preserving explainability in federated learning for clinical decision-making: shap explainability consistency analysis of icu mortality prediction models",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-79688-4.pdf",
+      "date": "2026-11-12",
+      "type": "news"
+    },
+    {
+      "title": "A gait foundation model for prediction of multisystem health phenotypes from 3d skeletal motion",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41591-026-04724-9",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Agenda - Second HMA/EMA multi-stakeholder forum on EudraVigilance and signal detection",
+      "source": "EMA – agendas & minutes",
+      "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-second-hma-ema-multi-stakeholder-forum-eudravigilance-signal-detection_en.pdf",
+      "date": "2026-11-10",
+      "type": "news"
+    },
+    {
+      "title": "Agenda - HMA / EMA multistakeholder AI and Data forum: Build trustworthy AI on strong data foundations",
+      "source": "EMA – agendas & minutes",
+      "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-hma-ema-multistakeholder-ai-data-forum-build-trustworthy-ai-strong-data-foundations_en.pdf",
+      "date": "2026-11-10",
+      "type": "news"
+    },
+    {
+      "title": "Annex to agenda of the CHMP meeting 9-12 November 2026",
+      "source": "EMA – agendas & minutes",
+      "url": "https://www.ema.europa.eu/en/documents/agenda/annex-agenda-chmp-meeting-9-12-november-2026_en.xlsx",
+      "date": "2026-11-09",
+      "type": "news"
+    },
+    {
+      "title": "Agenda of the CHMP meeting 9-12 November 2026",
+      "source": "EMA – agendas & minutes",
+      "url": "https://www.ema.europa.eu/en/documents/agenda/agenda-chmp-meeting-9-12-november-2026_en.pdf",
+      "date": "2026-11-09",
+      "type": "news"
+    },
+    {
+      "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+      "source": "EMA",
+      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+      "date": "2026-11-06",
+      "type": "news"
+    },
+    {
+      "title": "Study of 750,000 pregnancies reveals a surprising twist about ozempic and wegovy",
+      "source": "Science Daily",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261111005911.htm",
+      "date": "2026-11-13",
+      "type": "news"
+    },
+    {
+      "title": "3d models to capture and perturb tumour heterogeneity in vitro",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41568-026-00993-1",
+      "date": "2026-11-10",
+      "type": "news"
+    },
+    {
+      "title": "Prospective and genetic analyses implicate lower immunosurveillance in the aetiology of prostate cancer",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41467-026-77378-3",
+      "date": "2026-11-10",
+      "type": "news"
+    },
+    {
+      "title": "Extracellular Vesicles in Soft Tissue Sarcomas: from Tumor Biology to Clinical Translation",
+      "source": "Crit Rev Oncol Hematol",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42982249/",
+      "date": "2026-11-04",
+      "type": "paper"
+    },
+    {
+      "title": "Patient perspectives of participation in clinical studies in late-onset Pompe disease: Structured exit interviews from cipaglucosidase alfa plus miglustat studies",
+      "source": "Ther Adv Rare Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43036470/",
+      "date": "2026-11-16",
+      "type": "paper"
+    },
+    {
+      "title": "Mitigating the Devastation: A Parent's Perspective on Her Child's Exclusion From a Clinical Trial for a Rare Disease Drug Therapy",
+      "source": "J Patient Exp",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43036454/",
+      "date": "2026-11-16",
+      "type": "paper"
+    },
+    {
+      "title": "Comparative pharmacovigilance of glycaemic adverse-event reporting for alpelisib and capivasertib: A disproportionality analysis of the FDA adverse event monitoring system",
+      "source": "Ther Adv Drug Saf",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43036430/",
+      "date": "2026-11-16",
+      "type": "paper"
+    },
+    {
+      "title": "Risk of Clostridioides difficile infection with potassium-competitive acid blockers: A systematic review with restricted quantitative synthesis",
+      "source": "Ther Adv Drug Saf",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43036402/",
+      "date": "2026-11-16",
+      "type": "paper"
+    },
+    {
+      "title": "Integrating Artificial Intelligence with High-Throughput Biological Testing for Antimicrobial Drug Discovery",
+      "source": "Infect Drug Resist",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034742/",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "Nanotherapeutic Strategies Targeting Senescent Microenvironment for Aging-Related Chronic Diseases",
+      "source": "Int J Nanomedicine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034621/",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "Clinical inertia among patients with type 2 diabetes mellitus in upper-middle-income countries: A systematic review and meta-analysis",
+      "source": "Sage Open Chronic Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034527/",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "Improving timeliness of antihypertensive treatment intensification through pharmacist-led interventions among older adult patients in Northwest Ethiopia: Multicenter prospective cohort study",
+      "source": "Sage Open Chronic Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034495/",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "Comparative effectiveness and safety of leflunomide versus methotrexate in the treatment of elderly rheumatoid arthritis patients: A retrospective cohort study",
+      "source": "Sage Open Chronic Dis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43034460/",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "LabARIA: A Multi-Agent System for Integrative Analytics in Clinical Laboratories",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367970v1?rss=1",
+      "date": "2026-11-15",
+      "type": "paper"
+    },
+    {
+      "title": "Do Rule-Derived Labels Improve Prediction When Reported Labels Are Limited? A Two-Site Machine Learning Study",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367890v1?rss=1",
+      "date": "2026-11-13",
+      "type": "paper"
+    },
+    {
+      "title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1?rss=1",
+      "date": "2026-11-13",
+      "type": "paper"
+    },
+    {
+      "title": "Exploring Data Augmentation for Stroke Severity Prediction: How Generative AI Enhances EEG Signal Classification",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367632v1?rss=1",
+      "date": "2026-11-10",
+      "type": "paper"
+    },
+    {
+      "title": "Methodological Adherence, Reporting Completeness, and Risk of Bias in AI-Assisted Systematic Reviews: A Matched Meta-Research Study",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367388v1?rss=1",
+      "date": "2026-11-08",
+      "type": "paper"
+    },
+    {
+      "title": "Agentic Pipeline for Large-Scale Clinical Data Queries in Enterprise Electronic Health Records",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v1?rss=1",
+      "date": "2026-11-06",
+      "type": "paper"
+    },
+    {
+      "title": "A Cross-Dataset Audit of Discrimination and Conformal Prediction Coverage in Keystroke-Based Parkinson's Disease Classi cation",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.04.26366890v1?rss=1",
+      "date": "2026-11-06",
+      "type": "paper"
+    },
+    {
+      "title": "An explainable, bias-audited machine learning model to detect hidden hepatitis C from region-wide real-world health records",
+      "source": "medRxiv – Health Informatics",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367298v1?rss=1",
+      "date": "2026-11-06",
+      "type": "paper"
+    },
+    {
+      "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41586-026-11269-x",
+      "date": "2026-11-11",
+      "type": "news"
+    },
+    {
+      "title": "Vertical mesh-mediated fascial traction is associated with higher fascial closure rates than vacuum-assisted wound closure with mesh-mediated traction in open abdomen therapy",
+      "source": "Nature.com",
+      "url": "https://www.nature.com/articles/s41598-026-78639-3",
+      "date": "2026-11-11",
+      "type": "news"
+    }
+  ]
+}
