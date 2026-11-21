@@ -1,5 +1,43 @@
 [
   {
+    "id": "auto-7e34ea7b5f92",
+    "type": "paper",
+    "title": "Smart biomaterials for immunomodulation in periodontitis: advances and challenges",
+    "excerpt": "Periodontitis is a chronic immunoinflammatory disease characterized by irreversible periodontal tissue destruction. Smart biomaterials represent an emerging therapeutic approach for modulating immune responses in periodontitis treatment. This review examines recent advances in smart biomaterial development for immunomodulation in periodontitis while highlighting current challenges in the field.",
+    "source": "Front Bioeng Biotechnol",
+    "date": "2026-11-21",
+    "tags": [
+      "Periodontitis",
+      "Immunomodulation",
+      "Biomaterials",
+      "Dental/Oral Health"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43065617/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-9b27b936a516",
+    "type": "paper",
+    "title": "The next frontier of peptide therapeutics: from targeted conjugates (PDC/ODC) to AI-driven safety-by-design",
+    "excerpt": "This review examines the evolution of peptide-based therapeutics, focusing on the advancement from peptide-drug conjugates (PDC) and oligonucleotide-drug conjugates (ODC) toward the application of artificial intelligence in designing safer peptide drugs. The integration of AI-driven approaches aims to predict and mitigate safety risks during the drug development process, representing a significant shift in how peptide therapeutics are conceptualized and optimized for clinical use.",
+    "source": "Front Pharmacol",
+    "date": "2026-11-21",
+    "tags": [
+      "Peptide therapeutics",
+      "Drug conjugates",
+      "AI-driven design",
+      "Drug safety"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43065609/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-5802f6962500",
     "type": "paper",
     "title": "CovPDB 2.0: an expanded covalent protein-ligand interactome",
@@ -90,6 +128,138 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+    "badge": "Tech"
+  },
+  {
+    "id": "nws-caa95938ead0",
+    "type": "news",
+    "title": "Big pharma, with eye on anthropic, says AI is shrinking drug discovery timelines",
+    "excerpt": "NEW YORK/LONDON, Nov 20 : Artificial intelligence has sped up early-stage drug development work at some of the world's largest pharmaceutical companies this year, cutting by as much as half the time it takes to produce new molecules and move them into the cli…",
+    "source": "CNA",
+    "date": "2026-11-20",
+    "tags": [
+      "Drug discovery",
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.channelnewsasia.com/business/big-pharma-eye-anthropic-says-ai-shrinking-drug-discovery-timelines-6569171",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-7f2097d39cf8",
+    "type": "news",
+    "title": "Multiancestry genome-wide association and integrative multiomics analyses implicate key pathways in endometriosis",
+    "excerpt": "Multiancestry genome-wide association coupled with integrative multiomics analyses identify risk loci for endometriosis and implicate key genes and pathways underlying its pathogenesis, including roles for immune cell types and cellular proliferation.",
+    "source": "Nature.com",
+    "date": "2026-11-20",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02810-9",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-fd5157fcc39b",
+    "type": "news",
+    "title": "New research links ultra-processed foods to a surprising type of cancer",
+    "excerpt": "Based on 10 years of data.",
+    "source": "mindbodygreen.com",
+    "date": "2026-11-20",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.mindbodygreen.com/articles/higher-ultra-processed-food-intake-linked-to-greater-risk-of-certain-blood-cancers",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-7d8981ef5476",
+    "type": "ainews",
+    "title": "Six ai-powered gadgets that could make your home office smarter | techcrunch",
+    "excerpt": "Six AI-powered gadgets that could make your home office smarter | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-11-20",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-300c7c788356",
+    "type": "ainews",
+    "title": "Anthropic rival says companies can (mostly) skip the pricey models | techcrunch",
+    "excerpt": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
+    "source": "TechCrunch",
+    "date": "2026-11-20",
+    "tags": [
+      "Anthropic"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "auto-4ae13749ef67",
+    "type": "paper",
+    "title": "The ITE-Transformer: A pre-trained foundation model for predicting individualized treatment effects from electronic health records",
+    "excerpt": "Transformer-based foundation models have shown strong potential for modeling longitudinal electronic health records (EHRs), yet existing models focus primarily on risk prediction rather than treatment effect estimation, which limits evidence generation. Here, we introduce the ITE-Transformer, a transformer-based framework that combines self-supervised representation learning from longitudinal patient trajectories with doubly robust causal machine learning for predicting individualized treatment effects (ITEs). As a result, our ITE-Transformer allows to study counterfactual questions of how an ",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-20",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368479v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-669060195736",
+    "type": "news",
+    "title": "STAT+: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming",
+    "excerpt": "The FDA said it had rejected a cell therapy intended for patients with Duchenne muscular dystrophy developed by Capricor Therapeutics.",
+    "source": "STAT News",
+    "date": "2026-11-20",
+    "tags": [
+      "Adam's Take",
+      "Biotech",
+      "biotechnology",
+      "Pharmaceuticals"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-859ee3ec8c20",
+    "type": "ainews",
+    "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+    "excerpt": "Anthropic mathematician Levent Alp&#246;ge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval [&#8230;]",
+    "source": "The Verge",
+    "date": "2026-11-20",
+    "tags": [
+      "AI",
+      "Anthropic",
+      "News",
+      "Science"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
     "badge": "Tech"
   },
   {
@@ -628,6 +798,69 @@
     "url": "https://www.ema.europa.eu/en/events/second-hma-ema-multi-stakeholder-forum-eudravigilance-signal-detection",
     "badge": "Event",
     "topic": "regulatory"
+  },
+  {
+    "id": "nws-720017a6d229",
+    "type": "news",
+    "title": "Merck taps google deepmind spinout isomorphic labs to design cancer drug candidates, with no human testing yet",
+    "excerpt": "Merck and Google DeepMind spinout Isomorphic Labs will use AI to design small-molecule cancer drug candidates, but the research remains untested and far from human trials.",
+    "source": "Medical Daily",
+    "date": "2026-11-19",
+    "tags": [
+      "EMA",
+      "DeepMind"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medicaldaily.com/merck-isomorphic-labs-ai-cancer-drug-discovery-deal-481449",
+    "badge": "Pharma AI",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-1054662f25c3",
+    "type": "ainews",
+    "title": "Google gives gemini the ability to use your mac for you | techcrunch",
+    "excerpt": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
+    "source": "TechCrunch",
+    "date": "2026-11-19",
+    "tags": [
+      "LLM",
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+    "badge": "AI Lab"
+  },
+  {
+    "id": "nws-f2dddf2ea7d8",
+    "type": "ainews",
+    "title": "These tech outages are giving y2k, AI agent style | techcrunch",
+    "excerpt": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+    "source": "TechCrunch",
+    "date": "2026-11-19",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-2919f418f3f5",
+    "type": "ainews",
+    "title": "Meta’s AI agent muse is mixing up conversations and exposing private data, report says | techcrunch",
+    "excerpt": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
+    "source": "TechCrunch",
+    "date": "2026-11-19",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-2b8fed534a99",
@@ -4742,223 +4975,5 @@
     "url": "https://www.r-bloggers.com/2026/11/agents-in-production-build-an-ai-chat-app-with-shiny-and-shinychat/",
     "badge": "Data",
     "topic": "data-governance"
-  },
-  {
-    "id": "nws-00a54cb1df5f",
-    "type": "news",
-    "title": "Glp-1 drugs carry risk of rare but serious eye condition – a physician studying these medicines explains the potential side effect",
-    "excerpt": "Doctors often  call the condition a stroke of the eye – and though the risk is small, patients should know the symptoms and seek immediate treatment if they occur.",
-    "source": "The Conversation Africa",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://theconversation.com/glp-1-drugs-carry-risk-of-rare-but-serious-eye-condition-a-physician-studying-these-medicines-explains-the-potential-side-effect-296237",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-e5cf40a337c8",
-    "type": "news",
-    "title": "(pr) intel and altera partner for edge and physical AI development",
-    "excerpt": "Intel and Altera today announced a collaboration to develop a flexible, real-time sensor bridge for a range of Edge & Physical AI industries including healthcare, aerospace and defense, and robotics applications. By combining Intel compute, connectivity and s…",
-    "source": "Techpowerup.com",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.techpowerup.com/354652/intel-and-altera-partner-for-edge-and-physical-ai-development",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-489954fd7b4e",
-    "type": "news",
-    "title": "Before buying more, cios need to find out why licensed EHR and AI tools go underused",
-    "excerpt": "Health systems pay for EHR features and AI tools staff barely use. Executives trace the gap to training, workflow, data or ownership, and consumption pricing changes which fix makes sense first.\nSource: Before Buying More, CIOs Need to Find Out Why Licensed E…",
-    "source": "Healthsystemcio.com",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://healthsystemcio.com/2026/11/10/underused-ehr-ai-tools/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-4d93af9d61ed",
-    "type": "news",
-    "title": "Modulation of fe3+ homeostasis by african swine fever virus facilitates its efficient replication in ornithodoros lahorensis and pigs",
-    "excerpt": "Author summary ASFV causes a devastating disease in domestic pigs and wild boars and can be maintained and transmitted by Ornithodoros soft ticks in certain ecological settings. Although ASFV replication depends on host cellular metabolism, how the virus adap…",
-    "source": "Plos.org",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014795",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-4a057042ea27",
-    "type": "ainews",
-    "title": "Anthropic tiptoes into ms office territory",
-    "excerpt": "Sheets, Whiteboards, and Data artifact types bring Claude closer to a productivity suite",
-    "source": "Theregister.com",
-    "date": "2026-11-10",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-bd2a6830d8cf",
-    "type": "ainews",
-    "title": "Openai acquires odessia, travel startup created by sonder founder | techcrunch",
-    "excerpt": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-2800935556d8",
-    "type": "ainews",
-    "title": "Psi is trying to make a business out of ai-driven scientific discovery | techcrunch",
-    "excerpt": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-34a6071342ff",
-    "type": "ainews",
-    "title": "The US is winning the AI race. jensen huang could have blown it",
-    "excerpt": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy with presidents, CEOs, and all manner of …",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-fd8e1c638d2d",
-    "type": "ainews",
-    "title": "Anthropic launches claude meetings to turn workplace discussions into plans and tasks | techcrunch",
-    "excerpt": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-3e50515c6d1f",
-    "type": "ainews",
-    "title": "Ebay appears to have shut the door on third-party AI agents",
-    "excerpt": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing on the platform - the latest speed bump in the AI agent race. A reader tells The Verge that for several weeks he's had his Muse agent browse and curate a daily digest of watches for …",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-05045298619b",
-    "type": "ainews",
-    "title": "Meta's AI agent muse lands on apple watch and android wear os | techcrunch",
-    "excerpt": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-ec3f910d2a18",
-    "type": "ainews",
-    "title": "Anthropic has its own ai-powered office suite now",
-    "excerpt": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went thro…",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "LLM",
-      "OpenAI",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-c8072ec28f74",
-    "type": "ainews",
-    "title": "Spotify's AI dj gets new voices, personalities, and an option for less chatter | techcrunch",
-    "excerpt": "Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-fb12216c2432",
-    "type": "ainews",
-    "title": "Stanford's century-long AI study admits it's already out of date",
-    "excerpt": "Five-year review charts upheaval in work, science, and public life – with little consensus on who's in control",
-    "source": "Theregister.com",
-    "date": "2026-11-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/11/10/stanfords-century-long-ai-study-admits-its-already-out-of-date/5308574",
-    "badge": "AI Policy"
   }
 ]
