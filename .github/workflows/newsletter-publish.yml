@@ -1,0 +1,71 @@
+name: Newsletter – validate & send
+
+# Runs when a newsletter draft reaches the default branch (i.e. when you merge
+# the draft PR): numbers and stores the edition, then e-mails the final version.
+# Nothing is deployed to GitHub Pages: e-mail is the only distribution channel.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "newsletter/drafts/*.yaml"
+  workflow_dispatch:
+
+concurrency:
+  group: newsletter-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: newsletter/requirements.txt
+
+      - run: pip install -r newsletter/requirements.txt
+
+      - name: Validate pending drafts
+        id: pub
+        # Fails (on purpose) if a draft still contains TODO / EDIT ME markers.
+        run: python -m newsletter publish --pending
+
+      - name: Commit validated edition
+        if: steps.pub.outputs.published != ''
+        run: |
+          git config user.name  "Newsletter Bot"
+          git config user.email "bot@pharma-ai-data-watch.eu"
+          git add -A newsletter/
+          git commit -q -m "newsletter: validate ${{ steps.pub.outputs.published }}"
+          for i in 1 2 3; do
+            git pull -q --rebase origin master && git push -q origin HEAD:master && break
+            sleep $((i * 5))
+          done
+
+      - name: E-mail the final edition
+        if: steps.pub.outputs.published != ''
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NEWSLETTER_TO: ${{ secrets.NEWSLETTER_TO }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
+        run: |
+          if [ -z "$SMTP_HOST" ] || [ -z "$NEWSLETTER_TO" ]; then
+            echo "::notice::SMTP secrets not configured – final e-mail skipped."
+            exit 0
+          fi
+          for d in ${{ steps.pub.outputs.published }}; do
+            python -m newsletter.send_email --edition "$d"
+          done
