@@ -1,5 +1,275 @@
 [
   {
+    "id": "auto-ba36d95f8008",
+    "type": "paper",
+    "title": "A Cheminformatics Analysis of Substituents in Bioactive Molecules and Their Bioisosteric Replacement Network",
+    "excerpt": "This cheminformatics study analyzes substituents in bioactive molecules and their bioisosteric replacement patterns. Substituents attached to molecular cores are critical in medicinal chemistry optimization, where they are systematically modified to enhance biological activity, physicochemical properties, selectivity, and other drug characteristics. The research provides guidance for selecting appropriate bioisosteric substituent replacements during lead optimization.",
+    "source": "J Chem Inf Model",
+    "date": "2026-11-23",
+    "tags": [
+      "Cheminformatics",
+      "Medicinal Chemistry",
+      "Bioisosteres",
+      "Lead Optimization"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43070969/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-6e5dcb48c04a",
+    "type": "paper",
+    "title": "Aligning Molecules and Fragments in a Shared Embedding Space for Property-Aware Fragment Selection",
+    "excerpt": "This study presents a computational approach that aligns molecular structures and their chemical fragments within a shared embedding space to enable property-aware selection of fragments for drug discovery applications. The method integrates molecular and fragment representations to improve the rational selection of chemical building blocks based on desired pharmacological properties. This approach advances computational tools for fragment-based drug design by leveraging machine learning to optimize fragment selection.",
+    "source": "J Chem Inf Model",
+    "date": "2026-11-23",
+    "tags": [
+      "Fragment-Based Drug Design",
+      "Computational Chemistry",
+      "Machine Learning",
+      "Molecular Representation"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43070946/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-0ad1bc2d7a80",
+    "type": "paper",
+    "title": "Reinforcement Learning for Aligning Structure-Based Molecular Generation toward Make-on-Demand Chemical Spaces",
+    "excerpt": "Researchers have developed a reinforcement learning approach to improve structure-based molecular generation for on-demand chemical space design. This method enhances generative models used in early-stage drug discovery by aligning molecular structures with desired properties. The approach aims to accelerate the drug discovery process through more targeted computational molecular design.",
+    "source": "J Chem Inf Model",
+    "date": "2026-11-23",
+    "tags": [
+      "Artificial Intelligence",
+      "Molecular Generation",
+      "Drug Discovery",
+      "Computational Chemistry"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43070936/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
+    "id": "auto-73db92fc48f3",
+    "type": "news",
+    "title": "Registration - Public Webinar on vaccination as prevention against cardiovascular diseases - implementing the Safe Hearts Plan (16 December 2026 , 14.00 - 16.00 CET)",
+    "excerpt": "Registration - Public Webinar on vaccination as prevention against cardiovascular diseases - implementing the Safe Hearts Plan (16 December 2026 , 14.00 - 16.00 CET)",
+    "source": "European Commission – Health",
+    "date": "2026-11-23",
+    "tags": [
+      "Directorate-General for Health and Food Safety",
+      "Non-communicable diseases",
+      "Vaccination",
+      "News announcement"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://health.ec.europa.eu/latest-updates/registration-public-webinar-vaccination-prevention-against-cardiovascular-diseases-implementing-safe-2026-11-23_en",
+    "badge": "Policy",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-8133140bcdc6",
+    "type": "news",
+    "title": "HTA Regulation - Commission selects third medical device for joint clinical assessment",
+    "excerpt": "HTA Regulation - Commission selects third medical device for joint clinical assessment",
+    "source": "European Commission – Health",
+    "date": "2026-11-23",
+    "tags": [
+      "Directorate-General for Health and Food Safety",
+      "Health technology assessment",
+      "Home page",
+      "News announcement"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://ec.europa.eu/newsroom/sante/newsletter-archives/81762",
+    "badge": "Policy",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-e44132367d75",
+    "type": "news",
+    "title": "Commission publishes medical countermeasures roadmaps to boost EU preparedness for health emergencies",
+    "excerpt": "Commission publishes medical countermeasures roadmaps to boost EU preparedness for health emergencies",
+    "source": "European Commission – Health",
+    "date": "2026-11-23",
+    "tags": [
+      "Health Emergency Preparedness and Response Authority",
+      "Health Emergency Preparedness and Response (HERA)",
+      "News announcement",
+      "preparedness"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://health.ec.europa.eu/latest-updates/commission-publishes-medical-countermeasures-roadmaps-boost-eu-preparedness-health-emergencies-2026-11-23_en",
+    "badge": "Policy",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-0adac91b1bbe",
+    "type": "news",
+    "title": "Presentations and recording - EUHPP Live Webinar: What shapes Digital Health adoption? (19 November 2026)",
+    "excerpt": "Presentations and recording - EUHPP Live Webinar: What shapes Digital Health adoption? (19 November 2026)",
+    "source": "European Commission – Health",
+    "date": "2026-11-23",
+    "tags": [
+      "Directorate-General for Health and Food Safety",
+      "eHealth : Digital health and care",
+      "EU Health Policy",
+      "News announcement"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://health.ec.europa.eu/latest-updates/presentations-and-recording-euhpp-live-webinar-what-shapes-digital-health-adoption-19-november-2026-2026-11-23_en",
+    "badge": "Policy",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-9a2dd950b995",
+    "type": "news",
+    "title": "Clinical trials for medicines: modifying a clinical trial approval",
+    "excerpt": "Guidance on the various types of modifications that can be made to a clinical trial approval.",
+    "source": "MHRA",
+    "date": "2026-11-23",
+    "tags": [
+      "MHRA"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.gov.uk/guidance/clinical-trials-for-medicines-modifying-a-clinical-trial-approval",
+    "badge": "Regulatory",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-7214abd06354",
+    "type": "paper",
+    "title": "What Does an Agent-Run Clinic Cost? Protocol for a Prospective Observational Study of the Compute Cost of Completed Work in a Clinical Agent Fleet",
+    "excerpt": "Background: Decisions about deploying large language model (LLM) agents in health care require the cost of completed work in production. Published evidence reports benchmark accuracy, benchmark-level cost, and time or financial outcomes for ambient documentation, and list prices alone do not determine the cost of completed work. To our knowledge, no deployed clinical agent fleet has published a measurement method that ties compute cost, latency, failures and retries to completed work. Objective: This study aims to estimate the compute cost of completed work by the orchestrated clinical agents ",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-23",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368538v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-1c1858b3154d",
+    "type": "paper",
+    "title": "Interpretable competing-risk prediction of hepatocellular carcinoma in cirrhosis from region-wide routine health data",
+    "excerpt": "Background. Short-term prediction of hepatocellular carcinoma (HCC) in cirrhosis is complicated by the competing risk of death from liver disease. We aimed to develop an interpretable model on region-wide routine data that predicts HCC while separating competing mortality, and to compare it with established risk scores. Methods. From a region-wide cohort of adults with cirrhosis in the Andalusian Population Health Database, we trained the model on 17,177 patients with a prediction date set 12 months before their outcome, between 2020 and 2023. From one year of electronic health records before ",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-23",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368516v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
+  },
+  {
+    "id": "auto-d3d9ea1b8b85",
+    "type": "news",
+    "title": "STAT+: A big win for a potential competitor for Dupixent eczema treatment",
+    "excerpt": "Kymera Therapeutics has a shot at giving eczema patients Dupixent-like relief in a pill, a new 244-patient Phase 2 trial finds:",
+    "source": "STAT News",
+    "date": "2026-11-23",
+    "tags": [
+      "Biotech",
+      "Business",
+      "Pharma",
+      "The Readout"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/11/23/biotech-news-a-big-win-for-potential-dupixent-competitor-eczema-treatment/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-9487bcec0fb1",
+    "type": "news",
+    "title": "STAT+: Kymera Therapeutics reports mid-stage eczema trial success for would-be Dupixent rival",
+    "excerpt": "Kymera Therapeutics announced on Monday that its experimental therapy effectively and safely treated eczema patients’ itchy, inflamed skin.",
+    "source": "STAT News",
+    "date": "2026-11-23",
+    "tags": [
+      "Biotech",
+      "biotechnology",
+      "chronic diseases",
+      "Pharmaceuticals"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/11/23/kymera-therapeutics-eczema-trial-success-potential-dupixent-rival/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-9d49e3a0971f",
+    "type": "news",
+    "title": "STAT+: A string of wins with cancer drugs sets Genmab up for its next chapter",
+    "excerpt": "The Danish biotech Genmab in on a roll with cancer drugs, with success in three late-stage clinical trials over the course of a month.",
+    "source": "STAT News",
+    "date": "2026-11-23",
+    "tags": [
+      "Biotech",
+      "biotechnology",
+      "Cancer",
+      "Pharmaceuticals"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.statnews.com/2026/11/23/genmab-cancer-drugs-oncology-clinical-trials/?utm_campaign=rss",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "auto-1adae0b53020",
+    "type": "seminar",
+    "title": "EU clinical research readiness for medical countermeasures during public health emergencies, Online, European Medicines Agency, Amsterdam, the Netherlands, 25 November 2026",
+    "excerpt": "EU clinical research readiness for medical countermeasures during public health emergencies, Online, European Medicines Agency, Amsterdam, the Netherlands, 25 November 2026",
+    "source": "EMA – events",
+    "date": "2026-11-23",
+    "tags": [
+      "EMA – events"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ema.europa.eu/en/events/eu-clinical-research-readiness-medical-countermeasures-during-public-health-emergencies",
+    "badge": "Event",
+    "topic": "regulatory"
+  },
+  {
+    "id": "auto-47a3182deee8",
+    "type": "seminar",
+    "title": "Committee for Herbal Medicinal Products (HMPC): 18-20 January 2027, European Medicines Agency, Amsterdam, the Netherlands, from 18 January 2027 to 20 January 2027",
+    "excerpt": "Committee for Herbal Medicinal Products (HMPC): 18-20 January 2027, European Medicines Agency, Amsterdam, the Netherlands, from 18 January 2027 to 20 January 2027",
+    "source": "EMA – events",
+    "date": "2026-11-23",
+    "tags": [
+      "EMA – events"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.ema.europa.eu/en/events/committee-herbal-medicinal-products-hmpc-18-20-january-2027",
+    "badge": "Event",
+    "topic": "regulatory"
+  },
+  {
     "id": "auto-57ddd13d9e23",
     "type": "paper",
     "title": "Artificial Intelligence-Guided Precision Nanomedicine: Bridging Delivery Barriers, Controlled Release, and Clinical Translation",
@@ -36,6 +306,37 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/43068067/",
     "badge": "PubMed",
     "topic": "drug-discovery"
+  },
+  {
+    "id": "nws-25e7aa2afd81",
+    "type": "news",
+    "title": "A growing public health worry: prolonged sitting",
+    "excerpt": "Most Americans are sedentary 6-8 hours a day, elevating their risk for heart disease and cancer, say experts.\nThe post A Growing Public Health Worry: Prolonged Sitting appeared first on The Good Men Project.",
+    "source": "The Good Men Project",
+    "date": "2026-11-22",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://goodmenproject.com/featured-content/a-growing-public-health-worry-prolonged-sitting/",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-31c336541238",
+    "type": "ainews",
+    "title": "Banks have had it up to here with your AI agent",
+    "excerpt": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+    "source": "Wired",
+    "date": "2026-11-22",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-7e34ea7b5f92",
@@ -92,6 +393,51 @@
     "readTime": "1 min",
     "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
     "badge": "Tech"
+  },
+  {
+    "id": "nws-4dbe40cab416",
+    "type": "seminar",
+    "title": "Former irgc commander behind iran's brutal hijab crackdown to give keynote speech at london 'islamophobia' conference",
+    "excerpt": "A former Islamic Revolutionary Guard Corps (IRGC) commander is to deliver a keynote speech at a London conference on Islamophobia.",
+    "source": "Dailymail.com",
+    "date": "2026-11-21",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.dailymail.com/news/article-16299701/Former-IRGC-commander-Irans-brutal-hijab-crackdown-keynote-speech-London-Islamophobia-conference.html",
+    "badge": "Event"
+  },
+  {
+    "id": "nws-8d54d4add32f",
+    "type": "ainews",
+    "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance | techcrunch",
+    "excerpt": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance | TechCrunchtechcrunch.com",
+    "source": "TechCrunch",
+    "date": "2026-11-21",
+    "tags": [
+      "AI news"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-01945f6a907c",
+    "type": "ainews",
+    "title": "Here are the top AI agents that can live in your text messages | techcrunch",
+    "excerpt": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+    "source": "TechCrunch",
+    "date": "2026-11-21",
+    "tags": [
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "badge": "AI Tech"
   },
   {
     "id": "auto-5802f6962500",
@@ -423,6 +769,22 @@
     "featured": false,
     "readTime": "1 min",
     "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
+    "badge": "AI Tech"
+  },
+  {
+    "id": "nws-779ccf54081c",
+    "type": "ainews",
+    "title": "Signal is blocking gemini and siri AI from reading your screen",
+    "excerpt": "Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into operating systems that analyze on-screen information to lear…",
+    "source": "The Verge",
+    "date": "2026-11-20",
+    "tags": [
+      "LLM",
+      "AI agent"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
     "badge": "AI Tech"
   },
   {
@@ -4631,347 +4993,5 @@
     "url": "https://www.politico.eu/sponsored-content/building-a-european-neurological-health-framework/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
     "badge": "Policy",
     "topic": "regulatory"
-  },
-  {
-    "id": "auto-ccdccf818b30",
-    "type": "ainews",
-    "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
-    "excerpt": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
-    "source": "TechCrunch AI",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "e-commerce",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-fd8e1c638d2d",
-    "type": "ainews",
-    "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
-    "excerpt": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
-    "source": "TechCrunch AI",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "Apps",
-      "Anthropic",
-      "Anthropic Claude"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-7396b577c725",
-    "type": "ainews",
-    "title": "ChatGPT is getting verified AI ‘Business Agents’",
-    "excerpt": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service businesses in the US, is launching as part of a suite of business-focused features in ChatGPT being announced today in beta. You [&#8230;]",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "News",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-ec3f910d2a18",
-    "type": "ainews",
-    "title": "Anthropic has its own AI-powered office suite now",
-    "excerpt": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went through its own particular hype cycle. And now, Anthropic is trying to expand its footprint [&#8230;]",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "Anthropic",
-      "Report"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-a14681e2ddce",
-    "type": "ainews",
-    "title": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
-    "excerpt": "Google is rolling out its latest AI model, Gemini 4 Carbon, to the general public after releasing it to a select group of \"cybersecurity defenders\" two weeks ago. Google claims Carbon is its \"strongest model\" yet, and capable of competing with the very best systems from Anthropic and OpenAI. Google says Gemini 4 Carbon \"pushes [&#8230;]",
-    "source": "The Verge",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "Google",
-      "News",
-      "Tech"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-004c51f512e0",
-    "type": "ainews",
-    "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
-    "excerpt": "The new model is up to twice as successful at some tasks.",
-    "source": "Ars Technica AI",
-    "date": "2026-11-10",
-    "tags": [
-      "AI",
-      "Google",
-      "gemini",
-      "gemini robotics"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-    "badge": "Tech"
-  },
-  {
-    "id": "auto-30a51dfaa7f1",
-    "type": "seminar",
-    "title": "SME info day - navigating EMA support: From innovation to marketing authorisation, Online, European Medicines Agency, Amsterdam, the Netherlands, Broadcast, from 6 November 2026, 09:15 (CET) to 6 November 2026, 16:00 (CET)",
-    "excerpt": "SME info day - navigating EMA support: From innovation to marketing authorisation, Online, European Medicines Agency, Amsterdam, the Netherlands, Broadcast, from 6 November 2026, 09:15 (CET) to 6 November 2026, 16:00 (CET)",
-    "source": "EMA – events",
-    "date": "2026-11-10",
-    "tags": [
-      "EMA – events"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.ema.europa.eu/en/events/sme-info-day-navigating-ema-support-innovation-marketing-authorisation",
-    "badge": "Event",
-    "topic": "regulatory"
-  },
-  {
-    "id": "auto-ea72095a1ccd",
-    "type": "seminar",
-    "title": "Training on clinical trials for EU candidate countries under the Instrument for Pre-accession Assistance (IPA) programme, European Medicines Agency, Amsterdam, the Netherlands, from 16 November 2026, 10:00 (CET) to 17 November 2026, 13:00 (CET)",
-    "excerpt": "Training on clinical trials for EU candidate countries under the Instrument for Pre-accession Assistance (IPA) programme, European Medicines Agency, Amsterdam, the Netherlands, from 16 November 2026, 10:00 (CET) to 17 November 2026, 13:00 (CET)",
-    "source": "EMA – events",
-    "date": "2026-11-10",
-    "tags": [
-      "EMA – events"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.ema.europa.eu/en/events/training-clinical-trials-eu-candidate-countries-under-instrument-pre-accession-assistance-ipa-programme",
-    "badge": "Event",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-c957ae20b7f3",
-    "type": "news",
-    "title": "Macron wants AI ban wherever it threatens children",
-    "excerpt": "French President Emmanuel Macron said on Nov. 9 that artificial intelligence should be banned wherever it poses a risk to the mental health of children.",
-    "source": "Hurriyet Daily News",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.hurriyetdailynews.com/macron-wants-ai-ban-wherever-it-threatens-children-229214",
-    "badge": "Regulatory",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-cf9028a40357",
-    "type": "news",
-    "title": "3d models to capture and perturb tumour heterogeneity in vitro",
-    "excerpt": "Tumour heterogeneity drives disease progression yet remains difficult to capture in experimental systems. In this Review, Fomina and McGuigan discuss how emerging 3D tumour models, including organoids, assembloids and microfluidic platforms, recapitulate dist…",
-    "source": "Nature.com",
-    "date": "2026-11-10",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41568-026-00993-1",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-64537c4b58f1",
-    "type": "news",
-    "title": "Exclusive: alterra labs announces $12.5 million seed round to build training environments for medical AI",
-    "excerpt": "Founder Akash Kapoor left medical school in his final year to help AI developers teach their models better clinical judgment.",
-    "source": "Fortune",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://fortune.com/2026/11/10/alterra-labs-12-5-million-seed-round-training-environments-medical-ai/",
-    "badge": "Clinical AI",
-    "topic": "clinical-ai"
-  },
-  {
-    "id": "nws-373430a0b20b",
-    "type": "news",
-    "title": "When deaths go uncounted: WHO flags dangerous blind spots in africa’s health data",
-    "excerpt": "Quality health data can help authorities to identify emerging threats and take lifesaving action, but a new report reveals critical gaps in Africa’s health information systems.  Read Full Story on UN News\nThe post When deaths go uncounted: WHO flags dangerous…",
-    "source": "UN News",
-    "date": "2026-11-10",
-    "tags": [
-      "Health data"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://news.un.org/en/story/2026/11/1168772",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-7b65bdcab2b5",
-    "type": "news",
-    "title": "Amy bucher, lirio health",
-    "excerpt": "Lirio Health is an interesting under-the-radar company, which works with plans, providers and others to try to influence the behavior of their members and patients. Of course, everybody wants to change theContinue reading...",
-    "source": "Thehealthcareblog.com",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://thehealthcareblog.com/blog/2026/11/10/amy-bucher-lirio-health/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-833c00c27603",
-    "type": "news",
-    "title": "How health systems can spot risk before a crisis",
-    "excerpt": "From a frontline consultation to a routine blood test and a photograph of a mosquito, three innovations show how sensing technologies can help health systems identify risks earlier and act before crises take hold.",
-    "source": "POLITICO.eu",
-    "date": "2026-11-10",
-    "tags": [
-      "Pharma AI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.politico.eu/sponsored-content/how-health-systems-can-spot-risk-before-a-crisis/",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-de2594e29317",
-    "type": "news",
-    "title": "Prospective and genetic analyses implicate lower immunosurveillance in the aetiology of prostate cancer",
-    "excerpt": "Role of specific immune and inflammation-related pathways and protein markers in the development of prostate cancer remains to be elucidated. Here the authors show evidence for potential protective role of dendritic cell mediated immunosurveillance, with prot…",
-    "source": "Nature.com",
-    "date": "2026-11-10",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.nature.com/articles/s41467-026-77378-3",
-    "badge": "Data",
-    "topic": "data-governance"
-  },
-  {
-    "id": "nws-1c52468d7a99",
-    "type": "ainews",
-    "title": "Cyberattacks threaten to make open-source AI a little less open, hugging face exec warns | techcrunch",
-    "excerpt": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open-source communities valuable to developers worldwide.",
-    "source": "TechCrunch",
-    "date": "2026-11-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-364a289ee5b9",
-    "type": "ainews",
-    "title": "Google deepmind melds humans and AI agents to vet signal's secure messaging techniques",
-    "excerpt": "Post-quantum handshake and Triple Ratchet get a formal security check",
-    "source": "Theregister.com",
-    "date": "2026-11-10",
-    "tags": [
-      "AI agent",
-      "DeepMind"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-124436fde11d",
-    "type": "ainews",
-    "title": "Microsoft is giving claude the keys to UK copilot tenants by default",
-    "excerpt": "Admins have until December 9 to review access settings as Anthropic processes data in the US",
-    "source": "Theregister.com",
-    "date": "2026-11-10",
-    "tags": [
-      "LLM",
-      "Anthropic"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/ai-and-ml/2026/11/10/microsoft-is-giving-claude-the-keys-to-uk-copilot-tenants-by-default/5308693",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-d7b8cbead96b",
-    "type": "ainews",
-    "title": "Tear down those guardrails! meet the renegades freeing chatbots from corporate enslavers",
-    "excerpt": "The “abliterators” are flooding the internet with AI models that never say no, making it easier for people to improve their cyberdefenses—or build a bomb.",
-    "source": "Wired",
-    "date": "2026-11-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/tear-down-those-guardrails-meet-the-renegades-freeing-chatbots-from-corporate-enslavers/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-df8566683e35",
-    "type": "ainews",
-    "title": "The AI safety debate has lost the plot. we asked 10 experts what the real nightmares are",
-    "excerpt": "The risk of nuclear catastrophe is real, as is the fallout of the China–US domination game (hi there, spies). But no need to panic about Skynet.",
-    "source": "Wired",
-    "date": "2026-11-10",
-    "tags": [
-      "AI safety"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are/",
-    "badge": "AI Lab"
-  },
-  {
-    "id": "nws-ab14eb7e6ad1",
-    "type": "ainews",
-    "title": "Jensen huang’s troubles leave the AI industry reeling",
-    "excerpt": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk.",
-    "source": "Wired",
-    "date": "2026-11-10",
-    "tags": [
-      "AI news"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.wired.com/story/jensen-huangs-troubles-leaves-the-ai-industry-reeling/",
-    "badge": "AI Lab"
   }
 ]
