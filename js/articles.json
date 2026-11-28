@@ -1,5 +1,24 @@
 [
   {
+    "id": "auto-de51d4c9fae4",
+    "type": "paper",
+    "title": "Artificial intelligence and high-quality development in pharmaceutical manufacturing: evidence and mechanisms from Chinese listed firms",
+    "excerpt": "This study examines how artificial intelligence implementation impacts high-quality development in pharmaceutical manufacturing, using data from Chinese listed firms. The research addresses pharmaceutical manufacturing as a strategic sector critical to economic development, drug supply stability, and public health system resilience.",
+    "source": "Front Public Health",
+    "date": "2026-11-28",
+    "tags": [
+      "Artificial Intelligence",
+      "Pharmaceutical Manufacturing",
+      "Quality Development",
+      "China"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43104887/",
+    "badge": "PubMed",
+    "topic": "drug-discovery"
+  },
+  {
     "id": "auto-0039d5abbd46",
     "type": "paper",
     "title": "Medication optimization during glucagon-like peptide-1-based therapy and cardiometabolic improvement: A structured review and clinical framework",
@@ -113,6 +132,100 @@
     "url": "https://www.ema.europa.eu/en/events/qa-clinic-extended-eudravigilance-medicinal-product-dictionary-xevmpd-service-october-2026",
     "badge": "Event",
     "topic": "regulatory"
+  },
+  {
+    "id": "nws-8d785467d69c",
+    "type": "news",
+    "title": "Genome-wide association analyses of suicidality identify 77 loci and implicate subcortical brain regions and synaptic pathways",
+    "excerpt": "Multi-ancestry genome-wide association meta-analyses of suicidal ideation and behaviors identify 77 risk loci, including 59 previously unreported for these phenotypes. Prioritized genes implicate synaptic pathways and neuronal populations in subcortical brain…",
+    "source": "Nature.com",
+    "date": "2026-11-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41588-026-02789-3",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-5f46bc8e8eae",
+    "type": "news",
+    "title": "12 strategies to cut your risk of dementia. take this quiz to start",
+    "excerpt": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
+    "source": "NPR",
+    "date": "2026-11-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-bb702cecdb24",
+    "type": "news",
+    "title": "The role of circadian clock dysfunction in alzheimer disease pathogenesis",
+    "excerpt": "Disruption of daily rhythms and circadian function has been linked to Alzheimer disease (AD). Sharma and Musiek explore this relationship, outlining the evidence for altered circadian clock function in AD and AD models and discussing the mechanisms through wh…",
+    "source": "Nature.com",
+    "date": "2026-11-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.nature.com/articles/s41583-026-01104-7",
+    "badge": "Data",
+    "topic": "data-governance"
+  },
+  {
+    "id": "nws-e44a8b2dce7f",
+    "type": "seminar",
+    "title": "Only 20-30% of eligible indian exports use fta benefits: rbi governor",
+    "excerpt": "Sanjay Malhotra urged MSMEs to look beyond domestic markets, saying better use of trade agreements, higher productivity and formalisation could support the sector's next phase of growth",
+    "source": "Business Standard",
+    "date": "2026-11-27",
+    "tags": [
+      "Pharma AI"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.business-standard.com/economy/news/india-exports-fta-benefits-msmes-sanjay-malhotra-rbi-126112700520_1.html",
+    "badge": "Event"
+  },
+  {
+    "id": "nws-c6b9793c2101",
+    "type": "seminar",
+    "title": "Largest life sciences forum in the baltics, life sciences baltics, moves to kaunas: health data takes center stage",
+    "excerpt": "Largest Life Sciences Forum in the Baltics, Life Sciences Baltics, Moves to Kaunas: Health Data Takes Center Stagelifesciencesbaltics.com",
+    "source": "Lifesciencesbaltics.com",
+    "date": "2026-11-27",
+    "tags": [
+      "Health data"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://lifesciencesbaltics.com/new/largest-life-sciences-forum-in-the-baltics-life-sciences-baltics-moves-to-kaunas-health-data-takes-center-stage/",
+    "badge": "Event"
+  },
+  {
+    "id": "auto-585720d3fb3c",
+    "type": "paper",
+    "title": "MedDx, a training-free AI phenotyping model, identifies alcohol use disorder in cirrhosis with hepatologist-level agreement",
+    "excerpt": "Alcohol use disorder (AUD) is often under-documented in patients with cirrhosis, which delays treatment. Expert chart review of clinical notes can identify under-documented AUD, but is not scalable. We propose MedDx, an open-weight, training-free, and engine-agnostic language model, to phenotype AUD using clinical notes in patients with cirrhosis. We benchmarked MedDx on a 485-patient study cohort sampled from the 14,406-patient Indiana Cirrhosis Registry, using a chart-review-based reference as ground truth. MedDx agreed with the ground truth at three-class Cohen's {kappa} 0.92, against 0.67 ",
+    "source": "medRxiv – Health Informatics",
+    "date": "2026-11-27",
+    "tags": [
+      "medRxiv – Health Informatics"
+    ],
+    "featured": false,
+    "readTime": "1 min",
+    "url": "https://www.medrxiv.org/content/10.64898/2026.11.25.26368618v1?rss=1",
+    "badge": "Research",
+    "topic": "clinical-ai"
   },
   {
     "id": "auto-c2c001d1d999",
@@ -4853,119 +4966,5 @@
     "readTime": "1 min",
     "url": "https://www.theregister.com/systems/2026/11/16/chinas-grip-on-top500-remains-uncontested-as-us-chases-ai-hpc-fusion/5310205",
     "badge": "AI Lab"
-  },
-  {
-    "id": "nws-a59dd1871e2f",
-    "type": "ainews",
-    "title": "Apple reveals new mac security controls as AI agents raise privacy risks",
-    "excerpt": "Following an October announcement, Apple has detailed new permission controls, warnings, and transparency features coming to macOS 27.3 to address risks posed by AI agents and other apps.",
-    "source": "TechCrunch",
-    "date": "2026-11-16",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-ed987360cdcd",
-    "type": "ainews",
-    "title": "Ubuntu gets ai-generated security fixes for those feeling brave",
-    "excerpt": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
-    "source": "Theregister.com",
-    "date": "2026-11-16",
-    "tags": [
-      "EMA"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-6d05b4dbd591",
-    "type": "ainews",
-    "title": "Openai will embed apollo researchers to investigate AI subversion | techcrunch",
-    "excerpt": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
-    "source": "TechCrunch",
-    "date": "2026-11-16",
-    "tags": [
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "nws-380bb0f02753",
-    "type": "ainews",
-    "title": "Has ai’s ‘black october’ changed the way you secure your code?",
-    "excerpt": "PARTNER CONTENT: AI agents are making security vulnerabilities easier to find and exploit in your code. Software engineering and application security teams need new ways to find and fix them",
-    "source": "Theregister.com",
-    "date": "2026-11-16",
-    "tags": [
-      "AI agent"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775",
-    "badge": "AI Tech"
-  },
-  {
-    "id": "auto-bb0a23f7d868",
-    "type": "news",
-    "title": "Conservative lawmakers demand crackdown on EU-funded lobbying",
-    "excerpt": "Right-wing MEPs want tougher restrictions to prevent NGOs from conducting advocacy work with EU cash.",
-    "source": "POLITICO Europe – Health Care",
-    "date": "2026-11-16",
-    "tags": [
-      "Advocacy",
-      "Conflict of interest",
-      "EU funding",
-      "Lobbying"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.politico.eu/article/document-conservative-lawmakers-demand-crackdown-eu-funded-lobbying/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-    "badge": "Policy",
-    "topic": "regulatory"
-  },
-  {
-    "id": "nws-adba844aff17",
-    "type": "ainews",
-    "title": "Building trustworthy AI by fencing it in, not predicting it",
-    "excerpt": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration during migr…",
-    "source": "MIT Technology Review",
-    "date": "2026-11-16",
-    "tags": [
-      "AI agent",
-      "OpenAI"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-    "badge": "AI Policy"
-  },
-  {
-    "id": "auto-f4e9ab6ab523",
-    "type": "news",
-    "title": "European Commission and the Japan Agency for Medical Research and Development renew cooperation on cross border health threats",
-    "excerpt": "European Commission and the Japan Agency for Medical Research and Development renew cooperation on cross border health threats",
-    "source": "European Commission – Health",
-    "date": "2026-11-16",
-    "tags": [
-      "Health Emergency Preparedness and Response Authority",
-      "Health Emergency Preparedness and Response (HERA)",
-      "News announcement",
-      "preparedness"
-    ],
-    "featured": false,
-    "readTime": "1 min",
-    "url": "https://health.ec.europa.eu/latest-updates/european-commission-and-japan-agency-medical-research-and-development-renew-cooperation-cross-border-2026-11-16_en",
-    "badge": "Policy",
-    "topic": "regulatory"
   }
 ]
