@@ -28,6 +28,7 @@ import argparse
 import logging
 import time
 import re
+import html
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
@@ -81,6 +82,21 @@ DAYS_LOOKBACK    = CONFIG["settings"]["days_lookback"]
 PHARMA_KW        = [k.lower() for k in CONFIG["pharma_keywords"]]
 AI_KW            = [k.lower() for k in CONFIG["ai_keywords"]]
 SOURCE_BLACKLIST = {s.lower() for s in CONFIG.get("source_blacklist", [])}
+
+
+def _gate_pattern(keyword: str) -> "re.Pattern":
+    # Whole-word match; short all-caps acronyms (AI, LLM, RWE…) are case-sensitive
+    # so that e.g. "ai" inside "said" or "rag" inside "storage" never match.
+    flags = 0 if (keyword.isupper() and len(keyword) <= 5) else re.I
+    return re.compile(r"(?<!\w)" + re.escape(keyword) + r"(?!\w)", flags)
+
+
+AI_OR_DATA_GATE = [_gate_pattern(k) for k in CONFIG.get("ai_or_data_gate", [])]
+
+
+def has_ai_or_data_signal(text: str) -> bool:
+    """True if the text contains at least one whole-word AI / data keyword."""
+    return any(p.search(text or "") for p in AI_OR_DATA_GATE)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -197,6 +213,27 @@ def within_lookback(date_str: str) -> bool:
 
 # ── PubMed ────────────────────────────────────────────────────────────────────
 
+def pubmed_abstract_from_xml(xml_text: str) -> str:
+    """Concatenate the <AbstractText> sections of a PubMed efetch XML record."""
+    parts = re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", xml_text or "", re.S)
+    text = " ".join(re.sub(r"<[^>]+>", "", p) for p in parts)
+    return html.unescape(re.sub(r"\s+", " ", text)).strip()
+
+
+def pubmed_date(doc: dict) -> str:
+    """Online (epub) date if available, else journal issue date; never in the future.
+    Journal issue dates are often weeks ahead ("2026 Dec"), which hid new papers."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    for field in ("epubdate", "pubdate"):
+        raw = (doc.get(field) or "").strip()
+        if raw:
+            try:
+                return min(dateparser.parse(raw).strftime("%Y-%m-%d"), today)
+            except Exception:
+                continue
+    return today
+
+
 def fetch_pubmed(dry_run=False) -> list:
     if not CONFIG["pubmed"]["enabled"]:
         return []
@@ -215,9 +252,11 @@ def fetch_pubmed(dry_run=False) -> list:
         if isinstance(query_cfg, dict):
             query        = query_cfg["q"]
             query_topic  = query_cfg.get("topic")
+            query_auto   = query_cfg.get("auto_approve", False)   # precise queries publish directly
         else:
             query        = query_cfg
             query_topic  = None
+            query_auto   = False
         try:
             log.info(f"PubMed search: {query!r}")
             search_url = (
@@ -254,12 +293,13 @@ def fetch_pubmed(dry_run=False) -> list:
                 authors = doc.get("authors", [])
                 url     = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
 
-                # Fetch abstract
+                # Fetch abstract (XML: take only the <AbstractText> sections; the text
+                # format starts with citation + author list, which used to fill the excerpt)
                 abstract = ""
                 try:
-                    fetch_url = f"{base}/efetch.fcgi?db=pubmed&id={pmid}&rettype=abstract&retmode=text"
+                    fetch_url = f"{base}/efetch.fcgi?db=pubmed&id={pmid}&rettype=abstract&retmode=xml"
                     ar = requests.get(fetch_url, timeout=15)
-                    abstract = ar.text[:600]
+                    abstract = pubmed_abstract_from_xml(ar.text)[:1500]
                     time.sleep(0.35)
                 except Exception:
                     pass
@@ -277,7 +317,7 @@ def fetch_pubmed(dry_run=False) -> list:
                     "title": title,
                     "excerpt": clean_html(abstract) or "See full abstract on PubMed.",
                     "source": source,
-                    "date": iso_date(pubdate),
+                    "date": pubmed_date(doc),
                     "tags": tags,
                     "featured": False,
                     "readTime": estimate_read_time(abstract),
@@ -287,7 +327,7 @@ def fetch_pubmed(dry_run=False) -> list:
                         "bmc bioinformatics", "journal of cheminformatics"
                     ] else "PubMed",
                     "_score": score,
-                    "_auto_approve": score >= AUTO_THRESHOLD,
+                    "_auto_approve": query_auto or score >= AUTO_THRESHOLD,
                     "_source": "pubmed"
                 }
                 if query_topic:
@@ -300,7 +340,8 @@ def fetch_pubmed(dry_run=False) -> list:
             log.warning(f"PubMed request failed for query {query!r}: {e}")
 
     log.info(f"PubMed: {len(results)} articles fetched")
-    return results[:MAX_PER_SOURCE]
+    # PubMed runs many queries; it gets its own cap so later queries are not cut off
+    return results[:CONFIG["pubmed"].get("max_total_results", MAX_PER_SOURCE)]
 
 
 # ── bioRxiv ───────────────────────────────────────────────────────────────────
@@ -512,6 +553,10 @@ def fetch_rss_feed(feed_cfg: dict, article_type: str, require_pharma: bool,
             effective_type = detected_event if detected_event else article_type
 
             score = relevance_score(title + " " + summary, effective_type)
+
+            # Broad medicines feeds: keep only items with a real AI / data signal
+            if feed_cfg.get("require_ai_or_data") and not has_ai_or_data_signal(title + " " + summary):
+                continue
 
             # For pharma news: must have some pharma or AI relevance
             if require_pharma and score < MIN_SCORE:

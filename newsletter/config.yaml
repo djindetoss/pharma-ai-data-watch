@@ -1,0 +1,297 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# IncreaseNET AI Community – Newsletter configuration
+#
+# Everything editorial (window, quotas, thresholds, keywords, colours) lives
+# here. NO e-mail address, password or API key may ever be written in this
+# file: the repository is public. Credentials come from environment variables
+# / GitHub secrets only (see newsletter/README.md).
+# ─────────────────────────────────────────────────────────────────────────────
+
+title: "IncreaseNET AI Community – Newsletter"
+# The newsletter is distributed by e-mail only (no web page). The logo is the only
+# hosted file: served as a raw image from this repository (absolute URL, so it
+# survives forwarding to Outlook; no embedded/CID image).
+logo_url: "https://raw.githubusercontent.com/djindetoss/pharma-ai-data-watch/master/newsletter/assets/increasenet-logo.png"
+
+# ── Source data ──────────────────────────────────────────────────────────────
+source:
+  articles_json: "portal/js/articles.json"     # produced by the daily pipeline
+  use_git_history: true                         # union with older versions of the file
+  exclude_types: ["seminar"]                    # events are not newsletter content
+  # Items published on these sites are left out: the readers (NCA staff) already
+  # follow EMA communications closely. Matches the host and its sub-domains.
+  # Third-party coverage of EMA topics is still eligible.
+  exclude_domains: ["ema.europa.eu"]
+
+# ── Schedule ─────────────────────────────────────────────────────────────────
+schedule:
+  window_days: 14         # period covered by one edition
+  frequency_days: 14      # the weekly cron skips if the last edition is younger
+
+# ── Selection ────────────────────────────────────────────────────────────────
+selection:
+  # Featured items (summary + comment), strictly within the medicines scope.
+  papers:  {min: 4, max: 7}
+  news:    {min: 4, max: 6}
+  # When a period is thin, top up to `min` with the best shortlisted items below
+  # the threshold; they are marked `below_threshold: true` in the draft.
+  fill_to_min: true
+  fill_floor: 4.5               # 0-10; never top up with items scoring below this
+  shortlist_size: 40            # items sent to the LLM after the keyword pre-filter
+  shortlist_floor: 2.5          # 0-10; minimum pre-filter score to reach the LLM
+  min_prefilter_score: 5.5      # 0-10; final threshold when running WITHOUT the LLM
+  min_llm_score: 6              # 0-10; used when ANTHROPIC_API_KEY is set
+  runners_up: 6                 # kept in the draft YAML so you can promote them
+  title_similarity: 0.88        # dedup: SequenceMatcher ratio on normalised titles
+
+# ── In brief ─────────────────────────────────────────────────────────────────
+# One-line notes grouped by theme, after the featured items. Broader than the
+# featured scope: AI news useful to medicines regulators. An item goes to the
+# section whose keywords it matches most (papers go to "More scientific
+# articles"); items matching none are left out.
+in_brief:
+  max_total: 40
+  max_per_section: 8
+  max_papers: 12                # "More scientific articles" may be longer
+  candidates: 70                # sent to the LLM, which may drop or move items
+  min_score: 2
+  extra_exclusions: ["price", "deal", "sale", "review", "rumour", "rumor", "acquires",
+                     "acquisition", "raise", "raises", "invest", "travel agent", "The Download:"]
+  sections:
+    "Medicines & health":
+      ["health", "healthcare", "patient", "patients", "clinical", "clinician", "hospital",
+       "medical", "disease", "diagnosis", "therapy", "therapeutic", "drug", "drugs",
+       "medicines", "pharma", "pharmaceutical", "vaccine", "cancer", "oncology",
+       "genomic", "genomics", "protein", "biomarker", "pharmacovigilance", "toxicity",
+       "toxicology", "biotech", "biology", "molecule", "molecular"]
+    "Regulation, policy & legal":
+      ["regulation", "regulator", "regulators", "regulatory", "law", "legislation",
+       "AI Act", "policy", "guidance", "guideline", "court", "copyright", "standard",
+       "standards", "oversight", "government", "European Commission", "Parliament",
+       "ban", "compliance", "governance", "framework", "agency", "authority"]
+    "Research & methods":
+      ["study", "research", "researchers", "scientists", "benchmark", "evaluation",
+       "reproducibility", "reproducible", "peer review", "scientific", "science",
+       "journal", "preprint", "hallucination", "hallucinations", "accuracy",
+       "validation", "explainability", "interpretability", "bias"]
+    "Safety, security & privacy":
+      ["security", "cybersecurity", "cyberattack", "cyber", "privacy", "data protection",
+       "GDPR", "safety", "deepfake", "deepfakes", "misuse", "attack", "leak", "breach",
+       "malware", "alignment", "misalignment", "jailbreak"]
+    "Tools & releases":
+      ["launches", "launch", "releases", "released", "release", "new model",
+       "open-source", "open source", "open-weight", "agent", "agents", "assistant",
+       "platform", "tool"]
+
+# ── LLM (optional) ───────────────────────────────────────────────────────────
+llm:
+  enabled: true                 # also requires ANTHROPIC_API_KEY
+  model: "claude-sonnet-5-5"
+  effort: "medium"
+  max_excerpt_chars: 900
+
+# ── Visual identity (extracted from the logo by extract_palette.py) ─────────
+# accent/accent2 fail WCAG AA as text on white (≈2.3:1): decoration only.
+colors:
+  primary:    "#2A5698"   # IncreaseNET dark blue   – 7.28:1 on white
+  secondary:  "#036A38"   # IncreaseNET dark green  – 6.73:1 on white
+  accent:     "#3EB4E4"   # IncreaseNET light blue  – borders / bars only
+  accent2:    "#6BBE49"   # IncreaseNET light green – borders / bars only
+  text:       "#1F2933"   # neutral – 14.9:1 on white
+  muted:      "#52606D"   # neutral – 6.4:1 on white
+  background: "#FFFFFF"
+  surface:    "#F4F6FA"
+
+# ── Keyword pre-filter ───────────────────────────────────────────────────────
+# Matching is case-insensitive on word boundaries, on title + excerpt.
+# Title hits count double. Each theme adds weight × min(hits, cap).
+prefilter:
+  hits_cap: 3
+  title_multiplier: 2
+  # Raw score → 0-10 scale: score10 = min(10, raw / normaliser * 10)
+  normaliser: 14
+  # An item must mention at least one of these (AI / data signal)…
+  ai_gate:
+    - "artificial intelligence"
+    - "AI"
+    - "machine learning"
+    - "deep learning"
+    - "neural network"
+    - "large language model"
+    - "LLM"
+    - "LLMs"
+    - "generative AI"
+    - "GenAI"
+    - "foundation model"
+    - "natural language processing"
+    - "NLP"
+    - "algorithm"
+    - "predictive model"
+    - "data quality"
+    - "data governance"
+    - "EHDS"
+    - "European Health Data Space"
+    - "real-world data"
+    - "real-world evidence"
+    - "federated"
+    - "DARWIN EU"
+    - "AI-powered"
+    - "AI-driven"
+    - "AI-based"
+    - "agentic"
+    - "multi-agent"
+    - "knowledge graph"
+    - "in silico"
+    - "model-informed"
+    - "MIDD"
+    - "pharmacometric"
+    - "pharmacometrics"
+    - "digital twin"
+    - "synthetic control"
+  # …AND at least one of these: the item must be about medicines (development,
+  # evaluation, supervision) or their regulators. Generic clinical ML, medical
+  # devices only, or AI policy outside health are therefore dropped.
+  medicines_gate:   # "medicine" (singular) is left out on purpose: it also means the medical field
+    - "medicines"
+    - "medicinal product"
+    - "medicinal products"
+    - "drug"
+    - "drugs"
+    - "drug development"
+    - "drug discovery"
+    - "pharmaceutical"
+    - "pharmaceuticals"
+    - "pharma"
+    - "biopharma"
+    - "biopharmaceutical"
+    - "therapeutics"
+    - "clinical trial"
+    - "clinical trials"
+    - "pharmacovigilance"
+    - "adverse drug reaction"
+    - "pharmacokinetic"
+    - "pharmacokinetics"
+    - "PBPK"
+    - "marketing authorisation"
+    - "marketing authorization"
+    - "SmPC"
+    - "EMA"
+    - "European Medicines Agency"
+    - "FDA"
+    - "HMA"
+    - "Heads of Medicines Agencies"
+    - "MHRA"
+    - "CHMP"
+    - "PRAC"
+    - "ICH"
+    - "national competent authority"
+    - "national competent authorities"
+    - "medicines agency"
+    - "medicines regulator"
+    - "medicines regulators"
+    - "regulatory science"
+    - "real-world evidence"
+    - "DARWIN EU"
+    - "EHDS"
+    - "European Health Data Space"
+  themes:
+    regulatory_assessment:
+      label: "AI in regulatory assessment"
+      weight: 3
+      keywords: ["regulatory", "regulator", "regulators", "EMA", "FDA", "HMA", "MHRA",
+                 "Swissmedic", "Health Canada", "PMDA", "national competent authority",
+                 "competent authorities", "NCA", "NCAs", "marketing authorisation",
+                 "marketing authorization", "assessment", "assessor", "assessors",
+                 "CHMP", "PRAC",
+                 "regulatory science", "submission", "review process"]
+    regulatory_guidance:
+      label: "AI policy & guidance"
+      weight: 3
+      keywords: ["reflection paper", "guideline", "guidance", "draft guidance",
+                 "position paper", "AI Act", "Artificial Intelligence Act", "EHDS",
+                 "European Health Data Space", "good machine learning practice",
+                 "GMLP", "ICH", "consultation", "framework", "code of practice",
+                 "high-risk", "credibility", "context of use", "workplan",
+                 "Data and AI workplan", "AI workplan"]
+    portability_sharing:
+      label: "Sharing & portability of AI"
+      weight: 2.5
+      keywords: ["open source", "open-source", "MLOps", "container", "containerised",
+                 "containerized", "Docker", "Kubernetes", "interoperability",
+                 "interoperable", "reproducibility", "reproducible", "portability",
+                 "model sharing", "deployment", "FHIR", "OMOP", "API", "benchmark",
+                 "federated learning", "reuse", "re-use"]
+    genai_regulatory_docs:
+      label: "GenAI for regulatory documents"
+      weight: 2.5
+      keywords: ["large language model", "LLM", "LLMs", "generative AI", "GenAI",
+                 "GPT", "chatbot", "SmPC", "product information", "labelling", "labeling",
+                 "dossier", "eCTD", "clinical trial", "clinical trials", "protocol",
+                 "pharmacovigilance", "adverse event", "adverse events", "signal detection",
+                 "pharmacokinetic", "pharmacokinetics", "PK", "population PK", "PBPK",
+                 "modelling", "modeling", "medical writing", "summarisation",
+                 "summarization", "retrieval-augmented", "RAG", "information extraction"]
+    medicines_development:
+      label: "AI & modelling in medicines development"
+      weight: 2
+      keywords: ["drug development", "drug discovery", "lead optimization", "lead optimisation",
+                 "ADMET", "toxicity prediction", "in silico", "model-informed", "MIDD",
+                 "pharmacometric", "pharmacometrics", "PBPK", "dose selection", "dosing",
+                 "digital twin", "synthetic control", "external control arm", "biomarker",
+                 "target identification", "de novo design", "drug-drug interaction",
+                 "non-clinical", "preclinical", "translational"]
+    data_governance_validation:
+      label: "Data governance & model validation"
+      weight: 2
+      keywords: ["data governance", "data quality", "data standard", "health data",
+                 "real-world data", "real-world evidence", "RWD", "RWE", "DARWIN EU",
+                 "secondary use", "validation", "validated", "external validation",
+                 "bias", "fairness", "explainability", "explainable", "transparency",
+                 "robustness", "uncertainty", "trustworthy", "audit", "monitoring",
+                 "model drift", "IDMP", "SPOR", "registry", "registries"]
+  # Bonus for authoritative sources (substring match on the source name).
+  source_bonus:
+    "FDA": 2
+    "European Commission": 1.5
+    "MHRA": 1.5
+    "HMA": 2
+    "WHO": 1
+    "Nature": 0.5
+    "medRxiv": 0.5
+  # Any of these in the TITLE drops the item.
+  exclusions: ["crypto", "bitcoin", "stock", "shares", "earnings", "quarterly results",
+               "smartphone", "iPhone", "gaming", "video game", "Fortnite", "celebrity",
+               "dating app", "deal of the day", "black friday", "review: ", "hands-on",
+               "lawsuit", "layoffs", "IPO", "funding round", "raises $", "valuation",
+               "freelance", "hire a", "hiring", "Show HN", "job opening", "webinar recording"]
+  # Exclusions applied to the SOURCE name (generic tech press is rarely NCA-relevant
+  # but is only penalised, not dropped, so a strong regulatory story can still pass).
+  source_penalty:
+    "The Verge": -2
+    "TechCrunch": -2
+    "Wired": -1.5
+    "Theregister.com": -1.5
+    "Ars Technica": -1
+    "Amazon.com": -3
+    "Biztoc": -3
+    "pymnts": -3
+    "Financial Post": -2
+    "Entrepreneur": -3
+
+# Controlled tag vocabulary (LLM picks 1-3 of these; keyword fallback maps themes)
+tags:
+  - "Regulatory assessment"
+  - "Guidelines & policy"
+  - "AI Act"
+  - "EHDS"
+  - "Portability & MLOps"
+  - "Open source"
+  - "LLM / GenAI"
+  - "Pharmacovigilance"
+  - "Clinical trials"
+  - "PK / modelling"
+  - "Drug development"
+  - "Data governance"
+  - "Data quality"
+  - "Model validation"
+  - "Real-world evidence"

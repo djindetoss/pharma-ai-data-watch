@@ -28,3 +28,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Newsletter — local outputs (dry-run .eml, local-logo previews)
+newsletter/out/
+newsletter/drafts/*.preview.html

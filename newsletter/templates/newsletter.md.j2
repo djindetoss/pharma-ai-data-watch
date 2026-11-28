@@ -1,0 +1,63 @@
+{%- macro item(it, num) -%}
+### #{{ num }} [{{ it.title }}]({{ it.url }})
+*{{ it.type }} · {{ it.source }} · {{ it.date | fmt_date }}*  
+<{{ it.url }}>
+
+{{ it.summary }}
+{% if it.comment %}
+
+{{ it.comment.strip() }}
+{% endif %}
+
+**Why it matters for NCAs:** {{ it.why_it_matters }}
+{% if it.tags %}
+
+{% for t in it.tags %}`{{ t }}` {% endfor %}
+
+{% endif %}
+{%- endmacro -%}
+![IncreaseNET]({{ u.logo }})
+
+# {{ cfg.title }}
+
+**Edition #{{ e.edition_number }}** · {{ period }}
+
+{% if e.editorial %}
+{{ e.editorial.strip() }}
+
+{% endif %}
+{% if e.highlight %}
+## Highlight of the period
+
+{{ item(e.highlight, 1) }}
+
+{% endif %}
+{% set base = 1 if e.highlight else 0 %}
+{% if e.scientific_articles %}
+## Scientific articles
+
+{% for it in e.scientific_articles %}
+{{ item(it, base + loop.index) }}
+
+{% endfor %}
+{% endif %}
+{% if e.news %}
+## News & regulatory updates
+
+{% for it in e.news %}
+{{ item(it, base + e.scientific_articles|length + loop.index) }}
+
+{% endfor %}
+{% endif %}
+{% if e.in_brief %}
+## In brief
+
+{% for g in e.in_brief %}
+### {{ g.section }}
+
+{% for b in g["items"] %}
+- {{ b.note }} – {{ b.source or "link" }}: <{{ b.url }}>
+{% endfor %}
+
+{% endfor %}
+{% endif %}
